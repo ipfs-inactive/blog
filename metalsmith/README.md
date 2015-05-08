@@ -2,6 +2,8 @@
 
 This is the source repository for the [IPFS Blog](http://ipfs.io/blog).
 
+![](https://www.evernote.com/l/AMaEbN3YfmVC-JDtlxRdFnMMbfvQjQlmU9MB/image.png)
+
 ## Editing
 
 1. [install node + npm](http://iojs.org) and required modules
