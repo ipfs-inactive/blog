@@ -1,0 +1,11 @@
+{% extends "tmpl/layouts/basic.html" %}
+
+{% block content %}
+
+<div>
+{% for item in collections.posts %}
+  {% include "tmpl/partials/summary.html" %}
+{% endfor %}
+</div><br />
+
+{% endblock %}
