@@ -36,17 +36,9 @@ Metalsmith(__dirname)
     posts: {},
   }))
   .use(markdown())
-  .use(templates({
-    "directory": ".",
-    "engine": "nunjucks",
-    "inPlace": true
-  }))
-  .use(templates({
-    "directory": ".",
-    "engine": "nunjucks",
-  }))
+  .use(templates({ "directory": ".", "engine": "nunjucks", "inPlace": true }))
+  .use(templates({ "directory": ".", "engine": "nunjucks" }))
   .use(headingsidentifier())
-  .use(msstatic({"src": "styles/", "dest": "styles"}))
   .use(serve({
     "port": 8081,
     "verbose": true
