@@ -9,6 +9,7 @@ var msstatic = require('metalsmith-static')
 var serve = require('metalsmith-serve')
 var watch = require('metalsmith-watch')
 var markdown = require('metalsmith-markdown')
+var headingsidentifier = require("metalsmith-headings-identifier");
 
 var nunjucks = require('nunjucks')
 var njmd = require('nunjucks-markdown')
@@ -27,15 +28,14 @@ njmd.register(njenv, marked)
 njdate.setDefaultFormat('YYYY-MM-DD, h:mm:ss a');
 njdate.install(njenv)
 
+njenv.addFilter('dump', JSON.stringify)
 
 Metalsmith(__dirname)
   .use(debug())
-  .use(markdown())
   .use(collections({
-    posts: '*.md',
-    sortBy: 'date',
-    reverse: true
+    posts: {},
   }))
+  .use(markdown())
   .use(templates({
     "directory": ".",
     "engine": "nunjucks",
@@ -45,6 +45,7 @@ Metalsmith(__dirname)
     "directory": ".",
     "engine": "nunjucks",
   }))
+  .use(headingsidentifier())
   .use(msstatic({"src": "styles/", "dest": "styles"}))
   .use(serve({
     "port": 8081,

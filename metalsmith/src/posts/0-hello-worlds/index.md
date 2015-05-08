@@ -3,6 +3,8 @@ template: tmpl/layouts/post.html
 date: 2015-05-05
 title: Hello Worlds
 author: Juan Benet
+collection: posts
+link: /posts/0-hello-worlds
 ---
 
 ```sh

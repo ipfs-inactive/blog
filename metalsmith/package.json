@@ -8,6 +8,7 @@
     "metalsmith": "^1.7.0",
     "metalsmith-collections": "^0.7.0",
     "metalsmith-debug": "0.0.2",
+    "metalsmith-headings-identifier": "0.0.4",
     "metalsmith-markdown": "^0.2.1",
     "metalsmith-partial": "^0.1.0",
     "metalsmith-serve": "0.0.3",

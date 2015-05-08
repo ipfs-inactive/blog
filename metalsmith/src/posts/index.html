@@ -1,0 +1,13 @@
+---
+layout: tmpl/layouts/basic.html
+---
+
+<h1>Archive: {{ collections.posts.length }} posts</h1>
+
+<ul>
+{% for item in collections.posts %}
+  <li>{{ item.date | date("YYYY-MM-DD") }} -
+    <a href="{{ item.link }}">{{ item.title }}</a>
+  </li>
+{% endfor %}
+</ul>
