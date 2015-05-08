@@ -45,10 +45,10 @@ Just run
 make publish
 ```
 
-### Theme Edits
+### Theme
 
-There is a trivial `ipfs` theme inside `themes/`. It follows the standard hugo theme setup. It's based on [the example viewer](https://github.com/ipfs/examples/tree/master/webapps/example-viewer). Modify the files inside
+The layouts follow [the example viewer](https://github.com/ipfs/examples/tree/master/webapps/example-viewer). Modify the files inside
 
 ```
-themes/ipfs/layouts/
+tmpl/
 ```
