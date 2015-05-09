@@ -7,12 +7,12 @@ build: $(shell find src tmpl) build.js package.json
 	node build.js
 	# FIXME: this watches + serves. ideally it would be an option --watch.
 
-publish: published.version
-	echo "Published version "`cat latest-version`
+publish: versions/latest
+	echo "Published version "`cat versions/latest`
 
-published.version:
+versions/latest: $(shell find build/)
 	ipfs swarm peers >/dev/null || (echo "ipfs daemon must be online to publish" && exit 1)
-	ipfs add -r -q "$(builddir)" | tail -n1 >latest-version
-	grep `cat latest-version` all-versions || cat latest-version >>all-versions
+	ipfs add -r -q "$(builddir)" | tail -n1 >versions/latest
+	grep `cat versions/latest` versions/all || cat versions/latest >>versions/all
 
 .PHONY: build publish
