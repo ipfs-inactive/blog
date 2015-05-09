@@ -41,6 +41,6 @@ body .navbar-text:last-child {
   display:none !important;
 }
 
-headline {
-
+.post img {
+  width: 100%;
 }
