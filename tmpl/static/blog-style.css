@@ -44,3 +44,8 @@ body .navbar-text:last-child {
 .post img {
   width: 100%;
 }
+
+ol, ul {
+  margin-left: 0;
+  padding-left: 17px;
+}
