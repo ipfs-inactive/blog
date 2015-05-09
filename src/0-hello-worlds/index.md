@@ -28,7 +28,7 @@ You can't _yet_ "follow" the blog with ipfs, but we're working on it and expect 
 - HTTP: http://ipfs.io/blog
 - Git: `git clone https://github.com/ipfs/blog`
 - GitHub: click watch at https://github.com/ipfs/blog
-- RSS: [coming soon](https://github.com/ipfs/blog/issues/1)
+- RSS: [follow RSS Feed]({{ baseurl }}/rss.xml)
 - IPFS: [coming soon](https://github.com/ipfs/blog/issues/2)
 
 Don't miss any InterPlanetary updates!

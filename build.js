@@ -10,6 +10,8 @@ var serve = require('metalsmith-serve')
 var watch = require('metalsmith-watch')
 var markdown = require('metalsmith-markdown')
 var headingsidentifier = require("metalsmith-headings-identifier");
+var permalinks = require('metalsmith-permalinks')
+var feed = require('metalsmith-feed')
 
 var nunjucks = require('nunjucks')
 var njmd = require('nunjucks-markdown')
@@ -32,6 +34,13 @@ njenv.addFilter('dump', JSON.stringify)
 
 Metalsmith(__dirname)
   .use(debug())
+  .metadata({
+    site: {
+      title: "IPFS Blog",
+      url: "http://ipfs.io/blog/",
+      author: "The IPFS Team",
+    },
+  })
   .use(collections({
     posts: {},
   }))
@@ -39,6 +48,8 @@ Metalsmith(__dirname)
   .use(templates({ "directory": ".", "engine": "nunjucks", "inPlace": true }))
   .use(templates({ "directory": ".", "engine": "nunjucks" }))
   .use(headingsidentifier())
+  .use(permalinks())
+  .use(feed({"collection": "posts"}))
   .use(msstatic({"src": "tmpl/static", "dest": "static"}))
   .use(serve({
     "port": 8081,
