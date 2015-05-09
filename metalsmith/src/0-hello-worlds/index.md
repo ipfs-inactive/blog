@@ -1,6 +1,9 @@
 ---
-id: 0-hello-worlds
+baseurl: ../..
 template: tmpl/layouts/post.html
+breadcrumbs:
+  - {name: "0-hello-worlds", link: "./" }
+id: 0-hello-worlds
 date: 2015-05-05
 title: Hello Worlds
 author: Juan Benet

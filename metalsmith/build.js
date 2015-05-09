@@ -39,6 +39,7 @@ Metalsmith(__dirname)
   .use(templates({ "directory": ".", "engine": "nunjucks", "inPlace": true }))
   .use(templates({ "directory": ".", "engine": "nunjucks" }))
   .use(headingsidentifier())
+  .use(msstatic({"src": "tmpl/static", "dest": "static"}))
   .use(serve({
     "port": 8081,
     "verbose": true

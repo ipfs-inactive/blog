@@ -3,7 +3,8 @@
 {% block content %}
 <div>
     <h1>{{ title }}</h1>
-    <span>by {{ author }} on {{ date | date("YYYY-MM-DD") }}</span>
+    <p>by {{ author }} on {{ date | date("YYYY-MM-DD") }}</p>
+    <br />
 
     {{ contents }}
 </div>

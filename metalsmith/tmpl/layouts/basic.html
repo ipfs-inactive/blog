@@ -4,36 +4,37 @@
 <head>
 <title>ipfs blog</title>
 
-<script src="/ipfs/QmUDAZzEgxU3xfXpeAaigh21QesZFLibuPVaJDwE2QdRKP/jquery.min.js"></script>
-<script src="/ipfs/QmUDAZzEgxU3xfXpeAaigh21QesZFLibuPVaJDwE2QdRKP/marked.min.js"></script>
-<script src="/ipfs/QmUDAZzEgxU3xfXpeAaigh21QesZFLibuPVaJDwE2QdRKP/prettify.min.js"></script>
-<script src="/ipfs/QmUDAZzEgxU3xfXpeAaigh21QesZFLibuPVaJDwE2QdRKP/strapdown.js"></script>
-<script src="/ipfs/QmUDAZzEgxU3xfXpeAaigh21QesZFLibuPVaJDwE2QdRKP/params.js"></script>
-<link rel="stylesheet" href="/ipfs/QmUDAZzEgxU3xfXpeAaigh21QesZFLibuPVaJDwE2QdRKP/themes/bootstrap.min.css" />
-<link rel="stylesheet" href="/ipfs/QmUDAZzEgxU3xfXpeAaigh21QesZFLibuPVaJDwE2QdRKP/strapdown.css" />
-<link rel="stylesheet" href="/ipfs/QmUDAZzEgxU3xfXpeAaigh21QesZFLibuPVaJDwE2QdRKP/themes/bootstrap-responsive.min.css" />
-<link rel="stylesheet" href="/ipfs/QmUDAZzEgxU3xfXpeAaigh21QesZFLibuPVaJDwE2QdRKP/blog-style.css" />
+<link rel="stylesheet" href="{{ baseurl }}/static/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" href="{{ baseurl }}/static/blog-style.css" />
 
 </head>
 <body>
 
-<div class="navbar navbar-static-top">
-  <div class="navbar-inner">
-    <div class="container">
-      <div id="headline" class="brand">
-        <a href="http://ipfs.io/blog">ipfs blog</a> |
-          <a href="https://github.com/ipfs/blog/">view source</a>
-      </div>
-    </div>
-  </div>
-</div>
-
 <div class="container" id="content">
+<div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+
+<nav class="navbar">
+  <div class="navbar-header">
+    <p class="navbar-text">
+    / <a href="{{ baseurl }}">ipfs blog</a>
+    {% for bc in breadcrumbs %}
+     / <a href="{{ bc.link }}">{{ bc.name }}</a>
+    {% endfor %}
+    </p>
+  </div>
+
+  <div class="nav navbar-nav navbar-right">
+    <p class="navbar-text">
+      <a href="https://github.com/ipfs/blog/">source</a>
+    </p>
+  </div>
+</nav>
 
 {% block content %}
   {{ contents }}
 {% endblock %}
 
+</div>
 </div> <!-- container / content -->
 </body>
 </html>

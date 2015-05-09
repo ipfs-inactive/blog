@@ -23,11 +23,11 @@ This is the source repository for the [IPFS Blog](http://ipfs.io/blog).
 To create a new post:
 
 ```sh
-mkdir posts/<next-number>-<short-title>/
-touch posts/<next-number>-<short-title>/index.md
+mkdir src/<next-number>-<short-title>/
+touch src/<next-number>-<short-title>/index.md
 ```
 
-That will create a directory for the post inside `posts/`. Edit the `index.md` there. Place any static assets (e.g. images) inside that directory.
+That will create a directory for the post inside `src/`. Edit the `index.md` there. Place any static assets (e.g. images) inside that directory.
 
 ### Live editing
 
