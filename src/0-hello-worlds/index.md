@@ -1,5 +1,5 @@
 ---
-baseurl: ../..
+baseurl: ..
 template: tmpl/layouts/post.html
 breadcrumbs:
   - {name: "0-hello-worlds", link: "./" }
