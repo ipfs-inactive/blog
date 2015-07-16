@@ -10,13 +10,11 @@ author: Kyle Drake
 collection: posts
 ---
 
-<a href="https://www.docker.com/">Docker</a> has become something of a standard for containerizing applications, even being used as the container standard for <a href="http://kubernetes.io/">Kubernetes</a>, Google's project to build an open source version of their internal clustering systems.
+In recent years, Docker and a few other projects have redefined how we run server applications. In the future, containerized applications could even improve how we run apps in our personal devices. At its core, this fast-paced improvement is a combination of good interfaces to standardize how to do things, and great tooling to make using containers easy.
 
-There's a ridiculous amount of churn in this space, including recent work to <a href="http://runc.io/">develop an industry standard for containers</a> that will likely add even more churn. But it looks like the Docker format will be supported for quite some time, and whatever the new standard ends up being will probably look a lot like Docker.
+The IPFS Project has many things planned for the world of containers. The most interesting is using IPFS to distribute containers hyper efficiently across data-centers and the internet. We will be discussing many of these things in upcoming posts, but first things first. This post is a quick guide for running an IPFS node directly within Docker.
 
-In my occasional role as a sysadmin, I definitely understand what containers bring to the table. I've configured many systems in the past, and then dealt with the frustration of figuring out how to configure them again, or quickly deploy and scale software to multiple servers, and make sure they don't consume too many resources and take systems down.
-
-The IPFS team has provided an <a href="https://registry.hub.docker.com/u/jbenet/go-ipfs/">IPFS Docker image</a>, which is syncronized with the latest commits to <a href="https://github.com/ipfs/go-ipfs">go-ipfs</a>. It only takes a few commands to try it out!
+The IPFS team has provided an [IPFS Docker image](https://registry.hub.docker.com/u/jbenet/go-ipfs/), which is syncronized with the latest commits to [go-ipfs](https://github.com/ipfs/go-ipfs). It only takes a few commands to try it out!
 
 ```sh
 mkdir /tmp/ipfs-docker-staging
@@ -24,8 +22,10 @@ mkdir /tmp/ipfs-docker-data
 docker run -d --name ipfs-node -v /tmp/ipfs-docker-staging:/export -v /tmp/ipfs-docker-data:/data/ipfs -p 8080:8080 -p 4001:4001 -p 5001:5001 jbenet/go-ipfs:latest
 ```
 
-8080 is the HTTP Gateway, which allows you to query ipfs data with your browser (<a href="http://gateway.ipfs.io/ipfs/QmVyS3iAy7mvDA2HqQWm2aqZDcGDH3bCRLFkEutfBWNBqN/">example</a>). 4001 is what swarm port IPFS uses to communicate with other nodes, and port 5001 is used for the local API.
+8080 is the HTTP Gateway, which allows you to query ipfs data with your browser ([example](http://gateway.ipfs.io/ipfs/QmVyS3iAy7mvDA2HqQWm2aqZDcGDH3bCRLFkEutfBWNBqN/)), 4001 is what swarm port IPFS uses to communicate with other nodes, and port 5001 is used for the local API.
 
 We've mounted a data and staging volume. The `data` volume is used to store the IPFS config and the database, and `staging` is a directory you can use for staging files for command line usage (such as `ipfs add`). If you're only using the API, you can omit the staging directory volume. And of course, feel free to put those directories somewhere other than `/tmp`.
 
-<a href="http://kuberneteslaunch.com">Kubernetes 1.0</a> comes out next week, so after that, we'll try using it to build a cluster of IPFS nodes that can store any kind of data and be able to retreive it from any other IPFS node. Not just with IPFS nodes in your cluster, but with everyone!
+[Kubernetes 1.0](http://kuberneteslaunch.com) comes out next week, so after that, we'll try using it to build a cluster of IPFS nodes that can store any kind of data and be able to retreive it from any other IPFS node. Not just with IPFS nodes in your cluster, but with everyone!
+
+![](docker.gif)
