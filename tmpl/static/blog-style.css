@@ -5,6 +5,8 @@ body {
 body,
 body p {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.7;
+  margin-bottom: 30px;
 }
 
 body h1,
@@ -42,7 +44,9 @@ body .navbar-text:last-child {
 }
 
 .post img {
-  width: 100%;
+  width: 120%;
+  margin-left: -10%;
+  text-align: justify;
 }
 
 ol, ul {
