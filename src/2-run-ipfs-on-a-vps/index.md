@@ -10,16 +10,14 @@ author: Kyle Drake
 collection: posts
 ---
 
-The best way to provide content using [IPFS](https://ipfs.io) is to run your own IPFS node. You can do this by running an IPFS node on your personal computer, but that will only work as long as your computer is running. For hosting content with a higher availability, you need to run an IPFS node in a datacenter. That ensures your content is always online and available to other nodes on the network.
+The best way to provide content using [IPFS](https://ipfs.io) is to run your own IPFS node. You can do this by running an IPFS node on your personal computer, but that will only work as long as your computer is running. For users running mostly from laptops or with bandwidth constraints, it is useful to run IPFS nodes in a datacenter, and pinning the content there too. This ensures your content is replicated, online, and available to other nodes on the network.
 
 VPS instances provided by [Digital Ocean](https://www.digitalocean.com/), [Ramnode](http://ramnode.com/), [Linode](https://www.linode.com/), [Vultr](https://www.vultr.com/) and many other providers allow you to quickly setup your own Linux server with the reliability of a managed dedicated server without the full cost. This is a quick guide to setting up your own dedicated IPFS node on a VPS. We'll be using [Ubuntu](http://www.ubuntu.com/) 14.04LTS 64-bit for the example.
 
-First, some initial housekeeping I like to do. We're going to update the installed system to make sure that it has the latest updates. We're also going to turn on unattended updates, so that security patches can be done automatically without your intervention, and setup OpenNTP so the system clock is automatically updated:
+First, let's get the packages we'll need to install IPFS:
 
     apt-get update
-    apt-get upgrade
-    apt-get install openntpd unattended-upgrades unzip wget
-    dpkg-reconfigure unattended-upgrades
+    apt-get install unzip wget
 
 Now you can download the latest build of IPFS from the [install page](https://ipfs.io/docs/install/). We'll be using Linux x86_64:
 
@@ -36,10 +34,14 @@ First let's initialize the IPFS config:
 
     ipfs init
 
-This installs a basic IPFS config file for you.
+This generates a basic IPFS config file for your user.
 
-Now we'll add a blocklist for local networks. IPFS works by actively seeking nearby nodes to connect to, which is a good thing for performance and availability. Unfortunately, many VPS providers incorrectly detect this as malware activity, so this is a temporary workaround you can use for now:
+IPFS works by actively seeking nearby nodes to connect to, which is a good thing for performance and availability, particularly in home and office networks. This causes addresses in the networks to be dialed that may not be there. Unfortunately, some VPS providers incorrectly classify this as suspicious activity, and some even have blocked nodes for doing so. To avoid this, let's add two things to the config file:
 
+    # 1. disable mDNS discovery
+    ipfs config --json Discovery.MDNS.Enabled false
+
+    # 2. filter out local network addresses
     ipfs config --json Swarm.AddrFilters '[
       "/ip4/10.0.0.0/ipcidr/8",
       "/ip4/100.64.0.0/ipcidr/10",
