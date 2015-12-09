@@ -48,8 +48,6 @@ body .navbar-text:last-child {
 }
 
 .post img {
-  width: 120%;
-  margin-left: -10%;
 }
 
 .post iframe {
@@ -66,3 +64,5 @@ ol, ul {
 .post .hljs {
   background: none;
 }
+
+
