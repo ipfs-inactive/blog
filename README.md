@@ -45,6 +45,9 @@ Just run
 
 ```sh
 make publish
+
+# and deploy
+make dnslink
 ```
 
 ### Theme
@@ -53,4 +56,18 @@ The layouts follow [the example viewer](https://github.com/ipfs/examples/tree/ma
 
 ```
 tmpl/
+```
+
+### Known Issues
+
+On Ubuntu, `make build` might fail: https://github.com/arve0/codeclub_lesson_builder/issues/39#issuecomment-71342456
+
+```
+Error: watch ENOSPC
+```
+
+This works around it:
+
+```
+echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
 ```

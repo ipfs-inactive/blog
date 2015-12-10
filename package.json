@@ -4,6 +4,7 @@
   "description": "ipfs blog",
   "main": "index.js",
   "dependencies": {
+    "dnslink-deploy": "^1.0.1",
     "marked": "^0.3.3",
     "metalsmith": "^1.7.0",
     "metalsmith-collections": "^0.7.0",
