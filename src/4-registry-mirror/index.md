@@ -94,7 +94,7 @@ npm http fetch 200 http://localhost:9595/bignumber/-/bignumber-1.1.0.tgz
 
 With `registry-mirror`, a registry becomes a curated list of hashes. While the modules live in the network, as soon as `registry-mirror` caches this list locally (which it gets from the IPFS network), it has a list of the hashes of the modules that a user might need in the future. With this list, a user doesn't have to know of the whereabouts of a module until it needs to request it from the network.
 
-This list is fetched and kept up to date through IPNS, and since IPNS records are signed and validated, there is no way for the list to be compromised (with the exception of the case where the private key of the publisher is compromised).
+This list is fetched and kept up to date through IPNS. This ensures secure distribution, as IPNS records and validated with the publisher's priate key.
 
 #### Work offline/disconnected
 
