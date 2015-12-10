@@ -14,7 +14,7 @@ In recent years, Docker and a few other projects have redefined how we run serve
 
 The IPFS Project has many things planned for the world of containers. The most interesting is using IPFS to distribute containers hyper efficiently across data-centers and the internet. We will be discussing many of these things in upcoming posts, but first things first. This post is a quick guide for running an IPFS node directly within Docker.
 
-The IPFS team has provided an [IPFS Docker image](https://registry.hub.docker.com/u/jbenet/go-ipfs/), which is syncronized with the latest commits to [go-ipfs](https://github.com/ipfs/go-ipfs). It only takes a few commands to try it out!
+The IPFS team has provided an [IPFS Docker image](//registry.hub.docker.com/u/jbenet/go-ipfs/), which is syncronized with the latest commits to [go-ipfs](//github.com/ipfs/go-ipfs). It only takes a few commands to try it out!
 
 ```sh
 > mkdir /tmp/ipfs-docker-staging
@@ -26,7 +26,7 @@ The IPFS team has provided an [IPFS Docker image](https://registry.hub.docker.co
 faa8f714398c7a1a5a29adc2aed01857b41444ed53ec11863a3136ad37c8064c
 ```
 
-Port `8080` is the HTTP Gateway, which allows you to query ipfs data with your browser ([see this example](http://gateway.ipfs.io/ipfs/QmVyS3iAy7mvDA2HqQWm2aqZDcGDH3bCRLFkEutfBWNBqN/)), port `4001` is what swarm port IPFS uses to communicate with other nodes, and port `5001` is used for the local API. We bind `5001` only on `127.0.0.1` because it should not be exposed to the outside world. The `faa8f7143...` is the docker container id.
+Port `8080` is the HTTP Gateway, which allows you to query ipfs data with your browser ([see this example](//ipfs.io/ipfs/QmVyS3iAy7mvDA2HqQWm2aqZDcGDH3bCRLFkEutfBWNBqN/)), port `4001` is what swarm port IPFS uses to communicate with other nodes, and port `5001` is used for the local API. We bind `5001` only on `127.0.0.1` because it should not be exposed to the outside world. The `faa8f7143...` is the docker container id.
 
 We've mounted a data and staging volume. The `data` volume is used to store the IPFS local repo (config and database), and `staging` is a directory you can use for staging files for command line usage (such as `ipfs add`). If you're only using the API, you can omit the staging directory volume. And of course, feel free to put those directories somewhere other than `/tmp`.
 
@@ -62,4 +62,4 @@ hello from dockerized ipfs
 [Kubernetes 1.0](http://kuberneteslaunch.com) comes out next week, so after that, we'll try using it to build a cluster of IPFS nodes that can store any kind of data and be able to retreive it from any other IPFS node. Not just with IPFS nodes in your cluster, but with everyone!
 
 <iframe src="./ascii" style="width: 737px; height: 509px; overflow: hidden;" scrolling="no"></iframe>
-<p class="powered">asciicast powered by <a href="https://asciinema.org/" target="_top">asciinema</a></p>
+<p class="powered">asciicast powered by <a href="//asciinema.org/" target="_top">asciinema</a></p>

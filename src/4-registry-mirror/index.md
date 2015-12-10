@@ -11,22 +11,22 @@ author: David Dias
 collection: posts
 ---
 
-![](/img/node-interactive-logo.png)
+![](node-interactive-logo.png)
 
 Node.js Interactive, the first Node.js conference organized by the Linux Foundation, happened on Dec 8-9 of 2015. There were hundreds of participants, and dozens of really amazing talks divided in 3 specific tracks: backend, frontend and IoT.
 
-I was fortunate to attend and present a project we've been developing at [Protocol Labs](https://ipn.io), that builds on on top of [IPFS, the InterPlanetary FileSystem](https://ipfs.io).
+I was fortunate to attend and present a project we've been developing at [Protocol Labs](//ipn.io), that builds on on top of [IPFS, the InterPlanetary FileSystem](//ipfs.io).
 
-You can learn about that project in this blog post, check out the [talk slides](http://www.slideshare.net/DavidDias11/nodejs-interactive) or wait for the video recording of the talk. I will update this blog post when that happens.
+You can learn about that project in this blog post, check out the [talk slides](//www.slideshare.net/DavidDias11/nodejs-interactive) or wait for the video recording of the talk. I will update this blog post when that happens.
 
 ## Enter registry-mirror
 
-![](/img/enter-registry-mirror.png)
-[![](https://img.shields.io/badge/made%20by-Protocol%20Labs-blue.svg?style=flat-square)](http://ipn.io) [![](https://img.shields.io/badge/project-IPFS-blue.svg?style=flat-square)](http://ipfs.io/) [![](https://img.shields.io/badge/freenode-%23ipfs-blue.svg?style=flat-square)](http://webchat.freenode.net/?channels=%23ipfs)
+![](enter-registry-mirror.png)
+[![](//img.shields.io/badge/made%20by-Protocol%20Labs-blue.svg?style=flat-square)](//ipn.io) [![](//img.shields.io/badge/project-IPFS-blue.svg?style=flat-square)](//ipfs.io/) [![](//img.shields.io/badge/freenode-%23ipfs-blue.svg?style=flat-square)](//webchat.freenode.net/?channels=%23ipfs)
 
 `registry-mirror` enables distributed discovery of npm modules by fetching and caching the latest state of npm through IPNS, the InterPlanetary Naming System. With this state, a node in the network is capable of querying IPFS network for an npm module's cryptographic hash, fetching it from any peer that has it available.
 
-`registry-mirror` is open source, MIT licensed and available at [github.com/diasdavid/registry-mirror](https://github.com/diasdavid/registry-mirror).
+`registry-mirror` is open source, MIT licensed and available at [github.com/diasdavid/registry-mirror](//github.com/diasdavid/registry-mirror).
 
 ## Getting started
 
@@ -34,17 +34,17 @@ In order to get started, you must first be sure that you are running IPFS 0.4.0.
 
 #### Compiling from source
 
-You can find a tutorial on how to compile and install IPFS from source at [https://github.com/ipfs/go-ipfs#build-from-source](https://github.com/ipfs/go-ipfs#build-from-source). Just make sure to change to the `dev0.4.0` branch, as 0.4.0 isn't released yet.
+You can find a tutorial on how to compile and install IPFS from source at [//github.com/ipfs/go-ipfs#build-from-source](https://github.com/ipfs/go-ipfs#build-from-source). Just make sure to change to the `dev0.4.0` branch, as 0.4.0 isn't released yet.
 
 Please make sure you have go 1.5.2 or above installed.
 
 #### Downloading pre-built Binary
 
-Download the pre-built binary for your OS and Arch at [gobuilder](https://gobuilder.me/github.com/ipfs/go-ipfs/cmd/ipfs?branch=v0.4.0-dev).
+Download the pre-built binary for your OS and Arch at [gobuilder](//gobuilder.me/github.com/ipfs/go-ipfs/cmd/ipfs?branch=v0.4.0-dev).
 
 #### Installing and running registry-mirror
 
-Once you have IPFS 0.4.0 available, install registry-mirror by running the following command (you should have Node.js 4 and npm 2 or above available): 
+Once you have IPFS 0.4.0 available, install registry-mirror by running the following command (you should have Node.js 4 and npm 2 or above available):
 
 ```bash
 $ npm i registry-mirror -g
@@ -88,7 +88,7 @@ npm http fetch 200 http://localhost:9595/bignumber/-/bignumber-1.1.0.tgz
 
 ## Features
 
-`registry-mirror` itself is quite a simple application, as most of the heavy lifting is done by [IPFS](https://ipfs.io). IPFS's distributed nature affords a set of really nice features as a transport layer that `registry-mirror` leverages to create its service.
+`registry-mirror` itself is quite a simple application, as most of the heavy lifting is done by [IPFS](//ipfs.io). IPFS's distributed nature affords a set of really nice features as a transport layer that `registry-mirror` leverages to create its service.
 
 #### Find where the module lives without having to hit the backbone
 
@@ -114,8 +114,8 @@ By leveraging local and network caches efficiently, downloading your dependencie
 
 ## Demo Video
 
-<iframe src="https://player.vimeo.com/video/147968322" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="https://vimeo.com/147968322">registry-mirror demo</a> from <a href="https://vimeo.com/daviddias">David Dias</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+<iframe src="//player.vimeo.com/video/147968322" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="//vimeo.com/147968322">registry-mirror demo</a> from <a href="//vimeo.com/daviddias">David Dias</a> on <a href="//vimeo.com">Vimeo</a>.</p>
 
 ## A special thanks
 
-A very big thank you goes to [Bryan English](https://github.com/bengl) and everyone that was involved in the [discussion](https://github.com/ipfs/notes/issues/2) and contributed to make this possible.
+A very big thank you goes to [Bryan English](//github.com/bengl) and everyone that was involved in the [discussion](//github.com/ipfs/notes/issues/2) and contributed to make this possible.
