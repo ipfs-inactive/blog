@@ -98,7 +98,7 @@ This list is fetched and kept up to date through IPNS. This ensures secure distr
 
 #### Work offline/disconnected
 
-Just like git, `registry-mirror` is able to work offline and/or in a disconnected scenario. As long as the module you are looking for exists in the network you are currently in, IPFS would be able to find it through Peer and Content Routing (with a DHT).
+Just like git, `registry-mirror` is able to work offline and/or in a disconnected scenario. As long as the module you are looking for exists in the network you are currently in, IPFS would be able to find it through its Peer and Content Routing (e.g. with a DHT).
 
 #### Enable several registries to coexist
 
@@ -106,7 +106,7 @@ Once the notion of a registry becomes a curated list of modules available, enabl
 
 #### Run only what you were looking for
 
-Through cryptographic hashing -- the IPFS strategy to find, deliver and check that the content it received was what was requested -- you can always be sure that what you are running was what you were looking for.
+Just like git, IPFS verifies the content received using cryptographic hashing, making sure it is exactly what was requested -- you can always be sure that what you are running is what you asked for.
 
 #### Faster
 
