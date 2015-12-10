@@ -94,11 +94,11 @@ npm http fetch 200 http://localhost:9595/bignumber/-/bignumber-1.1.0.tgz
 
 With `registry-mirror`, a registry becomes a curated list of hashes. While the modules live in the network, as soon as `registry-mirror` caches this list locally (which it gets from the IPFS network), it has a list of the hashes of the modules that a user might need in the future. With this list, a user doesn't have to know of the whereabouts of a module until it needs to request it from the network.
 
-This list is fetched and kept up to date through IPNS, and since IPNS records are signed and validated, there is no way for the list to be compromised (with the exception of the case where the private key of the publisher is compromised).
+This list is fetched and kept up to date through IPNS. This ensures secure distribution, as IPNS records and validated with the publisher's priate key.
 
 #### Work offline/disconnected
 
-Just like git, `registry-mirror` is able to work offline and/or in a disconnected scenario. As long as the module you are looking for exists in the part of the network you are currently in, IPFS would be able to find it through Peer and Content Routing (with a DHT).
+Just like git, `registry-mirror` is able to work offline and/or in a disconnected scenario. As long as the module you are looking for exists in the network you are currently in, IPFS would be able to find it through its Peer and Content Routing (e.g. with a DHT).
 
 #### Enable several registries to coexist
 
@@ -106,7 +106,7 @@ Once the notion of a registry becomes a curated list of modules available, enabl
 
 #### Run only what you were looking for
 
-Through cryptographic hashing -- the IPFS strategy to find, deliver and check that the content it received was what was requested -- you can always be sure that what you are running was what you were looking for.
+Just like git, IPFS verifies the content received using cryptographic hashing, making sure it is exactly what was requested -- you can always be sure that what you are running is what you asked for.
 
 #### Faster
 
