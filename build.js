@@ -36,7 +36,7 @@ Metalsmith(__dirname)
   .metadata({
     site: {
       title: 'IPFS Blog',
-      url: 'http://ipfs.io/blog/',
+      url: 'https://ipfs.io/blog/',
       author: 'The IPFS Team'
     }
   })

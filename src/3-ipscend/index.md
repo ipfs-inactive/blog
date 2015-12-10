@@ -11,9 +11,9 @@ author: David Dias
 collection: posts
 ---
 
-[![](/img/ipscend.png)](https://github.com/diasdavid/ipscend)
+[![](ipscend.png)](//github.com/diasdavid/ipscend)
 
-[`ipscend`](https://github.com/diasdavid/ipscend) is a new tool to help developers publish their static web content to IPFS and share it easily, while keeping history and more. It is heavily inspired by previous static web content publishing tools, like GitHub Pages and surge.
+[`ipscend`](//github.com/diasdavid/ipscend) is a new tool to help developers publish their static web content to IPFS and share it easily, while keeping history and more. It is heavily inspired by previous static web content publishing tools, like GitHub Pages and surge.
 
 ## Features
 
@@ -24,7 +24,7 @@ Currently, `ipscend` offers a set of features, accessible through a CLI, and ins
 - `ipscend preview` - Serves your application on a local static file server, so that you can try it out before you feel ready to publish it.
 - `ipscend publish` - Publishes the current state of your application to IPFS and stores a reference to it.
 - `ipscend screenshot` - Opens a screenshot preview of all the published versions of your app. In order to generate the screenshots, you must first run `ipscend screenshot --gen`.
-![](http://zippy.gfycat.com/TameDampKob.gif)
+![](versions.gif)
 - `ipscend versions` - Prints out the published versions for the app and its respective timestamp.
 
 An `ipscend.json` object for a project with some published versions will look like:
@@ -86,7 +86,7 @@ $ cat ipscend.json
   "path": "src/public"
 ```
 
-Grab that hash and share it with your friends, by sending them a link to ipfs.io, appending "/ipfs/Hash" (e.g.  https:/ipfs.io/ipfs/ QmVNgdUoBQHiBhSeDe2z8LttJaDZq7JZi17sR1SPnJmjMh).
+Grab that hash and share it with your friends, by sending them a link to ipfs.io, appending "/ipfs/Hash" (e.g. https://ipfs.io/ipfs/QmVNgdUoBQHiBhSeDe2z8LttJaDZq7JZi17sR1SPnJmjMh).
 
 If you want to use your awesome.domain.com to load your page from IPFS, you can check how to do it now at https://github.com/diasdavid/ipscend#use-ipfs-to-host-your-webpage-using-a-standard-domain-includes-cool-dns-trick.
 
@@ -96,9 +96,9 @@ If you want to use your awesome.domain.com to load your page from IPFS, you can 
 
 - Extract the version from the VCS itself (https://github.com/ipfs/notes/issues/23), so that every commit can be a different working version, allowing you to test every commit in your CI.
 - Roll back history, following the 'time machine' analogy.
-- Update your DNS provider automatically, avoiding having to use an external tool like [`dnslink-deploy`](https://github.com/ipfs/dnslink-deploy).
+- Update your DNS provider automatically, avoiding having to use an external tool like [`dnslink-deploy`](//github.com/ipfs/dnslink-deploy).
 - Enable reviewers to write notes.
 - Take screenshots in every browser version, so that we can use the timeline to see if there was any regression at a point in time, which might happen in a specific browser.
 - moaaaar :D If you have ideas or want to contribute, ipscend is fully MIT Licensed, so feel free to open a issue or PR on https://github.com/diasdavid/ipscend.
 
-A big thank you to [Andrés Gutgon](https://github.com/andresgutgon) who made the screenshot preview look [really good](https://github.com/diasdavid/ipscend-screenshot-visualizer/pull/1)
+A big thank you to [Andrés Gutgon](//github.com/andresgutgon) who made the screenshot preview look [really good](//github.com/diasdavid/ipscend-screenshot-visualizer/pull/1)

@@ -79,8 +79,8 @@ function remapKeys (obj, keyMap) {
 }
 ```
 
-You can find this code available as an npm module [remap-keys](https://www.npmjs.com/package/remap-keys).
+You can find this code available as an npm module [remap-keys](//www.npmjs.com/package/remap-keys).
 
-Unfortunately, it is very hard to revert these decisions, since it would break the current developers expectations. A newer, recent finding of encoder/decoder that doesn't comply with the expectation is [node-cbor](https://www.npmjs.com/package/cbor). In this case, the decoder function returns the decoded objects inside an Array, even if the encoded data was a single object. If you would like to participate in the discussion to find a good approach to fix this (if you consider it needs to be changed), visit https://github.com/hildjj/node-cbor/issues/21.
+Unfortunately, it is very hard to revert these decisions, since it would break the current developers expectations. A newer, recent finding of encoder/decoder that doesn't comply with the expectation is [node-cbor](//www.npmjs.com/package/cbor). In this case, the decoder function returns the decoded objects inside an Array, even if the encoded data was a single object. If you would like to participate in the discussion to find a good approach to fix this (if you consider it needs to be changed), visit //github.com/hildjj/node-cbor/issues/21.
 
 In summary, I hope this post helped expose how we can not always assume that our data won't be mangled once it traverses a encoding -> decoding routine, although we should shoot to build codecs that are idempotent and deterministic for discrete sets of data.
