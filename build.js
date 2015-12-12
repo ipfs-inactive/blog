@@ -10,6 +10,7 @@ var markdown = require('metalsmith-markdown')
 var permalinks = require('metalsmith-permalinks')
 var feed = require('metalsmith-feed')
 var msstatic = require('metalsmith-static')
+var drafts = require('metalsmith-drafts')
 var headingsidentifier = require('metalsmith-headings-identifier')
 
 var nunjucks = require('nunjucks')
@@ -33,6 +34,7 @@ njenv.addFilter('dump', JSON.stringify)
 
 Metalsmith(__dirname)
   .use(debug())
+  .use(drafts())
   .metadata({
     site: {
       title: 'IPFS Blog',
