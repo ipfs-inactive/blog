@@ -11,7 +11,7 @@ author: David Dias
 collection: posts
 ---
 
-![](/img/node-interactive-logo.png)
+![](img/node-interactive-logo.png)
 
 Node.js Interactive, the first Node.js conference organized by the Linux Foundation, happened on Dec 8-9 of 2015. There were hundreds of participants, and dozens of really amazing talks divided in 3 specific tracks: backend, frontend and IoT.
 
@@ -21,7 +21,7 @@ You can learn about that project in this blog post, check out the [talk slides](
 
 ## Enter registry-mirror
 
-![](/img/enter-registry-mirror.png)
+![](img/enter-registry-mirror.png)
 [![](https://img.shields.io/badge/made%20by-Protocol%20Labs-blue.svg?style=flat-square)](http://ipn.io) [![](https://img.shields.io/badge/project-IPFS-blue.svg?style=flat-square)](http://ipfs.io/) [![](https://img.shields.io/badge/freenode-%23ipfs-blue.svg?style=flat-square)](http://webchat.freenode.net/?channels=%23ipfs)
 
 `registry-mirror` enables distributed discovery of npm modules by fetching and caching the latest state of npm through IPNS, the InterPlanetary Naming System. With this state, a node in the network is capable of querying IPFS network for an npm module's cryptographic hash, fetching it from any peer that has it available.
@@ -44,7 +44,7 @@ Download the pre-built binary for your OS and Arch at [gobuilder](https://gobuil
 
 #### Installing and running registry-mirror
 
-Once you have IPFS 0.4.0 available, install registry-mirror by running the following command (you should have Node.js 4 and npm 2 or above available): 
+Once you have IPFS 0.4.0 available, install registry-mirror by running the following command (you should have Node.js 4 and npm 2 or above available):
 
 ```bash
 $ npm i registry-mirror -g

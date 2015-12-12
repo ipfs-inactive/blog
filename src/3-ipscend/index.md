@@ -11,7 +11,7 @@ author: David Dias
 collection: posts
 ---
 
-[![](/img/ipscend.png)](https://github.com/diasdavid/ipscend)
+[![](!img/ipscend.png)](https://github.com/diasdavid/ipscend)
 
 [`ipscend`](https://github.com/diasdavid/ipscend) is a new tool to help developers publish their static web content to IPFS and share it easily, while keeping history and more. It is heavily inspired by previous static web content publishing tools, like GitHub Pages and surge.
 
@@ -23,9 +23,10 @@ Currently, `ipscend` offers a set of features, accessible through a CLI, and ins
 - `ipscend init` - Initializes your project. Asks for the folder where the web application will be available and stores an `ipscend.json` object in your current path to store all the metadata it generates, such as published versions and taken screenshots.
 - `ipscend preview` - Serves your application on a local static file server, so that you can try it out before you feel ready to publish it.
 - `ipscend publish` - Publishes the current state of your application to IPFS and stores a reference to it.
-- `ipscend screenshot` - Opens a screenshot preview of all the published versions of your app. In order to generate the screenshots, you must first run `ipscend screenshot --gen`.
-![](http://zippy.gfycat.com/TameDampKob.gif)
 - `ipscend versions` - Prints out the published versions for the app and its respective timestamp.
+- `ipscend screenshot` - Opens a screenshot preview of all the published versions of your app. In order to generate the screenshots, you must first run `ipscend screenshot --gen`.
+
+![](img/ipscend-screenshot.gif)
 
 An `ipscend.json` object for a project with some published versions will look like:
 
