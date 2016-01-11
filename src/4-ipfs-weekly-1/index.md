@@ -1,12 +1,12 @@
 ---
 date: 2016-01-11
-id: 4-ipfs-weekly-no-1
+id: 4-ipfs-weekly-1
 template: tmpl/layouts/post.html
 baseurl: ..
 breadcrumbs:
-  - {name: "4-ipfs-weekly-no-1", link: "./" }
+  - {name: "4-ipfs-weekly-1", link: "./" }
 tags: weekly
-title: IPFS Weekly No. 1
+title: IPFS Weekly 1
 author: Richard Littauer, Andrew Chin
 collection: posts
 ---
