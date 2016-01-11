@@ -11,8 +11,6 @@ author: Richard Littauer, Andrew Chin
 collection: posts
 ---
 
-# IPFS Weekly #1
-
 Welcome to the first edition of IPFS Weekly!
 
 [IPFS](//ipfs.io/) is a new hypermedia distribution protocol, addressed by content and identities, aiming to make the web faster, safer, and more open.  In these posts, we will try to highlight some of the development that happened in the past week.  For anyone looking to get involved, follow the embedded hyperlinks, search the wealth of information on [github](//github.com/ipfs) or join us on [IRC](//webchat.freenode.net/?channels=ipfs) (#ipfs on the Freenode network).
