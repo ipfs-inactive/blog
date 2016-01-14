@@ -19,7 +19,7 @@ application spotlights, and more.
 <p>starlog entries: {{ collections.posts.length }}</p>
 
 <ul>
-{% for item in collections.posts %}
+{% for item in collections.posts | reverse %}
   <li>{{ item.date | date("YYYY-MM-DD") }} -
     <a href="{{ item.id }}">{{ item.title }}</a>
   </li>
