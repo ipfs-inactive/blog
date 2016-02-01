@@ -13,7 +13,7 @@ collection: posts
 
 [![](!img/screenshot.png)](http://dist.ipfs.io/)
 
-[dist.ipfs.io](http://dist.ipfs.io/) is the new distributions page for IPFS. This is the new one-stop-shop for finding and downlaoding all official binaries that IPFS produces.
+[dist.ipfs.io](http://dist.ipfs.io/) is the new distributions page for IPFS. This is the new one-stop-shop for finding and downloading all official binaries that IPFS produces.
 
 ## Project details
 
@@ -25,7 +25,7 @@ Every distribution has a section, which includes:
 - A download button that detects your platform and automatically suggests the appropriate distribution for you;
 - A grid with download links for all supported platforms (operating system and architectures);
 - A `Changelog`, a link to a summary of all version changes;
-- A `All Versions`, a link to view and download previous versions.
+- An `All Versions`, a link to view and download previous versions.
 
 The `All Versions` link on each distribution shows directory listings for all the available versions, and a `versions` file ([example](http://dist.ipfs.io/go-ipfs/versions)). This file can be used by tools, such as [ipfs-update](http://dist.ipfs.io/#ipfs-update), to find all the available versions and download the latest.
 
@@ -52,10 +52,10 @@ If you think that a product should be there that isn't, get in touch.
 In the future, we hope to:
 
 - Enable better code signing for each distribution. (__I'm not sure what this means__)
-- Enable closer integration with package mangagers.
+- Enable closer integration with package managers.
 - Add more products, like [`ipget`](https://github.com/noffle/ipget) (already in the works).
 - Host more screenshots of the tools directly in the Distributions page.
-- Import binaries more intelligently in order to enchance change of deduplication.
+- Import binaries more intelligently in order to enhance change of deduplication.
 
 ## Contribute
 
