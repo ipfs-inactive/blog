@@ -19,7 +19,7 @@ This is a double weekly: here are some of the highlights for the [January 12th](
 
 ## Updates
 
-* [**dist.ipfs.io**](https://dist.ipfs.io) A distributions page has been shipped! This was largely spearheaded by [@dignifiedquire](//github.com/dignifiedquire). This is the new one-stop-shop for finding and downloading all official binaries that IPFS produces. Each project has:
+* [**dist.ipfs.io**](http://dist.ipfs.io) A distributions page has been shipped! This was largely spearheaded by [@dignifiedquire](//github.com/dignifiedquire). This is the new one-stop-shop for finding and downloading all official binaries that IPFS produces. Each project has:
   - The distribution name and a short description;
   - The current version number and release date;
   - A download button that detects your platform and automatically suggests the appropriate distribution for you;
