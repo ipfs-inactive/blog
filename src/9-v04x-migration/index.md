@@ -11,8 +11,11 @@ author: Lars Gierth
 collection: posts
 ---
 
-Good news everyone! We are about to release go-ipfs 0.4.0,
+Good news everyone! We'll soon release go-ipfs 0.4.0,
 which contains lots of great changes and enhancements.
+An upcoming post will detail the improvements of 0.4.0.
+This post is about important things to be aware of when upgrading.
+Users who already rely on go-ipfs or the ipfs.io services should pay special attention.
 
 There are breaking changes
 which prevent 0.4.x nodes from communicating with 0.3.x nodes.
@@ -48,11 +51,13 @@ All development effort is directed towards 0.4.0, and you should update as soon 
 
 ## How do I update go-ipfs to 0.4.0?
 
-You can:
+Until we release 0.4.0, you can update by [building from source][ipfs-source].
+
+After the release, you can:
 
 - Use the brand new [ipfs-update tool][ipfs-update] to update go-ipfs **(recommended)**
-- download [the new go-ipfs binaries][ipfs-binary] and install them.
-- download [the new source][ipfs-github] and [build it yourself][ipfs-source].
+- Download [the new go-ipfs binaries][ipfs-binary] and install them.
+- Download [the new source][ipfs-github] and [build it yourself][ipfs-source].
 
 Please note that installation with `go get` does not work at this time.
 We are experimenting with [gx, the new IPFS-based package manager][gx].
