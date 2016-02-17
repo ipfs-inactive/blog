@@ -50,7 +50,7 @@ If you think that a product should be there that isn't, get in touch.
 
 In the future, we hope to:
 
-- Enable better code signing for each distribution. (__I'm not sure what this means__)
+- Enable code signing, for progress on this subject you can check this [PR]( https://github.com/ipfs/distributions/pull/51).
 - Enable closer integration with package managers.
 - Add more products, like [`ipget`](https://github.com/noffle/ipget) (already in the works).
 - Host more screenshots of the tools directly in the Distributions page.
