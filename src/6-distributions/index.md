@@ -21,7 +21,6 @@ Every distribution has a section, which includes:
 
 - The distribution name and a short description;
 - The current version number and release date;
-- The software license (usually MIT);
 - A download button that detects your platform and automatically suggests the appropriate distribution for you;
 - A grid with download links for all supported platforms (operating system and architectures);
 - A `Changelog`, a link to a summary of all version changes;
@@ -56,6 +55,7 @@ In the future, we hope to:
 - Add more products, like [`ipget`](https://github.com/noffle/ipget) (already in the works).
 - Host more screenshots of the tools directly in the Distributions page.
 - Import binaries more intelligently in order to enhance change of deduplication.
+- Add the software license (usually MIT) to each distribution.
 
 ## Contribute
 
