@@ -30,10 +30,6 @@ The `All Versions` link on each distribution shows directory listings for all th
 
 The directory listing of each version ([example](http://dist.ipfs.io/go-ipfs/v0.3.11)) has all the platform archives (`.zip` or `.tar.gz`), a `README.md` and a `dist.json` which describe the release for humans and machines. It is meant to be easily consumed and used by tools.
 
-## The Site
-
-The site itself is, unsurprisingly but still awesomely, hosted on IPFS. All of the binaries are also hosted on IPFS. This means that you can view it through your local gateway by running an IPFS daemon and directing your browser to __include address here__. Accessing it locally means that downloading versions (__ Of the site? Or of the distros?__) will be faster in the future. You can also view it with browser extensions, __this way__.
-
 The site is also used directly by [`ipfs-update`](https://github.com/ipfs/ipfs-update) to update IPFS.
 
 ## Project Prerequisites
