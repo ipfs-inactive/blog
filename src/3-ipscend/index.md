@@ -11,7 +11,7 @@ author: David Dias
 collection: posts
 ---
 
-[![](!img/ipscend.png)](https://github.com/diasdavid/ipscend)
+[![](img/ipscend.png)](https://github.com/diasdavid/ipscend)
 
 [`ipscend`](https://github.com/diasdavid/ipscend) is a new tool to help developers publish their static web content to IPFS and share it easily, while keeping history and more. It is heavily inspired by previous static web content publishing tools, like GitHub Pages and surge.
 
