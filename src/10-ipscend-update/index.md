@@ -6,7 +6,7 @@ baseurl: ..
 breadcrumbs:
   - {name: "10-ipscend-update", link: "./" }
 tags: publishing, web, app, publish
-title: ipscend update, now compatible with IPFS 0.3.11
+title: ipscend improved, now compatible with IPFS 0.3.11
 author: David Dias
 collection: posts
 ---
@@ -15,16 +15,21 @@ collection: posts
 
 > Web Application publishing, simple and distributed with IPFS
 
-
-** The case for this tool 
+Deploying Web Applications has been historically a complex process, requiring knowledge on how to prepare or rent a Web Server and having to prepare a process on how to move your application to the server, so that users could load it from their Web Browser. **Now, with `ipscend` and `IPFS`, you can deploy your apps locally and serve them globally, using your terminal!**
 
 # Using ipscend
 
 - [ ] asciinema / video
+- [ ] simple workflow (kind of the transcript from the video)
+  - init
+  - publish
+  - load the web app (locally and through the gateway)
+  - version history
 
-# Users friendly
+# User friendly
 
-- [ ] explain naming problem
+- [ ] explain naming problem (no one remembers hashes)
+- [ ] mutable links (use IPNS)
 - [ ] explain how IPFS public gateways can be the proxies for users seemlessly (with graphs!)
 
 # Next
@@ -43,4 +48,4 @@ Currently we have a `timeline` feature that let's you browser through screenshot
 
 ## extending current VCS with IPFS and IPLD
 
-
+The [IPLD (InterPlanetary Linked Data)](https://github.com/ipfs/specs/blob/master/merkledag/ipld.md) data model will enable current Version Control Systems to be extended in a way that their data structures can live inside the IPFS network, without having to change how that they work. What this means is that we will be able to have one single source tree, where releases will be one of the iterations and where users will be able to leverage the last ..
