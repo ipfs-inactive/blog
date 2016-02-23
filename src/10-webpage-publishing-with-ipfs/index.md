@@ -12,22 +12,21 @@ collection: posts
 ---
 
 > - Don't you hate it when your links break?
-> - Don't you hate it when your webhost gets attacked and your websites go down?
-> - Don't you hate managing servers just to self-host a webpage?
+> - Don't you hate it when your web host gets attacked and your websites go down?
+> - Don't you hate managing servers just to self-host a web page?
 > - Don't you hate it when you switch cloud providers and all the data links change?
 > - Don't you hate it when people relying on your content get broken embeds?
 
 > NOTE: I think it'd be better to start stronger than rhetorical questions. For instance:    
-> The web is broken. Links break; webhosts get attacked, and websites go down (often permanently). As a web developer, you have to by a sysadmin just to host a webpage. If you switch cloud providers, links break. Even with a fully functional website, more issues might pop up; link rot, or broken embeds for third parties serving your content. It's 2016, and not all is as it should be.
+> The web is broken. Links break; web hosts get attacked, and websites go down (often permanently). As a web developer, you have to by a sysadmin just to host a web page. If you switch cloud providers, links break. Even with a fully functional website, more issues might pop up; link rot, or broken embeds for third parties serving your content. It's 2016, and not all is as it should be.
 
-Publishing web content has become a very complex, confusing, and precarious process. Publishing static content -- simple webpages, images, videos, or documents -- is way harder and brittle than it should be. The "easy way" means depending on services that may change things under you, or even shut down completely. Hundreds of millions of people have been surprised overnight with a "Sorry, we're going in a different direction". The lucky ones get a dump of their data and a short timeline to "get their affairs in order" and rehost their content. This means hard work to rebuild the site elsewhere, and -- for those who were not extremely careful with domain names and URLs up-front -- attempting to update soon-to-be-broken links all over the web. Like changing Mailing Addresses after moving, most resign themselves to suffering some things breaking forever. (If you use hosting services, we strongly recommend using Neocities -- they deeply care about the long-term survival of your websites, they understand the importance of not breaking your links, and the suffering caused by services shutting down). TODO: This parenthetical should not be placed in the introduction. Comes off as weird. 
---- maybe as a foot note? I don't know. It doesn't fit, even though we love Neocities. A footnore at the end of the doc should work. 
+Publishing web content has become a very complex, confusing, and precarious process. Publishing static content -- simple web pages, images, videos, or documents -- is way harder than it should be. The "easy way" means depending on services that may change things under you or shut down completely. Hundreds of millions of people have been served, sometimes overnight, with a "Sorry, we're going in a different direction" message. The lucky ones get a dump of their data and a short timeline to "get their affairs in order" and rehost their content. This means hard work rebuilding the site elsewhere, and -- for those who were not extremely careful with domain names and URLs up-front -- attempting to update soon-to-be-broken links all over the web. Like changing mailing addresses after moving, most resign themselves to suffering some things breaking forever.
 
-The alternative -- self-hosting your content on infrastructure you control -- is even worse. Only the zealous few manage their own hardware today. And those who compromise but still dare host their own websites on virtual private servers run into a myriad of complex and brittle processes. Even very experienced web developers struggle with the complexities of setting up webservers, replicating across regions, adding load-balancers, securing machines against hackers, responding to sudden problems, and just maintaining everything working long-term. All of this requires large amounts of domain specific knowledge that newcommers find very difficult to use.
+The alternative -- self-hosting your content on infrastructure you control -- is not much better. Only the zealous few manage their own hardware today. And those who compromise by hosting their own websites on virtual private servers run into a myriad of complex and brittle processes. Even very experienced web developers can struggle with the complexities of setting up servers, replicating across regions, adding load-balancers, securing machines against hackers, responding to sudden problems, and just the constant grind of long-term maintenance. All of this requires large amounts of domain specific knowledge that newcomers find very difficult to use.
 
-"I just wanted to publish my personal website!" It is not a mystery why  most people use Facebook, Twitter, Medium, and Tumblr to publish and host their public personas, their blogs, and all their thoughts.
+"I just wanted to publish my personal website!" It is not a mystery why most people use Facebook, Twitter, Medium, and Tumblr to publish and host their public personas, their blogs, and all their thoughts.
 
-Suggestion: This is where IPFS, the permanent web, comes in. We've been working on a solution to these issues, imagining a word where it is easier to publish web content; where it easier to host and maintain it; where links don't break or change; where old versions didn't disappear in moment; and where all of this is as simple as tweeting. All at once. 
+Suggestion: This is where IPFS, the permanent web, comes in. We've been working on a solution to these issues, imagining a word where it is easier to publish web content; where it easier to host and maintain it; where links don't break or change; where old versions didn't disappear in moment; and where all of this is as simple as tweeting. All at once.
 
 > - What if it was way easier to publish web content?
 > - What if it was way easier to host and maintain it?
@@ -36,15 +35,13 @@ Suggestion: This is where IPFS, the permanent web, comes in. We've been working 
 > - What if by design, old versions were all still accessible?
 > - What if managing all this was as simple as tweeting?
 
-(NOTE: Again, I think these questions come off as a bit weak. People skim through repetitive questions, only reading the right edge and not getting the rhetorical effect that you'd get in speech. Rephrase, like above.)
+Using [IPFS](https://ipfs.io/), we can already make a big dent into these annoying problems. We don't have all the solutions working yet, but we're working hard to get there. Comparatively, IPFS is very young and we're still doing out all the groundwork and creating the new plumbing infrastructure. But we have a solution we'd like to present here, for developers and users familiar with:
 
-We don't have all the solutions working yet, but we're working hard to get there. Comparatively, the IPFS Project is very young and we're still doing out all the groundwork and creating the new plumbing infrastructure. However, we can already make a big dent into these annoying problems, at least for developers and users familiar with:
+- The commandline,
+- Installing software services, and
+- Setting DNS records (optional)
 
-- The commandline;
-- Installing software services; and
-- Setting DNS records (optional).
-
-This is still way too hard, we think. But this is still _a lot_ easier, and we're only just beginning. The tutorial below guides you through the process of (a) publishing a small static website to IPFS with ipscend, (b) backing up the content in other IPFS nodes, and (c) pointing a domain name to use IPFS. The entire process works with standard HTTP web browsers, too. All IPFS nodes can view, cache, back up, and serve the content as well, so all the version archiving, bandwidth sharing, and offline first properties of IPFS apply. 
+The tutorial below guides you through the process of (a) publishing a small static website to IPFS with [ipscend](https://github.com/diasdavid/ipscend), (b) backing up the content in other IPFS nodes, and (c) pointing a domain name to use IPFS. All IPFS nodes can view, cache, back up, and serve the content. This means that all the version archiving, bandwidth sharing, and offline-first properties of IPFS apply. Even better, the entire process works with standard HTTP web browsers, too.
 
 We will work on simplifying these processes even further, but for now, we hope that this is enough to help many people to re-host their web content in easier, more resilient, and permanent ways.
 
