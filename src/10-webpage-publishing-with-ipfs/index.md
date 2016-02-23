@@ -45,14 +45,14 @@ The tutorial below guides you through the process of (a) publishing a small stat
 
 We will work on simplifying these processes even further, but for now, we hope that this is enough to help many people to re-host their web content in easier, more resilient, and permanent ways.
 
-## Tutorial: Publishing a static webpage to IPFS
+## Tutorial: Publishing a static website to IPFS
 
 #### Step 0: Installing and Running dependencies
 
 In order to completely understand this tutorial, you will need to have some familiarity with a terminal prompt, and to install the following software. We are working on a no-install, drag-and-drop solution, and we'll post a new tutorial when that ships.
 
 **Required:**
-- The `ipfs` program, version 0.3.11 or later. [See install instructions here](link to install instructions). TODO link
+- The `ipfs` program, version 0.3.11 or later. [See install instructions here](https://github.com/ipfs/go-ipfs#install).
 
 You should be able to run `ipfs version` and see 0.3.11 or later:
 
@@ -62,7 +62,7 @@ ipfs version 0.3.11
 ```
 
 If this is your first time running ipfs, initialize your node with:
-    
+
 ```sh
 > ipfs init
 generating 2048-bit RSA keypair...done
@@ -91,36 +91,36 @@ Daemon is ready
 
 #### Step 1: Prepare the static website to publish.
 
-Let's start with the essentials. In order to use IPFS to publish and share your website with the world, you first need to have a website! For the purpose of this tutorial, we will use a simple website. Feel free to use your own, instead. Open up the terminal and create the website:
+Let's start with the essentials. In order to use IPFS to publish and share your website with the world, you first need to have a website! For the purpose of this tutorial, we will use a simple one. Feel free to use your own, instead. Open up the terminal and create the website:
 
 ```sh
-# make a directory to put the website
+# make a directory to put the website in
 mkdir website
 
 # add an index.html page
 echo '<html><h1>Hello! This is a webpage!</h1> <img src="./cat.png" /></html>' > website/index.html
 
-# add an image. let's get the image straight from IPFS! 
+# add an image. let's get the image straight from IPFS, because we can.
 ipfs get -o website/cat.jpg /ipfs/QmZVLbEzkoZBMMzBsLfY4d86NFMXo1yBBhsqucd7w7VnGV/cat.jpg
 ```
 
 If `ipfs get` fails, you'll need to make sure your ipfs node is running, with `ipfs daemon`, or see **Step 0** above.
 
 
-**(Optional)** If you want to preview this webpage, you can try any HTTP server. For example, the node-static module (available on npm):
+**(Optional)** If you want to preview this website, you can try any HTTP server. For example, the `node-static` module (available on npm):
 
 ```sh
-> npm install node-static --global
+> npm install --global node-static
 > cd static-webpage-example
 > static src
 serving "src" at http://127.0.0.1:8080
 ```
 
-This page is now being locally served on your machine at  http://127.0.0.1:8080. Open this url in your web browser; note that it is not yet accessible by the whole world. This is when a complex series of steps to get a machine running an HTTP server somewhere would start -- but with IPFS, there is a better way.
+This page is now being locally served on your machine at http://127.0.0.1:8080. Open this URL in your web browser; note that it is not yet accessible by the whole world. This is when a complex series of steps to get a machine running an HTTP server somewhere would start -- but with IPFS, there is a better way.
 
 #### Step 2: `ipfs add` to publish a website at an IPFS address
 
-Now we are going to use IPFS to host and distribute our static webpage.  Let's add it:
+Now we are going to use IPFS to host and distribute our static site.  Let's add it:
 
 ```bash
 > ipfs add -r website
@@ -129,16 +129,16 @@ added QmSfETeiARbrBTAAfevdKgksbb9WvgRgXJ2GUXB9j5dkJi website/index.html
 added QmVtSZiPWUjK175KngUvXeBxkTBRhVU9YgQcHvLNDdXc8s website
 ```
 
-Sweet, now our webpage is available on the IPFS network! Now you can load your webpage on the gateway from your local IPFS node or the public gateway, open in your browser:
-    
+Sweet, now our website is available on the IPFS network! Now you can load your site on the gateway from your local IPFS node or the public gateway. Open one of these in your browser:
+
 - Local node gateway: http://localhost:8080/ipfs/QmVtSZiPWUjK175KngUvXeBxkTBRhVU9YgQcHvLNDdXc8s
 - Public IPFS gateway: https://ipfs.io/ipfs/QmVtSZiPWUjK175KngUvXeBxkTBRhVU9YgQcHvLNDdXc8s
 
-Even, if the ipfs.io domain was not reachable, you would still be able to share and make your page available to other users that are running their own IPFS nodes by sharing the hash that corresponds to the latest version of your webpage. This even works in local area networks without connectivity to the broader internet! 
+Even, if the [ipfs.io](https://ipfs.io/) domain is not reachable, you would still be able to share and make your page available to other users that are running their own IPFS nodes by sharing the hash that corresponds to the latest version of your web page. This even works in local area networks without connectivity to the broader internet!
 
-However, this process can be improved with some tooling. After all, this process still required the manual installation of an IPFS node and we need to keep track of the hashes for the published version. That is where `ipscend` excells.
+However, this process can be improved with some tooling. After all, manual installation of an IPFS node is still required, and we need to keep track of the hashes for the published version. That is where `ipscend` excells.
 
-#### Step 3 (optional): ipscend - tooling to publish your page and keep track of different versions
+#### Step 3 (optional): `ipscend` - tooling to publish your page and keep track of different versions
 
 `ipscend` is a tool built to streamline and enhance the experience for publishing your static web pages. It is available as a Node.js module, installable through npm. Install it by running:
 
@@ -147,7 +147,7 @@ However, this process can be improved with some tooling. After all, this process
 ```
 
 Once you have ipscend installed, you can run `ipscend` in your terminal to check that it is correctly installed and list the commands available:
-    
+
 ```bash
 > ipscend
 Usage: ipscend COMMAND [OPTIONS]
@@ -163,7 +163,7 @@ screenshot  View or generate screenshots for your application
 versions    Check each version published
 ```
 
-We need to tell ipscend that our project is a webpage, as well as which folder contains the static assets that need to be served to the browsers. Let's move the content into a content folder first:
+We need to tell ipscend that our project is a web page, as well as which folder contains the static assets that need to be served to the browser. Let's move the content into a content folder first:
 
 ```bash
 > cd website
@@ -180,7 +180,7 @@ This utility will walk you through creating a ipscend.json file.
 Path of your Web Application (project)? (public) src
 ```
 
-ipscend created an `ipscend.json` file with some metada data about the project:
+ipscend created an `ipscend.json` file with some metadata about the project:
 
 ```sh
 > cat ipscend.json
@@ -190,7 +190,7 @@ ipscend created an `ipscend.json` file with some metada data about the project:
 }
 ```
 
-Ok, we are almost ready to publish our first version. We already installed an ipfs node, but just so you know, ipscend comes with batteries included! If you're for sure using `ipscend`, you don't need to install IPFS as a separate step, simply do `ipscend ipfs start`:
+Ok, we are almost ready to publish our first version. Although we already installed an ipfs node, ipscend comes with batteries included: if you're using `ipscend`, you don't need to install IPFS as a separate step. Simply run `ipscend ipfs start`:
 
 ```sh
 > ipscend ipfs start
@@ -198,7 +198,7 @@ starting IPFS daemon (this might take some seconds)
 IPFS daemon has started, you can now publish with ipscend
 ```
 
-(If this fails, it means you alraedy had an `ipfs daemon` running, which is fine.)
+If this fails, it means you already had an `ipfs daemon` running, which is fine.
 
 
 Now we are really ready to publish the first version of your ipscend website. Simply run `ipscend publish`:
@@ -211,7 +211,7 @@ http://localhost:8080/ipfs/QmVtSZiPWUjK175KngUvXeBxkTBRhVU9YgQcHvLNDdXc8s
 http://ipfs.io/ipfs/QmVtSZiPWUjK175KngUvXeBxkTBRhVU9YgQcHvLNDdXc8s
 ```
 
-That is it. Your first iteration is now published on IPFS. You can see that this was registered on our `ipscend.json` versioning file:
+That's it. Your first iteration is now published on IPFS. You can see that this was registered on our `ipscend.json` versioning file:
 
 ```bash
 > cat ipscend.json
@@ -226,17 +226,17 @@ That is it. Your first iteration is now published on IPFS. You can see that this
 }
 ```
 
-This is like very simple version control on top of ipfs. You'll see later how we can extend this to reach git-like levels of versioning, and beyond.
+This is like very simple version control on top of IPFS. You'll see later how we can extend this to reach git-like levels of versioning, and beyond.
 
 #### Step 4: Human readable naming - Host pages from the public gateways
 
-You are probably thinking: 
-    
-> Woah! this was really a quick set up and publish! However... remembering and typing hashes is ugly and difficult!
+You are probably thinking:
 
-Well, you are right. But there is a way to improve that part of the experience, and completely avoid having to share hashes in the first place. We do this by using "naming systems". The simplest and most familiar to you is DNS. We made a tool called `dnslink` that makes it easy to publish your IPFS web content at your very own domain name.
+> Ok, so, that was quick and easy to set up and publish. However... remembering and typing hashes is ugly and difficult!
 
-Now that we've got the webpage's hash, we can bind this hash to a human-readable domain name by creating a `TXT` record. Some good examples of using this include http://dist.ipfs.io, and even https://ipfs.io. You might have not realized as a user, but these websites have been served by IPFS all along! Check it for yourself:
+Well, you are right. But there is a way to improve that part of the experience, and completely avoid having to share hashes in the first place. We do this by using _naming systems_. The simplest and most familiar to you is DNS. We made a tool called `dnslink` that makes it easy to publish your IPFS web content at your very own domain name.
+
+Now that we've got the website's hash, we can bind this hash to a human-readable domain name by creating a `TXT` record. Some good examples where this tool is already being used include http://dist.ipfs.io, and even https://ipfs.io. You might have not realized as a user, but these websites have been served by IPFS all along! Check it for yourself:
 
 ```sh
 > dig +short TXT ipfs.io
@@ -248,7 +248,7 @@ Now that we've got the webpage's hash, we can bind this hash to a human-readable
 
 That `dnslink` tells the public gateways which hash should be loaded for that host.
 
-To set it up to add your domain, add the TXT record with `dnslink=/ipfs/<HASH>`, where <HASH> is the hash of webpage. Then add some `A` records pointing to the publicly available IPFS gateways. You can find these by running the dig command on ipfs.io:
+To set it up to add your domain, add the TXT record with `dnslink=/ipfs/<HASH>`, where `<HASH>` is the hash of webpage. Then add some `A` records pointing to the publicly available IPFS gateways. You can find these by running the `dig` command on ipfs.io:
 
 ```bash
 > dig A ipfs.io
@@ -265,11 +265,9 @@ ipfs.io.                120     IN      A       104.236.76.40
 ...
 ```
 
-You might have to wait for your DNS records to propagate, but once it is complete, you will be able to load your webpage using your own domain through IPFS.
+You might have to wait for your DNS records to propagate, but once it is complete, you will be able to load your website using your own domain through IPFS.
 
-You'll find more information about the dnslink mechanism in the [go-dnslink README file](https://github.com/jbenet/go-dnslink).
-We'll cover it in a more in-depth blog post very soon. We're working hard to add support for other name systems  -- for example, Namecoin -- too.
-
+You'll find more information about the dnslink mechanism in the [go-dnslink README file](https://github.com/jbenet/go-dnslink). We'll cover it in a more in-depth blog post very soon. We're  also working hard to add support for other name systems  -- for example, Namecoin -- too.
 
 #### Step 5: Backing up your content elsewhere.
 
