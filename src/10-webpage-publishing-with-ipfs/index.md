@@ -271,36 +271,39 @@ You'll find more information about the dnslink mechanism in the [go-dnslink READ
 
 #### Step 5: Backing up your content elsewhere.
 
-One of the most important things to understand about IPFS is how content moves around the network. Like many peer-to-peer and distributed systems, peers can access and download content directly from each other. But unlike many peer-to-peer systems, IPFS does not automatically push your content to others to back it up. This is so that you can use IPFS to store, address, and move your own data **without** requiring you to store other people's data. This is an important distinction! We sacrifice built-in replication for a richer model that matches how people feel about content. Most individuals and businesses _would never_ use a protocol if it _forced_ them to be storing other people's unknown data. Because who knows, it might be something illegal! Protocol that force that are unlikely to be used massively.
+One of the most important things to understand about IPFS is how content moves around the network. Like many peer-to-peer and distributed systems, peers can access and download content directly from each other. But unlike many peer-to-peer systems, IPFS does not automatically push your content to others to back it up. This is so that you can use IPFS to store, address, and move your own data **without** requiring you to store other people's data. This is an important distinction! We sacrifice built-in replication for a richer model that matches how people feel about content. Most individuals and businesses _would never_ use a protocol if it _forced_ them to store other people's unknown data. Because who knows, it might be something illegal; protocols that force that are unlikely to be used massively.
 
-**So when _does_ data get sent out to others?** Data in IPFS is transferred to a node only when it is _requested_. There has to be an explicit action there. Either the user or the application acting in the user's behalf chose to access some content. This makes it so your ipfs nodes do not get full of other people's stuff, and most importantly, so you do not accidentally receive bad bits. This puts IPFS closer to HTTP and BitTorrent than other peer-to-peer protocols like Freenet.
+**So when _does_ data get sent out to others?** Data in IPFS is transferred to a node only when it is _requested_. There has to be an explicit action there. Either the user or the application acting in the user's behalf must choose to access some content. This ensures that your IPFS nodes do not get full of other people's stuff, and most importantly, that you do not accidentally receive bad bits. This puts IPFS closer to HTTP and BitTorrent than other peer-to-peer protocols, like Freenet.
 
-**So then how do we replicate, disperese, and backup data?** The short answer is: in a protocol layered _on top of_ IPFS. IPFS tells you how to access and transfer data, and other protocols _layer on top of IPFS_ to provide replication and redundancy guarantees. This closely matches how the world's individuals, organizations, and services administer and replicate their data today. HTTP does not guarantee your data will be around, it just tells you how to access and transfer it. Users and HTTP websites rely on shared systems, or services like Amazon S3, to back up their data. For IPFS, there are emerging protocols and applications to organize data replication. Some of them, like pincoop and 
+**So then how do we replicate, disperse, and backup data?** The short answer is: in a protocol layered _on top of_ IPFS. IPFS tells you how to access and transfer data, and other protocols layer on top of IPFS to provide replication and redundancy guarantees. This closely matches how the world's individuals, organizations, and services administer and replicate their data today. HTTP does not guarantee your data will be around, it just tells you how to access and transfer it. Users and HTTP websites rely on shared systems, or services like Amazon S3, to back up their data. For IPFS, there are emerging protocols and applications to organize data replication. Some of them, like pincoop and ... TODO Finish
 
-## What's Next? More Details and Improvements 
+## What's next? More details and improvements
 
 (recap of what we just did)
 
-Let's zoom out and look at what we just did: 
-0. We installed the `ipfs` program and ran an ipfs node.
+Let's zoom out and take look at what we just did:
+
+0. We installed the `ipfs` program and ran an IPFS node.
 1. We created a simple website. It could be much more elaborate, but the steps would be the same.
-2. We published the website to the ipfs network (with `ipfs add`), making it viewable to the whole network.
-3. We explored `ipscend` a tool to version and publish websites with ipfs.
+2. We published the website to the IPFS network (with `ipfs add`), making it viewable to the whole network.
+3. We explored `ipscend`, a tool to version and publish websites with ipfs.
 4. We explored DNS naming with `ipfs` and `dnslink`, a tool to publish special `TXT` records.
+5. And, finally, we published content to the peer-to-peer web, in a future-safe, resilient way, while depending (mostly) on only one thing: the IPFS protocol.
 
-And we achieved publishing content to the peer-to-peer web, in a future-safe, resilient way, while depending (mostly) on only one thing: the IPFS protocol. 
+When it comes to publishing web applications and web sites, some of the requirements to optimize the workflow and enhance the developer experience are very similar to the ones for publishing code packages. We've talked and demonstrated how IPFS is a perfect transport for moving around [packages of code](https://www.youtube.com/watch?v=-S-Tc7Gl8FM) or [container-ized services](https://www.youtube.com/watch?v=vaIWRyotz4g), Mainly, this is due to its ability to use bandwidth very efficiently with a very smart and distributed discovery mechanism, which guarantees integrity for the content being looked up.
 
-When it comes to publishing web applications and web sites, some of the requirements to optimize the workflow and enhance the developer experience are very similar to the ones for publishing code packages. We've talked and demonstrated how IPFS is a perfect transport for moving around [packages of code](https://www.youtube.com/watch?v=-S-Tc7Gl8FM) or [container-ized services](https://www.youtube.com/watch?v=vaIWRyotz4g), Mainly, this is due to its ability to use bandwidth very efficiently with a very smart and distributed discovery mechanism that guarantees integrity for the content being looked up.
-
-There is much more to do, more problems to simplify, and lots to implement. We will end this post highlighting a some things we're working on to improve the web publishing experience even further. 
+There is much more to do, more problems to simplify, and lots to implement. We will end this post highlighting a some things we're working on to improve the web publishing experience even further.
 
 #### Timeline view
 
-One other feature that will significantly increase the developer experience with `ipscend` is [**versioning**](https://github.com/ipfs/notes/issues/23). Apps, as with any software, have several iterations across their lifetime. These iterations pack different things, like new features, complete application revamps or sometimes, regressions.++Version Control Systems have enabled developers to work collaboratively on the same code, avoiding spending time dealing with merge conflicts. We can improve these tools by doing the following; letting developers, designers and other individuals have quick access to the timeline of the application, make annotations of the current iterations before a release, be able to cherry pick which version to be released (using visual rollbacks), analyze if there have been any regressions in a specific browser, and more.++Currently we have a `timeline` feature that lets you browse through screenshots of all of the published versions of your application.++![](http://zippy.gfycat.com/TameDampKob.gif)
+One other feature that will significantly increase the developer experience with `ipscend` is [**versioning**](https://github.com/ipfs/notes/issues/23). Apps, as with any software, have several iterations across their lifetime. These iterations pack different things, like new features, complete application revamps or sometimes, regressions.
 
-(NOTE: I
+Version Control Systems have enabled developers to work collaboratively on the same code, without wasting time dealing with merge conflicts. We can improve these tools by letting developers, designers and other individuals have more power. Ultimately, they should be able to have quick access to the timeline for their application, to make annotations on the current iterations before a release, to cherry pick which version to be released (using visual rollbacks), to analyze if there have been any regressions in a specific browser, among other things.
+
+Currently we have a `timeline` feature that lets you browse through screenshots of all of the published versions of your application.
+
+![](http://zippy.gfycat.com/TameDampKob.gif)
 
 #### Extending current VCS with IPFS and IPLD
 
-The [IPLD (InterPlanetary Linked Data)](https://github.com/ipfs/specs/blob/master/merkledag/ipld.md) data model will enable current Version Control Systems to be extended so that their data structures can live inside the IPFS network, without having to change how that they work. What this means is t
-hat we will be able to have one single source tree, where releases will be one of the iterations and where users will be able to leverage the last .....
+The [IPLD (InterPlanetary Linked Data)](https://github.com/ipfs/specs/blob/master/merkledag/ipld.md) data model will enable current Version Control Systems to be extended so that their data structures can live inside the IPFS network, without having to change how that they work. What this means is that we will be able to have one single source tree, where releases will be one of the iterations and where users will be able to leverage the last .....
