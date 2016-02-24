@@ -13,7 +13,7 @@ collection: posts
 
 # Static Web Publishing with IPFS - Simpler and Decentralized
 
-![](https://www.evernote.com/l/AMYNVaoyi89PQqQU2myImhtVuG628DRn6zYB/image.png)
+![](./img/static-web-publishing-with-ipfs.png)
 
 > "I've always believed that everyone involved in "publishing" should know how to set up a server." -- Joi Ito ([source](http://joi.ito.com/weblog/2016/02/21/a-challenge-fro.html), [archive](https://web.archive.org/web/20160223200231/http://joi.ito.com/weblog/2016/02/21/a-challenge-fro.html), [ipfs](<ipfs-link>))
 >
