@@ -70,6 +70,7 @@ We will work on simplifying these processes even further, but for now, we hope t
 **Tutorial Steps**:
 - [Step 0: Installing `ipfs` and running a node](#step-0-installing-ipfs-and-running-a-node)
 - [Step 1: Prepare the static website to publish](#step-1-prepare-the-static-website-to-publish)
+- [Step 2: ipfs add to publish a website at an IPFS address](#step-2-ipfs-add-to-publish-a-website-at-an-ipfs-address)
 - [Step 3 (optional): ipscend - tooling to publish your page and track versions](#step-3-optional-ipscend-tooling-to-publish-your-page-and-track-versions)
 - [Step 4 (optional): human readable naming with DNS and `dnslink`, and familiar HTTP links](#step-4-optional-human-readable-naming-with-dns-and-dnslink-and-familiar-http-links)
 - [Step 5: Backing up your content elsewhere (pinning)](step-5-backing-up-your-content-elsewhere-pinning)
