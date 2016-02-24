@@ -43,7 +43,7 @@ This is where IPFS -- the permanent web -- comes in. We've been imagining and im
 > - What if webapps and websites worked offline, or in local area networks?
 > - What if -- the kicker -- managing all this was as simple as tweeting?
 
-These are all hard problems, and full solutions will take time to build. We don't have everything working yet, IPFS is very young -- we're still implementing fundamental infrastructure and laying the groundwork for user-facing applications. But we have already put dents into many annoying problems, and this post shows off some of the tooling we are building.
+These are all hard problems, and full solutions will take time to build. We don't have everything working yet, IPFS is very young -- we're implementing fundamental infrastructure and laying the groundwork for user-facing applications. But we have already put dents into many annoying problems, and this post shows off some of the tooling we are building.
 
 You can find out more about what gives rise to these problems in general, and how IPFS can solve them through these media:
 
@@ -73,7 +73,7 @@ We will work on simplifying these processes even further, but for now, we hope t
 - [Step 2: ipfs add to publish a website at an IPFS address](#step-2-ipfs-add-to-publish-a-website-at-an-ipfs-address)
 - [Step 3 (optional): ipscend - tooling to publish your page and track versions](#step-3-optional-ipscend-tooling-to-publish-your-page-and-track-versions)
 - [Step 4 (optional): human readable naming with DNS and `dnslink`, and familiar HTTP links](#step-4-optional-human-readable-naming-with-dns-and-dnslink-and-familiar-http-links)
-- [Step 5: Backing up your content elsewhere (pinning)](step-5-backing-up-your-content-elsewhere-pinning)
+- [Step 5 (optional): Backing up your content elsewhere (pinning)](step-5-backing-up-your-content-elsewhere-pinning)
 
 
 
@@ -141,9 +141,8 @@ If `ipfs get` fails, you'll need to make sure your ipfs node is running, with `i
 
 ```sh
 > npm install --global node-static
-> cd static-webpage-example
-> static src
-serving "src" at http://127.0.0.1:8080
+> static website
+serving "website" at http://127.0.0.1:8080
 ```
 
 This page is now being locally served on your machine at http://127.0.0.1:8080. Open this URL in your web browser; note that it is not yet accessible by the whole world. This is when a complex series of steps to get a machine running an HTTP server somewhere would start -- but with IPFS, there is a better way.
@@ -374,19 +373,6 @@ Now, an address like https://ipfs.io/ipns/dist.ipfs.io is already pretty good: i
 This is done by pointing the `A` records of your DNS domain name to the IP addresses of our Public HTTP-to-IPFS Gateways. (And `ipfs` after 0.4.0 has a solution with `CNAME` records too.) Let's check out how the `A` records of `dist.ipfs.io` look, with `dig`:
 
 ```bash
-> dig A dist.ipfs.io
-...
-;; ANSWER SECTION:
-ipfs.io.                120     IN      A       128.199.219.111
-ipfs.io.                120     IN      A       178.62.61.185
-ipfs.io.                120     IN      A       104.236.151.122
-ipfs.io.                120     IN      A       178.62.158.247
-ipfs.io.                120     IN      A       104.236.176.52
-ipfs.io.                120     IN      A       162.243.248.213
-ipfs.io.                120     IN      A       104.236.179.241
-ipfs.io.                120     IN      A       104.236.76.40
-...
-
 > dig +short A dist.ipfs.io
 128.199.219.111
 178.62.61.185
