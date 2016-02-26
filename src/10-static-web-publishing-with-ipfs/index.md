@@ -19,37 +19,36 @@ collection: posts
 
 Setting up a server is hard. You have to be a sysadmin just to host a single web page. Even with a fully functional website, more issues pop up: [websites go down](https://blogs.loc.gov/digitalpreservation/2011/11/the-average-lifespan-of-a-webpage/), [hosts get attacked](http://arstechnica.com/security/2015/03/github-battles-largest-ddos-in-sites-history-targeted-at-anti-censorship-tools/), [services shut down](http://arstechnica.com/business/2009/04/geocities-to-close-after-15-years-of-aesthetic-awesomeness/), [links rot](https://en.wikipedia.org/wiki/Link_rot). It's 2016, and publishing even a static web page is way too difficult.
 
-Publishing web content has become very complex, confusing, and [precarious](http://journalistsresource.org/studies/society/internet/website-linking-best-practices-media-online-publishers). Even publishing _static_ web content -- simple webpages, images, videos, or documents -- is way harder than it should be. The "easy way" means depending on services that may change things under you or shut down completely. Hundreds of millions of people have been served, sometimes overnight, with a "Sorry, we're going in a different direction" message. The lucky ones get a dump of their data and a short timeline to "get their affairs in order" and rehost their content. This means hard work rebuilding the site elsewhere, and -- for those who were not [extremely careful with domain names and URLs up-front](https://www.w3.org/Provider/Style/URI) -- attempting to update soon-to-be-broken links all over the web. Like changing mailing addresses after moving, most people resign themselves to some things breaking forever.
+
+Publishing web content has become very complex, confusing, and [precarious](http://journalistsresource.org/studies/society/internet/website-linking-best-practices-media-online-publishers). Even publishing _static_ web content -- simple webpages, images, videos, or documents -- is tougher than it should be. The "easy way" means depending on services that may change things under you or shut down completely. Hundreds of millions of people have been served, sometimes overnight, with a "Sorry, we're going in a different direction" message. The lucky ones get a dump of their data and a short timeline to get their affairs in order and rehost their content. This means hard work rebuilding the site elsewhere, and -- for those who were not [extremely careful with domain names and URLs up-front](https://www.w3.org/Provider/Style/URI) -- attempting to update soon-to-be-broken links all over the web. Like changing mailing addresses after moving, most people resign themselves to some things breaking forever.
 
 The alternative -- self-hosting your content on infrastructure you control -- is not much better. Only the zealous few manage [their own hardware today](http://www.instructables.com/id/Set-up-your-very-own-Web-server/?ALLSTEPS). And those who compromise by hosting their own websites on virtual private servers (VPS) run into a myriad of complex and brittle processes. Even expert web developers can struggle with the complexities of setting up servers, replicating across regions, adding load-balancers, securing machines against hackers, responding to sudden problems, and the constant grind of long-term maintenance. All of this requires large amounts of domain specific knowledge that newcomers find very difficult to use.
 
 > "I just wanted to publish my personal website!"
 
-It is not a mystery why most people use Facebook, Twitter, Medium, and Tumblr to publish and host their public personas, their blogs, and all their thoughts. Web publishing and [digital preservation](https://en.wikipedia.org/wiki/Digital_preservation) are hard.
+It is not a mystery why most people use Facebook, Twitter, Medium, and Tumblr to publish and host their public personas, their blogs, and all their thoughts. Web publishing and [digital preservation](https://en.wikipedia.org/wiki/Digital_preservation) are exhausting.
 
 #### IPFS makes web publishing and hosting easier
 
-This is where IPFS -- the permanent web -- comes in. We've been imagining and implementing vastly easier ways to publish, host, and maintain web content, without sacrificing control or independence.
+This is where IPFS, the permanent web, comes in. We've been imagining and implementing vastly easier ways to publish, host, and maintain web content, without sacrificing control or independence. We've been asking a lot of questions, like:
 
 > - What if it was way easier to publish, host, and maintain web content for the long-term?
 > - What if links didn't break, even when moving hosts?
 > - What if you could count on your links _decades_ from now, with various versions still accessible?
 > - What if "hosting" did not also mean "dependence on disappearing services"?
 > - What if cloud infrastructure worked more like the power grid, where switching providers is transparent?
-> - What if _you_ controlled?
+> - What if _you_ were in control of your content?
 > - What if names (like DNS domains) mapped straight to content, not servers?
 > - What if we didn't _have to_ rely on centralized naming (DNS)?
 > - What if webapps and websites worked offline, or in local area networks?
 > - What if -- the kicker -- managing all this was as simple as tweeting?
 
-These are all hard problems, and full solutions will take time to build. We don't have everything working yet, IPFS is very young -- we're implementing fundamental infrastructure and laying the groundwork for user-facing applications. But we have already put dents into many annoying problems, and this post shows off some of the tooling we are building.
+These are all hard problems, and full solutions will take time to build. We don't have everything working yet, IPFS is very young -- we're implementing fundamental infrastructure and laying the groundwork for user-facing applications. But we have already made inroads into many annoying problems, and this post shows off some of the tooling we are building.
 
 You can find out more about what gives rise to these problems in general, and how IPFS can solve them through these media:
 
 - Kyle Drake's post [_HTTP is obsolete. It's time for the distributed, permanent web_](https://ipfs.io/ipfs/QmNhFJjGcMPqpuYfxL62VVB9528NXqDNMFXiqN5bgFYiZ1/its-time-for-the-permanent-web.html) gives a fantastic overview of the fundamental problems with web hosting through HTTP,  how IPFS improves things, and how [Neocities](https://neocities.org) can help you host your web content in the long-term.
 - Juan Benet's seminar talk [_IPFS: the permanent, distributed web_](https://www.youtube.com/watch?v=HUVmypx9HGI) digs into these and other problems plaguing the internet, gives a technical deep-dive on how IPFS solves them, and discusses the IPFS Project itself.
-
-
 
 ## Tutorial: Publishing a static website to IPFS
 
@@ -59,17 +58,14 @@ The rest of this post is a tutorial on publishing static web content with IPFS. 
 - installing software binaries, and
 - setting DNS records (optional)
 
-The tutorial below guides you through the process of:
+The tutorial below guides you through the process of: (a) publishing a small static website to IPFS with [ipscend](https://github.com/diasdavid/ipscend), (b) backing up the content in other IPFS nodes, and (c) pointing a domain name to use IPFS. All IPFS nodes can view, cache, back up, and serve the content. This means that all the version archiving, bandwidth sharing, and offline-first properties of IPFS apply. Even better, the entire process works with standard HTTP web browsers, too.
 
-(a) publishing a small static website to IPFS with [ipscend](https://github.com/diasdavid/ipscend), (b) backing up the content in other IPFS nodes, and (c) pointing a domain name to use IPFS. All IPFS nodes can view, cache, back up, and serve the content. This means that all the version archiving, bandwidth sharing, and offline-first properties of IPFS apply. Even better, the entire process works with standard HTTP web browsers, too.
-
-We will work on simplifying these processes even further, but for now, we hope that this is enough to help many people to re-host their web content in easier, more resilient, and permanent ways.
-
+We will work on simplifying these processes even further, but for now, we hope that this is enough to help many people re-host their web content in easier, more resilient, and permanent ways.
 
 **Tutorial Steps**:
 - [Step 0: Installing `ipfs` and running a node](#step-0-installing-ipfs-and-running-a-node)
 - [Step 1: Prepare the static website to publish](#step-1-prepare-the-static-website-to-publish)
-- [Step 2: ipfs add to publish a website at an IPFS address](#step-2-ipfs-add-to-publish-a-website-at-an-ipfs-address)
+- [Step 2: `ipfs add` to publish a website at an IPFS address](#step-2-ipfs-add-to-publish-a-website-at-an-ipfs-address)
 - [Step 3 (optional): ipscend - tooling to publish your page and track versions](#step-3-optional-ipscend-tooling-to-publish-your-page-and-track-versions)
 - [Step 4 (optional): human readable naming with DNS and `dnslink`, and familiar HTTP links](#step-4-optional-human-readable-naming-with-dns-and-dnslink-and-familiar-http-links)
 - [Step 5 (optional): Backing up your content elsewhere (pinning)](step-5-backing-up-your-content-elsewhere-pinning)
