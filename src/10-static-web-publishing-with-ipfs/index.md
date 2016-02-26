@@ -136,11 +136,11 @@ If `ipfs get` fails, you'll need to make sure your ipfs node is running, with `i
 
 ```sh
 > npm install --global node-static
-> static website
-serving "website" at http://127.0.0.1:8080
+> static website --port=8081
+serving "website" at http://127.0.0.1:8081
 ```
 
-This page is now being locally served on your machine at http://127.0.0.1:8080. Open this URL in your web browser; note that it is not yet accessible by the whole world. This is when a complex series of steps to get a machine running an HTTP server somewhere would start -- but with IPFS, there is a better way.
+This page is now being locally served on your machine at http://127.0.0.1:8081. (We're using 8081 instead of the standard 8080, because chances are the ipfs daemon is already running on 8080 on your machine). Open this URL in your web browser; note that it is not yet accessible by the whole world. This is when a complex series of steps to get a machine running an HTTP server somewhere would start -- but with IPFS, there is a better way.
 
 #### Step 2: `ipfs add` to publish a website at an IPFS address
 
