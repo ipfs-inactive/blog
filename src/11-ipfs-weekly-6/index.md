@@ -4,7 +4,7 @@ id: 11-ipfs-weekly-6
 template: tmpl/layouts/post.html
 baseurl: ..
 breadcrumbs:
-  - {name: "11-ipfs-weekly-5", link: "./" }
+  - {name: "11-ipfs-weekly-6", link: "./" }
 tags: weekly
 title: IPFS Weekly 6
 author: Richard Littauer, Andrew Chin
