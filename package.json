@@ -22,7 +22,9 @@
     "nunjucks-date": "^1.1.2",
     "nunjucks-markdown": "^1.0.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "dnslink-deploy": "^1.0.7"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
