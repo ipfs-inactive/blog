@@ -12,11 +12,26 @@ var feed = require('metalsmith-feed')
 var msstatic = require('metalsmith-static')
 var drafts = require('metalsmith-drafts')
 var headingsidentifier = require('metalsmith-headings-identifier')
+var msIf = require('metalsmith-if')
 
 var nunjucks = require('nunjucks')
 var njmd = require('nunjucks-markdown')
 var njdate = require('nunjucks-date')
 var marked = require('marked')
+
+var meow = require('meow')
+
+var cli = meow(`
+    Usage
+      $ node build.js
+
+    Options
+      -w, --watch  Watch the files
+
+    Examples
+      $ node build.js --watch
+
+`)
 
 marked.setOptions({
   gfm: true,
@@ -24,7 +39,7 @@ marked.setOptions({
   smartLists: true
 })
 
-var njenv = nunjucks.configure()
+var njenv = nunjucks.configure({watch: cli.flags.watch})
 njmd.register(njenv, marked)
 
 njdate.setDefaultFormat('YYYY-MM-DD, h:mm:ss a')
@@ -52,11 +67,17 @@ Metalsmith(__dirname)
   .use(permalinks())
   .use(feed({'collection': 'posts'}))
   .use(msstatic({'src': 'tmpl/static', 'dest': 'static'}))
-  .use(serve({
+  .use(msIf(
+    cli.flags.watch,
+    serve({
     'port': 8081,
     'verbose': true
-  }))
-  .use(watch())
+    })
+  ))
+  .use(msIf(
+    cli.flags.watch,
+    watch()
+  ))
   .destination('./build')
   .build(function (err) {
     if (err) {

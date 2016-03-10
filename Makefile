@@ -6,7 +6,9 @@ record="_dnslink.blog"
 
 build: $(shell find src tmpl) build.js package.json
 	node build.js
-	# FIXME: this watches + serves. ideally it would be an option --watch.
+
+serve: $(shell find src tmpl) build.js package.json
+	node build.js --watch
 
 node_modules: package.json
 	npm install
