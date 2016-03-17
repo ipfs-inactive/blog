@@ -1,5 +1,5 @@
 ---
-date: 2016-01-10
+date: 2016-03-17
 id: 10-ipfs-0-4-0-released
 template: tmpl/layouts/post.html
 baseurl: ..
@@ -7,7 +7,7 @@ breadcrumbs:
 - {name: "10-ipfs-0-4-0-released", link: "./" }
 tags: modules
 title: IPFS 0.4.0 has been released
-author: Kyle Drake
+author: Kyle Drake and Whyrusleeping
 collection: posts
 ---
 
