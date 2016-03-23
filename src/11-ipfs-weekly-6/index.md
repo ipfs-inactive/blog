@@ -126,9 +126,9 @@ Some members of [c-base](http://www.c-base.org/) have written a dead drop-like s
 
 They also have an installation available: the node is run in the above device. When you plug it in, you get to [see this](https://www.flickr.com/photos/bergie/24857415123/in/datetaken-public/), too. If you're in Berlin or visiting soon, make sure to drop by.
 
-#### **Interplanetary Wayback Machine**
+#### Interplanetary Wayback (IPWB)
 
-At [Archives Unleashed](https://artsweb.uwaterloo.ca/archivesunleashed/), a Web Archive Hackathon in Toronto, [Mat Kelly](https://twitter.com/machawk1) and a few others made an "Interplanetary Wayback Machine", a distributed and persistent archive replay system using IPFS. The rough but functional code can be seen [here](https://github.com/oduwsdl/toronto).
+At [Archives Unleashed](https://artsweb.uwaterloo.ca/archivesunleashed/), a Web Archive Hackathon in Toronto, [Mat Kelly](https://twitter.com/machawk1) (@machawk1) and [Sawood Alam](https://twitter.com/ibnesayeed) (@ibnesayeed) from [ODU WSDL Research Group](https://github.com/oduwsdl) developed an IPFS based distributed and persistent archive replay system called [Interplanetary Wayback](https://github.com/oduwsdl/ipwb).
 
 #### **Science Data**
 
