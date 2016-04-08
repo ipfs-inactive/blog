@@ -26,30 +26,46 @@ subcommand: `ipfs files`. This subcommand allows a program to interact with IPFS
 using familiar filesystem operations, namely: creating directories, reading, writing
 and deleting files, listing out different directories, and so on.
 
+This feature enables any application that uses a filesystem-like backend
+to use IPFS for storage without changing the application logic at all.
+
 It is used like so:
 
 ```sh
 > ipfs files mkdir /cats
+
 > ipfs files ls /
 cats
-> echo foo | ipfs files write --create /cats/foo
+
+> echo bar | ipfs files write --create /cats/foo
+
 > ipfs files ls /cats
 foo
+
 > ipfs files read /cats/foo
 bar
+
+> ipfs files stat /
+QmNU8HmaeRa8VtfqAoQRJhSE5Zx54vyYf2nT1bDGcYXaNv
+...
+
+# /ipfs/QmNU8HmaeRa8VtfqAoQRJhSE5Zx54vyYf2nT1bDGcYXaNv is a snapshot
+# of this file system!
+
+# You can see it locally or on the public gateway:
+#  https://ipfs.io/ipfs/QmNU8HmaeRa8VtfqAoQRJhSE5Zx54vyYf2nT1bDGcYXaNv
+
+# Subsequent edits will produce a new /ipfs address for the root directory.
 ```
 
-This feature enables any other application that uses a filesystem-like backend,
-to use IPFS for storage without changing the application logic at all.
 One great example of this is [ipfs-blob-store](https://github.com/ipfs/ipfs-blob-store),
 an IPFS-backed storage driver that implements the
 [blob-store-interface](https://github.com/maxogden/abstract-blob-store), so that any app
-that uses one of the other blob-store storage drivers (S3, indexeddb,
-levelDB, etc), can now use IPFS with a simple swap.
-[registry-mirror](https://github.com/diasdavid/registry-mirror) uses this
+that uses any other blob-store storage driver (S3, IndexedDB, LevelDB, etc) can now use
+IPFS. [registry-mirror](https://github.com/diasdavid/registry-mirror) uses this
 approach to mirror the npm registry onto IPFS.
 
-We are looking forward to see more use cases with this new convinient and powerful API.
+We are looking forward to seeing more use cases of this new convenient and powerful API.
 
 ## Why we're changing the protocol
 
