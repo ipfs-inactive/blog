@@ -35,7 +35,7 @@ Now what? Your node is running. You can issue commands directly to the container
 ```sh
 # let's set $cid = <container-id> for easy access
 > cid=faa8f714398c7a1a5a29adc2aed01857b41444ed53ec11863a3136ad37c8064c
-> ipfs exec $cid ipfs swarm peers
+> docker exec $cid ipfs swarm peers
 /ip4/104.236.179.241/tcp/4001/ipfs/QmSoLpPVmHKQ4XTPdz8tjDFgdeRFkpV8JgYq8JVJ69RrZm
 /ip4/128.199.219.111/tcp/4001/ipfs/QmSoLSafTMBsPKadTEgaXctDQVcqN88CNLHXMkTNwMKPnu
 /ip4/162.243.248.213/tcp/4001/ipfs/QmSoLueR4xBeUbY9WZ9xGUUxunbKWcrNFTDAadQJmocnWm
