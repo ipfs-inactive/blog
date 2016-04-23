@@ -18,7 +18,9 @@ clean:
 	rm -rf build
 
 publish:
-	ipfs swarm peers >/dev/null || (echo "ipfs daemon must be online to publish" && exit 1)
+	@ipfs swarm peers >/dev/null 2>&1 || ( \
+		echo "error: ipfs daemon must be online to publish"; \
+		echo "try running: ipfs daemon" && exit 1)
 	ipfs add -r -q build/ | tail -n1 >versions/current
 	cat versions/current >>versions/history
 	@export hash=`cat versions/current`; \
