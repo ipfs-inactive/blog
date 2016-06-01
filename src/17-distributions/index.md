@@ -1,10 +1,10 @@
 ---
-date: 2016-01-29
-id: 6-distributions
+date: 2016-06-01
+id: 17-distributions
 template: tmpl/layouts/post.html
 baseurl: ..
 breadcrumbs:
-  - {name: "6-distributions", link: "./" }
+  - {name: "17-distributions", link: "./" }
 tags: dist, distributions
 title: IPFS distributions
 author: Richard Littauer
