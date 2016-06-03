@@ -11,7 +11,7 @@ author: Richard Littauer
 collection: posts
 ---
 
-[![](!img/screenshot.png)](https://dist.ipfs.io/)
+[![](img/screenshot.png)](https://dist.ipfs.io/)
 
 [dist.ipfs.io](https://dist.ipfs.io/) is the new distributions page for IPFS. This is the new one-stop-shop for finding and downloading all official binaries that the IPFS Team produces.
 
