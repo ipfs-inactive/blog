@@ -4,6 +4,8 @@ This is the source repository for the [IPFS Blog](http://ipfs.io/blog).
 
 ![](https://www.evernote.com/l/AMaEbN3YfmVC-JDtlxRdFnMMbfvQjQlmU9MB/image.png)
 
+#### Please Review [PIPELINE.md](./PIPELINE.md) to understand how this repo pipeline works.
+
 ## Editing
 
 1. [install node + npm](http://iojs.org) and required modules
@@ -23,11 +25,17 @@ This is the source repository for the [IPFS Blog](http://ipfs.io/blog).
 To create a new post:
 
 ```sh
-mkdir src/<next-number>-<short-title>/
-touch src/<next-number>-<short-title>/index.md
+cp -r drafts/post-draft-template drafts/<short-title>
+cd drafts/<short-title>
+# edit index.md
+# edit skeleton.md
+rm skeleton-template.md
 ```
 
-That will create a directory for the post inside `src/`. Edit the `index.md` there. Place any static assets (e.g. images) inside that directory.
+That will create a directory for the post inside `drafts/`. Edit the `index.md` and `skeleton.md` there. Place any static assets (e.g. images) inside that directory.
+
+When ready to publish, the post directory will be moved from `drafts/` into `src/`, with be given the next sequential number.
+
 
 ### Live editing
 
