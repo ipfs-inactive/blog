@@ -33,7 +33,7 @@ This document describes the IPFS Blog work pipeline. This is the protocol of how
 - If relevant, promote on related publications
 - Mail to specific interested groups or individuals.
 
-## Pipeline Implementation (Mechanics)
+## Pipeline Implementation
 
 This is how the pipeline described above is actually implemented. We discuss the roles being played by various participants, the mechanics in GitHub (issues, pull requests, labels), and the artifacts (the text, markdown files, image assets, etc).
 
