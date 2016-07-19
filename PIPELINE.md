@@ -2,7 +2,7 @@
 
 This document describes the IPFS Blog work pipeline. This is the protocol of how work happens in this project and repository.
 
-## Pipeline High Level Description
+## Pipeline High Level Description (Model)
 
 1. **Idea Generation** - The first step of the pipeline is to generate a set of blog post ideas. An idea should include a name, and a single sentence description of the thrust of the post, and a short abstract. (these will change over time, of course, but it's useful to be able to refer to the post ideas by name).
 
@@ -33,7 +33,7 @@ This document describes the IPFS Blog work pipeline. This is the protocol of how
 - If relevant, promote on related publications
 - Mail to specific interested groups or individuals.
 
-## Pipeline Implementation
+## Pipeline Implementation (Mechanics)
 
 This is how the pipeline described above is actually implemented. We discuss the roles being played by various participants, the mechanics in GitHub (issues, pull requests, labels), and the artifacts (the text, markdown files, image assets, etc).
 
