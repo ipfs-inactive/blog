@@ -7,11 +7,9 @@ breadcrumbs:
   - {name: "10-static-web-publishing-with-ipfs", link: "./" }
 tags: publishing, web, app, publish
 title: Static Web Publishing with IPFS - Simpler and Decentralized
-author: David Dias, Juan Benet, Richard Littauer
+author: David Dias, Juan Benet, and Richard Littauer
 collection: posts
 ---
-
-# Static Web Publishing with IPFS - Simpler and Decentralized
 
 ![](./img/static-web-publishing-with-ipfs.png)
 
@@ -37,39 +35,39 @@ This is where IPFS, the permanent web, comes in. We've been imagining and implem
 > - What if you could count on your links _decades_ from now, with various versions still accessible?
 > - What if "hosting" did not also mean "dependence on disappearing services"?
 > - What if cloud infrastructure worked more like the power grid, where switching providers is transparent?
-> - What if _you_ were in control of your content?
 > - What if names (like DNS domains) mapped straight to content, not servers?
 > - What if we didn't _have to_ rely on centralized naming (DNS)?
 > - What if webapps and websites worked offline, or in local area networks?
-> - What if -- the kicker -- managing all this was as simple as tweeting?
+> - What if _you_ were in control of your content?
+> - What if -- and this is the kicker -- managing all this was as simple as tweeting?
 
-These are all hard problems, and full solutions will take time to build. We don't have everything working yet, IPFS is very young -- we're implementing fundamental infrastructure and laying the groundwork for user-facing applications. But we have already made inroads into many annoying problems, and this post shows off some of the tooling we are building.
+These are all hard problems, and full solutions will take time to build. IPFS is very young, and we don't have everything working yet. We're implementing fundamental infrastructure and laying the groundwork for user-facing applications. But we have already made inroads into many annoying problems, and this post shows off some of the tooling we are building.
 
-You can find out more about what gives rise to these problems in general, and how IPFS can solve them through these media:
+You can find out more about what gives rise to these problems in general, and how IPFS can solve them in these articles:
 
 - Kyle Drake's post [_HTTP is obsolete. It's time for the distributed, permanent web_](https://ipfs.io/ipfs/QmNhFJjGcMPqpuYfxL62VVB9528NXqDNMFXiqN5bgFYiZ1/its-time-for-the-permanent-web.html) gives a fantastic overview of the fundamental problems with web hosting through HTTP,  how IPFS improves things, and how [Neocities](https://neocities.org) can help you host your web content in the long-term.
 - Juan Benet's seminar talk [_IPFS: the permanent, distributed web_](https://www.youtube.com/watch?v=HUVmypx9HGI) digs into these and other problems plaguing the internet, gives a technical deep-dive on how IPFS solves them, and discusses the IPFS Project itself.
 
 ## Tutorial: Publishing a static website to IPFS
 
-The rest of this post is a tutorial on publishing static web content with IPFS. We think this process is still too rough -- we want to simplify much more and build much nicer user-facing tools. But IPFS is already improving people's experience with web publishing, so it's worth writing a short tutorial on how to use these early tools.  We will have nice drag-and-drop applications later on; this post is for developers and users familiar with:
+The rest of this post is a tutorial on publishing static web content with IPFS. We think this process is still too rough, and we want to simplify much more and build much nicer user-facing tools. But IPFS is already improving people's experience with web publishing, so it's worth writing a short tutorial on how to use these early tools.  We will have nice drag-and-drop applications later on; this post is for developers and users familiar with:
 
-- the commandline,
-- installing software binaries, and
-- setting DNS records (optional)
+- The commandline
+- Installing software binaries
+- Setting DNS records (optional)
 
 The tutorial below guides you through the process of: (a) publishing a small static website to IPFS with [ipscend](https://github.com/diasdavid/ipscend), (b) backing up the content in other IPFS nodes, and (c) pointing a domain name to use IPFS. All IPFS nodes can view, cache, back up, and serve the content. This means that all the version archiving, bandwidth sharing, and offline-first properties of IPFS apply. Even better, the entire process works with standard HTTP web browsers, too.
 
 We will work on simplifying these processes even further, but for now, we hope that this is enough to help many people re-host their web content in easier, more resilient, and permanent ways.
 
 **Tutorial Steps**:
+
 - [Step 0: Installing `ipfs` and running a node](#step-0-installing-ipfs-and-running-a-node)
 - [Step 1: Prepare the static website to publish](#step-1-prepare-the-static-website-to-publish)
 - [Step 2: `ipfs add` to publish a website at an IPFS address](#step-2-ipfs-add-to-publish-a-website-at-an-ipfs-address)
 - [Step 3 (optional): ipscend - tooling to publish your page and track versions](#step-3-optional-ipscend-tooling-to-publish-your-page-and-track-versions)
 - [Step 4 (optional): human readable naming with DNS and `dnslink`, and familiar HTTP links](#step-4-optional-human-readable-naming-with-dns-and-dnslink-and-familiar-http-links)
 - [Step 5 (optional): Backing up your content elsewhere (pinning)](step-5-backing-up-your-content-elsewhere-pinning)
-
 
 
 #### Step 0: Installing `ipfs` and running a node
