@@ -1,6 +1,6 @@
 # IPFS Blog
 
-This is the source repository for the [IPFS Blog](http://ipfs.io/blog).
+This is the source repository for the [IPFS Blog](https://blog.ipfs.io/).
 
 ![](https://www.evernote.com/l/AMaEbN3YfmVC-JDtlxRdFnMMbfvQjQlmU9MB/image.png)
 
