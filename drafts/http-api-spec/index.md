@@ -39,17 +39,20 @@ Some commands available on the CLI are not included: for instance, `ipfs init`, 
 
 ### Example entry
 
-The `.apib` syntax is powerful. Here is a simple example of the `ipfs version` command
+The `.apib` syntax is powerful. Here is a simple example of the `ipfs version` command (with some comments):
 
     # Group version
 
+    <!-- From the `ipfs version --help` usage section -->
     Show version details about the IPFS node.
 
     ## version [GET /version]
+    <!-- From the `ipfs version --help` description section -->
     Returns the current version of ipfs and exits.
 
     + Request
 
+        <!-- Included to make browsing on Apiary easier -->
         #### curl
 
             curl -i "http://localhost:5001/api/v0/version"
@@ -68,28 +71,33 @@ The `.apib` syntax is powerful. Here is a simple example of the `ipfs version` c
             Access-Control-Allow-Headers: X-Stream-Output, X-Chunked-Output, X-Content-Length
             Access-Control-Expose-Headers: X-Stream-Output, X-Chunked-Output, X-Content-Length
             Content-Type: application/json
-            Server: go-ipfs/0.4.1
+            Server: go-ipfs/0.4.3-dev
             Trailer: X-Stream-Error
-            Date: Thu, 28 Apr 2016 17:33:41 GMT
+            Vary: Origin
+            Date: Thu, 01 Sep 2016 00:17:20 GMT
             Transfer-Encoding: chunked
             ```
 
         + Attributes (object)
-            - Version: "0.4.0-dev" (string)
-            - Commit: "b036b23a233a64faa6a456522b0f45763be70e64" (string)
+            - Commit: "d742fb1" (string)
+            - Golang: "go1.5.2" (string)
             - Repo:  "3" (string)
+            - System: "amd64/darwin" (string)
+            - Version: "0.4.3-dev" (string)
 
         + Body
 
             ```
             {
-              "Version": "0.4.0-dev",
-              "Commit": "",
-              "Repo": "3"
+              "Commit": "d742fb1",
+              "Golang": "go1.5.2",
+              "Repo": "4",
+              "System": "amd64/darwin",
+              "Version": "0.4.3-dev"
             }
             ```
 
-Here, we see a description of the command name and the request type (in this case, GET). For the request, we have both a Body section (parsed by Apiary, and used in their live mock runner) and a section in the description with the curl request, which is used to display the command in more clearly on the Apiary site. Then, we have the response; with all of the headers returned from running the `curl` request, as well as an example of the JSON returned and a specification for how the response should looks.
+Here, we see a description of the command name and the request type (in this case, `GET`). For the request, we have both a `Body` section (parsed by Apiary, and used in their live mock runner) and a section in the description with the `curl` request, which is used to display the command more clearly on the Apiary site. Then, we have the response; with all of the headers returned from running the `curl` request, as well as an example of the JSON returned and a specification for how the response should looks.
 
 The API blueprint language allows us to define our own data structures, of which three in particular are used often by IPFS: multihashes, swarm addresses, and multiaddresses.
 
