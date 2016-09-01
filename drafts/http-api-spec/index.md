@@ -27,15 +27,15 @@ collection: posts
 
 ![Screenshot of Apiary](apiary.png)
 
-We now have an HTTP API specification, available on the API-viewing website [Apiary](http://docs.ipfs.apiary.io/#). This means that you can browse the response for any IPFS command online.
+We now have an HTTP API specification, available on the API-viewing website [Apiary](http://docs.ipfs.apiary.io/#). This means that you can browse through any potential HTTP response for any IPFS command, online.
 
-### Description of Apiary
+### What is Apiary?
 
-[Apiary](https://apiary.io) is an online service that provides a nice UI for looking at HTTP API specifications. It uses the [API Blueprint](https://apiblueprint.org/), a simple and accessible language with concise and expressive syntax. The Apiary site reads from the [apiary.apib](https://github.com/ipfs/http-api-spec/blob/master/apiary.apib) file in the [ifps/http-api-spec](https://github.com/ipfs/http-api-spec) repository.
+[Apiary](https://apiary.io) is an online service that provides a nice user interface for looking at HTTP API specifications. It uses the [API Blueprint](https://apiblueprint.org/), a simple and accessible language with concise and expressive syntax. The IPFS description on the Apiary site is generated from the [apiary.apib](https://github.com/ipfs/http-api-spec/blob/master/apiary.apib) file in the [ifps/http-api-spec](https://github.com/ipfs/http-api-spec) repository.
 
 Currently, the Apiary spec has a request and response listed for every command and subcommand that [go-ipfs](https://github.com/ipfs/go-ipfs) sensibly exposes to the API. The spec also includes as many sensible invalid requests (with an invalid number of arguments, the wrong types or arguments, and with inadequate options specified) as needed in order to understand what errors are returned. Finally, it includes a response for most options.
 
-Some commands available on the CLI are not included: for instance, `ipfs init`, `ipfs daemon`, and `ipfs mount` cannot sensibly be called using the HTTP API currently. Many options are also not available; for instance, `verbose` generally prints to standard out, but doesn't change the response. However, there are still 29 different groups (corresponding to CLI commands: `add`, `ls`, `cat`, and so on), comprising over 12500 lines of Apiary blueprint.
+Some commands available on the CLI are not included: for instance, `ipfs init`, `ipfs daemon`, and `ipfs mount` cannot sensibly be called using the HTTP API currently. Many options are also not available; for instance, `verbose` generally prints to standard out, but doesn't change the response. However, there are still 29 different groups (corresponding to CLI commands: `add`, `ls`, `cat`, and so on), comprising over 12500 lines of Apiary blueprint. The coverage is extensive.
 
 ### Example entry
 
