@@ -200,7 +200,7 @@ A multiaddr as defined [here](https://github.com/multiformats/multiaddr).
 
 ### How to edit and join in
 
-This specification can be used immediately to verify that a request you have received from the API is valid. It can also be used as a confirmation standard for cross-language interoperability for IPFS implementations. The [JavaScript IPFS implementation](https://github.com/ipfs/js-ipfs) is already using as a baseline against which to test their outputs, to ensure interop with go-ipfs.
+This specification can be used immediately to verify that a request you have received from the API is valid. It can also be used as a confirmation standard for cross-language interoperability for IPFS implementations. The [JavaScript IPFS implementation](https://github.com/ipfs/js-ipfs) is already using it as a baseline against which to test their outputs, to ensure interop with [go-ipfs](https://github.com/ipfs/go-ipfs).
 
 No documentation effort is ever complete, or perfect. If you see an error or would like to add a feature, go to [ipfs/http-api-spec](https://github.com/ipfs/http-api-spec) and join in the conversation in the issues. Current goals that need work include:
 
