@@ -99,16 +99,61 @@ The `.apib` syntax is powerful. Here is a simple example of the `ipfs version` c
 
 Here, we see a description of the command name and the request type (in this case, `GET`). For the request, we have both a `Body` section (parsed by Apiary, and used in their live mock runner) and a section in the description with the `curl` request, which is used to display the command more clearly on the Apiary site. Then, we have the response; with all of the headers returned from running the `curl` request, as well as an example of the JSON returned and a specification for how the response should looks.
 
-The API blueprint language allows us to define our own data structures, of which three in particular are used often by IPFS: multihashes, swarm addresses, and multiaddresses.
+Note that we do not have the parameters for `number`, `commit`, or `repo` (or any of there aliases), all options available using the go-ipfs CLI. This is because these are options which only influence `stdout`, and aren't captured or available in the HTTP API.
+
+### Different Data Structures
+
+The API blueprint language allows us to define our own data structures, of which four in particular are used often by IPFS: ndjson, multihashes, swarm addresses, and multiaddresses.
+
+#### ndsjon
+
+[Newline delimited JSON](http://ndjson.org/) is a new format for transporting JSON text in a stream protocol. This is useful because it allows us to use JSON responses through transports like TCP or Unix Pipes. It also allows us to transport JSON fluidly through [libp2p](https://github.com/libp2p/libp2p), a "network stack" used and developed by the IPFS community which cleanly separates concerns, and enables sophisticated applications to only use the protocols they absolutely need, without giving up interoperability and upgradeability. Many commands return ndjson: here is how we define it in Apiary.
 
 ```apib
-## Multihash (string)
-An hash as defined [here](https://github.com/jbenet/multihash)
+## ndjson (object)
+
+Newline delimited JSON
 
 ### Sample
 
-  `QmNjRVohhWBX31EoaAXkrj5mPF9vQNcTVvQgWHNwdxweCN`
++ Body
 
+      {
+        "Name": "test/test",
+        "Bytes": 12
+      }
+      {
+        "Name": "test/test",
+        "Hash": "QmePw8gVcBMb8x6kAep6aMBAX23hCSk6iZW3i9VKkiFhu1"
+      }
+      {
+        "Name": "test",
+        "Hash": "QmV7sQezAjKh9pokjUPLL7ebuMF5t56UmfhK4cJncCcrNZ"
+      }
+```
+
+#### Multihash
+
+Multihashes comes from [multihash](https://github.com/multiformats/multihash), one of the [multiformats](https://github.com/multiformats/multiformats). The multiformats are a suite of protocols that are self-describable, which allows better interop, protocol agility, and helps us avoid lock in to a particular format in the future. Multihash, as one of these, is a protocol for differentiating outputs from various well-established cryptographic hash functions, addressing size and encoding considerations.
+
+It is useful to write applications that future-proof their use of hashes, and allow multiple hash functions to coexist. Take a look at [this GitHub thread](https://github.com/jbenet/random-ideas/issues/1) for a longer discussion on this.
+
+```apib
+## Multihash (string)
+An hash as defined [here](https://github.com/multiformats/multihash).
+
+### Sample
+
++ Body
+
+      QmNjRVohhWBX31EoaAXkrj5mPF9vQNcTVvQgWHNwdxweCN
+```
+
+#### Swarm Addresses
+
+TODO: Fill this out. 
+
+```apib
 ## SwarmAddrs (object)
 A list of swarm addresses.
 
@@ -116,30 +161,41 @@ A list of swarm addresses.
 
 + Body
 
-  ```
-  "QmNRCEwFMgCcbjNk5bFud9oqjJduvjBNbkiM8SuxuLh3GS": [
-    "/ip4/127.0.0.1/tcp/4001",
-    "/ip4/172.17.42.1/tcp/4001",
-    "/ip4/192.168.2.3/tcp/4001",
-    "/ip6/::1/tcp/4001"
-  ],
-  "QmNRV7kyUxYaQ4KQxFXPYm8EfuzJbtGn1wSFenjXL6LD8y": [
-    "/ip4/127.0.0.1/tcp/4001",
-    "/ip4/172.17.42.1/tcp/4001",
-    "/ip4/5.9.33.222/tcp/4001",
-    "/ip6/2a01:4f8:161:124a::1337:cafe/tcp/4001",
-    "/ip6/2a01:4f8:161:124a::2/tcp/4001",
-    "/ip6/::1/tcp/4001",
-    "/ip6/fcfc:762a:e12a:245d:8e5b:6a40:f65:acab/tcp/4001"
-  ]
-  ```
+      "QmNRCEwFMgCcbjNk5bFud9oqjJduvjBNbkiM8SuxuLh3GS": [
+        "/ip4/127.0.0.1/tcp/4001",
+        "/ip4/172.17.42.1/tcp/4001",
+        "/ip4/192.168.2.3/tcp/4001",
+        "/ip6/::1/tcp/4001"
+      ],
+      "QmNRV7kyUxYaQ4KQxFXPYm8EfuzJbtGn1wSFenjXL6LD8y": [
+        "/ip4/127.0.0.1/tcp/4001",
+        "/ip4/172.17.42.1/tcp/4001",
+        "/ip4/5.9.33.222/tcp/4001",
+        "/ip6/2a01:4f8:161:124a::1337:cafe/tcp/4001",
+        "/ip6/2a01:4f8:161:124a::2/tcp/4001",
+        "/ip6/::1/tcp/4001",
+        "/ip6/fcfc:762a:e12a:245d:8e5b:6a40:f65:acab/tcp/4001"
+      ]
+```
 
+#### Multiaddr
+
+Like multihashes, [multiaddr](https://github.com/multiformats/multiaddr) is one of the multiformats. It provides a standard way to represent addresses that:
+- support any standard network protocols
+- self-describe (that is, include the protocols they conform to in the address in some way)
+- have a binary packed format
+- have a nice string representation
+- encapsulate well
+
+```apib
 ## MultiAddr (string)
-A multiaddr as defined [here](https://github.com/jbenet/multiaddr).
+A multiaddr as defined [here](https://github.com/multiformats/multiaddr).
 
 ### Sample
 
-  `/ip6/fcfc:762a:e12a:245d:8e5b:6a40:f65:acab/tcp/4001`
++ Body
+
+      /ip6/fcfc:762a:e12a:245d:8e5b:6a40:f65:acab/tcp/4001
 ```
 
 ### How to edit and join in
