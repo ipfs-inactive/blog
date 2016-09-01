@@ -31,7 +31,7 @@ We now have an HTTP API specification, available on the API-viewing website [Api
 
 ### Description of Apiary
 
-[Apiary](https://apiary.io) is an online service that provides a nice UI for looking at HTTP API specifications. It uses the [API Bluebprint](https://apiblueprint.org/), a simple and accessible language with concise and expressive syntax. The Apiary site reads from the [apiary.apib](https://github.com/ipfs/http-api-spec/blob/master/apiary.apib) file in the [ifps/http-api-spec](https://github.com/ipfs/http-api-spec) repository.
+[Apiary](https://apiary.io) is an online service that provides a nice UI for looking at HTTP API specifications. It uses the [API Blueprint](https://apiblueprint.org/), a simple and accessible language with concise and expressive syntax. The Apiary site reads from the [apiary.apib](https://github.com/ipfs/http-api-spec/blob/master/apiary.apib) file in the [ifps/http-api-spec](https://github.com/ipfs/http-api-spec) repository.
 
 Currently, the Apiary spec has a request and response listed for every command and subcommand that [go-ipfs](https://github.com/ipfs/go-ipfs) sensibly exposes to the API. The spec also includes as many sensible invalid requests (with an invalid number of arguments, the wrong types or arguments, and with inadequate options specified) as needed in order to understand what errors are returned. Finally, it includes a response for most options.
 
@@ -89,7 +89,7 @@ The `.apib` syntax is powerful. Here is a simple example of the `ipfs version` c
             }
             ```
 
-Here, we see a description of the command name and the request type (in this case, GET). For the request, we have both a Body section (parsed by Apiary, and used in their live mock runner) and a section in the description with the curl request, which is used to display the command in more clearly on the Apiary site. Then, we have the response; with all of the headers returned from running the `curl` request, as well as an example of the JSON returned and a specification for how the respons should looks.
+Here, we see a description of the command name and the request type (in this case, GET). For the request, we have both a Body section (parsed by Apiary, and used in their live mock runner) and a section in the description with the curl request, which is used to display the command in more clearly on the Apiary site. Then, we have the response; with all of the headers returned from running the `curl` request, as well as an example of the JSON returned and a specification for how the response should looks.
 
 The API blueprint language allows us to define our own data structures, of which three in particular are used often by IPFS: multihashes, swarm addresses, and multiaddresses.
 
@@ -136,7 +136,7 @@ A multiaddr as defined [here](https://github.com/jbenet/multiaddr).
 
 ### How to edit and join in
 
-This specification can be used immediately to verify that a request you have recieved from the API is valid. It can also be used as a confirmation standard for cross-language interopability for IPFS implementations. The [JavaScript IPFS implementation](https://github.com/ipfs/js-ipfs) is already using as a baseline against which to test their outputs, to ensure interop with go-ipfs.
+This specification can be used immediately to verify that a request you have received from the API is valid. It can also be used as a confirmation standard for cross-language interoperability for IPFS implementations. The [JavaScript IPFS implementation](https://github.com/ipfs/js-ipfs) is already using as a baseline against which to test their outputs, to ensure interop with go-ipfs.
 
 No documentation effort is ever complete, or perfect. If you see an error or would like to add a feature, go to [ipfs/http-api-spec](https://github.com/ipfs/http-api-spec) and join in the conversation in the issues. Current goals that need work include:
 
