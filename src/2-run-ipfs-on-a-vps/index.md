@@ -64,6 +64,21 @@ Now you're ready to start IPFS!
 
     ipfs daemon &
 
+This should output the following into your terminal:
+
+    [1] 16252
+    Initializing daemon...
+    Adjusting current ulimit to 1024.
+    > Swarm listening on /ip4/127.0.0.1/tcp/4001
+    Swarm listening on /ip4/172.20.20.20/tcp/4001
+    Swarm listening on /ip4/73.114.34.208/tcp/37131
+    Swarm listening on /ip6/::1/tcp/4001
+    API server listening on /ip4/127.0.0.1/tcp/5001
+    Gateway (readonly) server listening on /ip4/127.0.0.1/tcp/8080
+    Daemon is ready
+
+Note that this will in the background, so you won't need to switch to a new window. You can make sure it is running using the `jobs` command.
+
 Give it a minute to connect to some other IPFS nodes, and then test that it's working by running a quick test:
 
     echo "hello world" | ipfs add
