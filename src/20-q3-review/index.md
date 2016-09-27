@@ -23,12 +23,15 @@ template: tmpl/layouts/post.html
 collection: posts
 ---
 
-We'll be focusing on our third quarter work, and our roadmaps for the next quarter, in the next couple of weekly calls. You're invited to join in!
+Our next two weekly calls will be focused on roadmaps. We will be reviewing work from the past 3 months and planning our roadmaps for the rest of 2016. _You're invited to join in!_ We want to make sure the community is heard and involved as much as possible.
 
-As you may know, every week on Monday we have a series of calls about the state of the IPFS project. These calles are announced in an issue in [ipfs/pm](https://github.com/ipfs/pm), and on the [IRC #ipfs channel](http://webchat.freenode.net/?channels=%23ipfs) when they happen. Normally, we have an All Hands call, where we discuss top-level issues, and then thirty minute calls specific to js-ipfs, libp2p, go-ipfs, and occasionally other topcis which need to be talked about, like IPLD, apps on IPFS, orbit, and the newsletter and blog.
+If you're interested in seeing the progress we've made with IPFS over the last few months or if you have something you want to see done in Q4, tune into these calls and chime in on IRC. 
 
-For the next couple of weeks, instead of going through our routine of covering work done, and looking at work to do, we're going to have a specific goal for these calls; to go over all of the work we've done since the IPFS Workshop in Lisbon at the end of July, and to cover some of the work we plan to do in the next few months. In mid-October all of the project heads will be meeting in person to lay out our finalized roadmap for our fourth quarter.
+You are welcome to dial into these calls as a participant if any of the following are true: 
+* You maintain software that relies directly on IPFS
+* You have done work on js-ipfs, go-ipfs, libp2p, orbit, etc.
+* You plan to do work on the these projects in the coming months
 
-If you're interested in seeing how IPFS has grown over the last few months, we especially encourage you to swing by the IRC channel or to keep an eye on ipfs/pm to wait for the sprint issues. If you have some thing you want to see in Q4, this will also be the place to voice those desires: we want to make sure the community is heard and involved, as much as possible.
+This is a diversion from our usual weekly schedule. As you may know, every Monday we have a series of calls to align work on IPFS for the following week. We announce the calls each week in an issue in [ipfs/pm](https://github.com/ipfs/pm/issues) and on the [#ipfs IRC channel](http://webchat.freenode.net/?channels=%23ipfs). For the next couple of weeks, instead of following [our usual routine](https://github.com/ipfs/pm#sprints-wip), we're going to look at roadmaps. We will review all the work we've done since the end of July and we will cover some of the work we plan to do in the next few months. In mid-October all of the project leads will be meeting in person to lay out our finalized roadmap for the rest of 2016.
 
-If you'd like to weigh in on the process for the next two weeks, check out [this issue](https://github.com/ipfs/pm/issues/202) and let us know!
+If you'd like to weigh in on the process for the next two weeks, check out [this issue](https://github.com/ipfs/pm/issues/202) and let us know! If you have never participated in the calls before and you plan to dial in as a participant on these roadmapping calls, please let us know you're coming by leaving a comment on that github issue.
