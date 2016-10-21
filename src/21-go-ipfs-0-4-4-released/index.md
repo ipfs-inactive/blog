@@ -64,7 +64,20 @@ Specifically, once you had more than 8192 pins, an
 issue with the recursive hash trie implementation caused hash table buckets to
 be overwritten resulting in only 256 pins remaining in the pinset. After that,
 the bug wouldn't be triggered again until the number of pins exceeds 8192 again.
-The 256 pins that remain are random.
+The 256 pins that remained would be random.
+
+We fixed this by instead making sure that each item in a set could be put into its
+own bucket, and by being moduloing hash output from this process into the final key space
+before getting to a point where there were issues with overwriting. The details for this
+can be seen [in this pull request](https://github.com/ipfs/go-ipfs/pull/3273). We added
+as stress test to make sure that this doesn't happen in the future, and will
+redouble our efforts to make sure that our test suites are more robust to ensure
+that these kinds of problems do not happen in th efuture.
+
+For now, don't run `ipfs repo gc` on sensitive data that is not otherwise backed up,
+as IPFS is still not 1.0 and our development may still find problems.
+
+[@kyledrake](https://github.com/kyledrake) pointed out this bug to us; thank you, Kyle!
 
 ## Find out if you're affected
 
