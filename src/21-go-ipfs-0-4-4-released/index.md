@@ -25,7 +25,7 @@ collection: posts
 
 [go-ipfs 0.4.4](https://dist.ipfs.io/#go-ipfs) has been released today,
 including an important hotfix for a bug we discovered in how *pinning* works.
-If you have a large number of pins, new pins would overwrite existing pins.
+If you had a large number of pins, new pins would overwrite existing pins.
 Apart from the hotfix, this release is equal to the previous release 0.4.3.
 
 - [How pinning works](#how-pinning-works)
@@ -37,9 +37,9 @@ Apart from the hotfix, this release is equal to the previous release 0.4.3.
 
 Pinning is a means of persisting data in your IPFS repo after adding or fetching it.
 It'll prevent objects from getting removed by garbage collection or other methods
-of cleaning up the IPFS repo. There are three ways how an object can be pinned:
+of cleaning up the IPFS repo. There are three ways an object can be pinned:
 
-- **Direct:** Only this object is pinned. It's children aren't pinned.
+- **Direct:** Only this object is pinned. Its children aren't pinned.
 - **Recursive:** This object and all its children are pinned.
   If the recursive pin is removed, the children aren't pinned any longer either.
 - **Indirect:** This object is pinned because one of its parents is pinned.
@@ -60,24 +60,20 @@ If your IPFS repo had more than 8192 pins, new pins would overwrite existing one
 Pinned objects wouldn't be directly affected, but they wouldn't be protected from
 garbage collection anymore.
 
-We recently discovered a bug in the logic of our pinning code. Because of this
-bug, users who add and pin large amounts of files may end up losing pins. If
-pins are lost and a garbage collection is run, then content will be lost. The
-circumstances that lead to this issue occurring are rather specific, the bug is
-triggered any time you pin more than 8192 items. Once the bug is triggered, an
+Specifically, once you had more than 8192 pins, an
 issue with the recursive hash trie implementation caused hash table buckets to
 be overwritten resulting in only 256 pins remaining in the pinset. After that,
-the bug won't be triggered again until the number of pins again exceeds 8192.
+the bug wouldn't be triggered again until the number of pins exceeds 8192 again.
 The 256 pins that remain are random.
 
 ## Find out if you're affected
 
 If you think you have experienced this issue and have *not* run a garbage
 collection, you can still find the 'lost' pins. We have written a new tool
-called 'ipfs-see-all' that allows you try and recover any old pins that are
-still in your local repo. The tool is available on [out distributions
-page](https://dist.ipfs.io), or if you prefer building from source, head over
-to [the github repo](https://github.com/whyrusleeping/ipfs-see-all). Once you
+called 'ipfs-see-all' that allows you to try and recover any old pins that are
+still in your local repo. The tool is available on [our distributions
+page](https://dist.ipfs.io), or, if you prefer building from source, head over
+to [the GitHub repo](https://github.com/whyrusleeping/ipfs-see-all). Once you
 have the tool, invoke it as `ipfs-see-all lost-pins` and it will scan for and
 print out every pin object that is not actually pinned in your pinset. Note
 that this may contain anything you have manually unpinned.
@@ -85,7 +81,7 @@ that this may contain anything you have manually unpinned.
 ## How to upgrade
 
 Depending on how you initially installed IPFS, there are several ways to
-upgrade. If you installed IPFS with a pre-built binary, you can either head over
+upgrade. If you installed IPFS with a pre-built binary, you can head over
 to [dist.ipfs.io](https://dist.ipfs.io/#go-ipfs) and grab the latest version
 from there. Or alternatively, from the same page you can grab the `ipfs-update`
 binary, and use it to perform the upgrade for you. If you installed from
