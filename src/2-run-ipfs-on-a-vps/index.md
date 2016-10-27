@@ -20,14 +20,14 @@ First, let's get the packages we'll need to install IPFS:
 
     ```sh
     > apt-get update
-    > apt-get install unzip wget
+    > apt-get install tar wget
     ````
 
 Now you can download the latest build of IPFS from the [install page](https://ipfs.io/docs/install/). We'll be using Linux x86_64:
 
     ```sh
-    > wget https://gobuilder.me/get/github.com/ipfs/go-ipfs/cmd/ipfs/ipfs_master_linux-amd64.zip
-    > unzip ipfs_master_linux-amd64.zip
+    > wget https://dist.ipfs.io/go-ipfs/v0.4.4/go-ipfs_v0.4.4_linux-amd64.tar.gz
+    > tar xfv go-ipfs_v0.4.4_linux-amd64.tar.gz
     > cp ipfs/ipfs /usr/local/bin/
     ```
 
