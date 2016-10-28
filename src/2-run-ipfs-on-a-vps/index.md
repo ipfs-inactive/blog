@@ -28,7 +28,8 @@ Now you can download the latest build of IPFS from the [install page](https://ip
     ```sh
     > wget https://dist.ipfs.io/go-ipfs/v0.4.4/go-ipfs_v0.4.4_linux-amd64.tar.gz
     > tar xfv go-ipfs_v0.4.4_linux-amd64.tar.gz
-    > cp ipfs/ipfs /usr/local/bin/
+    # Move it into your bin. This requires root permissions.
+    > sudo cp ipfs/ipfs /usr/local/bin/
     ```
 
 It's usually not a good idea to run a public-facing service as root. So we'll create a user account to run IPFS in and switch to it:
