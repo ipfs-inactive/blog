@@ -45,39 +45,36 @@ of cleaning up the IPFS repo. There are three ways an object can be pinned:
 - **Indirect:** This object is pinned because one of its parents is pinned.
   If the pins of all parents are removed, this object isn't pinned any longer.
 
-The `ipfs add` command adds a *recursive pin* for the added object by default.
+The `ipfs add` command adds a *recursive pin* for the added file by default.
 With `--pin=false`, it skips pinning. Similarly, the default pin type for
 `ipfs pin add` is *recursive*. With `--recursive=false` this changes to *direct*.
 
 For more information on how pinning works, check out `ipfs pin --help` and `ipfs add --help`.
 
+## The bug
+
 Direct and recursive pins are stored in separate so-called *pinsets*.
 Indirect pins aren't stored, since they're derived from recursive pins.
 
-## The bug
-
-If your IPFS repo had more than 8192 pins, new pins would overwrite existing ones.
-Pinned objects wouldn't be directly affected, but they wouldn't be protected from
-garbage collection anymore.
-
-Specifically, once you had more than 8192 pins, an
+Once you had more than 8192 pins, recursive or direct, an
 issue with the recursive hash trie implementation caused hash table buckets to
-be overwritten resulting in only 256 pins remaining in the pinset. After that,
-the bug wouldn't be triggered again until the number of pins exceeds 8192 again.
+be overwritten, resulting in only 256 pins remaining in the pinset. After that,
+the bug wouldn't be triggered again until the number of pins exceeded 8192 again.
 The 256 pins that remained would be random.
 
-We fixed this by instead making sure that each item in a set could be put into its
-own bucket, and by being moduloing hash output from this process into the final key space
-before getting to a point where there were issues with overwriting. The details for this
-can be seen [in this pull request](https://github.com/ipfs/go-ipfs/pull/3273). We added
-as stress test to make sure that this doesn't happen in the future, and will
+We fixed this by instead making sure that each item in a pinset be put into its
+own bucket, and by modulo'ing hash output from this process into the final key
+space. The details for this can be seen
+[in this pull request](https://github.com/ipfs/go-ipfs/pull/3273). We added a
+stress test to make sure that this doesn't happen in the future, and will
 redouble our efforts to make sure that our test suites are more robust to ensure
-that these kinds of problems do not happen in th efuture.
+that these kinds of problems do not happen in the future.
 
 For now, don't run `ipfs repo gc` on sensitive data that is not otherwise backed up,
 as IPFS is still not 1.0 and our development may still find problems.
 
-[@kyledrake](https://github.com/kyledrake) pointed out this bug to us; thank you, Kyle!
+[@kyledrake](https://github.com/kyledrake) of [neocities.org](https://neocities.org)
+pointed out this bug to us; thank you, Kyle!
 
 ## Find out if you're affected
 
@@ -99,6 +96,3 @@ to [dist.ipfs.io](https://dist.ipfs.io/#go-ipfs) and grab the latest version
 from there. Or alternatively, from the same page you can grab the `ipfs-update`
 binary, and use it to perform the upgrade for you. If you installed from
 source, you can simply run `git checkout v0.4.4`, then run `make install`.
-
-Please upgrade your IPFS nodes as soon as you can,
-so you can take advantage of the improvements.
