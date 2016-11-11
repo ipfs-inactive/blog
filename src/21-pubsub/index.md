@@ -23,32 +23,47 @@ template: tmpl/layouts/post.html
 collection: posts
 ---
 
-We are very excited to announce that we have recently merged a simple,
-experimental pubsub implementation.  While the implementation is experimental,
-and is by no means as performant or secure as our imagined 'final'
-implementation, this new feature does allow for some very fun new applications
-to be developed. In this post I will explain how to get started using `ipfs
-pubsub` and give some example applications that can and have been built using
-it.
+To make ipfs fast for datacenters, local area networks, and large p2p
+applications, we need a fast publish subscribe system. [Publish
+Subscribe](https://en.wikipedia.org/wiki/Publish%E2%80%93subscribe_pattern),
+called 'pubsub' for short, is a mechanism for 'publishers' to distribute
+messages quickly and directly to 'subscribers' that are interested in them.
+This is valuable because <somebody help why not use the phrase 'hella cool' in
+a blog post>.
+
+Before going down the road of implementing a new pubsub system, we did a fairly
+extensive review of as much pubsub literature and research as we could find. We
+are planning on doing a writeup on this process soon, but we've been pretty
+busy implementing things and haven't had time to get to that yet.
+
+We have recently merged a simple, experimental pubsub implementation.  While
+the implementation is experimental, and is by no means as performant or secure
+as our imagined 'final' implementation, this new feature does allow for some
+very fun new applications to be developed. In this post I will explain how to
+get started using `ipfs pubsub` and give some example applications that can and
+have been built using it.
 
 First off, to enable the pubsub code, make sure you're running a recent version
 of go-ipfs, or try out the pre-built floodsub binaries up on [the distributions
-page](https://dist.ipfs.io/go-ipfs/floodsub-2). Once you have that version of ipfs installed, start the daemon with:
+page](https://dist.ipfs.io/go-ipfs/floodsub-2). Once you have that version of
+ipfs installed, start the daemon with:
 
 ```sh
 > ipfs daemon --enable-pubsub-experiment
 ```
 
-This will tell ipfs to create and enable the pubsub service. It also implies that you will not be able to use pubsub with other peers who are not running with pubsub enabled.
+This will tell ipfs to create and enable the pubsub service. It also implies
+that you will only be able to use pubsub with other peers who choose to enable
+it.
 
-To subscribe to the topic "foo", run:
+To subscribe to the topic `foo`, run:
 ```sh
 > ipfs pubsub sub foo
 ```
 
-Now, any messages for the topic "foo" will be printed to your console.
+Now, any messages for the topic `foo` will be printed to your console.
 
-To publish a message to the topic "foo", open up another terminal and run:
+To publish a message to the topic `foo`, open up another terminal and run:
 ```sh
 > ipfs pubsub pub foo "hello world"
 ```
@@ -74,31 +89,37 @@ And to see all the topics you are currently subscribed to, run:
 
 ## Apps
 Using this, the possibilties for distributed apps on ipfs really start to open
-up. The first thing we did once we got this working was shove it into
+up. The first thing we did once we got this working was integrating it into
 [Orbit](https://github.com/haadcode/orbit). Allowing Orbit to provide fully
 distributed, peer to peer chat without *any* server anywhere. This also means
 that you can chat with orbit on local area networks without a backbone internet
 connection, or in networks with spotty connectivity to the global internet.
 
 Aside from chat, there are many interesting possibilities. In the near future,
-IPNS records could be pushed over pubsub, allowing lightning fast updates of
+IPNS records will be pushed over pubsub, allowing lightning fast updates of
 peers IPNS entries.  Peers could use pubsub to keep track of the head of some
-[merklelinked global log](https://en.wikipedia.org/wiki/Blockchain_(database)).
-Pubsub could even be used to (inneficiently) route IP packets between peers,
+[merkle-linked global log](https://en.wikipedia.org/wiki/Blockchain_(database)).
+Pubsub could even be used to [(inefficiently) route IP packets](https://ipfs.io/ipfs/QmUVtpaAUK7rNimRstqhk98PTMEu6PjBfmHBanz3LxRU5p/main.go) between peers,
 Any existing web protocol could be tunneled over pubsub with relative ease.
 
 
 ## Whats next?
 The next steps for pubsub have to do with authentication. Currently, any peer
 can publish to any pubsub topic. In the near future, we are going to implement
-a mode of pubsub that allows the selection of peers who are authorized to
-publish messages to a topic. This would allow certain usecases to have a bit
-more security around their applications.
+an authenticated mode of pubsub that allows the selection of peers who are
+authorized to publish messages to a topic. This would allow certain usecases to
+have a bit more security around their applications.
 
 After that, we are going to take a look at better message routing algorithms.
 The current routing algorithm floods messages to every subscriber, resulting in
 some peers receiving the same message multiple times. Finding a better routing
 algorithm would go a long ways towards reducing that overhead.
+
+Please note this can be quite bandwidth intensive, and it is intended as a very
+first pass approach. It works well for apps with few peers in the group, but
+does not scale. We obviously will improve the underlying algorithms for larger
+use cases, but we wanted to ship this now so you can get started using it for
+your applications, just like we're using it for Orbit.
 
 ## Enjoy!
 All that said, We hope you give `ipfs pubsub` a try and let us know how it goes!
