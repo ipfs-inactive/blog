@@ -2,11 +2,11 @@
 baseurl: ..
 template: tmpl/layouts/post.html
 breadcrumbs:
-  - {name: "2-run-ipfs-on-a-vps", link: "./" }
-id: 2-run-ipfs-on-a-vps
-date: 2015-11-02
+  - {name: "22-run-ipfs-on-a-vps", link: "./" }
+id: 22-run-ipfs-on-a-vps
+date: 2016-11-14
 title: Run IPFS latest on a VPS
-author: Kyle Drake
+author: Richard Littauer
 collection: posts
 ---
 
