@@ -38,14 +38,14 @@ top of IPFS.
 Before going down the road of implementing a new pubsub system, we did a fairly
 extensive review of as much pubsub literature and research as we could find. We
 are planning on doing a writeup on this process soon, but we've been pretty
-busy implementing the system itself up to now.
+busy implementing other things and haven't had time to get to that yet.
 
-We have recently merged a simple, experimental pubsub implementation into go-ipfs.  While
-the implementation is experimental, and is by no means as performant or secure
-as our imagined 'final' implementation, this new feature does allow for some
-very fun new applications to be developed. In this post I will explain how to
-get started using `ipfs pubsub` and give some example applications that can and
-have been built using it.
+We have recently merged a simple, experimental pubsub implementation into go-ipfs.
+The implementation is experimental, and is very far from the performance and
+security levels we expect from our long-term target. But already, this feature
+does allow for some very useful and fun new applications to be developed. In
+this post I will explain how to get started using `ipfs pubsub` and give some
+example applications that can and have been built using it.
 
 First off, to enable the pubsub code, make sure you're running a recent version
 of go-ipfs, or try out the pre-built floodsub binaries up on [the distributions
@@ -109,10 +109,10 @@ Any existing web protocol could be tunneled over pubsub with relative ease.
 
 ## What's next?
 The next steps for pubsub have to do with authentication. Currently, any peer
-can publish to any pubsub topic. In the near future, we are going to implement
-an authenticated mode of pubsub that allows the selection of peers who are
-authorized to publish messages to a topic. This would allow certain use-cases to
-have a bit more security around their applications.
+can publish to any pubsub topic. In the near future,an authenticated mode for
+pubsub topics, where only certain authorized peers -- those given a
+cryptographic key or capability -- can publish messages. We are still working
+out the sharing and capability granting model.
 
 After that, we are going to take a look at better message routing algorithms.
 The current routing algorithm floods messages to every subscriber, resulting in
