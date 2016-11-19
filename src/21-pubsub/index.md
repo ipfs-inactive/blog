@@ -28,12 +28,6 @@ applications, we need a fast publish subscribe system. [Publish
 Subscribe](https://en.wikipedia.org/wiki/Publish%E2%80%93subscribe_pattern),
 called 'pubsub' for short, is a mechanism for 'publishers' to distribute
 messages quickly and directly to 'subscribers' that are interested in them.
-This is valuable because it decouples the publishers from the subscribers,
-so that data can still flow if a publisher goes down, or if there are no
-immediate users. This allows for network resiliency, and better scalability
-than the traditional server model. A pubsub system also opens the door for,
-among other use cases, applications that can want to harness dynamic data on
-top of IPFS.
 
 Before going down the road of implementing a new pubsub system, we did a fairly
 extensive review of as much pubsub literature and research as we could find. We
@@ -103,8 +97,8 @@ Aside from chat, there are many interesting possibilities. In the near future,
 IPNS records will be pushed over pubsub, allowing lightning fast updates of
 peers' IPNS entries.  Peers could use pubsub to keep track of the head of some
 [merkle-linked global log](https://en.wikipedia.org/wiki/Blockchain_(database)).
-Pubsub could even be used to [(inefficiently) route IP packets](https://ipfs.io/ipfs/QmUVtpaAUK7rNimRstqhk98PTMEu6PjBfmHBanz3LxRU5p/main.go) between peers.
-Any existing web protocol could be tunneled over pubsub with relative ease.
+You can use pubsub to broadcast notifications to people in a social network, or
+even use it to send updates in a multiplayer game.
 
 
 ## What's next?
