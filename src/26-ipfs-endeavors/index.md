@@ -23,7 +23,7 @@ template: tmpl/layouts/post.html
 collection: posts
 ---
 
-In October, at Protocol Labs, Juan Benet sat down to do a quick overview of the main IPFS endeavors. This video runs through the different projects; a transcript is provided below.
+In October, Juan Benet sat down to do a quick overview of the main IPFS endeavors. This video runs through the different projects; a transcript is provided below.
 
 <iframe width="700" height="400" src="https://www.youtube.com/embed/D1u7m_XzLTA" frameborder="0" allowfullscreen></iframe>
 
