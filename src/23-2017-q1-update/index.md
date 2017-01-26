@@ -25,7 +25,7 @@ collection: posts
 
 # New IPFS Roadmap Structure for for Q1 in 2017
 
-The IPFS team are trying out a new format for arranging our work and our roadmap. This post covers some of the basic aspects of these changes. A longer post will be coming in February.
+The IPFS team are trying out a new format for arranging our work and our roadmap. This post covers some of the basic aspects of these changes and their motivations.
 
 Previously we used a loosely organized approach where each team member would set their own goals for a sprint. We broke our work up under three headings: js-ipfs, go-ipfs or "Apps on IPFS". Now we're moving to a scrum-like structure, where we form teams around targeted, two-week scrum-style Sprints.
 
@@ -47,7 +47,7 @@ So, we're pivoting; instead of having everyone come up with their own goals and 
 
 ### What will this look like?
 
-This is an experiment. We will follow this arrangement through Q1. At the end of Q1 to consider whether it's working and where we an improve. One of our main questions is whether this format makes it easier for community members to contribute to sprints, follow along with our work, or add their own initiatives to the project roadmap.
+This is an experiment. We will follow this arrangement through Q1. At the end of Q1 we will review the quarter, consider whether this approach is working and identify ways to improve. One of our main questions will be whether this format makes it easier for community members to contribute to sprints, follow along with our work, and/or add their own initiatives to the project roadmap.
 
 For this first run of the experiment, we've scheduled three types of things on our roadmap: [sprints](https://github.com/ipfs/pm/issues?utf8=%E2%9C%93&q=is%3Aopen%20is%3Aissue%20label%3Asprint), [sprintinos](https://github.com/ipfs/pm/issues?q=is%3Aopen+is%3Aissue+label%3Asprintino) and [events](https://github.com/ipfs/pm/issues?utf8=%E2%9C%93&q=is%3Aopen%20is%3Aissue%20label%3Aevent%20)
 
@@ -59,17 +59,19 @@ For Q1, our definition of a [sprint](https://github.com/ipfs/pm/issues?utf8=%E2%
 
 By contrast, a [sprintino](https://github.com/ipfs/pm/issues?q=is%3Aopen+is%3Aissue+label%3Asprintino) lasts one week or less and involves only 1 or 2 team members.
 
-The [events](https://github.com/ipfs/pm/issues?utf8=%E2%9C%93&q=is%3Aopen%20is%3Aissue%20label%3Aevent%20) are any events that IPFS team members will be attending. These events are on the roadmap because they impact the goals for that week. It also gives community members an opportunity to know about opportunities to meet IPFs contributors and and interact with them in-person.
+The [events](https://github.com/ipfs/pm/issues?utf8=%E2%9C%93&q=is%3Aopen%20is%3Aissue%20label%3Aevent%20) are any public events that IPFS team members will be attending. These events are on the roadmap because they impact the goals for that week and because it gives community members a way to know about opportunities to meet IPFS contributors and to interact with them in-person.
 
 We are also putting this info into the [ROADMAP.md](https://github.com/ipfs/ipfs/blob/master/ROADMAP.md) file in the [main ipfs github repository](https://github.com/ipfs/ipfs).
 
 ### What about endeavors that aren't covered by sprints?
 
-As with any organization hoping to affect real change in the world, we have to be very careful to make sure that we're working on the projects that will have the most impact. This means sometimes we have to set other projects aside temporarily or let them go entirely. 
+As with any organization hoping to effect real change in the world, we have to be very careful to make sure that we're working on the projects that will have the most impact. This means sometimes we have to set other projects aside temporarily or let them go entirely. 
 
 To that end, we've started maintaining a list of the endeavors that didn't make the priority cut for this quarter. Rather than simply neglecting those endeavors, we're making an active effort to set a plan for each one. We've termed these projects 'stale' endeavors because they're not being constantly infused with the improvements, new designs, etc that keep a project alive. For each of those stale endeavors what we'll try to do this quarter is make it clear what the status of the project is and how we plan to deal with it.  
 
 Some of these stale endeavors will be picked up later; we're just not going to focus on them this quarter. We think of those as being "moved to the back burner". Other projects have been in a limbo state for a long time. Some of those might be "set free" so that others can pick up the code in the future with minimal confusion.
+
+If you are interested in helping to keep any of these "stale" endeavors fresh, please say so! Though the core maintainers don't have time to focus on them, that doesn't mean you can't move them forward while we're busy on other sprints.
 
 There is a list of stale endeavors in the updated  [ROADMAP.md](https://github.com/ipfs/ipfs/blob/master/ROADMAP.md#stale-endeavors). This list will change over time as we handle each endeavor to get it out of the 'stale' state by either "putting it on the back burner", "setting it free", or establishing another plan for its future.
 
