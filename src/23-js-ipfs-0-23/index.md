@@ -26,7 +26,7 @@ Today we're happy to announce that we have released js-ipfs version 0.23.0
 ## Installation
 
 ```bash
-npm install --save js-ipfs@0.23.0
+npm install --save ipfs@0.23.0
 ```
 
 ## Full Details
