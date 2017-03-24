@@ -10,7 +10,7 @@ author: David Dias & Victor Bjelkholm
 collection: posts
 ---
 
-Today we're happy to announce that we have released js-ipfs version 0.23.0
+Today we're happy to announce that we have released js-ipfs version 0.23.0.
 
 ## Highlights
 
@@ -18,7 +18,7 @@ Today we're happy to announce that we have released js-ipfs version 0.23.0
 * Interoperability with go-ipfs
 * Bootstrap nodes
 * Easier initialization
-* Datastore instead of blob-store
+* Datastore
 * New tutorials
 * `jsipfs add --wrap-with-directory` feature
 * Support for unixfs sharding
@@ -108,6 +108,6 @@ Thanks to @harshjv, now you can add files wrapped in a directory just like go-ip
 Here is a quick list of things that we will be heads down after this release
 
 - Circuit Relay - We are building Circuit Relay in order to let browser nodes to connect to any node in the network (e.g when two nodes do not have a common transport). Track the development and spec here -- https://github.com/libp2p/specs/tree/master/relay, https://github.com/libp2p/js-libp2p-circuit/pull/1. 
-- DHT - The DHT is the second last piece that needs to be built(the first being relay) in order to give browser nodes the ability to discover the location of content by themselves. Track dev at the repo https://github.com/libp2p/js-libp2p-dht
+- DHT - The DHT is the second last piece that needs to be built (the first being relay) in order to give browser nodes the ability to discover the location of content by themselves. Track dev at the repo https://github.com/libp2p/js-libp2p-dht
 - Parity to IPFS - We want IPFS to access the Ethereum blockchain on demand (i.e: Without having to constantly transferring the blocks over), for that, the EthereumJS team had a brilliant idea of building a storage backend for js-ipfs that uses Parity, so that we can 'read' blocks from the blockchain. Track at: https://github.com/ipfs/js-ipfs/issues/763 
 - Torrent support - We started working in getting Torrent files supported in js-ipfs (same way we do for Ethereum). This will give the ability to fetch data from the BitTorrent network through js-ipfs as well. Track progress here: https://github.com/ipfs/js-ipfs/issues/779
