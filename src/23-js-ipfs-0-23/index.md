@@ -6,7 +6,7 @@ breadcrumbs:
 id: 23-js-ipfs-0-23
 date: 2017-03-24
 title: js-ipfs 0.23.0 released
-author: Victor Bjelkholm
+author: David Dias & Victor Bjelkholm
 collection: posts
 ---
 
