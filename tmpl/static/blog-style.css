@@ -58,6 +58,10 @@ body .navbar-text:last-child {
   overflow: hidden;
 }
 
+.post li {
+  text-align: left;
+}
+
 ol, ul {
   margin-left: 0;
   padding-left: 17px;
