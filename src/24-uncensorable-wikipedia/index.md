@@ -18,6 +18,8 @@ collection: posts
 
 We are happy to announce that **we have published a [snapshot of tr.wikipedia.org, the Turkish version of Wikipedia](https://ipfs.io/ipfs/QmezTdYeKyjPFoREStJQQbvATUP8yRJdHMMZx2rZ86p9g9/wiki/Anasayfa.html) on IPFS**. There will be Arabic, Kurdish and English versions coming shortly.  This blog post includes information on how you can access those snapshots, how you can help mirror them, and why it's so powerful to put content like this on IPFS.
 
+By putting important information like Wikipedia onto the decentralized web, we open many avenues for people to access, hold, cite, and use that information in more durable ways.
+
 The effort to put snapshots of Wikipedia onto IPFS is an independent effort undertaken by the IPFS maintainers. It is not affiliated with the Wikimedia Foundation and is not connected with the volunteers who contribute to Wikipedia articles.
 
 ## What Triggered This Announcement
@@ -29,7 +31,7 @@ At 8am local time on April 29th, Wikipedia went dark for everyone in Turkey. Acc
 
 A main goal of the IPFS Project is improving humanity's access to information. We strongly oppose the censorship of history, of news, of free thought, of discourse, and of compendiums of vital information such as Wikipedia. Free access to information is key to modern human life, to a free society, and to a flourishing culture. We're alarmed by the erosion of civil liberties wherever it occurs, and we want to help people like the citizens of Turkey preserve freedom of information, even in the face of a tightening iron fist.
 
-Upon hearing the news, we revived an effort to put snapshots of Wikipedia on IPFS, so that people may be able to read it in a decentralized and distributed way. This can help people to at least _view_ all of the Wikipedia content, even if they cannot reach Wikipedia.org itself. By putting important information like Wikipedia onto the decentralized web, we open many avenues for people to access, hold, cite, and use that information in more durable ways.
+Upon hearing the news, we revived an effort to put snapshots of Wikipedia on IPFS, so that people may be able to read it in a decentralized and distributed way. This can help people to at least _view_ all of the Wikipedia content, even if they cannot reach Wikipedia.org itself.
 
 ## Quick Background: IPFS and Content Addressing
 
