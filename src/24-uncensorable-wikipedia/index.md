@@ -26,6 +26,9 @@ A main goal of the IPFS Project is improving humanity's access to information. W
 Upon hearing the news, we revived an effort to put snapshots of Wikipedia on IPFS, so that people may be able to read it in a decentralized and distributed way. This can help people to at least _view_ all of the Wikipedia content, even if they cannot reach Wikipedia.org itself.
 
 By putting important information like Wikipedia onto the decentralized web, we open many avenues for people to access, hold, cite, and use that information in more durable ways.
+
+This effort to put snapshots of Wikipedia onto IPFS is a completely independent effort undertaken by the IPFS maintainers. It is not affiliated with the Wikimedia Foundation and is not connected with the volunteers who contribute to Wikipedia articles.
+
 ## Quick Background: IPFS and Content Addressing
 
 **[IPFS](https://ipfs.io) -- the Inter-Planetary File System** -- is a new internet protocol that makes the web faster, safer, and more open. IPFS changes the _addressing_ of information, moving from *location addressing* to *content addressing*. You can find out more about IPFS at [the IPFS Website](https://ipfs.io) or by [watching this talk](https://www.youtube.com/watch?v=2RCwZDRwk48).
@@ -84,7 +87,7 @@ A full read-write version (2) would require a strong collaboration with Wikipedi
 
 ## Wikipedia on IPFS -- The Release Today
 
-Today, we are releasing the first full static snapshot on IPFS of all of https://tr.wikipedia.org. We describe how to access it and how we did this below. This snapshot was taken on `2017-04-30`. We will also release a snapshot of en.wikipedia.org (the english-language wikipedia) in the next few days. The English snapshot is taking longer to load onto IPFS because it's much bigger than the Turkish snapshot, with many more links.
+Today, we are releasing the first full static snapshot on IPFS of all of https://tr.wikipedia.org. We describe how to access it and how we did this below. This snapshot was taken on `2017-04-30`. Over the coming days we will also release snapshots of the Arabic (https://ar.wikipedia.org) and Kurdish (https://ku.wikipedia.org) versions of Wikipedia. There's an English snapshot coming too. The English version of wikipedia is taking longer to load onto IPFS because it's much bigger than the others (20 times larger), with many more links. We will post updates when we add snapshots of each new language.
 
 The unique identifier (cryptographic hash) for the snapshot of tr.wikipedia.org from April 30th is:
 * Turkish Wikipedia (30 April 2017): [/ipfs/tr-wikipedia-ipfs/wiki/Anasayfa.html](https://ipfs.io/ipfs/tr-wikipedia-ipfs/wiki/Anasayfa.html)  
@@ -147,11 +150,29 @@ I'm not kidding. If you'd like to access this content via [sneakernet](https://e
 
 The steps we followed to create these first snapshots were:
 
-1. Download the latest snapshot of Wikipedia (in ZIM format) from http://wiki.kiwix.org/wiki/Content_in_all_languages
-2. Unpack the ZIM snapshot using https://github.com/dignifiedquire/zim/commit/a283151105ab4c1905d7f5cb56fb8eb2a854ad67
-3. Configure your IPFS node to enable directory sharding - run `ipfs config --json 'Experimental.ShardingEnabled' true`
-3. Add all the data the node using `ipfs add -w -r --raw-leaves $upacked_wiki`.
-4. Save the last hash of that output. It is the hash of your new Wikipedia snapshot
+### Step 1: Download the latest snapshot from kiwix.org
+Download the latest snapshot of Wikipedia (in ZIM format) from http://wiki.kiwix.org/wiki/Content_in_all_languages
+
+### Step 2: Unpack the ZIM snapshot
+Unpack the ZIM snapshot using https://github.com/dignifiedquire/zim/commit/a283151105ab4c1905d7f5cb56fb8eb2a854ad67
+
+### Step 3: Enable Directory Sharding on your IPFS Node
+Configure your IPFS node to enable directory sharding
+```sh
+$ ipfs config --json 'Experimental.ShardingEnabled' true`
+```
+
+### Step 4: Add the data to IPFS
+Add all the data the node using `ipfs add`. Use the following command, replacing `$unpacked_wiki` with the path to the unpacked ZIM snapshot that you created in Step 2.
+
+```sh
+$ ipfs add -w -r --raw-leaves $upacked_wiki`
+```
+
+Save the last hash of the output from that process. It is the hash of your new Wikipedia snapshot.
+
+### Step 5: Share the hash
+Share the hash of your new snapshot so people can access it and replicate it onto their machines.
 
 This work was primarily done by [@kubuxu](https://github.com/kubuxu) [@dignifiedquire](https://github.com/dignifiedquire) and [@lgierth](https://github.com/lgierth) with help from [@whyrusleeping](https://github.com/whyrusleeping). They used code originally written by [@eminence](https://github.com/achin)
 
