@@ -95,7 +95,7 @@ The unique identifier (cryptographic hash) for the snapshot of tr.wikipedia.org 
 * Turkish Wikipedia (30 April 2017): [/ipfs/QmQYGetfzpDR3pPR8mGq78yA87Jpe3RE3tUxp9nhDv36bW/wiki/Anasayfa.html](https://ipfs.io/ipfs/QmQYGetfzpDR3pPR8mGq78yA87Jpe3RE3tUxp9nhDv36bW/wiki/Anasayfa.html)  
 
 This link points to a specific snapshot. It will always point to that specific day's snapshot. To find the most up-to-date snapshot of Wikipedia on IPFS you can use this IPNS link, which will resolve to the latest snapshot whenever we release a new one:
-* Turkish Wikipedia (most recent snapshot): [/ipns/QmQP99yW82xNKPxXLroxj1rMYMGF6Grwjj2o4svsdmGh7S/wiki/Anasayfa.html](https://ipfs.io/ipns/QmQP99yW82xNKPxXLroxj1rMYMGF6Grwjj2o4svsdmGh7S/wiki/Anasayfa.html)
+* Turkish Wikipedia (most recent snapshot, resolved through IPNS): [/ipns/QmQP99yW82xNKPxXLroxj1rMYMGF6Grwjj2o4svsdmGh7S/wiki/Anasayfa.html](https://ipfs.io/ipns/QmQP99yW82xNKPxXLroxj1rMYMGF6Grwjj2o4svsdmGh7S/wiki/Anasayfa.html)
 
 ### Human-readable links
 
@@ -105,25 +105,25 @@ If you are not able to access ipfs.io or wikipedia-on-ipfs.org, you can use this
 
 - Turkish Wikipedia: [https://ipfs.io/ipns/tr.wikipedia-on-ipfs.org](https://ipfs.io/ipns/tr.wikipedia-on-ipfs.org/Anasayfa.html)
 
-Failing that, use the (less readable) IPNS link.
+Failing that, use the (less readable) IPFS or IPNS links from above.
 
 
 ## How to access Wikipedia on IPFS
 
 IPFS makes it possible to access information through many different paths. If one path is closed, you have other options. Some of the options are very simple.  Others require a bit more effort. In most cases you can use [this link](https://ipfs.io/ipns/QmQP99yW82xNKPxXLroxj1rMYMGF6Grwjj2o4svsdmGh7S/wiki/Anasayfa.html) to view the Wikipedia snapshot through the ipfs-to-http gateway at ipfs.io. If that path doesn't work, for example if ipfs.io is blocked in your area, you can use the same basic information from that ipfs.io link and access Wikipedia through a different path.
 
-We've written a number of tutorials describing the many different ways to access content through IPFS, including ways to access IPFS anonymously through Tor. You can read those tutorials in [The Decentralized Web Primer](https://dweb-primer.ipfs.io/avenues-for-access/), which is available [online](https://dweb-primer.ipfs.io/avenues-for-access/) or as a [downloadable PDF](https://dweb-primer.ipfs.io/decentralized-web-primer.pdf), [epub](https://dweb-primer.ipfs.io/decentralized-web-primer.epub), or [mobi](https://dweb-primer.ipfs.io/decentralized-web-primer.mobi)
+We've written a number of tutorials describing the many different ways to access content through IPFS, including ways to access IPFS anonymously through Tor. You can read those tutorials in the current draft of [The Decentralized Web Primer](https://dweb-primer.ipfs.io/avenues-for-access/), which is available [online](https://dweb-primer.ipfs.io/avenues-for-access/) or as a [downloadable PDF](https://dweb-primer.ipfs.io/decentralized-web-primer.pdf), [epub](https://dweb-primer.ipfs.io/decentralized-web-primer.epub), or [mobi](https://dweb-primer.ipfs.io/decentralized-web-primer.mobi)
 
 Your main options for accessing the snapshot of Wikipedia are: _(depending on your network, some of these won't work)_
 
 * **Option**: Use the ipfs.io gateway to access it: https://ipfs.io/ipns/QmQP99yW82xNKPxXLroxj1rMYMGF6Grwjj2o4svsdmGh7S/wiki/Anasayfa.html
-* **Option**: Connect with the IPFS network over Tor (this is experimental. Read [this tutorial on Tor gateways](https://dweb-primer.ipfs.io/avenues-for-access/tor-gateways.html) and [this tutorial on using IPFS with Tor transport](https://dweb-primer.ipfs.io/avenues-for-access/tor-transport.html))
-* **Option**: Install an IPFS node on your computer and access Wikipedia through that node _(requires [using the command line](http://lifehacker.com/5633909/who-needs-a-mouse-learn-to-use-the-command-line-for-almost-anything), but this is the most reliable method because it retrieves the content directly from the IPFS peer-to-peer network)_
+* **Option**: Connect with the IPFS network over Tor (this is experimental. Read [this tutorial on Tor gateways](https://dweb-primer.ipfs.io/avenues-for-access/lessons/tor-gateways.html) or [this tutorial on running IPFS over Tor transport](https://dweb-primer.ipfs.io/avenues-for-access/lessons/tor-transport.html))
+* **Option**: Install an IPFS node on your computer and access Wikipedia through that node (requires [using the command line](http://lifehacker.com/5633909/who-needs-a-mouse-learn-to-use-the-command-line-for-almost-anything). _This is the most reliable method because it retrieves the content directly from the IPFS peer-to-peer network)_
     1. Install IPFS [following these instructions]()
     2. Start your IPFS node by running `ipfs daemon` so it can connect to the network.
-    3. Read the content through your IPFS node's HTTP gateway by visiting http://localhost:8080/ipns/QmQP99yW82xNKPxXLroxj1rMYMGF6Grwjj2o4svsdmGh7S/wiki/Anasayfa.html
+    3. Read the content through your IPFS node's local HTTP gateway by visiting http://localhost:8080/ipns/QmQP99yW82xNKPxXLroxj1rMYMGF6Grwjj2o4svsdmGh7S/wiki/Anasayfa.html
 
-We've almost finished creating a web browser extension that will allow you to access IPFS directly from your web browser without installing any additional external tools. Watch https://github.com/ipfs/in-web-browsers for the announcement when we release that browser extension.
+**Coming soon:** We've almost finished creating a web browser extension that will allow you to access IPFS directly from your web browser without installing any additional external tools. Watch https://github.com/ipfs/in-web-browsers for the announcement when we release that browser extension.
 
 ## How to Mirror Wikipedia on an IPFS Node
 
@@ -132,7 +132,9 @@ If you want to help make this information available, you can install IPFS on you
 **Prerequisites**:
 * Requires [using the command line](http://lifehacker.com/5633909/who-needs-a-mouse-learn-to-use-the-command-line-for-almost-anything)
 * You need to have enough storage space to hold the snapshot(s) you want to serve.
-    * Turkish Wikipedia is about 15 GB
+    * Turkish snapshot requires 10 GB
+    * Turkish, Arabic and Kurdish snapshots combined together will require 25 GB
+    * English snapshot will require 250 GB
 * _If possible, use a machine with a public IP address._ If you want to run an ipfs-to-http gateway that lets people access the IPFS content using their web browswer, you need to ensure that youre machine can be reached with a public IP address.
 
 If you don't have enough storage space to hold full copies of the snapshot(s), you can still run an IPFS gateway so that people can rely on you to retrieve the content from the IPFS network on the fly.
@@ -152,35 +154,16 @@ I'm not kidding. If you'd like to access this content via [sneakernet](https://e
 
 The steps we followed to create these first snapshots were:
 
-### Step 1: Download the latest snapshot from kiwix.org
-Download the latest snapshot of Wikipedia (in ZIM format) from http://wiki.kiwix.org/wiki/Content_in_all_languages
-
-### Step 2: Unpack the ZIM snapshot
-Unpack the ZIM snapshot using https://github.com/dignifiedquire/zim/commit/a283151105ab4c1905d7f5cb56fb8eb2a854ad67
-
-### Step 3: Enable Directory Sharding on your IPFS Node
-Configure your IPFS node to enable directory sharding
-```sh
-$ ipfs config --json 'Experimental.ShardingEnabled' true`
-```
-
-### Step 4: Add the data to IPFS
-Add all the data the node using `ipfs add`. Use the following command, replacing `$unpacked_wiki` with the path to the unpacked ZIM snapshot that you created in Step 2.
-
-```sh
-$ ipfs add -w -r --raw-leaves $upacked_wiki`
-```
-
-Save the last hash of the output from that process. It is the hash of your new Wikipedia snapshot.
-
-### Step 5: Share the hash
-Share the hash of your new snapshot so people can access it and replicate it onto their machines.
+1. Download the latest snapshot of Wikipedia (in ZIM format) from http://wiki.kiwix.org/wiki/Content_in_all_languages
+2. Unpack the ZIM snapshot using https://github.com/dignifiedquire/zim/commit/a283151105ab4c1905d7f5cb56fb8eb2a854ad67
+3. Add mirror info and search bar to the snapshot using the script [here](https://github.com/ipfs/distributed-wikipedia-mirror/blob/master/execute-changes.sh)
+4. Add the snapshot to IPFS with the command `ipfs add -w -r --raw-leaves $upacked_wiki`
 
 This work was primarily done by [@kubuxu](https://github.com/kubuxu) [@dignifiedquire](https://github.com/dignifiedquire) and [@lgierth](https://github.com/lgierth) with help from [@whyrusleeping](https://github.com/whyrusleeping). They used code originally written by [@eminence](https://github.com/achin)
 
 ## How to add new Wikipedia snapshots to IPFS
 
-If you would like to repeat this process, adding an updated Wikipedia snapshot on IPFS, you can follow the instructions at https://github.com/ipfs/distributed-wikipedia. We will keep that page up to date as we improve the process.
+If you would like to repeat this process, adding an updated Wikipedia snapshot on IPFS, you can follow the instructions at https://github.com/ipfs/distributed-wikipedia-mirror. We will keep that page up to date as we improve the process.
 
 ## How we will publish the hashes of new snapshots
 
