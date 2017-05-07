@@ -90,7 +90,7 @@ A full read-write version (2) would require a strong collaboration with Wikipedi
 Today, we are releasing the first full static snapshot on IPFS of all of https://tr.wikipedia.org. We describe how to access it and how we did this below. This snapshot was taken on `2017-04-30`. Over the coming days we will also release snapshots of the Arabic (https://ar.wikipedia.org) and Kurdish (https://ku.wikipedia.org) versions of Wikipedia. There's an English snapshot coming too. The English version of wikipedia is taking longer to load onto IPFS because it's much bigger than the others (20 times larger), with many more links. We will post updates when we add snapshots of each new language.
 
 The unique identifier (cryptographic hash) for the snapshot of tr.wikipedia.org from April 30th is:
-* Turkish Wikipedia (30 April 2017): [/ipfs/tr-wikipedia-ipfs/wiki/Anasayfa.html](https://ipfs.io/ipfs/tr-wikipedia-ipfs/wiki/Anasayfa.html)  
+* Turkish Wikipedia (30 April 2017): [/ipfs/QmQYGetfzpDR3pPR8mGq78yA87Jpe3RE3tUxp9nhDv36bW/wiki/Anasayfa.html](https://ipfs.io/ipfs/QmQYGetfzpDR3pPR8mGq78yA87Jpe3RE3tUxp9nhDv36bW/wiki/Anasayfa.html)  
 
 This link points to a specific snapshot. It will always point to that specific day's snapshot. To find the most up-to-date snapshot of Wikipedia on IPFS you can use this IPNS link, which will resolve to the latest snapshot whenever we release a new one:
 * Turkish Wikipedia (most recent snapshot): [/ipns/tr-wikipedia-ipns/wiki/Anasayfa.html](https://ipfs.io/ipns/tr-wikipedia-ipns/wiki/Anasayfa.html)
@@ -139,7 +139,7 @@ If you don't have enough storage space to hold full copies of the snapshot(s), y
    1. Install IPFS [following these instructions]()
    2. Start your IPFS node by running `ipfs daemon` so it can connect to the network.
    3. Pin the snapshot(s) onto your machine
-      - Pin Turkish Wikipedia: `ipfs pin add tr-wikipedia-ipfs`
+      - Pin Turkish Wikipedia: `ipfs pin add QmQYGetfzpDR3pPR8mGq78yA87Jpe3RE3tUxp9nhDv36bW`
    4. If your machine has a public IP addresses, tell people the address of your gateway. They can use that address to request IPFS content from their web browsers.
 
 **Alternative: Using a Sneakernet to Mirror data**
