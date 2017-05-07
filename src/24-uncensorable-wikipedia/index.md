@@ -18,8 +18,6 @@ collection: posts
 
 We are happy to announce that **we have published a [snapshot of tr.wikipedia.org, the Turkish version of Wikipedia](https://ipfs.io/ipfs/QmezTdYeKyjPFoREStJQQbvATUP8yRJdHMMZx2rZ86p9g9/wiki/Anasayfa.html) on IPFS**. There will be Arabic, Kurdish and English versions coming shortly.  This blog post includes information on how you can access those snapshots, how you can help mirror them, and why it's so powerful to put content like this on IPFS.
 
-By putting important information like Wikipedia onto the decentralized web, we open many avenues for people to access, hold, cite, and use that information in more durable ways.
-
 The effort to put snapshots of Wikipedia onto IPFS is an independent effort undertaken by the IPFS maintainers. It is not affiliated with the Wikimedia Foundation and is not connected with the volunteers who contribute to Wikipedia articles.
 
 ## What Triggered This Announcement
@@ -41,7 +39,8 @@ Upon hearing the news, we revived an effort to put snapshots of Wikipedia on IPF
 
 ### Why put Wikipedia on IPFS?
 
-There are many benefits of putting this information on IPFS. This is a quick summary of points. To learn more, visit https://ipfs.io.
+
+By putting important information like Wikipedia onto the decentralized web, we open many avenues for people to access, hold, cite, and use that information in more durable ways. This is a quick summary of the ways IPFS makes these things possible. To learn more, visit https://ipfs.io.
 
 In short, content on IPFS is **harder to attack** and easier to distribute because it’s **peer-to-peer and decentralized**.
 
@@ -181,7 +180,7 @@ The DNS entry at [tr.wikipedia-on-ipfs.org](https://tr.wikipedia-on-ipfs.org) is
 
 At the moment this is an experiment, done in haste in response to current events. Employees of Protocol Labs are building the Wikipedia snapshots on IPFS and pinning that content onto some of the IPFS nodes that they run.
 
-If people start relying on this information over time, it will be important to establish a clear chain of custody, ideally with people at Wikimedia foundation building the snapshots and publishing the hashes. Protocol Labs has already had some preliminary conversations with Wikimedia about this.
+If people start relying on this information over time, it will be important to establish a clear chain of custody, ideally with people at Wikimedia foundation building the snapshots and publishing the hashes. Protocol Labs is exploring possibilities in this direction.
 
 ## Review
 
