@@ -189,7 +189,7 @@ If people start relying on this information over time, it will be important to e
 
 * You can access a snapshot of Wikipedia through any IPFS gateway
   * Turkish Wikipedia (30 April 2017 snapshot): [/ipfs/QmT5NvUtoM5nWFfrQdVrFtvGfKFmG7AHE8P34isapyhCxX/wiki/Anasayfa.html](https://ipfs.io/ipfs/QmT5NvUtoM5nWFfrQdVrFtvGfKFmG7AHE8P34isapyhCxX/wiki/Anasayfa.html)
-* These are read-only snapshots. Supporting full read-and-write would take further work.©
+* These are read-only snapshots. Supporting full read-and-write would take further work.
 * IPFS links use cryptographic hashes, so you don’t have to worry about spoofing
 * The IPNS hashes point to the most recent snapshot
   * Turkish Wikipedia (most recent snapshot): [/ipns/QmVH1VzGBydSfmNG7rmdDjAeBZ71UVeEahVbNpFQtwZK8W/wiki/Anasayfa.html](https://ipfs.io/ipns/QmVH1VzGBydSfmNG7rmdDjAeBZ71UVeEahVbNpFQtwZK8W/wiki/Anasayfa.html)
