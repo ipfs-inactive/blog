@@ -120,7 +120,7 @@ Your main options for accessing the snapshot of Wikipedia are: _(depending on yo
 * **Option**: Use the ipfs.io gateway to access it: https://ipfs.io/ipns/QmQP99yW82xNKPxXLroxj1rMYMGF6Grwjj2o4svsdmGh7S/wiki/Anasayfa.html
 * **Option**: Connect with the IPFS network over Tor (this is experimental. Read [this tutorial on Tor gateways](https://dweb-primer.ipfs.io/avenues-for-access/lessons/tor-gateways.html) or [this tutorial on running IPFS over Tor transport](https://dweb-primer.ipfs.io/avenues-for-access/lessons/tor-transport.html))
 * **Option**: Install an IPFS node on your computer and access Wikipedia through that node (requires [using the command line](http://lifehacker.com/5633909/who-needs-a-mouse-learn-to-use-the-command-line-for-almost-anything). _This is the most reliable method because it retrieves the content directly from the IPFS peer-to-peer network)_
-    1. Install IPFS [following these instructions]()
+    1. Install IPFS [following these instructions](https://dweb-primer.ipfs.io/install-ipfs/). Use the most recent verison of IPFS: 0.4.9-rc2 or higher if possible.
     2. Start your IPFS node by running `ipfs daemon` so it can connect to the network.
     3. Read the content through your IPFS node's local HTTP gateway by visiting http://localhost:8080/ipns/QmQP99yW82xNKPxXLroxj1rMYMGF6Grwjj2o4svsdmGh7S/wiki/Anasayfa.html
 
@@ -141,7 +141,7 @@ If you want to help make this information available, you can install IPFS on you
 If you don't have enough storage space to hold full copies of the snapshot(s), you can still run an IPFS gateway so that people can rely on you to retrieve the content from the IPFS network on the fly.
 
 **Steps**:
-   1. Install IPFS [following these instructions]()
+   1. Install IPFS [following these instructions](https://dweb-primer.ipfs.io/install-ipfs/). Use the most recent verison of IPFS -- 0.4.9-rc2 or higher if possible.
    2. Start your IPFS node by running `ipfs daemon` so it can connect to the network.
    3. Pin the snapshot(s) onto your machine
       - Pin Turkish Wikipedia: `ipfs pin add Qme2sLfe9ZMdiuWsEtajWMDzx6B7VbjzpSC2VWhtB6GoB1`
