@@ -13,6 +13,7 @@ var msstatic = require('metalsmith-static')
 var drafts = require('metalsmith-drafts')
 var headingsidentifier = require('metalsmith-headings-identifier')
 var msIf = require('metalsmith-if')
+var pageTitles = require('metalsmith-page-titles');
 
 var nunjucks = require('nunjucks')
 var njmd = require('nunjucks-markdown')
@@ -57,6 +58,7 @@ Metalsmith(__dirname)
       author: 'The IPFS Team'
     }
   })
+  .use(pageTitles())
   .use(collections({
     posts: {}
   }))

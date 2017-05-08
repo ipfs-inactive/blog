@@ -14,6 +14,7 @@
     "metalsmith-headings-identifier": "0.0.4",
     "metalsmith-if": "^0.1.1",
     "metalsmith-markdown": "^0.2.1",
+    "metalsmith-page-titles": "^1.0.2",
     "metalsmith-partial": "^0.1.0",
     "metalsmith-permalinks": "^0.4.0",
     "metalsmith-serve": "0.0.3",
