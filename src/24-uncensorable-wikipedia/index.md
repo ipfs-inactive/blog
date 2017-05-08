@@ -80,7 +80,7 @@ We have two consecutive goals regarding Wikipedia on IPFS: Our first goal is to 
 
 The easy way to get Wikipedia content on IPFS is to periodically -- say every week -- take snapshots of all the content and add it to IPFS. That way the majority of Wikipedia users -- who only read Wikipedia and don’t edit -- could use all the information on Wikipedia with all the benefits of IPFS. Users couldn't edit it, but users could download and archive swaths of articles, or even the whole thing. People could serve it to each other peer-to-peer, reducing the bandwidth load on Wikipedia servers. People could even distribute it to each other in closed, censored, or resource-constrained networks -- with IPFS, peers do not need to be connected to the original source of the content, being connected to anyone who has the content is enough. Effectively, the content can jump from computer to computer in a peer-to-peer way, and avoid having to connect to the content source or even the internet backbone. We've been in discussions with many groups about the potential of this kind of thing, and how it could help billions of people around the world to access information better -- either free of censorship, or circumventing serious bandwidth or latency constraints.
 
-So far, we have achieved part of this goal: we have static snapshots of all of Wikipedia on IPFS. This is alrady a huge result that will help people access, keep, archive, cite, and distribute lots of content. In particular, we hope that this distribution helps people in Turkey, who find themselves in a tough situation. We are still working out a process to continue updating these snapshots, we hope to have someone at Wikimedia in the loop as they are the authoritative source of the content. **If you could help with this, please get in touch with us at wikipedia-project@ipfs.io.**
+So far, we have achieved part of this goal: we have static snapshots of all of Wikipedia on IPFS. This is already a huge result that will help people access, keep, archive, cite, and distribute lots of content. In particular, we hope that this distribution helps people in Turkey, who find themselves in a tough situation. We are still working out a process to continue updating these snapshots, we hope to have someone at Wikimedia in the loop as they are the authoritative source of the content. **If you could help with this, please get in touch with us at wikipedia-project@ipfs.io.**
 
 ### (Goal 2) Fully Read-Write Wikipedia on IPFS
 
@@ -96,7 +96,7 @@ The unique identifier (cryptographic hash) for the snapshot of tr.wikipedia.org 
 * Turkish Wikipedia (30 April 2017): [/ipfs/QmT5NvUtoM5nWFfrQdVrFtvGfKFmG7AHE8P34isapyhCxX/wiki/Anasayfa.html](https://ipfs.io/ipfs/QmT5NvUtoM5nWFfrQdVrFtvGfKFmG7AHE8P34isapyhCxX/wiki/Anasayfa.html)  
 
 This link points to a specific snapshot. It will always point to that specific day's snapshot. To find the most up-to-date snapshot of Wikipedia on IPFS you can use this IPNS link, which will resolve to the latest snapshot whenever we release a new one:
-* Turkish Wikipedia (most recent snapshot, resolved through IPNS): [/ipns/QmQP99yW82xNKPxXLroxj1rMYMGF6Grwjj2o4svsdmGh7S/wiki/Anasayfa.html](https://ipfs.io/ipns/QmQP99yW82xNKPxXLroxj1rMYMGF6Grwjj2o4svsdmGh7S/wiki/Anasayfa.html)
+* Turkish Wikipedia (most recent snapshot, resolved through IPNS): [/ipns/QmVH1VzGBydSfmNG7rmdDjAeBZ71UVeEahVbNpFQtwZK8W/wiki/Anasayfa.html](https://ipfs.io/ipns/QmVH1VzGBydSfmNG7rmdDjAeBZ71UVeEahVbNpFQtwZK8W/wiki/Anasayfa.html)
 
 ### Human-readable links
 
@@ -118,14 +118,14 @@ We've written a number of tutorials describing the many different ways to access
 Your main options for accessing the snapshot of Wikipedia are: _(depending on your network, some of these won't work)_
 
 * **Option**: Use the ipfs.io gateway to access the 30 April 2017 snapshot: https://ipfs.io/ipfs/QmT5NvUtoM5nWFfrQdVrFtvGfKFmG7AHE8P34isapyhCxX/wiki/Anasayfa.html
-* **Option**: Use the ipfs.io gateway to access the latest version: https://ipfs.io/ipns/QmQP99yW82xNKPxXLroxj1rMYMGF6Grwjj2o4svsdmGh7S/wiki/Anasayfa.html
-* **Option**: Connect with the IPFS network over Tor (this is experimental). Read [this tutorial on Tor gateways](https://dweb-primer.ipfs.io/avenues-for-access/lessons/tor-gateways.html). In the future it will also be possible to [run IPFS over the Tor transport](https://dweb-primer.ipfs.io/avenues-for-access/lessons/tor-transport.html))
+* **Option**: Use the ipfs.io gateway to access the latest version: https://ipfs.io/ipns/QmVH1VzGBydSfmNG7rmdDjAeBZ71UVeEahVbNpFQtwZK8W/wiki/Anasayfa.html
+* **Option**: Connect with the IPFS network over Tor (this is experimental). Read [this tutorial on Tor gateways](https://dweb-primer.ipfs.io/avenues-for-access/lessons/tor-gateways.html). 
 * **Option**: Install an IPFS node on your computer and access Wikipedia through that node (requires [using the command line](http://lifehacker.com/5633909/who-needs-a-mouse-learn-to-use-the-command-line-for-almost-anything). _This is the most reliable method because it retrieves the content directly from the IPFS peer-to-peer network)_
     1. Install IPFS [following these instructions](https://dweb-primer.ipfs.io/install-ipfs/). Use the most recent verison of IPFS: 0.4.9-rc2 or higher if possible.
     2. Start your IPFS node by running `ipfs daemon` so it can connect to the network.
     3. Read the content through your IPFS node's local HTTP gateway by visiting:
        - 30 April 2017 snapshot: http://localhost:8080/ipfs/QmT5NvUtoM5nWFfrQdVrFtvGfKFmG7AHE8P34isapyhCxX/wiki/Anasayfa.html
-       - latest snapshot: http://localhost:8080/ipns/QmQP99yW82xNKPxXLroxj1rMYMGF6Grwjj2o4svsdmGh7S/wiki/Anasayfa.html
+       - latest snapshot: http://localhost:8080/ipns/QmVH1VzGBydSfmNG7rmdDjAeBZ71UVeEahVbNpFQtwZK8W/wiki/Anasayfa.html
 
 **Coming soon:** We've almost finished creating a web browser extension that will allow you to access IPFS directly from your web browser without installing any additional external tools. Watch https://github.com/ipfs/in-web-browsers for the announcement when we release that browser extension.
 
@@ -175,7 +175,7 @@ Whenever we add an updated snapshot of Wikipedia to IPFS, we will announce it in
 
 1. We will tweet the new snapshot hash on the [@ipfsbot](https://twitter.com/ipfsbot) account along with the hashtag [#WikipediaOnIPFS](https://twitter.com/search?f=tweets&q=WikipediaOnIPFS)
 2. We will update this IPNS entry to point to the latest snapshot:
-    - Turkish Wikipedia: [/ipns/QmQP99yW82xNKPxXLroxj1rMYMGF6Grwjj2o4svsdmGh7S/wiki/Anasayfa.html](https://ipfs.io/ipns/QmQP99yW82xNKPxXLroxj1rMYMGF6Grwjj2o4svsdmGh7S/wiki/Anasayfa.html)
+    - Turkish Wikipedia: [/ipns/QmVH1VzGBydSfmNG7rmdDjAeBZ71UVeEahVbNpFQtwZK8W/wiki/Anasayfa.html](https://ipfs.io/ipns/QmVH1VzGBydSfmNG7rmdDjAeBZ71UVeEahVbNpFQtwZK8W/wiki/Anasayfa.html)
 
 The DNS entry at [tr.wikipedia-on-ipfs.org](https://tr.wikipedia-on-ipfs.org) is mapped to the IPNS value, so it will also give you the latest available snapshot (if DNS and IPNS are working properly in your area).
 
@@ -192,7 +192,7 @@ If people start relying on this information over time, it will be important to e
 * These are read-only snapshots. Supporting full read-and-write would take further work.©
 * IPFS links use cryptographic hashes, so you don’t have to worry about spoofing
 * The IPNS hashes point to the most recent snapshot
-  * Turkish Wikipedia (most recent snapshot): [/ipns/QmQP99yW82xNKPxXLroxj1rMYMGF6Grwjj2o4svsdmGh7S/wiki/Anasayfa.html](https://ipfs.io/ipns/QmQP99yW82xNKPxXLroxj1rMYMGF6Grwjj2o4svsdmGh7S/wiki/Anasayfa.html)
+  * Turkish Wikipedia (most recent snapshot): [/ipns/QmVH1VzGBydSfmNG7rmdDjAeBZ71UVeEahVbNpFQtwZK8W/wiki/Anasayfa.html](https://ipfs.io/ipns/QmVH1VzGBydSfmNG7rmdDjAeBZ71UVeEahVbNpFQtwZK8W/wiki/Anasayfa.html)
 * If people start relying on this information, we will encourage Wikimedia to take over generating these snapshots
 * We are encouraging Wikimedia to publish their own IPNS hash that is always up to date AND is cryptographically signed by Wikimedia
 * (if wikimedia updates DNS) if you have access to a gateway that’s outside of Turkey, you will be able to use the convenient path [/ipns/wikipedia.org](https://ipfs.io/ipns/wikipedia.org) instead of using hashes in your IPFS links
