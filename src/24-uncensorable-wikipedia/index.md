@@ -16,7 +16,7 @@ collection: posts
 > The Internet treats censorship as a malfunction and routes around it.
 > -- John Perry Barlow
 
-We are happy to announce that **we have published a [snapshot of tr.wikipedia.org, the Turkish version of Wikipedia](https://ipfs.io/ipfs/QmezTdYeKyjPFoREStJQQbvATUP8yRJdHMMZx2rZ86p9g9/wiki/Anasayfa.html) on IPFS**. There will be Arabic, Kurdish and English versions coming shortly.  This blog post includes information on how you can access those snapshots, how you can help mirror them, and why it's so powerful to put content like this on IPFS.
+We are happy to announce that **we have published a [snapshot of tr.wikipedia.org, the Turkish version of Wikipedia](https://ipfs.io/ipfs/QmdokTeXmzUqdW7jrRYdQAqCCga8py9YzdCiEgUPYfoSR9/wiki/Anasayfa.html) on IPFS**. There will be Arabic, Kurdish and English versions coming shortly.  This blog post includes information on how you can access those snapshots, how you can help mirror them, and why it's so powerful to put content like this on IPFS.
 
 The effort to put snapshots of Wikipedia onto IPFS is an independent effort undertaken by the IPFS maintainers. It is not affiliated with the Wikimedia Foundation and is not connected with the volunteers who contribute to Wikipedia articles.
 
@@ -93,7 +93,7 @@ A full read-write version (2) would require a strong collaboration with Wikipedi
 Today, we are releasing the first full static snapshot on IPFS of all of https://tr.wikipedia.org. We describe how to access it and how we did this below. This snapshot was taken on `2017-04-30`. Over the coming days we will also release snapshots of the Arabic (https://ar.wikipedia.org) and Kurdish (https://ku.wikipedia.org) versions of Wikipedia. There's an English snapshot coming too. The English version of Wikipedia is taking longer to load onto IPFS because it's much bigger than the others (20 times larger), with many more links. We will post updates when we add snapshots of each new language.
 
 The unique identifier (cryptographic hash) for the snapshot of tr.wikipedia.org from April 30th is:
-* Turkish Wikipedia (30 April 2017): [/ipfs/QmezTdYeKyjPFoREStJQQbvATUP8yRJdHMMZx2rZ86p9g9/wiki/Anasayfa.html](https://ipfs.io/ipfs/QmezTdYeKyjPFoREStJQQbvATUP8yRJdHMMZx2rZ86p9g9/wiki/Anasayfa.html)  
+* Turkish Wikipedia (30 April 2017): [/ipfs/QmdokTeXmzUqdW7jrRYdQAqCCga8py9YzdCiEgUPYfoSR9/wiki/Anasayfa.html](https://ipfs.io/ipfs/QmdokTeXmzUqdW7jrRYdQAqCCga8py9YzdCiEgUPYfoSR9/wiki/Anasayfa.html)  
 
 This link points to a specific snapshot. It will always point to that specific day's snapshot. To find the most up-to-date snapshot of Wikipedia on IPFS you can use this IPNS link, which will resolve to the latest snapshot whenever we release a new one:
 * Turkish Wikipedia (most recent snapshot, resolved through IPNS): [/ipns/QmQP99yW82xNKPxXLroxj1rMYMGF6Grwjj2o4svsdmGh7S/wiki/Anasayfa.html](https://ipfs.io/ipns/QmQP99yW82xNKPxXLroxj1rMYMGF6Grwjj2o4svsdmGh7S/wiki/Anasayfa.html)
@@ -144,7 +144,7 @@ If you don't have enough storage space to hold full copies of the snapshot(s), y
    1. Install IPFS [following these instructions]()
    2. Start your IPFS node by running `ipfs daemon` so it can connect to the network.
    3. Pin the snapshot(s) onto your machine
-      - Pin Turkish Wikipedia: `ipfs pin add QmezTdYeKyjPFoREStJQQbvATUP8yRJdHMMZx2rZ86p9g9`
+      - Pin Turkish Wikipedia: `ipfs pin add QmdokTeXmzUqdW7jrRYdQAqCCga8py9YzdCiEgUPYfoSR9`
    4. If your machine has a public IP addresses, tell people the address of your gateway. They can use that address to request IPFS content from their web browsers.
 
 **Alternative: Using a Sneakernet to Mirror data**
