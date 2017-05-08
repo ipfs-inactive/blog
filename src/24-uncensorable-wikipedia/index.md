@@ -163,7 +163,7 @@ The steps we followed to create these first snapshots were:
 3. Add mirror info and search bar to the snapshot using the script [here](https://github.com/ipfs/distributed-wikipedia-mirror/blob/master/execute-changes.sh)
 4. Add the snapshot to IPFS with the command `ipfs add -w -r --raw-leaves $upacked_wiki`
 
-This work was primarily done by [@kubuxu](https://github.com/kubuxu) [@dignifiedquire](https://github.com/dignifiedquire) and [@lgierth](https://github.com/lgierth) with help from [@whyrusleeping](https://github.com/whyrusleeping). They used code originally written by [@eminence](https://github.com/eminence)
+This work was primarily done by [@Kubuxu](https://github.com/kubuxu) [@dignifiedquire](https://github.com/dignifiedquire) and [@lgierth](https://github.com/lgierth) with help from [@whyrusleeping](https://github.com/whyrusleeping). They used code originally written by [@eminence](https://github.com/eminence)
 
 ## How to add new Wikipedia snapshots to IPFS
 
