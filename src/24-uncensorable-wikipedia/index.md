@@ -119,11 +119,11 @@ Your main options for accessing the snapshot of Wikipedia are: _(depending on yo
 
 * **Option**: Use the ipfs.io gateway to access the 30 April 2017 snapshot: https://ipfs.io/ipfs/Qme2sLfe9ZMdiuWsEtajWMDzx6B7VbjzpSC2VWhtB6GoB1/wiki/Anasayfa.html
 * **Option**: Use the ipfs.io gateway to access the latest version: https://ipfs.io/ipns/QmQP99yW82xNKPxXLroxj1rMYMGF6Grwjj2o4svsdmGh7S/wiki/Anasayfa.html
-* **Option**: Connect with the IPFS network over Tor (this is experimental. Read [this tutorial on Tor gateways](https://dweb-primer.ipfs.io/avenues-for-access/lessons/tor-gateways.html) or [this tutorial on running IPFS over Tor transport](https://dweb-primer.ipfs.io/avenues-for-access/lessons/tor-transport.html))
+* **Option**: Connect with the IPFS network over Tor (this is experimental). Read [this tutorial on Tor gateways](https://dweb-primer.ipfs.io/avenues-for-access/lessons/tor-gateways.html). In the future it will also be possible to [run IPFS over the Tor transport](https://dweb-primer.ipfs.io/avenues-for-access/lessons/tor-transport.html))
 * **Option**: Install an IPFS node on your computer and access Wikipedia through that node (requires [using the command line](http://lifehacker.com/5633909/who-needs-a-mouse-learn-to-use-the-command-line-for-almost-anything). _This is the most reliable method because it retrieves the content directly from the IPFS peer-to-peer network)_
     1. Install IPFS [following these instructions](https://dweb-primer.ipfs.io/install-ipfs/). Use the most recent verison of IPFS: 0.4.9-rc2 or higher if possible.
     2. Start your IPFS node by running `ipfs daemon` so it can connect to the network.
-    3. Read the content through your IPFS node's local HTTP gateway by visiting: 
+    3. Read the content through your IPFS node's local HTTP gateway by visiting:
        - 30 April 2017 snapshot: http://localhost:8080/ipfs/Qme2sLfe9ZMdiuWsEtajWMDzx6B7VbjzpSC2VWhtB6GoB1/wiki/Anasayfa.html
        - latest snapshot: http://localhost:8080/ipns/QmQP99yW82xNKPxXLroxj1rMYMGF6Grwjj2o4svsdmGh7S/wiki/Anasayfa.html
 
