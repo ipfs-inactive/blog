@@ -104,7 +104,7 @@ For your convenience we have set up a domain name and DNS entry at [tr.wikipedia
 
 If you are not able to access ipfs.io or wikipedia-on-ipfs.org, you can use this dnslink URL to access the content -- simply replace `ipfs.io` with the address of any IPFS gateway:
 
-- Turkish Wikipedia: [https://ipfs.io/ipns/tr.wikipedia-on-ipfs.org](https://ipfs.io/ipns/tr.wikipedia-on-ipfs.org/Anasayfa.html)
+- Turkish Wikipedia: [https://ipfs.io/ipns/tr.wikipedia-on-ipfs.org](https://ipfs.io/ipns/tr.wikipedia-on-ipfs.org/wiki/Anasayfa.html)
 
 Failing that, use the (less readable) IPFS or IPNS links from above.
 
@@ -119,7 +119,7 @@ Your main options for accessing the snapshot of Wikipedia are: _(depending on yo
 
 * **Option**: Use the ipfs.io gateway to access the 30 April 2017 snapshot: https://ipfs.io/ipfs/QmT5NvUtoM5nWFfrQdVrFtvGfKFmG7AHE8P34isapyhCxX/wiki/Anasayfa.html
 * **Option**: Use the ipfs.io gateway to access the latest version: https://ipfs.io/ipns/QmVH1VzGBydSfmNG7rmdDjAeBZ71UVeEahVbNpFQtwZK8W/wiki/Anasayfa.html
-* **Option**: Connect with the IPFS network over Tor (this is experimental). Read [this tutorial on Tor gateways](https://dweb-primer.ipfs.io/avenues-for-access/lessons/tor-gateways.html). 
+* **Option**: Connect with the IPFS network over Tor (this is experimental). Read [this tutorial on Tor gateways](https://dweb-primer.ipfs.io/avenues-for-access/lessons/tor-gateways.html).
 * **Option**: Install an IPFS node on your computer and access Wikipedia through that node (requires [using the command line](http://lifehacker.com/5633909/who-needs-a-mouse-learn-to-use-the-command-line-for-almost-anything). _This is the most reliable method because it retrieves the content directly from the IPFS peer-to-peer network)_
     1. Install IPFS [following these instructions](https://dweb-primer.ipfs.io/install-ipfs/). Use the most recent verison of IPFS: 0.4.9-rc2 or higher if possible.
     2. Start your IPFS node by running `ipfs daemon` so it can connect to the network.
