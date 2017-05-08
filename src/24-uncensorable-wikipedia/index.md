@@ -152,7 +152,7 @@ If you don't have enough storage space to hold full copies of the snapshot(s), y
 
 **Alternative: Using a Sneakernet to Mirror data**
 
-I'm not kidding. If you'd like to access this content via [sneakernet](https://en.wikipedia.org/wiki/Sneakernet), IPFS is just fine with that. To find out how, follow the instructions in [this tutorial](https://dweb-primer.ipfs.io/avenues-for-access/sneakernets.html)
+I'm not kidding. If you'd like to access this content via [sneakernet](https://en.wikipedia.org/wiki/Sneakernet), IPFS is just fine with that. To find out how, follow the instructions in [this tutorial](https://dweb-primer.ipfs.io/avenues-for-access/lessons/sneakernets.html)
 
 ## How we made this Wikipedia snapshot
 
