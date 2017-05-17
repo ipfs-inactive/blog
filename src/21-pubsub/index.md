@@ -50,8 +50,8 @@ head of a [merkle-linked global log](https://en.wikipedia.org/wiki/Blockchain_(d
 ## Getting started with pubsub for go-ipfs
 *Note: There is also a js-ipfs implementation of pubsub. Documentation will come soon.*
 
-First, you'll need to enable the pubsub code. Make sure you're running a recent version
-of go-ipfs. Once you have that version of ipfs installed, start the daemon with:
+First, you'll need to enable the pubsub code. Make sure you're running go-ipfs 0.4.5 or
+above. Once you have that version of ipfs installed, start the daemon with:
 
 ```sh
 > ipfs daemon --enable-pubsub-experiment
