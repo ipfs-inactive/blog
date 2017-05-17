@@ -39,14 +39,13 @@ large-scale networks. 'Publishers' send messages classified by topic or content 
 connections between publishers and subscribers. This approach offers much greater
 network scalability and flexibility. 
 
-Pubsub makes IPFS fast for large-scale networks such as datacenters, local area
-networks, and large p2p applications. In the near future, IPNS records will be pushed
-over pubsub, allowing lightning fast updates of peers' IPNS entries. Peers could use
-pubsub to track the head of a
-[merkle-linked global log](https://en.wikipedia.org/wiki/Blockchain_(database)).
-Other applications include as collaborative document editing, "dynamic" website
+Some applications include collaborative document editing, "dynamic" website
 content, chat applications, multiplayer games, continuously evolving datasets,
-and webservice workers passing around messages. 
+and webservice workers passing around messages. It gives us ways to make IPFS fast
+for large-scale networks such as datacenters, local area networks, and large p2p
+applications. In the near future, IPNS records will be pushed over pubsub, allowing
+lightning fast updates of peers' IPNS entries. Peers could use pubsub to track the
+head of a [merkle-linked global log](https://en.wikipedia.org/wiki/Blockchain_(database)).
 
 ## Getting started with pubsub for go-ipfs
 *Note: There is also a js-ipfs implementation of pubsub. Documentation will come soon.*
@@ -109,17 +108,18 @@ The demo will take place at the [IIIF 2017 Conference](https://2017iiifconferenc
 We will publish a video of the demo, along with all of the code.
 
 ## What's next?
-The next two areas of focus for ipfs pubsub are authentication and message routing.
+The next two areas of focus for IPFS pubsub are authentication and message routing.
 
 Currently, any peer can publish to any pubsub topic. We plan to implement an
 authenticated mode for pubsub topics, where only authorized peers — those given a
 cryptographic key or capability — can publish messages. We are still working out
 the sharing and capability granting model.
 
-After that, we plan to improve the message routing algorithms.
-The current routing algorithm floods messages to every subscriber, resulting in
-some peers receiving the same message multiple times. Finding a better routing
-algorithm would go a long way towards reducing that overhead.
+After that, we plan to improve message routing. The current routing algorithm
+floods messages to every subscriber, resulting in some peers receiving the same
+message multiple times. We affectionately call this approach "floodsub". We plan
+to replace it with a more efficient routing algorithm, which will go a long way
+towards reducing overhead and improving scalability.
 
 Please note that this is a simple first-blush implementation of the technology.
 It has known limitations that we will address in future iterations. As it is
