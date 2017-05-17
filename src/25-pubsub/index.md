@@ -37,7 +37,7 @@ called 'pubsub' for short, is a pattern often used to handle events in
 large-scale networks. 'Publishers' send messages classified by topic or content and
 'subscribers' receive only the messages they are interested in, all without direct
 connections between publishers and subscribers. This approach offers much greater
-network scalability and flexibility. 
+network scalability and flexibility.
 
 Some applications include collaborative document editing, "dynamic" website
 content, chat applications, multiplayer games, continuously evolving datasets,
@@ -45,7 +45,7 @@ and webservice workers passing around messages. It gives us ways to make IPFS fa
 for large-scale networks such as datacenters, local area networks, and large p2p
 applications. In the near future, IPNS records will be pushed over pubsub, allowing
 lightning fast updates of peers' IPNS entries. Peers could use pubsub to track the
-head of a [merkle-linked global log](https://en.wikipedia.org/wiki/Blockchain_(database)).
+head of a [merkle-linked global log](https://en.wikipedia.org/wiki/Blockchain).
 
 ## Getting started with pubsub for go-ipfs
 *Note: There is also a js-ipfs implementation of pubsub. Documentation will come soon.*
@@ -126,7 +126,7 @@ It has known limitations that we will address in future iterations. As it is
 today, the pubsub implementation can be quite bandwidth intensive. It works well
 for apps with few peers in the group, but does not scale. We have designed a more
 robust underlying algorithm that will scale to much larger use cases but we wanted
-to ship this simple implementation so you can begin using it for your applications. 
+to ship this simple implementation so you can begin using it for your applications.
 
 ## Enjoy!
 All that said, we hope you give `ipfs pubsub` a try. You can head over to the
