@@ -10,6 +10,8 @@ author: The IPFS Team
 collection: posts
 ---
 
+_**UPDATE:** There are now [English](https://ipfs.io/ipfs/QmXoypizjW3WknFiJnKLwHCnL72vedxjQkDDP1mXWo6uco) and [Kurdish](https://ipfs.io/ipfs/QmWY4KZXKTuspGSwYVDNbNLLZcmSiQ63Mdmz7eRd4KzBbb) versions of Wikipedia on IPFS as well as the Turkish verison. You can find the latest hashes for all of our Wikipedia snapshots in [this YAML file](https://github.com/ipfs/distributed-wikipedia-mirror/blob/master/snapshot-hashes.yml)_
+
 > There is more than one way to burn a book. And the world is full of people running about with lit matches.
 > -- Ray Bradbury, Fahrenheit 451
 
