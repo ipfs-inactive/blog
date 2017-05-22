@@ -147,10 +147,12 @@ If you don't have enough storage space to hold full copies of the snapshot(s), y
 
 **Steps**:
    1. Install IPFS [following these instructions](https://dweb-primer.ipfs.io/install-ipfs/). Use the most recent verison of IPFS -- 0.4.9-rc2 or higher if possible.
-   2. Start your IPFS node by running `ipfs daemon` so it can connect to the network.
-   3. Pin the snapshot(s) onto your machine
+   2. Enable Directory Sharding on your IPFS Node.
+      - Configure your IPFS node to enable directory sharding: `$ ipfs config --json 'Experimental.ShardingEnabled' true`
+   3. Start your IPFS node by running `ipfs daemon` so it can connect to the network.
+   4. Pin the snapshot(s) onto your machine
       - Pin Turkish Wikipedia: `ipfs pin add QmT5NvUtoM5nWFfrQdVrFtvGfKFmG7AHE8P34isapyhCxX`
-   4. If your machine has a public IP addresses, tell people the address of your gateway. They can use that address to request IPFS content from their web browsers.
+   5. If your machine has a public IP addresses, tell people the address of your gateway. They can use that address to request IPFS content from their web browsers.
 
 **Alternative: Using a Sneakernet to Mirror data**
 
