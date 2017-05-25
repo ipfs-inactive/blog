@@ -2,7 +2,7 @@
 baseurl: ..
 template: tmpl/layouts/post.html
 breadcrumbs:
-  - {name: "js-ipfs-0-24", link: "./" }
+  - {name: "26-js-ipfs-0-24", link: "./" }
 id: 26-js-ipfs-0-24
 date: 2017-05-25
 title: js-ipfs 0.24.0 released
@@ -10,7 +10,7 @@ author: David Dias
 collection: posts
 ---
 
-I am pleased to announce to everyone in our Community that js-ipfs 0.24.0 has been successfully launched! This new minor release brings new features, bug fixes and new examples so that you can jump and start hacking your IPFS enabled apps right away!
+I am pleased to announce to everyone in our Community that js-ipfs 0.24.0 has been successfully launched! This new minor release brings new features, bug fixes and new examples so that you can jump in and start hacking your IPFS enabled apps right away!
 
 <blockquote class="twitter-tweet" data-conversation="none" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/IPFSbot">@IPFSbot</a> Woot! As promissed, new version of js-ipfs released!<br><br>🚀 `ipfs@0.24.0 [18:39] Published to npm.` 🚀<br><br>Release log here: <a href="https://t.co/20O2L2Scq5">https://t.co/20O2L2Scq5</a></p>&mdash; David Dias (@daviddias) <a href="https://twitter.com/daviddias/status/867512323732365312">May 24, 2017</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
