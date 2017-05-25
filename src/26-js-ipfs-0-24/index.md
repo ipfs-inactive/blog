@@ -10,7 +10,7 @@ author: David Dias
 collection: posts
 ---
 
-I am pleased to announce to everyone in our Community that js-ipfs 0.24.0 has been successfully launched! This new minor release brings new features, bug fixes and new examples so that you can jump in and start hacking your IPFS enabled apps right away!
+I am pleased to announce to everyone in our community that js-ipfs 0.24.0 has been successfully launched! This new minor release brings new features, bug fixes and new examples so that you can jump in and start hacking your IPFS enabled apps right away!
 
 <blockquote class="twitter-tweet" data-conversation="none" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/IPFSbot">@IPFSbot</a> Woot! As promissed, new version of js-ipfs released!<br><br>🚀 `ipfs@0.24.0 [18:39] Published to npm.` 🚀<br><br>Release log here: <a href="https://t.co/20O2L2Scq5">https://t.co/20O2L2Scq5</a></p>&mdash; David Dias (@daviddias) <a href="https://twitter.com/daviddias/status/867512323732365312">May 24, 2017</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -25,7 +25,7 @@ With this release, you won’t need to connect to Bootstrapper nodes manually, t
 
 We now include WebRTC multiaddr by default on new js-ipfs init calls. This means that both your Node.js and Browser nodes will be able to dial each other using WebRTC and discover other nodes in the network through signalling Peer Discovery.
 
-Caveat, for Linux/Windows users, due to Node.js wrtc module limited support, you will have to set an environment variable or an Experimental flag to do so, check the [README](https://github.com/ipfs/js-ipfs#advanced-options-when-creating-an-ipfs-node) to learn how to do so.
+Caveat for Linux/Windows users: Due to limited support of Node.js wrtc module, you will have to set an environment variable or an Experimental flag. Instructions are in the [README](https://github.com/ipfs/js-ipfs#advanced-options-when-creating-an-ipfs-node) to learn how to do so.
 
 ### 🗺 1st Phase of DHT Implementation Complete
 
@@ -50,7 +50,7 @@ As a byproduct of shipping new features in js-ipfs, js-libp2p got a refreshed AP
 
 ### 📦 Updated Packages table
 
-Always wondered of how many pieces IPFS is built? Check the updated Packages table at -- https://github.com/ipfs/js-ipfs#packages.
+Always wondered of how many pieces IPFS is built with? Check the updated Packages table at -- https://github.com/ipfs/js-ipfs#packages.
 
 A **big thank you** goes for everyone who helped make this release possible! We really appreciate all the code contributions, reviews and testing we get from you ❤️.
 
