@@ -78,7 +78,7 @@ Note that the role of "author" is not used, as authorship may end up including t
 
 7. **Backlog**: in this stage, all the post materials are ready to go and in the `drafts/` folder, and the post issue has the `Backlog` label. The post stays here until publication, which the maintainer and owner figure out together. During this time, the post may get "unfresh" (no longer accurate, or should also incorporate new news), if so, maintainer and owner can file a PR to improve the post.
 
-8. **Publish**: this stage involves the following steps. These are mostly mechanical and involve support from a developer on the infra or web team. It is possible some of this can be automated with scripts, and CI tests.
+8. **Publish**: this stage involves the following steps. These are mostly mechanical and involve support from a developer on the infra or web team (@lgierth as of June 2017). It is possible some of this can be automated with scripts, and CI tests.
 
   - [ ] file a PR with changes necessary to publish
     - [ ] move the post directory from the `drafts/` folder into `src/`
