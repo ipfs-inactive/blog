@@ -1,13 +1,8 @@
 ---
-baseurl: ..
-template: tmpl/layouts/post.html
-breadcrumbs:
-  - {name: "26-js-ipfs-0-24", link: "./" }
-id: 26-js-ipfs-0-24
 date: 2017-05-25
+url: 26-js-ipfs-0-24
 title: js-ipfs 0.24.0 released
 author: David Dias
-collection: posts
 ---
 
 I am pleased to announce to everyone in our community that js-ipfs 0.24.0 has been successfully launched! This new minor release brings new features, bug fixes and new examples so that you can jump in and start hacking your IPFS enabled apps right away!
@@ -63,6 +58,6 @@ We've been building a [series of examples](https://github.com/ipfs/js-ipfs/tree/
 - [Learn how to manipulate IPLD Graphs with the DAG API](https://github.com/ipfs/js-ipfs/tree/master/examples/dag)
 - [Wanna try resolving Eth blocks on IPFS?](https://github.com/ipfs/js-ipfs/tree/master/examples/explore-ethereum)
 
-If you run into any hurdles, please open an issue on [ipfs/js-ipfs/issues](https://github.com/ipfs/js-ipfs/issues). 
+If you run into any hurdles, please open an issue on [ipfs/js-ipfs/issues](https://github.com/ipfs/js-ipfs/issues).
 
 Thank you for your attention, I bid you a good day!

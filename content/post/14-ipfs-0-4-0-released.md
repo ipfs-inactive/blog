@@ -1,14 +1,9 @@
 ---
 date: 2016-04-07
-id: 14-ipfs-0-4-0-released
-template: tmpl/layouts/post.html
-baseurl: ..
-breadcrumbs:
-- {name: "14-ipfs-0-4-0-released", link: "./" }
+url: 14-ipfs-0-4-0-released
 tags: modules
 title: go-ipfs 0.4.0 has been released
 author: Kyle Drake and @whyrusleeping
-collection: posts
 ---
 
 [go-ipfs 0.4.0](http://dist.ipfs.io/#go-ipfs) has been

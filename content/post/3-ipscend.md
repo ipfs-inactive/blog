@@ -1,14 +1,9 @@
 ---
 date: 2015-11-27
-id: 3-ipscend
-template: tmpl/layouts/post.html
-baseurl: ..
-breadcrumbs:
-  - {name: "3-ipscend", link: "./" }
+url: 3-ipscend
 tags: codec
 title: ipscend - Publish static web content to IPFS
 author: David Dias
-collection: posts
 ---
 
 [![](img/ipscend.png)](https://github.com/diasdavid/ipscend)

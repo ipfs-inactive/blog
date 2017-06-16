@@ -1,14 +1,9 @@
 ---
 date: 2016-07-09
-id: 18-v03x-shutdown
-template: tmpl/layouts/post.html
-baseurl: ..
-breadcrumbs:
-  - {name: "17-v03x-shutdown", link: "./" }
+url: 18-v03x-shutdown
 tags: operations, v03x, gateway, bootstrap
 title: go-ipfs 0.3.x network shutdown on July 14th
 author: Lars Gierth
-collection: posts
 ---
 
 The [0.4.x (v04x) series][v04x] of go-ipfs has brought plenty of useful features, and it has been a great success for the whole IPFS community.

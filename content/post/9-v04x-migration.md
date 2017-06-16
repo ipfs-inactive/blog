@@ -1,14 +1,9 @@
 ---
 date: 2016-02-12
-id: 9-v04x-migration
-template: tmpl/layouts/post.html
-baseurl: ..
-breadcrumbs:
-  - {name: "9-v04x-migration", link: "./" }
+url: 9-v04x-migration
 tags: gateway, bootstrap, infrastructure
 title: Migrating ipfs.io from go-ipfs 0.3.x to 0.4.0
 author: Lars Gierth
-collection: posts
 ---
 
 Good news everyone! We'll soon release go-ipfs 0.4.0,

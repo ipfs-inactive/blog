@@ -1,14 +1,9 @@
 ---
 date: 2016-03-17
-id: 12-ipfs-weekly-7
-template: tmpl/layouts/post.html
-baseurl: ..
-breadcrumbs:
-  - {name: "12-ipfs-weekly-7", link: "./" }
+url: 12-ipfs-weekly-7
 tags: weekly
 title: IPFS Weekly 7
 author: Richard Littauer, Andrew Chin
-collection: posts
 ---
 
 [IPFS](//ipfs.io/) is a new hypermedia distribution protocol, addressed by content and identities, aiming to make the web faster, safer, and more open. In these posts, we highlight some of the development that has happened in the past week. For anyone looking to get involved, follow the embedded hyperlinks, search the wealth of information on [GitHub](//github.com/ipfs) or join us on [IRC](//webchat.freenode.net/?channels=ipfs) (#ipfs on the Freenode network).
@@ -160,4 +155,3 @@ Thanks, and see you next week!
 - Richard Littauer and Andrew Chin
 
 _Submit feedback about this issue [here](//github.com/ipfs/weekly/issues/27), or send us [feedback about the IPFS Weekly in general](//github.com/ipfs/weekly/issues/7)._
-

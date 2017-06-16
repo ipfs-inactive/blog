@@ -1,14 +1,9 @@
 ---
 date: 2016-03-22
-id: 13-ipfs-weekly-8
-template: tmpl/layouts/post.html
-baseurl: ..
-breadcrumbs:
-  - {name: "13-ipfs-weekly-8", link: "./" }
+url: 13-ipfs-weekly-8
 tags: weekly
 title: IPFS Weekly 8
 author: Richard Littauer
-collection: posts
 ---
 
 [IPFS](//ipfs.io/) is a new hypermedia distribution protocol, addressed by content and identities, aiming to make the web faster, safer, and more open. In these posts, we highlight some of the development that has happened in the past week. For anyone looking to get involved, follow the embedded hyperlinks, search the wealth of information on [GitHub](//github.com/ipfs) or join us on [IRC](//webchat.freenode.net/?channels=ipfs) (#ipfs on the Freenode network).
@@ -55,11 +50,11 @@ The 1.5.x series brings various UX improvements such as Realtime Status and Diag
 
 Our friends at [Mine](http://www.mine.nyc/) [recently released](https://medium.com/mine-labs/mediachain-developer-update-vi-94d28cf6bc30#.kt6uoc9yk)
 [L-SPACE](https://github.com/mediachain/L-SPACE), the Mediachain server. they
-have also been writing great updates to [their blog](https://medium.com/mine-labs): 
+have also been writing great updates to [their blog](https://medium.com/mine-labs):
 [How Mediachain works](https://medium.com/mine-labs/how-mediachain-works-5a5ccc1c3210#.tv0cv5kc8),
 [Dev Update V](https://medium.com/mine-labs/mediachain-developer-update-v-a7f6006ad953#.j0esgkawa),
 [Dev Update VI](https://medium.com/mine-labs/mediachain-developer-update-vi-94d28cf6bc30#.kt6uoc9yk),
-and more. The press took notice and Mediachain has been featured in 
+and more. The press took notice and Mediachain has been featured in
 [Nasdaq](http://www.nasdaq.com/article/mediachain-protect-digital-content-with-a-bitcoin-based-metadata-protocol-cm595895),
 [Bitcoin Magazine](https://bitcoinmagazine.com/articles/mediachain-protect-digital-content-with-a-bitcoin-based-metadata-protocol-1458577763),
 [CCN](https://www.cryptocoinsnews.com/protecting-rights-to-digital-works-with-blockchain-technology/),

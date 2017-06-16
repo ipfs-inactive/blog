@@ -1,14 +1,9 @@
 ---
 date: 2016-03-04
-id: 10-ipfs-weekly-5
-template: tmpl/layouts/post.html
-baseurl: ..
-breadcrumbs:
-  - {name: "10-ipfs-weekly-5", link: "./" }
+url: 10-ipfs-weekly-5
 tags: weekly
 title: IPFS Weekly 5
 author: Richard Littauer, Andrew Chin
-collection: posts
 ---
 
 [IPFS](//ipfs.io/) is a new hypermedia distribution protocol, addressed by content and identities, aiming to make the web faster, safer, and more open. In these posts, we highlight some of the development that has happened in the past week. For anyone looking to get involved, follow the embedded hyperlinks, search the wealth of information on [GitHub](//github.com/ipfs) or join us on [IRC](//webchat.freenode.net/?channels=ipfs) (#ipfs on the Freenode network).
@@ -35,7 +30,7 @@ Our friends and users at ConsenSys wrote an excellent "[Introduction to IPFS](ht
   - [@noffle](//github.com/noffle) improved FUSE connection termination.
 
 
-#### [**GX**](//github.com/whyrusleeping) 
+#### [**GX**](//github.com/whyrusleeping)
 
 [@whyrusleeping](//github.com/whyrusleeping) shipped a PR that introduces the use of a tool called `gx`, for vendoring our project dependencies. Previously we used godeps, and saved all of the code required indirectly to build ipfs in the go-ipfs repository itself. This was very difficult to work with for a few different reasons, first off, it made the size of the repository bloat way more than the original size of our codebase, causing clones to take longer, and making CI slower all around. Second, updating these dependencies was a hassle: this was partially the fault of go's poor package management choices and partially that we found godeps UX to be unfriendly. To solve the problem, [@whyrusleeping](//github.com/whyrusleeping) create gx. Gx is a package management tool based on ipfs. Package references are all hashes linked in a merkletree, and resolving all the dependencies of a given project is as easy as an ipfs fetch. Now that we are using gx, the main go-ipfs repo is much smaller, dependencies can be easily fetched and installed (and shared across projects), and we also get to essentially bootstrap ipfs with ipfs.
 
@@ -59,11 +54,11 @@ The IPLD spec was merged, after months of thoughtful design. The bulk of the wor
 
 [dist.ipfs.io](http://dist.ipfs.io/) _almost_ has [signed releases](https://github.com/ipfs/distributions/pull/51) thanks to [@dignifiedquire](//github.com/dignifiedquire). This will be coming soon.
 
-#### [**js-ipfs**](//github.com/ipfs/js-ipfs) 
+#### [**js-ipfs**](//github.com/ipfs/js-ipfs)
 
 Thanks to [@diasdavid](//github.com/diasdavid), the DAG object manipulation commands now work, with tests and all. As well, thanks to [@dignifiedquire](//github.com/dignifiedquire)'s efforts, the js-ipfs API now returns promises if there isn't a specified callback, allowing both major methods used by the Javascript community to work equally well.
 
-#### [**registry-mirror**](//github.com/diasdavid/registry-mirror) 
+#### [**registry-mirror**](//github.com/diasdavid/registry-mirror)
 
 [@diasdavid](//github.com/diasdavid) improved [registry-mirror](//github.com/diasdavid/registry-mirror) performance and robustness by removing the dependency on registry-static. The few necessary parts were copied in. This is a huge step in reliability and performance cloning the registry with registry-mirror.
 

@@ -1,26 +1,8 @@
 ---
-# this is the final blog post's id (used in the directory)
-# this id is part of the url, and should only contain:
-#   letters, numbers, dashes.
-id: 21-go-ipfs-0-4-4-released
-
-breadcrumbs:
-  - {name: "go-ipfs 0.4.4 has been released", link: "./" }
-
-# the date here should be set to the final publication date,
-# on the day it is published.
 date: 2016-10-11
-
-# this is the Title
+url: 21-go-ipfs-0-4-4-released
 title: go-ipfs 0.4.4 has been released
-
-# this is the name of the main author(s)
 author: whyrusleeping & Lars Gierth
-
-# technical details required for the software, don't change these.
-baseurl: ..
-template: tmpl/layouts/post.html
-collection: posts
 ---
 
 [go-ipfs 0.4.4](https://dist.ipfs.io/#go-ipfs) has been released today,

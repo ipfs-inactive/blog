@@ -1,13 +1,8 @@
 ---
-baseurl: ..
-template: tmpl/layouts/post.html
-breadcrumbs:
-  - {name: "23-js-ipfs-0-23", link: "./" }
-id: 23-js-ipfs-0-23
 date: 2017-03-24
+url: 23-js-ipfs-0-23
 title: js-ipfs 0.23.0 released
 author: David Dias & Victor Bjelkholm
-collection: posts
 ---
 
 Today we're happy to announce that we have released js-ipfs version 0.23.0.
@@ -31,20 +26,20 @@ npm install --save ipfs@0.23.0
 
 ## Full Details
 
-### ✨ A new way API is born, welcome to `.dag` 
+### ✨ A new way API is born, welcome to `.dag`
 
 The new DAG API (available through `ipfs.dag`) offers a new way to create and operate over any MerkleGraph, today it has support for the IPFS MerkleDAG (referenced as dag-cbor), the new dag-cbor (which lets you drop json into IPFS seamlessly) and a preview of Ethereum.
 
 You can learn how to use it through:
 - [docs](https://github.com/ipfs/interface-ipfs-core/tree/master/API/dag#dag-api)
-- [examples](https://github.com/ipfs/js-ipfs/tree/master/examples/dag#create-and-resolve-through-graphs-with-the-dag-api) 
+- [examples](https://github.com/ipfs/js-ipfs/tree/master/examples/dag#create-and-resolve-through-graphs-with-the-dag-api)
 - [video running through the demos](https://www.youtube.com/watch?v=drULwJ_ZDRQ)
 
 If you are new to the Merkle Forest, make sure to watch @jbenet's talk ["Enter the Merkle Forest"](https://www.youtube.com/watch?v=Bqs_LzBjQyk)
 
-### 🙌🏽 Interoperability with go-ipfs is here! 
+### 🙌🏽 Interoperability with go-ipfs is here!
 
-This took us more time than what we had initially expected, however, now it is a thing of the past, you can dial to a go-ipfs node and exchange files without going through complicated set ups, it just works™ 
+This took us more time than what we had initially expected, however, now it is a thing of the past, you can dial to a go-ipfs node and exchange files without going through complicated set ups, it just works™
 
 If you would like to know more about the issue we faced, you can find more info here: ["Stream Muxing issues between go-ipfs and js-ipfs are a thing of the past"](https://github.com/ipfs/js-ipfs/issues/721)
 
@@ -107,7 +102,7 @@ Thanks to @harshjv, now you can add files wrapped in a directory just like go-ip
 
 Here is a quick list of things that we will be heads down after this release
 
-- Circuit Relay - We are building Circuit Relay in order to let browser nodes to connect to any node in the network (e.g when two nodes do not have a common transport). Track the development and spec here -- https://github.com/libp2p/specs/tree/master/relay, https://github.com/libp2p/js-libp2p-circuit/pull/1. 
+- Circuit Relay - We are building Circuit Relay in order to let browser nodes to connect to any node in the network (e.g when two nodes do not have a common transport). Track the development and spec here -- https://github.com/libp2p/specs/tree/master/relay, https://github.com/libp2p/js-libp2p-circuit/pull/1.
 - DHT - The DHT is the second last piece that needs to be built (the first being relay) in order to give browser nodes the ability to discover the location of content by themselves. Track dev at the repo https://github.com/libp2p/js-libp2p-dht
-- Parity to IPFS - We want IPFS to access the Ethereum blockchain on demand (i.e: Without having to constantly transferring the blocks over), for that, the EthereumJS team had a brilliant idea of building a storage backend for js-ipfs that uses Parity, so that we can 'read' blocks from the blockchain. Track at: https://github.com/ipfs/js-ipfs/issues/763 
+- Parity to IPFS - We want IPFS to access the Ethereum blockchain on demand (i.e: Without having to constantly transferring the blocks over), for that, the EthereumJS team had a brilliant idea of building a storage backend for js-ipfs that uses Parity, so that we can 'read' blocks from the blockchain. Track at: https://github.com/ipfs/js-ipfs/issues/763
 - Torrent support - We started working in getting Torrent files supported in js-ipfs (same way we do for Ethereum). This will give the ability to fetch data from the BitTorrent network through js-ipfs as well. Track progress here: https://github.com/ipfs/js-ipfs/issues/779

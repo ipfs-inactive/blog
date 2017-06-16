@@ -1,13 +1,8 @@
 ---
-baseurl: ..
-template: tmpl/layouts/post.html
-breadcrumbs:
-  - {name: "22-run-ipfs-on-a-vps", link: "./" }
-id: 22-run-ipfs-on-a-vps
 date: 2016-11-14
+url: 22-run-ipfs-on-a-vps
 title: Run IPFS latest on a VPS
 author: Richard Littauer
-collection: posts
 ---
 
 The best way to provide content using [IPFS](https://ipfs.io) is to run your own IPFS node. You can do this by running an IPFS node on your personal computer, but that will only work as long as your computer is running. For users running mostly from laptops or with bandwidth constraints, it is useful to run IPFS nodes in a datacenter, and pinning the content there too. This ensures your content is replicated, online, and available to other nodes on the network.

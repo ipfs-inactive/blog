@@ -1,33 +1,15 @@
 ---
-# this is the final blog post's id (used in the directory)
-# this id is part of the url, and should only contain:
-#   letters, numbers, dashes.
-id: 20-q3-review
-
-breadcrumbs:
-  - {name: "Join us for the Q3 Roadmap review calls", link: "./" }
-
-# the date here should be set to the final publication date,
-# on the day it is published.
 date: 2016-09-27
-
-# this is the Title
+url: 20-q3-review
 title: Join us for the Q3 Roadmap review calls
-
-# this is the name of the main author(s)
 author: Richard littauer
-
-# technical details required for the software, don't change these.
-baseurl: ..
-template: tmpl/layouts/post.html
-collection: posts
 ---
 
 Our next weekly call will be focused on roadmaps. We will be planning our roadmaps for the rest of 2016. _You're invited to join in!_ We want to make sure the community is heard and involved as much as possible.
 
 If you're interested in seeing the progress we've made with IPFS over the last few months or if you have something you want to see done in Q4, tune into these calls and chime in on IRC.
 
-You are welcome to dial into these calls as a participant if any of the following are true: 
+You are welcome to dial into these calls as a participant if any of the following are true:
 * You maintain software that relies directly on IPFS
 * You have done work on js-ipfs, go-ipfs, libp2p, orbit, etc.
 * You plan to do work on the these projects in the coming months

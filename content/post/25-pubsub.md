@@ -1,26 +1,8 @@
 ---
-# this is the final blog post's id (used in the directory)
-# this id is part of the url, and should only contain:
-#   letters, numbers, dashes.
-id: 25-pubsub
-
-breadcrumbs:
-  - {name: "Take a look at pubsub on IPFS", link: "./" }
-
-# the date here should be set to the final publication date,
-# on the day it is published.
 date: 2017-05-17
-
-# this is the Title
+url: 25-pubsub
 title: Take a look at pubsub on IPFS
-
-# this is the name of the main author(s)
 author: Jeromy Johnson
-
-# technical details required for the software, don't change these.
-baseurl: ..
-template: tmpl/layouts/post.html
-collection: posts
 ---
 
 We recently merged a simple, experimental pubsub implementation into IPFS. This

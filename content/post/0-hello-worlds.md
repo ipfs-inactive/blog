@@ -1,13 +1,8 @@
 ---
-baseurl: ..
-template: tmpl/layouts/post.html
-breadcrumbs:
-  - {name: "0-hello-worlds", link: "./" }
-id: 0-hello-worlds
 date: 2015-05-05
+url: 0-hello-worlds
 title: Hello Worlds
 author: Juan Benet
-collection: posts
 ---
 
 ```sh

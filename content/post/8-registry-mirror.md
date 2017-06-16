@@ -1,14 +1,9 @@
 ---
 date: 2015-12-08
-id: 8-registry-mirror
-template: tmpl/layouts/post.html
-baseurl: ..
-breadcrumbs:
-  - {name: "8-registry-mirror", link: "./" }
+url: 8-registry-mirror
 tags: modules
 title: Stellar Module Management - Install your Node.js modules using IPFS
 author: David Dias
-collection: posts
 draft: true
 ---
 

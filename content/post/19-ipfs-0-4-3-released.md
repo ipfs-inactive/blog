@@ -1,14 +1,9 @@
 ---
 date: 2016-09-20
-id: 19-ipfs-0-4-3-released
-template: tmpl/layouts/post.html
-baseurl: ..
-breadcrumbs:
-- {name: "19-ipfs-0-4-3-released", link: "./" }
+url: 19-ipfs-0-4-3-released
 tags: modules
 title: go-ipfs 0.4.3 has been released
 author: Lars Gierth
-collection: posts
 ---
 
 [go-ipfs 0.4.3](https://dist.ipfs.io/#go-ipfs) has been released today,

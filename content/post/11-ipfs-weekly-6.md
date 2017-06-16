@@ -1,14 +1,9 @@
 ---
 date: 2016-03-09
-id: 11-ipfs-weekly-6
-template: tmpl/layouts/post.html
-baseurl: ..
-breadcrumbs:
-  - {name: "11-ipfs-weekly-6", link: "./" }
+url: 11-ipfs-weekly-6
 tags: weekly
 title: IPFS Weekly 6
 author: Richard Littauer, Andrew Chin
-collection: posts
 ---
 
 [IPFS](https://ipfs.io/) is a new hypermedia distribution protocol, addressed by content and identities, aiming to make the web faster, safer, and more open. In these posts, we highlight some of the development that has happened in the past week. For anyone looking to get involved, follow the embedded hyperlinks, search the wealth of information on [GitHub](https://github.com/ipfs) or join us on [IRC](https://webchat.freenode.net/?channels=ipfs) (#ipfs on the Freenode network).
@@ -53,7 +48,7 @@ WebRTC Explorer 2.0.0 has been alpha released! WebRTC Explorer is a P2P Routing 
 
 #### [**libp2p**](https://github.com/diasdavid/js-libp2p)
 
-[@diasdavid](https://github.com/diasdavid) released versions of two modules for stream multiplexing: [libp2p-spdy](https://github.com/diasdavid/js-libp2p-spdy) and [libp2p-multiplex](https://github.com/diasdavid/js-libp2p-multiplex). As well, [libp2p-swarm](https://github.com/diasdavid/js-libp2p-swarm) has a new API, more tests, less magic, and more flexibility. There is an open PR to track these changes; if you'd like to get involved, [follow it](https://github.com/diasdavid/js-libp2p-swarm/pull/20). 
+[@diasdavid](https://github.com/diasdavid) released versions of two modules for stream multiplexing: [libp2p-spdy](https://github.com/diasdavid/js-libp2p-spdy) and [libp2p-multiplex](https://github.com/diasdavid/js-libp2p-multiplex). As well, [libp2p-swarm](https://github.com/diasdavid/js-libp2p-swarm) has a new API, more tests, less magic, and more flexibility. There is an open PR to track these changes; if you'd like to get involved, [follow it](https://github.com/diasdavid/js-libp2p-swarm/pull/20).
 
 #### [**js-ipfs**](https://github.com/ipfs/js-ipfs)
 
@@ -116,7 +111,7 @@ central server for message exchange between peers.
 
 #### [**Lisbon Blockchain Workshop**](http://www.meetup.com/Lisbon-blockchain)
 
-[@diasdavid](https://github.com/diasdavid) participated on the last Lisbon Blockchain Workshop on March 5, hosted by Kwamecorp. The workshop gathered many Blockchain, IPFS, ethereum and zerocash enthusiasts that were organized in working groups to build solutions with these distributed technologies. 
+[@diasdavid](https://github.com/diasdavid) participated on the last Lisbon Blockchain Workshop on March 5, hosted by Kwamecorp. The workshop gathered many Blockchain, IPFS, ethereum and zerocash enthusiasts that were organized in working groups to build solutions with these distributed technologies.
 
 #### [IPFS Dead drop](https://github.com/c-base/ipfs-deaddrop)
 

@@ -1,13 +1,8 @@
 ---
-baseurl: ..
-template: tmpl/layouts/post.html
-breadcrumbs:
-  - {name: "24-uncensorable-wikipedia", link: "./" }
-id: 24-uncensorable-wikipedia
 date: 2017-05-04
+url: 24-uncensorable-wikipedia
 title: Uncensorable Wikipedia on IPFS
 author: The IPFS Team
-collection: posts
 ---
 
 _**UPDATE:** There are now [English](https://ipfs.io/ipfs/QmXoypizjW3WknFiJnKLwHCnL72vedxjQkDDP1mXWo6uco) and [Kurdish](https://ipfs.io/ipfs/QmWY4KZXKTuspGSwYVDNbNLLZcmSiQ63Mdmz7eRd4KzBbb) versions of Wikipedia on IPFS as well as the Turkish verison. You can find the latest hashes for all of our Wikipedia snapshots in [this YAML file](https://github.com/ipfs/distributed-wikipedia-mirror/blob/master/snapshot-hashes.yml)_
