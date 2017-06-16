@@ -9,12 +9,16 @@
 
       {{ partial "nav.html" . }}
 
-      <div class="post">
-          <h1>{{ .Title }}</h1>
-          <p>by {{ .Params.author }} on {{ dateFormat "2006-01-02" .Date }}</p>
+      <h1>
+        <img src="/img/ipfs-logo-128-ice.png" style="height: 64px;" />
+        IPFS Starlog
+      </h1>
 
-          {{ .Content }}
-      </div>
+      <ul>
+        {{ range .Data.Pages }}
+          {{ partial "summary.html" . }}
+        {{ end }}
+      </ul>
 
     </div>
   </div> <!-- container / content -->
