@@ -5,8 +5,7 @@
       / <a href="{{ .Site.BaseURL }}">blog</a>
       {{ if eq .Section "post" }}
         {{ if eq .Kind "page" }}
-          {{ $lastUrlElement := index (split .URL "/") (sub (len (split .URL "/")) 2) }}
-          / <a href="{{ .Permalink }}">{{ $lastUrlElement }}</a>
+          / <a href="{{ .Permalink }}">{{ .URL }}</a>
         {{ end }}
       {{ end }}
     </p>
