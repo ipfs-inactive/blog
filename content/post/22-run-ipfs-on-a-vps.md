@@ -36,10 +36,7 @@ It's usually not a good idea to run a public-facing service as root. So we'll cr
 
 ## Adding content to IPFS
 
-<div id="player-container"></div>
-<script>
-  asciinema.player.js.CreatePlayer('player-container', 'asciicast-85339.json', { width: 88, height: 50 });
-</script>
+{{< asciinema id="player-container" data="asciicast-85339.json" width="88" height="50" >}}
 
 First let's initialize the IPFS config:
 
