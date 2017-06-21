@@ -29,7 +29,8 @@
 
 ## Install
 
-1. [Install node + npm](http://iojs.org) and required modules.
+1. [Install node + npm](http://nodejs.org) and required modules.
+2. [Install hugo](https://gohugo.io/)
 
 ```sh
 npm install
@@ -38,7 +39,7 @@ npm install
 2. Run build.
 
 ```sh
-node build.js
+npm run build
 ```
 
 ## Usage
@@ -62,20 +63,21 @@ When ready to publish, the post directory will be moved from `drafts/` into `src
 
 ### Live editing
 
-Run build:
+Start a live reloading hugo:
 
 ```
-make build
+npm start
 ```
 
-This should setup a server. For now, it screws up the styling because the styles are pulled from ipfs directly. (FIXME, should put the styles in the build dir.) Just kill it when you're ready to publish
+Blog should not be available at http://localhost:1313/blog/
 
 ### Theme
 
 The layouts follow [the example viewer](https://github.com/ipfs/examples/tree/master/webapps/example-viewer). Modify the files inside
 
 ```
-tmpl/
+layouts/
+static/
 ```
 
 ## Publishing Post

@@ -3,32 +3,13 @@
   "version": "1.0.0",
   "description": "ipfs blog",
   "main": "index.js",
-  "dependencies": {
-    "marked": "^0.3.3",
-    "meow": "^3.7.0",
-    "metalsmith": "^1.7.0",
-    "metalsmith-collections": "^0.7.0",
-    "metalsmith-debug": "0.0.2",
-    "metalsmith-drafts": "0.0.1",
-    "metalsmith-feed": "0.0.6",
-    "metalsmith-headings-identifier": "0.0.4",
-    "metalsmith-if": "^0.1.1",
-    "metalsmith-markdown": "^0.2.1",
-    "metalsmith-partial": "^0.1.0",
-    "metalsmith-permalinks": "^0.4.0",
-    "metalsmith-serve": "0.0.3",
-    "metalsmith-static": "0.0.5",
-    "metalsmith-templates": "^0.7.0",
-    "metalsmith-watch": "^0.2.0",
-    "nunjucks": "^1.3.4",
-    "nunjucks-date": "^1.1.2",
-    "nunjucks-markdown": "^1.0.0"
-  },
   "devDependencies": {
     "dnslink-deploy": "^1.0.7"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "hugo server -ws .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "hugo"
   },
   "author": "Juan Benet <juan@benet.ai> (http://juan.benet.ai/)",
   "license": "MIT"

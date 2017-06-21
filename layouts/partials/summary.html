@@ -1,0 +1,5 @@
+<div>
+  <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+  <span>by {{ .Params.author }} on {{ dateFormat "2006-01-02" .Date }}</span>
+  <p>{{ .Summary }}</p>
+</div>

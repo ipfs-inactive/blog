@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  {{ partial "head.html" . }}
+</head>
+<body>
+  <div class="container" id="content">
+    <div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+
+      {{ partial "nav.html" . }}
+
+      <h1>
+        <img src="/img/ipfs-logo-128-ice.png" style="height: 64px;" />
+        IPFS Starlog
+      </h1>
+
+      <ul>
+        {{ range .Data.Pages }}
+          {{ partial "summary.html" . }}
+        {{ end }}
+      </ul>
+
+    </div>
+  </div> <!-- container / content -->
+
+  {{ partial "footer.html" . }}
+
+</body>
+</html>

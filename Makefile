@@ -4,24 +4,24 @@ gway="https://ipfs.io/ipfs/"
 zone="ipfs.io"
 record="_dnslink.blog"
 
-build: $(shell find src tmpl) build.js package.json
-	node build.js
+build: $(shell find content layouts static) config.toml package.json
+	npm run build
 
-serve: $(shell find src tmpl) build.js package.json
-	node build.js --watch
+serve: $(shell find content layouts static) config.toml package.json
+	npm start
 
 node_modules: package.json
 	npm install
 	touch node_modules
 
 clean:
-	rm -rf build
+	rm -rf public
 
 publish: build
 	@ipfs swarm peers >/dev/null 2>&1 || ( \
 		echo "error: ipfs daemon must be online to publish"; \
 		echo "try running: ipfs daemon" && exit 1)
-	ipfs add -r -q build/ | tail -n1 >versions/current
+	ipfs add -r -q public/ | tail -n1 >versions/current
 	cat versions/current >>versions/history
 	@export hash=`cat versions/current`; \
 		echo ""; \

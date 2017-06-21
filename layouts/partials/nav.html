@@ -1,0 +1,19 @@
+<nav class="navbar">
+  <div class="navbar-header">
+    <p class="navbar-text">
+      / <a href="http://ipfs.io">ipfs</a>
+      / <a href="{{ .Site.BaseURL }}">blog</a>
+      {{ if eq .Section "post" }}
+        {{ if eq .Kind "page" }}
+          / <a href="{{ .Permalink }}">{{ .URL }}</a>
+        {{ end }}
+      {{ end }}
+    </p>
+  </div>
+
+  <div class="nav navbar-nav navbar-right">
+    <p class="navbar-text">
+      <a href="https://github.com/ipfs/blog/">source</a>
+    </p>
+  </div>
+</nav>

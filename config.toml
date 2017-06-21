@@ -1,0 +1,10 @@
+baseURL = "https://ipfs.io/blog"
+relativeURLs = true
+
+[params]
+  domain = "ipfs.io"
+  name = "IPFS Blog"
+  title = "IPFS Blog"
+  description = "A peer-to-peer hypermedia protocol to make the web faster, safer, and more open."
+  author = "Protocol Labs"
+  github = "https://github.com/ipfs/blog"

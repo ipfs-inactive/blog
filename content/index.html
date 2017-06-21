@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  {{ partial "head.html" . }}
+</head>
+<body>
+  <div class="container" id="content">
+    <div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+
+      {{ partial "nav.html" . }}
+
+      <h1>
+        <img src="/img/ipfs-logo-128-ice.png" style="height: 64px;" />
+        IPFS Starlog
+      </h1>
+
+      <p>This is the IPFS Starlog, a series of communications about the
+      <a href="http://ipfs.io">IPFS Project</a>. These posts are written by the IPFS
+      team, and members of the broader community. The subject matter is broad:
+      project news, protocol explanations, development stories, usage examples,
+      application spotlights, and more.
+
+      <br />
+      <br />
+      <p>starlog entries: {{ len (where (where .Site.Pages "Section" "post") "Kind" "page") }}</p>
+
+      <ul>
+        {{ range (where (where .Site.Pages "Section" "post") "Kind" "page") }}
+          <li>{{ dateFormat "2006-01-02" .Date }} -
+            <a href="{{ .Permalink }}">{{ .Title }}</a>
+          </li>
+        {{ end }}
+      </ul>
+
+    </div>
+  </div> <!-- container / content -->
+
+  {{ partial "footer.html" . }}
+
+</body>
+</html>
