@@ -69,6 +69,8 @@ Start a live reloading hugo:
 npm start
 ```
 
+Blog should not be available at http://localhost:1313/blog/
+
 ### Theme
 
 The layouts follow [the example viewer](https://github.com/ipfs/examples/tree/master/webapps/example-viewer). Modify the files inside
