@@ -2,10 +2,14 @@
   <div class="navbar-header">
     <p class="navbar-text">
       / <a href="http://ipfs.io">ipfs</a>
-      / <a href="{{ .Site.BaseURL }}">blog</a>
+      {{ if eq .Section "post" }}
+        / <a href="../">blog</a>
+      {{ else }}
+        / <a href=".">blog</a>
+      {{ end }}
       {{ if eq .Section "post" }}
         {{ if eq .Kind "page" }}
-          / <a href="{{ .Permalink }}">{{ .URL }}</a>
+          / <a href=".">{{ .URL }}</a>
         {{ end }}
       {{ end }}
     </p>
