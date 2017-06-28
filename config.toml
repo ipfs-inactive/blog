@@ -1,4 +1,3 @@
-baseURL = "https://ipfs.io/blog"
 relativeURLs = true
 
 [params]
