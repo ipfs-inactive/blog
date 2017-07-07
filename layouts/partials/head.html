@@ -8,22 +8,22 @@
 <!-- open graph -->
 <meta property="og:type" content="website" />
 <meta property="og:description" content="{{ $.Param "description" }}" />
-<meta property="og:title" content="{{ if isSet .Params "title" }}{{ .Params.title }}{{ else }}{{ .Site.Params.name }}{{ end }}" />
+<meta property="og:title" content="{{ $.Param "title" }}" />
 <meta property="og:site_name" content="{{ .Site.Params.name }}" />
 <meta property="og:url" content="{{ .Permalink }}" />
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="{{ .Permalink }}img/ipfs-logo-256-ice.png" />
+<meta property="og:image" content="/img/ipfs-logo-256-ice.png" />
 <meta property="og:image:type" content="image/png" />
 <meta property="og:image:width" contentlogo="146" />
 <meta property="og:image:height" content="166" />
 <!--Twitter Cards-->
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="{{ .Site.Params.name }}" />
-<meta name="twitter:title" content="{{ if isSet .Params "title" }}{{ .Params.title }}{{ else }}{{ .Site.Params.name }}{{ end }}" />
-{{ if isSet .Params "author" }}<meta name="twitter:creator" content="{{ .Params.author }}" />{{ end }}
+<meta name="twitter:title" content="{{ $.Param "title" }}" />
+<meta name="twitter:creator" content="{{ $.Param "author" }}" />
 <meta name="twitter:description" content="{{ $.Param "description" }}" />
 <meta name="twitter:domain" content="{{ .Site.Params.domain }}" />
-<meta name="twitter:image:src" content="{{ .Permalink }}img/ipfs-logo-256-ice.png" />
+<meta name="twitter:image:src" content="/img/ipfs-logo-256-ice.png" />
 
 <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css" />
 <link rel="stylesheet" href="/blog-style.css" />
