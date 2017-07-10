@@ -1,4 +1,5 @@
 relativeURLs = true
+googleAnalytics = "UA-52930282-2"
 
 [params]
   domain = "ipfs.io"
