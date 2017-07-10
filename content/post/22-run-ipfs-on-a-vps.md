@@ -120,7 +120,7 @@ QmT78zSuBmuS4z925WZfrqQ1qHaJ56DQaTfyMUF7F8ff5o recursive
 In this example, the hash is returned because `ipfs add` pins a file passed to it by default. If the hash is not returned, then the content will be removed at the next garbage collection. To stop this from happening, let's pin it:
 
 ```sh
-> ipfs pin ls | grep QmT78zSuBmuS4z925WZfrqQ1qHaJ56DQaTfyMUF7F8ff5o
+> ipfs pin add QmT78zSuBmuS4z925WZfrqQ1qHaJ56DQaTfyMUF7F8ff5o
 pinned QmT78zSuBmuS4z925WZfrqQ1qHaJ56DQaTfyMUF7F8ff5o recursively
 ```
 
