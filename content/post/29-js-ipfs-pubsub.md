@@ -9,9 +9,9 @@ For some time, pubsub has been a part of [IPFS](https://github.com/ipfs/go-ipfs)
 
 ---
 
-While not stricty a necessary competence of IPFS (since IPFS is more concerned with transport and protocols for managing content-addressing and all the resulting datastructures (like a Merkle DAG, blockchain, and others)), fortunately, the pub-sub protocol ended up being incorporated into its stack.
+IPFS stands for the Inter-Planetary File System but it's much more than that, it's a complete stack for distributed and decentralized applications. While not stricty a necessary competence of IPFS (since IPFS is more concerned with transport and protocols for managing content-addressing and all the resulting datastructures (like a Merkle DAG, blockchain, and others)), fortunately, the pub-sub protocol ended up being incorporated into its stack.
 
-Here is a 10-minute demo of how to use it:
+(here is a 10-minute demo of how to use it:)
 
 [![https://www.youtube.com/watch?v=Nv_Teb--1zg](https://user-images.githubusercontent.com/1211152/28114238-e540840e-66f7-11e7-952c-1ebbc211ac30.png)](https://www.youtube.com/watch?v=Nv_Teb--1zg)
 
