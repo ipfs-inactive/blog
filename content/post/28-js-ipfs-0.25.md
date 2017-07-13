@@ -14,9 +14,9 @@ Today, we've released js-ipfs 0.25.0. This release is mostly maintenance, bug fi
 
 ### 🏮 ipfs-repo is now 🐲 free
 
-The IPFS Repo Class went through [some careful refactoring process](https://github.com/ipfs/js-ipfs-repo/pull/140). Now it is easier to understand its internals and to support different backend storage adapters.
+The IPFS Repo Class went through [some careful refactoring](https://github.com/ipfs/js-ipfs-repo/pull/140). Now it is easier to understand its internals and to support different backend storage adapters.
 
-To create a js-ipfs node with your own custom repo you just have to:
+To create a js-ipfs node with your own custom repo, you can now:
 
 ```JavaScript
 const node = new IPFS({repo: <your own Repo instance with your backend storage adapters>})
