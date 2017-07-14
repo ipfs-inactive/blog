@@ -136,7 +136,7 @@ If you want to help make this information available, you can install IPFS on you
     * Turkish snapshot requires 10 GB
     * Turkish, Arabic and Kurdish snapshots combined together will require 25 GB
     * English snapshot will require 250 GB
-* _If possible, use a machine with a public IP address._ If you want to run an ipfs-to-http gateway that lets people access the IPFS content using their web browswer, you need to ensure that youre machine can be reached with a public IP address.
+* _If possible, use a machine with a public IP address._ If you want to run an ipfs-to-http gateway that lets people access the IPFS content using their web browswer, you need to ensure that your machine can be reached with a public IP address.
 
 If you don't have enough storage space to hold full copies of the snapshot(s), you can still run an IPFS gateway so that people can rely on you to retrieve the content from the IPFS network on the fly.
 
