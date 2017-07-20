@@ -56,7 +56,7 @@ ipfs.pubsub.publish('topic-name-here', data, (err) => {
 })
 ```
 
-Even though [the js-IPFS pubsub API](https://github.com/ipfs/interface-ipfs-core/tree/master/API/pubsub#pubsub-api) is very simple to use, if you want to be able to deal with strings, send private messages to a specific peer and be notified of subscription changes (nodes that are interested in the topic)
+Even though [the js-IPFS pubsub API](https://github.com/ipfs/interface-ipfs-core/tree/master/API/pubsub#pubsub-api) is very simple to use, if you want to be able to deal with strings, send private messages to a specific peer and be notified of subscription changes (nodes that are interested in the topic), perhaps you should take a look at the `ipfs-pubsub-room` package.
 
 # Enter `ipfs-pubsub-room`
 
