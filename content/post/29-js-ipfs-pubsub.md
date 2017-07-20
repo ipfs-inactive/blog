@@ -1,23 +1,23 @@
 ---
-date: 2017-07-13
+date: 2017-07-19
 url: 29-js-ipfs-pubsub
-title: Decentralized pubsub on the browser using js-ipfs
+title: Distributed PubSub primitives for js-ipfs in the Browser
 author: Pedro Teixeira
 ---
 
-For some time, pubsub has been a part of [IPFS](https://github.com/ipfs/go-ipfs), and in May this year we pubished [an article](https://ipfs.io/blog/25-pubsub/) that introduces the concept and how to use it. Back in September 2016, [js-ipfs](https://github.com/ipfs/js-ipfs) (the JavaScript implementation of IPFS) introduced support for pubsub behind an experimental flag, allowing node.js process and web apps to also send and distribute messages for a given topic. In this blog post we will show you how to use this.
+IPFS PubSub was first introduced in September 2016 behind an experimental flag. This initial implementation lead to move [orbit](https://orbit.chat/), a chat application built on top of IPFS, to become fully distributed. This work was presented at [DEVCON2](https://www.youtube.com/watch?v=vQrbxyDPSXg). Later, [PubSub was announced as feature](https://ipfs.io/blog/25-pubsub) to the whole community.
+
+In this blog post I'll show you how to use PubSub with the [JavaScript implementation of IPFS](https://github.com/ipfs/js-ipfs).
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Nv_Teb--1zg" frameborder="0" allowfullscreen></iframe>
 
 ---
 
-IPFS stands for the Inter-Planetary File System but it's much more than that, it's a complete stack for distributed and decentralized applications. While not stricty a necessary competence of IPFS (since IPFS is more concerned with transport and protocols for managing content-addressing and all the resulting datastructures (like a Merkle DAG, blockchain, and others)), fortunately, the pub-sub protocol ended up being incorporated into its stack.
+IPFS stands for the InterPlanetary FileSystem but it's much more than just a FileSystem, it's a complete stack for decentralized applications. While not stricty a necessary competence of IPFS (since IPFS is more concerned with transport and protocols for managing content-addressing and all the resulting datastructures (like a Merkle DAG, blockchain, and others)), fortunately, the pub-sub protocol ended up being incorporated into its stack.
 
-(here is a 10-minute demo of how to use it:)
+## Using PubSub on js-ipfs
 
-[![https://www.youtube.com/watch?v=Nv_Teb--1zg](https://user-images.githubusercontent.com/1211152/28114238-e540840e-66f7-11e7-952c-1ebbc211ac30.png)](https://www.youtube.com/watch?v=Nv_Teb--1zg)
-
-## Using pubsub on js-ipfs
-
-By exposing a pubsub network, an IPFS node can show interest in a subject (a string representing a pubsub channel), and is able to listen and send messages on that subject in a way that is decentralized, since it does not rely on any mediating server or special node.
+With PubSub, an IPFS node can show interest in a subject (a string representing a PubSub channel), and is able to listen and send messages on that subject in a way that is decentralized, since it does not rely on any mediating server or special node.
 
 This can work today in a modern browser by using [js-ipfs](https://github.com/ipfs/js-ipfs). By instantiating an IPFS node in JavaScript and activating the pubsub feature, you can send and receive messages between nodes.
 
@@ -38,8 +38,6 @@ Here we included the [js-ipfs](https://github.com/ipfs/js-ipfs) library (which y
 Now we're ready to receive messages on a topic:
 
 ```js
-// listen for messages
-
 ipfs.pubsub.subscribe('topic-name-here', (message) => {
   console.log('got message from ' + message.from)
 
@@ -54,10 +52,9 @@ ipfs.pubsub.subscribe('topic-name-here', (message) => {
 And we can also send messages:
 
 ```js
-// send a message
-
 // data should be a buffer
 const data = Buffer.from('some message content here')
+
 ipfs.pubsub.publish('topic-name-here', data, (err) => {
   if (err) {
     console.error('error publishing: ', err)
