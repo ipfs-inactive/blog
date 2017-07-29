@@ -22,7 +22,11 @@ const IPFS = require('IPFS')
 const ipfs = new IPFS({
   EXPERIMENTAL: {
     pubsub: true // required, enables pubsub
-   }
+  }
+})
+
+ipfs.once('ready', () => {
+  // node is ready
 })
 ```
 
