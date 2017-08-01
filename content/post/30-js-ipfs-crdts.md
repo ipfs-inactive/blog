@@ -1,5 +1,5 @@
 ---
-date: 2017-07-13
+date: 2017-08-01
 url: 30-js-ipfs-crdts.md
 title: Decentralized Real-Time Collaborative Documents - Conflict-free editing in the browser using js-ipfs and CRDTs
 author: Pedro Teixeira
