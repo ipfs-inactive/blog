@@ -4,24 +4,19 @@
   {{ partial "head.html" . }}
 </head>
 <body>
-  <div class="container" id="content">
-    <div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+  {{ partial "header.html" }}
 
-      {{ partial "nav.html" . }}
+  <div class="container">
 
-      <h1>
-        <img src="/img/ipfs-logo-128-ice.png" style="height: 64px;" />
-        IPFS Starlog
-      </h1>
+    <h1>Starlog</h1>
 
-      <ul>
-        {{ range .Data.Pages }}
-          {{ partial "summary.html" . }}
-        {{ end }}
-      </ul>
+    <ul class="list-unstyled post-list">
+      {{ range .Data.Pages }}
+        {{ partial "summary.html" . }}
+      {{ end }}
+    </ul>
 
-    </div>
-  </div> <!-- container / content -->
+  </div> <!-- container -->
 
   {{ partial "footer.html" . }}
 

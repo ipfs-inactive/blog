@@ -1,1 +1,43 @@
-
+<footer role="contentinfo" class="footer-primary">
+  <div class="container cf">
+    <div class="cf">
+      <div class="sitemap-menu grid-flex-container">
+        <div class="grid-flex-cell">
+          <ul class="sitemap list-unstyled">
+            <li class="sitemap-head">Protocol Labs</li>
+            <li><a href="https://protocol.ai">About</a></li>
+            <li><a href="https://protocol.ai/join">Join</a></li>
+          </ul>
+        </div>
+        <div class="grid-flex-cell">
+          <ul class="sitemap list-unstyled">
+            <li class="sitemap-head">IPFS</li>
+            <li><a href="https://github.com/ipfs/ipfs">About</a></li>
+            <li><a href="https://ipfs.io/docs/install/">Install</a></li>
+            <li><a href="https://ipfs.io/media">Media</a></li>
+            <li><a href="https://ipfs.io/docs/">Docs</a></li>
+            <li><a href="https://ipfs.io/docs/">Code</a></li>
+            <li><a href="https://ipfs.io/docs/">Community</a></li>
+            <li><a href="/">Blog</a></li>
+            <li><a href="https://ipfs.io/legal/">Legal</a></li>
+          </ul>
+        </div>
+        <div class="grid-flex-cell">
+          <ul class="sitemap list-unstyled">
+            <li class="sitemap-head">Filecoin</li>
+            <li><a href="http://filecoin.io/">About</a></li>
+            <li><a href="http://filecoin.io/filecoin.pdf">Paper</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="share-links">
+        <ul class="share list-unstyled">
+          {{ range .Site.Params.social }}
+            <li><a class="{{ .title }}" href="{{ .link }}">{{ .title }}</a></li>
+          {{ end }}
+        </ul>
+      </div>
+    </div>
+    <p class="footer-copyright center">© Protocol Labs | Except as <a href="https://protocol.ai/legal/">noted</a>, content licensed <a href="https://creativecommons.org/licenses/by/3.0/">CC-BY 3.0.</a></p>
+  </div>
+</footer>

@@ -4,20 +4,16 @@
   {{ partial "head.html" . }}
 </head>
 <body>
-  <div class="container" id="content">
-    <div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+  {{ partial "header.html" }}
 
-      {{ partial "nav.html" . }}
+  <div class="container">
+    <div class="post">
+      <h1>{{ .Title }}</h1>
+      <p class="date">by {{ .Params.author }} on {{ dateFormat "2006-01-02" .Date }}</p>
 
-      <div class="post">
-          <h1>{{ .Title }}</h1>
-          <p>by {{ .Params.author }} on {{ dateFormat "2006-01-02" .Date }}</p>
-
-          {{ .Content }}
-      </div>
-
+      {{ .Content }}
     </div>
-  </div> <!-- container / content -->
+  </div> <!-- container -->
 
   {{ partial "footer.html" . }}
 

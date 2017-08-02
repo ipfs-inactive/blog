@@ -1,6 +1,6 @@
 ---
 date: 2017-08-01
-url: 30-js-ipfs-crdts.md
+url: 30-js-ipfs-crdts
 title: Decentralized Real-Time Collaborative Documents - Conflict-free editing in the browser using js-ipfs and CRDTs
 author: Pedro Teixeira
 ---
@@ -9,7 +9,7 @@ With the introduction of [IPFS PubSub](https://ipfs.io/blog/25-pubsub/), IPFS ga
 
 ## Enter CRDTs, Conflict-Free Replicated Data Types
 
-CRDT are one of the hot interesting topics in distributed systems. They provide a conflic-free manner of replicating data across multiple nodes without ever having to elect a leader or use another type of centralized authority to reach consensus. In fact, they don't even require the nodes to be connected at the same time to reach the same state. 
+CRDT are one of the hot interesting topics in distributed systems. They provide a conflic-free manner of replicating data across multiple nodes without ever having to elect a leader or use another type of centralized authority to reach consensus. In fact, they don't even require the nodes to be connected at the same time to reach the same state.
 
 [CRDTs were first introduced in 2011](https://link.springer.com/chapter/10.1007%2F978-3-642-24550-3_29) by Carlos Baquero, Nuno Preguiça, Marek Zawirski and Marc Shapiro. You can learn more about CRDTs in the [IPFS research collaborative notebook on CRDTs](https://github.com/ipfs/research-CRDT).
 

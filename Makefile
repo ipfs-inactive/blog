@@ -4,18 +4,53 @@ gway="https://ipfs.io/ipfs/"
 zone="ipfs.io"
 record="_dnslink.blog"
 
-build: $(shell find content layouts static) config.toml package.json
-	npm run build
+NPM=npm
+NPMBIN=./node_modules/.bin
+OUTPUTDIR=public
 
-serve: $(shell find content layouts static) config.toml package.json
-	npm start
+ifeq ($(DEBUG), true)
+	PREPEND=
+	APPEND=
+else
+	PREPEND=@
+	APPEND=1>/dev/null
+endif
 
-node_modules: package.json
-	npm install
-	touch node_modules
+build: clean install lint css minify
+	$(PREPEND)hugo && \
+	echo "" && \
+	echo "Site built out to ./public dir"
+
+serve: install lint js css minify
+	$(PREPEND)hugo server
+
+node_modules:
+	$(PREPEND)$(NPM) i $(APPEND)
+
+install: node_modules
+	$(PREPEND)[ -d static/css ] || mkdir -p static/css
+
+lint: install
+	$(PREPEND)$(NPMBIN)/lessc --lint less/*
+
+css: install
+	$(PREPEND)$(NPMBIN)/lessc --clean-css --autoprefix less/main.less static/css/main.css $(APPEND)
+
+minify: install minify-img
+
+minify-img: install
+	$(PREPEND)find static -type d -exec $(NPMBIN)/imagemin {}/* --out-dir={} $(APPEND) \; & \
+	wait
+
+dev: install css
+	$(PREPEND)( \
+		$(NPMBIN)/nodemon -e less --exec "$(NPMBIN)/lessc --clean-css --autoprefix less/main.less static/css/main.css" & \
+		hugo server -w \
+	)
 
 clean:
-	rm -rf public
+	$(PREPEND)[ ! -d $(OUTPUTDIR) ] || rm -rf $(OUTPUTDIR) && \
+	[ ! -d static/css ] || rm -rf static/css/*
 
 publish: build
 	@ipfs swarm peers >/dev/null 2>&1 || ( \
