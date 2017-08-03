@@ -16,7 +16,7 @@ IPFS is a complete stack for decentralized applications and not just a filesyste
 This can work today in a modern browser by using [js-ipfs](https://github.com/ipfs/js-ipfs). By instantiating an IPFS node in JavaScript and activating the pubsub feature, you can send and receive messages between nodes.
 
 ```js
-const IPFS = require('IPFS')
+const IPFS = require('ipfs')
 
 // create IPFS node
 const ipfs = new IPFS({
