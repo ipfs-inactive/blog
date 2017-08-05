@@ -5,29 +5,29 @@ title: Decentralized Real-Time Collaborative Documents - Conflict-free editing i
 author: Pedro Teixeira
 ---
 
-With the introduction of [IPFS PubSub](https://ipfs.io/blog/25-pubsub/), IPFS gained the ability to broadcast updates in real-time to other nodes in the network that have subscribed to a shared topic. This powerful construct has some shortcomings such as delivery guarantees or message order. However, it is possible to create a higher level data structure that solves these problems for us. Enter [CRDT, Conflict-Free Replicated Data Types](https://en.wikipedia.org/wiki/Conflict-free_replicated_data_type).
+With the introduction of [IPFS PubSub](https://ipfs.io/blog/25-pubsub/), it became possible for IPFS nodes to declare shared _pubsub_ topics, broadcasting updates in real-time to other nodes in the network that have subscribed to the topic. The pubsub pattern is a powerful construct but it does not guarantee delivery of messages and does not guarantee message order. Enter [CRDTs, Conflict-Free Replicated Data Types](https://en.wikipedia.org/wiki/Conflict-free_replicated_data_type), a higher level data structure that allows us to overcome these shortcomings.
 
 ## Enter CRDTs, Conflict-Free Replicated Data Types
 
-CRDT are one of the hot interesting topics in distributed systems. They provide a conflic-free manner of replicating data across multiple nodes without ever having to elect a leader or use another type of centralized authority to reach consensus. In fact, they don't even require the nodes to be connected at the same time to reach the same state.
+CRDTs are one of the hot interesting topics in distributed systems. They provide a conflict-free manner of replicating data across multiple nodes without ever having to elect a leader or use another type of centralized authority to reach consensus. They even allow nodes to reach the same state without being connected to the network at the same time.
 
 [CRDTs were first introduced in 2011](https://link.springer.com/chapter/10.1007%2F978-3-642-24550-3_29) by Carlos Baquero, Nuno Preguiça, Marek Zawirski and Marc Shapiro. You can learn more about CRDTs in the [IPFS research collaborative notebook on CRDTs](https://github.com/ipfs/research-CRDT).
 
-By forming ad-hoc sets of nodes and using CRDTs, nodes can come in and out of a cluster, and participate in a higher level protocol.
+By forming ad-hoc sets of nodes (ie. using pubsub) and using CRDTs, nodes can come in and out of a cluster and participate in a higher level protocol.
 
 ## Use case: Collaborative Text Editor
 
-One set of these use cases are when nodes need to collaborate in writing on a shared data structure. Moving away from centralized services into truly distributed peer-to-peer systems that are not controlled by a single entity is a necessity. Relying on a few private entities to control the the content and delivery of the web is not safe nor scalable.
+One set of use cases for CRDTs is when nodes need to collaboratively write to a shared data structure. In the past, this has been achieved by relying on a centralized service to coordinate updates. This centralized approach encourages the wordlwide web to grow in a way that relies on a few private entities to control the the content and delivery of the web. This is neither safe nor scalable. We must move away from centralized services, instead relying on truly distributed peer-to-peer systems that are not controlled by a single entity.
 
-In [this 10-minute video](https://www.youtube.com/watch?v=-kdx8rJd8rQ) I show you how we can use the IPFS library and conflict-free replicated data types (CRDTs) to build a simple text editor that allows several peers to collaborate in real-time in a way that is conflict-free, supports offline use, allows nodes to come in and out of the network, but still is able to converge to a single state in all the peers.
+In [this 10-minute video](https://www.youtube.com/watch?v=-kdx8rJd8rQ) I show you how we can use the [js-ipfs](https://github.com/ipfs/js-ips) library and conflict-free replicated data types (CRDTs) to build a simple text editor that allows several peers to collaborate in real-time. The resulting interactions between the nodes are conflict-free, support offline use, and allow nodes to come in and out of the network while continuously converging data to a single state in all the nodes.
 
 [![https://www.youtube.com/watch?v=-kdx8rJd8rQ](https://user-images.githubusercontent.com/1211152/28122513-4cbdaabc-6716-11e7-8626-ad8154687fe1.png)](https://www.youtube.com/watch?v=-kdx8rJd8rQ)
 
 ## Final remarks
 
-Real-time collaborative applications as a whole are in their infancy, but I believe that in the future they will be the norm. This in itself will be a huge challenge since, in reality, the majority of the devices are poorly connected, relying on (often mobile) networks that offer little to no reliability.
+Real-time collaborative applications are in their infancy but in the future they will be the norm. Achieving this will be a huge challenge since, in reality, the majority of the devices on the internet are poorly connected, relying on (often mobile) networks that offer little to no reliability.
 
-Even if the underlying network is not reliable, any node should be able to perform changes in a shared data structure and, somehow, the system should be able to converge these changes into all participating nodes. Nodes should be able to enter and leave the network (either by their own will or because of network conditions), but the system should make sure that this does not lead to losing data or threatening convergence.
+Any node should be able to perform changes in a shared data structure even if the underlying network is not reliable. The system should be able to converge these changes into all participating nodes. Nodes should be able to enter and leave the network (either by their own will or because of network conditions) while the system ensures that this does not lead to losing data or threatening convergence.
 
 What protocols and data structures will allow participating users and their nodes to form ad-hoc networks for spontaneous or planned real-time collaboration without any centralized coordination?
 
