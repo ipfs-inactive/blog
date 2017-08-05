@@ -6,7 +6,11 @@
 <body>
   {{ partial "header.html" }}
 
-  <div class="container">
+  <div class="container home">
+
+    <p class="meta">
+      <a href="/index.xml" class="rss"><img src="/img/icon-rss.svg" /> Available as RSS</a>
+    </p>
 
     <h1>Starlog</h1>
 
@@ -14,10 +18,8 @@
     <a href="http://ipfs.io">IPFS Project</a>. These posts are written by the IPFS
     team, and members of the broader community. The subject matter is broad:
     project news, protocol explanations, development stories, usage examples,
-    application spotlights, and more.
+    application spotlights, and more.</p>
 
-    <br />
-    <br />
     <p>starlog entries: {{ len (where (where .Site.Pages "Section" "post") "Kind" "page") }}</p>
 
     <ul class="list-unstyled post-list">
