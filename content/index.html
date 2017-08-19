@@ -26,7 +26,7 @@
       {{ range (where (where .Site.Pages "Section" "post") "Kind" "page") }}
         <li>
           <span class="date">{{ dateFormat "2006-01-02" .Date }}</span>
-          <a href="{{ .Permalink }}">{{ .Title }}</a>
+          <a href="{{ .URL }}">{{ .Title }}</a>
         </li>
       {{ end }}
     </ul>
