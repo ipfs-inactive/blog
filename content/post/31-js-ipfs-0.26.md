@@ -7,8 +7,7 @@ author: David Dias
 
 Today, we've released js-ipfs 0.26.0. This release brings bug fixes, performance improvements, git support, http gateway and more!
 
-TODO: replace by 0.26.0 launch tweet
-<blockquote class="twitter-tweet" data-conversation="none" data-lang="en"><p lang="en" dir="ltr">Good morning world 🌞<br><br>A fresh new js-ipfs is waiting for you:<br>+ ipfs@0.25.0<br>[08:52:21] Published to npm.<br><br>I bid you all a good day!</p>&mdash; David Dias (@daviddias) <a href="https://twitter.com/daviddias/status/885044398328819712">July 12, 2017</a></blockquote>
+<blockquote class="twitter-tweet" data-conversation="none" data-lang="en"><p lang="en" dir="ltr">Aaaand it is released! 🚀<br><br>[09:28:00] Publishing to npm...<br>+ ipfs@0.26.0<a href="https://t.co/rDqOgQIe3u">https://t.co/rDqOgQIe3u</a><a href="https://t.co/WJJK3NbLo8">https://t.co/WJJK3NbLo8</a><a href="https://twitter.com/hashtag/IPFS?src=hash">#IPFS</a> <a href="https://twitter.com/hashtag/JavaScript?src=hash">#JavaScript</a></p>&mdash; David Dias (@daviddias) <a href="https://twitter.com/daviddias/status/907885855884414977">September 13, 2017</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 # 🔦 Highlights
