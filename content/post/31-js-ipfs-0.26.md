@@ -93,4 +93,37 @@ Today you can see AEgir 12 already being used in some IPFS modules, including [i
 
 If you run into any hurdles, please open an issue on [ipfs/js-ipfs/issues](https://github.com/ipfs/js-ipfs/issues).
 
-Thank you for your attention, I bid you a good day!
+# 🎉 How can I contribute?
+
+I'm glad you asked!
+
+![](https://camo.githubusercontent.com/2820cc493393fa993bef64b044c6d3ce1d4b56a4/68747470733a2f2f63646e2e7261776769742e636f6d2f6a62656e65742f636f6e747269627574652d697066732d6769662f6d61737465722f696d672f636f6e747269627574652e676966)
+
+We keep curating and updating our [Waffle Board](https://waffle.io/ipfs/js-ipfs) to ensure it signals what is actively being worked on and what is next. We also review issues and tag them with difficulty and a [`help wanted`](https://waffle.io/ipfs/js-ipfs?search=help%20wanted) label, so that it is easy to find place where you can contribute to the project.
+
+If you are looking to contribute to a larger endeavour, we do have some areas of focus where we would love some more help.
+
+### Performance profiling
+
+We know that there are some low and medium hanging fruits to be grabbed and give js-ipfs huge performance boosts. We need as a project to create a more sistematic way of finding where these issues are and ensuring that tests will prevent us from causing regressions. @pgte went ahead and created a testing harness to benchmark js-ipfs and go-ipfs against each other and in different runtimes which is an excellent starting point. Find it [here](https://github.com/ipfs/ipfs-performance-profiling).
+
+### Documentation
+
+Although our best efforts, there is still a lot to get proper documentation. Documentation can be in the form of examples, function signatures and description, tutorials, videos, tests and so on.
+
+Right now we are looking into expanding [interface-ipfs-core](https://github.com/ipfs/interface-ipfs-core) to every single call that IPFS support, adding the function signature and an example per call. We welcome everyone to help us on this task.
+
+### Runtime support
+
+js-ipfs runs today in Node.js, Chrome, Firefox and Electron's renderer process. We want to expand that to:
+
+- [Electron Main Process](https://github.com/ipfs/js-ipfs/issues/843)
+- [Cordova](https://github.com/ipfs/js-ipfs/issues/834)
+- [Safari](https://github.com/ipfs/js-ipfs/issues/995)
+- [Windows](https://github.com/ipfs/js-ipfs/issues/861)
+- [Ionic](https://github.com/ipfs/js-ipfs/issues/802)
+
+If you have experience using one of these runtimes and would love to see js-ipfs, consider contributing to these threads, either with knowledge or code, we appreciate both.
+
+
+That is all for this post. Thank you for your attention, I bid you a good day!
