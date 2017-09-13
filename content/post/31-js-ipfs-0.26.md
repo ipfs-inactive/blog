@@ -5,7 +5,7 @@ title: js-ipfs 0.26.0 released
 author: David Dias
 ---
 
-Today, we've released js-ipfs 0.26.0. This release brings bug fixes, perf improvements, git support, http gateway and more!
+Today, we've released js-ipfs 0.26.0. This release brings bug fixes, performance improvements, git support, http gateway and more!
 
 TODO: replace by 0.26.0 launch tweet
 <blockquote class="twitter-tweet" data-conversation="none" data-lang="en"><p lang="en" dir="ltr">Good morning world 🌞<br><br>A fresh new js-ipfs is waiting for you:<br>+ ipfs@0.25.0<br>[08:52:21] Published to npm.<br><br>I bid you all a good day!</p>&mdash; David Dias (@daviddias) <a href="https://twitter.com/daviddias/status/885044398328819712">July 12, 2017</a></blockquote>
@@ -13,21 +13,21 @@ TODO: replace by 0.26.0 launch tweet
 
 # 🔦 Highlights
 
-Here are some of the highlights for this new js-ipfs release. There were plenty more bug fixes, tiny perf improvements, doc improvements and others all across the js-ipfs module ecosystem. A really BIG THANK YOU to everyone that has been contributing with code, tests, examples and also bug reports! They help us identify situations that we miss with out tests.
+Here are some of the highlights for this new js-ipfs release. There were plenty more bug fixes, tiny performance improvements, doc improvements and others all across the js-ipfs module ecosystem. A really BIG THANK YOU to everyone that has been contributing with code, tests, examples and also bug reports! They help us identify situations that we miss without tests.
 
 ### New InterPlanetary Infrastructure
 
-You might have noticed some hiccups a couple of weeks ago, that was due to a revamp and improvement in our infrastructure that separated Bootstraper nodes from Gateway nodes. We've now fixed that by ensuring that a js-ipfs node connects to all of them. More nodes on https://github.com/ipfs/js-ipfs/issues/973 and https://github.com/ipfs/js-ipfs/pull/975. Thanks @lgierth for improving IPFS infra and for setting up all of those DNS websockets endpoints for js-ipfs to connect to :)
+You might have noticed some hiccups a couple of weeks ago. That was due to a revamp and improvement in our infrastructure that separated Bootstraper nodes from Gateway nodes. We've now fixed that by ensuring that a js-ipfs node connects to all of them. More nodes on https://github.com/ipfs/js-ipfs/issues/973 and https://github.com/ipfs/js-ipfs/pull/975. Thanks @lgierth for improving IPFS infra and for setting up all of those DNS websockets endpoints for js-ipfs to connect to :)
 
 ### Now js-ipfs packs the IPFS Gateway as well
 
-You read it right! Now, js-ipfs packs the IPFS Gateway and launches it when you boot a daemon (`jsipfs daemon`). With this, you can use js-ipfs to access content in the browser just like you use to do in go-ipfs or use js-ipfs as a complete solution to add content in the network and preview it without leaving JS land, it is great for tooling. This was a [awesome contribution from @ya7ya and @harshjv](https://github.com/ipfs/js-ipfs/pull/968) that spent a lot of time adjusting and iterating on the implementation to make sure it would fit with the structure of js-ipfs, 👏🏽👏🏽👏🏽👏🏽.
+You read it right! Now, js-ipfs packs the IPFS Gateway and launches it when you boot a daemon (`jsipfs daemon`). With this, you can use js-ipfs to access content in the browser just like you use to do in go-ipfs or use js-ipfs as a complete solution to add content in the network and preview it without leaving JS land. It is great for tooling. This was an [awesome contribution from @ya7ya and @harshjv](https://github.com/ipfs/js-ipfs/pull/968) who spent a lot of time adjusting and iterating on the implementation to make sure it would fit with the structure of js-ipfs, 👏🏽👏🏽👏🏽👏🏽.
 
-### Huge perf and memory improvement
+### Huge performance and memory improvement
 
 With reports such as https://github.com/ipfs/js-ipfs/issues/952, we started investigating what were the actual culprits for such memory waste that would lead the browser to crash. It turns out that there were two and we got one fixed. The two were:
 
-- browserify-aes - @dignifiedquire identified that there were a lot of Buffers being alocated in browserify-aes, the AES shim we use in the browser (this was only a issue in the browser) and promptly came with a fix https://github.com/crypto-browserify/browserify-aes/pull/48 👏🏽👏🏽👏🏽👏🏽
+- browserify-aes - @dignifiedquire identified that there were a lot of Buffers being allocated in browserify-aes, the AES shim we use in the browser (this was only a issue in the browser) and promptly came with a fix https://github.com/crypto-browserify/browserify-aes/pull/48 👏🏽👏🏽👏🏽👏🏽
 - WebRTC - WebRTC is really cpu+mem hungry and our combination of opening multiple connections without limits + the constant switch between transport and routing at the main thread, leads to some undesirable situations where the browser simply crashes for so much thrashing. We are actively working on this with [Connection Closing](https://github.com/ipfs/js-ipfs/issues/962).
 
 That said, situations such as https://github.com/ipfs/js-ipfs/issues/952 are now fixed. Happy file browser sharing! :)
@@ -60,11 +60,11 @@ There is an [open issue on the Node.js project to expose the RSA key generation 
 
 # 🌱 Future
 
-We have so much stuff in the pipeline, some of it almost got into this release but we eventually decided to defer it to a next release and make sure everyone would have access to the goodies in the _highlights_ section. That said, expect the following and more to come in a future release.
+We have so much stuff in the pipeline. Some of it almost got into this release but we eventually decided to defer it to a next release and make sure everyone would have access to the goodies in the _highlights_ section. That said, expect the following and more to come in a future release.
 
 ### Circuit Relay
 
-Circuit Relay is almost here, @dryajov showed us a demo of it working on the last IPFS All hands, you can watch it on the uploaded recording in YouTube https://youtu.be/chAXj_vsR2s?t=25m01s. Since then, @dryajov @stebalian and @vyzo have been working on making sure interop is fully tested.
+Circuit Relay is almost here. @dryajov showed us a demo of it working on the last IPFS All Hands and you can watch it on the uploaded recording in YouTube https://youtu.be/chAXj_vsR2s?t=25m01s. Since then, @dryajov @stebalian and @vyzo have been working on making sure interop is fully tested.
 
 Follow the development on the _Awesome Endeavour PR_ - https://github.com/ipfs/js-ipfs/pull/830
 
