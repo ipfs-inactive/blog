@@ -55,7 +55,7 @@ There is an [open issue on the Node.js project to expose the RSA key generation 
 
 ### PubSub tutorial published
 
-@pgte published an amazing tutorial on how to use PubSub with js-ipfs and in the browser! Read it on the [IPFS Blog https://blog.ipfs.io/29-js-ipfs-pubsub](https://ipfs.io/blog29-js-ipfs-pubsub/).
+@pgte published an amazing tutorial on how to use PubSub with js-ipfs and in the browser! Read it on the [IPFS Blog https://ipfs.io/blog/29-js-ipfs-pubsub/](https://ipfs.io/blog/29-js-ipfs-pubsub/).
 
 # 🌱 Future
 
