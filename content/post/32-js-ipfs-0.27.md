@@ -7,7 +7,8 @@ author: David Dias
 
 I'm happy to announce that js-ipfs v0.27.0 has been released!  This release brings a new transport to the libp2p family, perf improvements and stability (add files with 10x the size!), Windows support, bug fixes and more!
 
-`TODO INSERT TWEET WITH ANNOUNCEMENT HERE`
+<blockquote class="twitter-tweet" data-conversation="none" data-lang="en"><p lang="en" dir="ltr">And it&#39;s out! <a href="https://twitter.com/hashtag/IPFS?src=hash&amp;ref_src=twsrc%5Etfw">#IPFS</a> <a href="https://twitter.com/hashtag/JS?src=hash&amp;ref_src=twsrc%5Etfw">#JS</a> v0.27.0 🚀<br><br> ✔ Test<br> ✔ Build<br> ✔ Update Contributors<br> ✔ Bump Version: v0.26.0 -&gt; v0.27.0<br> ✔ Gen Changelog<br> ✔ Gen GitHub Release<br> ✔ Publish to npm 🌟<a href="https://t.co/pDZK9tQDLR">https://t.co/pDZK9tQDLR</a><br><br>Just in time to join you for your favorite morning beverage! Mine is ☕️</p>&mdash; David Dias (@daviddias) <a href="https://twitter.com/daviddias/status/937565486912606208?ref_src=twsrc%5Etfw">December 4, 2017</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 # 🔦 Highlights
 
