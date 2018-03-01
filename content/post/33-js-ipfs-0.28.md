@@ -7,7 +7,9 @@ author: David Dias
 
 Excited to share with you all today that js-ipfs v0.28.0 has been released! This release brings a panoply of bug fixes, perf improvements, testing improvements and new features. Upgrading to this version should be smooth.
 
-`TODO: Insert Tweet here`
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/IPFS?src=hash&amp;ref_src=twsrc%5Etfw">#IPFS</a> <a href="https://twitter.com/hashtag/JS?src=hash&amp;ref_src=twsrc%5Etfw">#JS</a> v0.28.0 🚀<br><br>✔ Test<br>✔ Build dist version<br>✔ Update Contributors list<br>✔ Bump Version: v0.27.7 -&gt; v0.28.0<br>✔ Gen Changelog<br>✔ Gen GitHub Release<br>✔ Publish to npm 🌟<br><br>Highlights at: <a href="https://t.co/sfUC0oIs3s">https://t.co/sfUC0oIs3s</a><br><br>I bid you all a good day :)</p>&mdash; David Dias (@daviddias) <a href="https://twitter.com/daviddias/status/969226132586450944?ref_src=twsrc%5Etfw">March 1, 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 # 🔦 Highlights
 
