@@ -1,5 +1,5 @@
 ---
-date: 2018-03-01
+date: 2018-03-16
 url: 33-js-ipfs-0-28
 title: js-ipfs 0.28.0 released
 author: David Dias
