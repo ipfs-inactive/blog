@@ -30,13 +30,14 @@ Check the updated example in the js-libp2p repo at https://github.com/libp2p/js-
 ### 💻 Multiple jsipfs CLI updates
 
 The jsipfs has been receiving a lot of love lately, updates include:
+
   - `jsipfs ls -r`List directories recursively
-    - `jsipfs version` supports all flags now
-      - Other bug fixes
+  - `jsipfs version` supports all flags now
+  - Other bug fixes
 
-      To test it out, [install it globally in your machine with npm: `npm install ipfs --global`](https://github.com/ipfs/js-ipfs#through-command-line-tool).
+To test it out, [install it globally in your machine with npm: `npm install ipfs --global`](https://github.com/ipfs/js-ipfs#through-command-line-tool).
 
-      Thanks @JonKrone and @vmx for shipping this! 
+Thanks @JonKrone and @vmx for shipping this! 
 
 ### 📖 New example - Add multiple files as a directory in the Browser
 
