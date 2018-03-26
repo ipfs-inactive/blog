@@ -69,4 +69,4 @@ remove them before updating.
 
 As always, you can find the full changelog over at ipfs/go-ipfs's Github
 repository:
-https://github.com/ipfs/go-ipfs/blob/master/CHANGELOG.md#0414-2018-03-02
+https://github.com/ipfs/go-ipfs/blob/master/CHANGELOG.md#0414-2018-03-22
