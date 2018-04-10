@@ -8,7 +8,7 @@ author: lidel
 I am pleased to announce to everyone in our community that a new version of our
 browser extension has been released!
 
-![demo of v2.2.0](https://user-images.githubusercontent.com/157609/38491868-6c9dbaa0-3bed-11e8-975a-52bea908f1cb.gif)
+![demo of v2.2.0](https://ipfs.io/ipfs/QmdJTmCxwcpoGbEVfT6b9j4RZJWNcF2GQG1Ajf9XB6XtVP)
 
 Why is it worth a blog post you ask? See the overview of key features below.
 
@@ -50,9 +50,9 @@ For a longer walkthrough of new features see [Release Notes for v2.2.0](https://
 # Install it today!
 
 
-| Firefox                                                                                                                                       | Chrome / Chromium                                                                                                                                                                        |
-|-----------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [![Get the add-on](https://blog.mozilla.org/addons/files/2015/11/AMO-button_1.png)](https://addons.mozilla.org/addon/ipfs-companion/) | [![](https://developer.chrome.com/webstore/images/ChromeWebStore_BadgeWBorder_v2_206x58.png)](https://chrome.google.com/webstore/detail/ipfs-companion/nibjojkomfdiaoajekhjakgkdhaomnch) |
+| Firefox                                                                                                                                    | Chrome / Chromium                                                                                                                                                            |
+|--------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [![Get the add-on](https://ipfs.io/ipfs/QmSX44XockQifmxE8Wdevkaa6vaqTXtGdH9t9aHWXZkuJq)](https://addons.mozilla.org/addon/ipfs-companion/) | [![Install](https://ipfs.io/ipfs/QmPinSJKFYCMuTDh484dLk5Av4HpZRzBRR1KPv7TM7CBVF)](https://chrome.google.com/webstore/detail/ipfs-companion/nibjojkomfdiaoajekhjakgkdhaomnch) |
 
 
 # Want to contribute?
