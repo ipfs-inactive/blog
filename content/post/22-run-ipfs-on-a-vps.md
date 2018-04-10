@@ -13,26 +13,26 @@ VPS instances provided by [Digital Ocean](https://www.digitalocean.com/), [Ramno
 
 First, let's get the packages we'll need to install IPFS:
 
-    ```sh
-    > apt-get update
-    > apt-get install tar wget
-    ````
+```sh
+> apt-get update
+> apt-get install tar wget
+```
 
 Now you can download the latest build of IPFS from the [install page](https://ipfs.io/docs/install/). We'll be using Linux x86_64:
 
-    ```sh
-    > wget https://dist.ipfs.io/go-ipfs/v0.4.4/go-ipfs_v0.4.4_linux-amd64.tar.gz
-    > tar xfv go-ipfs_v0.4.4_linux-amd64.tar.gz
-    # Move it into your bin. This requires root permissions.
-    > sudo cp ipfs/ipfs /usr/local/bin/
-    ```
+```sh
+> wget https://dist.ipfs.io/go-ipfs/v0.4.4/go-ipfs_v0.4.4_linux-amd64.tar.gz
+> tar xfv go-ipfs_v0.4.4_linux-amd64.tar.gz
+# Move it into your bin. This requires root permissions.
+> sudo cp ipfs/ipfs /usr/local/bin/
+```
 
 It's usually not a good idea to run a public-facing service as root. So we'll create a user account to run IPFS in and switch to it:
 
-    ```sh
-    > adduser ipfs
-    > su ipfs
-    ```
+```sh
+> adduser ipfs
+> su ipfs
+```
 
 ## Adding content to IPFS
 
@@ -40,43 +40,43 @@ It's usually not a good idea to run a public-facing service as root. So we'll cr
 
 First let's initialize the IPFS config:
 
-    ```sh
-    > ipfs init
-    initializing ipfs node at ~/.ipfs
-    generating 2048-bit RSA keypair...done
-    peer identity: QmSyPpT59gXxtnLRZePQBthJd934iy17bmQesgHUAw25pB
-    to get started, enter:
+```sh
+> ipfs init
+initializing ipfs node at ~/.ipfs
+generating 2048-bit RSA keypair...done
+peer identity: QmSyPpT59gXxtnLRZePQBthJd934iy17bmQesgHUAw25pB
+to get started, enter:
 
-      ipfs cat /ipfs/QmYwAPJzv5CZsnA625s3Xf2nemtYgPpHdWEz79ojWnPbdG/readme
-    ```
+  ipfs cat /ipfs/QmYwAPJzv5CZsnA625s3Xf2nemtYgPpHdWEz79ojWnPbdG/readme
+```
 
 Note that your peer ID will be different, and that your node init file will be in your default user directory.
 
 IPFS works by actively seeking nearby nodes to connect to, which is a good thing for performance and availability, particularly in home and office networks. This causes addresses in the networks to be dialed that may not be there. Unfortunately, some VPS providers incorrectly classify this as suspicious activity, and some even have blocked nodes for doing so. To avoid this, let's add two things to the config file:
 
-    ```sh
-    # 1. disable mDNS discovery
-    ipfs config --json Discovery.MDNS.Enabled false
+```sh
+# 1. disable mDNS discovery
+ipfs config --json Discovery.MDNS.Enabled false
 
-    # 2. filter out local network addresses
-    ipfs config --json Swarm.AddrFilters '[
-      "/ip4/10.0.0.0/ipcidr/8",
-      "/ip4/100.64.0.0/ipcidr/10",
-      "/ip4/169.254.0.0/ipcidr/16",
-      "/ip4/172.16.0.0/ipcidr/12",
-      "/ip4/192.0.0.0/ipcidr/24",
-      "/ip4/192.0.0.0/ipcidr/29",
-      "/ip4/192.0.0.8/ipcidr/32",
-      "/ip4/192.0.0.170/ipcidr/32",
-      "/ip4/192.0.0.171/ipcidr/32",
-      "/ip4/192.0.2.0/ipcidr/24",
-      "/ip4/192.168.0.0/ipcidr/16",
-      "/ip4/198.18.0.0/ipcidr/15",
-      "/ip4/198.51.100.0/ipcidr/24",
-      "/ip4/203.0.113.0/ipcidr/24",
-      "/ip4/240.0.0.0/ipcidr/4"
-    ]'
-    ```
+# 2. filter out local network addresses
+ipfs config --json Swarm.AddrFilters '[
+  "/ip4/10.0.0.0/ipcidr/8",
+  "/ip4/100.64.0.0/ipcidr/10",
+  "/ip4/169.254.0.0/ipcidr/16",
+  "/ip4/172.16.0.0/ipcidr/12",
+  "/ip4/192.0.0.0/ipcidr/24",
+  "/ip4/192.0.0.0/ipcidr/29",
+  "/ip4/192.0.0.8/ipcidr/32",
+  "/ip4/192.0.0.170/ipcidr/32",
+  "/ip4/192.0.0.171/ipcidr/32",
+  "/ip4/192.0.2.0/ipcidr/24",
+  "/ip4/192.168.0.0/ipcidr/16",
+  "/ip4/198.18.0.0/ipcidr/15",
+  "/ip4/198.51.100.0/ipcidr/24",
+  "/ip4/203.0.113.0/ipcidr/24",
+  "/ip4/240.0.0.0/ipcidr/4"
+]'
+```
 
 Now you're ready to start IPFS!
 
