@@ -5,21 +5,20 @@ title: IPFS Companion 2.2.0 brings window.ipfs to your Browser
 author: lidel
 ---
 
-I am pleased to announce to everyone in our community that a new version of our
+We are pleased to announce to everyone in our community that a new version of our
 browser extension has been released!
 
 ![demo of v2.2.0](https://ipfs.io/ipfs/QmdJTmCxwcpoGbEVfT6b9j4RZJWNcF2GQG1Ajf9XB6XtVP)
-
-Why is it worth a blog post you ask? See the overview of key features below.
 
 # 🔦 Highlights
 
 ### Your node is exposed as `window.ipfs` on every webpage
 
-Websites can now detect if the property exists in window context and opt-in to
-use it instead of creating their own js-ipfs node.  It saves system resources
-and battery (on mobile), avoids the overhead of peer discovery/connection,
-enables shared repository access and more!
+The API aims to be compatible with [interface-ipfs-core](https://github.com/ipfs/interface-ipfs-core/),
+which means websites can now detect if the property exists in window context
+and opt-in to use it instead of creating their own [js-ipfs](https://github.com/ipfs/js-ipfs) node.
+It saves system resources and battery (on mobile), avoids the overhead of peer
+discovery/connection, enables shared repository access and more!
 
 <p class="yt-container">
 <iframe src="https://www.youtube-nocookie.com/embed/t1ldUp_mjDk?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -27,6 +26,12 @@ enables shared repository access and more!
 
 Make sure to read our [notes on exposing IPFS API as window.ipfs](https://github.com/ipfs-shipyard/ipfs-companion/blob/master/docs/window.ipfs.md),
 where we explain it in-depth and provide examples on how to use it your own dapp.
+
+You can also play with simple demo apps that take advantage of `window.ipfs`:
+
+- [IPFS Peer Map](https://github.com/tableflip/ipfs-peer-map-example) provides a visualization of `ipfs.swarm.peers`
+- [PeerID-to-QRCode](https://github.com/hacdias/ipfs-id-qr-codes) creates QR Codes based on `ipfs.id`
+- and obligatory [TODO App](https://github.com/hacdias/ipfs-todo), uses `ipfs.files` for storage
 
 ### Embedded js-ipfs Node
 
