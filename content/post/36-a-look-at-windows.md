@@ -6,7 +6,7 @@ author: Dominic Della Valle
 ---
 
 `go-ipfs` is built on top of [Golang](https://golang.org/), which allows for some cross platform compatibility. However, it doesn't cover everything. Over the past few weeks, we've fine-tuned several aspects of the Windows experience to fix errors and remove inconsistencies.  
-In this post, we'll be taking a closer look at these issues and what we've done to resolve them before the next release of `go-ipfs` (v0.4.15).
+In this post, we'll be taking a closer look at these issues and what we've done to resolve them before the next release of `go-ipfs` (v0.4.15). (CORRECTION: "Log output" and "File output names" have been pushed back to v0.4.16, everything else will be included in v0.4.15)
 
 If you're not a Windows or `go-ipfs` user, you may still be interested in seeing where we encountered problem points, and our resolution plans for them. Issue [#4808 (Windows initiative 2018)](https://github.com/ipfs/go-ipfs/issues/4808) in particular may give you a head start if you plan on porting `go-ipfs` to a new platform, or are encountering inconsistent behavior in one of your own projects. It offers a more in-depth look at how we discovered, discussed, and dealt with platform problems.  
 
