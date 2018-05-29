@@ -19,7 +19,7 @@ The duck typing throughout js-ipfs has been improved and that means that now you
 
 ### ☎️ Circuit Relay was merged in
 
-Circuit Relay enables connectivity between any two nodes through a third relay node. This ensures connectivity in _almost_ every scenario, that is, as long as peers can connect to some public IP node. This was [one of the two features](https://github.com/ipfs/js-ipfs#project-status) that js-ipfs was missing to get full connectivity.
+Circuit Relay enables connectivity between any two nodes through a third relay node. This ensures connectivity in almost every scenario, that is, as long as peers can connect to some public IP node. Learn how to use it [here](https://github.com/ipfs/js-ipfs/tree/master/examples/circuit-relaying). This was one of the two features that js-ipfs was missing to get full connectivity.
 
 ### 🗑 S3 backend for IPFS
 
