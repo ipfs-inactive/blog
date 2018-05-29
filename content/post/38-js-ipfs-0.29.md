@@ -1,7 +1,7 @@
 ---
-date: 2018-03-16
-url: 38-js-ipfs-0-20
-title: js-ipfs 0.20.0 released
+date: 2018-05-29
+url: 38-js-ipfs-0-29
+title: js-ipfs 0.29.0 released
 author: David Dias
 ---
 
