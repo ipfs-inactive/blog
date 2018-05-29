@@ -5,7 +5,8 @@ title: js-ipfs 0.20.0 released
 author: David Dias
 ---
 
-TODO: Embed tweet here
+<blockquote class="twitter-tweet" data-conversation="none" data-lang="en"><p lang="en" dir="ltr">I love the smell of a new release in the morning 😁<a href="https://twitter.com/hashtag/IPFS?src=hash&amp;ref_src=twsrc%5Etfw">#IPFS</a> <a href="https://twitter.com/hashtag/JS?src=hash&amp;ref_src=twsrc%5Etfw">#JS</a> v0.29.0 🚀<br><br>✔ Test <br>✔ Build dist version <br>✔ Update Contributors list <br>✔ Bump Version: v0.28.2 -&gt; v0.29.0 <br>✔ Gen Changelog <br>✔ Publish to npm 🌟<br><br>Find the latest on your favorite module store!</p>&mdash; David Dias (@daviddias) <a href="https://twitter.com/daviddias/status/1001432008302694400?ref_src=twsrc%5Etfw">May 29, 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 # 🔦 Highlights
 
