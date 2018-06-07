@@ -12,7 +12,7 @@ author: David Dias
 
 ### 🏎 Bitswap is 30% faster
 
-Bitswap is now 30% thanks to fixing a bug on [js-ipfs-bitswap](https://github.com/ipfs/js-ipfs-bitswap/pull/175#issuecomment-390957244) that was causing every message to be sent individually.
+Bitswap is now 30%, thanks to fixing a bug on [js-ipfs-bitswap](https://github.com/ipfs/js-ipfs-bitswap/pull/175#issuecomment-390957244) that was causing every message to be sent individually.
 
 ### 👓 js-ipfs now works with uglify-es just fine
 
