@@ -56,9 +56,7 @@ we did before. See [libp2p/go-libp2p-transport#31][] for details.
 
 ### Notifications
 
-This release brings performance improvements.
-
-We've also made changes to the ordering guarantees of libp2p connect/disconnect events:
+This release brings performance improvements and simple ordering guarantees for connect/disconnect events:
 
 1. For any given connection/stream, libp2p will wait for all connect/open event
    handlers to finish exit before triggering a disconnect/close event for the
@@ -68,8 +66,6 @@ We've also made changes to the ordering guarantees of libp2p connect/disconnect 
    call to `Close`). Otherwise, a call to `Close` from within a connect event
    handler would deadlock.
 3. Unless otherwise noted, events will be handled in parallel.
-
-Our hope is that these changes will make it easier to reason about the behavior of connect/disconnect events.
 
 What does this mean for end users? Well:
 
