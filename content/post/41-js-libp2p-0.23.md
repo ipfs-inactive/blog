@@ -50,7 +50,7 @@ Check out the [Packages Table](https://github.com/libp2p/js-libp2p#packages) to 
 
 # 🏗 API Changes
 
-This is an informative release, no need API changes have been introduced
+This is an informative release, no new API changes have been introduced
 
 # 🙌🏽Want to contribute?
 
