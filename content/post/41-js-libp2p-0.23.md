@@ -5,7 +5,8 @@ title: js-libp2p 0.23.0 released
 author: David Dias
 ---
 
-TODO: Add tweet here
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">js-libp2p just got its first _official_ release <a href="https://twitter.com/hashtag/libp2p?src=hash&amp;ref_src=twsrc%5Etfw">#libp2p</a> <a href="https://twitter.com/hashtag/JS?src=hash&amp;ref_src=twsrc%5Etfw">#JS</a> v0.23.0 🚀 <br><br>✔ Test <br>✔ Build dist version <br>✔ Update Contributors list <br>✔ v0.22.0 -&gt; v0.23.0 <br>✔ Gen Changelog <br>✔ Publish to npm 🌟<br><br>This is a info release, check all the highlights here:<a href="https://t.co/op334v3VNX">https://t.co/op334v3VNX</a></p>&mdash; David Dias (@daviddias) <a href="https://twitter.com/daviddias/status/1022824309537026048?ref_src=twsrc%5Etfw">July 27, 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 # 🔦 Highlights
 
