@@ -64,7 +64,7 @@ Would you like to contribute to the libp2p project and don't know how? Well, the
 
 # ⁉️ Do you have questions?
 
-The best place to ask your questions about libp2p, how it works and what you can do with it is at [discuss.ipfs.io](http://discuss.ipfs.io). We are also available at the #lubp2p channel on Freenode.
+The best place to ask your questions about libp2p, how it works and what you can do with it is at [discuss.ipfs.io](http://discuss.ipfs.io). We are also available at the #libp2p channel on Freenode.
 
 
 That is all for this post. Thank you for being part of the community.
