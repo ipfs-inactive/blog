@@ -23,7 +23,17 @@ We have these now! Just pass `--raw-leaves=true` when adding content to IPFS and
 
 # 🏗 API Changes
 
-WIP
+* A new configuration property `preload` has been added to the options provided to the IPFS constructor. Content added to IPFS using the following APIs will be automatically preloaded on a set of IPFS nodes. To lean more about how to configure this feature, check the [IPFS constructor docs](https://github.com/ipfs/js-ipfs#ipfs-constructor).
+    * `dag.put`
+    * `block.put`
+    * `object.new`
+    * `object.put`
+    * `object.patch.*`
+    * `files.add*`
+    * `files.write`
+    * `files.mv`
+    * `files.cp`
+* The `--raw-leaves` option has been enabled for `files.add`
 
 # 🙌🏽 Want to contribute?
 
