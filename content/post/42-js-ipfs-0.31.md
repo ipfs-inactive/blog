@@ -1,5 +1,5 @@
 ---
-date: 2018-07-27
+date: 2018-07-29
 url: 42-js-ipfs-0-31
 title: js-ipfs 0.31.0 released
 author: Alan Shaw
@@ -9,7 +9,6 @@ Restoring IPFS magic one alakazam at a time...no we're not talking pokemon.
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">They grow up so fast 😿 <a href="https://twitter.com/hashtag/JS?src=hash&amp;ref_src=twsrc%5Etfw">#JS</a> <a href="https://twitter.com/hashtag/IPFS?src=hash&amp;ref_src=twsrc%5Etfw">#IPFS</a> 0.31 has been released into the wild with added connectivity magic dust 🧚 and support for raw leaves 🌿 in your DAGs. Just in time for the Decentralized Web Summit 2018! More info in the release issue <a href="https://t.co/QfVL7TrSte">https://t.co/QfVL7TrSte</a> <a href="https://twitter.com/IPFSbot?ref_src=twsrc%5Etfw">@IPFSbot</a> <a href="https://twitter.com/hashtag/DWebSummit?src=hash&amp;ref_src=twsrc%5Etfw">#DWebSummit</a> <a href="https://t.co/Mv4RPvayA4">pic.twitter.com/Mv4RPvayA4</a></p>&mdash; Alan Shaw (@_alanshaw) <a href="https://twitter.com/_alanshaw/status/1023505986747883521?ref_src=twsrc%5Etfw">July 29, 2018</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
 
 # 🔦 Highlights
 
