@@ -5,6 +5,8 @@ title: "Announcements: IPFS Conf,  Developer Meetings for IPFS & libp2p and a Us
 author: flyingzumwalt
 ---
 
+> **Update** The target timeline for IPFS Conf has been changed to 2019. The original post listed a tentative date of November 2018.
+
 We’re very excited to announce two events that have been in the making for a long time. In ~~(tentatively) November~~ 2019 we will host a public **IPFS Conf** in Lisbon. To prepare for that event, in July we will convene small **IPFS and libp2p Developer Meetings** in Berlin. All of these events will be loosely inspired by PyCon and Docker Conf — events where community members play a very active role in shaping the agenda, and where a large portion of time is allocated to working meetings where Working Groups and product teams make the most of being together in-person.
 
 # IPFS Conf in November
