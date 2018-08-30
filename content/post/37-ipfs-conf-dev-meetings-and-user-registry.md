@@ -5,11 +5,11 @@ title: "Announcements: IPFS Conf,  Developer Meetings for IPFS & libp2p and a Us
 author: flyingzumwalt
 ---
 
-We’re very excited to announce two events that have been in the making for a long time. In (tentatively) November we will host a public **IPFS Conf** in Lisbon. To prepare for that event, in July we will convene small **IPFS and libp2p Developer Meetings** in Berlin. All of these events will be loosely inspired by PyCon and Docker Conf — events where community members play a very active role in shaping the agenda, and where a large portion of time is allocated to working meetings where Working Groups and product teams make the most of being together in-person.
+We’re very excited to announce two events that have been in the making for a long time. In ~~(tentatively) November~~ 2019 we will host a public **IPFS Conf** in Lisbon. To prepare for that event, in July we will convene small **IPFS and libp2p Developer Meetings** in Berlin. All of these events will be loosely inspired by PyCon and Docker Conf — events where community members play a very active role in shaping the agenda, and where a large portion of time is allocated to working meetings where Working Groups and product teams make the most of being together in-person.
 
 # IPFS Conf in November
 
-IPFS Conf will be a large, open-registration event for the extended ecosystem of people and projects that touch IPFS, libp2p, IPLD and multiformats.  We are aiming to host that event in Lisbon in November 2018. The event is open to all. To pre-register for IPFS Conf, use the [pre-registration form](https://goo.gl/forms/0Pu6VZzG8pRAmrrv2).
+IPFS Conf will be a large, open-registration event for the extended ecosystem of people and projects that touch IPFS, libp2p, IPLD and multiformats.  We are aiming to host that event in Lisbon in ~~November 2018~~ 2019. The event is open to all. To pre-register for IPFS Conf, use the [pre-registration form](https://goo.gl/forms/0Pu6VZzG8pRAmrrv2).
 
 # IPFS and libp2p Developer Meetings in July
 
