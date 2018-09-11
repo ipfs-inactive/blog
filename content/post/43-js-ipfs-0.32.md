@@ -5,7 +5,10 @@ title: js-ipfs 0.32.0 released
 author: Alan Shaw
 ---
 
-A pinch of IPNS, some chunking of files and you'll have a delicious IPFS stew for supper
+A pinch of IPNS, some chunking of files and you'll have a delicious IPFS stew for supper.
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Better head over to your nearest modules&#39;R&#39;us store because <a href="https://twitter.com/hashtag/JS?src=hash&amp;ref_src=twsrc%5Etfw">#JS</a> <a href="https://twitter.com/hashtag/IPFS?src=hash&amp;ref_src=twsrc%5Etfw">#IPFS</a> 0.32 has hit the shelves. We got <a href="https://twitter.com/hashtag/IPNS?src=hash&amp;ref_src=twsrc%5Etfw">#IPNS</a>, custom chunking &amp; loads more goodies. Enjoy 🍦! P.S. more info here: <a href="https://t.co/sU0GorC0l7">https://t.co/sU0GorC0l7</a> … <a href="https://twitter.com/hashtag/libp2p?src=hash&amp;ref_src=twsrc%5Etfw">#libp2p</a> <a href="https://twitter.com/hashtag/fingerprinting?src=hash&amp;ref_src=twsrc%5Etfw">#fingerprinting</a> <a href="https://twitter.com/hashtag/rabin?src=hash&amp;ref_src=twsrc%5Etfw">#rabin</a> <a href="https://t.co/PcPXS8fVMl">pic.twitter.com/PcPXS8fVMl</a></p>&mdash; Alan Shaw (@_alanshaw) <a href="https://twitter.com/_alanshaw/status/1039552739221614594?ref_src=twsrc%5Etfw">September 11, 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 # 🔦 Highlights
 
