@@ -1,5 +1,5 @@
 ---
-date: 2018-08-30
+date: 2018-09-11
 url: 43-js-ipfs-0-32
 title: js-ipfs 0.32.0 released
 author: Alan Shaw
