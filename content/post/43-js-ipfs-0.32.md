@@ -27,7 +27,7 @@ We made it even easier to create your libp2p bundle! If you're looking to create
 
 Slice and dice your DAG nodes the way _you_ want™️. When adding data to your IPFS node you can now specify the size of the chunks it creates from your data or even use [`rabin` fingerprinting](https://en.wikipedia.org/wiki/Rabin_fingerprint) to create some fancy variable length chunks for better deduping.
 
-[Rabin](https://www.npmjs.com/package/rabin) is a native module and must be compiled on your system when you run `npm install ipfs`. Native modules depend on specific libraries and languages to be pre-installed on your computer and because of this has been made an [optional dependency](https://docs.npmjs.com/files/package.json#optionaldependencies). That means that it's 👌 if it fails to install, it just won't be available to use in IPFS. If you're thinking of using rabin chunking then be sure to check that it installed properly in your install logs.
+[Rabin](https://www.npmjs.com/package/rabin) is a native module and must be compiled on your system when you run `npm install ipfs`. Native modules depend on specific [languages and tools](https://github.com/nodejs/node-gyp#installation) to be pre-installed on your computer and because of this has been made an [optional dependency](https://docs.npmjs.com/files/package.json#optionaldependencies). That means that it's 👌 if it fails to install, it just won't be available to use in IPFS. If you're thinking of using rabin chunking then be sure to check that it installed properly in your install logs.
 
 Check out the docs for the [`files.add` `chunker` option](https://github.com/ipfs/interface-ipfs-core/blob/master/SPEC/FILES.md#filesadd) for more.
 
