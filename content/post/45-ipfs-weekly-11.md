@@ -44,7 +44,7 @@ Here are some of the highlights since the last IPFS Weekly.
 + [go-ipfs 0.4.17](https://github.com/ipfs/go-ipfs/releases/tag/v0.4.17) – IPFS implementation in Go
 + [ipfs-companion v2.5.0.11550 (Beta)](https://github.com/ipfs-shipyard/ipfs-companion/releases/tag/v2.5.0.11550) – Browser extension that simplifies access to IPFS resources, developers and enthusiasts can opt-in for Beta channel with hand-picked Dev Builds of our browser extension.
 + [js-ipfs v0.32.0](https://github.com/ipfs/js-ipfs/releases/tag/v0.32.0) – IPFS implementation in JavaScript
-+ [npm-on-ifps v0.6.4](https://github.com/ipfs-shipyard/npm-on-ipfs/releases/tag/v0.6.4) – 📦 Install npm modules through IPFS!
++ [npm-on-ipfs v0.6.4](https://github.com/ipfs-shipyard/npm-on-ipfs/releases/tag/v0.6.4) – 📦 Install npm modules through IPFS!
 + [Replicated Object Notation 2.1](https://github.com/gritzko/ron/blob/master/docs/Objectives%20for%20RON%2021.md) – Replicated Object Notation, a distributed live data format, golang/ragel lib
 + DNSLink Detection in IPFS Companion: [Our browser extension](https://github.com/ipfs-shipyard/ipfs-companion) detects [DNSLink](http://docs.ipfs.io/guides/concepts/dnslink/) by default now. Visit [docs.ipfs.io](http://docs.ipfs.io) or [tr.wikipedia-on-ipfs.org](https://tr.wikipedia-on-ipfs.org) and you will load it from  IPFS, not HTTP! For more details: [DNSLink Support in IPFS Companion](https://github.com/ipfs-shipyard/ipfs-companion/blob/master/docs/dnslink.md)
 + [Qri 0.5.2](https://github.com/qri-io/qri/releases/tag/v0.5.2), or Prune Norwegian Buhund, is here!
