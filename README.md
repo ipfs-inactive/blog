@@ -99,18 +99,9 @@ How to publish the blog on IPFS.io.
 
 ### Publishing
 
-7. `$ ipfs daemon`
-8. `$ make publish`
-  Now anyone who has the hash can access.
-10. Go to IRC: Use pinbot to liase with all of the other 8 gateways (planets: Uranus, Venus, etc) and make sure they have it pinned. So, like so:
+Publishing is automated. New PR's that land a built and deployed by Jenkins. 
 
-      `$ !pin <hash> <label>`
-
-  The label (it should be `blog`) can change, of course. This can sometimes take ages, because there is a pinbug that causes a hang. Pinbot will tell you when it succeeds. If it continually hangs, the gateway needs to restart. Pin @lgierth or @whyrusleeping and tell them that the pinning bug is bugging you, and have them zap it. Then try pinning again (it should work right away).
-
-11. `$ make publish-to-domain`
-
-You will need access to DigitalOcean for this to work. You will then need to use the token. This will take a few minutes for DNS to propogate.
+Changes may take a little while to see due to DNS propogation.
 
 ## Contribute
 
