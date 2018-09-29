@@ -1,6 +1,7 @@
 baseURL = "https://blog.ipfs.io"
 relativeURLs = true
 googleAnalytics = "UA-52930282-2"
+defaultContentLanguage = "en"
 
 [params]
   domain = "blog.ipfs.io"
@@ -16,3 +17,9 @@ googleAnalytics = "UA-52930282-2"
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
+
+[languages]
+    [languages.en]
+    weight = 0
+    [languages.zh]
+    weight = 10

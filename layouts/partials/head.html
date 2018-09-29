@@ -5,6 +5,11 @@
 <title>{{ $.Param "title" }}</title>
 <meta name="description" content="{{ $.Param "description" }}" />
 <meta name="author" content="{{ $.Param "author" }}" />
+{{ if .IsTranslated }}
+    {{ range .Translations }}
+    <link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}" title="{{ .Language.LanguageName }}">
+    {{ end }}
+{{ end }}
 <!-- open graph -->
 <meta property="og:type" content="website" />
 <meta property="og:description" content="{{ $.Param "description" }}" />

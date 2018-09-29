@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="{{ .Language.Lang }}">
 <head>
   {{ partial "head.html" . }}
 </head>
@@ -10,6 +10,17 @@
     <div class="post">
       <h1>{{ .Title }}</h1>
       <p class="date">by {{ .Params.author }} on {{ dateFormat "2006-01-02" .Date }}</p>
+
+{{ if .IsTranslated }}
+<h4>{{ i18n "translations" }}</h4>
+<ul>
+  {{ range .Translations }}
+  <li>
+      <a href="{{ .RelPermalink }}">{{ .Lang }}: {{ .Title }}</a>
+  </li>
+  {{ end}}
+</ul>
+{{ end }}
 
       {{ .Content }}
 
