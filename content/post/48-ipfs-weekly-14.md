@@ -38,7 +38,7 @@ Here are some of the highlights since the last IPFS Weekly.
 ## Updates and new releases
 *See the latest releases of IPFS tools and projects across the ecosystem.*
 
-+ [qri 0.5.6](https://github.com/qri-io/qri/releases/tag/v0.5.6)  
++ [qri 0.5.6](https://github.com/qri-io/qri/releases/tag/v0.5.6) – This patch release is focused on making inroads on some long-standing issues with peer discovery.
 
 ## Tools and projects we <3
 *[Awesome IPFS](https://awesome.ipfs.io/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs).* 
