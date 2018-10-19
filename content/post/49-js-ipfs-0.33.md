@@ -31,6 +31,9 @@ A command line tool for converting, formatting and discovering properties of CID
 
 In the near future IPFS will be switching it's [**default** CID version for added content to version 1 and will use base 32 encoding for serialized CIDs](https://github.com/ipfs/go-ipfs/issues/4143). This tool gives you the power to inspect and learn about CIDs as well as convert any CIDs you've been using from whatever base they're encoded in to a different base!
 
+* [Documentation](https://github.com/ipfs-shipyard/js-cid-tool)
+* [Demo video](https://youtu.be/SMhy99yUVGk?t=299)
+
 # 🏗 API Changes
 
 * Added CLI command `ipfs cid [sub-command]`
