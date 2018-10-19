@@ -1,0 +1,51 @@
+---
+date: 2018-10-19
+url: 49-js-ipfs-0-33
+title: js-ipfs 0.33.0 released
+author: Alan Shaw
+---
+
+All new Web UI - Check on your node stats, explore the IPLD powered Merkle forest, see peers around the world and manage your files, without needing to touch the CLI.
+
+# 🔦 Highlights
+
+## 🕹 Web UI 2.0
+
+The IPFS Web UI has been given a HUGE revamp and is now 10x, no, 100x better than before! 😄
+
+* **Check the status** of your node, it's Peer ID and connection info, the network traffic and the number of connected peers
+* Easily **manage files** in your IPFS repo. You can drag and drop to add files, move and rename them, delete, share or download them
+* You can **explore IPLD data** that underpins how IPFS works
+* See all of your **connected peers**, geolocated by their IP address
+* **Review the settings** for your IPFS node, and update them to better suit your needs
+
+![Screenshot of the status page](https://raw.githubusercontent.com/ipfs-shipyard/ipfs-webui/master/docs/screenshots/ipfs-webui-status.png)
+
+| Files | Explore | Peers | Settings |
+|-------|---------|-------|----------|
+| ![Screenshot of the file browser page](https://raw.githubusercontent.com/ipfs-shipyard/ipfs-webui/master/docs/screenshots/ipfs-webui-files.png) | ![Screenshot of the IPLD explorer page](https://raw.githubusercontent.com/ipfs-shipyard/ipfs-webui/master/docs/screenshots/ipfs-webui-explore.png) | ![Screenshot of the swarm peers map](https://raw.githubusercontent.com/ipfs-shipyard/ipfs-webui/master/docs/screenshots/ipfs-webui-peers.png) | ![Screenshot of the settings page](https://raw.githubusercontent.com/ipfs-shipyard/ipfs-webui/master/docs/screenshots/ipfs-webui-settings.png) |
+
+## 🛠 CID tool
+
+A command line tool for converting, formatting and discovering properties of CIDs.
+
+In the near future IPFS will be switching it's [**default** CID version for added content to version 1 and will use base 32 encoding for serialized CIDs](https://github.com/ipfs/go-ipfs/issues/4143). This tool gives you the power to inspect and learn about CIDs as well as convert any CIDs you've been using from whatever base they're encoded in to a different base!
+
+# 🏗 API Changes
+
+* Added CLI command `ipfs cid [sub-command]`
+    * View the help with `ipfs cid --help` or view the [documentation online](https://github.com/ipfs-shipyard/js-cid-tool)
+
+# 🙌🏽 Want to contribute?
+
+Would you like to contribute to the IPFS project and don't know how? Well, there are a few places you can get started:
+
+- Check the issues with the `help wanted` label at the Ready column in our waffle board - https://waffle.io/ipfs/js-ipfs?label=help%20wanted
+- Join an IPFS All Hands, introduce yourself and let us know where you would like to contribute - https://github.com/ipfs/pm/#all-hands-call
+- Hack with IPFS and show us what you made! The All Hands call is also the perfect venue for demos, join in and show us what you built
+- Join the discussion at http://discuss.ipfs.io/ and help users finding their answers.
+- Join the [⚡️ⒿⓈ Core Dev Team Weekly Sync 🙌🏽](https://github.com/ipfs/pm/issues/650) and be part of the Sprint action!
+
+# ⁉️ Do you have questions?
+
+The best place to ask your questions about IPFS, how it works and what you can do with it is at [discuss.ipfs.io](http://discuss.ipfs.io). We are also available at the #ipfs channel on Freenode.
