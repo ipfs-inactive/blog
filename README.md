@@ -11,6 +11,19 @@
 ## Usage
 
 The IPFS blog is a static website, built with `hugo`. We use `node`, `npm`, `less` and a few other helpful modules to optimize the site for deployment.
+=======
+- [Install](#install)
+- [Usage](#usage)
+  - [Creating a Post](#creating-a-post)
+  - [Live editing](#live-editing)
+  - [Theme](#theme)
+- [Publishing Post](#publishing-post)
+  - [Editing](#editing)
+  - [Publishing](#publishing)
+  - [Translating](#translating) (optional)
+- [Contribute](#contribute)
+  - [Want to hack on IPFS?](#want-to-hack-on-ipfs)
+- [License](#license)
 
 With `make`, [`node`](http://nodejs.org) and `npm` installed on your system, you can:
 
@@ -86,8 +99,41 @@ Submit a Github PR with your changes, and request a review.
 ### Publishing
 
 CircleCI builds the static site, Pins it to our IPFS Cluster, and provides a preview link for review on the Gateway. Merges to to `master` does the same steps plus an update the DNSLink for the domain.
+=======
+1. `$ ipfs daemon`
+2. `$ make publish`
+   Now anyone who has the hash can access.
+3. Go to IRC: Use pinbot to liase with all of the other 8 gateways (planets: Uranus, Venus, etc) and make sure they have it pinned. So, like so:
+
+      `$ !pin <hash> <label>`
+
+  The label (it should be `blog`) can change, of course. This can sometimes take ages, because there is a pinbug that causes a hang. Pinbot will tell you when it succeeds. If it continually hangs, the gateway needs to restart. Pin @lgierth or @whyrusleeping and tell them that the pinning bug is bugging you, and have them zap it. Then try pinning again (it should work right away).
+
+4. `$ make publish-to-domain`
 
 It will take a few minutes for the DNS update to propagate.
+
+### Translating
+
+Every post can be optionally translated by:
+
+1. Ensuring `config.toml` includes relevant language code in `[languages]` section
+2. Adding a translation file with correct locale suffix, for example:
+	- English: `content/post/45-ipfs-weekly-11.md` → [/45-ipfs-weekly-11/](https://ipfs.io/ipfs/QmfEW4q4Z1G46m4rNhsYFHSsZumVX264dXQpUpRJ8hgczk/45-ipfs-weekly-11/)
+	- Chinese: `content/post/45-ipfs-weekly-11.zh.md` → [/**zh**/45-ipfs-weekly-11/](https://ipfs.io/ipfs/QmfEW4q4Z1G46m4rNhsYFHSsZumVX264dXQpUpRJ8hgczk/zh/45-ipfs-weekly-11/)
+
+	Note: To ensure translation is grouped with source post the `translationKey` needs to be the same in both, and `url` of translation needs to be prefixed with locale code, for example:
+	```
+	url: zh/45-ipfs-weekly-11
+	translationKey: 45-ipfs-weekly-11
+	```
+
+Having that, non-english version will have unique URL, as seen on the example below:
+
+| English | Chinese |
+| ---- | ---- |
+|  ![2018-09-30--00-04-11](https://user-images.githubusercontent.com/157609/46250892-c236ed80-c444-11e8-8099-a5d8fd320fa2.png) | ![2018-09-30--00-04-40](https://user-images.githubusercontent.com/157609/46250891-c236ed80-c444-11e8-9303-669ca3f8342d.png) |
+
 
 ## Contribute
 
