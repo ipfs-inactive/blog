@@ -32,6 +32,7 @@
 
   {{ partial "footer.html" . }}
 
+  {{ if eq .Language.Lang "en" }}
   <script type="text/javascript">
     DiscourseEmbed = { discourseUrl: 'https://discuss.ipfs.io/',
       discourseEmbedUrl: 'https://ipfs.io/blog/{{ .URL }}' };
@@ -42,6 +43,7 @@
       (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
     })();
   </script>
+  {{ end }}
 
 </body>
 </html>
