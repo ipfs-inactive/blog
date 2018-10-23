@@ -36,7 +36,7 @@ Here are some of the highlights since the last IPFS Weekly.
 ## Updates and new releases
 *See the latest releases of IPFS tools and projects across the ecosystem.*
 
-+ [Version 0.33.0 of is-ipfs](https://github.com/ipfs/js-ipfs/issues/1635) is upon us! Check out the upcoming release notes.
++ [Version 0.33.0 of js-ipfs](https://github.com/ipfs/js-ipfs/issues/1635) is upon us! Check out the upcoming release notes.
 + [textile-mobile android_1.6.14_262](https://github.com/textileio/textile-mobile/releases/tag/android_1.6.14_262) – Encrypted, secure, decentralized personal data wallet -- technology behind textile.photos
 
 ## Tools and projects we <3
@@ -50,8 +50,8 @@ Here are some of the highlights since the last IPFS Weekly.
 ## Coming up in the Community
 *Did you know IPFS has a community forum at [discuss.ipfs.io](https://discuss.ipfs.io/)? Sign up to participate in discussions about coding, tutorials, see announcements and learn about upcoming community events.*
 
-+ [Blockstack Featuring The Blockchain Association](https://blockstackhowardblockchainlab.splashthat.com/), A panel on Decentralization & Regulation with The Blockchain Association, 25 Oct 2018 6pm
-+ Introducing Decentralized Camp’s second yearly hackathon Nov 9-11 https://medium.com/buildyourthing/introducing-decentralized-camps-second-yearly-hackathon-9de20516a321
++ [Blockstack Featuring The Blockchain Association](https://blockstackhowardblockchainlab.splashthat.com/), A panel on Decentralization & Regulation with The Blockchain Association, 25 Oct 2018, 6pm
++ Introducing [Decentralized Camp’s second yearly hackathon](https://medium.com/buildyourthing/introducing-decentralized-camps-second-yearly-hackathon-9de20516a321), 9-11 Nov 2018 
 + [Sign up to be notified for IPFS Conf 2019](https://docs.google.com/forms/d/e/1FAIpQLSfJVVPwvp6RY3MUg1zAVl1g_5y2nGb7WJIMI1Hs6glzm7FLHQ/viewform), in Lisbon.
 + Introducing [AraCon](https://blog.aragon.org/announcing-aracon-the-aragon-conference/), the first Aragon Conference, will take place in Berlin, Germany on January 29-30, 2019.
 
