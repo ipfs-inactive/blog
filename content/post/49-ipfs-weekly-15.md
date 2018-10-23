@@ -18,7 +18,7 @@ Here are some of the highlights since the last IPFS Weekly.
 
 ## The latest
 
-+ In August, Protcol Labs held [Lab Day](https://protocol.ai/blog/august-2018-lab-day/) in San Francisco, and [the presentations and photos](https://lab-day.com/aug-03-2018/media) are available to check out now.
++ In August, Protocol Labs held [Lab Day](https://protocol.ai/blog/august-2018-lab-day/) in San Francisco, and [the presentations and photos](https://lab-day.com/aug-03-2018/media) are available to check out now.
 + The [IPFS Twitter pinbot](https://twitter.com/ipfspin/status/1053376847596187648) (@ipfspin) now supports adding content directly from tweets and a bunch of other improvements, check it out :)
 + Video: IPFS: [A Sneakernet for your geodata](https://t.co/lLTf1IaZBk) Volker Mische, 18 Oct 2018
 + Check out [public-gateway-checker](https://github.com/ipfs/public-gateway-checker), which checks which public gateways are online or not
