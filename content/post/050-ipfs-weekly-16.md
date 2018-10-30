@@ -29,7 +29,7 @@ Here are some of the highlights since the last IPFS Weekly.
 *Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.io/categories/articles/).* 
 
 + [Manyverse and Scuttlebutt: A human-centric technology stack for social applications](https://www.zdnet.com/article/manyverse-and-scuttlebutt-a-human-centric-technology-stack-for-social-applications/), 25 Oct 2018
-+ [IPLD demo](https://twitter.com/jimpick/status/1055249910914633729), 24 Oct 2018
++ Check out this [IPLD demo](https://twitter.com/jimpick/status/1055249910914633729), 24 Oct 2018
 + [YottaChain unlocks the potential of the IPFS protocol](http://www.digitaljournal.com/pr/3990415), 23 Oct 2018
 + [The 5 steps to end-to-end encrypted photo storage and sharing](https://medium.com/textileio/the-5-steps-to-end-to-end-encrypted-photo-storage-and-sharing-45ad4aad6b14), Textile.io, 23 Oct 2018
 
@@ -54,8 +54,8 @@ Here are some of the highlights since the last IPFS Weekly.
 *Did you know IPFS has a community forum at [discuss.ipfs.io](https://discuss.ipfs.io/)? Sign up to participate in discussions about coding, tutorials, see announcements and learn about upcoming community events.*
 
 + [devcon iv](https://devcon4.ethereum.org/) is sold out, but lots of IPFS fans will be there, so keep an eye out! Oct 30 - Nov 2, Prague, Czech Republic
-+ [Dapp Dev & Crypto Games Hack Berlin](https://www.eventbrite.com/e/dorahacks-dapp-devcrypto-games-hackberlinfree-with-10000-prize-pool-tickets-49168232507) Nov 3-4
-+ Introducing [Decentralized Camp’s](https://medium.com/buildyourthing/introducing-decentralized-camps-second-yearly-hackathon-9de20516a321) second yearly hackathon Nov 9-11 
++ [Dapp Dev & Crypto Games Hack Berlin](https://www.eventbrite.com/e/dorahacks-dapp-devcrypto-games-hackberlinfree-with-10000-prize-pool-tickets-49168232507) 3-4, Nov 2018
++ Introducing [Decentralized Camp’s](https://medium.com/buildyourthing/introducing-decentralized-camps-second-yearly-hackathon-9de20516a321) second yearly hackathon, 9-11 Nov 2018 
 + [Sign up to be notified for IPFS Conf 2019](https://docs.google.com/forms/d/e/1FAIpQLSfJVVPwvp6RY3MUg1zAVl1g_5y2nGb7WJIMI1Hs6glzm7FLHQ/viewform), in Lisbon.
 + Introducing [AraCon](https://blog.aragon.org/announcing-aracon-the-aragon-conference/), the first Aragon Conference, will take place in Berlin, Germany on January 29-30, 2019.
 
