@@ -1,6 +1,6 @@
 ---
 date: 2018-10-19
-url: 49-js-ipfs-0-33
+url: 50-js-ipfs-0-33
 title: js-ipfs 0.33.0 released
 author: Alan Shaw
 ---
@@ -38,6 +38,10 @@ In the near future IPFS will be switching it's [**default** CID version for adde
 
 * Added CLI command `ipfs cid [sub-command]`
     * View the help with `ipfs cid --help` or view the [documentation online](https://github.com/ipfs-shipyard/js-cid-tool)
+* `ipfs.types.dagCBOR` and `ipfs.types.dagPB` have been removed
+    * See [#1626](https://github.com/ipfs/js-ipfs/pull/1626) and [#374](https://github.com/ipfs/interface-ipfs-core/pull/374#pullrequestreview-164611060) for more information
+* `dag-cbor` nodes retrieved from `ipfs.dag.get` now represent links as [CID](https://github.com/ipld/js-cid) instances not `{"/": "base-encoded-cid"}` objects
+    * See [#1668](https://github.com/ipfs/js-ipfs/pull/1668) for more information
 
 # 🙌🏽 Want to contribute?
 
