@@ -7,6 +7,9 @@ author: Alan Shaw
 
 All new Web UI - Check on your node stats, explore the IPLD powered Merkle forest, see peers around the world and manage your files, without needing to touch the CLI.
 
+<blockquote class="twitter-tweet" data-cards="hidden" data-lang="en"><p lang="en" dir="ltr">Set phasers to kill-er release ⚡️💥 JS <a href="https://twitter.com/hashtag/IPFS?src=hash&amp;ref_src=twsrc%5Etfw">#IPFS</a> 0.33 just marched out the door with a swagger so big you wouldn&#39;t believe. Brand new WebUI 🙀 + a heap of features &amp;fixes make it the best release since, well, the last one. Serious tho, it well good, install it <a href="https://t.co/XooZ86znuQ">https://t.co/XooZ86znuQ</a> <a href="https://t.co/oNH3xy4blp">pic.twitter.com/oNH3xy4blp</a></p>&mdash; Alan Shaw (@_alanshaw) <a href="https://twitter.com/_alanshaw/status/1058020797766397952?ref_src=twsrc%5Etfw">November 1, 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 # 🔦 Highlights
 
 ## 🕹 Web UI 2.0
