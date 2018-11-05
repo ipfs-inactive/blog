@@ -8,13 +8,27 @@ author: Steven Allen and Erik Ingenito
 [go-ipfs 0.4.18](https://dist.ipfs.io/#go-ipfs) has been released! This is one of largest go-ipfs releases to date; 3 months in the making. *Thanks to all our contributors for your awesome work!*
 
 ## Highlights
-The headline features this release are experimental [QUIC support](#quic), the [gossipsub](#pubsub)
-pubsub routing algorithm, [pubsub message signing](#pubsub), a refactored `ipfs p2p`
-[command](#commands-changes), and a new [WebUI](#webui). However, that's just scratching the surface.
+The headline features this release are:
+
+* **[Experimental QUIC support](#quic)** - for faster and more efficient peer connections, better handling of lossy
+  networks and improved NAT traversal.
+
+* **[Gossipsub pubsub routing algorithm](#pubsub)** - dramatically more efficient pubsub on IPFS, along with signed
+  messages
+
+* **[Updated WebUI](#webui)** - a big update to the IPFS WebUI with expanded features and information across the board
+
+* **[Enhanced `p2p`, `cid` and `add`](#commands-changes)** - refactors and new features to a number of IPFS
+  commands.
+
+* **[Performance](#performance)** - numerous performance and efficiency improvements in a number of IPFS subsystems.
+  IPFS is faster, smaller and more reliable.
+
+* **[And a lot more!](#refactors-and-endeavors)**
 
 
 ## QUIC
-First up, on the networking front, this release has also introduced experimental
+First up, on the networking front, this release introduced experimental
 support for the QUIC protocol. QUIC is a new UDP-based network transport that
 solves many of the long standing issues with TCP.
 
@@ -28,7 +42,8 @@ For us, this means (eventually):
   has a three-way handshake like TCP. However, unlike TCP, this handshake brings
   us all the way from 0 to a fully encrypted, authenticated, and
   multiplexed connection. In theory (not yet in practice), this should
-  significantly reduce the latency of DHT queries.
+  significantly reduce the latency of DHT queries which will improve a number of IPFS operations like adding and
+  getting large volumes of data.
 * **Behaves better on lossy networks**. When multiplexing multiple requests over a
   single TCP connection, a single dropped packet will bring the entire
   connection to a halt while the packet is re-transmitted. However, because QUIC
@@ -50,7 +65,7 @@ so you can enable it and still talk to nodes using the floodsub algorithm. You
 can find instructions to enable gossipsub in go-ipfs
 [here](https://github.com/ipfs/go-ipfs/blob/master/docs/experimental-features.md#gossipsub).
 
-Messages are now, finally, **signed by their authors**. While signing has been
+Messages are now, finally, **signed by their authors**. While signing is now
 enabled by default, strict signature verification has not been and will not be
 for at least one release (probably multiple) to avoid breaking existing
 applications. You can read about how to configure this feature
@@ -58,11 +73,11 @@ applications. You can read about how to configure this feature
 
 ## Commands Changes
 
-In terms of new toys, this release introduces the `ipfs cid` subcommand for
-working with CIDs, a completely refactored `ipfs p2p` command, streaming name
-resolution, and complete inline block support.
+In terms of new toys, this release introduces 1) the`ipfs cid` subcommand for
+working with CIDs, 2) a completely refactored `ipfs p2p` command, 3) streaming name
+resolution, and 4) inline block support.
 
-#### `ipfs cid`
+#### 1. `ipfs cid`
 The new `ipfs cid` command allows users to both inspect CIDs and convert them
 between various formats and versions. Here are some examples:
 
@@ -80,10 +95,10 @@ cidv0-protobuf-sha2-256-32
 bafybeicg2rebjoofv4kbyovkw7af3rpiitvnl6i7ckcywaq6xjcxnc2mby
 ```
 
-#### `ipfs p2p`
+#### 2. `ipfs p2p`
 The refactored `ipfs p2p` command allows forwarding TCP streams through two IPFS
 nodes from one host to another. It's `ssh -L` but for IPFS.
-It's still experimental but we don't expect too many breaking changes after this
+__It's still experimental__ but we don't expect too many breaking changes after this
 point (it will very likely be stabilized in the next release).
 
 Here's a quick summary of the breaking changes in this release:
@@ -120,7 +135,7 @@ QmSiXjrYwLmDhRvAb3vK2TUP8W2pTDd34MhgCwpanVjdNT
 # Voila - point your browser at http://localhost:5551/webui to inspect your remote
 ```
 
-#### `ipfs name resolve` streaming response
+#### 3. `ipfs name resolve` streaming response
 
 There is now a new flag for `ipfs name resolve` - `--stream`. When the command
 is invoked with the flag set, it will start returning results as soon as they
@@ -130,7 +145,7 @@ running. Note that this command will likely return many outdated records
 before it finding and returning the latest. However, it will always return
 *valid* records (even if a bit stale).
 
-#### `ipfs add` block inlining
+#### 4. `ipfs add` block inlining
 
 In the previous release, we added support for extracting blocks inlined
 into CIDs. In this release, we've added support for creating these CIDs. You can
@@ -231,7 +246,8 @@ You can track progress in https://github.com/ipfs/go-ipfs/issues/4498
 
 ### CIDv1/Base32 Migration
 
-Currently, IPFS is usually used in browsers by browsing to `https://SOME_GATEWAY/ipfs/CID/...`. There are two significant drawbacks to this approach:
+We're continuing work to upgrade our default CID format to Base32 while preserving compatibility with existing CIDs. We
+need this change to improve the security of IPFS content in browsers.  Currently, IPFS is usually used in browsers by browsing to `https://SOME_GATEWAY/ipfs/CID/...`. There are two significant drawbacks to this approach:
 
 1. From a browser security standpoint, all IPFS "sites" will live under the same
    origin (SOME_GATEWAY).
