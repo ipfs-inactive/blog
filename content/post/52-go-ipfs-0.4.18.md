@@ -7,7 +7,7 @@ author: Steven Allen and Erik Ingenito
 
 [go-ipfs 0.4.18](https://dist.ipfs.io/#go-ipfs) has been released! This is one of largest go-ipfs releases to date; 3 months in the making. *Thanks to all our contributors for your awesome work!*
 
-## Highlights
+## ✨ Highlights
 The headline features this release are:
 
 * **[Experimental QUIC support](#quic)** - for faster and more efficient peer connections, better handling of lossy
@@ -27,7 +27,7 @@ The headline features this release are:
 * **[And a lot more!](#refactors-and-endeavors)**
 
 
-## QUIC
+## 🏃 QUIC
 First up, on the networking front, this release introduced experimental
 support for the QUIC protocol. QUIC is a new UDP-based network transport that
 solves many of the long standing issues with TCP.
@@ -55,7 +55,7 @@ For us, this means (eventually):
 However, we still have a long way to go. While we encourage users to test this,
 the IETF QUIC protocol is still being actively developed and *will* change. You can find instructions for enabling it [here](https://github.com/ipfs/go-ipfs/blob/master/docs/experimental-features.md#QUIC).
 
-## Pubsub
+## 📨 Pubsub
 
 go-ipfs now supports the [gossipsub](https://github.com/libp2p/specs/tree/master/pubsub/gossipsub) routing algorithm and message signing.
 
@@ -71,7 +71,7 @@ for at least one release (probably multiple) to avoid breaking existing
 applications. You can read about how to configure this feature
 [here](https://github.com/ipfs/go-ipfs/blob/master/docs/experimental-features.md#message-signing).
 
-## Commands Changes
+## 🎛 Commands Changes
 
 In terms of new toys, this release introduces 1) the`ipfs cid` subcommand for
 working with CIDs, 2) a completely refactored `ipfs p2p` command, 3) streaming name
@@ -154,7 +154,7 @@ to 32 bytes in length into a CID, instead of writing an actual block. This
 should significantly reduce the size of filesystem trees with many empty
 directories and tiny files.
 
-## WebUI
+## 🌐 WebUI
 
 This release includes the latest, very shiny [updated webui](https://github.com/ipfs-shipyard/ipfs-webui). You can view it by
 installing go-ipfs and visiting http://localhost:5001/webui. It deserves its own release note - oh look, it [got
@@ -167,13 +167,11 @@ one](./51-js-ipfs-0-33/#web-ui-2-0)! Here's a peek:
 | ![Screenshot of the file browser page](https://raw.githubusercontent.com/ipfs-shipyard/ipfs-webui/master/docs/screenshots/ipfs-webui-files.png) | ![Screenshot of the IPLD explorer page](https://raw.githubusercontent.com/ipfs-shipyard/ipfs-webui/master/docs/screenshots/ipfs-webui-explore.png) | ![Screenshot of the swarm peers map](https://raw.githubusercontent.com/ipfs-shipyard/ipfs-webui/master/docs/screenshots/ipfs-webui-peers.png) | ![Screenshot of the settings page](https://raw.githubusercontent.com/ipfs-shipyard/ipfs-webui/master/docs/screenshots/ipfs-webui-settings.png) |
 
 
-Kudos and thanks to the webui team!
+Kudos and thanks to the webui team! 👏
 
-## Performance
+## ⚡️ Performance
 
-This release includes some significant performance improvements, both in terms
-of resource utilization and speed. This section will go into some technical
-details so feel free to skip it if you're just looking for shiny new features.
+This release includes some significant performance improvements, both in terms of resource utilization and speed. IPFS now actively manages connection counts to keep resource usage reasonable, and incorporates changes to speed up transfers of lots of smalle files (or blocks). This section will go into some technical details so feel free to skip it if you're just looking for shiny new features.
 
 ### Resource Utilization
 
@@ -186,7 +184,7 @@ memory and CPU usage.
 We've changed two of our most frequently used datastructures, CIDs and
 Multiaddrs, to reduce allocation load.
 
-First, we now store CIDs *encode* as strings, instead of decoded in structs
+First, we now store CIDs *encoded* as strings, instead of decoded in structs
 (behind pointers). In addition to being more compact, our `Cid` type is now a
 valid `map` key so we no longer have to encode CIDs every time we want to use
 them in a map/set. Allocations when inserting CIDs into maps/sets was showing up
@@ -210,7 +208,8 @@ This release sees two improvements on this front:
    the memory used by the connections' streams).
 2. Yamux streams now use a buffer-pool backed, auto shrinking read buffer.
    Before, this read buffer would grow to its maximum size (a few megabytes) and
-   never shrink but these buffers now shrink as they're emptied.
+never shrink, but **now** these buffers shrink as they're emptied and **free up space efficiently**.
+
 
 ### Bitswap Performance
 
@@ -219,7 +218,7 @@ Bitswap will now pack *multiple* small blocks into a single message thanks to
 help when transferring large files (with large blocks), this should help when
 transferring many tiny files.
 
-## Refactors and Endeavors
+## 🛠 Refactors and Endeavors
 
 This release saw yet another commands-library refactor, work towards the
 CoreAPI, and the first step towards reliable base32 CID support.
@@ -235,12 +234,11 @@ errors.
 ### CoreAPI
 
 CoreAPI is a new way to interact with IPFS from Go. While it's still not
-final, most things you can do via the CLI or HTTP interfaces, can now be done
+final, most things you can do via the CLI or HTTP interfaces can now be done
 through the new API.
 
-Currently there is only one implementation, backed by go-ipfs node, and there are
-plans to start http-api backed one soon. We are also looking into creating RPC
-interface using this API, which could help performance in some use cases.
+Currently only the Go implementation exists, but there are plans to expose the new API via HTTP soon.
+We are also looking into creating an RPC interface to this API which could help performance in some use cases.
 
 You can track progress in https://github.com/ipfs/go-ipfs/issues/4498
 
@@ -279,21 +277,32 @@ equivalent CIDv1.
 This release makes some significant progress towards solving this issue by
 introducing two features:
 
-(1) The previous mentioned `ipfs cid base32` command for converting CID to a
-case intensive encoding required by domain names. This command converts a CID to
-version 1 and encodes it using base32.
+(1) The previous mentioned `ipfs cid base32` command for converting a CID to a
+case insensitive encoding required by domain names. This command converts an existing base58 CIDv0 to
+a CIDv1 encoded using base32.
 
 (2) A hack to allow locally looking up blocks associated with a CIDv0 CID using
 the equivalent CIDv1 CID (or the reverse). This hack will eventually
 be replaced with a multihash indexed blockstore, which is agnostic to both the
 CID version and multicodec content type.
 
-## Full Changelog
+## 📋 Full Changelog
 
 As always, you can find the full (massive) changelog over at ipfs/go-ipfs's Github
 repository:
 https://github.com/ipfs/go-ipfs/blob/master/CHANGELOG.md#go-ipfs-changelog-1
 
-## Contributing
+## 🙌 Contributing
 
-Would you like to help contribute to the go-ipfs project? Join us on Github at https://github.com/ipfs/go-ipfs where you can find out more about the project and how you can help. Thanks!
+Would you like to help contribute to the go-ipfs project?
+
+- Join us on Github at https://github.com/ipfs/go-ipfs where you can find out more about the project.
+- Check the issues with the help wanted label at the Ready column in our waffle board - https://waffle.io/ipfs/go-ipfs?label=help%20wanted
+- Join an IPFS All Hands, introduce yourself and let us know where you would like to contribute or any cool demos of what you've built - https://github.com/ipfs/pm/#all-hands-call
+- Join the discussion at http://discuss.ipfs.io/ and help users finding their answers.
+- Join the [Go Core Dev Team Weekly Sync](https://github.com/ipfs/pm/issues/674) 🙌🏽 and be part of the Sprint action!
+
+## ⁉️  Do you have questions?
+The best place to ask your questions about IPFS, how it works and what you can do with it, is at [discuss.ipfs.io](https://discuss.ipfs.io). We are also available at the #ipfs channel on Freenode.
+
+Thanks!
