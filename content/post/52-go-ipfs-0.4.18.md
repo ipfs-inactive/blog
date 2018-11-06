@@ -34,22 +34,22 @@ solves many of the long standing issues with TCP.
 
 For us, this means (eventually):
 
-* **Fewer local resources**. TCP requires a file-descriptor per connection while
+* **Fewer local resources** - TCP requires a file-descriptor per connection while
   QUIC (and most UDP based transports) can share a single file descriptor
   between all connections. This should allow us to dial faster and keep more
   connections open.
-* **Faster connection establishment**. When client authentication is included, QUIC
+* **Faster connection establishment** - When client authentication is included, QUIC
   has a three-way handshake like TCP. However, unlike TCP, this handshake brings
   us all the way from 0 to a fully encrypted, authenticated, and
   multiplexed connection. In theory (not yet in practice), this should
   significantly reduce the latency of DHT queries which will improve a number of IPFS operations like adding and
   getting large volumes of data.
-* **Behaves better on lossy networks**. When multiplexing multiple requests over a
+* **Behaves better on lossy networks** - When multiplexing multiple requests over a
   single TCP connection, a single dropped packet will bring the entire
   connection to a halt while the packet is re-transmitted. However, because QUIC
   handles multiplexing internally, dropping a single packets affects only the
   related stream.
-* **Better NAT traversal**: NAT hole-punching is significantly easier and, in
+* **Better NAT traversal** - NAT hole-punching is significantly easier and, in
   many cases, more reliable with UDP than with TCP.
 
 However, we still have a long way to go. While we encourage users to test this,
@@ -65,7 +65,7 @@ so you can enable it and still talk to nodes using the floodsub algorithm. You
 can find instructions to enable gossipsub in go-ipfs
 [here](https://github.com/ipfs/go-ipfs/blob/master/docs/experimental-features.md#gossipsub).
 
-Messages are now, finally, **signed by their authors**. While signing is now
+Messages are now **signed by their authors**. While signing is now
 enabled by default, strict signature verification has not been and will not be
 for at least one release (probably multiple) to avoid breaking existing
 applications. You can read about how to configure this feature
@@ -253,7 +253,7 @@ need this change to improve the security of IPFS content in browsers.  Currently
    a local IPFS node).
 
 To fix the security issue, we intend to switch IPFS gateway links
-`https://ipfs.io/ipfs/CID` to to `https://CID.ipfs.dweb.link`. This way, the CID
+`https://ipfs.io/ipfs/CID` to `https://CID.ipfs.dweb.link`. This way, the CID
 will be a part of the
 ["origin"](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Origin) so
 each IPFS website will get a separate security origin.
@@ -264,8 +264,8 @@ to web browsers through our
 experimental extension APIs from Mozilla. This has the same effect of putting
 the CID in the URL origin but has the added benefit of looking "native".
 
-Unfortunately, origins must be *case insensitive*. Currently, most CIDs users
-see are *CIDv0* CIDs (those starting with `Qm`) which are *always* base58
+Unfortunately, origins must be *case insensitive*. Currently, the most common CIDs
+are *CIDv0* CIDs (those starting with `Qm`) which are *always* base58
 encoded and are therefore case-sensitive.
 
 Fortunately, CIDv1 (the latest CID format) supports arbitrary bases using the
