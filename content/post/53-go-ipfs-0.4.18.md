@@ -1,6 +1,6 @@
 ---
-date: 2018-11-01
-url: 52-go-ipfs-0.4.18
+date: 2018-11-07
+url: 53-go-ipfs-0.4.18
 title: go-ipfs 0.4.18 released
 author: Steven Allen and Erik Ingenito
 ---
