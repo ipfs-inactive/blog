@@ -171,13 +171,23 @@ Kudos and thanks to the webui team! 👏
 
 ## ⚡️ Performance
 
-This release includes some significant performance improvements, both in terms of resource utilization and speed. IPFS now actively manages connection counts to keep resource usage reasonable, and incorporates changes to speed up transfers of lots of smalle files (or blocks). This section will go into some technical details so feel free to skip it if you're just looking for shiny new features.
+This release includes some significant performance improvements, both in terms of resource utilization and speed particularly when transferring lots of small files (or blocks). This section will go into some technical details so feel free to skip it if you're just looking for shiny new features.
 
 ### Resource Utilization
 
 In this release, we've (a) fixed a slow memory leak in libp2p and (b)
 significantly reduced the allocation load. Together, these should improve both
-memory and CPU usage.
+memory and CPU usage. How much you ask? Glad you asked.
+
+![gc-latency](/52-go-ipfs-0.4.18/img/gc-latency.png)
+
+Above is a graph of time our IPFS gateway nodes spend in GC. See the awesome looking light blue line at the bottom? That's the node running 0.4.18. IKR?
+
+![cpu-load](/52-go-ipfs-0.4.18/img/cpu-load.png)
+
+This graph of time spent in execution has greater variability but the improvement is still pretty clear. You want the
+light blue one.
+
 
 #### Datastructures
 
