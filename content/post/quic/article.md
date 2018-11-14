@@ -14,7 +14,7 @@ Then edit the `~/.ipfs/config` to add a QUIC swarm addresses (e.g. `/ip4/0.0.0.0
 
 ## Introduction
 
-QUIC is a new UDP based internet transport that was invented by Google in 2013 and rolled out as an experiment in Google Chrome and Google's frontend servers over the next few years. According to Google's measurements, on lossy connections QUIC reduces search latency (the time it takes to fully load the Google Search page) by 3.6 to 8% and the Youtube rebuffer rate (the number of times a YouTube video stops to load new data) by 15 to 18%.
+QUIC is a new UDP based internet transport that was invented by Google in 2013 and rolled out as an experiment in Google Chrome and Google's frontend servers over the next few years. According to Google's [measurements](https://www.ietf.org/proceedings/99/slides/slides-99-maprg-the-quic-transport-protocol-design-and-internet-scale-deployment-00.pdf), on lossy connections QUIC reduces search latency (the time it takes to fully load the Google Search page) by 3.6 to 8% and the YouTube rebuffer rate (the number of times a YouTube video stops to load new data) by 15 to 18%.
 
 In 2016, the IETF formed a Working Group to specify the QUIC protocol, which is scheduled to complete the protocol specification by mid 2019.
 
