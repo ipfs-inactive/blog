@@ -1,19 +1,5 @@
 # QUIC
 
-## How to activate QUIC in IPFS
-
-Since [version 0.4.18](https://ipfs.io/blog/53-go-ipfs-0-4-18/) IPFS supports QUIC.
-
-There are two steps necessary to activate QUIC. First, enable the QUIC experiment by running
-
-```bash
-ipfs config --json Experimental.QUIC true
-```
-
-Then edit the `~/.ipfs/config` to add a QUIC swarm addresses (e.g. `/ip4/0.0.0.0/udp/4001/quic`, if you want QUIC to listen on UDP port 4001).
-
-## Introduction
-
 QUIC is a new UDP based internet transport that was invented by Google in 2013 and rolled out as an experiment in Google Chrome and Google's frontend servers over the next few years. According to Google's [measurements](https://www.ietf.org/proceedings/99/slides/slides-99-maprg-the-quic-transport-protocol-design-and-internet-scale-deployment-00.pdf), on lossy connections QUIC reduces search latency (the time it takes to fully load the Google Search page) by 3.6 to 8% and the YouTube rebuffer rate (the number of times a YouTube video stops to load new data) by 15 to 18%.
 
 In 2016, the IETF formed a Working Group to specify the QUIC protocol, which is scheduled to complete the protocol specification by mid 2019.
@@ -74,7 +60,17 @@ QUIC is now being standardized by the IETF. Although a lot of people put a lot o
 
 QUIC therefore has built-in version negotiation. When two endpoints establish a new QUIC connection, they negotiate a QUIC version that is supported by both of them. The QUIC version number space is huge, 32 bits, to give implementors of the protocol a lot of room for defining and deploying experimental QUIC versions with new features, which might then later become part of the next IETF standard for a future QUIC version.
 
+## How to activate QUIC in IPFS
 
+Since [version 0.4.18](https://ipfs.io/blog/53-go-ipfs-0-4-18/) IPFS has experimental support for IETF QUIC (roughly at [draft 12](https://tools.ietf.org/html/draft-ietf-quic-transport-12)).
+
+There are two steps necessary to activate QUIC. First, enable the QUIC experiment by running
+
+```bash
+ipfs config --json Experimental.QUIC true
+```
+
+Then edit the `~/.ipfs/config` to add a QUIC swarm addresses (e.g. `/ip4/0.0.0.0/udp/4001/quic`, if you want QUIC to listen on UDP port 4001).
 
 
 
