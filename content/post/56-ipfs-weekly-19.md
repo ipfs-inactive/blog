@@ -20,7 +20,7 @@ Here are some of the highlights since the last IPFS Weekly.
 
 + WATCH THIS: See David Dias present an update on his [past presentations about IPFS and Protocol Labs](https://www.youtube.com/watch?v=M4W6rzTOtP4&feature=youtu.be) at the latest Telecom Application Development Summit (TADS), plus introduce a little something new!   
 + IPFS got a shoutout during the [Chrome Dev Summit 2018](https://www.youtube.com/watch?v=Ai4aZ9Jbsys) because the platform folks are looking into IPFS as alternative distribution transport for [Signed HTTP Exchanges](https://developers.google.com/web/updates/2018/11/signed-exchanges).
-+ IPFS has made the [ThoughtWorks Technology Radar](https://www.thoughtworks.com/radar/platforms) Find us under “Assess.”
++ IPFS has made the [ThoughtWorks Technology Radar](https://www.thoughtworks.com/radar/platforms). Find us under “Assess.”
 + Hello from Harvard! [Michelle Brous](https://twitter.com/itsemmdeebee/status/1063139004604923904) and Marvin Ammori were recently at Harvard Business School to talk about IPFS and Protocol Labs.  
 
 ## Meet Irakli Gozala 🎉
@@ -35,7 +35,7 @@ We’re in awe of the work IPFS contributor [Irakli Gozala](https://gozala.io/) 
 + [Distributed Web: host your website with IPFS clusters, Cloudflare, and DevOps](https://withblue.ink/2018/11/14/distributed-web-host-your-website-with-ipfs-clusters-cloudflare-and-devops.html), With Blue Ink, 14 Nov 2018
 + [Thailand Uses Blockchain-Supported Electronic Voting System in Primaries](https://www.nasdaq.com/article/thailand-uses-blockchain-supported-electronic-voting-system-in-primaries-cm1055512), Nasdaq, 13 Nov 2018
 + [Ethereum + IPFS + React DApp Tutorial Pt. 3](https://medium.com/@alexma6614/ethereum-ipfs-react-dapp-tutorial-pt-3-dc091408db64), Alexander Ma, 13 Nov 2018
-+ [Can Decentralization Impact And Enhance Geo-Location Data Privacy?](https://www.forbes.com/sites/yoavvilner/2018/11/10/can-decentralization-impact-and-enhance-geo-location-data-privacy/#45217d3c63f8), Forbes, 10 Nov 2018
++ [Can Decentralization Impact And Enhance Geo-Location Data Privacy?](https://www.forbes.com/sites/yoavvilner/2018/11/10/can-decentralization-impact-and-enhance-geo-location-data-privacy/#45217d3c63f8) Forbes, 10 Nov 2018
 
 
 ## Updates and new releases
