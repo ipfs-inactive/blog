@@ -1,13 +1,13 @@
 # IPFS Blog
 
-[![](https://img.shields.io/badge/made%20by-Protocol%20Labs-blue.svg?style=flat-square)](http://ipn.io)
-[![](https://img.shields.io/badge/project-IPFS-blue.svg?style=flat-square)](http://ipfs.io/)
+[![](https://img.shields.io/badge/made%20by-Protocol%20Labs-blue.svg?style=flat-square)](https://protocol.ai)
+[![](https://img.shields.io/badge/project-IPFS-blue.svg?style=flat-square)](https://ipfs.io/)
 [![](https://img.shields.io/badge/freenode-%23ipfs-blue.svg?style=flat-square)](http://webchat.freenode.net/?channels=%23ipfs)
 [![standard-readme compliant](https://img.shields.io/badge/standard--readme-OK-green.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 
-> Source for the [IPFS Blog](http://ipfs.io/blog)
+> Source for the [IPFS Blog](https://blog.ipfs.io)
 
-![](https://www.evernote.com/l/AMaEbN3YfmVC-JDtlxRdFnMMbfvQjQlmU9MB/image.png)
+![ipfs-blog @ 2018-11-30](https://user-images.githubusercontent.com/157609/49290285-e21b7980-f4a6-11e8-8829-fe8977b5be34.png)
 
 #### Please Review [PIPELINE.md](./PIPELINE.md) to understand how this repo pipeline works.
 
@@ -25,21 +25,23 @@
   - [Want to hack on IPFS?](#want-to-hack-on-ipfs)
 - [License](#license)
 
-## Editing
 
 ## Install
 
-1. [Install node + npm](http://nodejs.org) and required modules.
-2. [Install hugo](https://gohugo.io/)
 
-```sh
-npm install
-```
+1. [Install node + npm](http://nodejs.org)
+2. Install required modules:
+    ```console
+    $ npm install
+    ```
+3. Run build:
+    ```console
+    $ npm run build
+    ```
 
-2. Run build.
-
-```sh
-npm run build
+**Tip:** _all-in-one_ command for steps 2-3 on unix systems:
+```console
+$ make
 ```
 
 ## Usage
@@ -69,11 +71,11 @@ Start a live reloading hugo:
 npm start
 ```
 
-Blog should not be available at http://localhost:1313/blog/
+Blog should not be available at http://localhost:1313/
 
 ### Theme
 
-The layouts follow [the example viewer](https://github.com/ipfs/examples/tree/master/webapps/example-viewer). Modify the files inside
+Modify the files inside:
 
 ```
 layouts/
@@ -82,15 +84,15 @@ static/
 
 ## Publishing Post
 
-How to publish the blog on IPFS.io.
+How to publish the blog on `blog.ipfs.io`.
 
 ### Editing
 
 1. Make a change to a file
 2. Add and commit.
-3. `make build`
+3. `$ make build`
 4. `$ ipfs add -r build`
-  Only if you want a preview for other people (you can just use `make serve`). The path is `build`, in the website and the blog.
+  Only if you want a preview for other people. The path is `build`, in the website and the blog.
   The daemon needs to be running for others to access it, or to access it through a gateway.
 5. Push to remote branch.
 6. Make a pull request to `master`.
