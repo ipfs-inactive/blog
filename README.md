@@ -91,8 +91,8 @@ How to publish the blog on `blog.ipfs.io`.
 1. Make a change to a file
 2. Add and commit.
 3. `$ make build`
-4. `$ ipfs add -r build`
-  Only if you want a preview for other people. The path is `build`, in the website and the blog.
+4. `$ ipfs add -r build`  
+  You can add the "build" directory to IPFS to get a CID for your version of the blog.  
   The daemon needs to be running for others to access it, or to access it through a gateway.
 5. Push to remote branch.
 6. Make a pull request to `master`.
