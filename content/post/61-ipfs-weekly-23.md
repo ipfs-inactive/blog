@@ -27,7 +27,7 @@ Here are some of the highlights since the last IPFS Weekly, and remember, we’l
 + [The four factors to consider for optimal IPFS node distribution](https://medium.com/@kyletut/the-ipfs-network-c815a735bd0d), Textile, 18 Dec 2018
 + [BCH Devs Publish Bi-Directional Payment Concept Based on IPFS](https://news.bitcoin.com/bch-devs-publish-bi-directional-payment-concept-based-on-ipfs/), Bitcoin News, 18 Dec 2018
 + [A Distributed Search Engine for the Distributed Web](https://blog.florence.chat/a-distributed-search-engine-for-the-distributed-web-39c377dc700e), Pact, 13 Dec 2018
-+ [Just recorded a Todo DApp based on peer-base working in a plane without internet connection. They were both connected via a WIFI hotspot.](https://twitter.com/satazor/status/1073017115282673664), André Cruz, 12 Dec 2018
++ [Just recorded a Todo DApp based on peer-base working in a plane without internet connection.](https://twitter.com/satazor/status/1073017115282673664) They were both connected via a WIFI hotspot. André Cruz, 12 Dec 2018
 + [Entering the world of IPFS](https://medium.com/zinc_work/entering-the-world-of-ipfs-6755cd10c462), Zinc, 07 Sep 2018
 
 ## Updates and new releases
@@ -39,7 +39,7 @@ Here are some of the highlights since the last IPFS Weekly, and remember, we’l
 *What’s coming up next for the IPFS community and ecosystem.*
 
 + Check out this WIP to [add go-ipfs to openbsd ports](https://marc.info/?l=openbsd-ports-cvs&m=154513430817876&w=2)
-+ Look at the progress the js-ipfs dev team has made on the [upcoming release of v0.34.0]https://github.com/ipfs/js-ipfs/issues/1721 😍
++ Look at the progress the js-ipfs dev team has made on the [upcoming release of v0.34.0](https://github.com/ipfs/js-ipfs/issues/1721) 😍
 
 ## Tools and projects we <3
 *[Awesome IPFS](https://awesome.ipfs.io/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs).* 
