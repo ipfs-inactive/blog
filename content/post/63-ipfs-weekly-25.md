@@ -24,7 +24,7 @@ This week we’re excited to announce the launch of [ProtoSchool](https://proto.
 
 [Self-guided interactive tutorials](https://proto.school/#/tutorials) teach new concepts through code challenges completed in the browser, with feedback to help you track your progress. Tutorials are built by community members like you with an interest in helping others learn about IPFS and other decentralized web projects such as IPLD, LibP2P, Multiformats, and Filecoin.
 
-[Local chapter events](https://proto.school/#/chapters) around the world use ProtoSchool tutorials as curriculum, with mentors available to help participants work through the challenges. ProtoSchool chapters operate independently, but each has its own repo in our org to facilitate chapter discussions and event planning, as well as easy hosting of a chapter website via GitHub Pages. [Start your own chapter today!](https://proto.school/#/host)
+[Local chapter events](https://proto.school/#/chapters) around the world use ProtoSchool tutorials as curriculum, with mentors available to help participants work through the challenges. ProtoSchool chapters operate independently, but each has its own repo in our org to facilitate chapter discussions and event planning, as well as easy hosting of a chapter website via GitHub Pages. [Start your own chapter today!](https://proto.school/#/host) Check out our [launch video](https://youtu.be/G5aiLkHZ7CM) to learn more about how you can get involved with the ProtoSchool community.
 
 
 ## Meet Jordyn Bonds and Mark Henderson of TallyLab
