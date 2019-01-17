@@ -53,7 +53,7 @@ QmT78zSuBmuS4z925WZfrqQ1qHaJ56DQaTfyMUF7F8ff5o
 uAXASIEbUSBS5xa8UHDqqt8BdxehE6tX5HxKFiwIeukV2i0wO
 ```
 
-This is all work to smooth out the eventual transition to base32 CIDv1 by default - a move to allow CIDs to be used as valid URL origins. Have a read of this for more.
+This is all work to smooth out the eventual transition to base32 CIDv1 by default - a move to allow CIDs to be used as valid URL origins. Have a [read of this for more](https://blog.ipfs.io/53-go-ipfs-0-4-18/#cidv1-base32-migration).
 
 To help you craft your artisanal CIDs we've introduced a `--cid-base` option to a bunch of CLI commands (and `?cid-base` option to a bunch of HTTP API endpoints). Check it out:
 
