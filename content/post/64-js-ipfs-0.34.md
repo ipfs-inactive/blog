@@ -14,7 +14,7 @@ author: Alan Shaw
 
 ## 🏎 Reading Protobuf DAG nodes is super fast
 
-Reading Protobuf DAG nodes just got a serious speed boost as well as a memory reduction. Previously Protobuf DAG nodes (dag-pb nodes for short) carried a multihash property (a CIDv0) with them. This used up loads of CPU time calculating the hash for a given node as it was retrieved from storage and with the advent of CIDv1 there was no guarantee the hashing algorithm and length were correct.
+Reading Protobuf DAG nodes just got a serious speed boost as well as a memory reduction. Previously Protobuf DAG nodes (dag-pb nodes for short) carried a multihash property (a [CIDv0](https://docs.ipfs.io/guides/concepts/cid/#version-0)) with them. This used up loads of CPU time calculating the hash for a given node as it was retrieved from storage and with the advent of [CIDv1](https://docs.ipfs.io/guides/concepts/cid/#version-1) there was no guarantee the hashing algorithm and length were correct.
 
 So, we removed it! 🦖
 
