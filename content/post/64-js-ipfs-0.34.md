@@ -34,7 +34,7 @@ If you're curious about npm on IPFS, check out the [project here](https://github
 
 ## 📣 IPNS over pubsub and DHT
 
-Get informed of IPNS record updates and read and publish your IPNS records to the DHT. It's all there and it's all awesome. For those of you new to IPNS, let me give you the lowdown - IPNS puts the mutable in immutable 🤣 It's an age old problem, content addressing is rad and all that, but if I change something the hash changes - 👎 boo...but wait, IPNS solves this, you get a permenant address for changeable content - hooray \o/.
+Get informed of [IPNS](https://docs.ipfs.io/guides/concepts/ipns/) record updates and read and publish your IPNS records to the DHT. It's all there and it's all awesome. For those of you new to IPNS, let me give you the lowdown - IPNS puts the mutable in immutable 🤣 It's an age old problem, content addressing is rad and all that, but if I change something the hash changes - 👎 boo...but wait, IPNS solves this, you get a permenant address for changeable content - hooray \o/.
 
 IPNS over pubsub gets the word out quicker to peers that are interested when an IPNS record changes. IPNS over DHT allows peers to find and resolve your IPNS address to some content in the first place! In the next JS IPFS release (0.35) the DHT will be enabled by default and it's going to be epic.
 
