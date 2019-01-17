@@ -28,7 +28,7 @@ Read all about it in [the pull request notes](https://github.com/ipfs/js-ipfs-un
 
 ## 🎄 HAMT support added to MFS
 
-We're putting the whole of npm on IPFS! These days npm is like 5.3 terabytes of data and it's all going in MFS. This is super rad, but we needed a good sharding strategy because 5TB is a lorra lorra files.
+We're putting the whole of npm on IPFS! These days npm is like 5.3 terabytes of data and it's all going in [MFS](https://docs.ipfs.io/guides/concepts/mfs/). This is super rad, but we needed a good sharding strategy because 5TB is a lorra lorra files.
 
 If you're curious about npm on IPFS, check out the [project here](https://github.com/ipfs-shipyard/npm-on-ipfs).
 
