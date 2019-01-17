@@ -1,6 +1,6 @@
 ---
 date: 2019-01-17
-url: 61-js-ipfs-0-34
+url: 64-js-ipfs-0-34
 title: js-ipfs 0.34.0 released
 author: Alan Shaw
 ---
