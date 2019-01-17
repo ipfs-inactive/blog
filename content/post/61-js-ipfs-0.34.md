@@ -5,7 +5,10 @@ title: js-ipfs 0.34.0 released
 author: Alan Shaw
 ---
 
-Speed and flexibility, new IPFS for a new year!
+> Speed and flexibility, new IPFS for a new year!
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">I just saw JS IPFS 0.34 breeze out the front door in a totally disco powder blue suit 🕺🏻. It&#39;s fast, small, supports big dirs, is flexible with CID versions and much, much more. More deets in the release notes <a href="https://t.co/3uqFw6WDbu">https://t.co/3uqFw6WDbu</a> <a href="https://t.co/ydTmq2B4zn">pic.twitter.com/ydTmq2B4zn</a></p>&mdash; Alan Shaw (@_alanshaw) <a href="https://twitter.com/_alanshaw/status/1085860207513657344?ref_src=twsrc%5Etfw">January 17, 2019</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 # 🔦 Highlights
 
