@@ -16,13 +16,11 @@ author: Alan Shaw
 
 Reading Protobuf DAG nodes just got a serious speed boost as well as a memory reduction. Previously Protobuf DAG nodes (dag-pb nodes for short) carried a multihash property (a [CIDv0](https://docs.ipfs.io/guides/concepts/cid/#version-0)) with them. This used up loads of CPU time calculating the hash for a given node as it was retrieved from storage and with the advent of [CIDv1](https://docs.ipfs.io/guides/concepts/cid/#version-1) there was no guarantee the hashing algorithm and length were correct.
 
-So, we removed it! 🦖
-
-Ok so that had the unfortunate consequence of making the object API a whole lot less useful when writing data - the DAG nodes you got back were basically the data you put in. Hence the object API was refactored to return CIDs instead of DAG nodes for write operations...and we all lived happily ever after.
+So, we removed it! 🦖 ...but that had the unfortunate consequence of making the object API a whole lot less useful when writing data - the DAG nodes you got back were basically the data you put in. Hence the object API was refactored to return CIDs instead of DAG nodes for write operations...and we all lived happily ever after.
 
 ## 🚤 Adding content is blazingly fast
 
-We found a big bottleneck (or should I say small bottleneck?) that meant the bigger the file you added to IPFS, the longer it would take - oh no 😭! Good news folks, we've seen the speed of adding large files increase by 50% or more in some cases! 💥
+We found a bottleneck that meant the bigger the file you added to IPFS, the longer it would take - oh no 😭! Good news folks, we've seen the speed of adding large files increase by 50% or more in some cases! 💥
 
 Read all about it in [the pull request notes](https://github.com/ipfs/js-ipfs-unixfs-importer/pull/10).
 
