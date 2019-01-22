@@ -43,7 +43,8 @@ Here are some of the highlights since the last IPFS Weekly.
 + PODCAST: [Calling the Zaif Exchange Hack and a Look at the Interplanetary File System (IPFS)](https://medium.com/@QuantLayer/zaif-exchange-hack-and-how-we-called-it-two-months-ago-and-the-interplanetary-file-system-ipfs-532e742c4f53), Quantlayer, 3 Jan 2019
 + VIDEO: [IPFS Web 3.0 and the future of human civilization](https://www.youtube.com/watch?v=xmAedcmhUvI&feature=youtu.be) with Eric Des Courtis, 3 Jan 2019
 
-## Releases
+## Updates and new releases
+*See the latest releases of IPFS tools and projects across the ecosystem.*
 
 + [IPFS Cluster 0.8.0 is out!](https://cluster.ipfs.io/news/0.8.0_release/)
 + [Textile Photos Release Version 0.5.0](https://medium.com/textileio/textile-photos-release-version-0-5-0-5baed6a9d993)
