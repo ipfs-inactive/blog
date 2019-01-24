@@ -27,7 +27,7 @@ This is an IPFS Community favorite. A moment to report back all the great succes
 - [Bitswap/GraphSync Improvements and Module Architecture, Erik Ingenito](https://www.youtube.com/watch?v=6GKKwcG630M&index=8&list=PLuhRWgmPaHtRPl3Itt_YdHYA0g0Eup8hQ)
 - [Community Contributing Guidelines, David Dias](https://www.youtube.com/watch?v=rq2d-41nC44&list=PLuhRWgmPaHtRPl3Itt_YdHYA0g0Eup8hQ&index=2&t=0s)
 - [Datastore Benchmarks, Eric Myhre](https://www.youtube.com/watch?v=3PlN0Xcjckk&list=PLuhRWgmPaHtRPl3Itt_YdHYA0g0Eup8hQ&index=7)
-<!-- - [ipfs ls Wikipedia FAST, Hannah Howard](Waiting on GraphSync) -->
+<!-- - [ipfs ls Wikipedia FAST, Hannah Howard](Waiting on Approval) -->
 - [IPLD Selectors & GraphSync, Juan Benet](https://www.youtube.com/watch?v=NhAQEKtPxHw&index=6&list=PLuhRWgmPaHtRPl3Itt_YdHYA0g0Eup8hQ)
 - [Offline First, Molly Mackinlay](https://www.youtube.com/watch?v=f1YUXacAuP0&index=9&list=PLuhRWgmPaHtRPl3Itt_YdHYA0g0Eup8hQ)
 - [2018 Q4 OKRs for go-ipfs, David Dias](https://www.youtube.com/watch?v=rf8xlRSVczE&index=5&list=PLuhRWgmPaHtRPl3Itt_YdHYA0g0Eup8hQ)
