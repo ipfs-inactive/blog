@@ -41,7 +41,7 @@ This is an IPFS Community favorite. A moment to report back all the great succes
 
 The fun would not be complete without an IPFS London Meetup. There were great talks and a surprise show-and-tell by Juan Benet himself, who demo'd a p2p chess game, built on [peer-base](https://github.com/peer-base/peer-base) while meetup was happening! 
 
-![david-n-juan-p2p-chess](https://user-images.githubusercontent.com/58871/51672997-d0e17b80-1fc4-11e9-9278-08f0899ba587.jpeg)
+![david-n-juan-p2p-chess](https://ipfs.io/ipfs/QmaCqVctWQULN3WGR3UztxwrSPegwBs58qcKywvUzT5PjS)
 
 A post with the recorings will be published soon. Meanwhile, you can see the photos and join the IPFS London meet up here https://www.meetup.com/london-ipfs/photos/29361158/
 
