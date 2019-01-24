@@ -6,11 +6,11 @@ title: London Hack Week Summary - Go Core Dev
 author: David Dias
 ---
 
-# London Hack Week - Go Core Dev Report Back
+# London Hack Week, Q4 2018 - A Summary
 
-The Go Core Dev Team for the IPFS, IPLD and libp2p projects spent some time together in a Hack Week last quarter in London. The overall feeling was excitment, it was the first time that many of the core contributors got the chance to meet in person and learn what are the different goals the projects has, users needs and who is pushing for them. It was a great gathering and we wanted to make sure to share with you the results and the recordings.
+The Go Core Dev Team for the IPFS, IPLD and libp2p projects spent some quality time together for a London Hack Week last quarter. The overall feeling was excitment, it was the first time that many of the core contributors got the chance to meet in person and learn what are the different goals the projects has, users needs and who is pushing for them. It was a great gathering and we wanted to make sure to share with you the results and the recordings.
 
-The week format was really interesting and one that could almost go into the Async Team Management books. A simplified overview of it is:
+The week format was really interesting and one that could almost go into the Async Team Management books (as a way to create sync time for distributed teams). A simplified overview of what happened is:
 
 - **Monday** - Everyone spends time identifying priorities for the project and asserting them with the Project WG for how to prioritize with 2019 in mind.
 - **Tuesday** - Ton of Hacking/Design discussions. Let the Hackers be free!
