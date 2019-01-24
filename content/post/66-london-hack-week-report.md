@@ -39,7 +39,11 @@ This is an IPFS Community favorite. A moment to report back all the great succes
 
 ## IPFS London Meetup - Show & Tell
 
-The fun would not be complete without an IPFS London Meetup with a selection of IPFS finest speakers and a surprise drive-by talk by Juan Benet himself, who hacked a thing while the meetup was happening. A post with the recorings will be published soon. Meanwhile, you can take a look at the pictures https://www.meetup.com/london-ipfs/photos/29361158/
+The fun would not be complete without an IPFS London Meetup. There were great talks and a surprise show-and-tell by Juan Benet himself, who demo'd a p2p chess game, built on [peer-base](https://github.com/peer-base/peer-base) while meetup was happening! 
+
+![david-n-juan-p2p-chess](https://user-images.githubusercontent.com/58871/51672997-d0e17b80-1fc4-11e9-9278-08f0899ba587.jpeg)
+
+A post with the recorings will be published soon. Meanwhile, you can see the photos and join the IPFS London meet up here https://www.meetup.com/london-ipfs/photos/29361158/
 
 --------------------------------------
 
