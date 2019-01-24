@@ -2,11 +2,9 @@
 date: 2019-01-24
 url: 65-london-hack-week-report
 tags: hack week
-title: London Hack Week Summary - Go Core Dev
+title: 2018 Q4 London Hack Week Summary
 author: David Dias
 ---
-
-# London Hack Week, Q4 2018 - A Summary
 
 The Go Core Dev Team for the IPFS, IPLD and libp2p projects spent some quality time together for a London Hack Week last quarter. The overall feeling was excitment, it was the first time that many of the core contributors got the chance to meet in person and learn what are the different goals the projects has, users needs and who is pushing for them. It was a great gathering and we wanted to make sure to share with you the results and the recordings.
 
@@ -32,7 +30,7 @@ This is an IPFS Community favorite. A moment to report back all the great succes
 <!-- - [ipfs ls Wikipedia FAST, Hannah Howard](Waiting on GraphSync) -->
 - [IPLD Selectors & GraphSync, Juan Benet](https://www.youtube.com/watch?v=NhAQEKtPxHw&index=6&list=PLuhRWgmPaHtRPl3Itt_YdHYA0g0Eup8hQ)
 - [Offline First, Molly Mackinlay](https://www.youtube.com/watch?v=f1YUXacAuP0&index=9&list=PLuhRWgmPaHtRPl3Itt_YdHYA0g0Eup8hQ)
-- [Q4 OKRs for go-ipfs, David Dias](https://www.youtube.com/watch?v=rf8xlRSVczE&index=5&list=PLuhRWgmPaHtRPl3Itt_YdHYA0g0Eup8hQ)
+- [2018 Q4 OKRs for go-ipfs, David Dias](https://www.youtube.com/watch?v=rf8xlRSVczE&index=5&list=PLuhRWgmPaHtRPl3Itt_YdHYA0g0Eup8hQ)
 - [Project Working Group OKRs, Molly Mackinlay](https://www.youtube.com/watch?v=cLUg_kBzl3I&list=PLuhRWgmPaHtRPl3Itt_YdHYA0g0Eup8hQ&index=4)
 - [Provider Strategies, Michael Avila & Jan Winkelmann](https://youtu.be/Y_unBdXzRvU)
 - [Scalable PubSub with GossipSub, Dimitris Vyzovitis](https://www.youtube.com/watch?v=mlrf1058ENY&index=3&list=PLuhRWgmPaHtRPl3Itt_YdHYA0g0Eup8hQ)
@@ -50,4 +48,5 @@ Thank you to @858Heather, @jamiejn, @angiemaguire, @olizilla and @alanshaw for h
 This is it, it was a great success! Thank you all that joined and I'm sorry for those who couldn't come this time. See you all on the next Hack Week!!
 
 I bid you all a good day!
+
 David Dias
