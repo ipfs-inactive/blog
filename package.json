@@ -12,13 +12,12 @@
     "less": "^2.7.2",
     "less-plugin-autoprefix": "^1.5.1",
     "less-plugin-clean-css": "^1.5.1",
-    "nodemon": "^1.11.0"
+    "hugo-bin": "0.18.1",
+    "nodemon": "^1.18.7"
   },
   "scripts": {
-    "start": "hugo server -ws .",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "hugo"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Juan Benet <juan@benet.ai> (http://juan.benet.ai/)",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {}
 }
