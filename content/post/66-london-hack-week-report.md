@@ -22,8 +22,6 @@ In the end we ran a retrospective and asked "When is the next one! 😄"
 
 ## Results from [SHOW ME WHAT YOU GOT 🗿](https://www.youtube.com/watch?v=LEUGPEVRDmU)
 
-<a href="https://www.youtube.com/watch?v=LEUGPEVRDmU"><img width="320" src="https://user-images.githubusercontent.com/1211152/47279522-ed3ed800-d5d1-11e8-85cc-5166f53808d6.png"></img></a>
-
 This is an IPFS Community favorite. A moment to report back all the great successes from the week! We do this report in lighting talk format. [Full playlist](https://www.youtube.com/playlist?list=PLuhRWgmPaHtRPl3Itt_YdHYA0g0Eup8hQ). Talks list:
 
 - [Bitswap/GraphSync Improvements and Module Architecture, Erik Ingenito](https://www.youtube.com/watch?v=6GKKwcG630M&index=8&list=PLuhRWgmPaHtRPl3Itt_YdHYA0g0Eup8hQ)
