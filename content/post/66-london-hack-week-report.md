@@ -47,7 +47,7 @@ A post with the recorings will be published soon. Meanwhile, you can see the pho
 
 --------------------------------------
 
-Thank you to @858Heather, @jamiejn, @angiemaguire, @olizilla and @alanshaw for helping us putting this amazing hack week and IPFS London Meetup, y'all are a rockstars!!!!
+Thank you to @858Heather, @jamiejn, @angiemaguire, @olizilla and @alanshaw for helping us putting this amazing hack week and IPFS London Meetup!
 
 This is it, it was a great success! Thank you all that joined and I'm sorry for those who couldn't come this time. See you all on the next Hack Week!!
 
