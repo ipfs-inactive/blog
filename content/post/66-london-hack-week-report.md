@@ -16,7 +16,7 @@ The week format was really interesting and one that could almost go into the Asy
 - **Thursday** - We had a [SHOW ME WHAT YOU GOT 🗿](https://www.youtube.com/watch?v=LEUGPEVRDmU) session (links below) & hosted a [IPFS London Meetup](https://www.meetup.com/london-ipfs/), more details on how the meetup went in a blog soon™.
 - **Friday** - Final review of the OKRs. As a prize for our very successful week, we all went to the British Museum to check out the Rosetta stone among many other cool things.
 
-In the end we ran Retrospective and asked "When is the next one! 😄"
+In the end we ran a retrospective and asked "When is the next one! 😄"
 
 ## Results from [SHOW ME WHAT YOU GOT 🗿](https://www.youtube.com/watch?v=LEUGPEVRDmU)
 
