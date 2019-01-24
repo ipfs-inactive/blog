@@ -13,7 +13,7 @@ Together, we explored our goals for the projects, along with the users needs and
 The week format was really interesting and one that could almost go into the Async Team Management books (as a way to create sync time for distributed teams). A simplified overview of what happened is:
 
 - **Monday** - Everyone spends time identifying priorities for the project and asserting them with the Project WG for how to prioritize with 2019 in mind.
-- **Tuesday** - Ton of Hacking/Design discussions. Let the Hackers be free!
+- **Tuesday** - A ton of hacking and design discussions. Let the Hackers be free!
 - **Wednesday** - OKRs check in. We went from a "top down" (few to many) OKR approach to a "divide and conquer" where 3 main areas of focus where identified (Data Exchange, Datastore & Providers) and the big go-ipfs team was divided into 3 groups that worked independently for 60 minutes to review and come up with fresh OKRs. These were so much better!
 - **Thursday** - We had a [SHOW ME WHAT YOU GOT 🗿](https://www.youtube.com/watch?v=LEUGPEVRDmU) session (links below) & hosted a [IPFS London Meetup](https://www.meetup.com/london-ipfs/), more details on how the meetup went in a blog soon™.
 - **Friday** - Final review of the OKRs. As a prize for our very successful week, we all went to the British Museum to check out the Rosetta stone among many other cool things.
