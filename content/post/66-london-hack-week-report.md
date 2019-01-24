@@ -14,7 +14,7 @@ The week format was really interesting and one that could almost go into the Asy
 
 - **Monday** - Collaboratively surface the top priorities for the project. We defined them clearly and worked with the IPFS Project Working Group to prioritize them with the IPFS roadmap in mind.
 - **Tuesday** - A ton of hacking and design discussions. Let the Hackers be free!
-- **Wednesday** - Objectived and Key Restults (OKR) check in. We went from a "top down" (few to many) OKR approach to a "divide and conquer". The 3 main areas of focus were identified (Data Exchange, Datastore & Providers) and the big go-ipfs team was divided into 3 groups that worked independently for 60 minutes to review and came up with great improvements to the original OKRs that had been defined before we met.
+- **Wednesday** - Objectives and Key Results (OKR) check in. We went from a "top down" (few to many) OKR approach to a "divide and conquer". The 3 main areas of focus were identified (Data Exchange, Datastore & Providers) and the big go-ipfs team was divided into 3 groups that worked independently for 60 minutes to review and came up with great improvements to the original OKRs that had been defined before we met.
 - **Thursday** - We had a [SHOW ME WHAT YOU GOT 🗿](https://www.youtube.com/watch?v=LEUGPEVRDmU) session (links below) & hosted the [IPFS London Meetup](https://www.meetup.com/london-ipfs/). More details on how the meetup went in a blog soon™.
 - **Friday** - Final review of the OKRs. As a prize for our very successful week, we all went to the British Museum to check out the Rosetta stone among many other cool things.
 
