@@ -1,96 +1,88 @@
 # IPFS Blog
 
-[![](https://img.shields.io/badge/made%20by-Protocol%20Labs-blue.svg?style=flat-square)](http://ipn.io)
+[![](https://img.shields.io/badge/made%20by-Protocol%20Labs-blue.svg?style=flat-square)](https://protocol.ai)
 [![](https://img.shields.io/badge/project-IPFS-blue.svg?style=flat-square)](http://ipfs.io/)
 [![](https://img.shields.io/badge/freenode-%23ipfs-blue.svg?style=flat-square)](http://webchat.freenode.net/?channels=%23ipfs)
 [![standard-readme compliant](https://img.shields.io/badge/standard--readme-OK-green.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 
-> Source for the [IPFS Blog](http://ipfs.io/blog)
+> Source for the [IPFS Blog](https://blog.ipfs.io)
 
-![](https://www.evernote.com/l/AMaEbN3YfmVC-JDtlxRdFnMMbfvQjQlmU9MB/image.png)
-
-#### Please Review [PIPELINE.md](./PIPELINE.md) to understand how this repo pipeline works.
-
-## Table of Contents
-
-- [Install](#install)
-- [Usage](#usage)
-  - [Creating a Post](#creating-a-post)
-  - [Live editing](#live-editing)
-  - [Theme](#theme)
-- [Publishing Post](#publishing-post)
-  - [Editing](#editing)
-  - [Publishing](#publishing)
-- [Contribute](#contribute)
-  - [Want to hack on IPFS?](#want-to-hack-on-ipfs)
-- [License](#license)
-
-## Editing
-
-## Install
-
-1. [Install node + npm](http://nodejs.org) and required modules.
-2. [Install hugo](https://gohugo.io/)
-
-```sh
-npm install
-```
-
-2. Run build.
-
-```sh
-npm run build
-```
+![ipfs-blog @ 2018-11-30](https://user-images.githubusercontent.com/157609/49290285-e21b7980-f4a6-11e8-8829-fe8977b5be34.png)
 
 ## Usage
 
-### Creating a Post
+The IPFS blog is a static website, built with `hugo`. We use `node`, `npm`, `less` and a few other helpful modules to optimize the site for deployment.
 
-To create a new post:
+With `make`, [`node`](http://nodejs.org) and `npm` installed on your system, you can:
 
-```sh
-cp -r drafts/post-draft-template drafts/<short-title>
-cd drafts/<short-title>
-# edit index.md
-# edit skeleton.md
-rm skeleton-template.md
+**Run the site in dev mode**
+
+```console
+$ make dev
+
+# lots of output...
+Web Server is available at http://localhost:1313/
 ```
 
-That will create a directory for the post inside `drafts/`. Edit the `index.md` and `skeleton.md` there. Place any static assets (e.g. images) inside that directory.
+The first time you run it, it will install all the dependencies ✨, Then it will watch for changes in the source code and rebuild the site when you save your changes.
 
-When ready to publish, the post directory will be moved from `drafts/` into `src/`, with be given the next sequential number.
+Run it and open <http://localhost:1313/> in your browser, and start editing your new blog post.
 
+**Build the production site**
 
-### Live editing
+```console
+$ make
 
-Start a live reloading hugo:
-
-```
-npm start
-```
-
-Blog should not be available at http://localhost:1313/blog/
-
-### Theme
-
-The layouts follow [the example viewer](https://github.com/ipfs/examples/tree/master/webapps/example-viewer). Modify the files inside
-
-```
-layouts/
-static/
+# lots of output...
+Site built out to ./public dir
 ```
 
-## Publishing Post
+This will build out the static site, optimized and ready for deployment, to the `./public` directory.
 
-How to publish the blog on IPFS.io.
+## Create a new blog post
+
+Each blog post is a markdown file, with a little meta data at the top (known as YAML front matter) to help us create the post index page.
+
+A blog post looks like this:
+
+```markdown
+---
+date: 2019-01-24
+title: 2018 Q4 London Hack Week Summary
+author: David Dias
+---
+
+Back in October last year, the Go Core Dev Team for the IPFS, IPLD and libp2p projects spent some quality time together
+
+and so on... your _markdown_ goes **here**
+```
+
+**To create your new post** find the last post in `content/post`, create a copy, and change the file name by incrementing the number in the title, and change the name to be a useful url slug for your post. e.g.
+
+```console
+$ cd content/post
+$ cp 66-london-hack-week-report.md 67-incredible-adventures.md
+```
+
+Now edit the metadata at the top of the file
+
+- `date` - the "_published at_" date, shown on the [blog index page](https://blog.ipfs.io) - **required**
+- `author` - used to give you credit for your words - **required**
+- `title` - used as the `h1` on the post page, and the name of the post on the index page. **required**
+- `tags` - don't appear to be used right now, but set them anyone, as we'll want to add a "see more posts like this one" feature one day.
+- `url` - can be used to override the post url if needed.
+
+We have a process for creating and reviewing content before it gets published.
+
+**Please review [PIPELINE.md](./PIPELINE.md) for the details.**
 
 ### Editing
 
 1. Make a change to a file
 2. Add and commit.
-3. `make build`
-4. `$ ipfs add -r build`
-  Only if you want a preview for other people (you can just use `make serve`). The path is `build`, in the website and the blog.
+3. `make`
+4. `$ ipfs add -r public`
+  Only if you want a preview for other people (you can just use `make dev` for previewing locally.). The path is `public`, in the website and the blog.
   The daemon needs to be running for others to access it, or to access it through a gateway.
 5. Push to remote branch.
 6. Make a pull request to `master`.
@@ -102,13 +94,13 @@ How to publish the blog on IPFS.io.
 7. `$ ipfs daemon`
 8. `$ make publish`
   Now anyone who has the hash can access.
-10. Go to IRC: Use pinbot to liase with all of the other 8 gateways (planets: Uranus, Venus, etc) and make sure they have it pinned. So, like so:
+10. Go to IRC: Use pinbot to pin the new hash across our IPFS cluster.
 
       `$ !pin <hash> <label>`
 
-  The label (it should be `blog`) can change, of course. This can sometimes take ages, because there is a pinbug that causes a hang. Pinbot will tell you when it succeeds. If it continually hangs, the gateway needs to restart. Pin @lgierth or @whyrusleeping and tell them that the pinning bug is bugging you, and have them zap it. Then try pinning again (it should work right away).
+  Use the label `blog`, to keep to tradition.
 
-11. `$ make publish-to-domain`
+11. Run `$ make publish-to-domain` to update the DNSLink on blog.ipfs.io
 
 You will need access to DigitalOcean for this to work. You will then need to use the token. This will take a few minutes for DNS to propogate.
 
