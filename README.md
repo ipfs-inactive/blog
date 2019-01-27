@@ -7,7 +7,7 @@
 
 > Source for the [IPFS Blog](https://blog.ipfs.io)
 
-![ipfs-blog @ 2018-11-30](https://user-images.githubusercontent.com/157609/49290285-e21b7980-f4a6-11e8-8829-fe8977b5be34.png)
+![ipfs-blog @ 2018-11-30](https://ipfs.io/ipfs/QmYxumHGuNdu8rAwcw6kgc2UU1buJxv7V7uFs17tBx9w3W/ipfs-blog.png)
 
 ## Usage
 
