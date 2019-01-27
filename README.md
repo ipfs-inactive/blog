@@ -72,37 +72,37 @@ Now edit the metadata at the top of the file
 - `tags` - don't appear to be used right now, but set them anyone, as we'll want to add a "see more posts like this one" feature one day.
 - `url` - can be used to override the post url if needed.
 
-We have a process for creating and reviewing content before it gets published.
-
-**Please review [PIPELINE.md](./PIPELINE.md) for the details.**
+We have a process for creating and reviewing content before it gets published. **Please review [PIPELINE.md](./PIPELINE.md) for the details.**
 
 ### Editing
 
+Submit a Github PR with your changes, and request a review.
+
 1. Make a change to a file
 2. Add and commit.
-3. `make`
-4. `$ ipfs add -r public`
-  Only if you want a preview for other people (you can just use `make dev` for previewing locally.). The path is `public`, in the website and the blog.
-  The daemon needs to be running for others to access it, or to access it through a gateway.
-5. Push to remote branch.
-6. Make a pull request to `master`.
-7. Get it merged following review from _another_ member.
-8. `$ git checkout master && git pull origin master`
+3. Push to a remote branch.
+4. Make a pull request to `master`.
+5. Request a review from another member of the IPFS org.
 
 ### Publishing
 
+We add the static site to IPFS, Pin it to our IPFS Cluster, and then update the DNSLink for the domain.
+
+**You will need an access a DigitalOcean access token** with permission to edit records on blog.ipfs.io to update the site.
+
+6. `$ git checkout master && git pull origin master`
 7. `$ ipfs daemon`
 8. `$ make publish`
   Now anyone who has the hash can access.
-10. Go to IRC: Use pinbot to pin the new hash across our IPFS cluster.
+10. Use pinbot on IRC to pin the new hash across our IPFS cluster.
 
       `$ !pin <hash> <label>`
 
-  Use the label `blog`, to keep to tradition.
+  Use the label `blog` to keep the tradition.
 
 11. Run `$ make publish-to-domain` to update the DNSLink on blog.ipfs.io
 
-You will need access to DigitalOcean for this to work. You will then need to use the token. This will take a few minutes for DNS to propogate.
+It will take a few minutes for the DNS update to propagate.
 
 ## Contribute
 
