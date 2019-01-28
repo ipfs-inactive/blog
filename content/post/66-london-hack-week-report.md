@@ -37,7 +37,6 @@ This is an IPFS Community favorite. A moment to report back all the great succes
 <!-- Waiting on Approval -->
 <!--   - [ipfs ls Wikipedia FAST, Hannah Howard] -->
 <!--   - [Simulations Framework for Providers Strategies, Jakub Sztandera] -->
-
 - [The RFC RFC, Eric Myhre](https://www.youtube.com/watch?v=9m6VMnCTRhQ&index=2&list=PLuhRWgmPaHtRPl3Itt_YdHYA0g0Eup8hQ)
 
 ## IPFS London Meetup - Show & Tell
