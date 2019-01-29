@@ -25,7 +25,7 @@ Here are some of the highlights since the last IPFS Weekly.
 
 ## Meet Paula de la Hoz 
 
-Next week, [Paula de la Hoz](https://terceranexus6.github.io/) will be joinging the [IPFS All Hands weekly call](https://github.com/ipfs/team-mgmt#-ipfs-weekly-call--formerly-known-as-ipfs-all-hands-call) to present on “Decentralized Internet and Privacy.” Paula has been a security auditor for the past few years, investigating and researching security and internet censorship. She is studying engineering and has a background in investigative journalism. Paula co-founded a privacy and digital rights awareness association called [Interferencias](https://twitter.com/Inter_ferencias). She is passionate about freedom of software and hardware, so her talk will be a fantastic one! Join the IPFS All Hands call next Monday, 5pm UTC.
+Next week, [Paula de la Hoz](https://terceranexus6.github.io/) will be joining the [IPFS All Hands weekly call](https://github.com/ipfs/team-mgmt#-ipfs-weekly-call--formerly-known-as-ipfs-all-hands-call) to present on “Decentralized Internet and Privacy.” Paula has been a security auditor for the past few years, investigating and researching security and internet censorship. She is studying engineering and has a background in investigative journalism. Paula co-founded a privacy and digital rights awareness association called [Interferencias](https://twitter.com/Inter_ferencias). She is passionate about freedom of software and hardware, so her talk will be a fantastic one! Join the IPFS All Hands call next Monday, 5pm UTC.
 
  
 ## IPFS in the wild
