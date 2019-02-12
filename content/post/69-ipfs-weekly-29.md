@@ -32,9 +32,9 @@ The next guest presenter at the IPFS Weekly Call is [Brian Hoffman](https://twit
 ## IPFS in the wild
 *Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.io/categories/articles/).* 
 
-+ PODCAST: [Web3 Summit Decentralize NOW! #13 - IPFS and Decentralized File Storage](http://dattpodcastnetwork.libsyn.com/web3-summit-decentralize-now-13-ipfs-and-decentralized-file-storage?platform=hootsuite), 11 Feb 2019
++ PODCAST: [Web3 Summit Decentralize NOW! #13 - IPFS and Decentralized File Storage](http://dattpodcastnetwork.libsyn.com/web3-summit-decentralize-now-13-ipfs-and-decentralized-file-storage), 11 Feb 2019
 + [The IPFS Gateway Problem](https://medium.com/pinata/the-ipfs-gateway-problem-64bbe7eb8170), Pinata, 7 Feb 2019
-+ [Why libp2p?](https://medium.com/paritytech/why-libp2p-13085ed0c9c8), Parity Technologies, 6 Feb 2019
++ [Why libp2p?](https://medium.com/paritytech/why-libp2p-13085ed0c9c8) Parity Technologies, 6 Feb 2019
 + [Textile Update | January 2019](https://medium.com/textileio/textile-update-january-2019-fa4203c4856a), 6 Feb 2019
 + [What is Ethereum’s Infura? Scalable Access to Ethereum and IPFS](https://blockonomi.com/ethereum-infura/), 6 Feb 2019
 + [Development update, Feb 2019](https://peergos.org/blog), Peergos
@@ -44,10 +44,10 @@ The next guest presenter at the IPFS Weekly Call is [Brian Hoffman](https://twit
 ## Questions from the community 🤔
 *Here are some questions folks are discussing in the IPFS ecosystem.*
 
-+ [How do I go about saving user's data in a completely decentralized manner using IPFS?](https://www.reddit.com/r/ipfs/comments/ao4qwj/possible_to_use_ipfs_for_user_authentication/)
++ [How do I go about saving user’s data in a completely decentralized manner using IPFS?](https://www.reddit.com/r/ipfs/comments/ao4qwj/possible_to_use_ipfs_for_user_authentication/)
 + [Do more nodes always help?](https://www.reddit.com/r/ipfs/comments/ansg57/do_more_nodes_always_help/)
 + [I need WebRTC signaling and after looking around and trying many things](https://discuss.ipfs.io/t/using-pubsub-in-js-ipfs-for-webrtc-signaling/4848)
-+ [I'm trying to figure out if OrbitDB would be a good match for some DApp ideas I've been formulating](https://www.reddit.com/r/ipfs/comments/apu2t7/technical_orbitdb_overviewguidelines/)
++ [I’m trying to figure out if OrbitDB would be a good match for some DApp ideas I’ve been formulating](https://www.reddit.com/r/ipfs/comments/apu2t7/technical_orbitdb_overviewguidelines/)
 
 
 ## Tools and projects we <3
