@@ -55,7 +55,7 @@ Next week, [Cale Teeter](https://github.com/caleteeter), Senior Software Blockch
 ## Tools and projects we <3
 *[Awesome IPFS](https://awesome.ipfs.io/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs).* 
 
-+ [Opening the Filecoin Project Repos](https://filecoin.io/blog/opening-filecoin-project-repos/)
++ [🎉Opening the Filecoin Project Repos 🎉](https://filecoin.io/blog/opening-filecoin-project-repos/)
 + [IPFS / IPNS peer ID generator](https://github.com/meehow/peer-id-generator/): This tool generates IPFS public and private keypair until it finds public key which contains required substring.
 + [With the ENVIENTA Platform developer eye](https://medium.com/envienta-magyarorsz%C3%A1g/az-envienta-platform-fejleszt%C5%91i-szemmel-180356ed8790)
 + See this [STORJ Backed IPFS node Prototype](https://gateway.temporal.cloud/ipfs/QmeFisZdZuHmnwaXEUBCaMJmoHQLLPn3DJfNiYwdCug5iG)
@@ -64,10 +64,10 @@ Next week, [Cale Teeter](https://github.com/caleteeter), Senior Software Blockch
 ## Coming up in the Community
 *Did you know IPFS has a community forum at [discuss.ipfs.io](https://discuss.ipfs.io/)? Sign up to participate in discussions about coding, tutorials, see announcements and learn about upcoming community events.*
 
-+ 2 Mar 2019: On [Global Diversity CFP Day 2019](https://www.globaldiversitycfpday.com/) there will be numerous workshops hosted around the globe encouraging and advising newbie speakers to put together your very first talk proposal and share your own individual perspective on any subject of interest to people in tech.
-+ 5-7 Mar 2019: [Ethereum Community Conference](https://ethcc.io/), or EthCC, is the second edition of a series of conferences and workshops that bring together and strengthen the international Ethereum community. EthCC 2019 will take place in Paris
-+ 27-28 Mar 2019: [C3 Crypto Conference](https://crypto-conference.com/) is not only focused on blockchain companies and projects but also extends to topics on new technology. C3 Crypto Conference 2019 is also Berlin's first large-scale crypto conference.
-+ 17-18 May 2019: [Data Terra Nemo](https://dtn.is/) is a technical conference about decentralized protocols and the software built on top of them.
++ **2 Mar 2019:** On [Global Diversity CFP Day 2019](https://www.globaldiversitycfpday.com/) there will be numerous workshops hosted around the globe encouraging and advising newbie speakers to put together your very first talk proposal and share your own individual perspective on any subject of interest to people in tech.
++ **5-7 Mar 2019:** [Ethereum Community Conference](https://ethcc.io/), or EthCC, is the second edition of a series of conferences and workshops that bring together and strengthen the international Ethereum community. EthCC 2019 will take place in Paris
++ **27-28 Mar 2019:** [C3 Crypto Conference](https://crypto-conference.com/) is not only focused on blockchain companies and projects but also extends to topics on new technology. C3 Crypto Conference 2019 is also Berlin's first large-scale crypto conference.
++ **17-18 May 2019:** [Data Terra Nemo](https://dtn.is/) is a technical conference about decentralized protocols and the software built on top of them.
 
 ## Thanks for reading ☺️
 
