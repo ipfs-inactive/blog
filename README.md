@@ -85,21 +85,7 @@ Submit a Github PR with your changes, and request a review.
 
 ### Publishing
 
-We add the static site to IPFS, Pin it to our IPFS Cluster, and then update the DNSLink for the domain.
-
-**You will need an access a DigitalOcean access token** with permission to edit records on blog.ipfs.io to update the site.
-
-6. `$ git checkout master && git pull origin master`
-7. `$ ipfs daemon`
-8. `$ make publish`
-  Now anyone who has the hash can access.
-10. Use pinbot on IRC to pin the new hash across our IPFS cluster.
-
-      `$ !pin <hash> <label>`
-
-  Use the label `blog` to keep the tradition.
-
-11. Run `$ make publish-to-domain` to update the DNSLink on blog.ipfs.io
+CircleCI builds the static site, Pins it to our IPFS Cluster, and provides a preview link for review on the Gateway. Merges to to `master` does the same steps plus an update the DNSLink for the domain.
 
 It will take a few minutes for the DNS update to propagate.
 
