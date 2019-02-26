@@ -71,8 +71,8 @@ Here are some of the highlights since the last IPFS Weekly.
 + **2 Mar 2019:** On [Global Diversity CFP Day 2019](https://www.globaldiversitycfpday.com/) there will be numerous workshops hosted around the globe encouraging and advising newbie speakers to put together your very first talk proposal and share your own individual perspective on any subject of interest to people in tech.
 + **2 Mar 2019:** [NYC School of Data](https://schoolofdata.nyc/) is a community driven conference with a focus on open data, civic technology and design conference.
 + **5-7 Mar 2019:** [Ethereum Community Conference](https://ethcc.io/), or EthCC, is the second edition of a series of conferences and workshops that bring together and strengthen the international Ethereum community. EthCC 2019 will take place in Paris
-+ **14 Mar 2019:** [Data Jam! Topic: NYC Transportation Data](https://www.meetup.com/Qri-Data-Jam/events/259095254/) hosted by Qri. We'll hack on (build, archive, synch, play with, analyze) interesting open datasets.
-+ **27-28 Mar 2019:** [C3 Crypto Conference](https://crypto-conference.com/) is not only focused on blockchain companies and projects but also extends to topics on new technology. C3 Crypto Conference 2019 is also Berlin's first large-scale crypto conference.
++ **14 Mar 2019:** [Data Jam! Topic: NYC Transportation Data](https://www.meetup.com/Qri-Data-Jam/events/259095254/) hosted by Qri. We’ll hack on (build, archive, synch, play with, analyze) interesting open datasets.
++ **27-28 Mar 2019:** [C3 Crypto Conference](https://crypto-conference.com/) is not only focused on blockchain companies and projects but also extends to topics on new technology. C3 Crypto Conference 2019 is also Berlin’s first large-scale crypto conference.
 + **17-18 May 2019:** [Data Terra Nemo](https://dtn.is/) is a technical conference about decentralized protocols and the software built on top of them.
 
 ## Thanks for reading ☺️
