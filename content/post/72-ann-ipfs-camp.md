@@ -2,7 +2,7 @@
 date: 2019-02-28
 url: 72-ann-ipfs-camp
 tags: event, camp, community
-title: Announcing, the first ever 🌌 IPFS Camp, Jun 27-30 🏕
+title: Announcing, the 1st ever 🌌 IPFS Camp, Jun 27-30 🏕
 author: David Dias, Angie Maguire, Chris Waring and Jamie Nicholson
 ---
 
