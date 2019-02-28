@@ -14,7 +14,7 @@ author: David Dias, Angie Maguire, Chris Waring and Jamie Nicholson
 
 <div align="center">
   <a href="https://camp.ipfs.io">
-    <img style="max-width: 800px;" src="https://ipfs.io/ipfs/Qmd11gtyigpCjo4MfzXuj9MKuMF3Dj1EZEvbNRZeQE1jd4/"></img>
+    <img src="https://ipfs.io/ipfs/Qmd11gtyigpCjo4MfzXuj9MKuMF3Dj1EZEvbNRZeQE1jd4/"></img>
   </a>
 </div>
 
