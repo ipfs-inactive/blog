@@ -14,7 +14,7 @@ author: David Dias, Angie Maguire, Chris Waring and Jamie Nicholson
 
 <div align="center">
   <a href="https://camp.ipfs.io">
-    <img width="900px" src="https://ipfs.io/ipfs/QmU9AVsfoKX5FuxJ7wcVE2vrRvsDEVKQMoTGW5KkbymVsS"></img>
+    <img style="max-width: 800px;" src="https://ipfs.io/ipfs/Qmd11gtyigpCjo4MfzXuj9MKuMF3Dj1EZEvbNRZeQE1jd4/"></img>
   </a>
 </div>
 
@@ -30,4 +30,4 @@ Registration is a 2-step process. The 1st step is an application were you can te
 
 Learn more about the camp and apply to attend **https://camp.ipfs.io/register**.
 
-Put your space boots on and get ready for a very unique InterPlanetary Adventure! Follow camp.ipfs.io and @ipfsbot for future updates.
+Put your space boots on and get ready for a very unique InterPlanetary Adventure! Follow [camp.ipfs.io](https://camp.ipfs.io) and [@ipfsbot](https://twitter.com/ipfsbot) for future updates.
