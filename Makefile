@@ -21,8 +21,8 @@ build: clean install lint css minify
 	echo "" && \
 	echo "Site built out to ./public dir"
 
-serve: install lint js css minify
-	$(PREPEND)$(NPMBIN)/hugo server
+serve: install lint css minify
+	$(PREPEND)$(NPMBIN)/hugo server -F
 
 node_modules:
 	$(PREPEND)$(NPM) i $(APPEND)
