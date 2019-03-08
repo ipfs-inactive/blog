@@ -1,13 +1,12 @@
 ---
-date: 2019-03-10
-url: 73-tunneling-http-in-ipfs
+date: 2019-03-08
+url: 74-tunneling-http-in-ipfs
 tags: libp2p, go-ipfs
 title: Securely tunneling HTTP through IPFS with libp2p
 author: Hector Sanjuan
 ---
 
-The upcoming [go-ipfs](https://github.com/ipfs/go-ipfs) release (0.4.19) will
-include
+The last [go-ipfs](https://github.com/ipfs/go-ipfs) release (0.4.19) includes
 [a new experimental feature](https://github.com/ipfs/go-ipfs/blob/master/docs/experimental-features.md#p2p-http-proxy)
 which allows any peer to serve an HTTP endpoint through the IPFS daemon's
 [libp2p host](https://libp2p.io) and any other peer to expose it under the
