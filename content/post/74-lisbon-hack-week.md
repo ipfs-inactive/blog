@@ -8,7 +8,7 @@ author: André Cruz
 
 In the week of May 21, 2018, we hosted another Hack Week in the sunny city of Lisbon.
 
-The goal of this event was for community members and researchers to meet in person, spend quality time together and work towards solving concrete problems. It was incredible to see groups of people coming up with ideas and solutions for problems that had been lingering for some time. The hack spirit quickly spread and fantastic work came out of it.
+The week was great for core developers, contributors and researchers to spend quality time together and work in a fast paced synchronous format towards solving concrete problems. It was incredible to ideas and solutions flourishing for open problems we've been thinking for a while. The hacker spirit was strong throughout the entire week.
 
 The majority of discussions and collaborations were around IPFS, libp2p and applications built on top of them, but we also hosted a [CRDT Research meetup](https://www.youtube.com/playlist?list=PLuhRWgmPaHtTVkko1ZTn-qcGb-n6EqHff) on the second day.
 
