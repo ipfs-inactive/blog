@@ -6,7 +6,7 @@ title: 2018 Hack Week - Lisbon
 author: André Cruz
 ---
 
-In the week of May 21, 2018, we hosted another Hack Week, yet again in the sunny city of Lisbon.
+In the week of May 21, 2018, we hosted another Hack Week in the sunny city of Lisbon.
 
 The goal of this event was for community members and researchers to meet in person, spend quality time together and work towards solving concrete problems. It was incredible to see groups of people coming up with ideas and solutions for problems that had been lingering for some time. The hack spirit quickly spread and fantastic work came out of it.
 
