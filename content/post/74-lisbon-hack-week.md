@@ -12,7 +12,7 @@ The week was great for core developers, contributors and researchers to spend qu
 
 The majority of discussions and collaborations were around IPFS, libp2p and applications built on top of them, but we also hosted a [CRDT Research meetup](https://www.youtube.com/playlist?list=PLuhRWgmPaHtTVkko1ZTn-qcGb-n6EqHff) on the second day.
 
-Didn't have a chance to be present? No worries, we got your back. Many of the report back presentantions given at the end of the week were record so that you learn about what got developed, designed and decided. We have compiled them into a [YouTube playlist](https://www.youtube.com/playlist?list=PLuhRWgmPaHtR1hDEAKYXtUguNBkg2qceQ). You can see them all here:
+Didn't have a chance to be present? No worries, we got your back. Many of the report back presentations given at the end of the week were record so that you can learn about what got developed, designed and decided. We have compiled them into a [YouTube playlist](https://www.youtube.com/playlist?list=PLuhRWgmPaHtR1hDEAKYXtUguNBkg2qceQ). You can see them all here:
 
 - [Aegir Browser - Hugo Dias](https://youtu.be/SxYx6IiigIc)
 - [Building a dApp - André Cruz, André Sousa](https://youtu.be/wKoLS_8pFb0)
