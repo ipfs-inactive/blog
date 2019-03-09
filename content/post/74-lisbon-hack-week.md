@@ -27,4 +27,4 @@ Didn't have a chance to be present? No worries, we got you back. Below you can f
 - [RGA @ -CRDT - Pedro Teixeira](https://youtu.be/ON_L_B7OJZM)
 - [Service Worker Gateway (IPFS Node Inside a Service Worker) - Vasco Santos](https://youtu.be/yg1yvylXEC0)
 
-The Hack Week is almost a tradition at Protocol Labs. While we value working remotely, we recognize the value of hacking things together, face-to-face. That's why we will keep doing events like this and we look forward to the next one!
+We hope you enjoy and see you in future Hack Weeks!
