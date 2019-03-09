@@ -19,7 +19,7 @@ channel provided by libp2p.
 Under the hood of this feature is
 [go-libp2p-http](https://github.com/hsanjuan/go-libp2p-http), small library
 that I wrote a while ago and that allows to serve HTTP endpoints and make HTTP
-requests through libp2p. It does this by implementing an `http.Rountripper` to
+requests through libp2p. It does this by implementing an `http.Roundtripper` to
 replace the default one and which uses libp2p streams instead of TCP
 connections. If the HTTP request is handled by a Go application, the
 server-side can use the standard Go HTTP Server stack and it only needs to use
