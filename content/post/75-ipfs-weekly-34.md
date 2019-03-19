@@ -54,7 +54,7 @@ Next Monday, [Olivier Sarrouy](https://twitter.com/osarrouy), creator or Pando P
 
 + [Meet the decentralized versions of YouTube, Google Docs, and Google Photos!](https://en.softonic.com/articles/decentralized-apps)
 + [dFile.space](https://dfile.space/): Decentralised File Hosting in Space
-+ [DoublePlus](https://ipfs.io/ipns/ipfs.doubleplus.io.): Completely decentralized social network hosted over IPFS
++ [DoublePlus](https://ipfs.io/ipns/ipfs.doubleplus.io): Completely decentralized social network hosted over IPFS
 + [Almonit](almonit.eth): A decentralized website made with ENS + IPFS
 + Deploy DNSLink TXT Records To AWS Route53 Domains with [dnslink-route53](https://github.com/RTradeLtd/dnslink-route53)
 
@@ -69,9 +69,9 @@ Next Monday, [Olivier Sarrouy](https://twitter.com/osarrouy), creator or Pando P
 ## Coming up in the Community
 *Did you know IPFS has a community forum at [discuss.ipfs.io](https://discuss.ipfs.io/)? Sign up to participate in discussions about coding, tutorials, see announcements and learn about upcoming community events.*
 
-+ **26 Mar 2019**: [ProtoSchool Munich: 101 IPFS Workshop](https://www.meetup.com/Munich-IPFS-User-Group/events/259839294), ProtoSchool Munich is open for any topic of the so-called Decentralized Revolution. This event is a workshop so, please, bring your laptop.
++ **26 Mar 2019:** [ProtoSchool Munich: 101 IPFS Workshop](https://www.meetup.com/Munich-IPFS-User-Group/events/259839294), ProtoSchool Munich is open for any topic of the so-called Decentralized Revolution. This event is a workshop so, please, bring your laptop.
 + **27-28 Mar 2019:** [C3 Crypto Conference](https://crypto-conference.com/) is not only focused on blockchain companies and projects but also extends to topics on new technology. C3 Crypto Conference 2019 is also Berlin’s first large-scale crypto conference.
-+ **28 Mar 2019**: [Creating a Decentralized App!](https://www.meetup.com/Blockstack-Newark-the-New-Internet-for-Decentralized-Apps/events/257563100/?_xtd=gqFyqTE4NzU3MjE5NKFwo3dlYg&from=ref), Jude Nelson from Blockstack will come and explain in a light and friendly way how to build a decentralized app on Blockstack, 6pm, Newark (NJ), US.
++ **28 Mar 2019:** [Creating a Decentralized App!](https://www.meetup.com/Blockstack-Newark-the-New-Internet-for-Decentralized-Apps/events/257563100/?_xtd=gqFyqTE4NzU3MjE5NKFwo3dlYg&from=ref), Jude Nelson from Blockstack will come and explain in a light and friendly way how to build a decentralized app on Blockstack, 6pm, Newark (NJ), US.
 + **24 Apr 2019:** Introducing [Hackboat](https://hackboat.org/), an afternoon cruise along the beautiful Willamette river while enjoying awesome infosec presentations, Portland, Oregon.
 + **2 May 2019:** [Munich IPFS User Group](https://www.meetup.com/de-DE/Munich-IPFS-User-Group/events/259762490/): [Pierre Krieger](https://twitter.com/tomaka17) from [parity](https://www.parity.io/) talks about Rust libp2p.
 + **17-18 May 2019:** [Data Terra Nemo](https://dtn.is/) is a technical conference about decentralized protocols and the software built on top of them.
