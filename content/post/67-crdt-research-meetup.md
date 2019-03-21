@@ -12,7 +12,9 @@ We hosted the first Lisbon CRDT Research Meetup on April 2018. It was a brillian
 
 You can find a panoply of CRDT learning materials in the [Research CRDT Repo](https://github.com/ipfs/research-CRDT)
 
-So, taking the opportunity of having some of The IPFS team in Lisbon, we had the pleasure of hosting some researchers in this field for one day of presentations and discussions. Here are some videos of some of the sessions that happened during this meetup. Enjoy!
+We believe that CRDTs are one fundamental building block for building completely Decentralized, Distributed, Offline First Web Applications and the [IPFS Dynamic Data & Capabilities Working Group](http://github.com/ipfs/dynamic-data-and-capabilities) has been spearheading the development and pushing IPFS and libp2p with projects such as: [PeerPad](http://peerpad.net/), [PeerBase](https://github.com/peer-base), [Discussify](https://github.com/ipfs-shipyard/discussify-browser-extension) and the [Sandboxed Identity Manager Project](https://github.com/ipfs-shipyard/pm-idm).
+
+If you didn't have the chance to attend this meetup in person, you can now follow what happened by checking the talks below, or browsing through [this playlist](https://www.youtube.com/playlist?list=PLuhRWgmPaHtTVkko1ZTn-qcGb-n6EqHff). Enjoy!
 
 ## Vitor Enes - Borrowing an Identity for a Distributed Counter
 
