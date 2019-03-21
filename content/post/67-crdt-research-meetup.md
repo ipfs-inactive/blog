@@ -10,7 +10,7 @@ We hosted the first Lisbon CRDT Research Meetup on April 2018. It was a brillian
 
 [CRDT](https://en.wikipedia.org/wiki/Conflict-free_replicated_data_type) stand for Conflict-free Replicated Data Types and are a mathematical framework and building block that allows different replicas to cooperate without requiring coordination, making them very useful for creating eventually consistent data layers over intermittent and unreliable networks. For instance, CRDTs make sure that, no matter the order of the messages exchanged, all the peers eventually converge to the same state.
 
-([You can read more about CRDTs here](https://github.com/ipfs/research-CRDT))
+You can find a panoply of CRDT learning materials in the [Research CRDT Repo](https://github.com/ipfs/research-CRDT)
 
 So, taking the opportunity of having some of The IPFS team in Lisbon, we had the pleasure of hosting some researchers in this field for one day of presentations and discussions. Here are some videos of some of the sessions that happened during this meetup. Enjoy!
 
