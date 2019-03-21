@@ -8,7 +8,7 @@ author: Pedro Teixeira
 
 We hosted the first Lisbon CRDT Research Meetup on April 2018. It was a brilliant event with the presence of many of the authors of the CRDT research literature and representatives from the Labs it originated, namely: [HASLab](https://haslab.uminho.pt/), [NOVA-LINCS](http://nova-lincs.di.fct.unl.pt/), [FCT](https://www.fct.unl.pt/), [UMinho](https://uminho.pt/), [UNL](https://www.unl.pt/).
 
-CRDT stand for Conflict-free Replicated Data Types and are a mathematical framework and building block that allows different replicas to cooperate without requiring coordination, making them very useful for creating eventually consistent data layers over intermittent and unreliable networks. For instance, CRDTs make sure that, no matter the order of the messages exchanged, all the peers eventually converge to the same state.
+[CRDT](https://en.wikipedia.org/wiki/Conflict-free_replicated_data_type) stand for Conflict-free Replicated Data Types and are a mathematical framework and building block that allows different replicas to cooperate without requiring coordination, making them very useful for creating eventually consistent data layers over intermittent and unreliable networks. For instance, CRDTs make sure that, no matter the order of the messages exchanged, all the peers eventually converge to the same state.
 
 ([You can read more about CRDTs here](https://github.com/ipfs/research-CRDT))
 
