@@ -42,7 +42,7 @@ What about numeric invariants? How can you guarantee, for instance, that, in a g
 
 CRDTs and Strong Eventual Consistency gives us the guarantee that all replicas will eventually converge, but this may only be true depending on your fault model. If, for instance, a replica fails to apply an operation (due to a bug, a hardware failure or malicious code, for instance), the system is not guaranteed to converge.
 
-By providing a Byzantine Fault Tolerant (BFT) Cluster to which you push the CRDT operations from the multiple replicas, this cluster can be used to reach consensus on the state and produce a certificate of that state to the client, without compromising availability or the strong eventually consistency guarantees.
+By providing a Byzantine Fault Tolerant (BFT) Cluster to which you push the CRDT operations from the multiple replicas, this cluster can be used to reach consensus on the state and produce a certificate of that state to the client, without compromising availability or the strong eventual consistency guarantees.
 
 Clients can then opt into using the more secure BFT certificate (with the compromises on availability) or simply just continue using the eventually consistent model that has better availability guarantees (but compromises on security).
 
