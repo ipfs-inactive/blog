@@ -34,7 +34,7 @@ When using geo-replicated databases, there is a first wave of databases that are
 
 AntidoteDB aims to be highly available while still provide strong consistency semantics. For operations that span into multiple data operations, AntidoteDB implements highly available transactions by using snapshot reads and atomic updates, guaranteeing that clients always see consistent states. Also, AntidoteDB can provide causal consistency without requiting coordination between replicas.
 
-What about numeric invariants? How can you guarantee, for instance, that, in a given bank account, the global balance can never be less than 0? Typically, in eventually consistent databases this would not be possible, as it would require coordination between replicas. A solution for this that AntidoteDB implements is to implement a bounded counter where coordination can happen outside of the transaction execution path and without requiring global coordination.
+What about numeric invariants? How can you guarantee, for instance, that, in a given bank account, the global balance can never be less than 0? Typically, in eventually consistent databases this would not be possible, as it would require coordination between replicas. A solution for this that AntidoteDB implements is a bounded counter where coordination can happen outside of the transaction execution path and without requiring global coordination.
 
 ## Ali Shoker - As Secure as Possible Eventual Consistency
 
