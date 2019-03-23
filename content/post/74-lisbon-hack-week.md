@@ -14,17 +14,17 @@ The majority of discussions and collaborations were around IPFS, libp2p and appl
 
 Didn't have a chance to attend? No worries, we got your back. Many of the report-back presentations were recorded so that you can learn about what got developed, designed and decided. We have compiled them into a [YouTube playlist](https://www.youtube.com/playlist?list=PLuhRWgmPaHtR1hDEAKYXtUguNBkg2qceQ) for your viewing pleasure. You can see them all here:
 
-- [Aegir Browser - Hugo Dias](https://youtu.be/SxYx6IiigIc)
-- [Building a dApp - André Cruz, André Sousa](https://youtu.be/wKoLS_8pFb0)
-- [Demo of Rust-libp2p - Pierre Krieger](https://youtu.be/cMCy7ZfxOtQ)
-- [Files Exchange Example - Diogo Silva](https://youtu.be/WartUw3dD5U)
-- [Flow Types for IPFS - Volker Mische](https://youtu.be/YPt28cHQwkg)
-- [libp2p Project Early Observations - Mike Goelzer](https://youtu.be/WWOZrP-QMXQ)
-- [Preview: IPLD Explorer v1 - Oli Evans](https://youtu.be/P9HnZslts6Q)
-- [P2P Testing - Mathias Buus](https://youtu.be/rOFHwifVH-I)
-- [Peer-Pad: Authentification with Ethereum - Pedro Teixeira, Joao Santos](https://youtu.be/yc10xRifTmQ)
-- [Prop Tests - Yoshua Wuyts](https://youtu.be/EPgtvKMF7VQ)
-- [RGA @ -CRDT - Pedro Teixeira](https://youtu.be/ON_L_B7OJZM)
-- [Service Worker Gateway (IPFS Node Inside a Service Worker) - Vasco Santos](https://youtu.be/yg1yvylXEC0)
+- [**Aegir Browser** - Hugo Dias](https://youtu.be/SxYx6IiigIc)
+- [**Building a dApp** - André Cruz, André Sousa](https://youtu.be/wKoLS_8pFb0)
+- [**Demo of Rust-libp2p** - Pierre Krieger](https://youtu.be/cMCy7ZfxOtQ)
+- [**Files Exchange Example** - Diogo Silva](https://youtu.be/WartUw3dD5U)
+- [**Flow Types for IPFS** - Volker Mische](https://youtu.be/YPt28cHQwkg)
+- [**libp2p Project Early Observations** - Mike Goelzer](https://youtu.be/WWOZrP-QMXQ)
+- [**Preview: IPLD Explorer v1** - Oli Evans](https://youtu.be/P9HnZslts6Q)
+- [**P2P Testing** - Mathias Buus](https://youtu.be/rOFHwifVH-I)
+- [**Peer-Pad: Authentification with Ethereum** - Pedro Teixeira, Joao Santos](https://youtu.be/yc10xRifTmQ)
+- [**Prop Tests** - Yoshua Wuyts](https://youtu.be/EPgtvKMF7VQ)
+- [**RGA @ -CRDT** - Pedro Teixeira](https://youtu.be/ON_L_B7OJZM)
+- [**Service Worker Gateway (IPFS Node Inside a Service Worker)** - Vasco Santos](https://youtu.be/yg1yvylXEC0)
 
 We hope you enjoy and see you in future Hack Weeks!
