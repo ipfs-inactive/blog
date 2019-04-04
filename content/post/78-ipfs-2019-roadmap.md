@@ -5,7 +5,7 @@ title: IPFS 2019 Roadmap
 author: Molly Mackinlay
 ---
 
-In Q4 2018, we undertook a new planning process for the IPFS project to more clearly define our [vision](https://github.com/ipfs/roadmap#ipfs-mission-statement), [goals](https://github.com/ipfs/roadmap#2019-goals-expanded), and plans for the year. Our motivation was to improve coordination between our expanding working groups and to focus our efforts for the year on some larger-scale improvements to the IPFS network around scalability, performance, and usability to unlock the next tiers of adoption and usage. 😇
+In Q4 2018, we undertook a new planning process for the IPFS project to more clearly define our [vision](https://github.com/ipfs/roadmap#ipfs-mission-statement), [goals](https://github.com/ipfs/roadmap#2019-goal-expanded), and plans for the year. Our motivation was to improve coordination between our expanding working groups and to focus our efforts for the year on some larger-scale improvements to the IPFS network around scalability, performance, and usability to unlock the next tiers of adoption and usage. 😇
 
 To ground our thinking about the next year, we first had to zoom out to the core mission of the IPFS project in the long-term. We take on many efforts and support many groups in our open source community, but it is all driven by the aim to make the internet more accessible, empowering, and useful for many years to come. With much wordsmithing, we condensed this into our first (written) [mission statement](https://github.com/ipfs/roadmap#ipfs-mission-statement)! 👏
 
