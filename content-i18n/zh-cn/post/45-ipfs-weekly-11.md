@@ -38,14 +38,14 @@ author: Jenn Turner
 -   [Introducing Origin Messaging: Decentralized, Secure, and Auditable](https://medium.com/originprotocol/introducing-origin-messaging-decentralized-secure-and-auditable-13c16fe0f13e), （起源信息简介：去中心化，安全和审查）作者：Origin，2018年8月29日
 -   [Dweb: Building Cooperation and Trust into the Web with IPFS](https://hacks.mozilla.org/2018/08/dweb-building-cooperation-and-trust-into-the-web-with-ipfs/), （DWeb：使用IPFS技术，将合作与信任融入到网络中）作者：Mozilla Hacks，2018年8月29日
 
-  
+
 
 
 软件更新和新版本发布：
 
 以下是IPFS工具和IPFS生态项目的发布情况：
 
-  
+
 
 
 -   [ipfs-cluster 0.5.0](https://github.com/ipfs/ipfs-cluster/releases/tag/v0.5.0) – IPFS Cluster 是一个独立的程序和命令行客户端；可以在IPFS daemon的集群上分配、复制以及追踪pins
@@ -59,7 +59,7 @@ author: Jenn Turner
 -   [The Graph Development Update](https://medium.com/graphprotocol/the-graph-development-update-d90321e22748), 2018年9月13日
 -   [Polkadot PoC-2 在此](https://medium.com/polkadot-network/polkadot-poc-2-is-here-parachains-runtime-upgrades-and-libp2p-networking-7035bb141c25): Parachains, 运行更新，libp2p更新
 
-  
+
 
 
 我们喜爱的工具和项目：
@@ -70,7 +70,7 @@ author: Jenn Turner
 -   [are we distributed yet?](https://arewedistributedyet.com/) （我们已经实现分布式了吗？）
 -   [Pinata](https://www.pinata.cloud/), 轻松自如的在IPFS上部署.
 
-  
+
 
 
 社区活动：
@@ -81,7 +81,7 @@ author: Jenn Turner
 -   新的见面会提醒:[peer to peer ÖRESUND](http://p2p-oresund.org/), 地点：瑞典马尔默 时间：10月27日
 -   [在此注册，接收IPFS里斯本会议的通知](https://docs.google.com/forms/d/e/1FAIpQLSfJVVPwvp6RY3MUg1zAVl1g_5y2nGb7WJIMI1Hs6glzm7FLHQ/viewform)
 
-  
+
 
 
 感谢阅读☺️

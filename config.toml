@@ -1,7 +1,12 @@
 baseURL = "https://blog.ipfs.io"
 relativeURLs = true
 googleAnalytics = "UA-52930282-2"
-defaultContentLanguage = "en"
+ignoreFiles = [ "\\.js\\.tmp*"]
+
+DefaultContentLanguage = "en"
+languageCode = "en-us"
+hasCJKLanguage = true
+enableMissingTranslationPlaceholders = false
 
 [params]
   domain = "blog.ipfs.io"
@@ -24,6 +29,7 @@ defaultContentLanguage = "en"
     languageCode = "en"
     weight = 0
     [languages.zh-cn]
-    languageName = "Chinese (Simplified)"
+    languageName = "中文（中国）"
+    contentDir = "content-i18n/zh-cn"
     languageCode = "zh-cn"
     weight = 10
