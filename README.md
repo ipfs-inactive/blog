@@ -8,6 +8,16 @@
 
 ![ipfs-blog @ 2018-11-30](https://ipfs.io/ipfs/QmYxumHGuNdu8rAwcw6kgc2UU1buJxv7V7uFs17tBx9w3W/ipfs-blog.png)
 
+- [Usage](#usage)
+- [Publishing Post](#create-a-new-blog-post)
+  - [Editing](#editing)
+  - [Publishing](#publishing)
+  - [Translating](#translating) (optional)
+- [Contribute](#contribute)
+  - [Want to hack on IPFS?](#want-to-hack-on-ipfs)
+- [License](#license)
+
+
 ## Usage
 
 The IPFS blog is a static website, built with `hugo`. We use `node`, `npm`, `less` and a few other helpful modules to optimize the site for deployment.
@@ -88,6 +98,32 @@ Submit a Github PR with your changes, and request a review.
 CircleCI builds the static site, Pins it to our IPFS Cluster, and provides a preview link for review on the Gateway. Merges to to `master` does the same steps plus an update the DNSLink for the domain.
 
 It will take a few minutes for the DNS update to propagate.
+
+### Translating 🌐✍️🖖
+
+Every post can be optionally translated by:
+
+1. Ensuring `config.toml` includes relevant [language code](http://www.rssboard.org/rss-language-codes) in `[languages]` section
+2. Adding a translation file with correct locale suffix, for example:
+	- English: `content/post/45-ipfs-weekly-11.md` → //blog.ipfs.io/45-ipfs-weekly-11/
+	- Chinese (Simplified): `content-i18n/<lang_code>/post/45-ipfs-weekly-11.md` → //blog.ipfs.io/**zh-cn**/45-ipfs-weekly-11/
+
+	Note: To ensure translation is grouped with source post the `translationKey` header needs to be the same in both files, and `url` of translation needs to be prefixed with locale code (`zh-cn` for Chinese Simplified), for example:
+	```markdown
+    ---
+    date: 2018-09-25
+    title: IPFS 周报-11
+    url: zh-cn/45-ipfs-weekly-11
+    translationKey: 45-ipfs-weekly-11
+    ---
+	```
+
+Having that, non-english version will have unique URL, as seen on the example below:
+
+| Chinese (Simplified)                                                                                      | English                                                                                                      |
+| ----                                                                                                      | ----                                                                                                         |
+| ![en](https://user-images.githubusercontent.com/157609/52483815-13a27680-2bb5-11e9-83d5-63a3f0122728.png) | ![zh-cn](https://user-images.githubusercontent.com/157609/52483825-169d6700-2bb5-11e9-94a6-cfde2f82e2b7.png) |
+
 
 ## Contribute
 

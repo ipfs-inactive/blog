@@ -5,6 +5,22 @@
 <title>{{ $.Param "title" }}</title>
 <meta name="description" content="{{ $.Param "description" }}" />
 <meta name="author" content="{{ $.Param "author" }}" />
+{{ if .IsTranslated }}
+  {{ if eq .Lang "en"}}
+    <link rel="canonical" href="{{ .Permalink }}" />
+    <link rel="alternate" href="{{ .Permalink }}" hreflang="x-default">
+  {{end}}
+  {{ range .Translations }}
+    {{ if eq .Lang "en"}}
+      <link rel="canonical" href="{{ .Permalink }}" />
+      <link rel="alternate" href="{{ .Permalink }}" hreflang="x-default">
+    {{ end}}
+    <link rel="alternate" href="{{ .Permalink }}" hreflang="{{ .Lang }}">
+  {{ end}}
+{{ else }}
+  <link rel="canonical" href="{{ .Permalink }}" />
+  <link rel="alternate" href="{{ .Permalink }}" hreflang="x-default">
+{{ end }}
 <!-- open graph -->
 <meta property="og:type" content="website" />
 <meta property="og:description" content="{{ $.Param "description" }}" />
@@ -30,8 +46,7 @@
 <link rel="stylesheet" href="/asciinema/asciinema-player.css" />
 
 <link rel="shortcut icon" href="{{ "/img/ipfs-logo-256-ice.png" | absURL  }}">
-<link rel="canonical" href="{{ .Permalink }}" />
-<link rel="alternate feed" href="/index.xml" type="application/rss+xml" />
+<link rel="alternate feed" href="{{ "/index.xml" | absURL }}" type="application/rss+xml"  title="IPFS Blog" />
 
 <script src="/asciinema/asciinema-player.js"></script>
 <script src="/highlight/highlight.js"></script>
