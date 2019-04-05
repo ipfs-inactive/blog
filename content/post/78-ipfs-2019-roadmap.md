@@ -1,11 +1,11 @@
 ---
 date: 2019-04-04
 url: 78-ipfs-2019-roadmap
-title: IPFS 2019 Roadmap
+title: 2019 IPFS Roadmap
 author: Molly Mackinlay
 ---
 
-In Q4 2018, we undertook a new planning process for the IPFS project to more clearly define our [vision](https://github.com/ipfs/roadmap#ipfs-mission-statement), [goals](https://github.com/ipfs/roadmap#2019-goal-expanded), and plans for the year. Our motivation was to improve coordination between our expanding working groups and to focus our efforts for the year on some larger-scale improvements to the IPFS network around scalability, performance, and usability to unlock the next tiers of adoption and usage. 😇
+In Q4 2018, we undertook a new planning process for the IPFS project to more clearly define our [vision](https://github.com/ipfs/roadmap#ipfs-mission-statement), [goals](https://github.com/ipfs/roadmap#2019-goal-expanded), and [roadmap](https://github.com/ipfs/roadmap#2019-epics) for the year. Our motivation was to improve coordination between our expanding working groups and to focus our efforts for the year on some larger-scale improvements to the IPFS network around scalability, performance, and usability to unlock the next tiers of adoption and usage. 😇
 
 To ground our thinking about the next year, we first had to zoom out to the core mission of the IPFS project in the long-term. We take on many efforts and support many groups in our open source community, but it is all driven by the aim to make the internet more accessible, empowering, and useful for many years to come. With much wordsmithing, we condensed this into our first (written) [mission statement](https://github.com/ipfs/roadmap#ipfs-mission-statement)! 👏
 
@@ -26,6 +26,8 @@ Identifying our [top priority for the year](https://github.com/ipfs/roadmap#2019
 ![IPFS 2019 Epics](img/2019-epics.png)
 
 When taking on Package Managers as a top use case and priority, we realized there was still much we didn’t know about the needs and requirements to support this community - so learning more was our first step. We spun up a new [Package Managers Working Group](https://github.com/ipfs/package-managers) in early Q1, which has been focused on research, knowledge-sharing, and stress-testing the protocol with demos and experiments to target our efforts for the rest of the year. The team has already identified a bunch of low hanging fruit around usability and performance. Want to get involved? [Check out this list of known issues and feature requests!](https://github.com/ipfs/package-managers/blob/master/blockers.md) _(We'd also love to hear about your ideas, experiments, and pain points - add them here!)_ 💪
+
+Another part of those 2019 epics is [IPFS Camp](https://camp.ipfs.io/), the first public conference we're hosting to bring together the builders of the distributed web/tooling. Join us in Barcelona June 27-30 for an action packed weekend of hacking, activities, workshops, and more. Tickets are all inclusive (food, activities, accommodation, etc) - and going fast! [**Register today!**](https://camp.ipfs.io/register) 🏕
 
 When we started out with 2019 planning, we actually took on **THREE** top-level priorities instead of one - so you may notice that [working group roadmaps](https://github.com/ipfs/roadmap#2019-working-groups-roadmaps) are a little out of date. It became clear shortly into Q1 that _three_ goals were far too many to focus on. There was lots of overlap between the needs of package managers and large files, but where the goals didn’t overlap it was splitting our focus and resources. Our “decentralized web” goal was also a year (or more) of work in itself - and largely dependent on all the underlying work we were doing to support package managers. Our initial roadmap was too optimistic to achieve in a single year! 🧐
 
