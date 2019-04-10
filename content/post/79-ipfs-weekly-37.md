@@ -222,17 +222,17 @@ IPFS wouldn’t be the same without your help! We’re so grateful to have you o
 ### Contributors by the numbers
 
 Here are the 10 contributors who touched the most repos in the project so far:
-
-1) @Kubuxu ...63
-2) @Stebalien ...50
-3) @hsanjuan ...23
-4) @alanshaw ...15
-5) @magik6k ...13
-6) @daviddias ...12
-7) @hugomrdias ...10
-8) @lidel  ...9
-9) @jacobheun/ @olizilla/ @achingbrain/ @whyrusleeping  ...8
-10) @andrew/ @schomatis ...7
+  
+1) @Kubuxu ...63  
+2) @Stebalien ...50  
+3) @hsanjuan ...23  
+4) @alanshaw ...15  
+5) @magik6k ...13  
+6) @daviddias ...12  
+7) @hugomrdias ...10  
+8) @lidel  ...9  
+9) @jacobheun/ @olizilla/ @achingbrain/ @whyrusleeping  ...8  
+10) @andrew/ @schomatis ...7  
 
 Once again, thanks for all of your hard work and contributions in Q1. Keep up the great job!
 
