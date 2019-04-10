@@ -23,7 +23,7 @@ In January, we announced [the ProtoSchool project](https://blog.ipfs.io/63-ipfs-
 [This release of the JavaScript implementation of IPFS](https://blog.ipfs.io/64-js-ipfs-0-34/) has it all: reading Protobuf DAG nodes became super fast, adding content became “blazingly” fast, HAMT support was added to MFS, added IPNS over pubsub and DHT, plus dep upgrades, API changes and more!
 
 ### ipfs.io has implementations *and* integrations now
-Speaking of *implementations* [the offical IPFS website](https://ipfs.io/#implementations) received a whole section devoted to both the current implementations (JavaScript and Go), plus some cool integrations, like our browser companion.
+Speaking of *implementations* [the official IPFS website](https://ipfs.io/#implementations) received a whole section devoted to both the current implementations (JavaScript and Go), plus some cool integrations, like our browser companion.
 
 ### Announcing the 1st ever 🌌 IPFS Camp
 
@@ -31,14 +31,14 @@ We hope you join us for [a three day hacker retreat for the builders of the Dist
 
 ### 🎉go-ipfs 0.4.19 arrived🎉
 
-The Go implemntation of IPFS also got some love this quarter, with a new release in March. [Version 0.4.19](https://github.com/ipfs/go-ipfs/releases/tag/v0.4.19) includes NEW features like file listing and initializing with random ports, reliablility and perf improvements, plus a pretty significant refactor of CoreAPI. 
+The Go implementation of IPFS also got some love this quarter, with a new release in March. [Version 0.4.19](https://github.com/ipfs/go-ipfs/releases/tag/v0.4.19) includes NEW features like file listing and initializing with random ports, reliabilility and perf improvements, plus a pretty significant refactor of CoreAPI. 
 
 ### The ✨new✨ IPFS Desktop
 
 Springtime also saw [a new release of the IPFS Desktop](https://github.com/ipfs-shipyard/ipfs-desktop/releases/tag/v0.7.1), which, in case you missed it, is the [menubar app](https://github.com/ipfs-shipyard/ipfs-desktop) that allows you to access IPFS straight from the desktop instead of having to deal with that command line business. Check it out! 
 
 
-## Video recaps
+## Remember these IPFS videos?
 
 *What better way to catch up on Q1 than by the videos that have helped the community learn more about IPFS? Here’s what was shared so far:*
 
