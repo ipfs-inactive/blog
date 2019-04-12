@@ -18,13 +18,13 @@ Libp2p will now auto dial to discovered peers by default. This can be disabled i
 The Libp2p Switch was doing a bad job of letting the Connection Manager know just how many connections there were. This resulted in the Connection Manager thinking there were far fewer connections than there actually were. This has been fixed, and now the Connection Manager is back to keeping your router safe from the connection plague.
 
 ## 📔 Blacklisting Undialable Nodes
-Libp2p will now blacklist nodes that aren't dialable. The blacklisting includes an exponential backoff with a random jitter. This along with auto dial, help to ensure libp2p is spending its connection resources wisely. You can see the configuration options in the [libp2p-switch readme](https://github.com/libp2p/js-libp2p-switch/tree/v0.42.9#create-a-libp2p-switch). 
+Libp2p will now blacklist nodes that aren't dialable. The blacklisting includes an exponential backoff with a random jitter. This along with auto dial, helps to ensure libp2p is spending its connection resources wisely. You can read more about the configuration options in the [libp2p-switch readme](https://github.com/libp2p/js-libp2p-switch/tree/v0.42.9#create-a-libp2p-switch). 
 
 ## 🔢 Dial Queues
-Libp2p Switch now has better queuing for dials! Previously, the only limiting of dials were done per peer. Now, all dials will enter a global queue so that we can better manage connection attempts. The current default limit is 100 parallel dials, but you can configure this to your needs. If a peer is already connected, any calls to `.dial()` or `.dialProtocol()` skip the line and will be executed immediately. Any dials done as a result of Auto Dial will take a back seat.
+Libp2p Switch now has better queuing for dials! Previously, the only limiting of dials was done per peer. Now, all dials will enter a global queue so that we can better manage connection attempts. The current default limit is 100 parallel dials, but you can configure this to your needs. If a peer is already connected, any calls to `.dial()` or `.dialProtocol()` skip the line and will be executed immediately. Any dials done as a result of Auto Dial will take a back seat.
 
 ## ⚖️ Smaller than ever
-Since the 0.24 release, libp2p has dropped some weight. The bundle size is now ~42% smaller!
+Since the 0.24 release, libp2p has dropped some weight. The bundle size is now **~42%** smaller!
 
 # 🏗 API Changes
 
