@@ -13,7 +13,7 @@ author: Alan Shaw
 
 One of the biggest goals for JS IPFS is to enable the distributed web in the browser. Part of that is being a good web citizen and minimising the amount of code we ship, to ensure IPFS downloads quicker, `npm install`'s quicker, loads quicker and utilizes fewer resources. It's especially important on resource constrained mobiles and IoT devices.
 
-The good news you want to hear is that we've now chopped around **26%** off the bundle size of JS IPFS since 0.33, that's a reduction of _over_ a quarter of the code we were previously shipping! This is an amazing improvement and a great reason to upgrade.
+The good news you want to hear is that we've now chopped around **50%** off the bundle size of JS IPFS since 0.33, that's a reduction of nearly _half_ of the code we were previously shipping! This is an amazing improvement and a great reason to upgrade.
 
 ## 🌳 DAG HTTP API
 
