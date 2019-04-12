@@ -15,7 +15,7 @@ Libp2p 0.25 is already in the new [js-ipfs 0.35 release](https://github.com/ipfs
 Libp2p will now auto dial to discovered peers by default. This can be disabled in configuration if you need to do any specialized dialing. Discovered peers will only be dialed if we are under our min peers threshold, which is configured for the Connection Manager. You can read more about [Peer Discovery and Auto Dial here](https://github.com/libp2p/js-libp2p/blob/v0.25.0/PEER_DISCOVERY.md).
 
 ## ✂️ Better Connection Management
-The Libp2p Switch was doing a bad job of letting the Connection Manager know just how many connections there were. This resulted in the Connection Manager thinking there were far fewer connections than there actually were. This has been fixed, and now the Connection Manager is back to keeping your router safe from the connection plague.
+We fixed an issue with Libp2p Switch that resulted in the Connection Manager thinking there were far fewer connections than there actually were. The Connection Manager is back to keeping your router safe and your connection count within its [configured range](https://github.com/libp2p/js-libp2p-connection-manager/tree/v0.1.0#create-a-connectionmanager).
 
 ## 📔 Blacklisting Undialable Nodes
 Libp2p will now blacklist nodes that aren't dialable. The blacklisting includes an exponential backoff with a random jitter. This along with auto dial, helps to ensure libp2p is spending its connection resources wisely. You can read more about the configuration options in the [libp2p-switch readme](https://github.com/libp2p/js-libp2p-switch/tree/v0.42.9#create-a-libp2p-switch). 
