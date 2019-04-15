@@ -51,10 +51,12 @@ The HTTP API and the HTTP Gateway started by your IPFS node can now listen on mu
     * Added flag `--enable-preload` to `jsipfs daemon` command to allow users to enable or disable content preloading
 * Core
     * `ipfs.util.isIPFS` and `ipfs.util.crypto` have moved to static exports and should now be accessed like:
+
         ```js
         const { isIPFS, crypto } = require('ipfs')
         ```
     * `ipfs.types.*` have moved to static exports and should now be accessed like:
+
         ```js
         const { Buffer, CID, multiaddr, multibase, multihash, PeerId, PeerInfo } = require('ipfs')
         ```
