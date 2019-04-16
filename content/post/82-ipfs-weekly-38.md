@@ -59,7 +59,7 @@ Next Monday, [Bogdan Habić](https://twitter.com/bogdanhabic) will be joining [t
 ## Updates and new releases
 *See the latest releases of IPFS tools and projects across the ecosystem.*
 
-+ [js-libp2p 0.25 is out now!](https://github.com/libp2p/js-libp2p/issues/342) They’ve added auto dialing to discovered peers and have made a ton of improvements to connection management. 
++ [js-libp2p 0.25 is out now!](https://blog.ipfs.io/81-js-libp2p-0-25/) They’ve added auto dialing to discovered peers and have made a ton of improvements to connection management. 
 + The Graph’s [March Development Update](https://medium.com/graphprotocol/march-development-update-c6342fd7168e) was recently released, including info on the addition of IPFS stream processing. 🙌
 
 
