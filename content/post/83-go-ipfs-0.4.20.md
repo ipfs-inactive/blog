@@ -5,19 +5,19 @@ title: go-ipfs 0.4.20 released
 author: Steven Allen
 ---
 
-We're happy to release go-ipfs 0.4.20. This release includes some critical
-performance and stability fixes so all users should upgrade ASAP.
+We're excited to release go-ipfs 0.4.20, trail-blazing the way to the distributed web. This release includes some critical
+performance and stability fixes so all users should upgrade ASAP! As of release four-twenty, the CLI should be more usable due to improved commands, Bitswap should be more reliable, and the relays should be much more performant. Enjoy!
 
-This is also the first release to use go modules instead of GX. While GX has
+This is also the first release to use the budding go modules system instead of GX. While GX has
 been a great way to dogfood an IPFS-based package manager, building and
 maintaining a custom package manager is a _lot_ of work and we haven't been able
 to dedicate enough time to bring the user experience of gx to an acceptable
 level. You can read [#5850](https://github.com/ipfs/go-ipfs/issues/5850) for
 some discussion on this matter.
 
-# Highlights
+# 🔦 Highlights
 
-## Docker
+## ⛴ Docker
 
 As of this release, it's now much easier to run arbitrary IPFS commands within
 the docker container:
@@ -31,14 +31,14 @@ This release also [reverts](https://github.com/ipfs/go-ipfs/pull/6040) a change 
 caused some significant trouble in 0.4.19. If you've been running into Docker
 permission errors in 0.4.19, please upgrade.
 
-## WebUI
+## 🕸 WebUI
 
 This release contains a major
 [WebUI](https://github.com/ipfs-shipyard/ipfs-webui) release with some
 significant improvements to the file browser and new opt-in, privately hosted,
 anonymous usage analytics.
 
-## Commands
+## 🕹 Commands
 
 As usual, we've made several changes and improvements to our commands. The most
 notable changes are listed in this section.
@@ -150,20 +150,20 @@ The `ipfs files flush` command now returns the CID of the flushed file.
 This release has the usual collection of performance and reliability
 improvements.
 
-### Badger Memory Usage
+### 🐺 Badger Memory Usage
 
 Those of you using the badger datastore should notice reduced memory usage in
 this release due to some upstream changes. Badger still uses significantly more
 memory than the default datastore configuration but this will hopefully continue
 to improve.
 
-### Bitswap
+### 🔁 Bitswap
 
 We fixed some critical CPU utilization regressions in bitswap for this release.
 If you've been noticing CPU _regressions_ in go-ipfs 0.4.19, especially when
 running a public gateway, upgrading to 0.4.20 will likely fix them.
 
-### Relays
+### 🏃‍ Relays
 
 After AutoRelay was introduced in go-ipfs 0.4.19, the number of peers connecting
 through relays skyrocketed to over 120K concurrent peers. This highlighted some
@@ -185,14 +185,14 @@ relay will continue to be resource intensive.
 We're continuing to investigate this issue and have a few more patches on the
 way that, unfortunately, won't make it into this release.
 
-### Panics
+### 😱 Panics
 
 We've fixed two notable panics in this release:
 
 * We've fixed a frequent panic in the DHT.
 * We've fixed an occasional panic in the experimental QUIC transport.
 
-## Content Routing
+## 📖 Content Routing
 
 IPFS announces and finds content by sending and retrieving content routing
 ("provider") records to and from the DHT. Unfortunately, sending out these
@@ -263,7 +263,7 @@ initially added. NOTE: go-ipfs _does_ continuously _re_-send provider records in
 the background twice a day, it just might be a while before it gets around to
 sending out any specific one.
 
-## Bitswap
+## 🔂 Bitswap Reliability
 
 Bitswap now periodically re-sends its wantlist to connected peers. This should
 help work around some race conditions we've seen in bitswap where one node wants
@@ -271,7 +271,7 @@ a block but the other doesn't know for some reason.
 
 You can track this issue here: https://github.com/ipfs/go-ipfs/issues/5183.
 
-## Improved NAT Traversal
+## 🤠 Improved NAT Traversal
 
 While NATs are still p2p enemy #1, this release includes slightly improved
 support for traversing them.
@@ -283,14 +283,14 @@ Specifically, this release now:
 2. Better guesses the external IP address when port mapping, even when the
    gateway lies.
 
-## Reduced AutoRelay Boot Time
+## 📡 Reduced AutoRelay Boot Time
 
 The experimental AutoRelay feature can now detect NATs _much_ faster as we've
 reduced initial NAT detection delay to 15 seconds. There's still room for
 improvement but this should make nodes that have enabled this feature dialable
 earlier on start.
 
-# Changelog
+# 📜 Changelog
 
 For those of you who like to look through the PRs that went into this release,
 here is the complete changelog.
