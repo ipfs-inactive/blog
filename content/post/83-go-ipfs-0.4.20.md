@@ -290,6 +290,47 @@ reduced initial NAT detection delay to 15 seconds. There's still room for
 improvement, but this should make nodes that have enabled this feature dialable
 earlier on start.
 
+# ❤️ Contributors
+
+We'd like to thank all the users who contributed to this release including
+contributors to ipfs, ipld, libp2p, and multiformats.
+
+| Contributor         | Commits | Lines ±     | Files Changed |
+|---------------------|---------|-------------|---------------|
+| Raúl Kripalani      |      60 | +5489/-1104 |           163 |
+| Jakub Sztandera     |      55 | +4891/-514  |           145 |
+| Steven Allen        |     130 | +2075/-1563 |           246 |
+| vyzo                |      63 | +474/-268   |            92 |
+| Michael Avila       |      13 | +458/-74    |            22 |
+| Matt Joiner         |      14 | +323/-172   |            32 |
+| hannahhoward        |       5 | +158/-130   |             6 |
+| Łukasz Magiera      |      10 | +120/-167   |            19 |
+| Anton Petrov        |       4 | +135/-4     |             8 |
+| Andrew Nesbitt      |       3 | +57/-64     |             4 |
+| Yusef Napora        |      14 | +63/-49     |            14 |
+| Marten Seemann      |       3 | +24/-78     |            11 |
+| tg                  |       1 | +82/-15     |             5 |
+| jmank88             |       4 | +88/-4      |             6 |
+| Richard Littauer    |       3 | +64/-1      |             3 |
+| whyrusleeping       |       2 | +55/-9      |             3 |
+| Kevin Atkinson      |       3 | +34/-1      |             5 |
+| aschmahmann         |       1 | +33/-0      |             1 |
+| Evgeniy Kulikov     |       2 | +7/-17      |             3 |
+| Anatoliy Basov      |       1 | +11/-6      |             1 |
+| Bob Potter          |       1 | +3/-10      |             1 |
+| Lars Gierth         |       1 | +1/-9       |             1 |
+| Dominic Della Valle |       1 | +5/-2       |             1 |
+| Leonhard Markert    |       1 | +2/-2       |             1 |
+| gukq                |       2 | +2/-2       |             2 |
+| Alex Browne         |       1 | +1/-1       |             1 |
+| Hector Sanjuan      |       1 | +1/-1       |             1 |
+| Tomas Virgl         |       1 | +1/-1       |             1 |
+| lnykww              |       1 | +1/-1       |             1 |
+| monotone            |       1 | +1/-1       |             1 |
+
+We'd also like to thank users who've reported and helped diagnose bugs and all
+those community members who've helped out on the forums and IRC.
+
 # 📜 Changelog
 
 For those of you who like to look through the PRs that went into this release,
