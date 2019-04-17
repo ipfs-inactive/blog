@@ -154,7 +154,7 @@ improvements.
 
 Those of you using the badger datastore should notice reduced memory usage in
 this release due to some upstream changes. Badger still uses significantly more
-memory than the default datastore configuration but this will hopefully continue
+memory than the default datastore configuration, but it is also much faster, and memory usage will hopefully continue
 to improve.
 
 ### 🔁 Bitswap
@@ -198,12 +198,12 @@ IPFS announces and finds content by sending and retrieving content routing
 ("provider") records to and from the DHT. Unfortunately, sending out these
 records can be quite resource intensive.
 
-This release has two changes to alleviate this: a reduced number of initial
-provide workers and a persistent provider queue.
+This release has two changes to alleviate this: 1. a reduced number of initial
+provide workers and 2. a persistent provider queue.
 
 We've reduced the number of parallel initial provide workers (workers that send
-out provider records when content is initially added to go-ipfs) from 512 to 6.
-Each provide request (currently, due to some issues in our DHT) tries to
+out provider records when content is initially added to go-ipfs) from 512 to 6, to avoid additional performance overhead from simultaneous provide requests.
+Currently, due to some issues in our DHT, each provide request tries to
 establish hundreds of connections, significantly impacting the performance of
 go-ipfs and [crashing some
 routers](https://github.com/ipfs/go-ipfs/issues/3320).
@@ -244,7 +244,7 @@ added QmXpXzUhcS9edmFBuVafV5wFXKjfXkCQcjAUZsTs7qFf3G foo
 ```
 
 In 0.4.19, we would have sent out provider records for files `foo/{0..1000}`
-_before_ sending out a provider record for `foo`. If you were ask a friend to
+_before_ sending out a provider record for `foo`. If you were to ask a friend to
 download /ipfs/QmUQcSjQx2bg4cSe2rUZyQi6F8QtJFJb74fWL7D784UWf9, they would
 (baring other issues) be able to find it pretty quickly as this is the first CID
 you'll have announced to the network. However, if you ask your friend to
@@ -287,7 +287,7 @@ Specifically, this release now:
 
 The experimental AutoRelay feature can now detect NATs _much_ faster as we've
 reduced initial NAT detection delay to 15 seconds. There's still room for
-improvement but this should make nodes that have enabled this feature dialable
+improvement, but this should make nodes that have enabled this feature dialable
 earlier on start.
 
 # 📜 Changelog
