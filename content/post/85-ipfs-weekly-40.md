@@ -39,7 +39,7 @@ Here are some of the highlights since the last IPFS Weekly.
 *[Awesome IPFS](https://awesome.ipfs.io/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs).* 
 
 + [Open-Registry](https://open-registry.dev/), a JavaScript Package Registry funded, developed and maintained by the community, for the community.
-+ [Matters.news](https://matters.news/faq) is news publishing site hosted on IPFS with approximately 10K+ active users!
++ [Matters.news](https://matters.news/faq) is a news publishing site hosted on IPFS with approximately 10K+ active users!
 + [galacteek](https://github.com/eversum/galacteek) is an experimental multi-platform Qt5-based browser/toolbox for the IPFS peer-to-peer network.
 
 ![](https://ipfs.io/ipfs/Qmd11gtyigpCjo4MfzXuj9MKuMF3Dj1EZEvbNRZeQE1jd4)
