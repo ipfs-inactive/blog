@@ -50,7 +50,7 @@ I’m most looking forward to meeting the team behind IPFS, and mind sharing wit
 + [Filling in the GraphQL pipeline: Ready-to-use code generation](https://www.onegraph.com/blog/2019/05/03_Filling_in_the_GraphQL_Pipeline_Ready_to_use_code_generation.html), OneGraph, 3 May 2019
 + [Notes on OrbitDB and Textile](https://medium.com/open-work-labs/notes-on-orbitdb-and-textile-55f07db7fb03), Open Work Labs, 2 May 2019
 + [Understanding distributed storage systems on blockchain](https://yourstory.com/2019/04/distributed-data-storage-systems-blockchain), Prashant Shah, 1 May 2019
-+ [There's an ongoing discussion about IPFS-based npm dependencies over on pacote](https://github.com/zkat/pacote/pull/173), 30 Apr 2019
++ [There’s an ongoing discussion about IPFS-based npm dependencies over on pacote](https://github.com/zkat/pacote/pull/173), 30 Apr 2019
 + [Local-first software, You own your data, in spite of the cloud](https://www.inkandswitch.com/local-first.html), Ink & Switch, April 2019
 
 
