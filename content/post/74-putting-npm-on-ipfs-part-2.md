@@ -84,7 +84,7 @@ It also dials the ipfs-npm-registry-mirror directly to improve the speed of cont
 So many things!
 
 * We'd love (love!) to get IPFS into npm and Yarn as a first-class transport option
-* Once the DHT is enabled in js-ipfs v0.35.0 we'll not need to contact the npm mirror so a point of failure will be removed and startup will be faster
+* Once the DHT is enabled in js-ipfs v0.36.0 we'll not need to contact the npm mirror, so a point of failure will be removed and startup will be faster
 * How about a service you can run on on your local network to further speed up package resolution with no need to get onto the Internet?
 
-Publishing? Identity? The posibilities are endless - if you'd like to help out please visit [ipfs-shipyard/npm-on-ipfs](https://github.com/ipfs-shipyard/npm-on-ipfs).
+Publishing? Identity? The posibilities are endless - if you'd like to help out please visit [ipfs-shipyard/npm-on-ipfs](https://github.com/ipfs-shipyard/npm-on-ipfs), or check out the [📦 IPFS Package Managers Special Interest Group](https://github.com/ipfs/package-managers) for other research, demos, and experiments.
