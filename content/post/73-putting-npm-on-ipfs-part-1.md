@@ -8,7 +8,7 @@ author: Alex Potsides
 
 Today npm is incredibly fast and reliable thanks to the hard work put in by the NPM, Inc team, however we couldn't stop ourselves from wondering; what if we put the registry on the distributed web and took it to a whole new level?
 
-Having dependencies on the distributed web makes development more resillient as there will be multiple nodes available to supply tarballs and some may even be on your local network which lowers bandwidth costs, is faster and can work without an internet connection.
+Having dependencies on the distributed web makes development more resillient as there will be multiple nodes available to supply tarballs and some may even be on your local network which lowers bandwidth costs, is faster and can work without an internet connection. These benefits are still a work-in-progress, but with further iteration there's great potential to evolve this cool experiment into a more production-ready demo.
 
 We're going to look at how we put npm onto IPFS in two parts - this is part one, all about the registry, including design goals, implementation details and infrasructure concerns.  It will be followed by part two which describes a next-generation client you can use to install dependencies from the distributed web.
 
@@ -43,7 +43,7 @@ Everything is also served over https unlike some very old npm modules which are 
 
 ## 👷‍♀️ How we built it
 
-A group of [ipfs-npm-registry-mirror](https://github.com/ipfs-shipyard/ipfs-npm-registry-mirror) nodes are running, they contain a [js-IPFS](https://github.com/ipfs/js-ipfs) instance used to share and resolve modules and are connected to the wider IPFS network.  They also have a small http server used to respond to requests for module metadata and tarballs from the from the npm cli.  These all sit behind an http load balancer to distribute traffic to the mirrors.
+A group of [ipfs-npm-registry-mirror](https://github.com/ipfs-shipyard/ipfs-npm-registry-mirror) nodes are running, they contain a [js-ipfs](https://github.com/ipfs/js-ipfs) instance used to share and resolve modules and are connected to the wider IPFS network.  They also have a small http server used to respond to requests for module metadata and tarballs from the from the npm cli.  These all sit behind an http load balancer to distribute traffic to the mirrors.
 
 ![Network topology](/73-putting-npm-on-ipfs-part-1/network-topology.png)
 
@@ -57,14 +57,14 @@ If you'd like to leverage S3 for your IPFS node, check out the example of how to
 
 ### 📝 Module metadata
 
-Each module has a set of metadata that describes the versions that are available, along with the tarballs that make up the release.  It is a JSON document that we store in the [MFS](https://docs.ipfs.io/guides/concepts/mfs/) under the directory `/npm-registry`, so, for example for the module [`ipfs`](https://www.npmjs.com/package/ipfs):
+Each module has a set of metadata that describes the versions that are available, along with the tarballs that make up the release. It is a JSON document that we store in the [MFS](https://docs.ipfs.io/guides/concepts/mfs/) under the directory `/npm-registry`, so the module [`ipfs`](https://www.npmjs.com/package/ipfs), for example, would look like:
 
 ```console
 $ jsipfs files read /npm-registry/ipfs
 {"_id":"ipfs","_rev":"122-28686ac76345db3f398b88ae73346a15","name":"ipfs","description":"JavaScript implementation of the IPFS specification","di...
 ```
 
-The metadata for a [module on registry.js.ipfs.io](https://registry.js.ipfs.io/ipfs) is identical to that [on the public registry](https://registry.npmjs.org/ipfs), the difference is that we store CIDs and the original download location:
+The metadata for a [module on registry.js.ipfs.io](https://registry.js.ipfs.io/ipfs) is almost identical to that [on the public registry](https://registry.npmjs.org/ipfs), the only difference is that we store CIDs and the original download location:
 
 ```javascript
 {
