@@ -57,7 +57,7 @@ I think for me, IPFS Camp is just going to be a great opportunity to get some di
 
 
 ## IPFS in the wild
-*Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.io/categories/articles/).* 
+*Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.io/articles/).*
 
 + [We Made A Dashboard for IPFS Clusters and Now We Want You to Check it Out](https://hackernoon.com/we-made-a-dashboard-for-ipfs-clusters-and-now-we-want-you-to-check-it-out-a87234629908), Hackernoon, 14 May 2019
 + [XR Web: A Decentralized Protocol for Spatial XR apps](https://medium.com/@melodygrey/xr-web-a-decentralized-protocol-for-spatial-xr-apps-d1538bfd80a7), Melody Grey, 14 May 2019
