@@ -22,9 +22,9 @@ Here are some of the highlights since the last IPFS Weekly.
 Catch up on the latest IPFS Working Group goals and ships for Q2 in [this playlist of working group videos](https://www.youtube.com/playlist?list=PLuhRWgmPaHtRUYCD_RyUw2ldU4lyoSXR1) now!
 
 ### Introducing IPFS Office Hours for Contributors
-Are you keen to contribute to IPFS but don't know where to start? Come and ask at [Contributor Office Hours](https://github.com/ipfs/community/issues/412) starting the hour before the IPFS Weekly Calls on Mondays. Join us ☺️
+Are you keen to contribute to IPFS but don’t know where to start? Come and ask at [Contributor Office Hours](https://github.com/ipfs/community/issues/412) starting the hour before the IPFS Weekly Calls on Mondays. Join us ☺️
 
-### Initial Implementation Of GraphSync Wire Protocol is here
+### Initial Implementation of GraphSync Wire Protocol is here
 Pretty self explanatory but the [Initial Implementation of the GraphSync Wire Protocol in Go](https://github.com/ipfs/go-graphsync) has arrived. Check it out!
 
 ## Meet the Community: Textile.io developer Carson Farmer
