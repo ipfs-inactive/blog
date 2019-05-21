@@ -61,6 +61,10 @@ The IPFS HTTP gateway that JS IPFS exposes when run as a daemon in Node.js has b
 
 PR: https://github.com/ipfs/js-ipfs/pull/1989
 
+## 🔏 Pubsub message signing
+
+Messages sent over Pubsub will now be automatically signed by the initial publisher, and included as a signature property on each Pubsub message. IPFS and Libp2p will be verifying the signatures of Pubsub messages by default in future releases, which will enable us to verify the authenticity of all messages sent over the network before they are processed. Verification is not yet required by default, but it will be in future releases, and all unsigned messages will not be processed or forwarded.
+
 # 🏗 API Changes
 
 1. **BREAKING**: The default string encoding for version 1 CIDs has changed to `base32`
