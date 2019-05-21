@@ -69,6 +69,7 @@ PR: https://github.com/ipfs/js-ipfs/pull/1989
         * `data` => `Data`
         * `links` => `Links`
         * `size` => `size` (Note: no change)
+    * Additionally, the `Links` property of a `DAGNode` now returns plain JS objects with `Hash`, `Name` and `Tsize` properties, **NOT** `DAGLink` instances
     * `DAGLink` properties have been renamed as follows:
         * `cid` => `Hash`
         * `name` => `Name`
