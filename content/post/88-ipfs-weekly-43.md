@@ -78,12 +78,12 @@ Science Fair. I absolutely _love_ mad science and experimenting.
 
 
 ## IPFS in the wild
-*Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.io/categories/articles/).* 
+*Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.io/articles/).* 
 
 + [Starlog: Aiming for the Stars](https://blog.florence.chat/starlog-aiming-for-the-stars-f4d1775f8528), 21 May 2019
 + [How to Start Contributing to Textile Photos](https://medium.com/textileio/how-to-start-contributing-to-textile-photos-b626c3f63493), Textile, 20 May 2019
 + [An Inter-Plantary Journey with LineageOS](https://discuss.ipfs.io/t/an-inter-plantary-journey-with-lineageos/5442), 19 May 2019
-+ [VIDEO: IPFS Tutorial - Upload Files With IPFS & JavaScript](https://www.youtube.com/watch?v=I0UolzV3ico&feature=share), CodingSrc, 17 May 2019
++ VIDEO: [IPFS Tutorial - Upload Files With IPFS & JavaScript](https://www.youtube.com/watch?v=I0UolzV3ico&feature=share), CodingSrc, 17 May 2019
 + [OrbitDB: Serverless, Distributed, Peer-to-Peer Database](https://kauri.io/article/6ae5ffa612044a09be856ff390ce6990), Kauri, 16 May 2019
 + [Introducing a Tour of Textile](https://medium.com/textileio/introducing-a-tour-of-textile-92f02969a4d8), The fastest way to build your next decentralized app using IPFS, Textile, 15 May 2019
 + [Microsoft wants to protect your identity with Bitcoin](https://www.wired.com/story/microsoft-wants-protect-identity-bitcoin/), Wired, 14 May 2019
