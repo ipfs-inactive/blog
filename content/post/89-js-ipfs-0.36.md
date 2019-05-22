@@ -1,11 +1,14 @@
 ---
-date: 2019-05-21
-url: 88-js-ipfs-0-36
+date: 2019-05-22
+url: 89-js-ipfs-0-36
 title: js-ipfs 0.36.0 released
 author: Alan Shaw
 ---
 
 > URL safe CIDs, refs commands, DOM File support and more!
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">A wild and excitable JS <a href="https://twitter.com/hashtag/IPFS?src=hash&amp;ref_src=twsrc%5Etfw">#IPFS</a> 0.36 just darted across the street and into the npm module store 🏇💨. It&#39;s got 🧬 Base32 encoded v1 CIDs, 👉 refs and refs local commands, 🗄 support for adding DOM File objects and loads more! <a href="https://t.co/zIFEfQX325">https://t.co/zIFEfQX325</a></p>&mdash; Alan Shaw (@_alanshaw) <a href="https://twitter.com/_alanshaw/status/1131145571408986112?ref_src=twsrc%5Etfw">May 22, 2019</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 # 🔦 Highlights
 
