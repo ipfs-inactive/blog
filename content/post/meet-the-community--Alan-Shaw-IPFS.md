@@ -69,4 +69,4 @@ Science Fair. I absolutely _love_ mad science and experimenting.
 
 --------
 
-Thank you for answering our questions, Edgar, looking forward to meet you at [IPFS Camp](https://camp.ipfs.io)
+Thank you for answering our questions, Alan, looking forward to meet you at [IPFS Camp](https://camp.ipfs.io)
