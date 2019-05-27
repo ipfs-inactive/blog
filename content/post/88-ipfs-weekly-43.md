@@ -18,7 +18,7 @@ Here are some of the highlights since the last IPFS Weekly.
 
 ## Meet the Community: Alan Shaw, Core Developer of the IPFS Protocol @ IPFS / Protocol Labs
 
-This week for [`Meet the Community`, we had Alan Shaw, a Core Developer of the IPFS Protocol @ IPFS / Protocol Labs](INSERT URL)
+This week for [`Meet the Community`, we had Alan Shaw, a Core Developer of the IPFS Protocol @ IPFS / Protocol Labs](https://blog.ipfs.io/meet-the-community-alan-shaw)
 
 ## IPFS in the wild
 *Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.io/articles/).*
