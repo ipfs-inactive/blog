@@ -18,7 +18,7 @@ Here are some of the highlights since the last IPFS Weekly.
 
 ## Meet the Community: Edgar Lee @ Software Developer at Netflix
 
-This week for [`Meet the Community`, we had Edgar Lee, a Software Developer at Netflix](INSERT URL)
+This week for [`Meet the Community`, we had Edgar Lee, a Software Developer at Netflix](https://blog.ipfs.io/meet-the-community-edgar-lee)
 
 ## IPFS in the wild
 *Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.io/categories/articles/).*
