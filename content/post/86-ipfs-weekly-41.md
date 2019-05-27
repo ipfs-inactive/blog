@@ -16,35 +16,12 @@ Want this update in your inbox? [Subscribe to our weekly newsletter!](https://ti
 
 Here are some of the highlights since the last IPFS Weekly.
 
-## Meet the Community: Netflix Developer Edgar Lee
+## Meet the Community: Edgar Lee @ Software Developer at Netflix
 
-With the first-ever IPFS Camp right around the corner, we’re interviewing some of the community members who are making this highly anticipated event a reality.
-
-Haven’t applied yet? Don’t worry! Registration for the 3-day hacker retreat designed for the builders of the Distributed Web is still open! Visit [camp.ipfs.io](https://camp.ipfs.io/) to learn more about IPFS Camp, scholarships, and what’s included in your conference pass. 
-
-### Tell us a bit about yourself and your background. How did you get involved with IPFS?
-
-I work on developer tooling and infrastructure at Netflix and previously worked at Docker on the registry. The Docker Registry stores images as a merkle DAG much like IPFS, but was only granular at the layer level as opposed to file chunks. When I came across Akihiro Suda’s Filegrain proposal to use IPFS as a storage mechanism for container images, I discovered its ecosystem and started experimenting with the technology.
-
-### Why should people be excited about IPFS?
-
-IPFS is exciting because it builds an ecosystem of tools over the concept of content addressable storage. By decoupling what the name of some content represents, and how to get said content, we get powerful properties typically desired in distributed systems.
-
-### What projects are really exciting you in the IPFS Ecosystem at the moment and why?
-
-System package managers, library dependency management, container image registries all have similar requirements. Over time, some of them have individually reinvented content addressable storage and structured their data as a merkle DAG. IPFS’s 2019 roadmap to address package management is the most exciting to me right now, as it presents an opportunity to greatly improve the software landscape for both the decentralization movement, as well as private infrastructure.
-
-### Open Source communities are full of unsung heroes. Is there someone in IPFS community who you admire for their work?
-
-Recently, magik6k and others worked hard on refactoring the IPFS Core API and created a clean HTTP client for IPFS. I use the results of this work extensively for the experiments I’m running so I’m grateful for their work. There’s also a lot of other exciting work like hsanjuan’s IPFS driver for Docker Registry, Stebalien’s work on IPFS itself, among many others.
-
-### What are you most looking forward to at IPFS Camp?
-
-I’m most looking forward to meeting the team behind IPFS, and mind sharing with the community. It’ll also be my first time in Barcelona, so I’m excited to visit the beautiful city.
-
+This week for [`Meet the Community`, we had Edgar Lee, a Software Developer at Netflix](INSERT URL)
 
 ## IPFS in the wild
-*Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.io/categories/articles/).* 
+*Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.io/categories/articles/).*
 
 + [Building the Firebase for CRDTs](https://medium.com/textileio/building-the-firebase-for-crdts-7dd8dea8953a), Textile, 3 May 2019
 + [Filling in the GraphQL pipeline: Ready-to-use code generation](https://www.onegraph.com/blog/2019/05/03_Filling_in_the_GraphQL_Pipeline_Ready_to_use_code_generation.html), OneGraph, 3 May 2019
@@ -63,12 +40,12 @@ I’m most looking forward to meeting the team behind IPFS, and mind sharing wit
 
 
 ## Tools and projects we <3
-*[Awesome IPFS](https://awesome.ipfs.io/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs).* 
+*[Awesome IPFS](https://awesome.ipfs.io/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs).*
 
 + [Stars Network](https://github.com/PACTCare/Stars-Network), a first draft of research on how to deal with metadata on the web3/dweb on GitHub.
 + [ipfs-deploy npm package](https://discuss.ipfs.io/t/ann-ipfs-deploy-npm-package-helps-deploy-static-websites-to-free-ipfs-pinning-services/5318) helps deploy static websites to free IPFS pinning services.
 
- 
+
 ## Coming up in the Community
 *Did you know IPFS has a community forum at [discuss.ipfs.io](https://discuss.ipfs.io/)? Sign up to participate in discussions about coding, tutorials, see announcements and learn about upcoming community events.*
 
@@ -84,4 +61,4 @@ I’m most looking forward to meeting the team behind IPFS, and mind sharing wit
 
 ## Thanks for reading ☺️
 
-That’s it for this week’s news on all things IPFS. If we missed something, [reply to this email](mailto:newsletter@ipfs.io) and let us know! That way we can feature you in next week’s edition. 
+That’s it for this week’s news on all things IPFS. If we missed something, [reply to this email](mailto:newsletter@ipfs.io) and let us know! That way we can feature you in next week’s edition.
