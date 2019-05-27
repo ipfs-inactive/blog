@@ -11,7 +11,7 @@ author: IPFS Events Team
 
 # Meet the Community: Edgar Lee, Software Developer @ Netflix
 
-![](img/meet-the-community/edgar-lee.jpg)
+<img src="/img/meet-the-community/edgar-lee.jpg" width="450" />
 
 ### Tell us a bit about yourself and your background. How did you get involved with IPFS?
 

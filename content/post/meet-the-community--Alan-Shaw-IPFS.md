@@ -11,7 +11,7 @@ author: IPFS Events Team
 
 ## Meet the Community: Alan Shaw, Core Developer of the IPFS Protocol @ IPFS / Protocol Labs
 
-![](img/meet-the-community/alan-shaw.jpg)
+<img src="/img/meet-the-community/alan-shaw.jpg" width="450" />
 
 ### Tell us a bit about yourself and your background. How did you get involved with IPFS and end up joining the team at Protocol Labs?
 
