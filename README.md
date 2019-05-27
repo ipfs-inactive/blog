@@ -75,7 +75,7 @@ $ cp 66-london-hack-week-report.md 67-incredible-adventures.md
 
 Now edit the metadata at the top of the file
 
-- `date` - the "_published at_" date, shown on the [blog index page](https://blog.ipfs.io) - **required**
+- `date` - the "_published at_" date, shown on the [blog index page](https://blog.ipfs.io) please update at posting time to reflect current date - **required**
 - `author` - used to give you credit for your words - **required**
 - `title` - used as the `h1` on the post page, and the name of the post on the index page. **required**
 - `tags` - don't appear to be used right now, but set them anyone, as we'll want to add a "see more posts like this one" feature one day.
