@@ -37,4 +37,4 @@ I think for me, IPFS Camp is just going to be a great opportunity to get some di
 
 --------
 
-Thank you for answering our questions, Edgar, looking forward to meet you at [IPFS Camp](https://camp.ipfs.io)
+Thank you for answering our questions, Carson, looking forward to meet you at [IPFS Camp](https://camp.ipfs.io)
