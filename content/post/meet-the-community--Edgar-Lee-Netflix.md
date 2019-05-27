@@ -9,9 +9,9 @@ author: IPFS Events Team
 > With the first-ever IPFS Camp right around the corner, we’re interviewing some of the community members who are making this highly anticipated event a reality.
 > Haven’t applied yet? Don’t worry! Registration for the 3-day hacker retreat designed for the builders of the Distributed Web is still open! Visit [camp.ipfs.io](https://camp.ipfs.io/) to learn more about IPFS Camp, scholarships, and what’s included in your conference pass.
 
-# Meet the Community: Netflix Developer Edgar Lee
+# Meet the Community: Edgar Lee, Software Developer @ Netflix
 
-![](img/edgar-lee.jpg)
+![](img/meet-the-community/edgar-lee.jpg)
 
 ### Tell us a bit about yourself and your background. How did you get involved with IPFS?
 
