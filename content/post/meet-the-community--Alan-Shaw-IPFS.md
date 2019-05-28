@@ -9,6 +9,8 @@ author: IPFS Events Team
 > With the first-ever IPFS Camp right around the corner, we’re interviewing some of the community members who are making this highly anticipated event a reality.
 > Haven’t applied yet? Don’t worry! Registration for the 3-day hacker retreat designed for the builders of the Distributed Web is still open! Visit [camp.ipfs.io](https://camp.ipfs.io) to learn more about IPFS Camp, scholarships, and what’s included in your conference pass.
 
+> 💌 This interview first appeared in the [IPFS Events newsletter](http://eepurl.com/giMQzj), subscribe to receive exclusive content and invites to upcoming events.
+
 ## Meet the Community: Alan Shaw, Core Developer of the IPFS Protocol @ IPFS / Protocol Labs
 
 <img src="/img/meet-the-community/alan-shaw.jpg" width="450" />
@@ -67,6 +69,8 @@ I really admire the work [Irakli](https://github.com/gozala/) has been doing to 
 
 Science Fair. I absolutely _love_ mad science and experimenting.
 
---------
+---
 
 Thank you for answering our questions, Alan, looking forward to meet you at [IPFS Camp](https://camp.ipfs.io)
+
+> 💌 This interview first appeared in the [IPFS Events newsletter](http://eepurl.com/giMQzj), subscribe to receive exclusive content and invites to upcoming events.
