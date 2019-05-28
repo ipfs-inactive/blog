@@ -9,6 +9,8 @@ author: IPFS Events Team
 > With the first-ever IPFS Camp right around the corner, we’re interviewing some of the community members who are making this highly anticipated event a reality.
 > Haven’t applied yet? Don’t worry! Registration for the 3-day hacker retreat designed for the builders of the Distributed Web is still open! Visit [camp.ipfs.io](https://camp.ipfs.io) to learn more about IPFS Camp, scholarships, and what’s included in your conference pass.
 
+> 💌 This interview first appeared in the [IPFS Events newsletter](http://eepurl.com/giMQzj), subscribe to receive exclusive content and invites to upcoming events.
+
 ## Meet the Community: Carson Farmet, Core Developer @ Textile.io
 
 <img src="/img/meet-the-community/carson-farmer.jpg" width="450" />
@@ -35,6 +37,8 @@ I think the core IPFS devs, while their names do show up on PRs and Issues, dese
 
 I think for me, IPFS Camp is just going to be a great opportunity to get some direct face time with many of the folks I regularly ‘chat’ with on IRC, Slack, Discord, etc... Being part of a big open source community like IPFS means you meet great people from across the globe, but so often, you never get to meet them in person. The Camp ‘addresses’ this missing piece of distributed work. I have a feeling there is going to be an acceleration of outputs during and after the camp, and a big focus on external developer experience. So that’s something I’m excited about. I’m also really interested in chatting with folks about IPFS on mobile. I think this is somewhere the community can really stand to grow a bit as we start to look externally to new developers, users, and communities. Additionally, I think just having a solid chunk of time to focus on IPFS in the broadest sense, rather than the specific pieces that my colleagues and I regularly focus on, is going to be hugely beneficial. Seeing what’s going on broadly in the community will likely lead to so many new collaborations, some increased development synergy, and maybe some new partnerships. I think the whole thing is going to be really great for the community.
 
---------
+---
 
 Thank you for answering our questions, Carson, looking forward to meet you at [IPFS Camp](https://camp.ipfs.io)
+
+> 💌 This interview first appeared in the [IPFS Events newsletter](http://eepurl.com/giMQzj), subscribe to be notified and receive invites to upcoming events.
