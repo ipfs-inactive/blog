@@ -29,21 +29,19 @@ https://discuss.ipfs.io/t/ipfs-lite-embeddable-lightweight-ipfs-network-peer-for
 
 
 ### go-ds-crdt: A distributed key-value store implementation for IPFS
-[go-ds-crdt](https://discuss.ipfs.io/t/go-ds-crdt-a-distributed-key-value-store-implementation-for-ipfs/5239) is the new datastore backend for the IPFS Cluster shared state. go-ds-crdt provides a distributed key-value store using CRDTs and implements the Datastore interface. The idea is that any datastore can now be replaced by a replicated datastore. [Read more about go-ds-crdt](https://github.com/ipfs/go-ds-crdt). 
+[go-ds-crdt](https://discuss.ipfs.io/t/go-ds-crdt-a-distributed-key-value-store-implementation-for-ipfs/5239) is the new datastore backend for the IPFS Cluster shared state. go-ds-crdt provides a distributed key-value store using CRDTs and implements the Datastore interface. The idea is that any datastore can now be replaced by a replicated datastore. [Read more about go-ds-crdt](https://github.com/ipfs/go-ds-crdt).
 
 
-### Storage Driver: Add an IPFS driver 
+### Storage Driver: Add an IPFS driver
 Earlier this week, Docker received [a pull request](https://github.com/docker/distribution/pull/2906) to add an IPFS storage driver to the Docker registry. The pr would allow for a swarm of Docker registries to share an underlying, content-addressed storage layer out of the box. Pretty exciting stuff!
 
 
-## Meet Pedro Santos
+## Meet Pedro Santos, developer of Discussify
 
 Next week, [the IPFS Weekly call](https://github.com/ipfs/team-mgmt#-ipfs-weekly-call--formerly-known-as-ipfs-all-hands-call) welcomes [Pedro Santos](https://github.com/pedromiguelss), a front-end developer holding Advanced Studies (3rd cycle) in Informatics Engineering (having already completed his first year in the Doctoral Program in Informatics Engineering). Pedro graduated in Computer Engineering from the Integrated Masters in Informatics and Computing Engineering, at the Faculdade de Engenharia da Universidade do Porto (FEUP). Pedro is joining the weekly call to present a walkthrough on [IPFS and Discussify’s browser extension app](https://github.com/ipfs-shipyard/discussify-browser-extension). Don’t miss it!
 
-
-
 ## IPFS in the wild
-*Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.io/categories/articles/).* 
+*Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.io/categories/articles/).*
 
 + [IPSE: A Safe Search Engine Based On IPFS and Blockchain](https://medium.com/@ipse_io/ipse-a-safe-search-engine-based-on-ipfs-and-blockchain-91b7b4644a3c), 19 Apr 2019
 + [Make A Discord Bot That Can Upload, Pin, and Search IPFS](https://medium.com/@rtradetech/make-a-discord-bot-that-can-upload-pin-and-search-ipfs-7ec59c070cda), 17 Apr 2019
@@ -64,8 +62,8 @@ Next week, [the IPFS Weekly call](https://github.com/ipfs/team-mgmt#-ipfs-weekly
 ## Join us at the first ever IPFS Camp
 
 [IPFS Camp](https://blog.ipfs.io/72-ann-ipfs-camp/) is taking place June 27th-30th in beautiful Barcelona. Meet the core developers and contributors to the IPFS project, community leaders, and builders on of the Distributed Web, but only if you register to attend. [Registration is open now!](https://camp.ipfs.io/)
- 
- 
+
+
 ## Coming up in the Community
 *Did you know IPFS has a community forum at [discuss.ipfs.io](https://discuss.ipfs.io/)? Sign up to participate in discussions about coding, tutorials, see announcements and learn about upcoming community events.*
 
@@ -79,4 +77,4 @@ Next week, [the IPFS Weekly call](https://github.com/ipfs/team-mgmt#-ipfs-weekly
 
 ## Thanks for reading ☺️
 
-That’s it for this week’s news on all things IPFS. If we missed something, [reply to this email](mailto:newsletter@ipfs.io) and let us know! That way we can feature you in next week’s edition. 
+That’s it for this week’s news on all things IPFS. If we missed something, [reply to this email](mailto:newsletter@ipfs.io) and let us know! That way we can feature you in next week’s edition.
