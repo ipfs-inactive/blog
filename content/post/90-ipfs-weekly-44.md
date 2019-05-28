@@ -23,7 +23,7 @@ Last week, a new update for the [JS implementation of IPFS was released](https:/
 
 
 ### Missed registration for IPFS Camp? Join the waitlist
-It might not be the last chance to attend IPFS Camp this August, in fact, this could be your lucky day! If you missed registration earlier this month, [sign up now to get on the waitlist](https://camp.ipfs.io/)!
+It might not be the last chance to attend IPFS Camp this June, in fact, this could be your lucky day! If you missed registration earlier this month, [sign up now to get on the waitlist](https://camp.ipfs.io/)!
 
 
 ## IPFS in the wild
@@ -32,8 +32,8 @@ It might not be the last chance to attend IPFS Camp this August, in fact, this c
 + SLIDES: [libp2p](https://speakerdeck.com/wshino/libp2p), Shinohara Wataru, 23 May 2019
 + [IPFS: Technology that’s out of this world](https://business.sprint.com/blog/ipfs-technology/?ECID=MA:SM:05222019:TW:BLG:ENT:NAT:Organic), Sprint Business Blog, 22 May 2019
 + [Introducing the Textile Javascript Client](https://medium.com/textileio/introducing-the-textile-javascript-client-873c1a31d939), Textile, 22 May 2019
-+ [How To Successfully Hosting A Decentralized Website Using ENS/IPFS.](https://medium.com/@rakeshkumar_64243/how-to-successfully-hosting-a-decentralized-website-using-ens-ipfs-b8f1830a5c49), Rakesh Kumar, 21 May 2019
-+ [Golem’s short recap on their favourite DTNConf talks!](https://twitter.com/golemproject/status/1130791087851868161) 21 May 2019
++ [How To Successfully Hosting A Decentralized Website Using ENS/IPFS.](https://medium.com/@rakeshkumar_64243/how-to-successfully-hosting-a-decentralized-website-using-ens-ipfs-b8f1830a5c49) Rakesh Kumar, 21 May 2019
++ [Golem’s short recap on their favorite DTNConf talks!](https://twitter.com/golemproject/status/1130791087851868161) 21 May 2019
 + [IPFS projects @ ETHNewYork](https://blog.fission.codes/fission-ethnewyork/), FISSION, 21 May 2019
 + [DTN Recap](https://hx.ht/#post-04-dtn-recap), 20 May 2019
 
@@ -63,4 +63,4 @@ It might not be the last chance to attend IPFS Camp this August, in fact, this c
 
 ## Thanks for reading ☺️
 
-That’s it for this week’s news on all things IPFS. If we missed something, [reply to this email](mailto:newsletter@ipfs.io) and let us know! That way we can feature you in next week’s edition. 
+That’s it for this week’s news on all things IPFS. If we missed something, [send an email](mailto:newsletter@ipfs.io) and let us know! That way we can feature you in next week’s edition. 
