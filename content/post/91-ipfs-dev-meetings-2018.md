@@ -1,10 +1,11 @@
 ---
-date: 2019-06-03
+date: 2019-06-05
 url: 91-ipfs-2018-dev-meetings
 tags: dev meetings ipfs libp2p community researchers
 title: July 2018 IPFS Developer Meetings
-author: TBD
+author: Molly Mackinlay
 ---
+
 ![](https://ipfs.io/ipfs/QmQnUstaKTPA92XAkCj2cxBACX1nMyfjYeTHSawejGxASW)
 
 Last July we hosted the first ever IPFS and Libp2p developer meetings to bring together a small group of core developers and major users of the protocols. They were a huge success! We are incredibly thankful for everyone's participation, energy, enthusiasm - and for sharing their knowledge with the whole group.
