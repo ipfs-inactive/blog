@@ -90,6 +90,12 @@ The default file descriptor limit has been raised to 8192 (from 2048). Unfortuna
 
 Luckily, most modern kernels can handle thousands of file descriptors without any difficulty.
 
+#### Decreased Connection Handshake Latency ⏱
+
+Libp2p now shaves off a couple of round trips when initiating connections by beginning the protocol negotiation before the remote peer responds to the initial handshake message.
+
+In the optimal case (when the target peer speaks our preferred protocol), this reduces the number of handshake round-trips from 6 to 4 (including the TCP handshake).
+
 ### 📢 Commands
 
 This release brings no new commands but does introduce a few changes, bugfixes, and enhancements. This section is hardly complete but it lists the most noticeable changes.
@@ -128,6 +134,128 @@ The ping command has received some small improvements and fixes:
 1. It now exits with a non-zero exit status on failure.
 2. It no longer succeeds with zero successful pings if we have a zombie but non-functional connection to the peer being pinged ([#6298](https://github.com/ipfs/go-ipfs/issues/6298)).
 3. It now prints out the average latency when canceled with `^C` (like the unix `ping` command).
+
+#### Improved Help Text
+
+Go-ipfs now intelligently wraps help text for easier reading. On an 80 character wide terminal,
+
+**Before**
+
+```
+USAGE
+  ipfs add <path>... - Add a file or directory to ipfs.
+
+SYNOPSIS
+  ipfs add [--recursive | -r] [--dereference-args] [--stdin-name=<stdin-name>] [
+--hidden | -H] [--quiet | -q] [--quieter | -Q] [--silent] [--progress | -p] [--t
+rickle | -t] [--only-hash | -n] [--wrap-with-directory | -w] [--chunker=<chunker
+> | -s] [--pin=false] [--raw-leaves] [--nocopy] [--fscache] [--cid-version=<cid-
+version>] [--hash=<hash>] [--inline] [--inline-limit=<inline-limit>] [--] <path>
+...
+
+ARGUMENTS
+
+  <path>... - The path to a file to be added to ipfs.
+
+OPTIONS
+
+  -r,               --recursive           bool   - Add directory paths recursive
+ly.
+  --dereference-args                      bool   - Symlinks supplied in argument
+s are dereferenced.
+  --stdin-name                            string - Assign a name if the file sou
+rce is stdin.
+  -H,               --hidden              bool   - Include files that are hidden
+. Only takes effect on recursive add.
+  -q,               --quiet               bool   - Write minimal output.
+  -Q,               --quieter             bool   - Write only final hash.
+  --silent                                bool   - Write no output.
+  -p,               --progress            bool   - Stream progress data.
+  -t,               --trickle             bool   - Use trickle-dag format for da
+g generation.
+  -n,               --only-hash           bool   - Only chunk and hash - do not 
+write to disk.
+  -w,               --wrap-with-directory bool   - Wrap files with a directory o
+bject.
+  -s,               --chunker             string - Chunking algorithm, size-[byt
+es] or rabin-[min]-[avg]-[max]. Default: size-262144.
+  --pin                                   bool   - Pin this object when adding. 
+Default: true.
+  --raw-leaves                            bool   - Use raw blocks for leaf nodes
+. (experimental).
+  --nocopy                                bool   - Add the file using filestore.
+ Implies raw-leaves. (experimental).
+  --fscache                               bool   - Check the filestore for pre-e
+xisting blocks. (experimental).
+  --cid-version                           int    - CID version. Defaults to 0 un
+less an option that depends on CIDv1 is passed. (experimental).
+  --hash                                  string - Hash function to use. Implies
+ CIDv1 if not sha2-256. (experimental). Default: sha2-256.
+  --inline                                bool   - Inline small blocks into CIDs
+. (experimental).
+  --inline-limit                          int    - Maximum block size to inline.
+ (experimental). Default: 32.
+
+```
+
+
+**After**
+
+```
+USAGE
+  ipfs add <path>... - Add a file or directory to ipfs.
+
+SYNOPSIS
+  ipfs add [--recursive | -r] [--dereference-args] [--stdin-name=<stdin-name>]
+           [--hidden | -H] [--quiet | -q] [--quieter | -Q] [--silent]
+           [--progress | -p] [--trickle | -t] [--only-hash | -n]
+           [--wrap-with-directory | -w] [--chunker=<chunker> | -s] [--pin=false]
+           [--raw-leaves] [--nocopy] [--fscache] [--cid-version=<cid-version>]
+           [--hash=<hash>] [--inline] [--inline-limit=<inline-limit>] [--]
+           <path>...
+
+ARGUMENTS
+
+  <path>... - The path to a file to be added to ipfs.
+
+OPTIONS
+
+  -r, --recursive            bool   - Add directory paths recursively.
+  --dereference-args         bool   - Symlinks supplied in arguments are
+                                      dereferenced.
+  --stdin-name               string - Assign a name if the file source is stdin.
+  -H, --hidden               bool   - Include files that are hidden. Only takes
+                                      effect on recursive add.
+  -q, --quiet                bool   - Write minimal output.
+  -Q, --quieter              bool   - Write only final hash.
+  --silent                   bool   - Write no output.
+  -p, --progress             bool   - Stream progress data.
+  -t, --trickle              bool   - Use trickle-dag format for dag generation.
+  -n, --only-hash            bool   - Only chunk and hash - do not write to
+                                      disk.
+  -w, --wrap-with-directory  bool   - Wrap files with a directory object.
+  -s, --chunker              string - Chunking algorithm, size-[bytes] or
+                                      rabin-[min]-[avg]-[max]. Default:
+                                      size-262144.
+  --pin                      bool   - Pin this object when adding. Default:
+                                      true.
+  --raw-leaves               bool   - Use raw blocks for leaf nodes.
+                                      (experimental).
+  --nocopy                   bool   - Add the file using filestore. Implies
+                                      raw-leaves. (experimental).
+  --fscache                  bool   - Check the filestore for pre-existing
+                                      blocks. (experimental).
+  --cid-version              int    - CID version. Defaults to 0 unless an
+                                      option that depends on CIDv1 is passed.
+                                      (experimental).
+  --hash                     string - Hash function to use. Implies CIDv1 if
+                                      not sha2-256. (experimental). Default:
+                                      sha2-256.
+  --inline                   bool   - Inline small blocks into CIDs.
+                                      (experimental).
+  --inline-limit             int    - Maximum block size to inline.
+                                      (experimental). Default: 32.
+```
 
 ### ✨ Features
 
