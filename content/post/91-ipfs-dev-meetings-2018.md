@@ -79,7 +79,7 @@ Much of the rich knowledge was shared in lightning talks, deep dives, poster ses
 -  [Poster Report - Multi Key](https://youtu.be/NEHb8SiQMIE)
 -  [Poster Report - Peer Pad](https://youtu.be/QsE28NhEloU)
 -  [Poster Report - UNIXFX](https://youtu.be/Cvv_8cpoB6k)
--  [Report Back - libp2p scaling for live broadcast](https://youtu.be/sc5D_yYFO3Y)
+-  [Poster Report - libp2p scaling for live broadcast](https://youtu.be/sc5D_yYFO3Y)
 
 ## Deep Dives
 
