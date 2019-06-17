@@ -1,0 +1,50 @@
+---
+date: 2019-06-17
+url: meet-the-community-david-dias
+tags: "Meet the Community"
+title: Meet the Community, David Dias @ IPFS / Protocol Labs
+author: IPFS Events Team
+---
+
+> With the first-ever IPFS Camp right around the corner, we’re interviewing some of the community members who are making this highly anticipated event a reality.
+
+> 💌 This interview first appeared in the [IPFS Events newsletter](http://eepurl.com/giMQzj), subscribe to receive exclusive content and invites to upcoming events.
+
+## Meet the Community: David Dias, Core Developer of the IPFS Protocol @ IPFS / Protocol Labs
+
+<PLEASE INSERT IMAGE(S) HERE>
+
+### Tell us a bit about yourself and your background. How did you get involved with IPFS and end up joining the team at Protocol Labs?
+
+Hi, I’m [David](http://daviddias.me/)!
+
+I joined the IPFS project back in 2015. At the time, I was focused on [building a distributed computing network on top of the Web Platform](https://github.com/daviddias/thesis.browserCloud.js/blob/master/document.pdf). I was heavily inspired by the developments on [European Community Networks](https://confine-project.eu/) and with the rise of P2P Browser connectivity using WebRTC and native like performance with ASM.js, bringing the ideas of voluntary resource sharing and fully distributed systems to the Web felt like the right next path.
+
+Through my journey, I found IPFS and it matched exactly a big important piece I would eventually need for my project. I started by jumping in and contributing to build a full [JavaScript implementation of the protocol (JS IPFS)](https://js.ipfs.io/), and eventually joined Protocol Labs to dedicate 100% of my energy to it.
+
+### Why should people be excited about IPFS?
+
+IPFS is a fundamental building block, a protocol, to create powerful and distributed experiences for humans across the planet-wide nervous system that we call the “Internet”. 
+
+Before IPFS, developing a P2P application implied having years of experience building networking applications, going deep on technical protocols and fighting complexity at every step on the way. Building with Centralized Infrastructure had exactly if not even more complex hurdles, then HTTP and all the conventions on how to build Web Applications came along and now, everything is so much more simple. HTTP was instrumental in powering multiple waves of applications and services over the last 2 decades. IPFS will do the same for the DWeb (Distributed Web).
+
+### What projects are really exciting you in the IPFS Ecosystem at the moment and why?
+
+All of them? Ahaha but seriously, it’s pretty much impossible to do a fair selection when there are so many exciting projects appearing every week. We actually created a community driven repo so that folks can share when they discover or create something awesome using IPFS - you can find the current list at https://awesome.ipfs.io. Also, there is https://www.app.co/ipfs that is maintained by Blockstack. Both are worth checking out.
+
+Just a few that come top of my mind are:
+
+- [DTube](https://d.tube), a video distribution and monetization platform for the DWeb.
+- [Tally Lab](https://tallylab.com), a diary application for all the “Quantified Self” enthusiasts or Researchers that need a way to track data without compromising privacy and ownership.
+- [QRI](https://qri.io), one of the most exciting projects for data scientists out there. QRI offers a way to version and collaborate on distributed datasets.
+- [Orion](https://orion.siderus.io), a friendly IPFS Desktop client that enables everyone to use IPFS in their personal machines with a graphical user interface.
+- [Textile](https://www.textile.photos), a photo sharing application that is powered by an open DApp building toolkit, also built by Textile.
+- [DSound](https://dsound.audio), an audio distribution and monetization platform for the DWeb
+- [OpenBazaar](https://openbazaar.org), a P2P marketplace that puts the users and the customers in control of their experience.
+- [Decentraland](https://decentraland.org/), a virtual world where you can buy and sell land where you can then build your own experiences for others.
+
+### What are you most looking forward to at IPFS Camp?
+
+Lazers and Space Travel! I meant it! 😁 IPFS Camp will be an event focused on knowledge sharing and collaborative thinking to onboard new and current DWeb builders, and set up the community to overcome the next challenges in making the Web fully Distributed.
+
+You can expect Workshops, small group Protocol design sessions and of course, myriad talks from the community sharing the latest and greatest on the DWeb space.
