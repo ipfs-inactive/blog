@@ -46,8 +46,8 @@ Stay tuned for all of the awesome content (and announcements!) that will be comi
 ## Updates and new releases
 *See the latest releases of IPFS tools and projects across the ecosystem.*
 
-+ [New v 1.0.0 of @textileio js-http-client is out, just in time for IPFS Camp!](https://www.npmjs.com/package/@textile/js-http-client)
-+ [go-filecoin 0.2.4 is live!](https://github.com/filecoin-project/go-filecoin/blob/master/CHANGELOG.md#go-filecoin-024) This is a patch release with upgrades to block validation 
++ [New v 1.0.0 of Textile.io js-http-client](https://www.npmjs.com/package/@textile/js-http-client) is out, just in time for IPFS Camp!
++ [go-filecoin 0.2.4 is live!](https://github.com/filecoin-project/go-filecoin/blob/master/CHANGELOG.md#go-filecoin-024) This is a patch release with upgrades to block validation. 
 
 
 ## Tools and projects we <3
