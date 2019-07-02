@@ -19,7 +19,7 @@ Here are some of the highlights since the last IPFS Weekly.
 
 ## IPFS Camp Highlights
 
-If you missed the first ever IPFS Camp, not to worry! We’ll be releasing videos and content from the 4-day event to catch you up. But first, we wanted to share [this amazing recap of the event](https://medium.com/textileio/ipfs-camp-2019-the-highlights-and-takeaways-2b3cb4f42513) from Andrew Hill (seriously where did you get the energy to do this??). Andrew created an excellent highlight piece, complete with photos, links to projects and code, and summaries of crucial discussions and themes throughout. Thanks for putting this fantastic recap piece together, Andrew! 
+If you missed the first ever IPFS Camp, not to worry! We’ll be releasing videos and content from the 4-day event to catch you up. But first, we wanted to share [this amazing recap of the event](https://medium.com/textileio/ipfs-camp-2019-the-highlights-and-takeaways-2b3cb4f42513) from Andrew Hill of [Textile](https://textile.io/) (seriously where did you get the energy to do this??). Andrew created an excellent highlight piece, complete with photos, links to projects and code, and summaries of crucial discussions and themes throughout. Thanks for putting this fantastic recap piece together, Andrew! 
 
 You should also take a look at [these](https://twitter.com/onion797jp/status/1144730847276412933), [this](https://twitter.com/_alanshaw/status/1145785015357366274?s=20), [this](https://twitter.com/momack28/status/1145621516752699392?s=20), [this](https://twitter.com/satazor/status/1145319379082649601?s=20), [this](https://twitter.com/adria0/status/1144617640440344576?s=20), and definitely [watch this](https://twitter.com/ChrisPacia/status/1144291810874920967?s=20).
 
