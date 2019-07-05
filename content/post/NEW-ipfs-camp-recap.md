@@ -8,7 +8,7 @@ author: David Dias
 
 Greetings InterPlanetary Community!
 
-The InterPlanetary Space Training Camp is over and now that we are all back to Earth, I've the joy of sharing the news and learnings with you.
+The InterPlanetary Space Training Camp is over and now that we are all back to Earth, I have the joy of sharing the news and learnings with you.
 
 If you aren't familiar with the [InterPlanetary Space Training Camp (IPFS Camp for short), it was a 3 day Hacker retreat for the Builders of the DWeb](https://camp.ipfs.io/). Attendees travelled through a [space portal](https://twitter.com/ChrisPacia/status/1144291810874920967) to get to Space Training Station in another Galaxy (Star coordinates yet undisclosed). Throughout the Camp, attendees had the chance to participate in:
 
