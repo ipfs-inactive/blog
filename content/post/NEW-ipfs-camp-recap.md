@@ -19,7 +19,7 @@ If you aren't familiar with the [InterPlanetary Space Training Camp (IPFS Camp f
 - [**🧬 Sci-Fi Fair**](https://github.com/ipfs/camp#-sci-fi-fair) - Get blown away by huge Sci-Fi experiments, soon to be seen in a Network close to you
 - [**🧩 Unconf**](https://github.com/ipfs/camp#-unconf) - Gather folks around shared topics of interest and discuss collaborations.
 
-### IPFS Camp `Succes`s is `defined` by the number of `friendships`, `conversations`, `collaborations` and `new projects` that get started.
+### IPFS Camp `Success` is `defined` by the number of `friendships`, `conversations`, `collaborations` and `new projects` that get started.
 
 And it was a blast. Here is a quick video recap as a souvenir for everyone that was there and a postcard for everyone that didn't get a chance this time:
 
