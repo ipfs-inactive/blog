@@ -10,7 +10,7 @@ Greetings InterPlanetary Community!
 
 The InterPlanetary Space Training Camp is over and now that we are all back to Earth, I have the joy of sharing the news and learnings with you.
 
-If you aren't familiar with the [InterPlanetary Space Training Camp (IPFS Camp for short), it was a 3 day Hacker retreat for the Builders of the DWeb](https://camp.ipfs.io/). Attendees travelled through a [space portal](https://twitter.com/ChrisPacia/status/1144291810874920967) to get to Space Training Station in another Galaxy (Star coordinates yet undisclosed). Throughout the Camp, attendees had the chance to participate in:
+If you aren't familiar with the [InterPlanetary Space Training Camp](https://camp.ipfs.io/) (IPFS Camp for short), it was a 3 day Hacker retreat for the Builders of the DWeb. Attendees travelled through a [space portal](https://twitter.com/ChrisPacia/status/1144291810874920967) to get to Space Training Station in another Galaxy (Star coordinates yet undisclosed). Throughout the Camp, attendees had the chance to participate in:
 
 - [**👩🏽‍🏫 Core & Elective Courses**](https://github.com/ipfs/camp#-core--elective-courses) - Specialized and focused trainings on building for the DWeb.
 - [**📃 Poster Projects**](https://github.com/ipfs/camp#-poster-projects) - Collaborate in Groups to understand, explain and present how multiple parts of the DWeb Stack work
