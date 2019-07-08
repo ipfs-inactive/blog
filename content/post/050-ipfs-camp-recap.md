@@ -12,12 +12,34 @@ The InterPlanetary Space Training Camp is over and now that we are all back to E
 
 If you aren't familiar with the [InterPlanetary Space Training Camp](https://camp.ipfs.io/) (IPFS Camp for short), it was a 3 day Hacker retreat for the Builders of the DWeb. Attendees travelled through a [space portal](https://twitter.com/ChrisPacia/status/1144291810874920967) to get to Space Training Station in another Galaxy (Star coordinates yet undisclosed). Throughout the Camp, attendees had the chance to participate in:
 
-- [**👩🏽‍🏫 Core & Elective Courses**](https://github.com/ipfs/camp#-core--elective-courses) - Specialized and focused trainings on building for the DWeb.
-- [**📃 Poster Projects**](https://github.com/ipfs/camp#-poster-projects) - Collaborate in Groups to understand, explain and present how multiple parts of the DWeb Stack work
-- [**🐋 Deep Dives**](https://github.com/ipfs/camp#-deep-dives) - Form small teams to understand, research and come up with solutions to one of the many open problems
-- [**⚡️ Lightning Talks**](https://github.com/ipfs/camp#%EF%B8%8F-lightning-talks) - Learn what is the latest from multiple projects in the IPFS ecosystem
-- [**🧬 Sci-Fi Fair**](https://github.com/ipfs/camp#-sci-fi-fair) - Get blown away by huge Sci-Fi experiments, soon to be seen in a Network close to you
-- [**🧩 Unconf**](https://github.com/ipfs/camp#-unconf) - Gather folks around shared topics of interest and discuss collaborations.
+#### [**👩🏽‍🏫 Core & Elective Courses**](https://github.com/ipfs/camp#-core--elective-courses)
+> Specialized and focused trainings on building for the DWeb.
+
+![](https://ipfs.io/ipfs/QmUiucP3oRVnqvuM6hnrF9D5H6tRSeVhyWk6ggkhf4ebEH)
+
+#### [**📃 Poster Projects**](https://github.com/ipfs/camp#-poster-projects)
+> Collaborate in Groups to understand, explain and present how multiple parts of the DWeb Stack work
+
+![](https://ipfs.io/ipfs/QmUiucP3oRVnqvuM6hnrF9D5H6tRSeVhyWk6ggkhf4ebEH)
+
+#### [**🐋 Deep Dives**](https://github.com/ipfs/camp#-deep-dives)>
+> Form small teams to understand, research and come up with solutions to one of the many open problems
+
+![](https://ipfs.io/ipfs/QmUiucP3oRVnqvuM6hnrF9D5H6tRSeVhyWk6ggkhf4ebEH)
+
+#### [**⚡️ Lightning Talks**](https://github.com/ipfs/camp#%EF%B8%8F-lightning-talks) - Learn what is the latest from multiple projects in the IPFS ecosystem
+
+![](https://ipfs.io/ipfs/QmUiucP3oRVnqvuM6hnrF9D5H6tRSeVhyWk6ggkhf4ebEH)
+
+#### [**🧬 Sci-Fi Fair**](https://github.com/ipfs/camp#-sci-fi-fair)
+> Get blown away by huge Sci-Fi experiments, soon to be seen in a Network close to you
+
+![](https://ipfs.io/ipfs/QmUiucP3oRVnqvuM6hnrF9D5H6tRSeVhyWk6ggkhf4ebEH)
+
+#### [**🧩 Unconf**](https://github.com/ipfs/camp#-unconf)
+> Gather folks around shared topics of interest and discuss collaborations.
+
+![](https://ipfs.io/ipfs/QmUiucP3oRVnqvuM6hnrF9D5H6tRSeVhyWk6ggkhf4ebEH)
 
 ### IPFS Camp `Success` is `defined` by the number of `friendships`, `conversations`, `collaborations` and `new projects` that get started.
 
@@ -34,7 +56,7 @@ Last, but definitely not the least, a huge THANK YOU ❤️ to everyone that con
 - An outstanding [Production Team](https://camp.ipfs.io/team) that created the phenomenal experienced for everyone.
 - The over 4000 IPFS Community members that have been building this project with us since the beginning.
 
-INSERT GROUP PHOTO HERE
+[![](https://media.giphy.com/media/mGW5xq4SwlqnSTxwtb/giphy.gif)](img/060-ipfs-camp-recap/camp-gif.gif)
 
 In name of the whole IPFS Project, thank you all for being part of this project, such an ambitious goal couldn't be achieved without all your energy, passion and will to do the right thing.
 
