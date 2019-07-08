@@ -77,11 +77,11 @@ David Dias & IPFS Team
 `Extra:` As a closing gift, here are some random interesting facts about Camp:
 
 - 😸 IPFS Camp was the 1st time the Lazer Cat bot became [**P2P Lazer Cat bot**](https://github.com/gorhgorh/ipfscatremote)
-- 🍦 All you can eat fruit ice cream made all attendees very happy
-- 👋🏽 Textile created a **P2P Tag Game**. I believe the last person to be "it" is still looking the next person to tag, so look out at next events!
+- 🍦 All you can eat fruit ice cream made all attendees very happy.
+- 👋🏽 Textile created a [**P2P Tag Game**](https://github.com/textileio/advanced-react-native-boilerplate/blob/ipfs-tag/README.md). I believe the last person to be "it" is still looking the next person to tag, so look out at next events!
 - 👕 The first **SWAG Trading Post** was established, an eco-responsible way of attendees picking the item of swag they love the most or that they can trade for others, avoiding the regular Conference waste of ETOOMANYBELLSANDWHISTLES.
 - 📶 The Wifi worked! Well, almost, we are sorry for that one morning hiccup. Thank you everyone for the patience and the Trainers for coming prepared with ways to make their courses work offline and distributed ❤️
-- 📦 The whole NPM was crammed into a box for the first time, an homage to Jen from the IT Crowd
+- 📦 The **whole NPM was crammed into a box** for the first time, an homage to Jen from the IT Crowd.
 - 🔌 The power cut out for a bit but the Space Training Station continued to operate! Offline first FTW!
-- 🤝 Many people organically found and recommended people to find at camp using [The Gathering](https://gthr.io)
-- 💻 IPFS Camp content is over [4200 lines created over 269 commits from 63 individual Github Accounts and these numbers keep growing. WOW!](https://github.com/ipfs/camp/pulse/monthly)
+- 🤝 Many people organically found and recommended people to find at camp using [The Gathering](https://gthr.io).
+- 💻 IPFS Camp content is over **[4200 lines created over 269 commits from 63 individual Github Accounts and these numbers keep growing. WOW!](https://github.com/ipfs/camp/pulse/monthly)**.
