@@ -17,29 +17,41 @@ If you aren't familiar with the [InterPlanetary Space Training Camp](https://cam
 
 ![](https://ipfs.io/ipfs/QmUiucP3oRVnqvuM6hnrF9D5H6tRSeVhyWk6ggkhf4ebEH)
 
+Catch up on all the recordings and materials at [📼 👩🏽‍🏫](https://github.com/ipfs/camp#-core--elective-courses)
+
 #### [**📃 Poster Projects**](https://github.com/ipfs/camp#-poster-projects)
 > Collaborate in Groups to understand, explain and present how multiple parts of the DWeb Stack work
 
 ![](https://ipfs.io/ipfs/QmUiucP3oRVnqvuM6hnrF9D5H6tRSeVhyWk6ggkhf4ebEH)
+
+Catch up on all the recordings & notes at [📼 📒](https://github.com/ipfs/camp#-poster-projects)
 
 #### [**🐋 Deep Dives**](https://github.com/ipfs/camp#-deep-dives)>
 > Form small teams to understand, research and come up with solutions to one of the many open problems
 
 ![](https://ipfs.io/ipfs/QmUiucP3oRVnqvuM6hnrF9D5H6tRSeVhyWk6ggkhf4ebEH)
 
+Catch up on all the recordings & notes at [📼 📒](https://github.com/ipfs/camp#-deep-dives)
+
 #### [**⚡️ Lightning Talks**](https://github.com/ipfs/camp#%EF%B8%8F-lightning-talks) - Learn what is the latest from multiple projects in the IPFS ecosystem
 
 ![](https://ipfs.io/ipfs/QmUiucP3oRVnqvuM6hnrF9D5H6tRSeVhyWk6ggkhf4ebEH)
+
+Catch up on all the recordings at [📼](https://github.com/ipfs/camp#%EF%B8%8F-lightning-talks)
 
 #### [**🧬 Sci-Fi Fair**](https://github.com/ipfs/camp#-sci-fi-fair)
 > Get blown away by huge Sci-Fi experiments, soon to be seen in a Network close to you
 
 ![](https://ipfs.io/ipfs/QmUiucP3oRVnqvuM6hnrF9D5H6tRSeVhyWk6ggkhf4ebEH)
 
+Catch up on all the interviews at [📼](https://github.com/ipfs/camp#-sci-fi-fair)
+
 #### [**🧩 Unconf**](https://github.com/ipfs/camp#-unconf)
 > Gather folks around shared topics of interest and discuss collaborations.
 
 ![](https://ipfs.io/ipfs/QmUiucP3oRVnqvuM6hnrF9D5H6tRSeVhyWk6ggkhf4ebEH)
+
+Catch up on all the artefacts at [📒](https://github.com/ipfs/camp#-unconf)
 
 ### IPFS Camp `Success` is `defined` by the number of `friendships`, `conversations`, `collaborations` and `new projects` that get started.
 
