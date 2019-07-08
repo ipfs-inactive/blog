@@ -23,7 +23,7 @@ If you aren't familiar with the [InterPlanetary Space Training Camp](https://cam
 
 And it was a blast. Here is a quick video recap as a souvenir for everyone that was there and a postcard for everyone that didn't get a chance this time:
 
-INSERT RECAP VIDEO HERE
+[!![](img/060-ipfs-camp-recap/ipfs-camp-youtube-preview)](https://youtu.be/kc_dxO-V8YM)
 
 However, the IPFS Camp spirit doesn't stop here, now it is all about continuing the dialog that got started and taking all the learnings and materials to local IPFS Communities, showing and teaching more folks how to build on the P2P Web. All the content produced can be found on the IPFS Camp Repo -- http://github.com/ipfs/camp. Soon we will be posting all the recordings as well.
 
@@ -42,13 +42,12 @@ David Dias & IPFS Team
 
 `Extra:` As a closing gift, here are some random interesting facts about Camp:
 
-- IPFS Camp was the 1st time the Lazer Cat bot became **P2P Lazer Cat bot** 😸
-- All you can eat fruit ice cream made all attendees very happy 🍨
-- Textile created a **P2P Tag Game**. I believe the last person to be "it" is still looking the next person to tag, so look out at next events! 👋🏽
-- The first **SWAG Trading Post** was established, an eco-responsible way of attendees picking the item of swag they love the most or that they can trade for others, avoiding the regular Conference waste of ETOOMANYBELLSANDWHISTLES.
-- The Wifi worked! Well, almost, we are sorry for that one morning hiccup. Thank you everyone for the patience and the Trainers for coming prepared with ways to make their courses work offline and distributed ❤️
-- The whole NPM was crammed into a box for the first time, an homage to Jen from the IT Crowd
-
-
-
-
+- 😸 IPFS Camp was the 1st time the Lazer Cat bot became [**P2P Lazer Cat bot**](https://github.com/gorhgorh/ipfscatremote)
+- 🍦 All you can eat fruit ice cream made all attendees very happy
+- 👋🏽 Textile created a **P2P Tag Game**. I believe the last person to be "it" is still looking the next person to tag, so look out at next events!
+- 👕 The first **SWAG Trading Post** was established, an eco-responsible way of attendees picking the item of swag they love the most or that they can trade for others, avoiding the regular Conference waste of ETOOMANYBELLSANDWHISTLES.
+- 📶 The Wifi worked! Well, almost, we are sorry for that one morning hiccup. Thank you everyone for the patience and the Trainers for coming prepared with ways to make their courses work offline and distributed ❤️
+- 📦 The whole NPM was crammed into a box for the first time, an homage to Jen from the IT Crowd
+- 🔌 The power cut out for a bit but the Space Training Station continued to operate! Offline first FTW!
+- 🤝 Many people organically found and recommended people to find at camp using [The Gathering](https://gthr.io)
+- 💻 IPFS Camp content is over [4200 lines created over 269 commits from 63 individual Github Accounts and these numbers keep growing. WOW!](https://github.com/ipfs/camp/pulse/monthly)
