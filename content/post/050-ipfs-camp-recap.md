@@ -76,7 +76,7 @@ David Dias & The IPFS Team
 
 `Extra:` As a closing gift, here are some random interesting facts about Camp:
 
-- 😸 IPFS Camp was the 1st time the Lazer Cat bot became [**P2P Lazer Cat bot**](https://github.com/gorhgorh/ipfscatremote)
+- 😸 IPFS Camp was the 1st time the Laser Cat bot became [**P2P Laser Cat bot**](https://github.com/gorhgorh/ipfscatremote)
 - 🍦 All you can eat fruit ice cream made all attendees very happy.
 - 👋🏽 Textile created a [**P2P Tag Game**](https://github.com/textileio/advanced-react-native-boilerplate/blob/ipfs-tag/README.md). I believe the last person to be "it" is still looking for the next person to tag, so look out at future events!
 - 👕 The first **SWAG Trading Post** was established, an eco-responsible way of attendees picking the item of swag they love the most or trade for others, avoiding the regular Conference waste and making sure everyone can optimize.
