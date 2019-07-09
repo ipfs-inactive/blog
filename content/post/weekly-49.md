@@ -2,7 +2,7 @@
 date: 2019-07-09
 url: 98-ipfs-weekly-49
 tags: weekly
-title: # Recapping IPFS in Q2 2019 🎉
+title: Recapping IPFS in Q2 2019 🎉
 author: Jenn Turner
 ---
 
