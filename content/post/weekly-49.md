@@ -31,7 +31,7 @@ The team working on the Go implementation of the IPFS Protocol also shipped two 
 
 ## Plus js-libp2p 0.25.0 released
 
-[Version 0.25.0 of js-libp2p](https://blog.ipfs.io/81-js-libp2p-0-25/), released in April, featured auto dialing to discovered peers by default, better connection management, blacklisting undialable nodes, and more! This version was automagically included in js-ipfs 0.35.0, so you’ve probably been reaping the benefits of our awesome libp2p team for awhile. Enjoy!
+[Version 0.25.0 of js-libp2p](https://blog.ipfs.io/81-js-libp2p-0-25/), released in April, featured auto-dialing to discovered peers by default, better connection management, blacklisting undialable nodes, and more! This version was automagically included in js-ipfs 0.35.0, so you’ve probably been reaping the benefits of our awesome libp2p team for awhile. Enjoy!
 
 
 ## New ProtoSchool tutorial shipped on the IPFS Mutable File System (MFS)
@@ -41,12 +41,12 @@ Last month, [ProtoSchool](https://proto.school/#/) added a brand new tutorial to
 
 ## IPFS contributor office hours began in May
 
-The IPFS Weekly community call takes place on Mondays at 17:00 UTC and has for awhile, but in May, Oli Evans started hosting the [IPFS contributor offices hours](https://twitter.com/olizilla/status/1125418073689817088) during the hour beforehand. Starting at 16:00, IPFS contributors, or would-be contributors can tune in to talk IPFS and ask questions. It’s open to everyone so please join us!
+The IPFS Weekly community call takes place on Mondays at 17:00 UTC and has for awhile, but in May, Oli Evans started hosting the [IPFS contributor office hours](https://twitter.com/olizilla/status/1125418073689817088) during the hour beforehand. Starting at 16:00, IPFS contributors, or would-be contributors can tune in to talk IPFS and ask questions. It’s open to everyone so please join us!
 
 
 # We approve this awesome IPFS content
 
-+ [The Complete Beginner's Guide to Deploying Your First Static Website](https://interplanetarygatsby.com/ipfs-deploy/)
++ [The Complete Beginner’s Guide to Deploying Your First Static Website](https://interplanetarygatsby.com/ipfs-deploy/)
 + [IPFS: Technology that’s out of this world](https://business.sprint.com/blog/ipfs-technology/)
 + [How to Host Your Dapp With IPFS+ENS and Access It Via EthDNS](https://medium.com/the-ethereum-name-service/how-to-host-your-dapp-with-ipfs-ens-and-access-it-via-ethdns-c96046059d87)
 + [Continuing to Improve our IPFS Gateway](https://blog.cloudflare.com/continuing-to-improve-our-ipfs-gateway/)
@@ -273,7 +273,7 @@ Once again, thanks for all of your hard work and contributions in Q2. Keep up th
 + Ongoing performance optimizations & collabs with package manager ecosystems using IPFS to mirror and content-address package in the wild
 
 ## Progress on our top 2019 priority is accelerating! 
-+ Critical performance improvements for bitswap,  and IPNS are scoped and underway
++ Critical performance improvements for bitswap and IPNS are scoped and underway
 + Multiple package managers are using IPFS for better mirroring and addressing/deduplication
 + Better communication tools, recommendations, & documentation for package managers on IPFS
 + Improved understanding of package manager needs and constraints = more feedback for IPFS core protocol improvements
