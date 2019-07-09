@@ -12,6 +12,8 @@ Thanks for being part of our community, we truly couldn’t make IPFS what it is
 
 # Milestones
 
+[![](https://media.giphy.com/media/mGW5xq4SwlqnSTxwtb/giphy.gif)](img/060-ipfs-camp-recap/camp-gif.gif)
+
 ## The first IPFS Camp was a blast
 
 Last month, 160 attendees traveled from 22+ countries to the 3-day hacker retreat, marking the first official IPFS Camp. Attendees enjoyed core and elective courses, poster sessions, lightning talks, a Sci-Fi Fair, an unconf and more! If you couldn’t be there, check out the recap (with video) of the event [on the blog](https://blog.ipfs.io/2019-07-08-ipfs-camp-recap/).
