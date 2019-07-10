@@ -68,7 +68,7 @@ Last, but definitely not the least, a huge THANK YOU ❤️ to everyone that con
 - An outstanding [Production Team](https://camp.ipfs.io/team) that created the phenomenal experience for everyone
 - The over 4000 IPFS Community members that have been building this project with us since the beginning
 
-[![](https://media.giphy.com/media/mGW5xq4SwlqnSTxwtb/giphy.gif)](img/060-ipfs-camp-recap/camp-gif.gif)
+[![](https://media.giphy.com/media/mGW5xq4SwlqnSTxwtb/giphy.gif)](/img/060-ipfs-camp-recap/camp-gif.gif)
 
 On behalf of the whole IPFS Project, thank you all for being part of this project and community, such an ambitious goal couldn't be achieved without all your energy, passion and dedication to make it happen. Onwards!
 
