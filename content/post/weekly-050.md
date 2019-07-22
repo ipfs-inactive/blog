@@ -18,8 +18,6 @@ Here are some of the highlights since the last IPFS Weekly.
 
 ## The latest
 
-### Introducing the IPFS Team Principles & Values
-Articulating the project’s principles and values is an important step in guiding the IPFS roadmap and establishing expectations for the present and future work on IPFS. [Read the full document here.](https://github.com/protocol/pl-ipfs-team/blob/master/TEAM_PRINCIPLES_VALUES.md)
 
 ### 2019 IPFS Camp Recap
 In case you missed it, David Dias and the IPFS Camp team wrote up a recap of last month’s event with links to talks, resources and more, so [check it out on the IPFS blog.](https://blog.ipfs.io/2019-07-08-ipfs-camp-recap/)
