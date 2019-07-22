@@ -8,7 +8,7 @@ author: Richard Littauer, Andrew Chin
 
 [IPFS](https://ipfs.io/) is a new hypermedia distribution protocol, addressed by content and identities, aiming to make the web faster, safer, and more open. In these posts, we highlight some of the development that has happened in the past week. For anyone looking to get involved, follow the embedded hyperlinks, search the wealth of information on [GitHub](https://github.com/ipfs) or join us on [IRC](https://webchat.freenode.net/?channels=ipfs) (#ipfs on the Freenode network).
 
-If you would like to get this update as an email, sign up for our [weekly newsletter](https://tinyletter.com/ipfsweekly)!
+If you would like to get this update as an email, sign up for our [weekly newsletter](https://tinyletter.com/ipfsnewsletter)!
 
 Here are some of the highlights for the [first week of March](https://github.com/ipfs/pm/issues/93):
 
