@@ -4,7 +4,7 @@ url: zh-cn/ipfs-weekly-51
 translationKey: ipfs-weekly-51
 tags: weekly
 title: IPFS 周报-51
-author: moyid
+author: 默奕
 ---
 
 ## 欢迎来到 IPFS 周刊。👋
