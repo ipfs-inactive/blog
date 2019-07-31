@@ -8,12 +8,12 @@ author: Dietrich Ayala
 
 IPFS is growing! This year we've grown immensely in network size, number of apps building with IPFS, number of end-users of IPFS-powered apps, and the number of developers contributing to the codebase.
 
-![image](https://user-images.githubusercontent.com/618519/62096121-680ae280-b237-11e9-96a9-e2fab020c2c9.png)
+![IPFS-powered applications](https://user-images.githubusercontent.com/618519/62096121-680ae280-b237-11e9-96a9-e2fab020c2c9.png)
 
 Along with that growth, we've also experienced some challenges:
 
 * The HTTP to IPFS gateways [didn’t keep up](https://github.com/ipfs/go-ipfs/issues/6385) with the needs of our growing community 
-* The public IPFS network (via the DHT) is [slow and sometimes unreliable](https://github.com/ipfs/go-ipfs/issues/6383)
+* The public IPFS network (via the DHT) was [slow and sometimes unreliable](https://github.com/ipfs/go-ipfs/issues/6383)
 * We shipped some bugs and performance regressions in our releases ([0.4.19](https://github.com/ipfs/go-ipfs/releases/tag/v0.4.20) & [0.4.20](https://github.com/ipfs/go-ipfs/releases/tag/v0.4.21))
 * Our documentation and websites were [poorly maintained and fell out of date](https://github.com/ipfs/docs/#ipfs-docs-q3-2019-update)
 
@@ -27,10 +27,9 @@ We're switching things up this quarter, remixing the IPFS working groups and for
 * **[Package Managers](https://github.com/ipfs/package-managers)** - Improve performance of import and update of large filesystems to support file-system-based package managers.
 * **[Documentation & Developer UX](https://github.com/ipfs/docs#ipfs-docs-q3-2019-update)** - Overhaul our documentation platform and content based on audits, research and community needs assessment to make IPFS more accessible to developer users.
 
-
 This new set of problem-oriented working groups will remain in place as long as needed to set IPFS on a stable course for achieving the broader vision for the project. Some might live for one or two quarters to be replaced by new focus areas we identify, while others might continue on as long as they're useful to the project. These changes are live in the [IPFS Project Teams, Roles & Structures document](https://github.com/ipfs/team-mgmt/blob/master/TEAMS_ROLES_STRUCTURES.md).
 
-Your feedback is a large part of identifying these challenges, evaluating how we're doing at addressing them, and whether your needs (or your user’s needs!) are being met by IPFS! You can find ways to participate and make your voice heard on the [IPFS Github repository](https://github.com/ipfs/ipfs#project-and-community).
+Your feedback is a large part of identifying these challenges, evaluating how we're doing at addressing them, and assessing whether your needs (or your user’s needs!) are being met by IPFS! You can find ways to participate and make your voice heard on the [IPFS Github repository](https://github.com/ipfs/ipfs#project-and-community).
 
 These new working groups meet regularly, and you can join them to help us achieve these goals! Check the [IPFS community calendar](https://github.com/ipfs/community/blob/master/README.md#calendar) for times and connection information, or watch the meetings at your leisure on the [IPFS Youtube channel](https://www.youtube.com/channel/UCdjsUXJ3QawK4O5L1kqqsew). 
 
