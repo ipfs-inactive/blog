@@ -12,7 +12,7 @@
 - [Publishing Post](#create-a-new-blog-post)
   - [Editing](#editing)
   - [Publishing](#publishing)
-  - [Translating](#translating) (optional)
+  - [Translating](#translating-%EF%B8%8F) (optional)
 - [Contribute](#contribute)
   - [Want to hack on IPFS?](#want-to-hack-on-ipfs)
 - [License](#license)
