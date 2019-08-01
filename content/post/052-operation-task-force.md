@@ -15,7 +15,7 @@ Along with that growth, we've also experienced some challenges:
 * The HTTP to IPFS gateways [didn’t keep up](https://github.com/ipfs/go-ipfs/issues/6385) with the needs of our growing community 
 * The public IPFS network (via the DHT) was [slow and sometimes unreliable](https://github.com/ipfs/go-ipfs/issues/6383)
 * We shipped some bugs and performance regressions in our releases ([0.4.19](https://github.com/ipfs/go-ipfs/releases/tag/v0.4.20) & [0.4.20](https://github.com/ipfs/go-ipfs/releases/tag/v0.4.21))
-* Our documentation and websites were [poorly maintained and fell out of date](https://github.com/ipfs/docs/#ipfs-docs-q3-2019-update)
+* Our documentation and websites were poorly maintained and [fell out of date](https://github.com/ipfs/docs/#ipfs-docs-q3-2019-update)
 
 Last month in Barcelona we got together and hammered out a plan to make IPFS performant, stable, high quality and updated regularly - and ready to grow even more! Check out the [Q3 OKR planning issue](https://github.com/ipfs/team-mgmt/issues/995) that documents our analysis and next steps.
 
