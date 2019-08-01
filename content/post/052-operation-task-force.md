@@ -29,7 +29,7 @@ We're switching things up this quarter, remixing the IPFS working groups and for
 
 This new set of problem-oriented working groups will remain in place as long as needed to set IPFS on a stable course for achieving the broader vision for the project. Some might live for one or two quarters to be replaced by new focus areas we identify, while others might continue on as long as they're useful to the project. These changes are live in the [IPFS Project Teams, Roles & Structures document](https://github.com/ipfs/team-mgmt/blob/master/TEAMS_ROLES_STRUCTURES.md).
 
-Your feedback is a large part of identifying these challenges, evaluating how we're doing at addressing them, and assessing whether your needs (or your user’s needs!) are being met by IPFS! You can find ways to participate and make your voice heard on the [IPFS Github repository](https://github.com/ipfs/ipfs#project-and-community).
+Your feedback is a large part of identifying these challenges, evaluating how we're doing at addressing them, and assessing whether your needs (or your users' needs!) are being met by IPFS! You can find ways to participate and make your voice heard on the [IPFS Github repository](https://github.com/ipfs/ipfs#project-and-community).
 
 These new working groups meet regularly, and you can join them to help us achieve these goals! Check the [IPFS community calendar](https://github.com/ipfs/community/blob/master/README.md#calendar) for times and connection information, or watch the meetings at your leisure on the [IPFS Youtube channel](https://www.youtube.com/channel/UCdjsUXJ3QawK4O5L1kqqsew). 
 
