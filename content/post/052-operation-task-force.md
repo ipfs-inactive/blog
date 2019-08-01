@@ -37,7 +37,7 @@ The work these teams are doing will require a number of different skillsets, and
 
 ## How does this work affect you?
 
-* **As an IPFS user**: The HTTP to IPFS gateways needed to test and get started with IPFS should be more reliable and responsive. Projects built on IPFS will begin performing better. If you have problems getting up and running with IPFS, you'll have access to more and better documentation for helping you troubleshoot.
+* **As an IPFS user**: The HTTP to IPFS gateways used to get started with IPFS should be more reliable and responsive. Projects built on IPFS will begin performing better. If you have problems getting up and running with IPFS, you'll have access to more and better documentation for helping you troubleshoot.
 * **As a developer building things with IPFS**: You can begin to count on a reliable release process. New releases will have better test coverage, so are less likely to contain performance or functional regressions. New features, as well as existing features and topics that we know can be tricky, will be better documented to help you get moving faster.
 * **As a core contributor**: Depending on which part of the project you're contributing to, you may see more or less activity. Your tests might start running much faster. Projects that are not critical to the initiatives above might take longer to review your pull-request or answer your question. You may be encouraged and empowered to better document improvements you make for everyone to take advantage of.
 
