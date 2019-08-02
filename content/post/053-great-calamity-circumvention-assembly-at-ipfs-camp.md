@@ -6,6 +6,8 @@ title: The Great Calamity Circumvention Assembly at IPFS Camp 2019
 author: Alan Shaw
 ---
 
+> This is the story of the Deep Dive sessions at IPFS Camp 2019 as told from the perspective of a DWeb historical researcher in the far future.
+
 In 2019, the intergalactic dweb uprising began. The pillars of what had become the foundations of human civilisation started to crack under their own weight and a new empire was emerging from the shadows. An empire forged in the flames of discontent of central servers and "do-no-evil" monopoly. Peer to peer communications - the heart of the dweb - slowly formed efficient and autonomous gorilla networks that expanded beyond the reach of the blue planet and far into the galaxy, the likes of which the old world order had never seen before.
 
 The uprising began modestly as a "space camp" in the ALPHA region 5P4-1N. From fear of ambush the exact coordinates were only divulged to the heroes that enlisted. What happened at that camp laid the foundations for the world as we know it today, but between then and now, many battles took place and we will forever honour the unbeknown dragon slayers that emerged from camp to lead the uprising and shape our new world.
