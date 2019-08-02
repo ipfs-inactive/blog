@@ -21,7 +21,7 @@ Last month in Barcelona we got together and hammered out a plan to make IPFS per
 
 We're switching things up this quarter, remixing the IPFS working groups and forming ourselves (Voltron-like) into a set of new teams focused on these high priority challenges. Meet our new working groups for Q3:
 
-* **[IPFS As A Service](https://docs.google.com/spreadsheets/d/1AiNUL7vK5Jp8aa839UaMaI_AlBU5r6Bor-A40179I2A/edit#gid=1439867466)** - Improve performance and stability of gateways and pinning, and provide public observability of services.
+* **[Team Bifrost](https://docs.google.com/spreadsheets/d/1AiNUL7vK5Jp8aa839UaMaI_AlBU5r6Bor-A40179I2A/edit#gid=1439867466)** (aka IPFS Infra as a Service) - Improve performance and stability of gateways and pinning, and provide public observability of services.
 * **[Test Infrastructure](https://docs.google.com/spreadsheets/d/1AiNUL7vK5Jp8aa839UaMaI_AlBU5r6Bor-A40179I2A/edit#gid=96566767)** - Improve our confidence that every release improves the previous one through testing infrastructure designed to evaluate IPFS and libp2p at scale - from single node performance to overall network health and efficiency - tightly integrated with our software engineering pipeline.
 * **[Project Operations](https://github.com/ipfs/project-operations)** - Ship core go and js implementations with reliable rigor, systematize community communications and collaborations, and spin up IPFS research to meet future project needs.
 * **[Package Managers](https://github.com/ipfs/package-managers)** - Improve performance of import and update of large filesystems to support file-system-based package managers.
