@@ -122,14 +122,16 @@ a patch release.
 
 #### Semver
 
-This release process finally switches go-ipfs over to [semver](https://semver.org/). Like many pre-1.0
-project, go-ipfs has reserved MINOR releases for large breaking changes.
-However, this means we can't distinguish between true patch releases (bug fixes
-applied to the previous release) and feature releases (minor releases).
+This release process finally switches go-ipfs over to
+[semver](https://semver.org/). Like many pre-1.0 project, go-ipfs has reserved
+MINOR releases for large breaking changes or significant milestones. However,
+this means we can't distinguish between true patch releases (bug fixes applied
+to the previous release) and feature releases (minor releases).
 
 This means that until go-ipfs reaches 1.0:
 
-* Minor releases will no longer signal large breaking changes.
+* Minor releases will no longer signal significant milestones or large breaking
+  changes. Instead, minor releases will be normal feature releases.
 * Patch releases will now be just that: patches on the previous stable release.
 
 As an historical tidbit, we held a somewhat romantic hope that 0.5.0
