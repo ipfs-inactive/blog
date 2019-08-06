@@ -9,8 +9,8 @@ author: Steven Allen, Alan Shaw, David Dias, Molly Mackinlay
 **go-ipfs is introducing a new release cycle and process to ensure more reliable and frequent releases!**
 
 
-When reflecting on Q2, we noticed an unusual number of critical regressions
-(since fixed) introduced in the last three go-ipfs releases:
+When reflecting on this year so far, we noticed an unusual number of critical
+regressions (since fixed) introduced in the last three go-ipfs releases:
 
 * **go-ipfs 0.4.21** had two performance regressions in bitswap:
   1. A throughput regression that should have been caught by regression testing
@@ -34,7 +34,7 @@ We found two root causes:
 
 1. An uptick in development pace with respect to previous quarters without
    matching improvements to our testing practices. Several large refactors
-   touching key but poorly tested subsystems landed in Q2.
+   touching key but poorly tested subsystems landed this year.
 2. A significant increase in the network size and production demands on go-ipfs
    without _any_ large-scale testing or network simulation infrastructure. In
    the past all production scale testing has been done by deploying a custom
