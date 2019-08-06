@@ -46,7 +46,9 @@ JS IPFS now supports delegating peer and content routing to another node on the 
 
 What does that mean though? Well, when you delegate, you get someone else to do something. In delegated peer and content routing we get a different IPFS node to find a piece of content or another peer on the network.
 
-Delegation allows JS IPFS to make use of the routing abilities of other nodes. Typically we delegate to IPFS nodes that have unrestricted access to a DHT. This is useful for IPFS nodes running on Node.js, in the browser, or even for nodes running in resource constrained environments.
+Delegation allows JS IPFS to make use of the routing abilities of other nodes. Typically we delegate to IPFS nodes that have unrestricted access to a DHT. This is useful for IPFS nodes running in the browser, or even for nodes running in resource constrained environments.
+
+IPFS nodes running in Node.js that are behind NATs or that are not running a DHT will also benefit from leveraging delegate routers. If you are running a DHT, the delegate will be used as a fallback router.
 
 We've setup 2 delegate nodes you can use for development and testing, check the docs for [configuring delegate routers](https://github.com/ipfs/js-ipfs#configuring-delegate-routers) in JS IPFS and the [libp2p delegated routing example](https://github.com/libp2p/js-libp2p/tree/master/examples/delegated-routing) for even more info!
 
