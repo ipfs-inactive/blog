@@ -23,7 +23,7 @@ When reflecting on Q2, we noticed an unusual number of critical regressions
   add command didn't work ([#6254](https://github.com/ipfs/go-ipfs/pull/6255)).
   A regression test has since been added, but this _also_ would have been caught
   with better cross-application testing.
-* **go-ipfs 0.4.19** had multiple regressions (all fixed in 0.4.20):
+* **go-ipfs 0.4.19** had multiple regressions:
   1. A regression in the docker container (introduced by
     [#6040](https://github.com/ipfs/go-ipfs/pull/6040)) that would have been
     caught by testing the go-ipfs docker image in more production environments.
