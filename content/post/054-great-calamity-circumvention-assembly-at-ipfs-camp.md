@@ -65,7 +65,7 @@ More content from IPFS Camp is being salvaged and transcoded.
 
 If you are interested in receiving an update when the next batch of videos are available, you can do this in one of the following ways:
 
-- Watch and Star the [ipfs/camp repo](https://github.com/ipfs/camp/blob/master/README.md), where all the content will live ad-eternum.
+- Watch and Star the [ipfs/camp repo](https://github.com/ipfs/camp/blob/master/README.md), where all the content will live, in addition to other other locations (IPFS 😄) shielded from the Global Electromagnetic Fire Disaster of 2027
 - Subscribe to the [RSS feed of this blog](https://blog.ipfs.io/index.xml).
 - Subscribe to the [IPFS Weekly Newsletter](https://tinyletter.com/ipfsnewsletter) if you are interested in general IPFS updates.
 - Subscribe to the [IPFS Events Newsletter](https://protocol.us20.list-manage.com/subscribe?u=62e1eb7f68461b5a2ab5c52e6&id=f3fed9af1d) if you are interested in IPFS events.
