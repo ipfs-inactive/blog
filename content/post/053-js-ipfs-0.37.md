@@ -11,7 +11,7 @@ author: Alan Shaw
 
 ## 👷‍♂️ Brand new constructor
 
-We're in the middle of [converting IPFS, libp2p and IPLD modules to using async/await and async iterators](https://github.com/ipfs/js-ipfs/issues/1670) instead of callbacks. This will eventually bubble up to the JS IPFS programmatic API where there will likely be some changes that will effect your application. To ease the transition when that happens we're encouraging new and existing developers away from using our callback based APIs, towards Promise based APIs. You'll see the change reflected in our API docs soon. For now, there's no breaking changes, all existing APIs continue to work as usual with callbacks.
+We're in the middle of [converting IPFS, libp2p and IPLD modules to using async/await and async iterators](https://github.com/ipfs/js-ipfs/issues/1670) instead of callbacks. This will eventually bubble up to the JS IPFS programmatic API where there will likely be some changes that will effect your application. To ease the transition when that happens we're encouraging new and existing developers away from using our callback based APIs, towards Promise based APIs. You'll see the change reflected in our [API docs](https://github.com/ipfs/js-ipfs#core-api) soon. For now, there's no breaking changes, all existing APIs continue to work as usual with callbacks.
 
 In this release there's a new way to construct an IPFS node using promises:
 
@@ -21,7 +21,7 @@ const node = await IPFS.create()
 // Done, ready to use!
 ```
 
-All the usual options you'd normally pass to the constructor can be passed to `create`. Did we mention that it's completely backwards compatible? Well yeah, it is. No breaking changes here 😜 - you can still use `new IPFS()` and wait for the `ready` event as you used to. Or, alternatively, you can still use the constructor and `await` on the new "ready" promise like so:
+All the usual options you'd normally pass to the constructor can be passed to [`create`](https://github.com/ipfs/js-ipfs#ipfs-constructor). Did we mention that it's completely backwards compatible? Well yeah, it is. No breaking changes here 😜 - you can still use `new IPFS()` and wait for the [`ready`](https://github.com/ipfs/js-ipfs#events) event as you used to. Or, alternatively, you can still use the constructor and `await` on the new "ready" promise like so:
 
 ```js
 const IPFS = require('ipfs')
@@ -48,7 +48,7 @@ What does that mean though? Well, when you delegate, you get someone else to do 
 
 Delegation allows JS IPFS to make use of the routing abilities of other nodes. Typically we delegate to IPFS nodes that have unrestricted access to a DHT. This is useful for IPFS nodes running on Node.js, in the browser, or even for nodes running in resource constrained environments.
 
-We've setup 2 delegate nodes you can use for development and testing, check the docs for [configuring delegate routers](https://github.com/ipfs/js-ipfs#configuring-delegate-routers) in JS IPFS.
+We've setup 2 delegate nodes you can use for development and testing, check the docs for [configuring delegate routers](https://github.com/ipfs/js-ipfs#configuring-delegate-routers) in JS IPFS and the [libp2p delegated routing example](https://github.com/libp2p/js-libp2p/tree/master/examples/delegated-routing) for even more info!
 
 ## ✨ Web UI with revamped Files & Peers
 
