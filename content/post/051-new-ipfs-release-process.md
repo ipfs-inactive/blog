@@ -6,9 +6,8 @@ title: Improving the IPFS Release Process
 author: Steven Allen, Alan Shaw, David Dias, Molly Mackinlay
 ---
 
-go-ipfs is introducing a new release cycle and process to ensure reliable releases.
+**go-ipfs is introducing a new release cycle and process to ensure more reliable and frequent releases!**
 
-## Background
 
 When reflecting on Q2, we noticed an unusual number of critical regressions
 (since fixed) introduced in the last three go-ipfs releases:
@@ -44,11 +43,11 @@ We found two root causes:
 To address these concerns, we've put a halt to all non-bugfix go-ipfs releases
 as we improve our testing practices and build out our testing and network
 simulation infrastructure. We felt this measure necessary as testing tends to
-become a secondary concern in the face new features and pressing performance
+become a secondary concern in the face of new features and pressing performance
 issues.
 
 However, even with our current testing practices, these regressions should have
-been caught by pre-release testing. Furthermore, a better release process (e.g.,
+been caught by pre-release testing. Furthermore, a better release process (e.g.
 the ability to cut patch releases) would have enabled us to quickly release
 fixes for these regressions.
 
@@ -57,7 +56,7 @@ process to ensure that releases have been tested in as many environments as we
 can and that we can quickly release bug fixes without waiting an entire release
 cycle.
 
-## Release Process
+## Release Process Changes
   
 We've made three specific changes to the release process:
 
@@ -72,7 +71,7 @@ We've made three specific changes to the release process:
    
 ### Early Testers Program
 
-The early testers program allows groups using go-ipfs in production to
+We're introducing an early testers program that allows groups using go-ipfs in production to
 self-volunteer to help with testing `go-ipfs` release candidates in development
 and production environments. While we invite the _entire_ community to help test
 releases, members of the early testers program participate directly and actively
@@ -122,17 +121,17 @@ a patch release.
 
 #### Semver
 
-This release process finally switches go-ipfs over to semver. Like many pre-1.0
+This release process finally switches go-ipfs over to [semver](https://semver.org/). Like many pre-1.0
 project, go-ipfs has reserved MINOR releases for large breaking changes.
 However, this means we can't distinguish between true patch releases (bug fixes
 applied to the previous release) and feature releases (minor releases).
 
-This means:
+This means that until go-ipfs reaches 1.0:
 
 * Minor releases will no longer signal large breaking changes.
 * Patch releases will now be just that: patches on the previous stable release.
 
-As an historical tidbit, we've also held a somewhat romantic hope that 0.5.0
+As an historical tidbit, we held a somewhat romantic hope that 0.5.0
 would mark feature completeness ("beta") and that the next non-patch release
 after that would be 1.0. However, the next feature release, 0.5.0, does not mean
 anything special, and will not be a major milestone.
