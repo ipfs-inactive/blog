@@ -49,7 +49,9 @@ improvements.
 However, even with our current testing practices, these regressions should have
 been caught by pre-release testing. Furthermore, a better release process (e.g.
 the ability to cut patch releases) would have enabled us to quickly release
-fixes for these regressions.
+fixes for these regressions and would have enabled our users to quickly deploy
+these fixes without worrying about the potential impact of other unrelated
+changes.
 
 Therefore, in addition to improving our testing, we're introducing a new release
 process to ensure that releases have been tested in as many environments as we
