@@ -50,6 +50,14 @@ Delegation allows JS IPFS to make use of the routing abilities of other nodes. T
 
 We've setup 2 delegate nodes you can use for development and testing, check the docs for [configuring delegate routers](https://github.com/ipfs/js-ipfs#configuring-delegate-routers) in JS IPFS.
 
+## ✨ Web UI with revamped Files & Peers
+
+The new Web UI 2.5 version got a whole new life. We have introduced a new help system designed for new users, with explanations on each section.
+
+The Peers page now allows you to connect to a specific peer via 'Add Connection'. We also have a revamped peers table with sorting, identicons for each peer, a simplified location, a new protocol & transport column and latency!
+
+On the Files side, you can now look at any files in the wild. But what does that mean? You can now see your pins, remove pins, add new pins, navigate to any `/ipfs/QmHash` or `/ipns/domain.com` path and explore the IPFS world like you never did before.
+
 # 🏗 API Changes
 
 - New constructor. The recommended way of creating an IPFS node programmatically is now `await IPFS.create()`. This change is backwards compatible 😅
