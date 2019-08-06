@@ -52,7 +52,9 @@ We've setup 2 delegate nodes you can use for development and testing, check the 
 
 ## ✨ Web UI with revamped Files & Peers
 
-The new Web UI 2.5 version got a whole new life. We have introduced a new help system designed for new users, with explanations on each section.
+The Web UI got a whole new lease of life in version 2.5!
+
+We've introduced a help system designed for new users, with explanations for each section.
 
 The Peers page now allows you to connect to a specific peer via 'Add Connection'. We also have a revamped peers table with sorting, identicons for each peer, a simplified location, a new protocol & transport column and latency!
 
