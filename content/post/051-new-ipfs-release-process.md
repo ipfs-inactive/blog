@@ -133,14 +133,17 @@ This means:
 * Patch releases will now be just that: patches on the previous stable release.
 
 As an historical tidbit, we've also held a somewhat romantic hope that 0.5.0
-would mark "beta". The next feature release, 0.5.0, will _not_ be beta.
+would mark feature completeness ("beta") and that the next non-patch release
+after that would be 1.0. However, the next feature release, 0.5.0, does not mean
+anything special, and will not be a major milestone.
 
 ### Process
 
 The new release process includes 5 stages:
 
 0. Automated Testing - go-ipfs CI Passes.
-1. Internal Testing - go-ipfs is tested against IPFS infrastructure and
+1. Internal Testing - go-ipfs is tested against IPFS infrastructure, internal
+   testing and simulation tools, and
    [Shipyard](https://github.com/ipfs-shipyard) applications.
 2. Community Dev Testing - go-ipfs is tested by the community in dev
    environments.
@@ -166,17 +169,19 @@ This is the stage where we branch off a release candidate.
 
 The first real stage of this process is internal testing. In this stage, the
 IPFS team will test the release candidate against applications in the [IPFS
-Shipyard](https://github.com/ipfs-shipyard) and on a subset of the IPFS
-project's infrastructure (the bootstrappers and the gateways).
+Shipyard](https://github.com/ipfs-shipyard), on some new testing and simulation
+infrastructure we're in the process of building, and on a subset of the IPFS
+project's production infrastructure (bootstrappers and gateways).
 
-This stage allows us to rapidly find, diagnose, and fix issues within a constrained sphere of
-control before asking the wider community to begin testing.
+This stage allows us to rapidly find, diagnose, and fix issues within a
+constrained sphere of control before asking the wider community to begin
+testing.
 
 #### Stage 2 - Community Dev Testing
 
 At this stage, we announce the impending release to the community and ask for
-beta testers. This stage exists to give a new IPFS release candidate some low-stakes testing on as many
-environments as possible.
+beta testers. This stage exists to give a new IPFS release candidate some
+low-stakes testing on as many environments as possible.
 
 This is also the first stage where we involve members of the early testers
 program. Here, we ask them to test the go-ipfs release in their _dev_
@@ -192,8 +197,8 @@ roll back changes and fix any issues that might arise before the final release.
 
 #### Stage 4 - Release
 
-At stage 4, we make sure all the documentation has been updated and cut the
-final release.
+At stage 4, we make sure all the documentation has been updated, cut the final
+release, and announce it to the community.
 
 ## Communication
 
