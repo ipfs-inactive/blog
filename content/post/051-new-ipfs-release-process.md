@@ -14,23 +14,23 @@ The past three releases have had a few critical regressions, several of which
 would have been caught by better release testing and released faster with an
 improved release process.
 
-* 0.4.21 had two performance regressions in bitswap:
-  * a throughput regression that should have been caught by regression testing
+* **go-ipfs 0.4.21** had two performance regressions in bitswap:
+  1. A throughput regression that should have been caught by regression testing
     (now tested) but almost certainly would have been noticed by downstream
     users given a longer release-testing process.
-  * a CPU utilization regression that only shows up with >10000 peers. Something
+  2. A CPU utilization regression that only shows up with >10000 peers. Something
     that only really shows up in certain production systems under heavy load.
-* 0.4.20 had a regression where adding multiple independent files in the same
+* **go-ipfs 0.4.20** had a regression where adding multiple independent files in the same
   add command didn't work ([#6254](https://github.com/ipfs/go-ipfs/pull/6255)).
-  A regression test has since been added but this _also_ would have been caught
+  A regression test has since been added, but this _also_ would have been caught
   with better cross-application testing.
-* 0.4.19 had multiple regressions:
-  * a regression in the docker container (introduced by
+* **go-ipfs 0.4.19** had multiple regressions (all fixed in 0.4.20):
+  1. A regression in the docker container (introduced by
     [#6040](https://github.com/ipfs/go-ipfs/pull/6040)) that would have been
     caught by testing the go-ipfs docker image in more production environments.
-  * a CPU utilization regression in bitswap only seen under very high load. This
+  2. A CPU utilization regression in bitswap only seen under very high load. This
     would have been caught by testing under production loads.
-  * panics in the DHT and QUIC modules that only show up under heavy load.
+  3. Panics in the DHT and QUIC modules that only show up under heavy load.
 
 ## Actions
   
@@ -87,12 +87,12 @@ release on schedule, we can still maintain a 6 week release cadence.
 
 #### Patch Releases
 
-Given the rigidity and extensive testing in this release process, we need a way
+Given the increased structure and extensive testing in this release process, we need a way
 to quickly release fixes for critical regressions, should they arise. If we fix
 a critical regression in a go-ipfs release, we will create a _patch_ release for
 this regression based on the current stable release.
 
-This patch release will still undergo the release testing process but we expect
+This patch release will still undergo an abbreviated release testing process, but we expect
 it to take 2-3 days, rather than weeks:
 
 1. Less than a day for internal testing.
@@ -100,7 +100,7 @@ it to take 2-3 days, rather than weeks:
 
 Note: This release process _does not_ introduce long term support releases.
 Patches will only be applied to the latest release and will not be backported.
-Furthermore, the next feature release will likely include bug fixes not fixed in
+Furthermore, the next feature release will likely include additional bug fixes not deemed critical to fix in
 a patch release.
 
 #### Semver
@@ -115,7 +115,7 @@ This means:
 * Minor releases will no longer signal large breaking changes.
 * Patch releases will now be just that: patches on the previous stable release.
 
-As an historical tidbit, we've also held a somewhat foolish hope that 0.5.0
+As an historical tidbit, we've also held a somewhat romantic hope that 0.5.0
 would mark "beta". The next feature release, 0.5.0, will _not_ be beta.
 
 ### Process
@@ -141,7 +141,7 @@ We expect stages 1-3 to take a week each, on average.
 
 While we strive to keep master green, issues do occasionally slip through
 (usually due to faulty tests or unnoticed issues with CI). Before we even branch
-of a release, we expect master to be green.
+off a release, we expect master to be green.
 
 This is the stage where we branch off a release candidate.
 
@@ -152,13 +152,13 @@ IPFS team will test the release candidate against applications in the [IPFS
 Shipyard](https://github.com/ipfs-shipyard) and on a subset of the IPFS
 project's infrastructure (the bootstrappers and the gateways).
 
-This stage allows us to rapidly find, diagnose, and fix issues on hardware we
+This stage allows us to rapidly find, diagnose, and fix issues within a constrained sphere of
 control before asking the wider community to begin testing.
 
 #### Stage 2 - Community Dev Testing
 
 At this stage, we announce the impending release to the community and ask for
-beta testers. This stage exists to give IPFS some low-stakes testing on as many
+beta testers. This stage exists to give a new IPFS release candidate some low-stakes testing on as many
 environments as possible.
 
 This is also the first stage where we involve members of the early testers
@@ -198,10 +198,10 @@ XXX: Should we have an ipfs-announce mailing list?
 ## Where To Learn More
 
 If you're interested in seeing this release process in action, we trialed the
-_full_ (not patch) release process in the latest patch release (0.4.22):
+_full_ (not patch) release process for the latest patch release (0.4.22):
 [#6506](https://github.com/ipfs/go-ipfs/issues/6506).
 
-If you'd like to read out the official release process, you can find it in
+If you'd like to read through the official release process, you can find it in
 [docs/releases.md](https://github.com/ipfs/go-ipfs/blob/master/docs/releases.md).
 
 Finally, if you're using go-ipfs in production and would like to join the the
