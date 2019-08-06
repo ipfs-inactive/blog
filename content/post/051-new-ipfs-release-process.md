@@ -95,7 +95,7 @@ This program currently includes:
 ### Cycle
 
 Baring any feature freezes, go-ipfs will now cut a new release approximately
-every 6 weeks. Specifically, we will branch off a new release every 6 weeks and
+every 6 weeks. Specifically, we will aim to branch off a new release every 6 weeks and
 then run through the release process in an expected 3 weeks.
 
 If the release process runs under or over the expected 3 weeks, the next release
