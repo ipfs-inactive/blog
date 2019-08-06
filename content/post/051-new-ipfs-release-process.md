@@ -221,4 +221,4 @@ If you'd like to read through the official release process, you can find it in
 
 Finally, if you're using go-ipfs in production and would like to join the the
 Early Testers program, please read
-[docs/EARLY_TESTERS.md](https://github.com/ipfs/go-ipfs/blob/master/docs/EARLY_TESTERS.md).
+[docs/EARLY_TESTERS.md](https://github.com/ipfs/go-ipfs/blob/master/docs/EARLY_TESTERS.md) and submit a PR to join if interested.
