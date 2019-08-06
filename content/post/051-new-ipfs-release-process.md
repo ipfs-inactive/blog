@@ -11,9 +11,9 @@ author: Steven Allen, Alan Shaw, David Dias, Molly Mackinlay
 IPFS is growing and maturing. We're seeing many more users in our network and
 have recognised that we need to level up our release process to deliver a more
 stable product, on a predictable schedule. We're doing this because we shipped
-an unusual number of critical regressions in the last three releases. Rest
-assured that these have since been fixed. However, we don't want that to happen
-again, so we're putting safeguards in place to minimise the chances.
+an unusual number of critical regressions in the last three releases (since
+fixed). However, we don't want that to happen again, so we're putting safeguards
+in place to minimise the chances.
 
 Here's what happened:
 
