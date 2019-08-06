@@ -1,7 +1,7 @@
 ---
 date: 2019-07-30
 url: weekly-52
-translationKey: ipfs-weekly-51
+translationKey: ipfs-weekly-52
 tags: weekly
 title: IPFS Weekly 52
 author: Jenn Turner
