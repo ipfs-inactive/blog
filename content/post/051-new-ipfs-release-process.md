@@ -92,8 +92,6 @@ This program currently includes:
 - QRI
 - Siderus
 
-XXX: should get signoffs to make sure publishing this list in a blog post is fine.
-
 ### Cycle
 
 Baring any feature freezes, go-ipfs will now cut a new release approximately
@@ -211,8 +209,6 @@ We have several communication points in this process:
 * At stage 2, we will announce the release candidate on IRC/Matrix.
 * At stage 3, we will announce the release candidate on IRC/Matrix and Twitter for a wider audience.
 * At stage 4, we will continue to publish a blog post announcing the highlights in the release
-
-XXX: Should we have an ipfs-announce mailing list?
 
 ## Where To Learn More
 
