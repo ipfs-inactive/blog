@@ -36,15 +36,15 @@ We found two root causes:
    matching improvements to our testing practices. Several large refactors
    touching key but poorly tested subsystems landed this year.
 2. A significant increase in the network size and production demands on go-ipfs
-   without _any_ large-scale testing or network simulation infrastructure. In
+   without large-scale testing or network simulation infrastructure. In
    the past all production scale testing has been done by deploying a custom
    go-ipfs build to a bootstrapper or gateway and watching how it behaves.
    
-To address these concerns, we've put a halt to all non-bugfix go-ipfs releases
+To address these concerns, we've paused all non-bugfix go-ipfs releases
 as we improve our testing practices and build out our testing and network
 simulation infrastructure. We felt this measure necessary as testing tends to
 become a secondary concern in the face of new features and pressing performance
-issues.
+improvements.
 
 However, even with our current testing practices, these regressions should have
 been caught by pre-release testing. Furthermore, a better release process (e.g.
@@ -53,7 +53,7 @@ fixes for these regressions.
 
 Therefore, in addition to improving our testing, we're introducing a new release
 process to ensure that releases have been tested in as many environments as we
-can and that we can quickly release bug fixes without waiting an entire release
+can, and that we can quickly release bug fixes without waiting an entire release
 cycle.
 
 ## Release Process Changes
