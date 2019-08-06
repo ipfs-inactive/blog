@@ -85,12 +85,12 @@ release doesn't introduce any regressions into their systems.
 
 This program currently includes:
 
-- Infura
-- Textile
-- Pinata
-- RTrade
-- QRI
-- Siderus
+- [Infura](https://infura.io/)
+- [Textile](https://textile.io/)
+- [Pinata](https://pinata.cloud/)
+- [RTrade (Temporal)](https://temporal.cloud/)
+- [QRI](https://qri.io/)
+- [Siderus](https://siderus.io/)
 
 ### Cycle
 
