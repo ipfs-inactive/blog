@@ -80,7 +80,8 @@ in every release.
 Early testers will deploy release candidates to dev and prod environments,
 giving us quick feedback on any regressions or performance changes they notice.
 This means we can get some quick feedback from heavy users before we cut the
-official release.
+official release and these heavy users can work with us to make sure the new
+release doesn't introduce any regressions into their systems.
 
 This program currently includes:
 
