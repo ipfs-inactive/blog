@@ -155,7 +155,7 @@ If we merge any non-trivial fixes during the release process, we'll start over
 at stage 0 with a compressed release process for the stages that have already
 been completed once.
 
-We expect stages 1-3 to take a week each, on average.
+We expect stages 1-3 to take a week each, on average - suggesting a 3 week period between cutting and launching a new release.
 
 #### Stage 0 - Automated Testing
 
