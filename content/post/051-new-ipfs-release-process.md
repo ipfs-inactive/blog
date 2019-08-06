@@ -10,9 +10,8 @@ go-ipfs is introducing a new release cycle and process to ensure reliable releas
 
 ## Background
 
-The past three releases have had a few critical regressions, several of which
-would have been caught by better release testing and released faster with an
-improved release process.
+When reflecting on Q2, we noticed an unusual number of critical regressions
+(since fixed) introduced in the last three go-ipfs releases:
 
 * **go-ipfs 0.4.21** had two performance regressions in bitswap:
   1. A throughput regression that should have been caught by regression testing
@@ -32,9 +31,35 @@ improved release process.
     would have been caught by testing under production loads.
   3. Panics in the DHT and QUIC modules that only show up under heavy load.
 
-## Actions
+We found two root causes:
+
+1. An uptick in development pace with respect to previous quarters without
+   matching improvements to our testing practices. Several large refactors
+   touching key but poorly tested subsystems landed in Q2.
+2. A significant increase in the network size and production demands on go-ipfs
+   without _any_ large-scale testing or network simulation infrastructure. In
+   the past all production scale testing has been done by deploying a custom
+   go-ipfs build to a bootstrapper or gateway and watching how it behaves.
+   
+To address these concerns, we've put a halt to all non-bugfix go-ipfs releases
+as we improve our testing practices and build out our testing and network
+simulation infrastructure. We felt this measure necessary as testing tends to
+become a secondary concern in the face new features and pressing performance
+issues.
+
+However, even with our current testing practices, these regressions should have
+been caught by pre-release testing. Furthermore, a better release process (e.g.,
+the ability to cut patch releases) would have enabled us to quickly release
+fixes for these regressions.
+
+Therefore, in addition to improving our testing, we're introducing a new release
+process to ensure that releases have been tested in as many environments as we
+can and that we can quickly release bug fixes without waiting an entire release
+cycle.
+
+## Release Process
   
-To prevent this pattern from continuing, we've taken several actions:
+We've made three specific changes to the release process:
 
 1. To address the stability issues, we've introduced a new release process that
    involves extensively testing releases in a wide variety of production
@@ -45,12 +70,6 @@ To prevent this pattern from continuing, we've taken several actions:
    introduced patch releases. The first patch release will be 0.4.22 and the
    next _feature_ release will be 0.5.0.
    
-At the same time, we've introduced a feature release _freeze_ until we can
-finish building out our testing infrastructure (a topic for another blog post).
-
-XXX: Should we write that one first? It's awkward to say "we're introducing a
-new release cadence" and then just say "but we're not using it yet :p".
-
 ### Early Testers Program
 
 The early testers program allows groups using go-ipfs in production to
