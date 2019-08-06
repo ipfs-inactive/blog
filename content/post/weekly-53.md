@@ -28,7 +28,7 @@ Did you know that not every lesson in ProtoSchool includes a coding challenge? P
 As the author of a tutorial, you can now present the learner with a multiple-choice quiz after she reads the text of your lesson, adding some interactivity and a chance to check comprehension before moving on to the next topic. Learn more about [building ProtoSchool tutorials](https://proto.school/#/build).
 
 ### Learn about Supporting Web Archiving via Web Packaging in the 2019-07-29 IPFS Weekly Call
-Last week during the IPFS Weekly Call, Sawood Alam was onhand to give a fantastic presentation on Web Packaging and how it can support web archiving. [Check it out!](https://www.youtube.com/watch?v=u57MerV0PJM)
+Last week during the IPFS Weekly Call, Sawood Alam was on hand to give a fantastic presentation on Web Packaging and how it can support web archiving. [Check it out!](https://www.youtube.com/watch?v=u57MerV0PJM)
 
 
 ## IPFS in the wild
@@ -37,7 +37,7 @@ Last week during the IPFS Weekly Call, Sawood Alam was onhand to give a fantasti
 + [Peergos - fast seeking and encrypted history](https://peergos.org/blog#fast_seeking_and_encrypted_history_), 1 August 2019
 + [The Gnosis Monthly Development Update](https://blog.gnosis.pm/august-2019-the-gnosis-monthly-development-update-6c9be6fb7610), 1 August 2019
 + [Ethereum Grid 1.5.0 Release Announcement](https://medium.com/ethereum-grid/ethereum-grid-1-5-0-release-announcement-993c7047560a), 1 August 2019
-+ [The first Redecentralize Digest is out now!](https://redecentralize.org/redigest/2019/07), 31 July 2019
++ [The first Redecentralize Digest is out now!](https://redecentralize.org/redigest/2019/07) 31 July 2019
 + [Accessing Temporal’s I2P IPFS Infrastructure](https://medium.com/temporal-cloud/accessing-temporals-i2p-ipfs-infrastructure-7d9c90204dd7), 31 July 2019
 + [Modern Tech Problems and Web 3.0 Solutions](https://medium.com/temporal-cloud/modern-tech-problems-and-web-3-0-solutions-enter-ipfs-30ce5d3e9a45), Temporal, 31 July 2019
 + [New tools and a new look for textile.io](https://blog.textile.io/a-tools-and-a-new-look-for-textile-io/), 30 July 2019
@@ -49,8 +49,8 @@ Last week during the IPFS Weekly Call, Sawood Alam was onhand to give a fantasti
 + [Senior Backend Engineer](https://www.golangprojects.com/golang-go-job-dcr-Senior-Backend-Engineer-Berlin-MXC-Foundation-gGmbH.html), MXC Foundation gGmbH, Berlin, Germany
 + [Senior Golang Engineer](https://www.golangprojects.com/golang-go-job-def-Senior-Golang-Engineer-Remote-Textile.html), Textile, Remote
 + [Distributed Systems Technical Lead, IPFS](https://jobs.lever.co/protocol/9283f9b0-de64-4e1f-a221-5d02b0202198), Protocol Labs, Remote
-+ [IPFS Documentation & Technical Content Strategist,](https://jobs.lever.co/protocol/e7db2c84-afd7-44a4-9a27-449c751d8289) Protocol Labs, Remote
-+ [UI/UX Designer,](https://www.linkedin.com/jobs/view/1335924519/) Qri, Brooklyn, New York (US)
++ [IPFS Documentation & Technical Content Strategist](https://jobs.lever.co/protocol/e7db2c84-afd7-44a4-9a27-449c751d8289), Protocol Labs, Remote
++ [UI/UX Designer](https://www.linkedin.com/jobs/view/1335924519/), Qri, Brooklyn, New York (US)
 
 
 ## Updates and new releases
