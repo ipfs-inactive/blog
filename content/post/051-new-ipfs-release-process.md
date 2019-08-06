@@ -99,7 +99,7 @@ every 6 weeks. Specifically, we will branch off a new release every 6 weeks and
 then run through the release process in an expected 3 weeks.
 
 If the release process runs under or over the expected 3 weeks, the next release
-will be branched at the 6th week mark, regardless. That way, even if we don't
+will aim to branch at the 6 week mark, regardless. That way, even if we don't
 release on schedule, we can still maintain a 6 week release cadence.
 
 #### Patch Releases
