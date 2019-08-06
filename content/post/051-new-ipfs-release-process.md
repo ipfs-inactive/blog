@@ -12,16 +12,6 @@ author: Steven Allen, Alan Shaw, David Dias, Molly Mackinlay
 When reflecting on this year so far, we noticed an unusual number of critical
 regressions (since fixed) introduced in the last three go-ipfs releases:
 
-* **go-ipfs 0.4.21** had two performance regressions in bitswap:
-  1. A throughput regression that should have been caught by regression testing
-    (now tested) but almost certainly would have been noticed by downstream
-    users given a longer release-testing process.
-  2. A CPU utilization regression that only shows up with >10000 peers. Something
-    that only really shows up in certain production systems under heavy load.
-* **go-ipfs 0.4.20** had a regression where adding multiple independent files in the same
-  add command didn't work ([#6254](https://github.com/ipfs/go-ipfs/pull/6255)).
-  A regression test has since been added, but this _also_ would have been caught
-  with better cross-application testing.
 * **go-ipfs 0.4.19** had multiple regressions:
   1. A regression in the docker container (introduced by
     [#6040](https://github.com/ipfs/go-ipfs/pull/6040)) that would have been
@@ -29,6 +19,16 @@ regressions (since fixed) introduced in the last three go-ipfs releases:
   2. A CPU utilization regression in bitswap only seen under very high load. This
     would have been caught by testing under production loads.
   3. Panics in the DHT and QUIC modules that only show up under heavy load.
+* **go-ipfs 0.4.20** had a regression where adding multiple independent files in the same
+  add command didn't work ([#6254](https://github.com/ipfs/go-ipfs/pull/6255)).
+  A regression test has since been added, but this _also_ would have been caught
+  with better cross-application testing.
+* **go-ipfs 0.4.21** had two performance regressions in bitswap:
+  1. A throughput regression that should have been caught by regression testing
+    (now tested) but almost certainly would have been noticed by downstream
+    users given a longer release-testing process.
+  2. A CPU utilization regression that only shows up with >10000 peers. Something
+    that only really shows up in certain production systems under heavy load.
 
 We found two root causes:
 
