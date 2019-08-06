@@ -59,9 +59,9 @@ Last week during the IPFS Weekly Call, Sawood Alam was on hand to give a fantast
 ### COMING SOON: ⚡️js-ipfs v0.37.0 🚀 
 [This next release for js-ipfs](https://github.com/ipfs/js-ipfs/issues/2192) includes a new constructor, support for DNSLink IPNS name resolution, delegated peer and content routing, and more! 
 
++ [Haven has landed](https://gethaven.app/blog/haven-has-landed-download-now-for-ios-and-android/) –  The first full-featured mobile app for OpenBazaar (proudly powered by IPFS!) is now available. Shop, chat and send cryptocurrencies privately from wherever you are with your iOS or Android device.
 + [Peergos v0.1.0](https://alpha.peergos.net/public/peergos/releases/v0.1.0/) - Fast seeking, encrypted history, and space usage display
 + Textile has a [new blog](https://blog.textile.io/), a [new forum](https://community.textile.io/) and a [new website](https://textile.io/)!
-+ [Haven has landed](https://gethaven.app/blog/haven-has-landed-download-now-for-ios-and-android/) – Download now for iOS and Android. Snoop-free shopping, next-level private messaging, bypass the banks and more!
 
 
 ## IPFS in progress
