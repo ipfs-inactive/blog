@@ -74,7 +74,7 @@ Gossipsub is integrated into the existing [`libp2p.pubsub` API](https://github.c
 
 # ❤️ Huge thank you to everyone that made this release possible
 
-In alphabetical order, here are all the humans that contributed to the release:
+In alphabetical order, here are the 38 humans that made 429 contributions to this release:
 
 * [Abraham Elmahrek](https://github.com/generalpiston) (1 PR, 1 issue, 2 comments)
 * [Alan Shaw](https://github.com/alanshaw) (1 PR, 6 reviews, 5 comments)
