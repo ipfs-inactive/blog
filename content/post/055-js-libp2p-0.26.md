@@ -10,10 +10,12 @@ author: Jacob Heun
 # 🔦 Highlights
 
 ## 🗣 Gossipsub
-Thanks to the awesome work of the [ChainSafe](https://github.com/ChainSafe) team, [Gossipsub](https://github.com/ChainSafe/gossipsub-js) is here! If you are using Pubsub you can now switch to using Gossipsub instead of Floodsub. Have old peers you need to flood stuff to? Don't worry, Gossipsub will automatically fallback to Floodsub for peers that don't support it. See the API Changes section below for how to migrate your config over to using Gossipsub.
+Thanks to the awesome work of the [ChainSafe](https://github.com/ChainSafe) team, [Gossipsub](https://github.com/ChainSafe/gossipsub-js) is here! Gossipsub is a much more efficient pubsub router than Floodsub. Intead of broadcasting to all of its peers, it broadcasts to a controlled subset of peers. To learn more about how Gossipsub works and where it differs from Floodsub, check out the [Spec](https://github.com/libp2p/specs/tree/master/pubsub/gossipsub).
+
+If you are using Pubsub you can now switch to using Gossipsub instead of Floodsub. Have old peers you need to flood stuff to? Don't worry, Gossipsub will automatically fallback to Floodsub for peers that don't support it. See the API Changes section below for how to migrate your config over to using Gossipsub.
 
 ## 🚉 Promisify
-As we migrate to async/await we are promisifying the Libp2p public methods. Several lower level libraries are currently leveraging libp2p for testing. Their transition to full async/await will be greatly helped by promisifying the libp2p api. Once the async/await changes are propagated up, we will remove Promisify in a future update, along with callback support, as libp2p will have full async/await support at that time. See the API Changes below to check out the Breaking Changes.
+As we migrate to [async/await](https://github.com/ipfs/js-ipfs/issues/1670) we are promisifying the Libp2p public methods. Several lower level libraries are currently leveraging libp2p for testing. Their transition to full async/await will be greatly helped by promisifying the libp2p API. Once the async/await changes are propagated up, we will remove Promisify in a future update, along with callback support, as libp2p will have full async/await support at that time. See the API Changes below to check out the Breaking Changes.
 
 # 🏗 API Changes
 
@@ -36,7 +38,7 @@ const libp2p = new Libp2p({
 
 #### Pubsub
 
-**Subscribe**: To comply with the pubsub interface, the order of params for `libp2p.pubsub.subscribe` have been reordered. They were previously `topic, options, handler, callback`, and are now `topic, handler, options, callback`. If your implementation does not use `options` you should be able to ignore this change.
+**Subscribe**: To comply with the [pubsub interface](https://github.com/ipfs/interface-js-ipfs-core/blob/v0.109.1/SPEC/PUBSUB.md), the order of params for `libp2p.pubsub.subscribe` have been reordered. They were previously `topic, options, handler, callback`, and are now `topic, handler, options, callback`. If your implementation does not use `options` you should be able to ignore this change.
 
 **Config**: Pubsub was previously enabled via the `EXPERIMENTAL` config. You must now specify your pubsub implementation (Gossipsub or Floodsub), and enable/disable it via it's own configuration. Setting pubsub will automatically enable it. You can disable it by explicitly setting enabled to false in the configuration .
 
@@ -68,7 +70,7 @@ await libp2p.start()
 
 ## Gossipsub
 
-The Gossipsub API is integrated into the existing `libp2p.pubsub` api. Once Gossipsub has been supplied as your pubsub implementation, you will be able to use it just as Floodsub was previously used. See the section above for pubsub configuration changes.
+Gossipsub is integrated into the existing [`libp2p.pubsub` API](https://github.com/ipfs/interface-js-ipfs-core/blob/v0.109.1/SPEC/PUBSUB.md). Once Gossipsub has been supplied as your pubsub implementation, you will be able to use it just as Floodsub was previously used. See the section above for pubsub configuration changes.
 
 # ❤️ Huge thank you to everyone that made this release possible
 
