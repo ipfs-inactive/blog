@@ -5,15 +5,15 @@ title: go-ipfs 0.4.22 released
 author: Steven Allen
 ---
 
-We're releasing a PATCH release of go-ipfs based on 0.4.21 containing some critical fixes.
+**We've released a PATCH version of go-ipfs based on 0.4.21 containing some critical fixes.**
 
-The IPFS network has scaled to the point where small changes can have a wide-reaching impact on the entire network. To keep this situation from escalating, we've put a hold on releasing new features until we can improve our [release process](https://github.com/ipfs/go-ipfs/pull/6482) (which we will be trialing in this release) and [testing procedures](https://github.com/ipfs/go-ipfs/issues/6483).
+The IPFS network has scaled to the point where small changes can have a wide-reaching impact on the entire network. To keep this situation from escalating, we've put a hold on releasing new features until we can improve our [release process](https://github.com/ipfs/go-ipfs/pull/6482) (which we've trialed in this release) and [testing procedures](https://github.com/ipfs/go-ipfs/issues/6483).
 
 This release includes fixes for the following regressions:
 
 1. A major bitswap throughput regression introduced in 0.4.21 ([ipfs/go-ipfs#6442](https://github.com/ipfs/go-ipfs/issues/6442)).
-2. High bitswap CPU usage when connected to many (e.g., 10,000) peers. See [ipfs/go-bitswap#154](https://github.com/ipfs/go-bitswap/issues/154).
-2. The local network discovery service sometimes initializing before the networking module, causing it to announce the wrong addresses and sometimes complain about not being able to determine the IP address ([ipfs/go-ipfs#6415](https://github.com/ipfs/go-ipfs/pull/6415)).
+2. High bitswap CPU usage when connected to many (e.g. 10,000) peers. See [ipfs/go-bitswap#154](https://github.com/ipfs/go-bitswap/issues/154).
+2. The local network discovery service sometimes initializes before the networking module, causing it to announce the wrong addresses and sometimes complain about not being able to determine the IP address ([ipfs/go-ipfs#6415](https://github.com/ipfs/go-ipfs/pull/6415)).
 
 It also includes fixes for:
 
@@ -25,9 +25,9 @@ It also includes fixes for:
 
 Thanks to:
 
-* @hannahhoward for fixing both bitswap issues.
-* @sanderpick for catching and fixing the local discovery bug.
-* @campoy for fixing the build issue.
+* [@hannahhoward](https://github.com/hannahhoward) for fixing both bitswap issues.
+* [@sanderpick](https://github.com/sanderpick) for catching and fixing the local discovery bug.
+* [@campoy](https://github.com/campoy) for fixing the build issue.
 
 # ❤️ Contributors
 
@@ -37,7 +37,7 @@ Would you like to contribute to the IPFS project and don't know how? Well, there
 - Join an IPFS All Hands, introduce yourself and let us know where you would like to contribute - https://github.com/ipfs/team-mgmt/#weekly-ipfs-all-hands
 - Hack with IPFS and show us what you made! The All Hands call is also the perfect venue for demos, join in and show us what you built
 - Join the discussion at [discuss.ipfs.io](https://discuss.ipfs.io/) and help users finding their answers.
-- Join the [Go Core Dev Team Weekly Sync](https://github.com/ipfs/team-mgmt/issues/650) and be part of the Sprint action!
+- Join the [🚀 IPFS Core Implementations Weekly Sync 🛰](https://github.com/ipfs/team-mgmt/issues/992) and be part of the action!
 
 # ⁉️ Do you have questions?
 
