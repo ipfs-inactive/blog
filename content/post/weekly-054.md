@@ -37,13 +37,13 @@ Created by @olizilla, [ipfs-cohost](https://github.com/olizilla/ipfs-cohost#ipfs
 + [IPFS Production Configuration](https://medium.com/coinmonks/ipfs-production-configuration-57121f0daab2), Coinmonks, 9 August 2019
 + [Applications on Peergos](https://peergos.org/blog#applications_on_peergos_august_2019_), Peergos, 9 August 2019
 + [libp2p devgrants](https://github.com/libp2p/devgrants): A meeting point between co-funders (Protocol Labs, Ethereum, Polkadot, others) and aspiring grantees to openly discuss, scope and spec projects to be incentivised. 8 August 2019
-+ [Kenya Blockchain & AI Taskforce Report on IPFS](https://medium.com/@bitsoko/kenya-blockchain-ai-taskforce-report-on-ipfs-3361eb8c8e41), Bits Wallet, 8 Augsut 2019
++ [Kenya Blockchain & AI Taskforce Report on IPFS](https://medium.com/@bitsoko/kenya-blockchain-ai-taskforce-report-on-ipfs-3361eb8c8e41), Bits Wallet, 8 August 2019
 + [My IPFS Hosting Setup](https://coolvibe.org/posts/my-ipfs-hosting-setup-hugo/), Emiel Kollof, 8 August 2019
 + [Technologies Defining the Next Generation of the Web](https://medium.com/temporal-cloud/technologies-defining-the-next-generation-of-the-web-a0d0f053629f), Temporal, 8 August 2019
-+ [How To Get Started With IPFS and Node](https://medium.com/better-programming/how-to-get-started-with-ipfs-and-node-fa04baec6b3a), BetterProgramming, 7 August, 2019
++ [How To Get Started With IPFS and Node](https://medium.com/better-programming/how-to-get-started-with-ipfs-and-node-fa04baec6b3a), BetterProgramming, 7 August 2019
 + [RTrade Announces CEO & CTO to Deliver ‘Dawn of the Distributed Internet’ Speech at Futurist 2019 Toronto](https://medium.com/rtrade-technologies/rtrade-announces-ceo-cto-to-deliver-dawn-of-the-distributed-internet-speech-at-futurist-2019-b39fcdc94e11), 7 August 2019
 + [What is Web3? (Transcript)](https://medium.com/@onion797jp/what-is-web3-transcript-7e867e96ddb1), Juan Benet at Web3 Summit 2018, translated into Japanese, 28 July 2019
-+ #tbt [IPFS 👽 and Merkle Forest🌳](https://hackernoon.com/ipfs-and-merkle-forest-a6b7f15f3537), Hackernoon, 14 April 2018
++ _#tbt_ [IPFS 👽 and Merkle Forest🌳](https://hackernoon.com/ipfs-and-merkle-forest-a6b7f15f3537), Hackernoon, 14 April 2018
 
 
 ## Open Positions working on IPFS
@@ -60,7 +60,7 @@ Created by @olizilla, [ipfs-cohost](https://github.com/olizilla/ipfs-cohost#ipfs
 ## Updates and new releases
 *See the latest releases of IPFS tools and projects across the ecosystem.*
 
-+ [IPFS Laravel Library](https://gitlab.com/andach/ipfs-laravel): a simple library to access IPFS services in Laravel. It works via use of the HTTP API to give simple access to IPFS functions including navigating content, retreiving pictures and files, and adding text and files to the IPFS network.
++ [IPFS Laravel Library](https://gitlab.com/andach/ipfs-laravel): a simple library to access IPFS services in Laravel. It works via use of the HTTP API to give simple access to IPFS functions including navigating content, retrieving pictures and files, and adding text and files to the IPFS network.
 + [Peergos v0.1.1](https://alpha.peergos.net/public/peergos/releases/v0.1.1) - including PDF viewer and text/code editor
 
 
@@ -80,7 +80,7 @@ Created by @olizilla, [ipfs-cohost](https://github.com/olizilla/ipfs-cohost#ipfs
 *Did you know IPFS has a community forum at [discuss.ipfs.io](https://discuss.ipfs.io/)? Sign up to participate in discussions about coding, tutorials, see announcements and learn about upcoming community events.*
 
 + **14 August 2019:** Join [Women Who Code Cloud](https://www.womenwhocode.com/cloud/events) for an [Introduction to IPFS](https://zoom.us/webinar/register/WN_jnKnkxjJR3OOxf3kPa7Xfg) inspiring women to excel in technology careers. Remote event.
-+ **16 August 2019:** [Blockchain, Cryptocurrencies & IPFS](https://www.meetup.com/Blockchain-Cryptocurrencies-Interplanetary-File-System/events/vldkqqyzlbfc/): As usual we will discuss the latest events that are changing and shaping the world Crypto and WEB 3.0, a decentrialized everything. San Diego, CA (US). 
++ **16 August 2019:** [Blockchain, Cryptocurrencies & IPFS](https://www.meetup.com/Blockchain-Cryptocurrencies-Interplanetary-File-System/events/vldkqqyzlbfc/): As usual we will discuss the latest events that are changing and shaping the world Crypto and WEB 3.0, a decentralized everything. San Diego, CA (US). 
 + **21-23 August 2019:** [DappCon Berlin](https://www.dappcon.io/): A global developer conference for Ethereum Dapps, Infrastructure, and token engineering, Berlin Germany.
 + **22 August 2019:** ProtoSchool Seattle is hosting an 
 [August Decentralized Web Meetup](https://www.meetup.com/ProtoSchool-Seattle-Learn-to-Make-the-Decentralized-Web/events/262328555/), details TBA! Seattle, WA (US).
