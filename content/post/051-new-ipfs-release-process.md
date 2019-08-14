@@ -12,18 +12,18 @@ IPFS is growing and maturing. We're seeing many more users in our network and
 have recognised that we need to level up our release process to deliver a more
 stable product, on a predictable schedule. We're doing this because we shipped
 an unusual number of critical regressions in the last three releases (since
-fixed). However, we don't want that to happen again, so we're putting safeguards
-in place to minimise the chances.
+fixed). We don't want that to happen again, so we're putting safeguards
+in place to maximisze our chances of catching a regression before it reaches production.
 
 Here's what happened:
 
-* **go-ipfs 0.4.19** had multiple regressions:
+* **go-ipfs 0.4.19** had multiple regressions when used under heavy load:
   1. A regression in the docker container (introduced by
     [#6040](https://github.com/ipfs/go-ipfs/pull/6040)) that would have been
     caught by testing the go-ipfs docker image in more production environments.
   2. A CPU utilization regression in bitswap only seen under very high load. This
     would have been caught by testing under production loads.
-  3. Panics in the DHT and QUIC modules that only show up under heavy load.
+  3. Panics in the DHT and QUIC modules that only showed up under heavy load.
 * **go-ipfs 0.4.20** had a regression where adding multiple independent files in the same
   add command didn't work ([#6254](https://github.com/ipfs/go-ipfs/pull/6255)).
   A regression test has since been added, but this _also_ would have been caught
@@ -47,19 +47,19 @@ We found two root causes:
    
 To address these concerns, we've paused all non-bugfix go-ipfs releases
 as we improve our testing practices and build out our testing and network
-simulation infrastructure. We felt this measure necessary as testing tends to
+simulation infrastructure. This is important to ensure improved testing doesn't
 become a secondary concern in the face of new features and pressing performance
 improvements.
 
 However, even with our current testing practices, these regressions should have
-been caught by pre-release testing. Furthermore, a better release process (e.g.
-the ability to cut patch releases) would have enabled us to quickly release
-fixes for these regressions and would have enabled our users to quickly deploy
-these fixes without worrying about the potential impact of other unrelated
+been caught by rigorous pre-release testing. A better release process (e.g.
+the ability to cut patch releases) would also have enabled us to quickly release
+fixes for these regressions, and would have enabled our users to quickly deploy
+these fixes without worrying about the potential impact of additional unrelated
 changes.
 
 Therefore, in addition to improving our testing, we're introducing a new release
-process to ensure that releases have been tested in as many environments as we
+process (🙏🙌🎉) to ensure that releases have been tested in as many environments as we
 can, and that we can quickly release bug fixes without waiting an entire release
 cycle.
 
@@ -69,84 +69,15 @@ We've made three specific changes to the release process:
 
 1. To address the stability issues, we've introduced a new release process that
    involves extensively testing releases in a wide variety of production
-   environments.
+   environments - including with [early testers](https://github.com/ipfs/go-ipfs/blob/master/docs/EARLY_TESTERS.md).
 2. To address the issue of slow releases, we've introduced a 6 week release
    cycle.
 3. To address the issue of slow bug fixes, we've switched to semver and
    introduced patch releases. The first patch release will be 0.4.22 and the
    next _feature_ release will be 0.5.0.
-   
-### Early Testers Program
 
-We're introducing an early testers program that allows groups using go-ipfs in production to
-self-volunteer to help with testing `go-ipfs` release candidates in development
-and production environments. While we invite the _entire_ community to help test
-releases, members of the early testers program participate directly and actively
-in every release.
 
-Early testers will deploy release candidates to dev and prod environments,
-giving us quick feedback on any regressions or performance changes they notice.
-This means we can get some quick feedback from heavy users before we cut the
-official release and these heavy users can work with us to make sure the new
-release doesn't introduce any regressions into their systems.
-
-This program currently includes:
-
-- [Infura](https://infura.io/)
-- [Textile](https://textile.io/)
-- [Pinata](https://pinata.cloud/)
-- [RTrade (Temporal)](https://temporal.cloud/)
-- [QRI](https://qri.io/)
-- [Siderus](https://siderus.io/)
-
-### Cycle
-
-Baring any feature freezes, go-ipfs will now cut a new release approximately
-every 6 weeks. Specifically, we will aim to branch off a new release every 6 weeks and
-then run through the release process in an expected 3 weeks.
-
-If the release process runs under or over the expected 3 weeks, the next release
-will aim to branch at the 6 week mark, regardless. That way, even if we don't
-release on schedule, we can still maintain a 6 week release cadence.
-
-#### Patch Releases
-
-Given the increased structure and extensive testing in this release process, we need a way
-to quickly release fixes for critical regressions, should they arise. If we fix
-a critical regression in a go-ipfs release, we will create a _patch_ release for
-this regression based on the current stable release.
-
-This patch release will still undergo an abbreviated release testing process, but we expect
-it to take 2-3 days, rather than weeks:
-
-1. Less than a day for internal testing.
-2. 1-2 days for production testing by members of the early testers program.
-
-Note: This release process _does not_ introduce long term support releases.
-Patches will only be applied to the latest release and will not be backported.
-Furthermore, the next feature release will likely include additional bug fixes not deemed critical to fix in
-a patch release.
-
-#### Semver
-
-This release process finally switches go-ipfs over to
-[semver](https://semver.org/). Like many pre-1.0 project, go-ipfs has reserved
-MINOR releases for large breaking changes or significant milestones. However,
-this means we can't distinguish between true patch releases (bug fixes applied
-to the previous release) and feature releases (minor releases).
-
-This means that until go-ipfs reaches 1.0:
-
-* Minor releases will no longer signal significant milestones or large breaking
-  changes. Instead, minor releases will be normal feature releases.
-* Patch releases will now be just that: patches on the previous stable release.
-
-As an historical tidbit, we held a somewhat romantic hope that 0.5.0
-would mark feature completeness ("beta") and that the next non-patch release
-after that would be 1.0. However, the next feature release, 0.5.0, does not mean
-anything special, and will not be a major milestone.
-
-### Process
+### New Release Process
 
 The new release process includes 5 stages:
 
@@ -165,6 +96,8 @@ at stage 0 with a compressed release process for the stages that have already
 been completed once.
 
 We expect stages 1-3 to take a week each, on average - suggesting a 3 week period between cutting and launching a new release.
+
+![go-ipfs-release-process-illustration](https://user-images.githubusercontent.com/618519/62986422-653fee00-bdf0-11e9-8f61-197117b61da2.png)
 
 #### Stage 0 - Automated Testing
 
@@ -208,6 +141,76 @@ roll back changes and fix any issues that might arise before the final release.
 
 At stage 4, we make sure all the documentation has been updated, cut the final
 release, and announce it to the community.
+
+### Early Testers Program
+
+We're introducing an early testers program that allows groups using go-ipfs in production to
+self-volunteer to help with testing `go-ipfs` release candidates in development
+and production environments. While we invite the _entire_ community to help test
+releases, members of the early testers program participate directly and actively
+in every release.
+
+Early testers will deploy release candidates to dev and prod environments,
+giving us quick feedback on any regressions or performance changes they notice.
+This means we can get some quick feedback from heavy users before we cut the
+official release and these heavy users can work with us to make sure the new
+release doesn't introduce any regressions into their systems.
+
+This program currently includes:
+
+- [Infura](https://infura.io/)
+- [Textile](https://textile.io/)
+- [Pinata](https://pinata.cloud/)
+- [RTrade (Temporal)](https://temporal.cloud/)
+- [QRI](https://qri.io/)
+- [Siderus](https://siderus.io/)
+
+### Release Cycle
+
+Baring any feature freezes, go-ipfs will now cut a new release approximately
+every 6 weeks. Specifically, we will aim to branch off a new release every 6 weeks and
+then run through the release process in an expected 3 weeks.
+
+If the release process runs under or over the expected 3 weeks, the next release
+will aim to branch at the 6 week mark, regardless. That way, even if we don't
+release on schedule, we can still maintain a 6 week release cadence.
+
+### Patch Releases
+
+Given the increased structure and extensive testing in this release process, we need a way
+to quickly release fixes for critical regressions, should they arise. If we fix
+a critical regression in a go-ipfs release, we will create a _patch_ release for
+this regression based on the current stable release.
+
+This patch release will still undergo an abbreviated release testing process, but we expect
+it to take 2-3 days, rather than weeks:
+
+1. Less than a day for internal testing.
+2. 1-2 days for production testing by members of the early testers program.
+
+Note: This release process _does not_ introduce long term support releases.
+Patches will only be applied to the latest release and will not be backported.
+Furthermore, the next feature release will likely include additional bug fixes not deemed critical to fix in
+a patch release.
+
+### Semver
+
+This release process finally switches go-ipfs over to
+[semver](https://semver.org/). Like many pre-1.0 project, go-ipfs has reserved
+MINOR releases for large breaking changes or significant milestones. However,
+this means we can't distinguish between true patch releases (bug fixes applied
+to the previous release) and feature releases (minor releases).
+
+This means that until go-ipfs reaches 1.0:
+
+* Minor releases will no longer signal significant milestones or large breaking
+  changes. Instead, minor releases will be normal feature releases.
+* Patch releases will now be just that: patches on the previous stable release.
+
+As an historical tidbit, we held a somewhat romantic hope that 0.5.0
+would mark feature completeness ("beta") and that the next non-patch release
+after that would be 1.0. However, the next feature release, 0.5.0, does not mean
+anything special, and will not be a major milestone.
 
 ## Communication
 
