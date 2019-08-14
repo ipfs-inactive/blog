@@ -8,6 +8,8 @@ author: Steven Allen, Alan Shaw, David Dias, Molly Mackinlay
 
 **go-ipfs is introducing a new release cycle and process to ensure more reliable and frequent releases!**
 
+![go-ipfs-release-process-illustration](https://user-images.githubusercontent.com/618519/62986422-653fee00-bdf0-11e9-8f61-197117b61da2.png)
+
 IPFS is growing and maturing. We're seeing many more users in our network and
 have recognised the need to level up our release process to deliver a more
 production-ready product, on a regular schedule. We're doing this because we shipped
@@ -96,8 +98,6 @@ at stage 0 with a compressed release process for the stages that have already
 been completed once.
 
 We expect stages 1-3 to take a week each, on average - suggesting a 3 week period between cutting and launching a new release.
-
-![go-ipfs-release-process-illustration](https://user-images.githubusercontent.com/618519/62986422-653fee00-bdf0-11e9-8f61-197117b61da2.png)
 
 #### Stage 0 - Automated Testing
 
