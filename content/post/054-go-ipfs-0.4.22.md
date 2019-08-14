@@ -20,7 +20,7 @@ This release includes fixes for the following regressions:
 It also includes fixes for:
 
 1. Pins not being persisted after `ipfs block add --pin` ([ipfs/go-ipfs#6441](https://github.com/ipfs/go-ipfs/pull/6441)).
-2. Concurrent map access on GC due to the pinner ([ipfs/go-ipfs#6419](https://github.com/ipfs/go-ipfs/pull/6419)).
+2. Panic due to concurrent map access when adding and listing pins at the same time ([ipfs/go-ipfs#6419](https://github.com/ipfs/go-ipfs/pull/6419)).
 3. Potential pin-set corruption given a concurrent `ipfs repo gc` and `ipfs pin rm` ([ipfs/go-ipfs#6444](https://github.com/ipfs/go-ipfs/pull/6444)).
 4. Build failure due to a deleted git tag in one of our dependencies ([ipfs/go-ds-badger#64](https://github.com/ipfs/go-ds-badger/pull/65)).
 
