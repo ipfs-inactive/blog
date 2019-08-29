@@ -19,7 +19,7 @@ This was made possible by the experimentation done in a [“lite” http client]
 
 I originally demoed it in the lite client here: https://www.youtube.com/watch?v=NZb6ybkAYWs
 
-The lite client has been a great proving ground for ensuring the “hard parts” of the API are now possible using browser native APIs and I’ll be applying more the learnings from there to the regular http client in the near future which should hopefully result in a smaller bundle size as well as more cool new features like this one.
+The lite client has been a great proving ground for ensuring the “hard parts” of the API are now possible using browser native APIs. I’ll be applying more of the learnings from there to the regular http client in the near future, which should hopefully result in a smaller bundle size, as well as more cool new features like this one.
 
 Version 34 of `ipfs-http-client` is out now! https://www.npmjs.com/package/ipfs-http-client/v/34.0.0
 
