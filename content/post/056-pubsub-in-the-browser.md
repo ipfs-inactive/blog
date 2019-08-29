@@ -15,7 +15,7 @@ There’s also a brand new example application that you can play with showing ho
 
 ![Screenshot of PubSub in the browser example app](/056-pubsub-in-the-browser/demo-screenshot.png)
 
-This was made possible by the experimentation done in a [“lite” http client](https://github.com/ipfs-shipyard/js-ipfs-http-client-lite) I was working on, which was originally meant to be just really really small (it’s currently ~13kb gzipped vs ~200kb for the regular client). To make it small we needed to switch to using the fetch API but I soon realised that this opened up a bunch of opportunities like enabling pubsub in addition to just being really small (we get easily cancelable requests, request timeouts, custom fetch implementations and a switch to async/await and async iterators).
+This was made possible by the experimentation done in a [“lite” http client](https://github.com/ipfs-shipyard/js-ipfs-http-client-lite) I was working on, which was originally meant to be just really really small (it’s currently ~13kb gzipped vs ~200kb for the regular client). To make it small we needed to switch to using the fetch API but I soon realized that this opened up a bunch of other opportunities, like enabling pubsub. We also get easily cancelable requests, request timeouts, custom fetch implementations and a switch to async/await and async iterators.
 
 I originally demoed it in the lite client here: https://www.youtube.com/watch?v=NZb6ybkAYWs
 
