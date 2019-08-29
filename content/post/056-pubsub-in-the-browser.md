@@ -7,7 +7,7 @@ author: Alan Shaw
 
 > EXCELLENT NEWS! You can now pubsub with the JS IPFS HTTP API client in the BROWSER!
 
-Due to [boring technical reasons](https://github.com/ipfs/js-ipfs-http-client/issues/518) it’s previously not been possible to support [pubsub](https://en.wikipedia.org/wiki/Publish%E2%80%93subscribe_pattern) over the [HTTP API](https://docs.ipfs.io/reference/api/http/) in the browser but since the [fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) now supports cancelation (and has done for a while) it’s now possible! Hooray \o/
+Due to [boring technical reasons](https://github.com/ipfs/js-ipfs-http-client/issues/518) it’s previously not been possible to support [pubsub](https://en.wikipedia.org/wiki/Publish%E2%80%93subscribe_pattern) over the [HTTP API](https://docs.ipfs.io/reference/api/http/) in the browser. Now that the [fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) supports cancelation, and has done so for a while, pubsub support has arrived! Hooray \o/
 
 There’s also a brand new example application that you can play with showing how to use pubsub in the browser:
 
