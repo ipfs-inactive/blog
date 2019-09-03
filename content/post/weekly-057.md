@@ -11,7 +11,7 @@ author: Jenn Turner
 
 The [InterPlanetary File System (IPFS)](https://ipfs.io/) is a new hypermedia distribution protocol, addressed by content and identity. IPFS enables the creation of completely distributed applications. It aims to make the web faster, safer, and more open. Since that’s a pretty large scope, we track development across the ecosystem in this weekly dispatch.
 
-Looking to get involved? Click on some of the links below, see what we’re up to on [GitHub](https://github.com/ipfs), or join us on [IRC](https://riot.im/app/#/room/#ipfs:matrix.org).
+Looking to get involved? Click on some of the links below, see what we’re up to on [GitHub](https://github.com/ipfs), or join us in [chat](https://riot.im/app/#/room/#ipfs:matrix.org).
  
 Want this update in your inbox? [Subscribe to our weekly newsletter!](https://tinyletter.com/ipfsnewsletter)
 
@@ -65,7 +65,6 @@ Long holiday weekend keep you from joining this week’s IPFS Call? Catch up on 
 *Did you know IPFS has a community forum at [discuss.ipfs.io](https://discuss.ipfs.io/)? Sign up to participate in discussions about coding, tutorials, see announcements and learn about upcoming community events.*
 
 
-+ **3 September 2019:** Ethereum Hack Tokyo is hosting [17 Touch and learn Practice IPFS (Distributed Storage)](https://icovo-ag.connpass.com/event/144474/), a hands-on seminar for those who know Ethereum but do not know IPFS (Distributed Storage). Chiyoda-ku, Tokyo, Japan.
 + **4 September 2019:** [Paris P2P](https://www.meetup.com/Paris-P2P/events/263171540/) is a monthly meeting organized by and for the community of P2P and cryptography enthusiasts. Paris, France.
 + **6 September 2019:** Would you like to help create a next-generation navigation for [docs.ipfs.io](https://docs.ipfs.io/)? Join in a discussion on the existing navigation structure of the IPFS documentation site, plus a collaborative "card sort" exercise to explore alternative possibilities for getting around the IPFS docs. [Join the video chat from 1700-1830 UTC](http://protocol.zoom.us/my/docsforce).
 + **16 September 2019:** [Victoria Tech Meetup September 2019](https://ti.to/fission/victoria-sept-2019): sign up to attend once they’ve confirmed date and venue! Victoria, British Columbia, Canada
