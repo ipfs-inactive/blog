@@ -39,7 +39,7 @@ Here are some of the highlights since the last IPFS Weekly.
 + VIDEO: [18 Decentralised Database Panel: GunDB, Textile, Fluence, VulcanizeDB](https://www.youtube.com/watch?time_continue=1&v=AbvxEOG2EWU), Decentralized Storage Summit 2019, 3 Sep 2019
 + [RTrade Technologies Partners with Textile to Provide Digital Infrastructure for Textile Cafes](https://medium.com/temporal-cloud/rtrade-technologies-partners-with-textile-to-provide-digital-infrastructure-for-textile-cafes-3404296d2652), Temporal, 3 Sep 2019
 + [Tutorial: Build a Zero Dependency Notes App on IPFS — Part II](https://medium.com/simpleid-dev-tools/tutorial-build-an-encrypted-notes-app-on-ipfs-part-ii-3bdba2d867ad), SimpleID, 3 Sep 2019
-+ VIDEO: [EO Data Challenge proposals](https://media.ccc.de/v/bucharest-513-eo-data-challenge-proposals#t=509),  Teodora Selea, Ivian Adrian Albu, Bang Pham Huu, Vasil Yordanov, Iván Sánchez Ortega, Candan Eylül Kilsedar and Volker Mische for FOSS4G 2019, 30 August 2019
++ VIDEO: [EO Data Challenge proposals](https://media.ccc.de/v/bucharest-513-eo-data-challenge-proposals#t=509), Teodora Selea, Ivian Adrian Albu, Bang Pham Huu, Vasil Yordanov, Iván Sánchez Ortega, Candan Eylül Kilsedar and Volker Mische for FOSS4G 2019, 30 August 2019
 + VIDEO: [Geodata on IPFS](https://media.ccc.de/v/bucharest-401-geodata-on-ipfs), Volker Mische for FOSS4G 2019, 29 August 2019
 + ESSAY: [Protocols, Not Platforms: A Technological Approach to Free Speech](https://knightcolumbia.org/content/protocols-not-platforms-a-technological-approach-to-free-speech), Knight First Amendment Institute at Columbia University, 21 August 2019
 
