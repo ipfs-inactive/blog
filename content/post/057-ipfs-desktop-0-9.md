@@ -1,6 +1,6 @@
 ---
 date: 2019-09-13
-url: 057-ipfs-desktop-0.9
+url: 057-ipfs-desktop-0-9
 title: IPFS Desktop 0.9 released
 author: Henrique Dias
 ---
@@ -25,13 +25,13 @@ The newest version of IPFS Desktop, 0.9.2 - yes, we already released two patch v
 
 With the recent update to the Web UI, we are now capable of navigating throug the whole IPFS system. Previously, you could only access your 'Files' - Mutable File System for those who enjoy technical terms. Now, you can navigate not only to any `/ipfs/` or `/ipns/` path, but also to your pins!
 
-![Browing /ipns/ipns.io](/057-ipfs-desktop-0.9/browse-wild.png)
+![Browing /ipns/ipns.io](/057-ipfs-desktop-0-9/browse-wild.png)
 
 ### Use npm on ipfs
 
 In addition, we are introducing a new experiments section on the 'Settings' page which will allow you to enable new experimental features as they come in. To cellebrate this new section, we are adding [npm on ipfs](https://github.com/ipfs-shipyard/npm-on-ipfs) to it! This is a project that allows you to use `ipfs-npm` command to install your Node.js modules through the IPFS network!
 
-![Experiments section](/057-ipfs-desktop-0.9/npm-ipfs.png)
+![Experiments section](/057-ipfs-desktop-0-9/npm-ipfs.png)
 
 **Please note** that this feature is intended for those who have Node.js installed on their system. Moreover, the activation will only work if your setup does not require additional permissions for executing `npm install -g`.
 
@@ -39,7 +39,7 @@ In addition, we are introducing a new experiments section on the 'Settings' page
 
 Adding `ipfs` command line tools to your system is not a new feature and it was introduced in 0.8.0. Although, it's always worth noting that you are a click away of having the `ipfs` command available from your command line! Just go to Settings and enable "IPFS command line tools"!
 
-![IPFS command line tools](/057-ipfs-desktop-0.9/ipfs-cmd.png)
+![IPFS command line tools](/057-ipfs-desktop-0-9/ipfs-cmd.png)
 
 ### And more...
 
