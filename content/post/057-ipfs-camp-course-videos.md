@@ -7,4 +7,4 @@ author: Teri Chadbourne
 
 > Missed a course at IPFS Camp 2019? The videos are here to save the day!
 
-Some actual content will be here.
+Some more actual content will be here.
