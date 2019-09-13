@@ -50,6 +50,10 @@ There are some other features that have existed for quite a while already, ...:
 - **Add screenshots to IPFS**. You can click on 'Take Screenshot' on the app's menu or enable the global shortcut on "Settings". After taking a screenshot, a shareable link will be copied to your clipboard!
 - **Download any CID content**. If you would like to download the contents of some CID or IPFS/IPNS path, you can copy it, go to the dropdown menu and select 'Download Hash'. Then, just pick wherever you want to write those files to! This is also available through a global shortcut.
 
+You can also take a look at this video:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-7jAIVeg2vQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 # Let's talk about future...
 
 For the future of IPFS Desktop, we are now focusing much more on maintenance, bug fixing and improving the test suite to catch bugs before they go into production. Being this an Electron app, it is quite harder to test than some other types of apps. If you're interesting in knowing more, please read the issue [#1121](https://github.com/ipfs-shipyard/ipfs-desktop/issues/1121).
