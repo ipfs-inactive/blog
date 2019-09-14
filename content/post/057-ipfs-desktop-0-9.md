@@ -45,7 +45,7 @@ Adding `ipfs` command line tools to your system is not a new feature and it was 
 
 There are some other features that have existed for quite a while already, ...:
 
-- **Handle `ipfs://`, `ipns://` and `dweb:` links**. If you have IPFS Desktop installed and you click on [ipns://ipfs.io](ipns://ipfs.io), that request will go through the application and redirected your own gateway or to the public gateway if yours is not online.
+- **Handle `ipfs://`, `ipns://` and `dweb:` links**. If you have IPFS Desktop installed and you click on [ipns://ipfs.io](ipns://ipfs.io), that request will go through be redirected to your own gateway via the app, or to the public gateway if yours is not online.
 - **Easily add files to IPFS**. Just drag and drop them to the application icon, either on the menubar for macOS users, of the shortcut icon for Windows users.
 - **Add screenshots to IPFS**. You can click on 'Take Screenshot' on the app's menu or enable the global shortcut on "Settings". After taking a screenshot, a shareable link will be copied to your clipboard!
 - **Download any CID content**. If you would like to download the contents of some CID or IPFS/IPNS path, you can copy it, go to the dropdown menu and select 'Download Hash'. Then, just pick wherever you want to write those files to! This is also available through a global shortcut.
