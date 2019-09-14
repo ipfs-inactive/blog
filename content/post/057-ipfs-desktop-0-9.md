@@ -5,7 +5,7 @@ title: IPFS Desktop 0.9 released
 author: Henrique Dias
 ---
 
-IPFS Desktop has come a long way to being what it is nowadays. We are here to cellebrate and announce the [release of 0.9.0](https://github.com/ipfs-shipyard/ipfs-desktop/releases) and, with that, tell a bit about the story of this application and, of course, the new features.
+IPFS Desktop has come a long way to reach its current form. We are here to celebrate and announce the [release of 0.9.0](https://github.com/ipfs-shipyard/ipfs-desktop/releases) and share the story of this application and, of course, all the exciting new features.
 
 ## Once upon a time...
 
