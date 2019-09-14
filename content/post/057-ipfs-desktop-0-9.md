@@ -56,7 +56,7 @@ You can also take a look at this video:
 
 # Let's talk about future...
 
-For the future of IPFS Desktop, we are now focusing much more on maintenance, bug fixing and improving the test suite to catch bugs before they go into production. Being this an Electron app, it is quite harder to test than some other types of apps. If you're interesting in knowing more, please read the issue [#1121](https://github.com/ipfs-shipyard/ipfs-desktop/issues/1121).
+For the future of IPFS Desktop, we are now focusing much more on maintenance, bug fixing and improving the test suite to catch bugs before they go into production. Since this an Electron app, it is a bit harder to test than some other types of apps. If you're interesting in knowing more, please read the issue [#1121](https://github.com/ipfs-shipyard/ipfs-desktop/issues/1121).
 
 We are now working on a concept of cohosting ... TODO: EXPLAIN
 
