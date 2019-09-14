@@ -9,7 +9,7 @@ IPFS Desktop has come a long way to reach its current form. We are here to celeb
 
 ## Once upon a time...
 
-It was back in May 2015 when Juan Benet pushed a first so-called "Initial Commit" to start a project at the time named "ipfs-electron". The purpose of the app at the time was quite simple and that hasn't changed much with time: providing a long running daemon, alongside with a GUI for managing it.
+Back in May 2015, Juan Benet pushed the first so-called "Initial Commit" to start a project at the time named "ipfs-electron". The purpose of the app was quite simple and that hasn't changed much with time: providing a long running daemon, alongside with a GUI for managing it.
 
 > TODO: add timeline
 
