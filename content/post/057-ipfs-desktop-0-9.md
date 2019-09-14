@@ -37,7 +37,7 @@ In addition, we are introducing a new experiments section on the 'Settings' page
 
 ### Add `ipfs` command line tools to your system
 
-Adding `ipfs` command line tools to your system was actually introduced in 0.8.0, but it's always worth noting that you are just a click away of having the `ipfs` command available from your command line! Just go to Settings and enable "IPFS command line tools"!
+Adding `ipfs` command line tools to your system was actually introduced in 0.8.0, but it's always worth noting that you are just a click away of having the `ipfs` command available from your command line! This way, you don't have to worry about configuring your `PATH` variable or doing other confusing stuff to start using all IPFS capabilities. Just go to Settings and enable "IPFS command line tools"!
 
 ![IPFS command line tools](/057-ipfs-desktop-0-9/ipfs-cmd.png)
 
@@ -62,4 +62,4 @@ We are now working on a concept of cohosting ... TODO: EXPLAIN
 
 # Don't forget...
 
-Don't forget to [install IPFS Desktop](https://github.com/ipfs-shipyard/ipfs-desktop/releases) today and be part of the decentralized Internet! We also recommend you to install our browser extension, [IPFS Companion](https://github.com/ipfs-shipyard/ipfs-companion/#install), which gives your browser superpowers.
+Don't forget to [install IPFS Desktop](https://github.com/ipfs-shipyard/ipfs-desktop/releases) today and be part of the decentralized Internet! We also recommend you to install our browser extension, [IPFS Companion](https://github.com/ipfs-shipyard/ipfs-companion/#install), which gives your browser superpowers. Both of this applications work well together. While IPFS Desktop makes your OS InterPlanetary, IPFS Companion connects to your node on your browser, enabling further integration on your Internet interactions to the IPFS world.
