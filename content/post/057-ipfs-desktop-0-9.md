@@ -43,7 +43,7 @@ Adding `ipfs` command line tools to your system is not a new feature and it was 
 
 ### And more...
 
-There are some other features that have existed for quite a while already, ...:
+Other notable features from previous releases include:
 
 - **Handle `ipfs://`, `ipns://` and `dweb:` links**. If you have IPFS Desktop installed and you click on [ipns://ipfs.io](ipns://ipfs.io), that request will go through be redirected to your own gateway via the app, or to the public gateway if yours is not online.
 - **Easily add files to IPFS**. Just drag and drop them to the application icon, either on the menubar for macOS users, of the shortcut icon for Windows users.
