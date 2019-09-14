@@ -23,7 +23,7 @@ The newest version of IPFS Desktop, 0.9.2 - yes, we already released two patch v
 
 ### Browse the wild...
 
-With the recent update to the Web UI, we are now capable of navigating throug the whole IPFS system. Previously, you could only access your 'Files' - Mutable File System for those who enjoy technical terms. Now, you can navigate not only to any `/ipfs/` or `/ipns/` path, but also to your pins!
+With the recent update to the Web UI, we are now capable of navigating through the whole IPFS system. Previously, you could only access your 'Files' (the contents of the [Mutable File System](https://docs.ipfs.io/guides/concepts/mfs/) for those who enjoy technical terms). Now, you can navigate not only to any `/ipfs/` or `/ipns/` path, but also any content [pinned](https://docs.ipfs.io/guides/concepts/pinning/) to your IPFS node!
 
 ![Browing /ipns/ipns.io](/057-ipfs-desktop-0-9/browse-wild.png)
 
