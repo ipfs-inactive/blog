@@ -29,7 +29,7 @@ With the recent update to the Web UI, we are now capable of navigating through t
 
 ### Use npm on ipfs
 
-In addition, we are introducing a new experiments section on the 'Settings' page which will allow you to enable new experimental features as they come in. To cellebrate this new section, we are adding [npm on ipfs](https://github.com/ipfs-shipyard/npm-on-ipfs) to it! This is a project that allows you to use `ipfs-npm` command to install your Node.js modules through the IPFS network!
+In addition, we are introducing a new experiments section on the 'Settings' page which will allow you to enable new experimental features as they come in. To celebrate this new section, we are adding [npm on ipfs](https://github.com/ipfs-shipyard/npm-on-ipfs) to it! This is a project that allows you to use the `ipfs-npm` command to install your Node.js modules through the IPFS network!
 
 ![Experiments section](/057-ipfs-desktop-0-9/npm-ipfs.png)
 
