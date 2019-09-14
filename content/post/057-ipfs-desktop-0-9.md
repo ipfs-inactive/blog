@@ -11,11 +11,9 @@ IPFS Desktop has come a long way to reach its current form. We are here to celeb
 
 Back in May 2015, Juan Benet pushed the first so-called "Initial Commit" to start a project at the time named "ipfs-electron". The purpose of the app was quite simple and that hasn't changed much with time: providing a long running daemon, alongside with a GUI for managing it.
 
-> TODO: add timeline
+![Evolution of IPFS Desktop](/057-ipfs-desktop-0-9/evolution.png)
 
 Regarding the application's name, it went from "ipfs-electron" to "IPFS Native Application", then to "IPFS Station", it being a much more fancier name. However, we changed it again to "IPFS Desktop" and that's where we are right now!
-
-> TODO: screenshots of older versions
 
 ## IPFS Desktop 0.9.0
 
@@ -52,7 +50,7 @@ Other notable features from previous releases include:
 
 You can also take a look at this video:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/-7jAIVeg2vQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="2000" height="600" src="https://www.youtube.com/embed/-7jAIVeg2vQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 # Let's talk about future...
 
