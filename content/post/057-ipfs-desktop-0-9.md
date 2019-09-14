@@ -37,7 +37,7 @@ In addition, we are introducing a new experiments section on the 'Settings' page
 
 ### Add `ipfs` command line tools to your system
 
-Adding `ipfs` command line tools to your system is not a new feature and it was introduced in 0.8.0. Although, it's always worth noting that you are a click away of having the `ipfs` command available from your command line! Just go to Settings and enable "IPFS command line tools"!
+Adding `ipfs` command line tools to your system was actually introduced in 0.8.0, but it's always worth noting that you are just a click away of having the `ipfs` command available from your command line! Just go to Settings and enable "IPFS command line tools"!
 
 ![IPFS command line tools](/057-ipfs-desktop-0-9/ipfs-cmd.png)
 
