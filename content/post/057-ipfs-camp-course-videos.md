@@ -12,7 +12,7 @@ Core courses at IPFS Camp served as the starting point to get all of us on the s
 
 **Check out the [complete course listings](https://github.com/ipfs/camp#-core--elective-courses) in the IPFS Camp repo for links to videos, slide decks, and other workshop materials for each session.**
 
-Whether you're new to IPFS or looking for a deeper understanding of core concepts, I highly recommend these two core courses as your starting point. Both are easily consumable in video form -- no coding required -- and offer plenty of "aha" moments:
+Whether you're new to IPFS or looking for a deeper understanding of core concepts, we highly recommend these two core courses as your starting point. Both are easily consumable in video form -- no coding required -- and offer plenty of "aha" moments:
 
 ### Understanding How IPFS Deals with Files
 This core course covers the basics of how IPFS deals with files, including key concepts like immutability, content addressing, hashing, the anatomy of CIDs, what the heck a Merkle DAG is, and how chunk size affects file imports. It also covers the joys and pitfalls of the Mutable File System (MFS), the layer of abstraction in IPFS that lets you work with immutable files and directories as if you were using a tradiitional name-based file system. As with all great talks, this one is enhanced by images of adorable poodles. 🐩 (12 / 10, would recommend.)
