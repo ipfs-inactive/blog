@@ -55,7 +55,7 @@ There are plenty more core and elective courses to explore in the latest batch o
 
 **Elective Courses**
 
-- [Identity on the DWeb](https://youtu.be/EsLqjFEN-MM)
+- [Identity on the DWeb using IDM and Nomios](https://youtu.be/EsLqjFEN-MM)
 - [Managing pinsets with IPFS Cluster](https://youtu.be/wmxaVrAFfeE)
 - [Cat Roulette! Building a p2p laser catbot](https://youtu.be/kVzHE4MRPOM)
 - [Deploying IPFS Infrastructure](https://youtu.be/PD0e89b4NBk)
