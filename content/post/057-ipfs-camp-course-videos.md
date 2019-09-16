@@ -1,12 +1,9 @@
 ---
-date: 2019-09-13
-url: 2019-09-13-ipfs-camp-course-videos
+date: 2019-09-16
+url: 2019-09-16-ipfs-camp-course-videos
 title: IPFS Camp course videos released 🍿
 author: Teri Chadbourne
 ---
-
-> Missed a course at IPFS Camp 2019? The videos are here to save the day!
-
 
 If you've been following the updates from IPFS Camp here in the blog, you've likely already explored the videos from our [lightning talks](https://github.com/ipfs/camp#%EF%B8%8F-lightning-talks), [deep dives](https://github.com/ipfs/camp#-deep-dives), and [poster projects](https://github.com/ipfs/camp#-poster-projects). **Today we're excited to announce the release of the videos from our [core and elective courses](https://github.com/ipfs/camp#-core--elective-courses)**!
 
@@ -18,28 +15,32 @@ Core courses at IPFS Camp served as the starting point to get all of us on the s
 Whether you're new to IPFS or looking for a deeper understanding of core concepts, I highly recommend these two core courses as your starting point. Both are easily consumable in video form -- no coding required -- and offer plenty of "aha" moments:
 
 ### Understanding How IPFS Deals with Files
-Add a few sentences here about why this was cool, mentioning the relevant ProtoSchool tutorials and adorable poodles wearing glasses.
+This core course covers the basics of how IPFS deals with files, including key concepts like immutability, content addressing, hashing, the anatomy of CIDs, what the heck a Merkle DAG is, and how chunk size affects file imports. It also covers the joys and pitfalls of the Mutable File System (MFS), the layer of abstraction in IPFS that lets you work with immutable files and directories as if you were using a tradiitional name-based file system. As with all great talks, this one is enhanced by images of adorable poodles. 🐩 (12 / 10, would recommend.)
 
-This session introduced two awesome visualization tools that you can try out at home:
+This workshop introduced a few awesome visualization and learning tools that you can try out at home:
 
+- Explore the [ProtoSchool tutorial on the Mutable File System (MFS)](https://proto.school/#/mutable-file-system) for coding challenges designed to familiarize you with its API
 - Paste a Content Identifier (CID) into the [CID Inspector](https://cid.ipfs.io/) to break down its anatomy
-- Drag a file into the [DAG Builder](https://dag.ipfs.io/) and adjust chunk size, etc. to see how it affects the Merkle DAG.
+- Drag a file into the [DAG Builder](https://dag.ipfs.io/) and adjust chunk size, DAG layouts, etc. to see how it affects the Merkle DAG
+
+Watch the recording below or check out the [slides](https://github.com/ipfs/camp/blob/master/CORE_AND_ELECTIVE_COURSES/CORE_COURSE_A/IPFS_Camp_Core_Course_A_Slides.pdf)!
 
 [![Video: Understanding How IPFS Deals with Files](/img/057-ipfs-camp-course-videos/core-a-thumbnail.png)](https://youtu.be/dJ7TkB4UpZ8)
 
 _Video: [Understanding How IPFS Deals with Files](https://youtu.be/dJ7TkB4UpZ8)_
 
-Check out the [slides](https://github.com/ipfs/camp/blob/master/CORE_AND_ELECTIVE_COURSES/CORE_COURSE_A/IPFS_Camp_Core_Course_A_Slides.pdf)!
 
 ### The Lifecycle of Data in DWeb
 
-Add a few sentences here about why this was cool, mentioning interpretive dancing with bean bags.
+This course covers all the stuff that happens _after_ you add a file to IPFS, highlighting the intricacies of how peers interact with each other to provide, get, pin, and delete blocks of data. It explains the Distributed Hash Table (DHT) that helps us track which peers are storing which CIDs, as well as how Bitswap requests and sends blocks while verifying their data. No poodle pics here, but the live Bitswap dance using bean bags to model the block-sharing process is not to be missed! 🤹‍♂️
+
+Watch the video below or check out the slides (available on [Google Slides with speaker notes](https://docs.google.com/presentation/d/1UOX-a1lCxi-LOyEOe9VEFRcxg_j93Xkywwa4Y95TJaw/edit?usp=sharing) or as a [PDF](https://github.com/ipfs/camp/blob/master/CORE_AND_ELECTIVE_COURSES/CORE_COURSE_D/IPFS_Camp_Core_Course_D_Slides.pdf))!
 
 [![Video: The Lifecycle of Data in DWeb](/img/057-ipfs-camp-course-videos/core-d-thumbnail.png)](https://youtu.be/fLUq0RkiTBA)
 
 _Video: [The Lifecycle of Data in DWeb](https://youtu.be/fLUq0RkiTBA)_
 
-Check out the slides (available on [Google Slides with speaker notes](https://docs.google.com/presentation/d/1UOX-a1lCxi-LOyEOe9VEFRcxg_j93Xkywwa4Y95TJaw/edit?usp=sharing) or as a [PDF](https://github.com/ipfs/camp/blob/master/CORE_AND_ELECTIVE_COURSES/CORE_COURSE_D/IPFS_Camp_Core_Course_D_Slides.pdf))!
+
 
 ### And more!
 
