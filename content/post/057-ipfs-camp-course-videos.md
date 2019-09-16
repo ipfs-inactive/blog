@@ -57,7 +57,7 @@ There are plenty more core and elective courses to explore in the latest batch o
 
 - [Identity on the DWeb](https://youtu.be/EsLqjFEN-MM)
 - [Managing pinsets with IPFS Cluster](https://youtu.be/wmxaVrAFfeE)
-- [Cat Roulette!](https://youtu.be/kVzHE4MRPOM)
+- [Cat Roulette! Building a p2p laser catbot](https://youtu.be/kVzHE4MRPOM)
 - [Deploying IPFS Infrastructure](https://youtu.be/PD0e89b4NBk)
 - [Starting, Growing, and Stewarding your IPFS Community](https://youtu.be/crTa1j3FRac)
 - [Building DApps with Textile, the iCloud for the DWeb](https://youtu.be/4r7_lOyv4W8)
