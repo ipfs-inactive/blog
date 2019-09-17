@@ -73,7 +73,7 @@ The early testers programme allows groups using js-ipfs in production to self-vo
 + **20-22 September 2019:** [Our Networks 2019 RE: Infrastructures](https://ournetworks.ca/) explores the collective care and maintenance of alternative networking practices—new protocols, peer-to-peer connections, offline-first computing, and community-based governance. Toronto, Ontario, Canada.
 + **27-30 September 2019:** [Offline Camp Oregon](http://offlinefirst.org/camp) had to be postponed, but it’s still happening! [Hear how past campers describe this unique unconference retreat](https://youtu.be/FNtpPW_7H1k) focused on the [Offline First](http://offlinefirst.org/) approach to web development and design.
 + **28 September 2019:** [ProtoSchool - Shanghai Chapter: Technical Salon Session 6](https://www.meetup.com/Shanghai-Decentralized-Systems-Meetup-Group/events/264683729/) will take place at Caohejing International Incubation Center. Shanghai, China.
-+ **2 October 2019:** [Paris P2P Monthly Peer to Beer](https://p2p.paris/en/event/monthly-2/) is a monthly meeting organized by and for the community of P2P and cryptography enthusiasts. Paris, France.
++ **2 October 2019:** [Paris P2P Monthly Peer to Beer](https://p2p.paris/en/event/monthly-2/) is a meeting organized by and for the community of P2P and cryptography enthusiasts. Paris, France.
 + **28-30 October 2019:** [Open Source Summit + ELC Europe 2019](https://osseu19.sched.com/event/TLD8) will feature Trevor Conn of Dell Technologies presenting “Securely Store IOT Edge Data with IPFS and Distributed Ledger.” Lyon, France.
 
 
