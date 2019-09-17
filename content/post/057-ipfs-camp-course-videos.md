@@ -1,6 +1,6 @@
 ---
-date: 2019-09-16
-url: 2019-09-16-ipfs-camp-course-videos
+date: 2019-09-17
+url: 2019-09-17-ipfs-camp-course-videos
 title: IPFS Camp course videos released 🍿
 author: Teri Chadbourne
 ---
@@ -19,15 +19,15 @@ This core course covers the basics of how IPFS deals with files, including key c
 
 This workshop introduced a few awesome visualization and learning tools that you can try out at home:
 
-- Explore the [ProtoSchool tutorial on the Mutable File System (MFS)](https://proto.school/#/mutable-file-system) for coding challenges designed to familiarize you with its API
-- Paste a Content Identifier (CID) into the [CID Inspector](https://cid.ipfs.io/) to break down its anatomy
-- Drag a file into the [DAG Builder](https://dag.ipfs.io/) and adjust chunk size, DAG layouts, etc. to see how it affects the Merkle DAG
+- Explore the [**ProtoSchool tutorial on the Mutable File System (MFS)**](https://proto.school/#/mutable-file-system) for coding challenges designed to familiarize you with its API
+- Paste a Content Identifier (CID) into the [**CID Inspector**](https://cid.ipfs.io/) to break down its anatomy
+- Drag a file into the [**DAG Builder**](https://dag.ipfs.io/) and adjust chunk size, DAG layouts, etc. to see how it affects the Merkle DAG
 
 Watch the recording below or check out the [slides](https://github.com/ipfs/camp/blob/master/CORE_AND_ELECTIVE_COURSES/CORE_COURSE_A/IPFS_Camp_Core_Course_A_Slides.pdf)!
 
-[![Video: Understanding How IPFS Deals with Files](/img/057-ipfs-camp-course-videos/core-a-thumbnail.png)](https://youtu.be/dJ7TkB4UpZ8)
+[![Video: Understanding How IPFS Deals with Files](/img/057-ipfs-camp-course-videos/core-a-thumbnail.png)](https://youtu.be/Z5zNPwMDYGg)
 
-_Video: [Understanding How IPFS Deals with Files](https://youtu.be/dJ7TkB4UpZ8)_
+_Video: [Understanding How IPFS Deals with Files](https://youtu.be/Z5zNPwMDYGg)_
 
 
 ### The Lifecycle of Data in DWeb
@@ -48,20 +48,20 @@ There are plenty more core and elective courses to explore in the latest batch o
 
 **Core Courses**
 
-- [Understanding how the InterPlanetary File System deals with files](https://youtu.be/dJ7TkB4UpZ8)
-- [Solving distributed networking problems with libp2p](https://youtu.be/Q4IH5rWEO-E)
-- [Developing apps with IPFS API](https://youtu.be/6EHBOnFQJN4)
-- [The lifecycle of data in DWeb](https://youtu.be/fLUq0RkiTBA)
+- [**Understanding how IPFS Deals with Files**](https://youtu.be/Z5zNPwMDYGg) by [@alanshaw](https://github.com/alanshaw), [@mikeal](https://github.com/mikeal), and [@stebalien](https://github.com/stebalien)
+- [**Solving Distributed Networking Problems with Libp2p**](https://youtu.be/Q4IH5rWEO-E) by [@jacobheun](https://github.com/jacobheun), [@bigs](https://github.com/bigs), and [@achingbrain](https://github.com/achingbrain)
+- [**Developing Apps with the IPFS API**](https://youtu.be/6EHBOnFQJN4) by [@lidel](https://github.com/lidel), [@hugomrdias](https://github.com/hugomrdias), and [@jimpick](https://github.com/jimpick)
+- [**The Lifecycle of Data in DWeb**](https://youtu.be/fLUq0RkiTBA) by [@olizilla](https://github.com/olizilla), [@meiqimichelle](https://github.com/meiqimichelle) and [@kishansagathiya](https://github.com/kishansagathiya)
 
 **Elective Courses**
 
-- [Identity on the DWeb using IDM and Nomios](https://youtu.be/EsLqjFEN-MM)
-- [Managing pinsets with IPFS Cluster](https://youtu.be/wmxaVrAFfeE)
-- [Cat Roulette! Building a p2p laser catbot](https://youtu.be/kVzHE4MRPOM)
-- [Deploying IPFS Infrastructure](https://youtu.be/PD0e89b4NBk)
-- [Starting, Growing, and Stewarding your IPFS Community](https://youtu.be/crTa1j3FRac)
-- [Building DApps with Textile, the iCloud for the DWeb](https://youtu.be/4r7_lOyv4W8)
-- [Managing Datasets with QRI](https://youtu.be/ZN1mPBECsvA)
+- [**Identity on the DWeb using IDM and Nomios**](https://youtu.be/EsLqjFEN-MM) by [@satazor](https://github.com/satazor), [@paulobmarcos](https://github.com/paulobmarcos), and [@joaosantos15](https://github.com/joaosantos15)
+- [**Managing Pinsets with IPFS Cluster**](https://youtu.be/wmxaVrAFfeE) by [@hsanjuan](https://github.com/hsanjuan), [@lanzafame](https://github.com/lanzafame), and [@meiqimichelle](https://github.com/meiqimichelle)
+- [**Cat Roulette! Building a P2P Laser Catbot**](https://youtu.be/kVzHE4MRPOM) by [@gorhgorh](https://github.com/gorhgorh)
+- [**Deploying IPFS Infrastructure**](https://youtu.be/PD0e89b4NBk) by [@obo20](https://github.com/obo20) and [@mburns](https://github.com/mburns)
+- [**Starting, Growing, and Stewarding your IPFS Community**](https://youtu.be/crTa1j3FRac) by [@nukemandan](https://github.com/nukemandan), [@kk3wong](https://github.com/kk3wong), and [@stefanhans](https://github.com/stefanhans)
+- [**Building DApps with Textile, the iCloud for the DWeb**](https://youtu.be/4r7_lOyv4W8) by [@balupton](https://github.com/balupton), [@carsonfarmer](https://github.com/carsonfarmer), and [@andrewxhill](https://github.com/andrewxhill)
+- [**Managing Datasets with QRI**](https://youtu.be/ZN1mPBECsvA) by [@b5](https://github.com/b5)
 
 
 Each of these courses has its own folder in the IPFS Camp repo, complete with course descriptions, slide decks, videos, code walk-throughs, or other materials provided by our awesome instructors.  Check out the [complete course listings](https://github.com/ipfs/camp#-core--elective-courses) for all the details.
