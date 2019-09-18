@@ -40,7 +40,7 @@ author: 默奕
 + [开发、部署和监视 IoTFOTA 平台迭代性能测试的有效过程](https://www.asvin.io/news/an-efficient-procedure-to-develop-deploy-and-monitor-iterative-performance-tests-for-iot-fota-platform/)，Rohit Bohara，2019年9月11日
 + [在 Matic testnet 上部署Kyber](https://medium.com/@batatsar/deploying-kyber-on-the-matic-testnet-8d1bc49ffc41)，2019年9月11日
 + [IPFS 便携用户设置 App 首次发布](https://blog.fission.codes/ipfs-user-settings-app/)，FISSION，2019年9月10日
-+ [Nimbus 团队于2019年9月10日授予了 libp2p 本地实现的赠款](https://our.status.im/nimbus-team-awarded-grant-for-a-native-implementation-of-libp2p/)
++ [Nimbus 团队授予了 libp2p 本地实现的赠款](https://our.status.im/nimbus-team-awarded-grant-for-a-native-implementation-of-libp2p/)，Status，2019年9月10日
 + [企业 IPFS 为真正的供应链起源 - 第2部分](https://medium.com/temporal-cloud/enterprise-ipfs-for-true-supply-chain-provenance-part-2-e18b07f20b80)，Temporal，2019年9月10日
 + [3Box 密码管理器](https://medium.com/@ryanpedersen42/password-manager-with-3box-b6d6decf9fd1)，Ryan Pedersen, 2019年9月8日
 + 视频: [SourceCred 在柏林开放源码沙龙](https://www.youtube.com/watch?v=fK0vjRq-4oI)，Dandelion Mané，2019年9月1日
