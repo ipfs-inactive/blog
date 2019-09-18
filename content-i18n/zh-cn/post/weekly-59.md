@@ -22,7 +22,7 @@ author: 默奕
 
 ### IPFS 解释程序 (IPFS Explainer) 的 v0.1 现已公开发布！
 经过 [IPFS 文档团队]
-(https://twitter.com/meiqimichelle/status/1172352640480530432)的艰苦工作，解释程序 v0.1 关于 IPFS 内容如何处理,  peer-to-peer 网络怎样工作终于在这里了。[你自己去看看吧！](https://docs.ipfs.io/introduction/how-ipfs-works/)
+(https://twitter.com/meiqimichelle/status/1172352640480530432) 的艰苦工作，解释程序 v0.1 关于 IPFS 内容如何处理,  peer-to-peer 网络怎样工作终于在这里了。[你自己去看看吧！](https://docs.ipfs.io/introduction/how-ipfs-works/)
 
 ### 加入 js-ipfs 早期测试人员计划
 早期的测试人员计划允许在生产中使用 js-ipfs 的工作组自愿帮助测试 js-ipfs 发布候选版本，以确保没有可能影响生产系统的退化出现在最终版本中。[请继续阅读了解更多信息。](https://github.com/ipfs/js-ipfs/blob/master/doc/EARLY_TESTERS.md)
