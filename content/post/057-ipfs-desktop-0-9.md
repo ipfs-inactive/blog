@@ -23,13 +23,13 @@ The newest version of IPFS Desktop, 0.9.2 - yes, we already released two patch v
 
 With the [recent update to the Web UI](https://github.com/ipfs-shipyard/ipfs-webui/releases/tag/v2.5.0), we are now capable of navigating through the whole IPFS system. Previously, you could only access your 'Files' (the contents of the [Mutable File System](https://proto.school/#/mutable-file-system)). Now, you can navigate not only to any `/ipfs/` or `/ipns/` path, but also any content [pinned](https://docs.ipfs.io/guides/concepts/pinning/) to your IPFS node!
 
-![Browsing /ipns/ipns.io](/057-ipfs-desktop-0-9/browse-wild.png)
+![Browsing /ipns/ipns.io](/057-ipfs-desktop-0-9/browse-wild.jpg)
 
 ### Use npm on ipfs
 
 In addition, we are introducing a new experiments section on the 'Settings' page which will allow you to enable new experimental features as they come in. To celebrate this new section, we are adding [npm on ipfs](https://github.com/ipfs-shipyard/npm-on-ipfs) to it! This is a project that allows you to use the `ipfs-npm` and `npm-ipfs` commands to install your Node.js modules through the IPFS network!
 
-![Experiments section](/057-ipfs-desktop-0-9/npm-ipfs.png)
+![Experiments section](/057-ipfs-desktop-0-9/npm-ipfs.jpg)
 
 **Please note** that this feature is intended for those who have [Node.js](https://nodejs.org) installed on their system. Moreover, the activation will only work if your setup does not require additional permissions for executing `npm install -g`.
 
@@ -37,7 +37,7 @@ In addition, we are introducing a new experiments section on the 'Settings' page
 
 Adding `ipfs` command line tools to your system was actually introduced in 0.8.0, but it's always worth noting that you are just a click away of having the `ipfs` command available from your command line! This way, you don't have to worry about configuring your `PATH` variable or doing other confusing stuff to start using all IPFS capabilities. Just go to Settings and enable "IPFS command line tools"!
 
-![IPFS command line tools](/057-ipfs-desktop-0-9/ipfs-cmd.png)
+![IPFS command line tools](/057-ipfs-desktop-0-9/ipfs-cmd.jpg)
 
 ### And more...
 
