@@ -52,7 +52,7 @@ author: 默奕
 ## 开放 IPFS 工作岗位
 
 + [React Native 开发员](https://berty.tech/jobs/react-native-developer/), Berty，巴黎，法国
-+[高级后端工程师](https://www.golangprojects.com/golang-go-job-dcr-Senior-Backend-Engineer-Berlin-MXC-Foundation-gGmbH.html)，MXC 基金会 gGmbH，德国柏林
++ [高级后端工程师](https://www.golangprojects.com/golang-go-job-dcr-Senior-Backend-Engineer-Berlin-MXC-Foundation-gGmbH.html)，MXC 基金会 gGmbH，德国柏林
 + [Golang 高级工程师](https://www.golangprojects.com/golang-go-job-def-Senior-Golang-Engineer-Remote-Textile.html)， Textile，远程工作
 + [分布式系统技术主管，IPFS，](https://jobs.lever.co/protocol/9283f9b0-de64-4e1f-a221-5d02b0202198)，Protocol Labs，远程工作
 + [IPFS 文档制作和技术内容策略师，](https://jobs.lever.co/protocol/e7db2c84-afd7-44a4-9a27-449c751d8289) Protocol Labs，远程工作
