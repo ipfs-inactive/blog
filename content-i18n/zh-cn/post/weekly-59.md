@@ -71,7 +71,7 @@ author: 默奕
 + **新 IPFS 聚会：** [苏黎世 IPFS Meetup Gruppe](https://www.meetup.com/Zurich-IPFS-Meetup-Gruppe/) 将于近期召开会议，讨论 IPFS 的潜力和现状，也许还会讨论类似的 P2P 网络，使经济无国界。瑞士 苏黎世。
 + **2019年9月19日：** 旧金山 IPFS 将在 Starfish Mission 主办 [IPFS 如何工作](https://www.meetup.com/San-Francisco-IPFS/events/264171146/)，请报名参加并了解更多关于 IPFS 以及它如何实际工作的信息。
 + **2019年9月20日至22日：** [我们的网络 2019 年 RE：基础设施](https://ournetworks.ca/)探索了对替代网络实践的集体关心和维护——新协议、同行连接、离线优先计算和基于社区的治理。加拿大 安大略省 多伦多。
-+ **2019年9月27日至30日：** [Offline Camp Oregon](http://offlinefirst.org/camp/reschedule) 现已延期，但它仍在计划中！[这里是过去的露营者对我们独特的](https://youtu.be/FNtpPW_7H1k), 专注于[离线优先](http://offlinefirst.org/)的网络开发和设计方法的非会议形式的活动的评论。
++ **2019年9月27日至30日：** [Offline Camp Oregon](http://offlinefirst.org/camp/) 现已延期，但它仍在计划中！[这里是过去的露营者对我们独特的](https://youtu.be/FNtpPW_7H1k), 专注于[离线优先](http://offlinefirst.org/)的网络开发和设计方法的非会议形式的活动的评论。
 + **28 September 2019:** [ProtoSchool -上海分会: 技术沙龙会第6期](https://www.meetup.com/Shanghai-Decentralized-Systems-Meetup-Group/events/264683729/) 将在漕河泾国际孵化中心举行。中国上海。
 + **2019年10月2日：** [巴黎P2P](https://p2p.paris/en/) 是一个由 P2P 和密码学爱好者组织的每月一次的会议。法国，巴黎。
 + **2019年10月28至30日**，[开放源码峰会 + ELC 欧洲 2019](https://osseu19.sched.com/event/TLD8) 将以戴尔技术公司的 Trevor Conn 为特色，"通过 IPFS 和分布式账本安全存储物联网边缘数据"。法国 里昂。
