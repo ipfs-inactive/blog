@@ -1,6 +1,6 @@
 ---
-date: 2019-09-13
-url: 057-ipfs-desktop-0-9
+date: 2019-09-18
+url: 2019-09-18-ipfs-desktop-0-9
 title: IPFS Desktop 0.9 released
 author: Henrique Dias
 ---
