@@ -54,7 +54,7 @@ You can also take a look at this video:
 
 # Let's talk about future...
 
-We are now working on the [specification](https://github.com/ipfs-shipyard/cohosting/pull/2) of a new feature called cohosting, i.e., having a local copy of some website on your machine. You can do that just because you would like to keep a website active or because you want to read it offline later. Then, IPFS Companion or IPFS Desktop would re-check every 12 hours to make sure the website is up to date. It would be interesting to hear your thoughts!
+We are now working on the [specification](https://github.com/ipfs-shipyard/cohosting/pull/2) of a new feature called [cohosting](https://github.com/ipfs-shipyard/cohosting), i.e., having a local copy of some website on your machine. You can do that just because you would like to keep a website available to others or because you want to read it offline later. Then, IPFS Companion or IPFS Desktop would re-check every few hours to make sure the website is up to date. It would be interesting to hear your thoughts!
 
 For the future of IPFS Desktop, we are now focusing much more on maintenance, bug fixing and improving the test suite to catch bugs before they go into production. Since this an Electron app, it is a bit harder to test than some other types of apps. If you're interested in knowing more or help us build tests, please read the issue [#1121](https://github.com/ipfs-shipyard/ipfs-desktop/issues/1121).
 
