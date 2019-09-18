@@ -1,6 +1,6 @@
 ---
-date: 2019-09-17
-url: 2019-09-17-ipfs-camp-course-videos
+date: 2019-09-18
+url: 2019-09-18-ipfs-camp-course-videos
 title: IPFS Camp course videos released 🍿
 author: Teri Chadbourne
 ---
