@@ -13,7 +13,7 @@ Back in May 2015, Juan Benet pushed the first so-called "Initial Commit" to star
 
 ![Evolution of IPFS Desktop](/057-ipfs-desktop-0-9/evolution.jpg)
 
-Regarding the application's name, it went from "ipfs-electron" to "IPFS Native Application", then to "IPFS Station", it being a much fancier name. However, we [changed it again](https://github.com/ipfs-shipyard/ipfs-desktop/issues/561) to "IPFS Desktop" and that's where we are right now! It's a result of an uniformization between our applications names and the most self-explanatory option we had.
+Regarding the application's name, it went from "ipfs-electron" to "IPFS Native Application", then to ["IPFS Station"](https://github.com/ipfs-shipyard/ipfs-desktop/commit/5a123c2c9ed0fe3ec86aad336417ddbefdea9243), it being a much fancier name. However, we [changed it again](https://github.com/ipfs-shipyard/ipfs-desktop/pull/574) to "IPFS Desktop" and that's where we are right now! It's a result of an uniformization between our applications names and the most self-explanatory option we had.
 
 ## Where we are today: IPFS Desktop 0.9.0
 
@@ -43,20 +43,20 @@ Adding `ipfs` command line tools to your system was actually introduced in 0.8.0
 
 Other notable features from previous releases include:
 
-- **Handle `ipfs://`, `ipns://` and `dweb:` links**. If you have IPFS Desktop installed and you click on [ipns://ipfs.io](ipns://ipfs.io), that request will go through be redirected to your own gateway via the app, or to the public gateway if yours is not online.
+- **Handle `ipfs://`, `ipns://` and `dweb:` links**. If you have IPFS Desktop installed and you click on [ipns://ipfs.io](ipns://ipfs.io) in your browser or any other application, that request will go through be redirected to your own gateway via the app, or to the public gateway if yours is not online.
 - **Easily add files to IPFS**. Just drag and drop them to the application icon, either on the menubar for macOS users, or the shortcut icon for Windows users.
 - **Add screenshots to IPFS**. You can click on 'Take Screenshot' on the app's menu or enable the global shortcut on "Settings". After taking a screenshot, a shareable link will be copied to your clipboard!
 - **Download any CID content**. If you would like to download the contents of some CID or IPFS/IPNS path, you can copy it, go to the dropdown menu and select 'Download Hash'. Then, just pick wherever you want to write those files to! This is also available through a global shortcut.
 
 You can also take a look at this video:
 
-<iframe width="2000" height="600" src="https://www.youtube.com/embed/-7jAIVeg2vQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="2000" height="600" src="https://www.youtube-nocookie.com/embed/-7jAIVeg2vQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 # Let's talk about future...
 
 We are now working on the [specification](https://github.com/ipfs-shipyard/cohosting/pull/2) of a new feature called cohosting, i.e., having a local copy of some website on your machine. You can do that just because you would like to keep a website active or because you want to read it offline later. Then, IPFS Companion or IPFS Desktop would re-check every 12 hours to make sure the website is up to date. It would be interesting to hear your thoughts!
 
-For the future of IPFS Desktop, we are now focusing much more on maintenance, bug fixing and improving the test suite to catch bugs before they go into production. Since this an Electron app, it is a bit harder to test than some other types of apps. If you're interesting in knowing more or help us build tests, please read the issue [#1121](https://github.com/ipfs-shipyard/ipfs-desktop/issues/1121).
+For the future of IPFS Desktop, we are now focusing much more on maintenance, bug fixing and improving the test suite to catch bugs before they go into production. Since this an Electron app, it is a bit harder to test than some other types of apps. If you're interested in knowing more or help us build tests, please read the issue [#1121](https://github.com/ipfs-shipyard/ipfs-desktop/issues/1121).
 
 Is there any feature you would like to see on IPFS Desktop? If so, please [create a feature request](https://github.com/ipfs-shipyard/ipfs-desktop/issues/new)! We will certainly appreciate it.
 
