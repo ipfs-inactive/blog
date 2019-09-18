@@ -31,7 +31,7 @@ author: 默奕
 *你是否关注[Twitter上的IPFS](https://twitter.com/IPFSbot)?有关IPFS的最新新闻，请查看我们的Twitter提要或查看[关于Awesome IPFS的最新文章](https://awesome.ipfs.io/articles/)。*
 
 + [通过专用网络启用 IPFS 应用程序](https://medium.com/temporal-cloud/enable-ipfs-applications-through-private-networks-28f98ea7358f)，Temporal，2019年9月16日
-+ [使用 IPFS 和 Blockstack 构建版本控制系统]((https://hackernoon.com/tutorial-build-a-versioning-system-on-ipfs-77lvx2geh))，Hackernoon，2019年9月16日
++ [使用 IPFS 和 Blockstack 构建版本控制系统](https://hackernoon.com/tutorial-build-a-versioning-system-on-ipfs-77lvx2geh)，Hackernoon，2019年9月16日
 + [Temporal 自豪地赞助我们的网络重建基础设施](https://medium.com/temporal-cloud/temporal-proudly-sponsoring-our-networks-re-infrastructures-a9ba8418224e)，Temporal，2019年9月16日
 + [使用 IPFS 去中心化文件存储游戏资产元数据](https://medium.com/blockadegames/using-ipfs-distributed-file-storage-for-game-asset-metadata-aac4478e3063)，Blockade Games，2019年9月15日
 + [比较开发人员的身份验证工具](https://dev.to/polluterofminds/comparing-authentication-tools-for-developers-47a2)，Justin Hunter, 2019年9月15日
