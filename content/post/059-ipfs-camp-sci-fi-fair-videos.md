@@ -20,7 +20,6 @@ See the complete-ish (we had quite a few guerilla participants!) [list of Fair p
 {{< youtube 34lVgp1snvg >}}
 _The Textile team demonstrates their interactive wares_
 
-
 Long-time IPFS community members Textile brought their crowd favorite p2p photobooth, as well as a game of cryptographically verified [Interplanetary Tag](https://medium.com/textileio/building-peer-to-peer-games-on-ipfs-a-look-at-interplanetary-tag-52d081ee1d32) (a sort of diplomatically named Interplanetary Assassin)
 
 ### RPi Cluster
@@ -41,7 +40,6 @@ _@achingbrain's npm-in-a-box project_
 _@kumavis shows off the live network visualizer_
 
 The MetaMask crew brought a tool that proved invaluable in their network connectivity diagnostics: a DHT visualizer. Following some wireless network trouble (a real-world scenario to be sure), we were treated to some beautiful visualizations of network connectivity.
-
 
 ### And More
 These are just some of the projects that made it to the Fair: head over to the [offical Fair playlist](https://www.youtube.com/playlist?list=PLuhRWgmPaHtTWCyJcTgLFhsg8Bi2dFPCo) to catch the rest of the videos, as well as the full cuts of the interviews above. Don't miss Berty's Bluetooth Low Energy p2p transport, Brave's one-click in-browser IPFS, and more!
@@ -64,11 +62,8 @@ _Actyx's Rüdiger has somehow managed to avoid ALL photos at the fair, so here's
 ![@aschmahmann's Fast IPNS](/059-ipfs-camp-sci-fi-fair-videos/ipns.jpg)
 _Last but not least, Adin's "Fast IPNS" demo (it was VERY FAST!)_
 
-
-
 ## Community Interviews
 IPFS Camp was all about YOU so the interviews weren't limited to just the Sci-Fi Fair participants: we managed to get some async sit-down time with a few other wonderful community members: see their accounts in [this playlist](TK)
-
 
 ## Additional CTA
 TK
