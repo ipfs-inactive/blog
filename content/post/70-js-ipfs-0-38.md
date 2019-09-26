@@ -15,7 +15,7 @@ $ npm install -g ipfs
 
 ## 🗑️ Garbage collection
 
-Support for garbage collection has shipped with `0.38.0`! This means that blocks in your IPFS Repo will be removed when gc is run unless they are pinned.
+Support for garbage collection has shipped with `0.38.0`! This means that blocks in your IPFS Repo will be removed whenever gc is run unless they are pinned.
 
 This is essential for keeping your repo to a manageable size, but must be run manually for the time being.
 
@@ -54,7 +54,8 @@ $ jsipfs resolve /ipns/Qmqux
 # 🏗 API Changes
 
 * [`ipfs.repo.gc([options])`](https://github.com/ipfs/interface-js-ipfs-core/blob/master/SPEC/REPO.md#repogc) has been added
-* [`ipfs.resolve(name, [options])`](https://github.com/ipfs/interface-js-ipfs-core/blob/master/SPEC/MISCELLANEOUS.md#resolve) `options.resolve` now defaults to `true`
+* [`ipfs.resolve(name, [options])`](https://github.com/ipfs/interface-js-ipfs-core/blob/master/SPEC/MISCELLANEOUS.md#resolve) `options.recursive` now defaults to `true`
+* Pubsub is now enabled by default so the config key `EXPERIMENTAL.pubsub` is ignored and passing the `--enable-pubsub-experiment` flag has no effect
 
 # ❤️ Huge thank you to everyone that made this release possible
 
