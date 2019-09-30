@@ -55,9 +55,9 @@ $ jsipfs resolve /ipns/Qmqux
 
 ## 🎁 New relase process & a call for early testers
 
-This is the first release to follow our new, more predicatable, more rigorous release process. It's outlined in the [release issue template](https://github.com/ipfs/js-ipfs/blob/master/doc/RELEASE_ISSUE_TEMPLATE.md), but in short we have defined steps, with an addional period for internal & external testing and gathering feedback on the changes.
+This is the first release to follow our new, more predictable, more rigorous release process. It's outlined in the [release issue template](https://github.com/ipfs/js-ipfs/blob/master/doc/RELEASE_ISSUE_TEMPLATE.md), but in short we have defined steps, with an additional period for internal & external testing and gathering feedback on the changes.
 
-It's also the first release to ship with lockfiles for `yarn` and `npm`. This is to ensure that you only get the dependcies that we have validated with CI, and not untested code that may have been released with breaking changes since CI last ran on the release candidate.
+It's also the first release to ship with lockfiles for `yarn` and `npm`. This is to ensure that you only get the dependencies that we have validated with CI, and not untested code that may have been released with breaking changes since CI last ran on the release candidate.
 
 But the best bit is that [we run the test suites of third party repos](https://travis-ci.com/ipfs/js-ipfs/builds/129226310) with the RCs as part of CI to ensure we don't break anything - if you would like your project added to that list, please send a PR to [`EARLY_TESTERS.md`](https://github.com/ipfs/js-ipfs/blob/master/doc/EARLY_TESTERS.md) adding a link to your repo! That way you'll get early warning of any work that needs to be done to upgrade your project to the latest & greatest.
 
