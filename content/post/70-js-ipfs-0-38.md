@@ -13,6 +13,8 @@ $ npm install -g ipfs
 
 # 🔦 Highlights
 
+> Garbage collection, gossipsub & IPNS support for `ipfs resolve`! Also a new release process!
+
 ## 🗑️ Garbage collection
 
 Support for garbage collection has shipped with `0.38.0`! This means that blocks in your IPFS Repo will be removed whenever gc is run unless they are pinned.
@@ -50,6 +52,12 @@ You can now resolve [IPNS](https://docs.ipfs.io/guides/concepts/ipns/) names via
 $ jsipfs resolve /ipns/Qmqux
 /ipfs/Qmgarply
 ```
+
+## 🎁 New relase process & a call for early testers
+
+This is the first release to follow our new, more predicatable, more rigorous release process. It's outlined in the [release issue template](https://github.com/ipfs/js-ipfs/blob/master/doc/RELEASE_ISSUE_TEMPLATE.md), but in short we have defined steps, with an addional period for internal & external testing and gathering feedback on the changes.
+
+We also [run the test suites of third party repos](https://travis-ci.com/ipfs/js-ipfs/builds/129226310) with the RCs as part of CI - if you would like your project added to that list, please send a PR to [`EARLY_TESTERS.md`](https://github.com/ipfs/js-ipfs/blob/master/doc/EARLY_TESTERS.md) adding a link to your repo! That way you'll get early warning of any work that needs to be done to upgrade your project to the latest & greatest.
 
 # 🏗 API Changes
 
