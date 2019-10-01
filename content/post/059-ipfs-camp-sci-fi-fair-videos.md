@@ -1,14 +1,14 @@
 ---
 date: 2019-09-18
 url: 2019-09-18-ipfs-camp-sci-fi-fair-videos
-title: IPFS Camp Sci-Fi videos 🧬 + more interviews!
+title: IPFS Camp Sci-Fi videos 🧬
 author: Arkadiy Kukarkin
 ---
 
 {{< youtube D_4H8gz_9MU >}}
 _Welcome to the Sci-Fi Fair!_
 
-Hot on the heels of IPFS Camp videos covering [lightning talks](https://github.com/ipfs/camp#%EF%B8%8F-lightning-talks), [deep dives](https://github.com/ipfs/camp#-deep-dives), [poster projects](https://github.com/ipfs/camp#-poster-projects) and [core + elective courses](https://github.com/ipfs/camp#-core--elective-courses) come the **interviews from our [sci-fi fair](https://github.com/ipfs/camp#-sci-fi-fair)** (plus some bonus community interviews, see below)
+Hot on the heels of IPFS Camp videos covering [lightning talks](https://github.com/ipfs/camp#%EF%B8%8F-lightning-talks), [deep dives](https://github.com/ipfs/camp#-deep-dives), [poster projects](https://github.com/ipfs/camp#-poster-projects) and [core + elective courses](https://github.com/ipfs/camp#-core--elective-courses) come the **interviews from our [sci-fi fair](https://github.com/ipfs/camp#-sci-fi-fair)**.
 
 ## The Sci-Fi Fair
 In keeping with the fun and exploratory spirit of the camp, we put a twist on the usual conference demo area with our Sci-Fi Fair. We challenged our campers to bring their most surprising, experimental, interactive, scientific projects: in short, a vision of what the IPFS universe could look like in a future, or slightly askew timeline.
@@ -62,8 +62,13 @@ _Actyx's Rüdiger has somehow managed to avoid ALL photos at the fair, so here's
 ![@aschmahmann's Fast IPNS](/059-ipfs-camp-sci-fi-fair-videos/ipns.jpg)
 _Last but not least, Adin's "Fast IPNS" demo (it was VERY FAST!)_
 
-## Community Interviews
-IPFS Camp was all about YOU so the interviews weren't limited to just the Sci-Fi Fair participants: we managed to get some async sit-down time with a few other wonderful community members: see their accounts in [this playlist](TK)
 
-## Additional CTA
-TK
+## Keep Exploring!
+Huge thanks to our SciFi Fair participants for making IPFS Camp so out-of-this-world! If you're excited by any of these projects, please do get involved by checking out the [sci-fi fair repo](https://github.com/ipfs/camp#-sci-fi-fair) or reaching out to presenters directly about their work. 
+
+There's still more great content from IPFS Camp content coming your way, including recordings of keynotes and interviews. If you're interested in receiving an update when the next batch of videos are available, try out one of these routes:
+
+- Watch and star the [ipfs/camp repo](https://github.com/ipfs/camp/blob/master/README.md), where all the content will live.
+- Subscribe to the [RSS feed of this blog](https://blog.ipfs.io/index.xml).
+- Subscribe to the [IPFS Weekly Newsletter](https://tinyletter.com/ipfsnewsletter) if you're interested in general IPFS updates.
+- Subscribe to the [IPFS Events Newsletter](https://protocol.us20.list-manage.com/subscribe?u=62e1eb7f68461b5a2ab5c52e6&id=f3fed9af1d) if you're interested in IPFS events.
