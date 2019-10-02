@@ -1,4 +1,4 @@
----
+# ---
 date: 2019-09-18
 url: 2019-09-18-ipfs-camp-sci-fi-fair-videos
 title: IPFS Camp Sci-Fi videos 🧬
@@ -11,7 +11,7 @@ _Welcome to the Sci-Fi Fair!_
 Hot on the heels of IPFS Camp videos covering [lightning talks](https://github.com/ipfs/camp#%EF%B8%8F-lightning-talks), [deep dives](https://github.com/ipfs/camp#-deep-dives), [poster projects](https://github.com/ipfs/camp#-poster-projects) and [core + elective courses](https://github.com/ipfs/camp#-core--elective-courses) come the **interviews from our [sci-fi fair](https://github.com/ipfs/camp#-sci-fi-fair)**.
 
 ## The Sci-Fi Fair
-In keeping with the fun and exploratory spirit of the camp, we put a twist on the usual conference demo area with our Sci-Fi Fair. We challenged our campers to bring their most surprising, experimental, interactive, scientific projects: in short, a vision of what the IPFS universe could look like in a future, or slightly askew timeline.
+In keeping with the fun and exploratory spirit of the camp, we put a twist on the usual conference demo area with our Sci-Fi Fair. We challenged our campers to bring their most surprising, experimental, interactive, scientific projects: in short, a vision of what the IPFS universe could look like in a future, or slightly askew, timeline.
 
 See the complete-ish (we had quite a few guerilla participants!) [list of Fair projects](https://github.com/ipfs/camp/blob/master/SCI-FI_FAIR) for more details, or skip to the [playlist](https://www.youtube.com/playlist?list=PLuhRWgmPaHtTWCyJcTgLFhsg8Bi2dFPCo) if you're impatient.
 
@@ -20,26 +20,26 @@ See the complete-ish (we had quite a few guerilla participants!) [list of Fair p
 {{< youtube 34lVgp1snvg >}}
 _The Textile team demonstrates their interactive wares_
 
-Long-time IPFS community members Textile brought their crowd favorite p2p photobooth, as well as a game of cryptographically verified [Interplanetary Tag](https://medium.com/textileio/building-peer-to-peer-games-on-ipfs-a-look-at-interplanetary-tag-52d081ee1d32) (a sort of diplomatically named Interplanetary Assassin)
+Long-time IPFS community members [Textile](https://textile.io) brought their crowd favorite p2p photobooth, as well as a game of cryptographically verified [Interplanetary Tag](https://medium.com/textileio/building-peer-to-peer-games-on-ipfs-a-look-at-interplanetary-tag-52d081ee1d32) (or arguably Interplanetary Assassin)
 
 ### RPi Cluster
 
 {{< youtube 7pFf5gUnQ24 >}}
 _Hector explains the topology of the RPi cluster (feat. many blinkenlights)_
 
-Hector and the rest of the IPFS Cluster team came through with a project high in fun, fabric, and blinking lights: the Raspberry Pi IPFS Cluster. Six tiny but mighty (and lovingly upholstered) nodes tirelessly worked together to pin whatever CIDs were thrown at them and reported their pinset load through an ingenious hardware display. Not pictured: @cluster-labs' [Horizon UI for IPFS Cluster](https://medium.com/towardsblockchain/we-made-a-dashboard-for-ipfs-clusters-and-now-we-want-you-to-check-it-out-a87234629908) giving fair attendees even more fine-grained insights into the pinset.
+Hector and the rest of the [IPFS Cluster](https://cluster.ipfs.io) team came through with a project high in fun, fabric, and blinking lights: the Raspberry Pi IPFS Cluster. Six tiny but mighty (and lovingly upholstered) nodes tirelessly worked together to pin whatever CIDs were thrown at them and reported their pinset load through an ingenious hardware display. Not pictured: [@cluster-labs'](https://github.com/cluster-labs) [Horizon UI for IPFS Cluster](https://medium.com/towardsblockchain/we-made-a-dashboard-for-ipfs-clusters-and-now-we-want-you-to-check-it-out-a87234629908) giving fair attendees even more fine-grained insights into the pinset.
 
 ![@achingbrain's npm-in-a-box](/059-ipfs-camp-sci-fi-fair-videos/npm-in-box.jpg)
-_@achingbrain's npm-in-a-box project_
+_[Alex Potsides’s](https://github.com/achingbrain) npm-in-a-box project_
 
-**BONUS:** If you like big IPFS nodes running on small computers (and/or "The IT Crowd"), you may also enjoy Alex's "npm in a box", which packs the entire NPM package repository on a very portable (and sleek looking, if we say so) RPi based IPFS node with a BIG archival grade hard drive. Take this with you on your field trip and your team will never see an npm timeout ever again.
+**BONUS:** If you like big IPFS nodes running on small computers (and/or "The IT Crowd"), you may also enjoy Alex's ["npm in a box"](https://github.com/ipfs-shipyard/npm-on-ipfs), which packs the entire NPM package repository on a very portable (and pretty sleek looking) RPi based IPFS node with a BIG archival grade hard drive. Take this with you on your field trip and your team will never see an npm timeout ever again.
 
 ### MetaMask's Network Visualizer
 
 {{< youtube 7HDVgjQnNdM >}}
-_@kumavis shows off the live network visualizer_
+_[kumavis](https://github.com/kumavis) shows off the live network visualizer_
 
-The MetaMask crew brought a tool that proved invaluable in their network connectivity diagnostics: a DHT visualizer. Following some wireless network trouble (a real-world scenario to be sure), we were treated to some beautiful visualizations of network connectivity.
+The [MetaMask](https://metamask.io) crew brought a tool that proved invaluable in their network connectivity diagnostics: a DHT visualizer. Following some wireless network trouble (a real-world scenario to be sure), we were treated to some beautiful visualizations of network connectivity.
 
 ### And More
 These are just some of the projects that made it to the Fair: head over to the [offical Fair playlist](https://www.youtube.com/playlist?list=PLuhRWgmPaHtTWCyJcTgLFhsg8Bi2dFPCo) to catch the rest of the videos, as well as the full cuts of the interviews above. Don't miss Berty's Bluetooth Low Energy p2p transport, Brave's one-click in-browser IPFS, and more!
