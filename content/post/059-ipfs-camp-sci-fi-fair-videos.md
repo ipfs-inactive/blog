@@ -1,6 +1,6 @@
 ---
-date: 2019-09-18
-url: 2019-09-18-ipfs-camp-sci-fi-fair-videos
+date: 2019-10-03
+url: 2019-10-03-ipfs-camp-sci-fi-fair-videos
 title: IPFS Camp Sci-Fi videos 🧬
 author: Arkadiy Kukarkin
 ---
@@ -48,19 +48,19 @@ These are just some of the projects that made it to the Fair: head over to the [
 Our tireless camera crew could only be in one place at a time (we're working on it), which has left some of our favorite projects sadly underdocumented in the video department. Here are some stills that fill in the gaps:
 
 ![@MarneeDear's FARS + @gorhgorh's minitel IPFS](/059-ipfs-camp-sci-fi-fair-videos/marnee-minitel.jpg)
-_Marnee Dearman's IPFS-over-Ham Radio FARS project and Jérôme's IPFS Chat on a French Minitel terminal_
+_[Marnee Dearman](https://github.com/MarneeDear)'s IPFS-over-Ham Radio FARS project and Jérôme's IPFS Chat on a French Minitel terminal_
 
 ![@vasa-develop's 3D collaboration](/059-ipfs-camp-sci-fi-fair-videos/vasa.jpg)
-_Vasa's CRDT-based collaborative 3D modeling interface_
+_[Vasa](https://github.com/vasa-develop)'s CRDT-based collaborative 3D modeling interface_
 
 ![@gorhgorh's catbot](/059-ipfs-camp-sci-fi-fair-videos/catbot.jpg)
-_Jérôme Loï's libp2p-powered Lazer Catbot (unfortunately no cats were on premises)_
+_[Jérôme Loï](https://github.com/goth goth)'s libp2p-powered Lazer Catbot (unfortunately no cats were on premises)_
 
 ![the elusive @rklaehn](/059-ipfs-camp-sci-fi-fair-videos/actyx.jpg)
-_Actyx's Rüdiger has somehow managed to avoid ALL photos at the fair, so here's a shot of him demoing their amazing industrial automation system from the lightning talks_ 
+_Actyx's [Rüdiger](https://github.com/rklaehn) has somehow managed to avoid ALL photos at the fair, so here's a shot of him demoing their amazing industrial automation system from the lightning talks_ 
 
 ![@aschmahmann's Fast IPNS](/059-ipfs-camp-sci-fi-fair-videos/ipns.jpg)
-_Last but not least, Adin's "Fast IPNS" demo (it was VERY FAST!)_
+_Last but not least, [Adin](https://github.com/aschmahmann)'s "Fast IPNS" demo (it was VERY FAST!)_
 
 
 ## Keep Exploring!
