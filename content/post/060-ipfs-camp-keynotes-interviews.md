@@ -1,6 +1,6 @@
 ---
-date: 2019-10-04
-url: 2019-04-04-ipfs-camp-keynotes-interviews
+date: 2019-10-06
+url: 2019-04-06-ipfs-camp-keynotes-interviews
 title: IPFS Camp Keynotes and Interviews
 author: Molly Mackinlay
 ---
@@ -27,7 +27,7 @@ On our last day, we celebrated the amazing learning, presentations, and courses 
 And finally, Juan set us back out through the airlock back toward Earth with his [IPFS Camp Sendoff](https://youtu.be/HDc7kEYHang), including a huge **THANK YOU** to everyone who made this camp possible - especially the tireless Protocol Labs Events Team who worked so hard to make this event a huge success!
 
 ### Recap
-![image](https://user-images.githubusercontent.com/618519/66095571-d7a99080-e54c-11e9-9db7-906fe034f888.png)
+[![Screen Shot 2019-10-02 at 7 44 37 PM](https://user-images.githubusercontent.com/618519/66095633-163f4b00-e54d-11e9-9963-bd68c23742d6.png)](https://youtu.be/cQJXnJDbXv4)
 
 Curious how everything fit together, or want to understand how the pieces of IPFS Camp became a greater whole? Check out [this overview from Molly](https://youtu.be/cQJXnJDbXv4) on how different components like the Poster Sessions & Deep Dives, SciFi Fair, Lightning Talks, and of course the Core & Elective Courses, wove together into a great community event. Many connections between different attendees and projects emerged from IPFS Camp too - spurring new collaborations and integrations. These great recaps from [Textile](https://medium.com/textileio/ipfs-camp-2019-the-highlights-and-takeaways-2b3cb4f42513), [Berty](https://berty.tech/blog/ipfs-camp/), and of course [the IPFS blog](https://blog.ipfs.io/2019-07-08-ipfs-camp-recap/) highlight a few!
 
@@ -43,7 +43,7 @@ In [this interview](https://youtu.be/wNfk05D887M), we heard from Edgar about how
 ### Audius - Hareesh Nagaraj
 [![Screen Shot 2019-09-30 at 5 32 15 PM](https://user-images.githubusercontent.com/618519/65926083-439ec400-e3a8-11e9-9b5b-c40f118e3258.png)](https://youtu.be/3pSV6ai6QUI) 
 
-We spoke to Hareesh from [Audius](https://audius.co/), a decentralized music streaming platform, about how they're using IPFS as their primary file storing system. Check out their recent [launch blog post](https://techcrunch.com/2019/09/24/audius-music/) to learn more.
+We [spoke](https://youtu.be/3pSV6ai6QUI) to Hareesh from [Audius](https://audius.co/), a decentralized music streaming platform, about how they're using IPFS as their primary file storing system. Check out their recent [launch blog post](https://techcrunch.com/2019/09/24/audius-music/) to learn more.
 
 ### And More
 
@@ -58,7 +58,7 @@ And on top of all that, Steven joined us from Shanghai City to discuss his work 
 
 
 ## That's All, Folks
-This concludes our series of updates from IPFS Camp recap-ing the amazing presentations, demos, courses, and learning we did together. We're so grateful to everyone for making this event so vibrant and creative - and are already looking forward to the **next** IPFS Camp. If you want more IPFS updates in the meantime, try these channels:
+This concludes our series of updates from IPFS Camp recap-ing the amazing presentations, demos, courses, and learnings we had together. We're so grateful to everyone for making this event so vibrant and creative - and are already looking forward to the **next** IPFS Camp. If you want more IPFS updates in the meantime, try these channels:
 
 - Watch and star the [ipfs/camp repo](https://github.com/ipfs/camp/blob/master/README.md), where all the content (and follow-ups) live.
 - Subscribe to the [RSS feed of this blog](https://blog.ipfs.io/index.xml).
