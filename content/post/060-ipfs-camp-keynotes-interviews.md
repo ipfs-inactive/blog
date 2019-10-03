@@ -26,6 +26,9 @@ On our last day, we celebrated the amazing learning, presentations, and courses 
 
 And finally, Juan set us back out through the airlock back toward Earth with his [IPFS Camp Sendoff](https://youtu.be/HDc7kEYHang), including a huge **THANK YOU** to everyone who made this camp possible - especially the tireless Protocol Labs Events Team who worked so hard to make this event a huge success!
 
+### Recap
+Curious how everything fit together, or want to understand how the pieces of IPFS Camp became a greater whole? Check out [this overview from Molly](https://youtu.be/cQJXnJDbXv4) on how different components like the Poster Sessions & Deep Dives, SciFi Fair, Lightning Talks, and of course the Core & Elective Courses, wove together into a great community event. Many connections between different attendees and projects emerged from IPFS Camp too - spurring new collaborations and integrations. These great recaps from [Textile](https://medium.com/textileio/ipfs-camp-2019-the-highlights-and-takeaways-2b3cb4f42513), [Berty](https://berty.tech/blog/ipfs-camp/), and of course [the IPFS blog](https://blog.ipfs.io/2019-07-08-ipfs-camp-recap/) highlight a few!
+
 ## Community Interviews
 IPFS Camp was all about sharing and forming connections between projects and individuals in the IPFS community, so we managed to get some sit-down time with a few wonderful community members to talk about their projects. Check out the videos below or skip right to the [playlist](https://www.youtube.com/playlist?list=PLuhRWgmPaHtTwwGv30nKdhr3GiIAnhbyE). 
 
