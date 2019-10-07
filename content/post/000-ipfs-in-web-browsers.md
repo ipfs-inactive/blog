@@ -61,7 +61,7 @@ Earlier this year [Opera announced they were working on support for IPFS](https:
 
 Integrated IPFS gateway support is one big step forward, but as the name implies, it isn't truly decentralized. Only when a browser can be a full participant in the network - both a client *and* a server - will we have a truly distributed web. 
 
-These early-adopters light the way, proving out what works and doesn't and easing development for dapp developers in the near term.
+These early-adopters light the way, proving out what works and doesn't, and easing development for dapp developers in the near term.
 
 But there's a lot of work to be done. IPFS  itself is still in flux, with major work ongoing in performance and robustness, and feature work around privacy and content filtering.
 
