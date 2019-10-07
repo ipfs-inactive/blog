@@ -63,7 +63,7 @@ Integrated IPFS gateway support is one big step forward, but as the name implies
 
 These early-adopters light the way, proving out what works and doesn't, and easing development for dapp developers in the near term.
 
-But there's a lot of work to be done. IPFS  itself is still in flux, with major work ongoing in performance and robustness, and feature work around privacy and content filtering.
+But there's a lot of work to be done. IPFS  itself is still in flux, with major work ongoing in performance and robustness, and new features around privacy and content filtering.
 
 We're working on detailed use-cases to share with standards bodies, and a threat model that browser vendors can build and design against. Both are prerequisites for a future where all major browsers have interoperable implementations, which is what would make IPFS truly be part of the web.
 
