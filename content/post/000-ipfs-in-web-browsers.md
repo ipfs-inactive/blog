@@ -53,7 +53,7 @@ By default, our browser extension still expects [IPFS Desktop](https://github.co
 
 Opera is another [early leader](https://blogs.opera.com/mobile/2018/12/ofa-49-with-crypto/) in the space. They've developed *native* crypto wallets in their browsers, which began shipping in 2018 in Android and now released in their iOS and desktop browsers as well.
 
-Earlier this year [Opera announced they were working on support for IPFS](https://twitter.com/ensdomains/status/1102884419017297921)! We've been talking ever since, and are looking forward to IPFS support in their Android browser by the end of this year.
+Earlier this year [Opera announced they were working on support for IPFS](https://twitter.com/ensdomains/status/1102884419017297921)! We've been talking ever since, and are looking forward to launch IPFS support in their Android browser by the end of this year.
 
 ![Opera announcing ENS and IPFS at EthCC March 2019](https://file.globalupload.io/fE5aG9KKAr.png)
 
