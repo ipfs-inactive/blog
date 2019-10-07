@@ -36,14 +36,13 @@ In the future, when you [load a URL beginning with "ipfs://"](https://github.com
 
 But that isn't all. One of the biggest barriers to even just experimenting with true p2p networks in browsers is the lack of APIs available to extensions and web pages. The primitives of most p2p systems are filesystem access, raw TCP sockets, UDP sockets for broadcast and receive, and in browsers you need a way to navigate using a custom protocol. We've figured out one piece of that puzzle while working with Brave: Chromium OS sockets!
 
-[Chromium OS](https://en.wikipedia.org/wiki/Chromium_OS) has a raw sockets API, but it's disabled in the regular browser. Brave has modified their build to whitelist those APIs for IPFS Companion to use. 
+[Chromium OS](https://en.wikipedia.org/wiki/Chromium_OS) has a raw sockets API, but it's disabled in the Chrome browser. Brave has modified their build to whitelist those APIs for IPFS Companion to use - and this gives us *superpowers* compared to any other browser at this point.
 
 These powerful APIs enable the js-ipfs node embedded in the browser to provide a *true* P2P experience without the need for an external daemon:
 
 * Embedded HTTP Gateway removes reliance on public gateways
 * TCP transport improves connectivity (enables direct interop with go-ipfs)
 * UDP sockets enable DNS-based service discovery of go-ipfs in LAN, and we are working on browser to browser discovery methods that work in offline environments
-
 
 By default, our browser extension still expects [IPFS Desktop](https://github.com/ipfs-shipyard/ipfs-desktop#ipfs-desktop) to be installed, however you can select the experimental option shown below.
 
