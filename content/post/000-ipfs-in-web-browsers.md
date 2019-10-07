@@ -26,7 +26,7 @@ Initially, we're aiming to ease access to the IPFS HTTP gateways - creating a br
 
 Brave has tended to live up to its name since the beginning - riling up the browser, publisher and crypto worlds. [Since 2018](https://github.com/brave/brave-browser/issues/819) we've been working with Brave on IPFS support in some form, and the results of that work are now emerging.
 
-Today you can open [brave://settings/extensions](brave://settings/extensions) in Brave beta or nightly and see a toggle for enabling IPFS Companion.
+Today you can open [brave://settings/extensions](brave://settings/extensions) in Brave and see a toggle for enabling IPFS Companion.
 
 ![Enabling IPFS Companion in Brave](https://file.globalupload.io/ZVxjmPZ48E.gif)
 
