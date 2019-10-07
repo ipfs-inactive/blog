@@ -30,7 +30,7 @@ Today you can open [brave://settings/extensions](brave://settings/extensions) in
 
 ![Enabling IPFS Companion in Brave](https://file.globalupload.io/ZVxjmPZ48E.gif)
 
-Removing this install step *really matters* for adoption. While technical users are familiar with browser extensions, it's less comfortable for non-technical users.
+Removing this install step *really matters* for adoption. While technical users are familiar with browser extensions, it's less comfortable for non-technical users, and Brave users have the additional overhead of going to the *Chrome* web app store to find and install them.
 
 In the future, when you [load a URL beginning with "ipfs://"](https://github.com/brave/brave-browser/issues/3045), Brave will prompt you to enable the extension, providing a smooth discovery and onboarding experience.
 
