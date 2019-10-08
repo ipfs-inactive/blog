@@ -38,8 +38,8 @@ But that isn't all. One of the biggest barriers to even just experimenting with 
 
 These powerful APIs enable the js-ipfs node embedded in the browser to provide a *true* P2P experience without the need for an external daemon:
 
-* Embedded HTTP Gateway removes reliance on public gateways
-* TCP transport improves connectivity (enables direct interop with go-ipfs)
+* The embedded HTTP Gateway removes reliance on public gateways, by connecting over HTTP to a local IPFS node
+* TCP transport improves connectivity by communicating directly with go-ipfs nodes
 * UDP sockets enable DNS-based service discovery of go-ipfs in LAN, and we are working on browser to browser discovery methods that work in offline environments
 
 By default, our browser extension still expects [IPFS Desktop](https://github.com/ipfs-shipyard/ipfs-desktop#ipfs-desktop) to be installed, however you can select the experimental option shown below.
