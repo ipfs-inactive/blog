@@ -20,12 +20,6 @@ Initially in our browser work, we're aiming to ease access to the IPFS HTTP gate
 
 As part of this progression to native IPFS support, we've had ongoing collaborations with Firefox, Brave, Opera, and other browsers. Read on to hear the latest status and learn about our progress so far.
 
-## Firefox
-
-> Perhaps it makes sense to mention Firefox as a full recap-like section here, afaik we did not blog about libdweb at all yet. 
-> Idea: start with mentioning we've been working with Mozilla on initial APIs since 2018, mention [experimental protocol handler](https://github.com/ipfs-shipyard/ipfs-companion/pull/533) and [local discovery + TCP transport](https://github.com/ipfs-shipyard/ipfs-companion/pull/553) and include video demos from 2018: user-facing handler https://www.youtube.com/watch?v=fS8pLOQdOoM + optionally https://www.youtube.com/watch?v=FRzyWUXIyeo then end this section with hopes to see those APIs start landing in Nightly as a soft pressure by shining some light on this. 
-> Thoughts? [name=lidel]
-
 ## Brave
 
 Brave has tended to live up to its name since the beginning - riling up the browser, publisher and crypto worlds. [Since 2018](https://github.com/brave/brave-browser/issues/819) we've been working with Brave on IPFS support in some form, and the results of that work are now emerging.
@@ -59,6 +53,18 @@ Opera is another [early leader](https://blogs.opera.com/mobile/2018/12/ofa-49-wi
 Earlier this year [Opera announced they were working on support for IPFS](https://twitter.com/ensdomains/status/1102884419017297921)! We've been talking ever since, and are looking forward to launch IPFS support in their Android browser by the end of this year.
 
 ![Opera announcing ENS and IPFS at EthCC March 2019](https://file.globalupload.io/fE5aG9KKAr.png)
+
+## Firefox
+
+We've been working with Mozilla on initial APIs since 2018, when the [libdweb project](https://github.com/mozilla/libdweb) emerged, providing browser extension APIs for many of the primitives a P2P system needs: filesystem access, TCP, UDP and protocol registration and handling. Earlier in 2018 the [ipfs:// scheme was whitelisted in Firefox](https://blog.mozilla.org/addons/2018/01/26/extensions-firefox-59/), so now with libdweb we were able to experiment with a proper [ipfs:// protocol handler](https://github.com/ipfs-shipyard/ipfs-companion/pull/533), which we demoed at Lab Day in August 2018:
+
+[Lab Day demo of IPFS protocol handler in Firefox with libdweb by Lidel and Kyle](https://www.youtube.com/watch?v=fS8pLOQdOoM)
+
+We also used yet more APIs in libdweb to implement [local discovery and TCP transport](https://github.com/ipfs-shipyard/ipfs-companion/pull/553):
+
+[Alan Shaw demos MDNs local network discovery of IPFS in Firefox with libdweb](https://www.youtube.com/watch?v=FRzyWUXIyeo)
+
+Unfortunately, libdweb is still an experimental set of APIs - not included in Firefox yet. We're hoping to see more progress soon from Mozilla on shipping libdweb APIs in Firefox for at least some extensions this year!
 
 ## The Work is Just Beginning
 
