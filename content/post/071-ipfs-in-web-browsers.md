@@ -1,6 +1,6 @@
 ---
-date: 2019-10-07
-url: 2019-10-07-ipfs-browsers-update
+date: 2019-10-08
+url: 2019-10-08-ipfs-browsers-update
 title: IPFS Browser Update
 author: Dietrich Ayala
 ---
