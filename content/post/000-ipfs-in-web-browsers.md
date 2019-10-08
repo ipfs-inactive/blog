@@ -46,6 +46,10 @@ By default, our browser extension still expects [IPFS Desktop](https://github.co
 
 ![IPFS configuration option for embedded node using Chrome sockets API in Brave](https://file.globalupload.io/g3217mupyf.png)
 
+At IPFS Camp earlier this year, Brave engineer Jocelyn Liu demoed some of these features at the science fair, including one-click install of Companion, the embedded gateway, and also talks about what's to come: tackling the current connectivity limitations such as the lack of DHT support in js-ipfs, and also plans Brave has for the design of the address bar when loading IPFS content.
+
+<iframe width="2000" height="600" src="https://www.youtube-nocookie.com/embed/oMqe9LfnIDU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Opera
 
 Opera is another [early leader](https://blogs.opera.com/mobile/2018/12/ofa-49-with-crypto/) in the space. They've developed *native* crypto wallets in their browsers, which began shipping in 2018 in Android and are now released in their iOS and desktop browsers as well.
