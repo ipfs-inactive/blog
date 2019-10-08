@@ -14,7 +14,7 @@ But we're making headway. Today, we'd like to share some collaborations the IPFS
 
 The path to a truly decentralized web is a long one. For over 30 years the browser has been a [*client*](https://en.wikipedia.org/wiki/Client_(computing)) - but a foundational concept in P2P systems is that a participant is both a client *and a server*. Web browser vendors and web standards bodies have not designed for this architectural shift, so we're breaking it down into steps.
 
-From the beginning, IPFS had an HTTP gateway. The gateway lets HTTP clients like web browsers publish to and read from the IPFS network. Now there are [lots of public HTTP gateways to the IPFS network](https://ipfs.github.io/public-gateway-checker/), and ipfs.io serves XXX requests per day.
+From the beginning, IPFS had an HTTP gateway. The gateway lets HTTP clients like web browsers publish to and read from the IPFS network. Now there are [lots of public HTTP gateways to the IPFS network](https://ipfs.github.io/public-gateway-checker/), and the ipfs.io gateway alone serves over *five million* requests per day.
 
 Initially in our browser work, we're aiming to ease access to the IPFS HTTP gateways - creating a bridge between the billions of people on the centralized web and content on the distributed web. We expect some experimentation in the next phase - adjusting node behavior based on browser APIs, device capabilities, bandwidth availability and power consumption - while we grow adoption with our browser partners as we learn and build common understanding at standards bodies. Ultimately, we aim to have multiple browsers implement fully native (and interoperable!) IPFS support.
 
