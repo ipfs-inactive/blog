@@ -64,7 +64,7 @@ We've been working with Mozilla on initial APIs since 2018, when the [libdweb pr
 
 <iframe width="2000" height="600" src="https://www.youtube-nocookie.com/embed/fS8pLOQdOoM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-We also used yet more APIs in libdweb to implement [local discovery and TCP transport](https://github.com/ipfs-shipyard/ipfs-companion/pull/553):
+We used yet more APIs in libdweb to implement [local discovery and TCP transport](https://github.com/ipfs-shipyard/ipfs-companion/pull/553):
 
 <iframe width="2000" height="600" src="https://www.youtube-nocookie.com/embed/FRzyWUXIyeo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
