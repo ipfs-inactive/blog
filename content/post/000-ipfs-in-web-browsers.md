@@ -62,7 +62,7 @@ We've been working with Mozilla on initial APIs since 2018, when the [libdweb pr
 
 We also used yet more APIs in libdweb to implement [local discovery and TCP transport](https://github.com/ipfs-shipyard/ipfs-companion/pull/553):
 
-[Alan Shaw demos MDNs local network discovery of IPFS in Firefox with libdweb](https://www.youtube.com/watch?v=FRzyWUXIyeo)
+<iframe width="2000" height="600" src="https://www.youtube-nocookie.com/embed/FRzyWUXIyeo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Unfortunately, libdweb is still an experimental set of APIs - not included in Firefox yet. We're hoping to see more progress soon from Mozilla on shipping libdweb APIs in Firefox for at least some extensions this year!
 
