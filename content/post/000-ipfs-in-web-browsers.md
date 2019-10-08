@@ -85,6 +85,7 @@ Consider this a sneak peek. There's more on the way:
 * In Brave, the gateway is, well... a gateway to even more: We're working on local discovery (mDNS) of IPFS nodes, and also Brave-to-Brave connectivity for embedded nodes.
 * We're continuing our experiments with [libdweb](https://github.com/mozilla/libdweb) in Firefox, both on desktop and Android. 
 * Puma browser, the first mobile browser with support for [Coil's micropayments for publishers](https://www.grantfortheweb.org/), is interested in IPFS support.
+* Keeping a close eye on [Bundled HTTP Exchanges](https://wicg.github.io/webpackage/draft-yasskin-wpack-bundled-exchanges.html) and ways IPFS could provide decentralized alternative to centralized HTTP CDNs.
 * We're exploring what a native Chromium implementation might look like...
 
 If you're an experienced Chromium developer or mobile app developer and you're interested in working on some of these projects, contact Dietrich Ayala on [Twitter](https://twitter.com/dietrich) or [LinkedIn](https://www.linkedin.com/in/dietrich).
