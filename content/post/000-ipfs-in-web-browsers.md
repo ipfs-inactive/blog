@@ -4,7 +4,7 @@ url: 2019-10-07-ipfs-browsers-update
 title: IPFS Browser Update
 author: Dietrich Ayala
 ---
-Decentralization can feel slow in providing user-centric approaches to the internet's biggest problems. Right now, true user agency is often too technical, too fragile, and too time-consuming to be the default choice.
+Decentralization can feel slow in providing user-centric approaches to the internet's biggest problems. Right now, software that is fully in the control of the user is often too technical, too fragile, and too time-consuming to be the default choice.
 
 But we're making headway. Today, we'd like to share some collaborations the IPFS project has had in the works for a while, which bring us a few steps closer to making unmediated access to information *just work*... by solving that "last mile" problem and *integrating IPFS directly into web browsers*!
 
