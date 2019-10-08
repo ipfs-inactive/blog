@@ -30,7 +30,7 @@ Today you can open [`brave://settings/extensions`](brave://settings/extensions) 
 
 Removing this install step *really matters* for adoption. While technical users are familiar with browser extensions, it's less comfortable for non-technical users, and Brave users have the additional overhead of going to the *Chrome* web app store to find and install them.
 
-In the future, when you [load a URL beginning with "ipfs://"](https://github.com/brave/brave-browser/issues/3045), Brave will prompt you to enable the extension, providing a smooth discovery and onboarding experience.
+In the future, when you [load a URL beginning with "ipfs://"](https://github.com/brave/brave-browser/issues/3045), Brave will prompt you to enable the extension, providing a smooth discovery and onboarding experience. And when you are browsing IPFS resource, the [address bar will reflect that](https://github.com/brave/brave-browser/issues/5218).
 
 But that isn't all. One of the biggest barriers to even just experimenting with true p2p networks in browsers is the lack of APIs available to extensions and web pages. The primitives of most p2p systems are filesystem access, raw TCP sockets, UDP sockets for broadcast and receive, and in browsers you need a way to navigate using a custom protocol. We've figured out one piece of that puzzle while working with Brave: Chromium OS sockets!
 
