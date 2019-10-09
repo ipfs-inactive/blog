@@ -42,7 +42,7 @@ _[kumavis](https://github.com/kumavis) shows off the live network visualizer_
 The [MetaMask](https://metamask.io) crew brought a tool that proved invaluable in their network connectivity diagnostics: a DHT visualizer. Following some wireless network trouble (a real-world scenario to be sure), we were treated to some beautiful visualizations of network connectivity.
 
 ### And More
-These are just some of the projects that made it to the Fair: head over to the [offical Fair playlist](https://www.youtube.com/playlist?list=PLuhRWgmPaHtTWCyJcTgLFhsg8Bi2dFPCo) to catch the rest of the videos, as well as the full cuts of the interviews above. Don't miss Berty's Bluetooth Low Energy p2p transport, Brave's one-click in-browser IPFS, and more!
+These are just some of the projects that made it to the Fair: head over to the [offical Fair playlist](https://www.youtube.com/playlist?list=PLuhRWgmPaHtTWCyJcTgLFhsg8Bi2dFPCo) to catch the rest of the videos, as well as the full cuts of the interviews above. Don't miss [Berty's Bluetooth Low Energy p2p transport](https://www.youtube.com/watch?v=B3fUHtdVBn0), [Brave's one-click in-browser IPFS](https://www.youtube.com/watch?v=JTAMeBrul6k), and more!
 
 ### Lest We Forget
 Our tireless camera crew could only be in one place at a time (we're working on it), which has left some of our favorite projects sadly underdocumented in the video department. Here are some stills that fill in the gaps:
