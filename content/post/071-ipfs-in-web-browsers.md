@@ -92,4 +92,5 @@ Consider this a sneak peek. There's more on the way:
 * Keeping a close eye on [Bundled HTTP Exchanges](https://wicg.github.io/webpackage/draft-yasskin-wpack-bundled-exchanges.html) and ways IPFS could provide decentralized alternative to centralized HTTP CDNs.
 * We're exploring what a native Chromium implementation might look like...
 
-If you're an experienced Chromium developer or mobile app developer and you're interested in working on some of these projects, contact Dietrich Ayala on [Twitter](https://twitter.com/dietrich) or [LinkedIn](https://www.linkedin.com/in/dietrich).
+If you're an experienced Chromium developer or mobile app developer and you're interested in working on some of these projects, contact Dietrich Ayala on [Twitter](https://twitter.com/dietrich), the [fediverse](https://mastodon.social/@dietrich), [Secure Scuttlebutt](@vB/yLGZ7vBGgPMTG5NEczZc6ufr0YqhxRScOk6jPi60=.ed25519
+) or [LinkedIn](https://www.linkedin.com/in/dietrich).
