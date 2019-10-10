@@ -22,7 +22,7 @@ Here are some of the highlights since the last IPFS Weekly.
 
 ### An update on IPFS Browser progress
 
-We’re making headway! We’d like to share some collaborations the IPFS project has had in the works for a while, which bring us a few steps closer to making unmediated access to information just work… by solving that “last mile” problem and [integrating IPFS directly into web browsers](https://blog.ipfs.io/2019-10-08-ipfs-browsers-update/).
+We’re making headway! We’d like to share some collaborations the IPFS project has had in the works for a while, which brings us a few steps closer to making unmediated access to information just work… by solving that “last mile” problem and [integrating IPFS directly into web browsers](https://blog.ipfs.io/2019-10-08-ipfs-browsers-update/).
 
 ### IPFS now available on Storj Network
 
