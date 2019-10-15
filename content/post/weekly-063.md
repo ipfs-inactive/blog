@@ -7,7 +7,7 @@ title: Recapping IPFS in Q3 2019 🎉
 author: Jenn Turner
 ---
 
-Every day brings us closer to the end of 2019! To celebrate, we put together a very special issue looking back on all that the [InterPlanetary File System (IPFS)](https://ipfs.io/) community has accomplished so far in 2019. From milestones like XXX and new releases, to the many awesome (and new!) contributors who have joined us, and what’s to come for the rest of this year, we hope you enjoy this quarterly recap.
+Every day brings us closer to the end of 2019! To celebrate, we put together a very special issue looking back on all that the [InterPlanetary File System (IPFS)](https://ipfs.io/) community has accomplished so far in 2019. From milestones like remixing our working group and shipping new releases, to the many awesome (and new!) contributors who have joined us, and what’s to come for the rest of this year, we hope you enjoy this quarterly recap.
 
 Thanks for being part of our community, we truly couldn’t make IPFS what it is without you. ❤️
 
