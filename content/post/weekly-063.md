@@ -25,7 +25,6 @@ Back in July, [we remixed the project working groups](https://blog.ipfs.io/2019-
 
 ### js-libp2p 0.26.0 released 🧩
 
-https://blog.ipfs.io/2019-08-07-js-libp2p-0-26/
 In early August, [js-libp2p also got Gossipsub support](https://blog.ipfs.io/2019-08-07-js-libp2p-0-26/), and Promisify-ied the libp2p API.
 
 ### go-ipfs 0.4.22 released 💠
@@ -43,7 +42,6 @@ Due to boring technical reasons, pubsub over the HTTP API in the browser was not
 ## IPFS Desktop 0.9 released 🖥
 
 In early September, [the newest version of IPFS Desktop, 0.9.2 shipped](https://blog.ipfs.io/2019-09-19-ipfs-desktop-0-9/)! You can now browse, use npm on IPFS, add IPFS command line tools to your system, and more!
-
 
 ## IPFS Browser Update 
 
@@ -261,8 +259,8 @@ As the year winds down, the different project working groups across all of IPFS 
 
 
 # Thanks for reading ☺️
-That’s it for this special edition of the IPFS Weekly. If we missed something, [reply to this email](mailto:newsletter@ipfs.io) and let us know! Next week we’ll return with all the news that’s happened across the ecosystem since the last weekly.
+That’s it for this special edition of the IPFS Weekly. If we missed something, [send us an email](mailto:newsletter@ipfs.io) and let us know! Next week we’ll return with all the news that’s happened across the ecosystem since the last weekly.
 
-If this is your first time reading the IPFS Weekly, you can learn more or get involved by checking out [the project on GitHub](https://github.com/ipfs), or joining us [on IRC](https://riot.im/app/#/room/#ipfs:matrix.org).
+If this is your first time reading the IPFS Weekly, you can learn more or get involved by checking out [the project on GitHub](https://github.com/ipfs), or joining us [on chat](https://riot.im/app/#/room/#ipfs:matrix.org).
 
 See you next week! 👋
