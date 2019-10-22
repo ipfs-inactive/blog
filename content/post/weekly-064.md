@@ -49,7 +49,6 @@ Catch up on [Juan Benet’s talk](https://www.youtube.com/watch?v=pJOG5Ql7ZD0) f
 + [Tech Lead, Distributed Systems Test Infrastructure](https://jobs.lever.co/protocol/1ef5b878-573d-44fc-9fe6-c3745597c1fd), Protocol Labs, Remote
 + [Distributed Systems Engineer, IPFS Cluster (Go)](https://jobs.lever.co/protocol/29207ca7-76a4-470f-b94a-e24244f9adc1), Protocol Labs, Remote
 + [Senior Backend Engineer](https://www.golangprojects.com/golang-go-job-dcr-Senior-Backend-Engineer-Berlin-MXC-Foundation-gGmbH.html), MXC Foundation gGmbH, Berlin, Germany
-+ [Senior Golang Engineer](https://www.golangprojects.com/golang-go-job-def-Senior-Golang-Engineer-Remote-Textile.html), Textile, Remote
 + [Distributed Systems Technical Lead, IPFS](https://jobs.lever.co/protocol/9283f9b0-de64-4e1f-a221-5d02b0202198), Protocol Labs, Remote
 
 
