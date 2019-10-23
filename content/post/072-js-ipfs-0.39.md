@@ -58,7 +58,7 @@ $ jsipfs daemon --init-profile server
 
 ## 🌐 Concurrent HTTP requests limited in the browser
 
-Interacting with IPFS can cause a lot of preloading and other background requests to be made - most browsers can only have so many requests in flight to a single origin at once so this can cause requests to the same origins made outside of IPFS to take time as they wait their turn to be processed.
+Interacting with IPFS can cause a lot of preloading and other background requests to be made - [most browsers](https://bugs.chromium.org/p/chromium/issues/detail?id=285567) can only have so many requests in flight to a single origin at once so this can cause requests to the same origins made outside of IPFS to take time as they wait their turn to be processed.
 
 As of `ipfs@0.39.0`, the concurrency of HTTP requests for DNS resolution and preloading are limited to always ensure there are always connections available to speedily process requests made by users.
 
@@ -137,4 +137,4 @@ Would you like to contribute to the IPFS project and don't know how? Well, there
 
 # ⁉️ Do you have questions?
 
-The best place to ask your questions about IPFS, how it works and what you can do with it is at [discuss.ipfs.io](http://discuss.ipfs.io). We are also available at the `#ipfs` channel on Freenode.
+The best place to ask your questions about IPFS, how it works and what you can do with it is at [discuss.ipfs.io](https://discuss.ipfs.io). We are also available at the `#ipfs` channel on Freenode and [Matrix](https://matrix.to/#/#ipfs:matrix.org)
