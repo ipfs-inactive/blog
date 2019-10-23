@@ -13,7 +13,7 @@ author: Alex Potsides
 $ npm install -g ipfs
 ```
 
-## 📋 Config profiles
+## 🛠 Config profiles
 
 IPFS now supports the `jsipfs config profile` subcommand which you can use to update your configuration with certain presets suited for different use cases.
 
@@ -42,7 +42,7 @@ $ jsipfs config profile apply lowpower
 ... output shows the difference between the old config and the new
  ```
 
-You may need to restart your daemon for changes to take effect.
+You will need to restart your daemon for changes to take effect.
 
 Profiles can also be applied on init:
 
@@ -58,9 +58,9 @@ $ jsipfs daemon --init-profile server
 
 ## 🌐 Concurrent HTTP requests limited in the browser
 
-Interacting with IPFS can cause a lot of preloading and other background requests to be made - most browsers can only hae so many requests in flight at once so this can cause actual API calls to take time as their generated request wait their turn to be processed.
+Interacting with IPFS can cause a lot of preloading and other background requests to be made - most browsers can only have so many requests in flight to a single origin at once so this can cause requests to the same origins made outside of IPFS to take time as they wait their turn to be processed.
 
-As of `ipfs@0.39.0`, the concurrency of background requests are limited to always ensure there are connections available to speedily process the API requests made by users.
+As of `ipfs@0.39.0`, the concurrency of HTTP requests for DNS resolution and preloading are limited to always ensure there are always connections available to speedily process requests made by users.
 
 ## 🌅 Init and start your daemon in one command
 
@@ -70,9 +70,9 @@ No longer!  Now on first startup, the daemon will auto-init it's repo removing a
 
 ## 🚯 `block rm` now supported over the HTTP API
 
-Previously this command only worked with the daemon turned off, now you can use the semi-internal `jsipfs block rm` command with the daemon running.
+Previously this command only worked with the daemon turned off, now you can use the low level `jsipfs block rm` command with the daemon running.
 
-N.b. it's rare that you would need to use this command, a more common approach would be to call `jsipfs gc` instead which removes all non-pinned blocks from your IPFS repo.
+N.b. it's rare that you would need to use this command, a more common approach would be to call `jsipfs repo gc` instead which removes all non-pinned blocks from your IPFS repo.
 
 # 🏗 API Changes
 
