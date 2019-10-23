@@ -1,9 +1,11 @@
 ---
-date: 2019-10-23
+date: 2019-10-24
 url: 071-js-ipfs-0-39
 title: js-ipfs 0.39.0 released
 author: Alex Potsides
 ---
+
+# 🔦 Highlights
 
 > Configure your node with preset profiles! Limit outgoing browser requests! Start your node from fresh with one command!
 
@@ -11,31 +13,29 @@ author: Alex Potsides
 $ npm install -g ipfs
 ```
 
-# 🔦 Highlights
-
-> Config profiles, no more request floods in the browser, init and start the daemon in one command, remove blocks over the HTTP API
-
 ## 📋 Config profiles
 
-IPFS now supports the `jsipfs config profile` subcommand which you can use to update your configuration with certain presets suited for different use cases:
+IPFS now supports the `jsipfs config profile` subcommand which you can use to update your configuration with certain presets suited for different use cases.
+
+You can examine available profiles with the `jsipfs config profile ls` command:
 
 ```console
 $ jsipfs config profile ls
 server:
- Recommended for nodes with public IPv4 address (servers, VPSes, etc.), disables host and content discovery in local networks.
+ Recommended for nodes with public IPv4 address (servers, VPSes, etc.)...
 local-discovery:
- Sets default values to fields affected by `server` profile, enables discovery in local networks.
+ Sets default values to fields affected by `server` profile...
 test:
- Reduces external interference, useful for running ipfs in test environments. Note that with these settings node won't be able to talk to the rest of the network without manual bootstrap.
+ Reduces external interference, useful for running ipfs in test environments...
 default-networking:
  Restores default network settings. Inverse profile of the `test` profile.
 lowpower:
- Reduces daemon overhead on the system. May affect node functionality, performance of content discovery and data fetching may be degraded. Recommended for low power systems.
+ Reduces daemon overhead on the system. May affect node functionality...
 default-power:
  Inverse of "lowpower" profile.
  ```
 
- Apply them with `jsipfs config profile apply`:
+Apply them with `jsipfs config profile apply`:
 
  ```console
 $ jsipfs config profile apply lowpower
