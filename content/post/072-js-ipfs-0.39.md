@@ -5,13 +5,9 @@ title: js-ipfs 0.39.0 released
 author: Alex Potsides
 ---
 
-# 🔦 Highlights
-
 > Configure your node with preset profiles! Limit outgoing browser requests! Start your node from fresh with one command!
 
-```console
-$ npm install -g ipfs
-```
+# 🔦 Highlights
 
 ## 🛠 Config profiles
 
