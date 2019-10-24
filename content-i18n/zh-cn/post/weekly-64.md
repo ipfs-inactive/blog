@@ -67,7 +67,7 @@ author: 默奕
 ## 即将到来的社区活动
 *你知道 IPFS 在 [discuss.ipfs.io](https://discuss.ipfs.io/) 上有一个社区论坛吗? 注册参与关于编码的讨论、教程、查看公告和了解即将到来的社区活动。*
 
-*    **2019年10月23日：** [去中心化网络布拉格举办 IPFS 聚会＃2：IPFS 中的文件和实践研讨会](https://www.meetup.com/dweb-prague/events/263909416/)](https://www.meetup.com/dweb-prague/events/263909416/) ：在聚会的前半部分，我们将更深入地研究 IPFS 如何处理文件。在下半部分，我们将一起探索解释概念。捷克，布拉格
+*    **2019年10月23日：** [去中心化网络布拉格举办 IPFS 聚会＃2：IPFS 中的文件和实践研讨会](https://www.meetup.com/dweb-prague/events/263909416/)：在聚会的前半部分，我们将更深入地研究 IPFS 如何处理文件。在下半部分，我们将一起探索解释概念。捷克，布拉格
 *    **2019年10月25日：** [重新去中心化会议 2019](https://redecentralize.org/events/2019-conference/) – 对更公平，更自由的网络感兴趣？致力于权力下放？关心隐私，自主权和我们未来的数字基础设施吗？请加入我们去学习，交流经验，分享想法，加入挑战，进行协作，计划活动并开始项目。英国，伦敦
 *    **2019年10月27日：** [基于 IPFS 的 Force 商业平台](https://www.meetup.com/Shanghai-Decentralized-Systems-Meetup-Group/events/265612157/) – 由 IPFS Force 社区主办的这次聚会将介绍 IPFS Force 商业平台，该平台在 IPFS 网络之上连接去中心化存储提供商和用户。中国，上海 
 *  **2019年10月28日至30日：** [开源峰会 + ELC 欧洲 2019](https://osseu19.sched.com/event/TLD8)将由戴尔技术公司的 Trevor Conn 主持，主题为“使用 IPFS 和分布式分类帐安全地存储 IOT 边缘数据”。法国，里昂
