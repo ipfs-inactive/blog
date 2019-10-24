@@ -60,13 +60,13 @@ $ jsipfs daemon --init-profile server
 
 Interacting with IPFS can cause a lot of preloading and other background requests to be made - [most browsers](https://bugs.chromium.org/p/chromium/issues/detail?id=285567) can only have so many requests in flight to a single origin at once so this can cause requests to the same origins made outside of IPFS to take time as they wait their turn to be processed.
 
-As of `ipfs@0.39.0`, the concurrency of HTTP requests for DNS resolution and preloading are limited to always ensure there are always connections available to speedily process requests made by users.
+As of `ipfs@0.39.0`, the concurrency of HTTP requests for DNS resolution and preloading are limited to ensure there are always connections available to speedily process requests made by users.
 
 ## 🌅 Init and start your daemon in one command
 
 When a new user first starts up the IPFS daemon they've been greeted by an unfriendly message telling them to `init` it first.
 
-No longer!  Now on first startup, the daemon will auto-init it's repo removing a tiny bit of friction from getting on to the distributed web.
+No longer!  Now on first startup, the daemon will auto-init its repo, removing a tiny bit of friction from getting on to the distributed web. 🙌
 
 ## 🚯 `block rm` now supported over the HTTP API
 
