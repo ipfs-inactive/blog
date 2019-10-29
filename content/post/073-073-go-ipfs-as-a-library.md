@@ -7,14 +7,7 @@ author: David Dias
 
 The title says it all. Learn how to use [go-ipfs as a Library with the new Tutorial](https://github.com/ipfs/go-ipfs/tree/master/docs/examples/go-ipfs-as-a-library) and take full advantage of the [go-ipfs Core API](https://godoc.org/github.com/ipfs/interface-go-ipfs-core).
 
-<iframe src="https://giphy.com/embed/jV64pAJEEjQU01dq7r" width="480" height="260" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/tutorial-docs-ipfs-jV64pAJEEjQU01dq7r">via GIPHY</a></p>
-
 ![](https://ipfs.io/ipfs/QmWgSVDmVDCPcf8zMHzXJTnDf6SFf9FpWXGDpXMozaBgQ6/go-ipfs-as-a-library.gif)
-
-<video width="320" height="240" controls>
-  <source src="https://ipfs.io/ipfs/QmWgSVDmVDCPcf8zMHzXJTnDf6SFf9FpWXGDpXMozaBgQ6/go-ipfs-as-a-library.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video> 
 
 Let us know what you think by opening a topic with your questions and feedback at https://discuss.ipfs.io.
 
