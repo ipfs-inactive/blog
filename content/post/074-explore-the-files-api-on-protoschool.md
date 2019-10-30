@@ -5,11 +5,15 @@ title: Explore the Files API on ProtoSchool
 author: Teri Chadbourne
 ---
 
-**TODO: FIX PUBLICATION DATE once finish previewing/editing**
+**TODO: FIX PUBLICATION DATE once finished previewing/editing**
 
 Today we're excited to announce the launch of a [brand new ProtoSchool tutorial exploring the **Regular Files API**](https://proto.school/#/regular-files-api), built by the awesome [Gil Domingues](https://github.com/dominguesgm). 🎉
 
-This new tutorial explores the methods at the top-level of js-ipfs (`add`, `get`, `cat`, etc.) that are custom-built for working with files. We refer to these methods as the Regular Files API to distinguish them from the Mutable File System (MFS), which mimics a more traditional file system interface with methods like `files.cp` and `files.mkdir`, hiding the complexity of immutable content addressing in IPFS. Check out the [first lesson](https://proto.school/#/regular-files-api/01) of the new tutorial for more on the differences between these two approaches, as well as some important distinctions between the Files API and the DAG API.
+![Tutorial Table of Contents](/img/074-explore-the-files-api-on-protoschool/toc_screenshot.png)
+![Code Challenge](/img/074-explore-the-files-api-on-protoschool/challenge_screenshot.png)
+
+
+This new tutorial explores the methods at the top-level of js-ipfs (`add`, `get`, `cat`, etc.) that are custom-built for working with files. We refer to these methods as the Regular Files API to distinguish them from the Mutable File System (MFS). MFS mimics a more traditional file system interface with methods like `files.cp` and `files.mkdir`, but it hides the complexity of immutable content addressing in IPFS. Check out the [first lesson](https://proto.school/#/regular-files-api/01) of the new tutorial for more on the differences between these two approaches, as well as some important distinctions between the Files API and the DAG API.
 
 If you're new to IPFS and finding CIDs to be somewhat unfriendly as a naming convention, keep an eye out in this tutorial for an explanation of how you can use the `wrapWithDirectory` option in the Regular Files API to create more human-readable paths and filenames.
 
@@ -40,3 +44,8 @@ Watch the recording below or check out the [slides](https://github.com/ipfs/camp
 [![Video: Understanding How IPFS Deals with Files](/img/057-ipfs-camp-course-videos/core-a-thumbnail.png)](https://youtu.be/Z5zNPwMDYGg)
 
 _Video: [Understanding How IPFS Deals with Files](https://youtu.be/Z5zNPwMDYGg)_
+
+This course also introduces new visualization tools that you can use to see how IPFS addresses and manipulates files:
+
+- Paste a Content Identifier (CID) into the [**CID Inspector**](https://cid.ipfs.io/) to break down its anatomy
+- Drag a file into the [**DAG Builder**](https://dag.ipfs.io/) and adjust chunk size, DAG layouts, etc. to see how it affects the Merkle DAG
