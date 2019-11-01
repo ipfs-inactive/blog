@@ -15,7 +15,7 @@ Today we're excited to announce the launch of a [brand new ProtoSchool tutorial 
 
 This new tutorial explores the methods at the top-level of js-ipfs (`add`, `get`, `cat`, etc.) that are custom-built for working with files. We refer to these methods as the Regular Files API to distinguish them from the Mutable File System (MFS). MFS mimics a more traditional file system interface with methods like `files.cp` and `files.mkdir`, but it hides the complexity of immutable content addressing in IPFS. Check out the [first lesson](https://proto.school/#/regular-files-api/01) of the new tutorial for more on the differences between these two approaches, as well as some important distinctions between the Files API and the DAG API.
 
-If you're new to IPFS and finding CIDs to be somewhat unfriendly as a naming convention, keep an eye out in this tutorial for an explanation of how you can use the `wrapWithDirectory` option in the Regular Files API to create more human-readable paths and filenames.
+If you're new to IPFS and finding CIDs to be challenging as a naming convention, keep an eye out in this tutorial for an explanation of how you can use the `wrapWithDirectory` option in the Regular Files API to create more human-readable paths and filenames.
 
 ### More to explore on ProtoSchool
 
