@@ -1,11 +1,9 @@
 ---
-date: 2019-10-29
-url: 2019-11-04-explore-the-files-api-on-protoschool
+date: 2019-11-06
+url: 2019-11-06-explore-the-files-api-on-protoschool
 title: Explore the Files API on ProtoSchool
 author: Teri Chadbourne
 ---
-
-**TODO: FIX PUBLICATION DATE once finished previewing/editing**
 
 Today we're excited to announce the launch of a [brand new ProtoSchool tutorial exploring the **Regular Files API**](https://proto.school/#/regular-files-api), built by the awesome [Gil Domingues](https://github.com/dominguesgm). 🎉
 
