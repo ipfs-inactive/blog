@@ -29,7 +29,7 @@ author: 默奕
 
 *    [TemporalX 开发环境正式发布](https://www.reddit.com/r/ipfs/comments/dqu45y/temporalx_development_environment_is_live/) ，2019年11月3日
 *    [本周视频：Filecoin 和 Web3](https://avc.com/2019/11/video-of-the-week-filecoin-and-web3/) ，AVC，2019年11月2日
-*   照片： [Textile 首席执行官 Andrew Hill 在 Data Science Wrangle 上解释 IPFS 多么酷](https://twitter.com/bethann_nyc/status/1189725609414385664?s=20) Bethann Noble，2019年10月30日
+*   照片： [Textile 首席执行官 Andrew Hill 在 Data Science Wrangle 上解释 IPFS 多么酷](https://twitter.com/bethann_nyc/status/1189725609414385664?s=20)，Bethann Noble，2019年10月30日
 *    [去中心化舞蹈。](https://medium.com/the-decentralization-dance-enable-not-control/the-decentralization-dance-a8a670bf852b) Aicumen，2019年10月29日
 *    播客： [Qri：与 Brendan O'Brien 和 Rico Gardaphe 讨论数据集](https://bettermousetrap.nyc/podcast/qri-talking-data-sets-with-brendan-obrien-rico-gardaphe/) ，A Better Mouse Trap，2019年10月29日
 *    [高性能 IPFS 网关的明确指南](https://blog.stacktical.com/ipfs/gateway/dapp/2019/09/21/ipfs-server-google-cloud-platform.html) ，Stackical，2019年9月21日
