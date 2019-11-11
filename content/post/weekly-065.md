@@ -3,7 +3,7 @@ date: 2019-10-29
 url: weekly-65
 translationKey: ipfs-weekly-65
 tags: weekly
-title: IPFS Weekly #65
+title: IPFS Weekly 65
 author: Jenn Turner
 ---
 
