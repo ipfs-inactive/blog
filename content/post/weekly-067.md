@@ -31,7 +31,7 @@ See all of [the 2020 Theme Proposals](https://github.com/ipfs/roadmap/issues?q=i
 ## IPFS in the wild
 *Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.io/articles/).* 
 
-+ [Dappkit adopts MoiBit as the decentralized storage partner](https://medium.com/@moibit/dappkit-adopts-moibit-as-the-decentralized-storage-partner-8bb69d0658bb), MóiBit, 11 Nov 2019
++ [Dappkit adopts MóiBit as the decentralized storage partner](https://medium.com/@moibit/dappkit-adopts-moibit-as-the-decentralized-storage-partner-8bb69d0658bb), MóiBit, 11 Nov 2019
 + [Comparing IPFS Pinning Services Pricing/Functionality. Temporal, Eternum & Pinata.](https://medium.com/temporal-cloud/comparing-ipfs-pinning-services-pricing-functionality-temporal-eternum-pinata-d38b87a279d8) Temporal, 11 Nov 2019
 + [Atomic access control and human readable public links](https://peergos.org/blog#atomic_access_control_), Peergos, 11 Nov 2019
 + [Exporting your Facebook photos to Fission](https://blog.fission.codes/exporting-your-facebook-photos-to-fission/), Fission, 10 Nov 2019
