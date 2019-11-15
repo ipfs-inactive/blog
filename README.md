@@ -37,7 +37,7 @@ The first time you run it, it will install all the dependencies ✨, Then it wil
 
 Run it and open <http://localhost:1313/> in your browser, and start editing your new blog post.
 
-_**Note**: Blog posts are only displayed (at their own URLs and in the index) once the date listed in their YAML front matter has arrived. This means it's not possible to preview a post on localhost that is set to a future publication date._ 
+_**Note**: Blog posts are only displayed (at their own URLs and in the index) once the date listed in their YAML front matter has arrived. This means it's not possible to preview a post on localhost that is set to a future publication date._
 
 **Build the production site**
 
