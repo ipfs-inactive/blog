@@ -17,7 +17,6 @@ enableMissingTranslationPlaceholders = false
   github = "https://github.com/ipfs/blog"
   social = [ { title = "Twitter", link = "https://twitter.com/IPFSbot" },
     { title = "Facebook", link = "https://www.facebook.com/sharer/sharer.php?u=https://ipfs.io" },
-    { title = "Google", link = "https://plus.google.com/108638684245894749879" },
     { title = "YouTube", link = "https://www.youtube.com/channel/UCdjsUXJ3QawK4O5L1kqqsew" } ]
 
 [outputs]
