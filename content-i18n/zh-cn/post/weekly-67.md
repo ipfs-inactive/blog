@@ -31,14 +31,14 @@ author: 默奕
 ##  IPFS 生态圈的动态
 *您是否关注 [Twitter 上的 IPFS](https://twitter.com/IPFSbot) ?有关 IPFS 的最新新闻，请查看我们的 Twitter 提要或查看[关于 Awesome IPFS 的最新文章](https://awesome.ipfs.io/articles/)。*
 
-+ [Dappkit 选择 MóiBit 作为去中心化存储合作伙伴](https://medium.com/@moibit/dappkit-adopts-moibit-as-the-decentralized-storage-partner-8bb69d0658bb), MóiBit，2019年11月11日
++ [Dappkit 选择 MóiBit 作为去中心化存储合作伙伴](https://medium.com/@moibit/dappkit-adopts-moibit-as-the-decentralized-storage-partner-8bb69d0658bb)，MóiBit，2019年11月11日
 + [比较 IPFS Pinning 服务定价/功能。Temporal，Eternum 和 Pinata。](https://medium.com/temporal-cloud/comparing-ipfs-pinning-services-pricing-functionality-temporal-eternum-pinata-d38b87a279d8) Temporal，2019年11月11日
 + [原子访问控制和人类可读的公共链接](https://peergos.org/blog#atomic_access_control_)，Peergos，2019年11月11日
-+ [将您的 Facebook 照片导出到 Fission](https://blog.fission.codes/exporting-your-facebook-photos-to-fission/) ，Fission，2019年11月10日
-+ [去中心化网络初学者指南](https://medium.com/ppio/dweb-guide-a915cc7a9902) ，ppio，2019年11月8日
++ [将您的 Facebook 照片导出到 Fission](https://blog.fission.codes/exporting-your-facebook-photos-to-fission/)，Fission，2019年11月10日
++ [去中心化网络初学者指南](https://medium.com/ppio/dweb-guide-a915cc7a9902)，ppio，2019年11月8日
 + [MóiBit 在 Matic Network 上作为去中心化存储合作伙伴](https://medium.com/moibit/m%C3%B3ibit-is-now-live-on-matic-network-as-the-decentralized-storage-partner-25c179dfd873)，MóiBit，2019年11月7日
-+ [免费部署防审查网站](https://dev.to/0xbanana/deploy-a-censorship-resistant-website-for-free-clc) ，Jason Schorr，2019年11月6日
-+ [崩溃之后：重新考虑事件管理平台。](https://medium.com/t14g/decentralized-event-management-platforms-d1fce0748a26) Stefan Adolf，2019年11月5日
++ [免费部署防审查网站](https://dev.to/0xbanana/deploy-a-censorship-resistant-website-for-free-clc)，Jason Schorr，2019年11月6日
++ [崩溃之后：重新考虑事件管理平台。](https://medium.com/t14g/decentralized-event-management-platforms-d1fce0748a26)，Stefan Adolf，2019年11月5日
 + [为全球言论自由创建防审查标准 — 不可阻挡的域名，Brad Kam](https://blog.sendwyre.com/creating-the-censorship-resistant-standard-for-global-free-speech-with-brad-kam-of-unstoppable-44e4c4c48b03)，Wyre blog，2019年11月5日
 + [Web 3.0 IPFS 和区块链](https://bhdnetwork.com/2019/11/04/web-3-0-ipfs-and-blockchain/) ，BHD 网络，2019年11月4日
 + [TemporalX S3 API 与 STORJ IPFS。开发环境现场直播！](https://medium.com/temporal-cloud/temporalx-s3-api-vs-storj-ipfs-development-environment-is-live-4b8ef5356b4b) Temporal，2019年11月4日
@@ -56,7 +56,7 @@ author: 默奕
 ## 更新和最新版本
 *查看生态系统中 IPFS 工具和项目的最新版本。*
 
-+ [Peergos v0.1.4](https://alpha.peergos.net/public/peergos/releases/v0.1.4) ：原子访问控制和公共链接
++ [Peergos v0.1.4](https://alpha.peergos.net/public/peergos/releases/v0.1.4)：原子访问控制和公共链接
 + [Qri Desktop 0.2.0已发布！](https://github.com/qri-io/desktop/releases/tag/v0.2.0) 
 
 ## 我们<3的工具和项目
@@ -75,10 +75,10 @@ author: 默奕
 
  *Fission 正在举办[一系列去中心化 Web 聚会](https://blog.fission.codes/november2019-europe-meetups/)。 [Brooke @expede](https://github.com/expede) 将分别对 IPFS 101 进行概述，然后解释我们如何使用它来构建 Fission 平台。我们还有其他有关去中心化 Web 主题的发言人。* 
 
-+ 2019年11月15日[德国，柏林去中心化网络聚会](https://ti.to/fission/decentralized-web-meetup-berlin)在 Monadic 办事处主持，他们将分享更多[Radicle](https://radicle.xyx)的内容
++ 2019年11月15日[德国，柏林去中心化网络聚会](https://ti.to/fission/decentralized-web-meetup-berlin)在 Monadic 办事处主持，他们将分享更多 [Radicle](https://radicle.xyx) 的内容
 + 2019年11月20日[比利时，安特卫普去中心化网络聚会](https://ti.to/fission/decentralized-web-meetup-belgium)，@icidasset 将在此谈论他的去中心化音乐播放器 [Diffuse](https://diffuse.sh) 
-+ 2019年11月21日[加拿大，维多利亚，技术见面会](https://ti.to/fission/victoria-tech-meetup-2019) ，来自[Textile](https://textile.io)的 Carson 组织
-+ 2019年11月29日[荷兰，阿姆斯特丹去中心化网络聚会](https://ti.to/fission/decentralized-web-meetup-amsterdam) ，其中包括 @berkes 呈现对等网络制图与[Peermaps](https://peermaps.org/) 
++ 2019年11月21日[加拿大，维多利亚，技术见面会](https://ti.to/fission/victoria-tech-meetup-2019) ，来自 [Textile](https://textile.io) 的 Carson 组织
++ 2019年11月29日[荷兰，阿姆斯特丹去中心化网络聚会](https://ti.to/fission/decentralized-web-meetup-amsterdam) ，其中包括 @berkes 呈现对等网络制图与 [Peermaps](https://peermaps.org/) 
 
 ## 感谢您的阅读 ☺️
 
