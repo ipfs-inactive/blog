@@ -31,7 +31,7 @@ author: 默奕
 ##  IPFS 生态圈的动态
 *您是否关注 [Twitter 上的 IPFS](https://twitter.com/IPFSbot) ?有关 IPFS 的最新新闻，请查看我们的 Twitter 提要或查看[关于 Awesome IPFS 的最新文章](https://awesome.ipfs.io/articles/)。*
 
-+ [Dappkit 选择 MóiBit 作为去中心化存储合作伙伴](https://medium.com/@moibit/dappkit-adopts-moibit-as-the-decentralized-storage-partner-8bb69d0658bb) MóiBit，2019年11月11日
++ [Dappkit 选择 MóiBit 作为去中心化存储合作伙伴](https://medium.com/@moibit/dappkit-adopts-moibit-as-the-decentralized-storage-partner-8bb69d0658bb), MóiBit，2019年11月11日
 + [比较 IPFS Pinning 服务定价/功能。Temporal，Eternum 和 Pinata。](https://medium.com/temporal-cloud/comparing-ipfs-pinning-services-pricing-functionality-temporal-eternum-pinata-d38b87a279d8) Temporal，2019年11月11日
 + [原子访问控制和人类可读的公共链接](https://peergos.org/blog#atomic_access_control_)，Peergos，2019年11月11日
 + [将您的 Facebook 照片导出到 Fission](https://blog.fission.codes/exporting-your-facebook-photos-to-fission/) ，Fission，2019年11月10日
