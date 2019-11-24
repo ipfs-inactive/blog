@@ -32,12 +32,12 @@ IPFS 文档团队需要您的帮助！想贡献吗？[查看按大小和难度�
 ##  IPFS 生态圈的动态
 *您是否关注 [Twitter 上的 IPFS](https://twitter.com/IPFSbot) ?有关 IPFS 的最新新闻，请查看我们的 Twitter 提要或查看[关于 Awesome IPFS 的最新文章](https://awesome.ipfs.io/articles/)。*
 
-+ [Temporal IPFS 更新：Kubernetes，ENS 域，Amazon S3，Playground（游乐场），组织管理](https://medium.com/temporal-cloud/temporal-ipfs-updates-kubernetes-ens-domains-amazon-s3-playground-organization-management-16353e89b255) ，Temporal，2019年11月18日
++ [Temporal IPFS 更新：Kubernetes，ENS 域，Amazon S3，Playground（游乐场），组织管理](https://medium.com/temporal-cloud/temporal-ipfs-updates-kubernetes-ens-domains-amazon-s3-playground-organization-management-16353e89b255)，Temporal，2019年11月18日
 + [原子访问控制](https://peergos.org/blog#atomic_access_control_) ，Peergos，2019年11月15日
-+ [2020 年的 Brave 浏览器：新的广告块，过滤器，SDK 和 IPFS](https://u.today/brave-browser-in-2020-new-ad-blocks-filters-sdk-and-ipfs) ，Vladislov Sopov，2019年11月15日
-+ [跨平台 IPFS Lite：JS，Android，iOS 和 gRPC](https://blog.textile.io/javascript-ios-android-grpc-ipfs-lite/) ，Textile，2019年11月13日
-+ [一个通用无主机基质，为一个无服务器的未来，在 Øredev 2019](https://dev.to/fission/a-universal-hostless-substrate-for-a-post-serverless-future-at-oredev-2019-41nm) ，Brooklyn Zelenka，2019年11月13日
-+ [数学家使用行星超级计算机解决 '42' 问题](https://www.sciencealert.com/the-sum-of-three-cubes-problem-has-been-solved-for-42) ，Science Alert，2019年9月9日
++ [2020 年的 Brave 浏览器：新的广告块，过滤器，SDK 和 IPFS](https://u.today/brave-browser-in-2020-new-ad-blocks-filters-sdk-and-ipfs)，Vladislov Sopov，2019年11月15日
++ [跨平台 IPFS Lite：JS，Android，iOS 和 gRPC](https://blog.textile.io/javascript-ios-android-grpc-ipfs-lite/)，Textile，2019年11月13日
++ [一个通用无主机基质，为一个无服务器的未来，在 Øredev 2019](https://dev.to/fission/a-universal-hostless-substrate-for-a-post-serverless-future-at-oredev-2019-41nm)，Brooklyn Zelenka，2019年11月13日
++ [数学家使用行星超级计算机解决 '42' 问题](https://www.sciencealert.com/the-sum-of-three-cubes-problem-has-been-solved-for-42)，Science Alert，2019年9月9日
 
 ## 空缺的 IPFS 工作岗位
 
@@ -55,7 +55,7 @@ IPFS 文档团队需要您的帮助！想贡献吗？[查看按大小和难度�
 ## 我们<3的工具和项目
 *[Awesome IPFS](https://awesome.ipfs.io/) 是一个由社区维护和更新的列表，它包括项目、工具或几乎所有与IPFS相关的东西，非常棒。想要了解更多，或将您的信息添加到列表中，请访问 [GitHub 上的 Awesome IPFS](https://github.com/ipfs/awesome-ipfs)。*
 
-+ [Eternum](https://www.eternum.io/)是一种简单易用的 IPFS pinning 服务。它将托管您的 IPFS 文件，因此您可以确保它们始终可用，并且附带了可在您的应用程序中使用的 API。 
++ [Eternum](https://www.eternum.io/) 是一种简单易用的 IPFS pinning 服务。它将托管您的 IPFS 文件，因此您可以确保它们始终可用，并且附带了可在您的应用程序中使用的 API。 
 
 ## 即将到来的社区活动
 *您知道 IPFS 在 [discuss.ipfs.io](https://discuss.ipfs.io/) 上有一个社区论坛吗? 注册参与关于编码的讨论、教程、查看公告和了解即将到来的社区活动。*
@@ -67,8 +67,8 @@ IPFS 文档团队需要您的帮助！想贡献吗？[查看按大小和难度�
  *Fission 正在举办[一系列去中心化 Web 聚会](https://blog.fission.codes/november2019-europe-meetups/)。 [Brooke @expede](https://github.com/expede) 将分别对 IPFS 101 进行概述，然后解释我们如何使用它来构建 Fission 平台。我们还有其他有关去中心化 Web 主题的发言人。*
 
 + 2019年11月20日[比利时，安特卫普去中心化网络聚会](https://ti.to/fission/decentralized-web-meetup-belgium)，@icidasset 将在此谈论他的去中心化音乐播放器 [Diffuse](https://diffuse.sh) 
-+ 2019年11月21日[加拿大，维多利亚，技术见面会](https://ti.to/fission/victoria-tech-meetup-2019) ，来自[Textile](https://textile.io)的 Carson 组织
-+ 2019年11月29日[荷兰，阿姆斯特丹去中心化网络聚会](https://ti.to/fission/decentralized-web-meetup-amsterdam) ，其中包括 @berkes 呈现对等网络制图与[Peermaps](https://peermaps.org/) 
++ 2019年11月21日[加拿大，维多利亚，技术见面会](https://ti.to/fission/victoria-tech-meetup-2019) ，来自 [Textile](https://textile.io) 的 Carson 组织
++ 2019年11月29日[荷兰，阿姆斯特丹去中心化网络聚会](https://ti.to/fission/decentralized-web-meetup-amsterdam) ，其中包括 @berkes 呈现对等网络制图与 [Peermaps](https://peermaps.org/) 
 
 
 ## 感谢您的阅读 ☺️
