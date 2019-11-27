@@ -41,7 +41,7 @@ In the latest release of client library for the IPFS HTTP API, a bug preventing 
 + [‘Pepo’ is the first Apple Pay approved DApp](https://medium.com/technicity/pepo-is-the-first-apple-pay-approved-dapp-326686b1751), Faisal Khan, 19 Nov 2019
 + [Textile's primer on libp2p (or why we ❤️ libp2p)](https://blog.textile.io/a-primer-on-libp2p/), Textile, 19 Nov 2019
 + [Blockchain-based storage service takes on Amazon AWS, unveils pricing](https://www.itworld.com/article/3454365/blockchain-based-storage-service-takes-on-amazon-aws-unveils-pricing.html), Lucas Mearian, 19 Nov 2019
-+ [New Tools for Running IPFS Nodes](https://blog.infura.io/new-tools-for-running-ipfs-nodes-196de636f079), Talia Knowles-Rivas, 18 Nov 2019
++ [New Tools for Running IPFS Nodes](https://blog.infura.io/new-tools-for-running-ipfs-nodes-196de636f079), Infura, 18 Nov 2019
 + [Why Vitalik and Everyone Else Has “.ETH” in their Twitter Profiles (and You Should, Too!)](https://medium.com/the-ethereum-name-service/why-vitalik-and-everyone-else-has-eth-in-their-twitter-profiles-and-you-should-too-f5e62731c4d1), Brantly Millegan, 18 Nov 2019
 + [Your Next App May Not Have a Back End](https://medium.com/better-programming/your-next-app-may-not-have-a-backend-aacc728bd032), Alessandro Segala, 15 Nov 2019
 + [The Ultimate Guide to ENS Names](https://medium.com/@eric.conner/the-ultimate-guide-to-ens-names-aa541586067a), Eric Conner, 12 Nov 2019
