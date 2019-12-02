@@ -44,7 +44,7 @@ bafybeidta3hkxk3ihxfsk765oswgsjhmvcnkeestyuov6r2t5tyts4xuoe
 
 This is really, seriously cool, because now Peer IDs can be used in domain names and so an IPFS gateway operating at `bafybeidta3hkxk3ihxfsk765oswgsjhmvcnkeestyuov6r2t5tyts4xuoe.ipns.dweb.link` for example, will have origin isolation (hooray for security 🔒) _AND_ IPNS enabled mutable data 🚀⚡️
 
-In the future, new Peer IDs will be v1 CIDs with a [`libp2p-key` codec](https://github.com/libp2p/specs/blob/master/peer-ids/peer-ids.md#libp2p-key-cid) that is `base32` encoded by default...but that's a change for another day.
+To ease the transition we support CID v0 converted to v1 (with `dag-pb` multicodec). In the future, new Peer IDs will be v1 CIDs with self-describing [`libp2p-key` codec](https://github.com/libp2p/specs/blob/master/peer-ids/peer-ids.md#libp2p-key-cid) that is `base32` encoded by default...but that's a change for another day.
 
 ## 🌲 Implemented `dag put` and `dag resolve` CLI commands
 
