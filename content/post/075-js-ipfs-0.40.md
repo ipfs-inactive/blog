@@ -33,7 +33,7 @@ QMNIB2C1QCVSBP9QPT81RMDSG3N8KFGPSMCDJ4GPVEJESE
 
 So, bad times.
 
-...but wait, Peer IDs _ARE_ CIDs! I know, weird, but also rad because in theory we should be able to re-encode them as `base32`. Right now though, everything expects a `base58` encoded string (a v0 CID) because they're actually just a multihash.
+...but wait, [Peer IDs _ARE_ CIDs](https://github.com/libp2p/specs/blob/master/RFC/0001-text-peerid-cid.md)! I know, weird, but also rad because in theory we should be able to re-encode them as `base32`. Right now though, everything expects a `base58` encoded string (a v0 CID) because they're actually just a multihash.
 
 In this js-ipfs release we've made a small change to allow you to take your Peer ID (a v0 CID), convert it to a base32 encoded v1 CID and use it in an IPNS path like `/ipns/bafybeidta3hkxk3ihxfsk765oswgsjhmvcnkeestyuov6r2t5tyts4xuoe`. Here's how you might do the conversion:
 
