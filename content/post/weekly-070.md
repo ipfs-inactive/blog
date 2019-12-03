@@ -55,8 +55,8 @@ Recently George Hotz, or GeoHot, got the chance to [hack on some IPFS](https://w
 ## Tools and projects we <3
 *[Awesome IPFS](https://awesome.ipfs.io/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs).* 
 
-+ [Confidential InterPlanetary File System](https://github.com/mitchellpkt/CIPFS), https://twitter.com/mitchellpkt0/status/1200160595355430912?s=21
-+ [Open street map tile server on ipfs](https://forum.openstreetmap.org/viewtopic.php?id=68102)
++ [Confidential InterPlanetary File System](https://github.com/mitchellpkt/CIPFS): an open-source encryption layer for IPFS, enabling anybody with an internet connection to access free confidential decentralized storage. 
++ [Open Street Map tile server on IPFS](https://forum.openstreetmap.org/viewtopic.php?id=68102): a raster tile system, in which image data storage and transmission is distributed via IPFS!
 + [CyberCongress](https://cybercongress.ai/): It’s hard to explain simply what it is.
 
 
