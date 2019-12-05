@@ -33,7 +33,7 @@ Recently George Hotz, or GeoHot, got the chance to [hack on some IPFS](https://w
 ## IPFS in the wild
 *Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.io/articles/).* 
 
-+ SLIDES: [cyber: Computing the knowledge of the Great Web](https://github.com/serejandmyself/cyber/blob/PDF/Final_WP.pdf), @xhipster and @litvintech, 1 Dec 2019
++ SLIDES: [cyber: Computing the knowledge of the Great Web](https://ipfs.io/ipfs/QmceNpj6HfS81PcCaQXrFMQf7LR5FTLkdG9sbSRNy3UXoZ), @xhipster and @litvintech, 1 Dec 2019
 + PHOTO: [Henrique Dias guided the BarcampLX audience](https://twitter.com/BarcampLx/status/1200837433178427393?s=20) through a quick dive into the decentralized web with IPFS, 30 Nov 2019
 + [Code Talks: Application of Zero-Knowledge Proof Technology in the Blockchain Industry](https://medium.com/ppio/application-zero-knowledge-c0710a2a1dac), PPIO, 29 Nov 2019
 + TUTORIAL: [Building IPFS Applications with Node.Js](https://medium.com/swlh/ipfs-nodejs-app-8e35f504d440), The Startup, 29 Nov 2019
