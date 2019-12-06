@@ -67,7 +67,7 @@ IPFS 被列入 [Sawood Alam](https://twitter.com/ibnesayeed/status/1197613980992
 ## 即将到来的社区活动
 *您知道 IPFS 在 [discuss.ipfs.io](https://discuss.ipfs.io/) 上有一个社区论坛吗? 注册参与关于编码的讨论、教程、查看公告和了解即将到来的社区活动。*
 
-+ **2019年12月3-4日：** 由 SmartFactoryOWL 主持的[Actyx Hackathon](https://www.smartfactory-owl.de/index.php/de/veranstaltungen/smartfactoryowl/kompetenzzentrum/demonstrieren/livinglab/95-kollaboration-in-einer-produktionsanlage-mittels-dezentraler-edge-plattform)将于下个月发布。作为黑客马拉松的一部分，将测试 Actyx 平台（使用 IPFS 和 libp2p）的应用程序并将其应用于“生活对象”。德国，莱姆戈。 
++ **2019年12月3-4日：** 由 SmartFactoryOWL 主持的 [Actyx Hackathon](https://www.smartfactory-owl.de/index.php/de/veranstaltungen/smartfactoryowl/kompetenzzentrum/demonstrieren/livinglab/95-kollaboration-in-einer-produktionsanlage-mittels-dezentraler-edge-plattform) 将于下个月发布。作为黑客马拉松的一部分，将测试 Actyx 平台（使用 IPFS 和 libp2p）的应用程序并将其应用于“生活对象”。德国，莱姆戈。 
 + **2019年12月6日：** [柏林 React Day](https://reactday.berlin/) ：构建代码，而不是围墙。参与 React 世界的探索！ React Day Berlin 会议专注于深入的演讲，动手研讨会和寻找新的机会，为每个人提供了结识新朋友和共同开发一流应用程序的空间。德国，柏林。 
 
  *Fission 正在举办[一系列去中心化 Web 聚会](https://blog.fission.codes/november2019-europe-meetups/)。 [Brooke @expede](https://github.com/expede) 将分别对 IPFS 101 进行概述，然后解释我们如何使用它来构建 Fission 平台。我们还有其他有关去中心化 Web 主题的发言人。*
