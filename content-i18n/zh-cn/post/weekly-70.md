@@ -52,16 +52,16 @@ Hotz 或 GeoHot，有机会在每周日简单技能中[使用一些 IPFS](https:
 + [分布式系统技术主管](https://jobs.lever.co/protocol/9283f9b0-de64-4e1f-a221-5d02b0202198)，IPFS，Protocol Labs，远程工作
 
 ## 我们<3的工具和项目
-*[Awesome IPFS](https://awesome.ipfs.io/) 是一个由社区维护和更新的列表，它包括项目、工具或几乎所有与IPFS相关的东西，非常棒。想要了解更多，或将您的信息添加到列表中，请访问 [GitHub 上的 Awesome IPFS](https://github.com/ipfs/awesome-ipfs)。*
+*[Awesome IPFS](https://awesome.ipfs.io/) 是一个由社区维护和更新的列表，它包括项目、工具或几乎所有与 IPFS 相关的东西，非常棒。想要了解更多，或将您的信息添加到列表中，请访问 [GitHub 上的 Awesome IPFS](https://github.com/ipfs/awesome-ipfs)。*
 
-  * [机密行星际文件系统](https://github.com/mitchellpkt/CIPFS) ：IPFS的开源加密层，使任何具有Internet连接的人都可以访问免费的机密分散式存储。 
+  * [机密行星际文件系统](https://github.com/mitchellpkt/CIPFS) ：IPFS的开源加密层，使任何具有 Internet 连接的人都可以访问免费的机密分散式存储。 
   * [在 IPFS上打开街景图块服务器](https://forum.openstreetmap.org/viewtopic.php?id=68102) ：光栅图块系统，其中图像数据的存储和传输是通过IPFS进行分配的！ 
   * [CyberCongress](https://cybercongress.ai/) ：很难简单地解释它是什么。 
 
 ## 即将到来的社区活动
 *您知道 IPFS 在 [discuss.ipfs.io](https://discuss.ipfs.io/) 上有一个社区论坛吗? 注册参与关于编码的讨论、教程、查看公告和了解即将到来的社区活动。*
 
-+ **2019年12月3-4日：** 由 SmartFactoryOWL 主持的[Actyx Hackathon](https://www.smartfactory-owl.de/index.php/de/veranstaltungen/smartfactoryowl/kompetenzzentrum/demonstrieren/livinglab/95-kollaboration-in-einer-produktionsanlage-mittels-dezentraler-edge-plattform)将于下个月发布。作为黑客马拉松的一部分，将测试 Actyx 平台（使用 IPFS 和 libp2p）的应用程序并将其应用于“生活对象”。德国，莱姆戈。  
++ **2019年12月3-4日：** 由 SmartFactoryOWL 主持的 [Actyx Hackathon](https://www.smartfactory-owl.de/index.php/de/veranstaltungen/smartfactoryowl/kompetenzzentrum/demonstrieren/livinglab/95-kollaboration-in-einer-produktionsanlage-mittels-dezentraler-edge-plattform) 将于下个月发布。作为黑客马拉松的一部分，将测试 Actyx 平台（使用 IPFS 和 libp2p）的应用程序并将其应用于“生活对象”。德国，莱姆戈。  
 + **2019年12月4日：** [巴黎 P2P＃4](https://p2p.paris/en/event/monthly-4/)是由对法国巴黎的 P2P 和密码学充满热情的社区组织的聚会。 
 + **2019年12月6日：** [柏林 React Day](https://reactday.berlin/) ：构建代码，而不是围墙。参与 React 世界的探索！ React Day Berlin 会议专注于深入的演讲，动手研讨会和寻找新的机会，为每个人提供了结识新朋友和共同开发一流应用程序的空间。德国，柏林。  
 + **2019年12月7日至8日：** [旧金山 IndieWebCamp](https://2019.indieweb.org/sf) 是为期两天的研讨会，面向想要讨论，集思广益或破解任何独立，分布式，本地，离线，独立网络技术的创意者，以针对实际可用的开放式 Web 解决方案。社交媒体。美国，旧金山（CA）。 
