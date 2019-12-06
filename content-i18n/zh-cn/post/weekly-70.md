@@ -65,7 +65,7 @@ Hotz 或 GeoHot，有机会在每周日简单技能中[使用一些 IPFS](https:
 + **2019年12月4日：** [巴黎 P2P＃4](https://p2p.paris/en/event/monthly-4/)是由对法国巴黎的 P2P 和密码学充满热情的社区组织的聚会。 
 + **2019年12月6日：** [柏林 React Day](https://reactday.berlin/) ：构建代码，而不是围墙。参与 React 世界的探索！ React Day Berlin 会议专注于深入的演讲，动手研讨会和寻找新的机会，为每个人提供了结识新朋友和共同开发一流应用程序的空间。德国，柏林。  
 + **2019年12月7日至8日：** [旧金山 IndieWebCamp](https://2019.indieweb.org/sf) 是为期两天的研讨会，面向想要讨论，集思广益或破解任何独立，分布式，本地，离线，独立网络技术的创意者，以针对实际可用的开放式 Web 解决方案。社交媒体。美国，旧金山（CA）。 
-+ **2019年12月11日：** [里昂 P2P](https://www.meetup.com/France-P2P/events/266104402/)是一个聚会，讨论 P2P，去中心化，离线优先应用程序，网络，机密性，反监视，反审查，安全等主题！法国，里昂。 
++ **2019年12月11日：** [里昂 P2P](https://www.meetup.com/France-P2P/events/266104402/) 是一个聚会，讨论 P2P，去中心化，离线优先应用程序，网络，机密性，反监视，反审查，安全等主题！法国，里昂。 
 + **2020年1月8日：** [巴黎 P2P 庆典](https://p2p.paris/en/event/festival-0/)是结成联盟的机会，邀请各种形式的 Peer-2-Peer 参与者见面，围绕与 Peer-to-Peer 相关的所有主题展开讨论。有关免费的四日庆典的更多信息，请访问 [p2p.paris](https://p2p.paris/en/event/festival-0/)。 
 
 ## 感谢您的阅读 ☺️
