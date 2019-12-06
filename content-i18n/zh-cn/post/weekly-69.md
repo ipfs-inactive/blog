@@ -71,7 +71,7 @@ IPFS 被列入 [Sawood Alam](https://twitter.com/ibnesayeed/status/1197613980992
 
  *Fission 正在举办[一系列去中心化 Web 聚会](https://blog.fission.codes/november2019-europe-meetups/)。 [Brooke @expede](https://github.com/expede) 将分别对 IPFS 101 进行概述，然后解释我们如何使用它来构建 Fission 平台。我们还有其他有关去中心化 Web 主题的发言人。*
 
-+ 2019年11月29日[荷兰，阿姆斯特丹去中心化网络聚会](https://ti.to/fission/decentralized-web-meetup-amsterdam) ，其中包括 @berkes 呈现对等网络制图与 [Peermaps](https://peermaps.org/) 
++ **2019年11月29日：** [荷兰，阿姆斯特丹去中心化网络聚会](https://ti.to/fission/decentralized-web-meetup-amsterdam) ，其中包括 @berkes 呈现对等网络制图与 [Peermaps](https://peermaps.org/) 
 
 ## 感谢您的阅读 ☺️
 
