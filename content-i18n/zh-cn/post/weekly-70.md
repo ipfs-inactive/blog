@@ -55,7 +55,7 @@ Hotz 或 GeoHot，有机会在每周日简单技能中[使用一些 IPFS](https:
 *[Awesome IPFS](https://awesome.ipfs.io/) 是一个由社区维护和更新的列表，它包括项目、工具或几乎所有与IPFS相关的东西，非常棒。想要了解更多，或将您的信息添加到列表中，请访问 [GitHub 上的 Awesome IPFS](https://github.com/ipfs/awesome-ipfs)。*
 
   * [机密行星际文件系统](https://github.com/mitchellpkt/CIPFS) ：IPFS的开源加密层，使任何具有Internet连接的人都可以访问免费的机密分散式存储。 
-  * [在IPFS上打开街景图块服务器](https://forum.openstreetmap.org/viewtopic.php?id=68102) ：光栅图块系统，其中图像数据的存储和传输是通过IPFS进行分配的！ 
+  * [在 IPFS上打开街景图块服务器](https://forum.openstreetmap.org/viewtopic.php?id=68102) ：光栅图块系统，其中图像数据的存储和传输是通过IPFS进行分配的！ 
   * [CyberCongress](https://cybercongress.ai/) ：很难简单地解释它是什么。 
 
 ## 即将到来的社区活动
