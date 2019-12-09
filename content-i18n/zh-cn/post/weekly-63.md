@@ -1,6 +1,6 @@
 ---
 date: 2019-10-15
-url: ipfs-weekly-63
+url: zh-cn/ipfs-weekly-63
 translationKey: ipfs-weekly-63
 tags: weekly
 title: 2019 第三季度 IPFS 回顾 🎉
