@@ -97,9 +97,11 @@ Submit a Github PR with your changes, and request a review.
 
 ### Publishing
 
-CircleCI builds the static site, Pins it to our IPFS Cluster, and provides a preview link for review on the Gateway. Merges to to `master` does the same steps plus an update the DNSLink for the domain.
+CircleCI builds the static site, Pins it to our IPFS Cluster, and provides a preview link for review on the Gateway. Merges to to `master` do the same steps plus an update the DNSLink for the domain.
 
-It will take a few minutes for the DNS update to propagate.
+In order for CircleCI to build the site after your merge, you *must* be a member of the [website-deployers](https://github.com/orgs/ipfs/teams/website-deployers/members), comms, gui or admin teams on the IPFS github org and you *must* subscribe to the CircleCI builds for the ipfs/blog repository. Create a free CircleCI account, and then [subscribe to the repo here](https://circleci.com/gh/ipfs/workflows/blog/tree/master).
+
+After the CircleCI build completes, it will take a few minutes for the DNS update to propagate and your changes to show up on the website.
 
 ### Translating 🌐✍️🖖
 
