@@ -27,7 +27,7 @@ Last week, @jbenet was featured on Zero Knowledge, a podcast focused on the emer
 
 ### DAppNode’s IPFS Pinner Package Demo
 
-In case you missed it, DAppNode created an IPFS-pinner! [Watch this demo](https://www.youtube.com/watch?time_continue=1&v=I2MuNFlVnHo&feature=emb_logo)) on the creative combo of IPFS Cluster, ENS, and IPFS for collaborative community mirrors of your favorite package registry.
+In case you missed it, DAppNode created an IPFS-pinner! [Watch this demo](https://www.youtube.com/watch?time_continue=1&v=I2MuNFlVnHo&feature=emb_logo) on the creative combo of IPFS Cluster, ENS, and IPFS for collaborative community mirrors of your favorite package registry.
 
 
 ### Catch up on the IPFS Weekly call, Mondays!
