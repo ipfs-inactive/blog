@@ -76,7 +76,7 @@ Yesterday, @parkan was on hand to [walk us through a demo of EthDNS](https://www
 + [data,together.org](https://datatogether.org/). Exploring Community-Driven Data Stewardship!
 + [radicle](https://radicle.community/) launched their community forum, where several interesting discussions about IPFS are going on. 👀
 + [Denarius Jupiter POD — IPFS Timestamping](https://medium.com/@carsenk/denarius-jupiter-pod-ipfs-timestamping-ae457e7fcd9d)
-+ [GruPur.com](https://grupur.com/feed.html), an uncensored permenant public record, is now running on IPFS and supports IPFS file uploads.
++ [GruPur.com](https://grupur.com/feed.html), an uncensored permanent public record, is now running on IPFS and supports IPFS file uploads.
 
 
 ## Coming up in the Community
