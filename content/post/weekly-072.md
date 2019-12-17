@@ -8,9 +8,9 @@ author: Jenn Turner
 ---
 
 # Recapping IPFS in Q4 2019 🎉
-We’ve put together a very special issue looking back on all that you, the InterPlanetary File System (IPFS) community, accomplished so far, in 2019. From milestones like releases, projects like ProtoSchool, to the many new (and awesome) contributors who have joined us, and what’s to come for the rest of this year, we hope you enjoy this quarterly recap.
+We’ve put together a very special issue looking back on all that you, the InterPlanetary File System (IPFS) community, accomplished over the past few months of 2019. From milestones like releases, projects like ProtoSchool, to the many new (and awesome) contributors who have joined us, and what’s to come for the rest of this year, we hope you enjoy this quarterly recap.
 
-Thanks for being part of our community, we truly couldn’t make IPFS what is without you. ❤️
+Thanks for being part of our community, we truly couldn’t make IPFS what it is without you. ❤️
 
 ## Milestones
 *As far as shipping goes, yeah we did that.*
