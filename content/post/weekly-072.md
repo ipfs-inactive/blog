@@ -180,19 +180,19 @@ Once again, thanks for all of your hard work and contributions in 2019. Keep up 
 
 ## Awesome content
 
-### The Decentralized Web Is Coming
+### The Decentralized Web is coming
 Amazon, Google, Facebook, and Twitter are in the federal government’s crosshairs, but the technology necessary to undermine their dominance may already exist. [See how IPFS plays a role](https://www.youtube.com/watch?v=R1ccwyP6fjc&feature=youtu.be) in the internet of the future.
 
 ### IPFS + ENS Everywhere: Introducing EthDNS
 [EthDNS](https://medium.com/the-ethereum-name-service/ethdns-9d56298fa38a) bridges the traditional web world to the new universe of ENS-named, IPFS-backed decentralized sites and dapps through the ancient, yet indispensable, 🧙‍♂️ Domain Name System 🧙‍♂️. 
 
-### Exploding IPFS data
+### Exploding IPFS data 💥
 Enabling single use links, expiring links and more through [a simple link shortening service](https://blog.textile.io/ipfs-experiments-creating-ipfs-links-that-you-can-delete/).
 
 ### Presenting Building Web3 at Web3 Summit 2019
 Catch up on [Juan Benet’s talk from Web3 Summit 2019](https://www.youtube.com/watch?v=pJOG5Ql7ZD0) on Building Web3.
 
-### Tim Berners-Lee seems to be a fan of IPFS and libp2p,
+### Tim Berners-Lee seems to be a fan of IPFS and libp2p
 OMG senpai noticed [us](https://twitter.com/sgrasmann/status/1189194596544200708/photo/1)! 
 
 ### Brave Browser in 2020: New Ad-Blocks, Filters, SDK, and IPFS
@@ -201,7 +201,7 @@ Back in November, [Brave announced plans](https://u.today/brave-browser-in-2020-
 ### GeoHot hacks on IPFS during “Simple Skills Sunday”
 Recently George Hotz, or GeoHot, got the chance to [hack on some IPFS](https://www.youtube.com/watch?v=EecfVsdQMcM) while creating Tic Tac Toe in React for Simple Skills Sunday. Check out the full video, or skip to 2:45:00 to get straight to the IPFS bit.
 
-### DAppNode’s IPFS Pinner Package Demo
+### DAppNode’s IPFS Pinner Package demo
 In case you missed it, DAppNode created an IPFS-pinner! [Watch this demo](https://www.youtube.com/watch?time_continue=1&v=I2MuNFlVnHo&feature=emb_logo) on the creative combo of IPFS Cluster, ENS, and IPFS for collaborative community mirrors of your favorite package registry.
 
 
@@ -213,7 +213,7 @@ In case you missed it, DAppNode created an IPFS-pinner! [Watch this demo](https:
 
 
 ## Thanks for reading ☺️
-That’s it for this special edition of the IPFS Weekly. If we missed something, reply to this email and let us know! We’ll return with all the ecosystem news you love to read about on January 7, 2020.
+That’s it for this special edition of the IPFS Weekly. If we missed something, [send us an email](mailto:newsletter@ipfs.io) and let us know! We’ll return with all the ecosystem news you love to read about on January 7, 2020.
 
 If this is your first time reading the IPFS Weekly, you can learn more or get involved by checking out [the project on GitHub](https://github.com/ipfs), or joining us [in chat](https://riot.im/app/#/room/#ipfs:matrix.org).
 
