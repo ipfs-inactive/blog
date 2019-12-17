@@ -124,7 +124,7 @@ All told **83 contributors** produced approximately **1607 commits across 91 rep
 @yiannisbot
 
 
-## Please help us in welcoming these new contributors 👋
+### Please help us in welcoming these new contributors 👋
 IPFS wouldn’t be the same without your help! We’re so grateful to have you onboard. Thank you.
 
 @0x6431346e
