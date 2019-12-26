@@ -228,6 +228,6 @@ OMG 先辈注意到了[我们](https://twitter.com/sgrasmann/status/118919459654
 这就是 IPFS 周刊的特别版。如果我们错过了什么，[请回复邮件](mailto:newsletter@ipfs.io)通知我们! 我们将在2020年1月7日返回您喜欢阅读的所有生态系统新闻。
 
 如果这是您首次阅读《
-IPFS 周刊》，则可以查看[GitHub上的项目](https://github.com/ipfs)或加入我们[的聊天室](https://riot.im/app/#/room/#ipfs:matrix.org)来了解更多信息或参与其中。
+IPFS 周刊》，则可以查看 [GitHub 上的项目](https://github.com/ipfs)或加入我们[的聊天室](https://riot.im/app/#/room/#ipfs:matrix.org)来了解更多信息或参与其中。
 
 明年再见！ 👋
