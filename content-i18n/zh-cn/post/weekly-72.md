@@ -18,8 +18,7 @@ author: 默奕
 
 ###  IPFS 浏览器更新
 
-了解[与 Firefox，Brave，Opera 和其他浏览器与我们正在进行的持续合作](https://blog.ipfs.io/2019-10-08-ipfs-browsers-
-update/) ，并了解目前的进展。
+了解[与 Firefox，Brave，Opera 和其他浏览器与我们正在进行的持续合作](https://blog.ipfs.io/2019-10-08-ipfs-browsers-update/) ，并了解目前的进展。
 
 ### 大量 IPFS Camp 内容发布出来！
 从[主题演讲到开发人员访谈](https://blog.ipfs.io/2019-10-14-ipfs-camp-keynotes-interviews/)
@@ -37,8 +36,7 @@ ipfs-0-39/)和[0.40.0](https://blog.ipfs.io/2019-12-02-js-ipfs-0-40/)
 ，并充分利用 go-ipfs 核心 API。
 
 ### 在 ProtoSchool 上浏览 Files API
-本新教程探讨了为处理文件而定制[的 js-ipfs 顶级方法](https://blog.ipfs.io/2019-11-06-explore-
-the-files-api-on-protoschool/) （添加，获取，分类等）。一探究竟！
+本新教程探讨了为处理文件而定制[的 js-ipfs 顶级方法](https://blog.ipfs.io/2019-11-06-explore-the-files-api-on-protoschool/) （添加，获取，分类等）。一探究竟！
 
 ### 在 IPFS 上演示？我们给您帮助
 请随意[使用这些材料](https://github.com/ipfs/community#ipfs-event-materials)
@@ -197,13 +195,11 @@ the-files-api-on-protoschool/) （添加，获取，分类等）。一探究竟�
 
 ###  IPFS + ENS 无处不在：EthDNS 简介
 
-[EthDNS](https://medium.com/the-ethereum-name-
-service/ethdns-9d56298fa38a)通过古老但必不可少的🧙‍♂域名系统🧙‍♂️，将传统的网络世界与 ENS 命名的，由 IPFS 支持的去中心化网站和 dapp 的新世界连接起来。
+[EthDNS](https://medium.com/the-ethereum-name-service/ethdns-9d56298fa38a)通过古老但必不可少的🧙‍♂域名系统🧙‍♂️，将传统的网络世界与 ENS 命名的，由 IPFS 支持的去中心化网站和 dapp 的新世界连接起来。
 
 ### 爆炸 IPFS 数据💥
 
-通过[简单的链接缩短服务](https://blog.textile.io/ipfs-experiments-creating-ipfs-links-
-that-you-can-delete/) ，启用一次性链接，过期链接等。
+通过[简单的链接缩短服务](https://blog.textile.io/ipfs-experiments-creating-ipfs-links-that-you-can-delete/) ，启用一次性链接，过期链接等。
 
 ### 在 2019 年 Web3 峰会上展示 Building Web3
 
@@ -213,8 +209,7 @@ that-you-can-delete/) ，启用一次性链接，过期链接等。
 OMG senpai 注意到了[我们](https://twitter.com/sgrasmann/status/1189194596544200708/photo/1)！
 
 ###  2020年的 Brave 浏览器：新的广告块，过滤器，SDK 和 IPFS
-早在11月， [Brave 就宣布](https://u.today/brave-browser-in-2020-new-ad-blocks-filters-
-sdk-and-ipfs)了启动和实施 IPFS（去中心化的前沿方法）的计划。💁‍♀️
+早在11月， [Brave 就宣布](https://u.today/brave-browser-in-2020-new-ad-blocks-filters-sdk-and-ipfs)了启动和实施 IPFS（去中心化的前沿方法）的计划。💁‍♀️
 
 ###  “简单技能周日” 期间 GeoHot 在 IPFS 上 hack
 最近，George Hotz，或GeoHot，有机会在周日的 React for Simple Skills 中创建 Tic Tac Toe 时，[hack 一些 IPFS](https://www.youtube.com/watch?v=EecfVsdQMcM)。观看完整的视频，或跳到 2:45:00 直接进入 IPFS 阶段。
