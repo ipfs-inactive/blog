@@ -71,7 +71,7 @@ Peergos 是一种点对点加密文件系统，具有安全共享性，旨在抵
 *[Awesome IPFS](https://awesome.ipfs.io/) 是一个由社区维护和更新的列表，它包括项目、工具或几乎所有与 IPFS 相关的东西，非常棒。想要了解更多，或将您的信息添加到列表中，请访问 [GitHub 上的 Awesome IPFS](https://github.com/ipfs/awesome-ipfs)。*
 
 + [data，together.org](https://datatogether.org/) 。探索社区驱动的数据管理！ 
-+ [radicle](https://radicle.community/)发起了他们的社区论坛，有关 IPFS 的一些有趣的讨论正在进行中。 👀 
++ [radicle](https://radicle.community/) 发起了他们的社区论坛，有关 IPFS 的一些有趣的讨论正在进行中。 👀 
 + [Denarius Jupiter POD — IPFS 时间戳记](https://medium.com/@carsenk/denarius-jupiter-pod-ipfs-timestamping-ae457e7fcd9d)
 + [GruPur.com](https://grupur.com/feed.html), 未经审查的永久公共记录现在在 IPFS 上运行，并支持 IPFS 文件上传。 
 
