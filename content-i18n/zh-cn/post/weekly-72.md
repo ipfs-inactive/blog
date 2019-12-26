@@ -206,7 +206,7 @@ ipfs-0-39/)和[0.40.0](https://blog.ipfs.io/2019-12-02-js-ipfs-0-40/)
 请看 [Juan Benet 在 2019 年 Web3 峰会上有关构建 Web3 的演讲](https://www.youtube.com/watch?v=pJOG5Ql7ZD0)。
 
 ###  Tim Berners-Lee 似乎是 IPFS 和 libp2p 的粉丝
-OMG senpai 注意到了[我们](https://twitter.com/sgrasmann/status/1189194596544200708/photo/1)！
+OMG 先辈注意到了[我们](https://twitter.com/sgrasmann/status/1189194596544200708/photo/1)！
 
 ###  2020年的 Brave 浏览器：新的广告块，过滤器，SDK 和 IPFS
 早在11月， [Brave 就宣布](https://u.today/brave-browser-in-2020-new-ad-blocks-filters-sdk-and-ipfs)了启动和实施 IPFS（去中心化的前沿方法）的计划。💁‍♀️
