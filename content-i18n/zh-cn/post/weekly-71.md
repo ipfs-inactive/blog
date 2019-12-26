@@ -33,9 +33,7 @@ author: 默奕
 
 ### IPFS 每周一电话聊天！
 
-昨天，@parkan 亲自为[我们介绍了 EthDNS 演示](https://www.youtube.com/watch?v=8S4BJKtu6rk)，@alanshaw 涵盖了最新 js-ipfs v0.40.0 版本的一些要点。来听通话记录，并在[12月16日（星期一）参与我们](https://github.com/ipfs/team-mgmt#-ipfs-
-weekly-call--formerly-known-as-ipfs-all-hands-
-call) ，@ianopolous 将分享有关 Peergos 的信息。
+昨天，@parkan 亲自为[我们介绍了 EthDNS 演示](https://www.youtube.com/watch?v=8S4BJKtu6rk)，@alanshaw 涵盖了最新 js-ipfs v0.40.0 版本的一些要点。来听通话记录，并在[12月16日（星期一）参与我们](https://github.com/ipfs/team-mgmt#-ipfs-weekly-call--formerly-known-as-ipfs-all-hands-call) ，@ianopolous 将分享有关 Peergos 的信息。
 Peergos 是一种点对点加密文件系统，具有安全共享性，旨在抵制监视数据内容或友谊图。
 
 ##  IPFS 生态圈的动态
