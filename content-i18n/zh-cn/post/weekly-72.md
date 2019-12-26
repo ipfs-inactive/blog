@@ -194,7 +194,7 @@ js-ipfs 团队一直在努力工作，以找出将来转换为哈希格式的基
 
 ###  IPFS + ENS 无处不在：EthDNS 简介
 
-[EthDNS](https://medium.com/the-ethereum-name-service/ethdns-9d56298fa38a)通过古老但必不可少的🧙‍♂域名系统🧙‍♂️，将传统的网络世界与 ENS 命名的，由 IPFS 支持的去中心化网站和 dapp 的新世界连接起来。
+[EthDNS](https://medium.com/the-ethereum-name-service/ethdns-9d56298fa38a) 通过古老但必不可少的🧙‍♂域名系统🧙‍♂️，将传统的网络世界与 ENS 命名的，由 IPFS 支持的去中心化网站和 dapp 的新世界连接起来。
 
 ### 爆炸 IPFS 数据💥
 
