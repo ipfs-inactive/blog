@@ -27,8 +27,7 @@ author: 默奕
 
 ###  js-ipfs 0.39.0 和 0.40.0 发布
 
-js-ipfs 团队一直在努力工作，以找出将来转换为哈希格式的基础，以及更多。查看[0.39.0](https://blog.ipfs.io/071-js-
-ipfs-0-39/)和[0.40.0](https://blog.ipfs.io/2019-12-02-js-ipfs-0-40/)
+js-ipfs 团队一直在努力工作，以找出将来转换为哈希格式的基础，以及更多。查看[0.39.0](https://blog.ipfs.io/071-js-ipfs-0-39/)和[0.40.0](https://blog.ipfs.io/2019-12-02-js-ipfs-0-40/)
 版本的更新。
 
 ### 了解如何将 go-ipfs 用作代码库
