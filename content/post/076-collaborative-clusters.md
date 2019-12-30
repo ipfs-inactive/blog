@@ -36,7 +36,7 @@ how easy it is:
 <script id="asciicast-yV2Bk4nlrPAQ6MQ4w6z3ea0uZ" src="https://asciinema.org/a/yV2Bk4nlrPAQ6MQ4w6z3ea0uZ.js" async></script>
 
 We hope that collaborative clusters will allow the community to participate in
-distributiong and seeding of data they care about, enabling easy "mirroring"
+the distribution and seeding of data they care about, enabling easy "mirroring"
 on the IPFS network, along with unlocking *Content-Distribution-Network (CDN)*
 properties.
 
