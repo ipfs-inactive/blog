@@ -7,10 +7,10 @@ author: Jessica Schilling
 
 **We’re excited to announce that [the new IPFS documentation site is live in beta](https://docs-beta.ipfs.io/)!** The doors are open, and just like any housewarming, you’re cordially invited to stop by, have a look around, and let us know what you think.
 
-![Screenshot of docs beta](../076-ipfs-docs-beta/img/docs-beta-screenshot.png)
+![Screenshot of docs beta](../static/076-ipfs-docs-beta/img/docs-beta-screenshot.png)
 *New year, new look.*
 
-![Mind map of docs beta nav](../076-ipfs-docs-beta/img/docs-beta-site-mindmap.png)
+![Mind map of docs beta nav](../static/076-ipfs-docs-beta/img/docs-beta-site-mindmap.png)
 *Here's a mind map of how the docs beta's navigation works.*
 
 ## 🆕 What’s new in the docs beta:
