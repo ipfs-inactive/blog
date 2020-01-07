@@ -30,6 +30,7 @@ author: Jessica Schilling
 
 ## 👩‍🔬 Want to get involved with the new docs beta? 
 It’s never been easier to do something that benefits the global IPFS community! Here’s how:
+
 - [Contribute your own content](https://github.com/ipfs/docs/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22) to the new docs site to share your knowledge with others **(and note, some of these content issues have bounties attached!)**
 - [Become a docs beta tester](https://docs.google.com/forms/d/1LVaD1B2uyW6Ff0jfU_iQ5mCeyQcHfyQO6BDD99XAgK0/) and help us test, refine and prioritize new content and features
 - [Vote for your favorite new docs features](https://ipfs.canny.io/admin/board/docs-features) to help us determine what to build next
