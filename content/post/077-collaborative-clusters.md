@@ -1,5 +1,5 @@
 ---
-date: 2019-01-09
+date: 2020-01-09
 url: 2020-01-09-collaborative-clusters
 title: Announcing collaborative clusters
 author: Hector Sanjuan
