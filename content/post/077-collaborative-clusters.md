@@ -1,6 +1,6 @@
 ---
-date: 2019-01-03
-url: 2020-01-03-collaborative-clusters
+date: 2019-01-09
+url: 2020-01-09-collaborative-clusters
 title: Announcing collaborative clusters
 author: Hector Sanjuan
 ---
@@ -13,7 +13,7 @@ clusters* and the first iteration of the
 and data availability of specific datasets in the IPFS Network.
 
 Using IPFS Cluster's
-[latest release (0.12.0)](https://cluster.ipfs.io/news/0.12.0_release/) we
+[latest release (0.12.1)](https://cluster.ipfs.io/news/0.12.0_release/) we
 have set up the first of those archives:
 
 * Filecoin cluster: which will be used to pin Filecoin parameters and
