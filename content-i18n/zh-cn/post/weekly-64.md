@@ -12,7 +12,7 @@ author: 默奕
 [星际文件系统 (IPFS)](https://ipfs.io/) 是一种新的超媒体分布协议，通过内容和标识来寻址。IPFS 支持创建完全分布式的应用程序。它的目标是使网络更快、更安全、更开放。由于范围广大，本周刊旨在跟踪整个生态系统的开发。
 
 想参与其中？点击下面的一些链接，查看我们在 [GitHub](https://github.com/ipfs) 上的内容，或加入我们的 [IRC](https://riot.im/app/#/room/#ipfs:matrix.org)。
-想要更新你的收件箱吗? [订阅我们的每周通讯!](https://tinyletter.com/ipfsnewsletter)
+想要更新你的收件箱吗? [订阅我们的每周通讯!](http://eepurl.com/gL2Pi5)
  
 以下是自上次 IPFS 周刊以来的一些亮点。
 
