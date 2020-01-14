@@ -12,7 +12,7 @@ The [InterPlanetary File System (IPFS)](https://ipfs.io/) is a new hypermedia di
 
 Looking to get involved? Click on some of the links below, see what we’re up to on [GitHub](https://github.com/ipfs), or join us on [IRC](https://riot.im/app/#/room/#ipfs:matrix.org).
 
-Want this update in your inbox? [Subscribe to our weekly newsletter!](https://tinyletter.com/ipfsnewsletter)
+Want this update in your inbox? [Subscribe to our weekly newsletter!](http://eepurl.com/gL2Pi5)
 
 Here are some of the highlights since the last IPFS Weekly.
 
