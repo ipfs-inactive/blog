@@ -3,7 +3,7 @@ date: 2019-11-26
 url: zh-cn/weekly-69
 translationKey: ipfs-weekly-69
 tags: weekly
-title: IPFS 周报-68
+title: IPFS 周报-69
 author: 默奕
 ---
 

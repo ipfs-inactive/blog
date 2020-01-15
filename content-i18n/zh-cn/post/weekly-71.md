@@ -3,7 +3,7 @@ date: 2019-12-10
 url: zh-cn/weekly-71
 translationKey: ipfs-weekly-71
 tags: weekly
-title: IPFS 周报-70
+title: IPFS 周报-71
 author: 默奕
 ---
 
