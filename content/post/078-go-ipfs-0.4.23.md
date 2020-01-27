@@ -11,17 +11,17 @@ Yes that's right, the next feature release of go-ipfs (0.5.0) is, well, running 
 
 Alright, enough funny business, what's the deal? Ok so, I don't want to _alarm_ anyone but this release has some **critical fixes** and if you're using go-ipfs or know someone who is then you and your friends need to slide into your upgrade pants and give those IPFS nodes a good wipe down ASAP.
 
-# 🔦 Highlights
+## 🔦 Highlights
 
-## 🤝 Fixed Spontaneous TLS Disconnects
+### 🤝 Fixed Spontaneous TLS Disconnects
 
 If this isn't reason enough to upgrade I don't know what is. Turns out, a TLS handshake _may_ have accidentially been unintentionally aborted for no good reason 😱. I shouldn't need to tell you this but \*whispers\* that's really bad for connectivity! Excellent news though, it's fixed, and if you want to stay well connected in the glorious future of p2p communications then you should definitely upgrade.
 
-## 😱 Fixed Panics and Crashes
+### 😱 Fixed Panics and Crashes
 
 Panicing won't help, in life, and also in golang. Stay calm and breathe slowly. We patched a number of panics and crashes that were uncovered, including a panic seen commonly in the websocket transport. High ten 🙌?
 
-## 🔁 Fixed Resursive Resolving of dnsaddr Multiaddrs
+### 🔁 Fixed Resursive Resolving of dnsaddr Multiaddrs
 
 Imagine this: rolling out a brand spanking new set of bootstrap nodes only to discover their new addresses are not resolvable. I know right - bad news bears 🐻!?
 
@@ -29,7 +29,7 @@ Ok, "bear" this in mind: you want to keep all your DNS TXT records [below 512 by
 
 Anyway, long story short. We fixed that. You're welcome.
 
-## 📻 Retuned Connection Manager
+### 📻 Retuned Connection Manager
 
 The Connection Manager has been tuned to better prioritise existing connections by not counting new connections in the "grace" period towards connection limits. New connections are like new friends. You can't hang out with everyone all the time, I mean, it just gets difficult to book a resturant after a while.
 
@@ -37,24 +37,24 @@ You also wouldn't stop being friends with Jane just because you met Sarah _once_
 
 You see?! History! ...and, erh, what was I saying? Oh yeah, Connection Manager - new connections don't cause us to close useful, existing connections (like Jane), but it does mean you'll keep more connections in total. Maybe consider reducing the `HighWater` setting in your config.
 
-## 🍖 Reduced Relay Related DHT Spam
+### 🍖 Reduced Relay Related DHT Spam
 
 When `AutoRelay` was enabled, your IPFS node basically spent all it's time searching the DHT for relays, like a fly to a honey trap. I say that because every other IPFS node was doing the same and if you had `AutoRelay` and `RelayHop` enabled then, erm, DoS happens. Bad times.
 
 So, instead of spamming the DHT the whole time trying to find random, potentially poor relays, IPFS is now using a pre-defined set of autorelays. I mean, try to tell me that _doesn't_ make sense.
 
-## 🐾 Better Bitswap
+### 🐾 Better Bitswap
 
 Joe has the rare shiny collectable card but your shoes have holes in them and he's standing in the rain on the other side of the playground 💦🕺🏻. This is exactly what bitswap is like when you have a bug that stops you from connecting to providers. Ok, I mean, there's a few differences, but it's basically the same.
 
 We're also now marking frequently used peers as "important" in the connection manager so those connections do not get dropped. This is like, erm, you and Joe being besties. Joe has all the good cards and is surprisingly willing to part with them. Ok, I'll admit, card trading is probably not a great analogy to bitswap 😛
 
-## 🦄 And More!
+### 🦄 And More!
 
 * Fixed build on go 1.13
 * New version of the WebUI to fix some issues with the peers map
 
-# ❤️ Contributors
+## ❤️ Contributors
 
 | Contributor | Commits | Lines ± | Files Changed |
 |-------------|---------|---------|---------------|
@@ -79,6 +79,6 @@ Would you like to contribute to the IPFS project and don't know how? Well, there
 - Join the discussion at [discuss.ipfs.io](https://discuss.ipfs.io/) and help users finding their answers.
 - Join the [🚀 IPFS Core Implementations Weekly Sync 🛰](https://github.com/ipfs/team-mgmt/issues/992) and be part of the action!
 
-# ⁉️ Do you have questions?
+## ⁉️ Do you have questions?
 
 The best place to ask your questions about IPFS, how it works and what you can do with it is at [discuss.ipfs.io](http://discuss.ipfs.io). We are also available at the `#ipfs` channel on Freenode, which is also [accessible through our Matrix bridge](https://riot.im/app/#/room/#freenode_#ipfs:matrix.org).
