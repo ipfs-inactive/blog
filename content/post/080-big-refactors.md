@@ -5,7 +5,7 @@ title: Big Refactors
 author: Alan Shaw
 ---
 
-> If you're considering a refactor that'll touch **~70** interdependent repos you've come to the right place for some perspective! This is the sister post to [The Async Await Refactor](/2020-01-28-async-await-refactor) and covers some of the learnings of completing a big code refactor with a distributed team.
+> If you're considering a refactor that'll touch **~70** interdependent repos you've come to the right place for some perspective! This is the sister post to [The Async Await Refactor](/2020-01-28-async-await-refactor/) and covers some of the learnings of completing a big code refactor with a distributed team.
 
 If you think you'd like to take on a challenge like this, do the math. If each repo takes a day to refactor and if you work on it 5 days a week then you've automatically used 14 of your 52 weeks in a year. That's like, 4 months, and that's the absolute best case scenario.
 
@@ -23,4 +23,4 @@ It's not always possible to use a refactored repo in your dependencies. Sometime
 
 **Keep track of what's been done, who is owning what, and where the PR is**. For you own sanity, keep on top of it and celebrate your progress with the team every step of the way. It's a long road and you will all need all the encouragement you can get. Update the team regularly with percentages of how done you are so you can all stay informed of progress and allow yourself to make better estimates for completion.
 
-It's taken us 1 year and 2 months so far, but we're nearly there. Read all about our big refactor: [The Async Await Refactor](/2020-01-28-async-await-refactor).
+It's taken us 1 year and 2 months so far, but we're nearly there. Read all about our big refactor: [The Async Await Refactor](/2020-01-28-async-await-refactor/).

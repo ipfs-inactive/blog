@@ -5,13 +5,13 @@ title: The Async Await Refactor
 author: Alan Shaw
 ---
 
-We're on the cusp of completing a refactor to the js-ipfs, js-libp2p and js-ipld codebases to use Promises and remove [Node.js streams](https://nodejs.org/dist/latest/docs/api/stream.html) and [pull streams](https://pull-stream.github.io/) from the code base entirely. We're using `async`/`await` everywhere (i.e. not the `then`/`catch` style of working with promises) and async iterables, allowing users to consume our streaming APIs with [`for await...of`](](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for-await...of)) loops.
+We're on the cusp of completing a refactor in the js-ipfs, js-libp2p and js-ipld codebases to use Promises and remove [Node.js streams](https://nodejs.org/dist/latest/docs/api/stream.html) and [pull streams](https://pull-stream.github.io/) from the code base entirely. We're using `async`/`await` everywhere (i.e. not the `then`/`catch` style of working with promises) and async iterables, allowing users to consume our streaming APIs with [`for await...of`](](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for-await...of)) loops.
 
 🚨 If you're using **js-ipfs** or **js-ipfs-http-client**, this is your early warning klaxon - the next releases of these two modules will have BIG breaking changes. Good news though, the [migration guide](https://gist.github.com/alanshaw/04b2ddc35a6fff25c040c011ac6acf26) is already written and a pre-release of js-ipfs-http-client is already available for testing (`v42.0.0-pre.0`) along with a comprehensive [list of breaking changes](https://github.com/ipfs/js-ipfs-http-client/releases/tag/v42.0.0-pre.0). So, read this post and then check out those resources, it'll make the transition way easier, I promise you (no pun intended).
 
 Motivations? Yes, we have them. Many of them in fact. Too many perhaps, because it tipped the scales in favour of a 60+ repo refactor! Something that no developers should take on lightly.
 
-The refactor is much more than just a switch to promises, it's also primarily a refocus to offer a smaller, streaming-first core API to JS IPFS, as well as giving our team and the community a code base that's much easier to debug, understand and maintain, as well as a few other reasons.
+The refactor is much more than just a switch to promises, it's also primarily a refocus to offer a smaller, streaming-first core API to JS IPFS, giving our team and the community a code base that's much easier to debug, understand and maintain, as well as a few other reasons.
 
 ⚠️ It's important to note that the changes we're making don't actually alter the HTTP API or CLI in any way, these interfaces are untouched and remain compatible with the HTTP and CLI interfaces that go-ipfs exposes. The changes we're referring to only change the [core API](https://github.com/ipfs/interface-js-ipfs-core/tree/master/SPEC), which is the interface you'd use to interact with IPFS programmatically in JavaScript.
 
