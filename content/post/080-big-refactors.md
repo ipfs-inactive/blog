@@ -9,7 +9,7 @@ author: Alan Shaw
 
 If you think you'd like to take on a challenge like this, do the math. If each repo takes a day to refactor and if you work on it 5 days a week then you've automatically used 14 of your 52 weeks in a year. That's like, 4 months, and that's the absolute best case scenario.
 
-In reality, even if you get approval to do it you're unlikely to be able to work on it all day every day. The problem is that the benefits of a refactor like this can't really be seen until everything is done and the whole stack is using the new code. I'll go into the benefits more later, but the point is, **your project needs to keep moving**. New features need to land and those bugs don't squash themselves.
+In reality, even if you get approval to do it you're unlikely to be able to work on it all day every day. The problem is that the benefits of a refactor can't always be seen until everything is done and the whole stack is using the new code. The point is, **your project needs to keep moving**. New features need to land and those bugs don't squash themselves.
 
 Refactors to each dependent repo **won't take just one day**. A tiny percentage of them will take less than a day but the vast majority will take multiple days to complete, if not weeks.
 

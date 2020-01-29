@@ -5,7 +5,7 @@ title: The Async Await Refactor
 author: Alan Shaw
 ---
 
-We're on the cusp of completing a refactor to the js-ipfs, js-libp2p and js-ipld codebases to use Promises and remove [Node.js streams](https://nodejs.org/dist/latest/docs/api/stream.html) and [pull streams](https://pull-stream.github.io/) from the code base entirely. We're using `async`/`await` everywhere (i.e. not the `then`/`catch` style of working with promises) and async iterables, allowing users to consume our streaming APIs with `for await (const chunk of iterable)` loops.
+We're on the cusp of completing a refactor to the js-ipfs, js-libp2p and js-ipld codebases to use Promises and remove [Node.js streams](https://nodejs.org/dist/latest/docs/api/stream.html) and [pull streams](https://pull-stream.github.io/) from the code base entirely. We're using `async`/`await` everywhere (i.e. not the `then`/`catch` style of working with promises) and async iterables, allowing users to consume our streaming APIs with [`for await...of`](](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for-await...of)) loops.
 
 🚨 If you're using **js-ipfs** or **js-ipfs-http-client**, this is your early warning klaxon - the next releases of these two modules will have BIG breaking changes. Good news though, the [migration guide](https://gist.github.com/alanshaw/04b2ddc35a6fff25c040c011ac6acf26) is already written and a pre-release of js-ipfs-http-client is already available for testing (`v42.0.0-pre.0`) along with a comprehensive [list of breaking changes](https://github.com/ipfs/js-ipfs-http-client/releases/tag/v42.0.0-pre.0). So, read this post and then check out those resources, it'll make the transition way easier, I promise you (no pun intended).
 
@@ -17,45 +17,45 @@ The refactor is much more than just a switch to promises, it's also primarily a 
 
 Anyway, motivations, yes, I've listed them below in a rough order of importance:
 
-1. Streaming by default
+## 1. Streaming by default
 
 We need streaming APIs by default. Currently we provide non-streaming APIs and our users are frustrated when things take a long time to yield any results _and_ they get no feedback. To explain a little, non-streaming APIs buffer data in memory. These are currently the _default_ in js-ipfs but we also provide streaming _alternatives_ of the same API methods. One such example is `ipfs.cat()`, for which we also expose `ipfs.catReadableStream()` and `ipfs.catPullStream()`.
 
 When the size of the result is small and/or the information is readily available it is absolutely fine to have, and use, buffering APIs; we're not suggesting switching _all_ API methods to be streaming by default. However, when the size of the result is big or unknown and/or may not be instantly available it makes a whole lot more sense for it to be streamed.
 
-**For big files, it's entirely necessary to stream data to reduce memory pressure**. This is paricularly important for IPFS because typically a user will not know the size of a file, given a hash, and it will be obtained from a network of poorly connected peers where locality and immediacy cannot be assumed. Bearing that in mind, we should provide a APIs that a) encourages developers to do the right thing and not buffer content into memory regardless of the size of the file they're retrieving and b) reduces time to first byte, giving them visibility over progress and allows them to differentiate between the file being unavailable or it being large.
+**For big files, it's entirely necessary to stream data to reduce memory pressure**. This is paricularly important for IPFS because typically a user will not know the size of a file, given a hash, and it will be obtained from a network of poorly connected peers where locality and immediacy cannot be assumed. Bearing that in mind, we should provide APIs that a) encourage developers to do the right thing and not buffer content into memory regardless of the size of the file they're retrieving and b) reduces time to first byte, giving them visibility over progress and allows them to differentiate between the file being unavailable or it being large.
 
-**Removing streaming alternatives reduces our API surface area**. That's good because it means there's simply fewer API methods for developers to understand and choose from. This just makes things a little easier, and by guiding them towards streaming by default we're hopefully helping them to avoid OOM errors when their applications become popular or are used on resource constrained devices like mobile or when their users start sharing huge files.
+**Removing streaming alternatives reduces our API surface area**. That's good because it means there's simply fewer API methods for developers to understand and choose from. This just makes things a little easier, and by guiding developers towards streaming by default we're hopefully helping them to avoid OOM errors when their applications become popular or are used on resource constrained devices like mobile or when their users start sharing huge files.
 
-A more concrete benefit of a smaller API service area is that there is simply less code to ship. There's a lot less boilerplate and many fewer streaming modules and conversion utilities that need to be `npm install`-ed or that make their way into the final bundle. That means a smaller `node_modules` directory and smaller browser builds for your applications. There's also no performance hits to be had converting between two different streaming implementations.
+A more concrete benefit of a smaller API surface area is that there is simply less code to ship. There's a lot less boilerplate and many fewer streaming modules and conversion utilities that need to be `npm install`-ed or that make their way into the final bundle. That means a smaller `node_modules` directory and smaller browser builds for applications. There's also no performance hits to be had converting between two different streaming implementations.
 
-1. Streaming with async iterables
+## 2. Streaming with async iterables
 
-Our streaming APIs will use async iterables. Thats significant for a couple of reasons. Firstly, since we've been talking about bundle sizes it's worth mentioning that using a streaming implementation that is actually a language feature means that we don't need to bundle any libraries/modules to provide a streaming implementation! Obviously that also means that we don't need to `npm install` them either.
+Our streaming APIs will use async iterables. Thats significant for a couple of reasons. Firstly, since we've been talking about bundle sizes it's worth mentioning that using a streaming implementation that is actually a language feature means that we don't need to _bundle_ any libraries/modules to provide a streaming implementation! Obviously that also means that we don't need to `npm install` them either.
 
 Secondly, **async iterables make streaming APIs approachable**. There's a BIG hurdle involved with streaming APIs that is lowered significantly by using async iterables instead of Node.js or pull streams. The hurdle is the understanding of the concepts, naming and usage that surrounds them that developers new to JS or new to streaming have to overcome.
 
-There's a big conflict in interests in exposing streaming APIs and exposing an API that is easy to use and understand for _all_ developers. When you boil down the understanding of reading from a stream to a `for` loop (you read an async iterable using [`for await...of` loops](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for-await...of)) then developers can instantly draw parallels to one of the first things they learnt in programming. This is simply not the case if your API returns a Node.js `ReadableStream` for example.
+There's a big conflict in interests in exposing streaming APIs and exposing an API that is easy to use and understand for _all_ developers. When you boil down the understanding of reading from a stream to a `for` loop (you read an async iterable using [`for await...of`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for-await...of) loops) then developers can instantly draw parallels to one of the first things they learnt in programming. This is simply not the case if your API returns a Node.js `ReadableStream` for example.
 
-1. Better debugging
+## 3. Better debugging
 
 * something about error handling over for loop
 * pull streams pipeline super powerful, pump only recent. Error handling not present in .pipe
 * no more uncaught exception - synchronous and asynchronous errors handled by the same construct (try/catch) 
 * stack traces span async boundaries
 
-1. Improved readability
+## 4. Improved readability
 
 * easier to follow code
 * I prefer callbacks to then/catch but async/await is so much easier to follow
 
-1. Reduced boilerplate
-1. Reduced bundle size
-1. More performant
+## 5. Reduced boilerplate
+## 6. Reduced bundle size
+## 7. More performant
 
 * Finally, we still need to verify, but connection setup and data transfer may be faster now. In benchmarks taken at the mplex and lower levels we already know that performance has improved. One aspect of this is likely to be `BufferList`.
 
-1. It's the right time to switch
+## 8. It's the right time to switch
 
 * working with a code base that uses modern JS features, techniques and practices.
 
