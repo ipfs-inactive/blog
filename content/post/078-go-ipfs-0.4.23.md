@@ -11,35 +11,46 @@ Yes that's right, the next feature release of go-ipfs (0.5.0) is, well, running 
 
 Alright, enough funny business, what's the deal? Ok so, I don't want to _alarm_ anyone but this release has some **critical fixes** and if you're using go-ipfs or know someone who is then you and your friends need to slide into your upgrade pants and give those IPFS nodes a good wipe down ASAP.
 
+If you're a busy person and are feeling like you've read a little too much already, the TLDR; on the critical fixes is:
+
+1. We fixed a bug in the TLS transport that would (very rarely) cause disconnects during the handshake. You really _should_ upgrade or you'll see this bug more and more when TLS is enabled by default in go-ipfs 0.5.0.
+1. We patched a commonly occurring bug in the websocket transport that was causing panics because of concurrent writes.
+
 ## 🔦 Highlights
 
 ### 🤝 Fixed Spontaneous TLS Disconnects
 
-If this isn't reason enough to upgrade I don't know what is. Turns out, a TLS handshake _may_ have accidentially been unintentionally aborted for no good reason 😱. I shouldn't need to tell you this but \*whispers\* that's really bad for connectivity! Excellent news though, it's fixed, and if you want to stay well connected in the glorious future of p2p communications then you should definitely upgrade.
+If this isn't reason enough to upgrade I don't know what is. Turns out, a TLS handshake _may_ have accidentially been unintentionally aborted for no good reason 😱. Don't panic just yet! It's a really rare race condition and in go-ipfs 0.4.x the TLS transport is _experimental_ (SECIO is currently the default).
+
+Phew, ok, that said, in go-ipfs 0.5.0, TLS will be the default so don't delay, upgrade today!
 
 ### 😱 Fixed Panics and Crashes
 
-Panicing won't help, in life, and also in golang. Stay calm and breathe slowly. We patched a number of panics and crashes that were uncovered, including a panic seen commonly in the websocket transport. High ten 🙌?
+Panicing won't help, in life, and also in golang. Stay calm and breathe slowly. We patched a number of panics and crashes that were uncovered, including a panic due to concurrent writes that you probably saw quite a lot if you were using the websocket transport. High ten 🙌?
 
 ### 🔁 Fixed Resursive Resolving of dnsaddr Multiaddrs
 
-Imagine this: rolling out a brand spanking new set of bootstrap nodes only to discover their new addresses are not resolvable. I know right - bad news bears 🐻!?
+`dnsaddr`s can be recursive! That means a given `dnsaddr` can resolve to another `dnsaddr`. Not indefinitely though, don't try to trick us with your circular addresses - you get 32 goes on the ride maximum.
+
+We found this issue when rolling out a brand spanking new set of bootstrap nodes only to discover their new addresses were, well, what's the opposite of recursive? It's not cursive...non-recursive I guess. Basically they resolved one time and then not again. I know right - bad news bears 🐻!?
 
 Ok, "bear" this in mind: you want to keep all your DNS TXT records [below 512 bytes to avoid UDP fragmentation](https://serverfault.com/questions/840241/do-dns-queries-always-travel-over-udp), otherwise you'll get a truncated reply and have to connect with TCP to get all the records. If you have lots of dnsaddr TXT records then it can be more efficient to use recursive resolving than to get a truncated reply and go through the famous 18-way SYN, SYN-ACK ACK, ACK-SYN, ACK-ACK (...etc, etc) TCP handshake, not to mention the fact that go-ipfs will not even try to fallback to TCP 😅.
 
-Anyway, long story short. We fixed that. You're welcome.
+Anyway, long story short. We fixed recursive `dnsaddr` resolving so we didn't have to deal with UDP fragmentation. You're welcome.
 
 ### 📻 Retuned Connection Manager
 
-The Connection Manager has been tuned to better prioritise existing connections by not counting new connections in the "grace" period towards connection limits. New connections are like new friends. You can't hang out with everyone all the time, I mean, it just gets difficult to book a resturant after a while.
+The Connection Manager has been tuned to better prioritise existing connections by not counting new connections in the "grace" period (30s) towards connection limits. New connections are like new friends. You can't hang out with everyone all the time, I mean, it just gets difficult to book a resturant after a while.
 
 You also wouldn't stop being friends with Jane just because you met Sarah _once_ on the train. You and Jane have history, think of everything you've been through. Remember that time when Jane's dog, Dave, ran away? I know, it's a weird name for a dog, I mean who gives a human name to a dog anyway, but I guess that's one of the reasons you like Jane. Anyway, she lost her dog and you both looked all around town for it, you were about to give up but then you heared faint wimpering as you were walking back to the house. Dave had somehow managed to fall into the old abandoned well!
 
-You see?! History! ...and, erh, what was I saying? Oh yeah, Connection Manager - new connections don't cause us to close useful, existing connections (like Jane), but it does mean you'll keep more connections in total. Maybe consider reducing the `HighWater` setting in your config.
+You see?! History! ...and, erh, what was I saying? Oh yeah, Connection Manager - new connections don't cause us to close useful, existing connections (like Jane). More specifically though, this change solves the problem of your peer receiving more inbound connections than the `HighWater` limit, causing it to disconnect from Jane, as well as all your other good friends (peers not in the grace period) in favor of connections that might not even work out. No-one wants to be friendless, and this fix avoids that awkward situation. Though, it does mean you'll keep more connections in total. Maybe consider reducing the `HighWater` setting in your config.
 
 ### 🍖 Reduced Relay Related DHT Spam
 
-When `AutoRelay` was enabled, your IPFS node basically spent all it's time searching the DHT for relays, like a fly to a honey trap. I say that because every other IPFS node was doing the same and if you had `AutoRelay` and `RelayHop` enabled then, erm, DoS happens. Bad times.
+When `AutoRelay` was enabled, and your IPFS node was unreachable behind a NAT or something, go-ipfs would search the DHT for 3 relays with `RelayHop` enabled, connect to them and then advertise them as relays.
+
+The problem is that many of the public relays had low connection limits and were overloaded. There's a lot of IPFS nodes in the network, and a _lot_ of unreachable nodes trying their best to hop around via relays. So relay nodes were being DDoSed and they were constantly killing connections. Nodes trying to use the relays were on a continuous quest for better ones, which was causing 95% of the DHT traffic. Eek!
 
 So, instead of spamming the DHT the whole time trying to find random, potentially poor relays, IPFS is now using a pre-defined set of autorelays. I mean, try to tell me that _doesn't_ make sense.
 
