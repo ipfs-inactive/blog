@@ -3,7 +3,7 @@ date: 2020-01-28
 url: weekly-75
 translationKey: ipfs-weekly-75
 tags: weekly
-title: IPFS Weekly #75
+title: IPFS Weekly 75
 author: Jenn Turner
 ---
 
