@@ -15,7 +15,7 @@ We've done an overhaul of our docs to make libp2p easier to use. Among other doc
 
 ## ⌚️ Async/Await instead of Callbacks
 
-All callback APIs have been change to be async / await compliant. See the [API.md][api] readme for detailed usage. When migrating, you can leverage the [migration guide][migration] to see samples on some of the common migrations you may need to make.
+All callback APIs have been changed to be async / await compliant. See the [API.md][api] readme for detailed usage. When migrating, you can leverage the [migration guide][migration] to see samples on some of the common migrations you may need to make.
 
 ## 🚰 Streaming Iterables instead of Pull Streams
 
@@ -31,7 +31,7 @@ libp2p.dialProtocol(remotePeerInfo, protocol, (error, stream) => { })
 
 // Now
 const connection = await libp2p.dial(remotePeerInfo)
-const { stream, protocol } = connection.newStream(protocols)
+const { stream, protocol } = await connection.newStream(protocols)
 const allStreams = connections.streams
 ```
 
@@ -50,11 +50,11 @@ controller.abort()
 
 [Identify Push](https://github.com/libp2p/specs/tree/master/identify#identifypush) is now available in js-libp2p. As a libp2p node changes its Multiaddrs (changes in networks) or protocols, it will broadcast those changes to all connected peers. Once support for AutoNAT and AutoRelay is added to js-libp2p, we will be able to broadcast those changes maximizing the effectiveness of those protocols.
 
-## :mag: Plaintext 2 for testing
+## 🔍 Plaintext 2 for testing
 
 We've upgraded from [Plaintext 1 to 2](https://github.com/libp2p/specs/tree/master/plaintext#protocol-id-and-version-history). If you need to test things locally without encryption to see what's going on over the wire, Plaintext 2 makes this more viable. Public Keys are now exchanged, which is required by many protocols. This should NEVER be used in production, happy testing!
 
-## :pray: More polite connections
+## 🙏 More polite connections
 
 Currently when two nodes connect, they will actively ask each other what protocols they support. This ends up being multiple checks in parallel, rather than getting the information from a single Identify check. js-libp2p will now only use Identify. This greatly reduces network chatter. The `peerStore`, formerly `peerBook` to better match common libp2p terminology, will now emit change events for protocols. Applications that need to check for protocol support can now politely listen for updates, instead of actively checking every peer that connects.
 
@@ -62,7 +62,7 @@ Currently when two nodes connect, they will actively ask each other what protoco
 libp2p.peerStore.on('change:protocols', ({ peerInfo, protocols }) => { ... })
 ```
 
-## 📊Stats (now Metrics) can now be enabled/disabled
+## 📊 Metrics (formerly Stats) can now be enabled/disabled
 
 We're making `stats` disabled by default and they are now available at `libp2p.metrics` instead of `libp2p.stats`. You can enable metrics if you need them, but for performance reasons we have disabled them by default. Good news, if you need to run them they're more performant as we've moved away from event emitting in metrics. This greatly reduces the amount of processing that happens until you explicitly request something! You can read more about Metrics at [METRICS.md][metrics].
 
