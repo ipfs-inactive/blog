@@ -75,7 +75,7 @@ See the [API.md][api] readme for detailed usage on the new API. Significant brea
 * `libp2p.peerBook` is now `libp2p.peerStore` to match common libp2p terminology.
 * `libp2p.stats` is now `libp2p.metrics`.
 * `libp2p.pubsub.ls` is now `libp2p.pubsub.getTopics`.
-* `libp2p.pubsub.peers` is not `libp2p.pubsub.getSubscribers`.
+* `libp2p.pubsub.peers` is now `libp2p.pubsub.getSubscribers`.
 * `libp2p.ping` now simply returns the latency of the ping. See the [migration guide][migration] for more details.
 
 # ❤️ Huge thank you to everyone that made this release possible
