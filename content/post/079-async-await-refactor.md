@@ -68,18 +68,23 @@ At this point `catch`ing an error and being able to continue program execution f
 
 ## 4. Improved readability
 
-* easier to follow code
-* I prefer callbacks to then/catch but `async`/`await` is so much easier to follow
+Asynchronous code written using `async`/`await` is simply easier to follow than code written using callbacks or vanilla promises. This is a little subjective and I'm pretty sure there are ways and means of writing `async`/`await` code to make it more difficult to follow than callbacks or vanilla promises but for the most part, asynchronous code that can be read as though it is synchronous is easier to follow.
 
-## 5. Reduced boilerplate
-## 6. Reduced bundle size
-## 7. More performant
+This is especially true when working with conditionals. Things get hairy pretty quickly as soon as you need to conditionally execute async tasks and then continue with some common code. There's libraries that'll help with this but just being able to use an `if` statement is so much easier and doesn't require the cognitive overhead of understanding those libraries.
 
+Readability is also improved by the reduction in overall code to look at. By this I mean that there's a lot less boilerplate involved with asychronous code written using `async`/`await`. In refactoring our callback based code we often found ourselves reducing 3 (or more) lines of code down to a single statement that achieved exactly the same task.
+
+## 5. Performance improvements
+
+* Reduced boilerplate
+* Reduced bundle size
 * Finally, we still need to verify, but connection setup and data transfer may be faster now. In benchmarks taken at the mplex and lower levels we already know that performance has improved. One aspect of this is likely to be `BufferList`.
 
-## 8. It's the right time to switch
+## 6. It's the right time to switch
 
 * working with a code base that uses modern JS features, techniques and practices.
+* async iterables tools
+* Node.js streams are async iterable
 
 ## ROUGH NOTES DO NOT READ BELOW HERE
 
