@@ -67,6 +67,10 @@ We're also now marking frequently used peers as "important" in the connection ma
 * Fixed build on go 1.13
 * New version of the WebUI to fix some issues with the peers map
 
+## 📒 Changelog
+
+Check out the full [changelog for this release](https://github.com/ipfs/go-ipfs/blob/master/CHANGELOG.md#0423-2019-01-29) which has all the details.
+
 ## ❤️ Contributors
 
 | Contributor | Commits | Lines ± | Files Changed |
