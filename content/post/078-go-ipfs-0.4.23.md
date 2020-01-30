@@ -28,7 +28,7 @@ Phew, ok, that said, in go-ipfs 0.5.0, TLS will be the default so don't delay, u
 
 Panicing won't help, in life, and also in golang. Stay calm and breathe slowly. We patched a number of panics and crashes that were uncovered, including a panic due to concurrent writes that you probably saw quite a lot if you were using the websocket transport. High ten 🙌?
 
-### 🔁 Fixed Resursive Resolving of dnsaddr Multiaddrs
+### 🔁 Fixed Recursive Resolving of dnsaddr Multiaddrs
 
 `dnsaddr`s can be recursive! That means a given `dnsaddr` can resolve to another `dnsaddr`. Not indefinitely though, don't try to trick us with your circular addresses - you get 32 goes on the ride maximum.
 
