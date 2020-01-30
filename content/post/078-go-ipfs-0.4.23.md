@@ -1,6 +1,6 @@
 ---
-date: 2020-01-27
-url: 2020-01-27-go-ipfs-0-4-23
+date: 2020-01-30
+url: 2020-01-30-go-ipfs-0-4-23
 title: go-ipfs 0.4.23 released
 author: Alan Shaw
 ---
