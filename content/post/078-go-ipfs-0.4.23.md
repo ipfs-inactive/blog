@@ -56,7 +56,9 @@ So, instead of spamming the DHT the whole time trying to find random, potentiall
 
 ### 🐾 Better Bitswap
 
-Joe has the rare shiny collectable card but your shoes have holes in them and he's standing in the rain on the other side of the playground 💦🕺🏻. This is exactly what bitswap is like when you have a bug that stops you from connecting to providers. Ok, I mean, there's a few differences, but it's basically the same.
+Joe has the rare shiny collectable card you've been hunting for forever (since yesterday). You've spotted him, right over there on the other side of the playground. But now that you've found what you're looking for, you're so excited you forget what you were doing and start looking again.
+
+This is exactly what bitswap is like when you have a bug where you stop trying to connect to providers once you've found enough of them. Specifically, if we found enough providers (100) or timed out the provider request, bitswap would cancel any in-progress connection attempts to providers and walk away.
 
 We're also now marking frequently used peers as "important" in the connection manager so those connections do not get dropped. This is like, erm, you and Joe being besties. Joe has all the good cards and is surprisingly willing to part with them. Ok, I'll admit, card trading is probably not a great analogy to bitswap 😛
 
