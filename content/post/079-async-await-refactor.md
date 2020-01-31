@@ -76,7 +76,7 @@ Readability is also improved by the reduction in overall code to look at. By thi
 
 ## 5. Performance improvements
 
-The reduction in boilerplate in combination with the reduced API surface area (which meant we could remove many modules relating to different stream implementations) means **js-ipfs will be faster to `npm install`, take up less disk space and be smaller when bundled with your dweb applications**. A smaller bundle is great for saving bandwidth, but also faster to download and more friendly in low powered or resource constrained environments.
+The reduction in boilerplate in combination with the reduced API surface area (which meant we could remove many modules relating to different stream implementations) means **js-ipfs will be faster to `npm install`, take up less disk space and be smaller when bundled with your dweb applications**. A smaller bundle is great for saving bandwidth, but also faster to download and friendlier in low powered or resource constrained environments.
 
 Any kind of streaming that was done previously was passing chunks through various conversion libraries and we were taking a performance hit for every chunk. This has been eradicated from js-ipfs and now we only do conversions where absolutely necessary when interfacing with TCP or WebSocket libraries for example.
 
