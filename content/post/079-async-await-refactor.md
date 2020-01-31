@@ -5,7 +5,7 @@ title: The Async Await Refactor
 author: Alan Shaw
 ---
 
-We're on the cusp of completing a refactor in the js-ipfs, js-libp2p and js-ipld codebases to use Promises and remove [Node.js streams](https://nodejs.org/dist/latest/docs/api/stream.html) and [pull streams](https://pull-stream.github.io/) from the code base entirely. We're using `async`/`await` everywhere (i.e. not the vanilla `then`/`catch` style of working with promises) and async iterables, allowing users to consume our streaming APIs with [`for await...of`](](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for-await...of)) loops.
+We're on the cusp of completing a refactor in the js-ipfs, js-libp2p and js-ipld codebases to use Promises and remove [Node.js streams](https://nodejs.org/dist/latest/docs/api/stream.html) and [pull streams](https://pull-stream.github.io/) from the code base entirely. We're using `async`/`await` everywhere (i.e. not the vanilla `then`/`catch` style of working with promises) and async iterables, allowing users to consume our streaming APIs with [`for await...of`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for-await...of) loops.
 
 🚨 If you're using **js-ipfs** or **js-ipfs-http-client**, this is your early warning klaxon - the next releases of these two modules will have BIG breaking changes. Good news though, the [migration guide](https://gist.github.com/alanshaw/04b2ddc35a6fff25c040c011ac6acf26) is already written and a pre-release of js-ipfs-http-client is already available for testing (`v42.0.0-pre.0`) along with a comprehensive [list of breaking changes](https://github.com/ipfs/js-ipfs-http-client/releases/tag/v42.0.0-pre.0). So, read this post and then check out those resources, it'll make the transition way easier, I promise you (no pun intended).
 
@@ -39,7 +39,7 @@ There's a big conflict of interests in exposing streaming APIs and exposing an A
 
 ## 3. Better debugging
 
-One of the best things about using `async`/`await` is that stack traces are much better. With callbacks you typically lose the stack trace across an async boundary because with callbacks, the call stack starts at the callback function.
+One of the best things about debugging in an `async`/`await` code base is that **stack traces are much better**. With callbacks you typically lose the stack trace across an async boundary because with callbacks, the call stack starts at the callback function.
 
 This can make debugging super difficult because you can't get a good idea of the execution path of the program prior to the async boundary. The situation is improved by using promises but by using `async`/`await` it's _even better_:
 
@@ -48,7 +48,7 @@ This can make debugging super difficult because you can't get a good idea of the
 
 The upshot is that stack traces are more informative and span async boundaries giving developers more power to debug code.
 
-The second best thing about using `async`/`await` is that synchronous and asynchronous errors are handled by the same construct: `try`/`catch`.
+The second best thing about debugging in an `async`/`await` code base is that synchronous and asynchronous errors are handled by the same construct: `try`/`catch`.
 
 Asynchronous errors when using callbacks must be handled by checking for an error parameter passed to the callback function using an `if` statement. You must also either _trust_ that a call to a function that takes a callback does not throw synchronously (this is what most people do) or put a `try`/`catch` around it as well.
 
@@ -68,28 +68,55 @@ At this point `catch`ing an error and being able to continue program execution f
 
 ## 4. Improved readability
 
-Asynchronous code written using `async`/`await` is simply easier to follow than code written using callbacks or vanilla promises. This is a little subjective and I'm pretty sure there are ways and means of writing `async`/`await` code to make it more difficult to follow than callbacks or vanilla promises but for the most part, asynchronous code that can be read as though it is synchronous is easier to follow.
+Asynchronous code written using `async`/`await` is simply easier to follow than code written using callbacks or vanilla promises. This is a little subjective and I'm pretty sure there are ways and means of writing `async`/`await` code to make it more difficult to follow but for the most part, asynchronous code that can be read as though it is synchronous is easier to follow.
 
-This is especially true when working with conditionals. Things get hairy pretty quickly as soon as you need to conditionally execute async tasks and then continue with some common code. There's libraries that'll help with this but just being able to use an `if` statement is so much easier and doesn't require the cognitive overhead of understanding those libraries.
+This is also true when working with conditionals. Things get hairy pretty quickly as soon as you need to conditionally execute async tasks and then continue with some common code. There's libraries that'll help with this but just being able to use an `if` statement is so much easier and doesn't require the cognitive overhead of understanding those libraries.
 
 Readability is also improved by the reduction in overall code to look at. By this I mean that there's a lot less boilerplate involved with asychronous code written using `async`/`await`. In refactoring our callback based code we often found ourselves reducing 3 (or more) lines of code down to a single statement that achieved exactly the same task.
 
 ## 5. Performance improvements
 
-* Reduced boilerplate
-* Reduced bundle size
-* Finally, we still need to verify, but connection setup and data transfer may be faster now. In benchmarks taken at the mplex and lower levels we already know that performance has improved. One aspect of this is likely to be `BufferList`.
+The reduction in boilerplate in combination with the reduced API surface area (which meant we could remove many modules relating to different stream implementations) means **js-ipfs will be faster to `npm install`, take up less disk space and be smaller when bundled with your dweb applications**. A smaller bundle is great for saving bandwidth, but also faster to download and more friendly in low powered or resource constrained environments.
+
+Any kind of streaming that was done previously was passing chunks through various conversion libraries and we were taking a performance hit for every chunk. This has been eradicated from js-ipfs and now we only do conversions where absolutely necessary when interfacing with TCP or WebSocket libraries for example.
+
+Another important performance improvement of switching to streaming APIs by default is that it actually **enables operations that were previously impossible**, like listing a really really really REALLY big directory. We put the entirety of npm on js-ipfs a while ago and had this problem - our process just hung and eventually ran out of memory.
+
+Outside of the `async`/`await` world, we've taken this opportunity to make some other changes we always wanted to get done to improve preformance, here's a few interesting ones:
+
+1. Removed crypto libraries from `js-ipfs-http-client`. These were being brought in by the [`PeerId`](https://www.npmjs.com/package/peer-id) class and were basically unused. Instead of `PeerId` instances we now return strings, which, for the HTTP API does not result in any loss of information and it's made a huge reduction to the bundle size of the HTTP client.
+1. Use [`BufferList`](https://www.npmjs.com/package/bl) throughout libp2p. This helps reduce unnecessary (and slow) buffer copies. Instead of using `Buffer.concat`, we just pass around `BufferList` instances and concat them together when absolutely necessary.
+1. Return [`CID`](https://www.npmjs.com/package/cids) instances from core. This simply reduces the amount of conversions between string and buffer forms of CIDs. If you never need to see a CID as a string, you no longer have to do the work of encoding it. Previously this wasn't the case and all CIDs would be converted to strings and core would make assumptions about what multibase the CID should be encoded with.
+
+Be sure to read the release notes when `js-ipfs` 0.41 is released because we will pack it with as many perf stats as we can get our hands on.
 
 ## 6. It's the right time to switch
 
-* working with a code base that uses modern JS features, techniques and practices.
-* async iterables tools
-* Node.js streams are async iterable
+Using `async`/`await` in JavaScript is gaining a _lot_ of traction in the ecosystem and is rapidly becoming the de facto way of writing idiomatic JS. We want `js-ipfs` to **move with the times and continue to be attractive to contributors** by using modern JS features, techniques and practices. The big idea with these changes is for the code to be easier to contribute to, easier to understand, easier to maintain, and be faster and smaller than ever.
 
-## ROUGH NOTES DO NOT READ BELOW HERE
+The `async`/`await` syntax, async iterables and `for await...of` loops are now supported by the overwhelming majority of browsers as well as Node.js since v10. It means that we can continue to _not_ transpile our code, keeping debugging nice and easy.
 
-Working with async iterables is not super new in JS but to use them in ways where they can be "piped" together, "written" to or as "duplex" streams for use in networking required some thinking and definition. It's nothing new really (I basically used a lot of ideas from pull streams) but I wrote down the information and the team have been using this document as their definition of the different types of streaming async iterables that are available (it is now referenced from js-libp2p docs): https://gist.github.com/alanshaw/591dc7dd54e4f99338a347ef568d6ee9
+Another great reason to make this switch is that **Node.js streams are async iterable**, and have been for a while now. So we can switch to async iterables and remove Node.js streams from the code base, but that doesn't stop us from accepting them as inputs because we don't need any special streaming code to be able to read from them. Browser streams will also hopefully follow this move too.
 
-I created this repo to track modules for working with async iterables: https://github.com/alanshaw/it-awesome.
+In rewriting the code base we built a few tools to help us work with async iterables and share code. They mostly begin with the `it-` prefix (for "iterable") which follows other existing module themes like the `p-` ("promises") collection of modules. They're being documented here: https://github.com/alanshaw/it-awesome
 
+What's funny about these tools is that there's a iterator helpers proposal (https://github.com/tc39/proposal-iterator-helpers) at stage 2 of the TC39 process, which means that:
 
+> The committee expects the feature to be developed and eventually included in the standard
+
+It's funny because if the proposal makes it into the standard a bunch of them will become obsolete, so instead of, for example:
+
+```js
+const all = require('it-all')
+const filesAdded = await all(ipfs.add([/* ... */]))
+```
+
+You will be able to, more simply:
+
+```js
+const filesAdded = await ipfs.add([/* ... */]).toArray()
+```
+
+One last thing, if you're currently using pull streams or Node.js streams extensively in your application and wondering/worrying how these changes will affect your code then see the appropriate [from pull streams](https://gist.github.com/alanshaw/04b2ddc35a6fff25c040c011ac6acf26#from-pull-streams) and [from Node.js streams](https://gist.github.com/alanshaw/04b2ddc35a6fff25c040c011ac6acf26#from-nodejs-streams) sections in the migration guide.
+
+...and that's about...half of what needs to be said on the `async`/`await` refactor 😉. In the next blog post we'll cover some of the learnings of completing this big code refactor with a distributed team. In the mean time, watch out for the upcoming js-ipfs 0.41 RC and the release post when it finally lands.
