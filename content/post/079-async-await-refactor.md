@@ -31,7 +31,7 @@ A more concrete benefit of a smaller API surface area is that there is simply le
 
 ## 2. Streaming with async iterables
 
-Our streaming APIs will use [async iterables](https://javascript.info/async-iterators-generators). Thats significant for a couple of reasons. Firstly, since we've been talking about bundle sizes it's worth mentioning that using a streaming implementation that is actually a language feature means that we don't need to _bundle_ any libraries/modules to provide a streaming implementation! Obviously that also means that we don't need to `npm install` them either.
+Our streaming APIs will use [async iterables](https://javascript.info/async-iterators-generators). That's significant for a couple of reasons. Firstly, since we've been talking about bundle sizes it's worth mentioning that using a streaming implementation that is actually a language feature means that we don't need to _bundle_ any libraries/modules to provide a streaming implementation! Obviously, that also means that we don't need to `npm install` them either.
 
 Secondly, **async iterables make streaming APIs approachable**. There's a BIG hurdle involved with streaming APIs that is lowered significantly by using async iterables instead of Node.js or pull streams. The hurdle is the understanding of the concepts, naming and usage that surrounds them that developers new to JS or new to streaming have to overcome.
 
