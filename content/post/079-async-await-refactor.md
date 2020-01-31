@@ -35,7 +35,7 @@ Our streaming APIs will use [async iterables](https://javascript.info/async-iter
 
 Secondly, **async iterables make streaming APIs approachable**. There's a BIG hurdle involved with streaming APIs that is lowered significantly by using async iterables instead of Node.js or pull streams. That hurdle is understanding the naming, usage, and concepts, which developers new to JS or new to streaming have to overcome.
 
-There's a big conflict of interests in exposing streaming APIs and exposing an API that is easy to use and understand for _all_ developers. When you boil down the understanding of reading from a stream to a `for` loop (you read an async iterable using [`for await...of`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for-await...of) loops) then developers can instantly draw parallels to one of the first things they learnt in programming. This is simply not the case if your API returns a Node.js `ReadableStream` for example.
+There's tension between exposing streaming APIs vs exposing an API that is easy to use and understand for _all_ developers. With async iterables, you can boil down the understanding of reading from a stream to a `for` loop (you read an async iterable using [`for await...of`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for-await...of) loops), helping developers instantly draw parallels to one of the first things they learnt in programming and making streaming APIs easier to use. This is simply not the case if your API returns a Node.js `ReadableStream` for example.
 
 ## 3. Better debugging
 
