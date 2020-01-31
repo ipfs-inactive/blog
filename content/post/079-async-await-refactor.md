@@ -100,11 +100,11 @@ Another great reason to make this switch is that **Node.js streams are async ite
 
 In rewriting the code base we built a few tools to help us work with async iterables and share code. They mostly begin with the `it-` prefix (for "iterable") which follows other existing module themes like the `p-` ("promises") collection of modules. They're being documented here: https://github.com/alanshaw/it-awesome
 
-What's funny about these tools is that there's a iterator helpers proposal (https://github.com/tc39/proposal-iterator-helpers) at stage 2 of the TC39 process, which means that:
+What's exciting about these tools is that there's a iterator helpers proposal (https://github.com/tc39/proposal-iterator-helpers) at stage 2 of the TC39 process, which means that:
 
 > The committee expects the feature to be developed and eventually included in the standard
 
-It's funny because if the proposal makes it into the standard a bunch of them will become obsolete, so instead of, for example:
+It's exciting because if the proposal makes it into the standard a bunch of them will become obsolete, so instead of, for example:
 
 ```js
 const all = require('it-all')
