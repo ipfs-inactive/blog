@@ -60,7 +60,7 @@ With `async`/`await` you use only `try`/`catch`, and it works for all errors: sy
 
 The other super power that `try`/`catch` has is in combination with [`for await...of`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for-await...of) loops to stream data. I find it amazing that you can just `catch` an error in a stream and continue program execution. Let me explain why:
 
-If you're familiar with Node.js streams you'll know that you have to add an event listener for the `error` event and then somehow deal with the error, and then continue program execution. You also need to listen for the `data` event _or_ "pipe" the stream somewhere and listen for an event that signifies that the stream has completed. Writable streams have `close` and `finish` events and you have to figure out the correct one to use, while worrying about whether the `close` listener gets called or not when an `error` occurs. Also, readable streams emit an `end` event, so, don't get confused between `end`, `close` and `finish`...or do, because y'all are humans.
+If you're familiar with Node.js streams you'll know that you have to add an event listener for the `error` event and then somehow deal with the error, and then continue program execution. You also need to listen for the `data` event _or_ "pipe" the stream somewhere and listen for an event that signifies that the stream has completed. Writable streams have `close` and `finish` events and you have to figure out the correct one to use, while worrying about whether the `close` listener gets called or not when an `error` occurs. Also, readable streams emit an `end` event, so, don't get confused between `end`, `close` and `finish`...or do, because we're all humans.
 
 Even if you do manage to figure this all out you now have two (or sometimes more) possible continuation points for your program that you have to juggle, which is not always easy.
 
@@ -76,7 +76,7 @@ Readability is also improved by the reduction in overall code to look at. By thi
 
 ## 5. Performance improvements
 
-The reduction in boilerplate in combination with the reduced API surface area (which meant we could remove many modules relating to different stream implementations) means **js-ipfs will be faster to `npm install`, take up less disk space and be smaller when bundled with your dweb applications**. A smaller bundle is great for saving bandwidth, but also faster to download and more friendly in low powered or resource constrained environments.
+The reduction in boilerplate in combination with the reduced API surface area (which meant we could remove many modules relating to different stream implementations) means **js-ipfs will be faster to `npm install`, take up less disk space and be smaller when bundled with your dweb applications**. A smaller bundle is great for saving bandwidth, but also faster to download and friendlier in low powered or resource constrained environments.
 
 Any kind of streaming that was done previously was passing chunks through various conversion libraries and we were taking a performance hit for every chunk. This has been eradicated from js-ipfs and now we only do conversions where absolutely necessary when interfacing with TCP or WebSocket libraries for example.
 
