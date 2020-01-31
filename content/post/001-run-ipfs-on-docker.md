@@ -9,7 +9,7 @@ In recent years, Docker and a few other projects have redefined how we run serve
 
 The IPFS Project has many things planned for the world of containers. The most interesting is using IPFS to distribute containers hyper efficiently across data-centers and the internet. We will be discussing many of these things in upcoming posts, but first things first. This post is a quick guide for running an IPFS node directly within Docker.
 
-The IPFS team has provided an [IPFS Docker image](https://registry.hub.docker.com/u/jbenet/go-ipfs/), which is syncronized with the latest commits to [go-ipfs](https://github.com/ipfs/go-ipfs). It only takes a few commands to try it out!
+The IPFS team has provided an [IPFS Docker image](https://registry.hub.docker.com/u/ipfs/go-ipfs/), which is syncronized with the latest commits to [go-ipfs](https://github.com/ipfs/go-ipfs). It only takes a few commands to try it out!
 
 ```sh
 > mkdir /tmp/ipfs-docker-staging
@@ -17,7 +17,7 @@ The IPFS team has provided an [IPFS Docker image](https://registry.hub.docker.co
 > docker run -d --name ipfs-node \
   -v /tmp/ipfs-docker-staging:/export -v /tmp/ipfs-docker-data:/data/ipfs \
   -p 8080:8080 -p 4001:4001 -p 127.0.0.1:5001:5001 \
-  jbenet/go-ipfs:latest
+  ipfs/go-ipfs:latest
 faa8f714398c7a1a5a29adc2aed01857b41444ed53ec11863a3136ad37c8064c
 ```
 
