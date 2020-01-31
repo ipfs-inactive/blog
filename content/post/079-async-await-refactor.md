@@ -41,7 +41,7 @@ There's tension between exposing streaming APIs vs exposing an API that is easy 
 
 One of the best things about debugging in an `async`/`await` code base is that **stack traces are much better**. With callbacks you typically lose the stack trace across an async boundary because with callbacks, the call stack starts at the callback function.
 
-This can make debugging super difficult because you can't get a good idea of the execution path of the program prior to the async boundary. The situation is improved by using promises but by using `async`/`await` it's _even better_:
+This can make debugging super difficult because you can't get a good idea of the execution path of the program prior to the async boundary. The situation is improved by using promises, but using `async`/`await` is _even better_:
 
 > `await X()` suspends execution of the current function, while `promise.then(X)` continues execution of the current function after adding the X call to the callback chain. In the context of stack traces, this difference is pretty significant.
 > https://mathiasbynens.be/notes/async-stack-traces
