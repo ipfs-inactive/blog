@@ -1,6 +1,6 @@
 ---
-date: 2020-01-30
-url: 2020-01-30-async-await-refactor
+date: 2020-01-31
+url: 2020-01-31-async-await-refactor
 title: The Async Await Refactor
 author: Alan Shaw
 ---
