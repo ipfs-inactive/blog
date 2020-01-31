@@ -31,17 +31,17 @@ A more concrete benefit of a smaller API surface area is that there is simply le
 
 ## 2. Streaming with async iterables
 
-Our streaming APIs will use [async iterables](https://javascript.info/async-iterators-generators). Thats significant for a couple of reasons. Firstly, since we've been talking about bundle sizes it's worth mentioning that using a streaming implementation that is actually a language feature means that we don't need to _bundle_ any libraries/modules to provide a streaming implementation! Obviously that also means that we don't need to `npm install` them either.
+Our streaming APIs will use [async iterables](https://javascript.info/async-iterators-generators). That's significant for a couple of reasons. Firstly, since we've been talking about bundle sizes it's worth mentioning that using a streaming implementation that is actually a language feature means that we don't need to _bundle_ any libraries/modules to provide a streaming implementation! Obviously, that also means that we don't need to `npm install` them either.
 
-Secondly, **async iterables make streaming APIs approachable**. There's a BIG hurdle involved with streaming APIs that is lowered significantly by using async iterables instead of Node.js or pull streams. The hurdle is the understanding of the concepts, naming and usage that surrounds them that developers new to JS or new to streaming have to overcome.
+Secondly, **async iterables make streaming APIs approachable**. There's a BIG hurdle involved with streaming APIs that is lowered significantly by using async iterables instead of Node.js or pull streams. That hurdle is understanding the naming, usage, and concepts, which developers new to JS or new to streaming have to overcome.
 
-There's a big conflict of interests in exposing streaming APIs and exposing an API that is easy to use and understand for _all_ developers. When you boil down the understanding of reading from a stream to a `for` loop (you read an async iterable using [`for await...of`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for-await...of) loops) then developers can instantly draw parallels to one of the first things they learnt in programming. This is simply not the case if your API returns a Node.js `ReadableStream` for example.
+There's tension between exposing streaming APIs vs exposing an API that is easy to use and understand for _all_ developers. With async iterables, you can boil down the understanding of reading from a stream to a `for` loop (you read an async iterable using [`for await...of`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for-await...of) loops), helping developers instantly draw parallels to one of the first things they learnt in programming and making streaming APIs easier to use. This is simply not the case if your API returns a Node.js `ReadableStream` for example.
 
 ## 3. Better debugging
 
 One of the best things about debugging in an `async`/`await` code base is that **stack traces are much better**. With callbacks you typically lose the stack trace across an async boundary because with callbacks, the call stack starts at the callback function.
 
-This can make debugging super difficult because you can't get a good idea of the execution path of the program prior to the async boundary. The situation is improved by using promises but by using `async`/`await` it's _even better_:
+This can make debugging super difficult because you can't get a good idea of the execution path of the program prior to the async boundary. The situation is improved by using promises, but using `async`/`await` is _even better_:
 
 > `await X()` suspends execution of the current function, while `promise.then(X)` continues execution of the current function after adding the X call to the callback chain. In the context of stack traces, this difference is pretty significant.
 > https://mathiasbynens.be/notes/async-stack-traces
