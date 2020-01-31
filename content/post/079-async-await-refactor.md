@@ -27,7 +27,7 @@ When the size of the result is small and/or the information is readily available
 
 **Removing streaming alternatives reduces our API surface area**. That's good because it means there's simply fewer API methods for developers to understand and choose from. This just makes things a little easier, and by guiding developers towards streaming by default we're hopefully helping them to avoid OOM errors when their applications become popular or are used on resource constrained devices like mobile or when their users start sharing huge files.
 
-A more concrete benefit of a smaller API surface area is that there is simply less code to ship. There's a lot less boilerplate and many fewer streaming modules and conversion utilities that need to be `npm install`-ed or that make their way into the final bundle. That means a smaller `node_modules` directory and smaller browser builds for applications. There's also no performance hits to be had converting between two different streaming implementations.
+A more concrete benefit of a smaller API surface area is that there is simply less code to ship. There's a lot less boilerplate and fewer streaming modules and conversion utilities that need to be `npm install`-ed or that make their way into the final bundle. That means a smaller `node_modules` directory and smaller browser builds for applications. There's also no performance hits to be had converting between two different streaming implementations.
 
 ## 2. Streaming with async iterables
 
