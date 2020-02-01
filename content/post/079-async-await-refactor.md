@@ -46,25 +46,143 @@ This can make debugging super difficult because you can't get a good idea of the
 > `await X()` suspends execution of the current function, while `promise.then(X)` continues execution of the current function after adding the X call to the callback chain. In the context of stack traces, this difference is pretty significant.
 > https://mathiasbynens.be/notes/async-stack-traces
 
-The upshot is that stack traces are more informative and span async boundaries giving developers more power to debug code.
+The upshot is that stack traces are more informative and span async boundaries, giving developers more power to debug code. Take this example using callbacks:
+
+```js
+function one (callback) {
+  setTimeout(() => two(callback))
+}
+
+function two (callback) {
+  setTimeout(() => three(callback))
+}
+
+function three (callback) {
+  try {
+    throw new Error('boom')
+  } catch (err) {
+    callback(err)
+  }
+}
+
+one(err => console.error(err))
+```
+
+It yields the following stack:
+
+```
+Error: boom
+    at three (cb-stacks.js:11:11)
+    at Timeout._onTimeout (cb-stacks.js:6:20)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+```
+
+What happened before the call to `three`? We can't see past the async boundary. An approximately equivalent example using `async`/`await`:
+
+```js
+async function one () {
+  await two()
+}
+
+async function two () {
+  await three()
+}
+
+async function three () {
+  throw new Error('boom')
+}
+
+one().catch(err => console.error(err))
+```
+
+Yields the following stack:
+
+```
+Error: boom
+    at three (async-fn-stack.js:10:9)
+    at two (async-fn-stack.js:6:9)
+    at one (async-fn-stack.js:2:9)
+    at Object.<anonymous> (async-fn-stack.js:13:1)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1103:10)
+    at Module.load (internal/modules/cjs/loader.js:914:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:822:14)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:1143:12)
+    at internal/main/run_main_module.js:16:11
+```
+
+Aha! We can now trace this all the way back to the call to `one`!
 
 The second best thing about debugging in an `async`/`await` code base is that synchronous and asynchronous errors are handled by the same construct: `try`/`catch`.
 
-Asynchronous errors when using callbacks must be handled by checking for an error parameter passed to the callback function using an `if` statement. You must also either _trust_ that a call to a function that takes a callback does not throw synchronously (this is what most people do) or put a `try`/`catch` around it as well.
+Asynchronous errors when using callbacks must be handled by checking for an error parameter passed to the callback function using an `if` statement:
 
-Likewise, if you're writing a function that takes a callback you've got to be _really_ careful that it doesn't throw, or make sure you catch any potential throws and pass them to the callback.
+```js
+saveData(someData, (err, result) => {
+  if (err) {
+    console.error(err) // handle the error
+    return // remember to return or execution continues!
+  }
+  // continue the program, no error happened yet :)
+})
+```
 
-With promises the situation is significantly better, but you can still be in danger of an unhandled rejection if code in a `.catch()` throws.
+Synchronous errors can be thrown on purpose, using `throw new Error('...')` or because of bugs in the code e.g. `Cannot read property 'z' of undefined`, `x is not a function` etc. etc. and _must_ be handled with a `try`/`catch` block.
 
-With `async`/`await` you use only `try`/`catch`, and it works for all errors: synchronous and asynchronous. It reduces boilerplate and guards against uncaught exceptions and unhandled rejections making it significanly less likely your code will take down the process or unrecoverably crash your application.
+Typically, developers _trust_ that a call to a function that does asynchronous work will not throw an error _synchronously_ so they don't put `try`/`catch` around calls to them. They also _trust_ that they won't throw an error _after_ they've done some async work because they have no means to catch it - even if there were a `try`/`catch`, program execution has moved outside of the scope of it. Hence the need for any errors to be passed to a callback. So, when using callbacks, any thrown errors, synchronous or asynchronous can cause uncaught exceptions and force a mixing of two different error handling strategies e.g.
 
-The other super power that `try`/`catch` has is that you can wrap it around a [`for await...of`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for-await...of) loop to catch errors in the stream. Having had to deal with error handling in Node.js streams for many years I find it _incredible_ that you can just `catch` an error in a stream and continue program execution. Let me explain why:
+```js
+function saveData (someData, callback) {
+  let serialized
+
+  // Handle synchronous error with try/catch
+  try {
+    serialized = JSON.stringify(someData.map(d => d.value))
+  } catch (err) {
+    // (This should really be called on a future tick or we risk unleashing zalgo
+    // https://blog.izs.me/2013/08/designing-apis-for-asynchrony)
+    return callback(err)
+  }
+
+  fs.writeFile('/path/to/data.json', serialized, err => {
+    // Handle asynchronous error from fs.writeFile with if statement
+    if (err) {
+      return callback(err)
+    }
+
+    callback()
+  })
+}
+```
+
+With promises, the situation is significantly better, because thrown errors are caught for you, but you can still be in danger of causing an unhandled rejection if code in a `.catch()` throws an error.
+
+With `async`/`await` you use only `try`/`catch`, and it works for all errors: synchronous and asynchronous. It reduces boilerplate and guards against uncaught exceptions and unhandled rejections making it significanly less likely your code will take down the process or unrecoverably crash your application:
+
+```js
+async function saveData (someData) {
+  const serialized = JSON.stringify(someData.map(d => d.value))
+  await fs.promises.writeFile('/path/to/data.json', serialized)
+}
+
+try {
+  await saveData(someData)
+} catch (err) {
+  // Could be a sync error caused by serialization, or an async error from writing the file
+  console.error(err)
+}
+```
+
+The other super power that `try`/`catch` has is that you can wrap it around a [`for await...of`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for-await...of) loop to catch errors in a stream. Having had to deal with error handling in Node.js streams for many years I find it _incredible_ that you can just `catch` an error in a stream and continue program execution. Let me explain why:
 
 If you're familiar with Node.js streams you'll know that you have to add an event listener for the `error` event and then somehow deal with the error, and then continue program execution. You also need to listen for the `data` event _or_ "pipe" the stream somewhere and listen for an event that signifies that the stream has completed. Writable streams have `close` and `finish` events and you have to figure out the correct one to use, while worrying about whether the `close` listener gets called or not when an `error` occurs. Also, readable streams emit an `end` event, so, don't get confused between `end`, `close` and `finish`...or do, because we're all humans.
 
 Even if you do manage to figure this all out you now have two (or sometimes more) possible continuation points for your program that you have to juggle, which is not always easy.
 
-At this point `catch`ing an error and being able to continue program execution from the same point after processing a stream asynchronously sounds super appealing! Just incase you didn't already notice this is another reason async iterables make streams aproachable!
+Note: it would be remiss of me not to mention that there are modules out there that help with this, [`pump`](https://www.npmjs.com/package/pump) and [`pipeline`](https://nodejs.org/dist/latest/docs/api/stream.html#stream_stream_pipeline_streams_callback) are two popular examples. These utils essentially hide the complexity of dealing with streams, which is convenient, but doesn't always mean you can simply ignore that it's there.
+
+At this point, `catch`ing an error and being able to continue program execution from the same point after processing a stream asynchronously sounds super appealing! Just incase you didn't already notice this is another reason async iterables make streams aproachable!
 
 ## 4. Improved readability
 
@@ -100,11 +218,11 @@ Another great reason to make this switch is that **Node.js streams are async ite
 
 In rewriting the code base we built a few tools to help us work with async iterables and share code. They mostly begin with the `it-` prefix (for "iterable") which follows other existing module themes like the `p-` ("promises") collection of modules. They're being documented here: https://github.com/alanshaw/it-awesome
 
-What's exciting about these tools is that there's a iterator helpers proposal (https://github.com/tc39/proposal-iterator-helpers) at stage 2 of the TC39 process, which means that:
+One thing you should know about these tools is that there's an iterator helpers proposal (https://github.com/tc39/proposal-iterator-helpers) at stage 2 of the TC39 process, so...
 
 > The committee expects the feature to be developed and eventually included in the standard
 
-It's exciting because if the proposal makes it into the standard a bunch of them will become obsolete, so instead of, for example:
+It means that when/if the proposal makes it into the standard a bunch of them will become obsolete, so instead of, for example:
 
 ```js
 const all = require('it-all')
@@ -117,6 +235,6 @@ You will be able to, more simply:
 const filesAdded = await ipfs.add([/* ... */]).toArray()
 ```
 
-One last thing, if you're currently using pull streams or Node.js streams extensively in your application and wondering/worrying how these changes will affect your code then see the appropriate [from pull streams](https://gist.github.com/alanshaw/04b2ddc35a6fff25c040c011ac6acf26#from-pull-streams) and [from Node.js streams](https://gist.github.com/alanshaw/04b2ddc35a6fff25c040c011ac6acf26#from-nodejs-streams) sections in the migration guide.
+Awesome, huh!!
 
 ...and that's about...half of what needs to be said on the `async`/`await` refactor 😉. In the next blog post we'll cover some of the learnings of completing this big code refactor with a distributed team. In the mean time, watch out for the upcoming js-ipfs 0.41 RC and the release post when it finally lands.
