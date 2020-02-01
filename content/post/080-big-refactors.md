@@ -5,7 +5,7 @@ title: Big Refactors
 author: Alan Shaw
 ---
 
-> If you're considering a refactor that'll touch **~70** interdependent repos you've come to the right place for some perspective! This is the sister post to [The Async Await Refactor](/2020-01-31-async-await-refactor/) and covers some of the learnings of completing a big code refactor with a distributed team.
+> If you're considering a refactor that'll touch **~70** interdependent repos you've come to the right place for some perspective! This is the sister post to [The Async Await Refactor](/2020-02-01-async-await-refactor/) and covers some of the learnings of completing a big code refactor with a distributed team.
 
 If you think you'd like to take on a challenge like this, do the math. If each repo takes a day to refactor and if you work on it 5 days a week then you've automatically used 14 of your 52 weeks in a year. That's like, 4 months, and that's the absolute best case scenario.
 
@@ -21,6 +21,10 @@ Prioritise refactors by dependents. It's obvious, but maybe worth highlighting -
 
 It's not always possible to use a refactored repo in your dependencies. Sometimes this is due to a circular dependency but sometimes the refactor in another repo is taking longer than expected or is blocked on something else. **Unblock yourself with facades**. You can make the old look like the new but consider it carefully. Doing this takes time and will need to be revisited at a later date to be removed once the dependency refactor is released. In our refactor we made use of `promisify` and `callbackify` modules and also created facades to make the new look like the old so that it could get into production sooner.
 
+Leverage npm tags. The "latest" tag is what everyone gets when they `npm install yourmodule`, but you can publish betas, experimental builds, or release candidates (for example) under whatever tag name you choose. Consumers will only get that version if they explicitly install it by the tag name or the version number associated with the tag.
+
+This helps when you want to publish a refactored module but don't want it to actually be used yet by your users because it's not compatible with the rest of the modules in your ecosystem. We had a few issues with users trying to use the new with the old. Using npm tags allowed us to do these releases earlier, roll them up into their dependents and avoid issues with users pulling down releases early. The beauty with this is that when it's time to go live, it's a simple switch of tags on npm. No new code needs to get deployed, which also means you're guaranteed to be using the exact code you tested with.
+
 **Keep track of what's been done, who is owning what, and where the PR is**. For you own sanity, keep on top of it and celebrate your progress with the team every step of the way. It's a long road and you will all need all the encouragement you can get. Update the team regularly with percentages of how done you are so you can all stay informed of progress and allow yourself to make better estimates for completion.
 
-It's taken us 1 year and 2 months so far, but we're nearly there. Read all about our big refactor: [The Async Await Refactor](/2020-01-28-async-await-refactor/).
+It's taken us 1 year and 2 months so far, but we're nearly there. Read all about our big refactor: [The Async Await Refactor](/2020-02-01-async-await-refactor/).
