@@ -5,7 +5,7 @@ title: Big Refactors
 author: Alan Shaw
 ---
 
-> If you're considering a refactor that'll touch **~70** interdependent repos you've come to the right place for some perspective! This is the sister post to [The Async Await Refactor](/2020-02-01-async-await-refactor/) and covers some of the learnings of completing a big code refactor with a distributed team.
+> If you're considering a refactor that'll touch **~70** interdependent repos, you've come to the right place for some perspective! This is the sister post to [The Async Await Refactor](/2020-02-01-async-await-refactor/) and covers some of the learnings of completing a big code refactor with a distributed team.
 
 If you think you'd like to take on a challenge like this, do the math. If each repo takes a day to refactor and if you work on it 5 days a week then you've automatically used 14 of your 52 weeks in a year. That's like, 4 months, and that's the absolute best case scenario.
 
@@ -13,7 +13,7 @@ In reality, even if you get approval to do it you're unlikely to be able to work
 
 Refactors to each dependent repo **won't take just one day**. A tiny percentage of them will take less than a day but the vast majority will take multiple days to complete, if not weeks.
 
-You'll be tempted to make those API changes and performance refactors you've always wanted to make. **Beware of scope creep**. If you also decide to take on these tasks, be aware that you're adding to the complexity of integrating a massive breaking change and also to the time the refactor is going to take. You'll probably significantly underestimate the amount of extra time your additional changes will take to write, be tested, be reviewed and re-integrated into the project. You are also likely to introduce new bugs, so **stay focused**. You cannot make everything perfect now. Pick your battles, open an issue, and move on.
+You'll be tempted to make those API changes and performance refactors you've always wanted to make. **Beware of scope creep**. If you also decide to take on these tasks, be aware that you're adding to the complexity of integrating a massive breaking change and also to the time the refactor is going to take. You'll probably significantly underestimate the amount of extra time your additional changes will take to write, be tested, be reviewed and re-integrated into the project. You are also likely to introduce new bugs, so **stay focused**. You cannot make everything perfect now. Pick your battles, open issues, and move on.
 
 Some repos will just take days or weeks to actually convert, and that's not even including converting the tests, getting your work reviewed, making changes from review feedback or rebasing your work because master got this critical security fix in the interim.
 
@@ -25,6 +25,6 @@ Leverage npm tags. The "latest" tag is what everyone gets when they `npm install
 
 This helps when you want to publish a refactored module but don't want it to actually be used yet by your users because it's not compatible with the rest of the modules in your ecosystem. We had a few issues with users trying to use the new with the old. Using npm tags allowed us to do these releases earlier, roll them up into their dependents and avoid issues with users pulling down releases early. The beauty with this is that when it's time to go live, it's a simple switch of tags on npm. No new code needs to get deployed, which also means you're guaranteed to be using the exact code you tested with.
 
-**Keep track of what's been done, who is owning what, and where the PR is**. For you own sanity, keep on top of it and celebrate your progress with the team every step of the way. It's a long road and you will all need all the encouragement you can get. Update the team regularly with percentages of how done you are so you can all stay informed of progress and allow yourself to make better estimates for completion.
+**Keep track of what's been done, who is owning what, and where the PR is**. For you own sanity, keep on top of it and celebrate your progress with the team every step of the way. It's a long road and you and your team will need all the encouragement you can get. Update the team and your community regularly with percentages of how done you are so you can all stay informed of progress and allow yourself to make better estimates for completion.
 
-It's taken us 1 year and 2 months so far, but we're nearly there. Read all about our big refactor: [The Async Await Refactor](/2020-02-01-async-await-refactor/).
+It's taken us 1 year and 3 months so far, but we're nearly there. Read all about our big refactor: [The Async Await Refactor](/2020-02-01-async-await-refactor/).
