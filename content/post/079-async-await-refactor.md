@@ -1,6 +1,6 @@
 ---
-date: 2020-01-31
-url: 2020-01-31-async-await-refactor
+date: 2020-02-01
+url: 2020-02-01-async-await-refactor
 title: The Async Await Refactor
 author: Alan Shaw
 ---
@@ -11,7 +11,7 @@ We're on the cusp of completing a refactor in the js-ipfs, js-libp2p and js-ipld
 
 Motivations? Yes, we have them. Many of them in fact. Too many perhaps, because it tipped the scales in favour of a 60+ repo refactor! Something that no developers should take on lightly.
 
-The refactor is much more than just a switch to promises, it's also primarily a refocus to offer a smaller, streaming-first core API to JS IPFS, giving our team and the community a code base that's much easier to debug, understand and maintain, as well as a few other reasons.
+The refactor is much more than just a switch to promises, it's also primarily a refocus to offer a smaller, streaming-first core API to js-ipfs, giving our team and the community a code base that's much easier to debug, understand and maintain, as well as a few other reasons.
 
 ⚠️ It's important to note that the changes we're making don't actually alter the HTTP API or CLI in any way, these interfaces are untouched and remain compatible with the HTTP and CLI interfaces that go-ipfs exposes. The changes we're referring to only change the [core API](https://github.com/ipfs/interface-js-ipfs-core/tree/master/SPEC), which is the interface you'd use to interact with IPFS programmatically in JavaScript.
 
@@ -202,15 +202,15 @@ Another important performance improvement of switching to streaming APIs by defa
 
 Outside of the `async`/`await` world, we've taken this opportunity to make some other changes we always wanted to get done to improve preformance, here's a few interesting ones:
 
-1. Removed crypto libraries from `js-ipfs-http-client`. These were being brought in by the [`PeerId`](https://www.npmjs.com/package/peer-id) class and were basically unused. Instead of `PeerId` instances we now return strings, which, for the HTTP API does not result in any loss of information and it's made a huge reduction to the bundle size of the HTTP client.
+1. Removed crypto libraries from js-ipfs-http-client. These were being brought in by the [`PeerId`](https://www.npmjs.com/package/peer-id) class and were basically unused. Instead of `PeerId` instances we now return strings, which, for the HTTP API does not result in any loss of information and it's made a huge reduction to the bundle size of the HTTP client.
 1. Use [`BufferList`](https://www.npmjs.com/package/bl) throughout libp2p. This helps reduce unnecessary (and slow) buffer copies. Instead of using `Buffer.concat`, we just pass around `BufferList` instances and concat them together when absolutely necessary.
 1. Return [`CID`](https://www.npmjs.com/package/cids) instances from core. This simply reduces the amount of conversions between string and buffer forms of CIDs. If you never need to see a CID as a string, you no longer have to do the work of encoding it. Previously this wasn't the case and all CIDs would be converted to strings and core would make assumptions about what multibase the CID should be encoded with.
 
-Be sure to read the release notes when `js-ipfs` 0.41 is released because we will pack it with as many perf stats as we can get our hands on.
+Be sure to read the release notes when js-ipfs 0.41 is released because we will pack it with as many perf stats as we can get our hands on.
 
 ## 6. It's the right time to switch
 
-Using `async`/`await` in JavaScript is gaining a _lot_ of traction in the ecosystem and is rapidly becoming the de facto way of writing idiomatic JS. We want `js-ipfs` to **move with the times and continue to be attractive to contributors** by using modern JS features, techniques and practices. The big idea with these changes is for the code to be easier to contribute to, easier to understand, easier to maintain, and be faster and smaller than ever.
+Using `async`/`await` in JavaScript is gaining a _lot_ of traction in the ecosystem and is rapidly becoming the de facto way of writing idiomatic JS. We want js-ipfs to **move with the times and continue to be attractive to contributors** by using modern JS features, techniques and practices. The big idea with these changes is for the code to be easier to contribute to, easier to understand, easier to maintain, and be faster and smaller than ever.
 
 The `async`/`await` syntax, async iterables and `for await...of` loops are now supported by the overwhelming majority of browsers as well as Node.js since v10. It means that we can continue to _not_ transpile our code, keeping debugging nice and easy.
 
