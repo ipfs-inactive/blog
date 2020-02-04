@@ -9,11 +9,11 @@ _"The mission of IPFS is to create a resilient, upgradeable, open network to pre
 
 It’s a new year, and with it time to update the [IPFS Project Roadmap](https://github.com/ipfs/roadmap) with our focus for 2020. On the IPFS team, we use regular planning cycles to reflect on our progress, zoom out to assess the bigger picture, and realign on the most important work to do next. These cycles help us ensure we stay on track to achieve our mission, and maximize the value and utility we create in the world. 
 
-> Looking for the TL;DR? Hop right over to the [IPFS Roadmap Repo](https://github.com/ipfs/roadmap) to see our 2020 priority and Epics.
+> Looking for the TL;DR? Hop right over to the [2020 section of our IPFS Roadmap](https://github.com/ipfs/roadmap#2020-priority) to see our focus and epics.
 
 ## Looking back at our 2019 Roadmap
 
-Last year, we did a large 2019 Roadmapping effort to write down our mission, define some of the many long-term goals for the IPFS Project, and prioritize where to focus our energy first. We had a lot of “planning” debt, so going from 0 to 1 on a project roadmap was a large endeavor. Our process involved each working group generating a roadmap around a shared goal, and then merging important work streams into “epics” for the whole project that highlighted our major objectives. You can see how we did against these objectives in our [2019 Project Roadmap](https://github.com/ipfs/roadmap), or dive more into how we chose those goals in our [2019 Roadmap blog post](https://blog.ipfs.io/78-ipfs-2019-roadmap).
+Last year, we did a large 2019 Roadmapping effort to write down our mission, define some of the many long-term goals for the IPFS Project, and prioritize where to focus our energy first. We had a lot of “planning” debt, so going from 0 to 1 on a project roadmap was a large endeavor. Our process involved each working group generating a roadmap around a shared goal, and then merging important work streams into “epics” for the whole project that highlighted our major objectives. You can see how we did against these objectives in our [2019 Project Roadmap](https://github.com/ipfs/roadmap/blob/master/2019-IPFS-Project-Roadmap.md), or dive more into how we chose those goals in our [2019 Roadmap blog post](https://blog.ipfs.io/78-ipfs-2019-roadmap).
 
 ## Our Focus on Package Managers
 
@@ -27,7 +27,7 @@ We also formed collaborations with IPFS users to partner on improving IPFS for p
 
 IPFS Cluster also released [“collaborative clusters”](https://blog.ipfs.io/2020-01-09-collaborative-clusters/), a new feature to enable package manager maintainers and mirrors to add and replicate repositories across a community of IPFS nodes. With collaborative clusters, any maintainer can push new updates to the pinset of data to mirror, which is then sharded and sync’d across all mirroring nodes. We’ve already seen package managers like Pac-Man added to collaborative clusters along with many “data package managers” like Wikipedia and Project Gutenberg - [follow these instructions to add your own!](https://collab.ipfscluster.io/)
 
-## How we did against our goal
+## How We Did Against Our Goal
 
 We made huge strides this year on the performance at scale needed by many package manager communities, but it’s clear there’s still lots of work left to be done to achieve widespread adoption and meet the needs of more types of package managers. While focusing on a specific use case did help us identify and drive important fixes, it didn’t give us feedback across the entire IPFS ecosystem as to what pain points were top priority blockers to growth or value-add. We also found that a number of paths to increasing IPFS usage in package managers were actually divergent from the core goal we wanted to achieve: making IPFS itself better. This tension required constant vigilance to ensure features and improvements would be felt by many downstream use cases - not just specialized package manager tooling. 
 
@@ -56,7 +56,7 @@ To achieve this goal, we’ve formed a Content Routing team (and spun down our P
 
 We considered a number of other potential goals - especially all the great [2020 Theme Proposals](https://github.com/ipfs/roadmap/issues/) - before selecting this priority. However, we decided it was more important to focus core working group dev time on the main blockers and pain points to enable the entire ecosystem to grow and succeed. Many of these proposals are actually very well suited for community ownership via [DevGrants](https://github.com/ipfs/devgrants) and collaborations - and some of them, like ["IPFS in Rust"](https://github.com/ipfs/roadmap/issues/54) and ["Examples and Tutorials"](https://github.com/ipfs/roadmap/issues/50), already have grants or bounties associated with them!
 
-## Increasing contributor velocity while supporting adoption
+## Increasing Contributor Velocity While Supporting Adoption
 
 Part of allowing our core go-ipfs developers to focus deeply on content routing is to systematize and improve our maintainership for the many IPFS users and contributors merging changes into the core repos. As we’ve grown as a project, we’ve not done the necessary work of intentionally distributing and decentralizing this stewardship, in order to make community contribution scalable too. We want to create more pathways for folks throughout the community to step up to help with this, and build better avenues for experimentation with fast feedback loops.
 
@@ -69,7 +69,7 @@ To help coordinate this work, we’re creating a new “Ecosystem” working gro
 
 Curious about the work they’re taking on? Check out the [Project Roadmap Epics](https://github.com/ipfs/roadmap#2020-epics) for more tangible goals, and be on the lookout for more suggestions on how you can help enable other contributors throughout the IPFS ecosystem!
 
-## Everything else
+## Everything Else
 
 Naturally, even with constraining our focus, there are some really important pieces of our work that need continued energy - like the IPFS Gateway. While we’ve seen huge leaps in our performance for the IPFS Community HTTP Gateway we run (now able to support large 10x usage spikes, and reduced 95th percentile response time by 30-50%), this still needs continued enhancement, automation, and scaling work to support expected 2020 growth and new use cases. Our Bifrost team will continue leading the charge here, while ensuring our bootstrappers, preload nodes, and other useful infra is operating smoothly.
 
