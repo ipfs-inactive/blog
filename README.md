@@ -37,6 +37,8 @@ The first time you run it, it will install all the dependencies ✨, Then it wil
 
 Run it and open <http://localhost:1313/> in your browser, and start editing your new blog post.
 
+**Note**: In dev mode you will see all posts, even ones where you set the `date` field to be in the future, say to schedule a post for a specific date. Posts with a `date` value in the future will not appear on the live site until that date arrives. There is a nightly CI job that runs at 00:00 UTC that will cause posts that are merged to master to go live on the `date` you set.
+
 **Build the production site**
 
 ```console
@@ -95,9 +97,11 @@ Submit a Github PR with your changes, and request a review.
 
 ### Publishing
 
-CircleCI builds the static site, Pins it to our IPFS Cluster, and provides a preview link for review on the Gateway. Merges to to `master` does the same steps plus an update the DNSLink for the domain.
+CircleCI builds the static site, Pins it to our IPFS Cluster, and provides a preview link for review on the Gateway. Merges to to `master` do the same steps plus an update the DNSLink for the domain.
 
-It will take a few minutes for the DNS update to propagate.
+In order for CircleCI to build the site after your merge, you *must* be a member of the [website-deployers](https://github.com/orgs/ipfs/teams/website-deployers/members), comms, gui or admin teams on the IPFS github org and you *must* subscribe to the CircleCI builds for the ipfs/blog repository. Create a free CircleCI account, and then [subscribe to the repo here](https://circleci.com/gh/ipfs/workflows/blog/tree/master).
+
+After the CircleCI build completes, it will take a few minutes for the DNS update to propagate and your changes to show up on the website.
 
 ### Translating 🌐✍️🖖
 

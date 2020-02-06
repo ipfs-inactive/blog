@@ -1,6 +1,6 @@
 ---
 date: 2019-09-17
-url: zh-cn/ipfs-weekly-59
+url: zh-cn/weekly-59
 translationKey: ipfs-weekly-59
 tags: weekly
 title: IPFS 周报-59
@@ -13,7 +13,7 @@ author: 默奕
 
 想参与其中？点击下面的一些链接，查看我们在 [GitHub](https://github.com/ipfs) 上的内容，或加入我们的 [IRC](https://riot.im/app/#/room/#ipfs:matrix.org)。
  
-想要更新你的收件箱吗? [订阅我们的每周通讯!](https://tinyletter.com/ipfsnewsletter)
+想要更新你的收件箱吗? [订阅我们的每周通讯!](http://eepurl.com/gL2Pi5)
 
 以下是自上次 IPFS 周刊以来的一些亮点。
 
