@@ -46,3 +46,18 @@ workflows:
           context: ipfs-dns-deploy
           requires:
             - build
+  # deploy the blog evey day at 00:00 UTC, to allow scheduled posting.
+  nightly:
+    jobs:
+      - build
+      - deploy:
+          context: ipfs-dns-deploy
+          requires:
+            - build
+    triggers:
+      - schedule:
+          cron: "0 0 * * *"
+          filters:
+            branches:
+              only:
+                - master
