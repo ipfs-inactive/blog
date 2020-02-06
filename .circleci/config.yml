@@ -46,7 +46,7 @@ workflows:
           context: ipfs-dns-deploy
           requires:
             - build
-  # deploy the blog evey day at 00:00 UTC, to allow scheduled posting.
+  # deploy the blog every day at 00:00 UTC, to allow scheduled posting.
   nightly:
     jobs:
       - build
