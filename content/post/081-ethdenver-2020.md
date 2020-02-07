@@ -9,17 +9,17 @@ author: Jenn Turner
 
 Next week, the IPFS team will be heading to Denver, Colorado for [ETHDenver](https://www.ethdenver.com/), one of the biggest Ethereum and decentralized web developer-focused events in the US. We’re very excited to connect with the dweb community during a week full of presentations, workshops, [#BUIDLathon](https://www.ethdenver.com/buidlweek/)-ing, and community gathering.
 
-On Thursday, February 13, the IPFS Community is hosting the [Distributed Networks Summit](www.eventbrite.com/e/distributed-networks-summit-ipfs-friends-tickets-86959928487?aff=protocollabs), featuring speakers and workshops from IPFS Core, Protocol Labs, Textile, ProtoSchool, 3Box, RTrade Technologies, Pinata, Althea, Quorum Control, Kauri, and more! Register to attend so you can figure out how to implement IPFS in your dapp, with the advice from leading experts.
+On Thursday, February 13, the IPFS Community is hosting the [Distributed Networks Summit](http://www.eventbrite.com/e/distributed-networks-summit-ipfs-friends-tickets-86959928487?aff=protocollabs), featuring speakers and workshops from IPFS Core, Protocol Labs, Textile, ProtoSchool, 3Box, RTrade Technologies, Pinata, Althea, Quorum Control, Kauri, and more! [Register to attend](http://www.eventbrite.com/e/distributed-networks-summit-ipfs-friends-tickets-86959928487?aff=protocollabs) so you can figure out how to implement IPFS in your dapp, with the advice from leading experts. Think of it as our early Valentine's Day gift from us to you. 💝
 
 ## Did we mention we have bounties?
 
-We’ll have bounties for using and improving IPFS, and building it and our community’s IPFS libraries and services into your dapps, and all managed through the ETHDenver DAO. ETHDenver will announce the bounties on February 10th so until then, take a look at [awesome.ipfs.io](https://awesome.ipfs.io/) to get the propellers on your tinfoil hats spinning!
+We’ll have bounties for using and improving IPFS, and building IPFS or our community’s libraries and services into your dapps - all managed through the ETHDenver DAO. ETHDenver will announce the bounties on February 10th, so until then take a look at [awesome.ipfs.io](https://awesome.ipfs.io/) to get your mental propellers spinning!
 
 ## Join us at the following events
 
 * [The Pre-Hack Social](https://www.eventbrite.com/e/the-pre-hack-social-tickets-90279882559) on Wednesday, February 12
 
-* All day long at the [Decentralized Network Summit](www.eventbrite.com/e/distributed-networks-summit-ipfs-friends-tickets-86959928487?aff=protocollabs), Thursday, February 13
+* All day long at the [Decentralized Network Summit](http://www.eventbrite.com/e/distributed-networks-summit-ipfs-friends-tickets-86959928487?aff=protocollabs), Thursday, February 13
 
 * Stop by the IPFS Booth at [ETHDenver](https://www.ethdenver.com/) all day Friday, February 14 through Sunday, February 16.
 
