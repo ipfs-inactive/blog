@@ -45,7 +45,7 @@ minify-img: install
 dev: install css
 	$(PREPEND)( \
 		$(NPMBIN)/nodemon -q -e less --exec "$(NPMBIN)/lessc --clean-css --autoprefix less/main.less static/css/main.css" & \
-		$(NPMBIN)/hugo server -w \
+		$(NPMBIN)/hugo server -w --buildFuture \
 	)
 
 clean:

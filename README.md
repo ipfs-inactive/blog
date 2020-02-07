@@ -37,7 +37,7 @@ The first time you run it, it will install all the dependencies ✨, Then it wil
 
 Run it and open <http://localhost:1313/> in your browser, and start editing your new blog post.
 
-_**Note**: Blog posts are only displayed (at their own URLs and in the index) once the date listed in their YAML front matter has arrived. This means it's not possible to preview a post on localhost that is set to a future publication date._
+**Note**: In dev mode you will see all posts, even ones where you set the `date` field to be in the future, say to schedule a post for a specific date. Posts with a `date` value in the future will not appear on the live site until that date arrives. There is a nightly CI job that runs at 00:00 UTC that will cause posts that are merged to master to go live on the `date` you set.
 
 **Build the production site**
 
@@ -77,7 +77,7 @@ $ cp 66-london-hack-week-report.md 67-incredible-adventures.md
 
 Now edit the metadata at the top of the file
 
-- `date` - the "_published at_" date, shown on the [blog index page](https://blog.ipfs.io) - please update at posting time to reflect current date (if you postdate a post in advance of publication, it will not appear when you preview the site locally; only posts with current and past dates are displayed) - **required**
+- `date` - the "_published at_" date, shown on the [blog index page](https://blog.ipfs.io) please update at posting time to reflect current date - **required** (posts will not be displayed until this date on the live blog, but you will see them locally when using `make dev`)
 - `author` - used to give you credit for your words - **required**
 - `title` - used as the `h1` on the post page, and the name of the post on the index page. **required**
 - `tags` - don't appear to be used right now, but set them anyone, as we'll want to add a "see more posts like this one" feature one day.
