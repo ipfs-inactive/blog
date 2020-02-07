@@ -38,7 +38,7 @@ libp2p.dialProtocol(remotePeerInfo, protocol, (error, stream) => { })
 // Now
 const connection = await libp2p.dial(remotePeerInfo)
 const { stream, protocol } = await connection.newStream(protocols)
-const allStreams = connections.streams
+const allStreams = connection.streams
 ```
 
 ## ⏹ Abortable Dials
