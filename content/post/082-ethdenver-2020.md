@@ -1,6 +1,6 @@
 ---
 date: 2020-02-07
-url: 082-ethdenver-2020
+url: 2020-02-07-ethdenver-2020
 title: Hack with us at ETHDenver
 author: Jenn Turner
 ---
