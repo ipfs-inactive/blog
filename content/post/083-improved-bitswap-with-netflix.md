@@ -45,7 +45,7 @@ With these changes a node can cheaply work out how blocks are distributed amongs
 
 The node can also quickly recognize when all the peers in a session don’t have a block it needs, and go out to the DHT to find out who has the block.
 
-For more details on how Bitswap worked before, and the changes we’ve made, check out [these slides](https://docs.google.com/presentation/d/1mbFFGIIKNvboHyLn-k26egOSWkt9nXjlNbxpmCEQfqQ), this [presentation at the IPFS Weekly Call](https://www.youtube.com/watch?v=G_Q7iTpwYQU), and [this recent performance comparison](https://github.com/ipfs/go-ipfs/issues/6782#issuecomment-579973116).
+For more details on how Bitswap worked before ("master"), and the changes we’ve made ("poc"), check out [these slides](https://docs.google.com/presentation/d/1mbFFGIIKNvboHyLn-k26egOSWkt9nXjlNbxpmCEQfqQ), this [presentation at the IPFS Weekly Call](https://www.youtube.com/watch?v=G_Q7iTpwYQU), and [this recent performance comparison](https://github.com/ipfs/go-ipfs/issues/6782#issuecomment-579973116).
 
 <p align="center">
 <img width="400" alt="5ms-1024MB" src="https://user-images.githubusercontent.com/169124/73398685-ef531480-42b3-11ea-8054-d572abf7eea1.png"><img width="400" alt="5ms-160MB" src="https://user-images.githubusercontent.com/169124/73398686-ef531480-42b3-11ea-9b43-d978dc9c8e5d.png"><img width="400" alt="5ms-40MB" src="https://user-images.githubusercontent.com/169124/73398687-ef531480-42b3-11ea-930f-d63afee8e465.png"><img width="400" alt="5ms-20MB" src="https://user-images.githubusercontent.com/169124/73398688-efebab00-42b3-11ea-93c4-27509ec95315.png">
