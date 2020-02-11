@@ -1,11 +1,11 @@
 ---
-date: 2020-02-07
-url: 2020-02-07-improved-bitswap-with-netflix
+date: 2020-02-11
+url: 2020-02-11-improved-bitswap-with-netflix
 title: New improvements to IPFS Bitswap with help from our friends at Netflix
 author: Dirk McCormick (IPFS) and Edgar Lee (Netflix)
 ---
 
-With more than 158 million subscribers in 190 countries, global streaming video provider [Netflix](http://netflix.com/) is one of the biggest Web 2.0 platforms on the market. And [like other platform services](https://www.theverge.com/2019/12/11/21010856/twitter-jack-dorsey-bluesky-decentralized-social-network-research-moderation), it’s looking for ways to upgrade its system to take advantage of new learnings and tools from distributed peer-to-peer networks. 
+With more than 167 million subscribers in 190 countries, global streaming video provider [Netflix](http://netflix.com/) is one of the biggest Web 2.0 platforms on the market. And [like other platform services](https://www.theverge.com/2019/12/11/21010856/twitter-jack-dorsey-bluesky-decentralized-social-network-research-moderation), it’s looking for ways to upgrade its system to take advantage of new learnings and tools from distributed peer-to-peer networks. 
 
 After [IPFS Camp 2019](https://camp.ipfs.io/), Netflix and IPFS began collaborating on ways to incorporate peer-to-peer services into its developer tooling. Together, we figured out a way to leverage IPFS to speed up cloud builds, designing and testing solutions for faster Continuous Integration (CI) pipelines powered by efficient p2p container image distribution.
 
@@ -53,7 +53,7 @@ For more details on how Bitswap worked before ("master"), and the changes we’v
 
 ## Container distribution at Netflix
 
-Netflix developers deploy about 3 million containers a week on Titus, the [Netflix container management platform](https://medium.com/netflix-techblog/titus-the-netflix-container-management-platform-is-now-open-source-f868c9fb5436). As many of these containers handle critical workloads that power Netflix, they often need to be deployed in many regions around the world, scaling accordingly to the traffic in that geographical location. When developers push a release image to production, the image needs to be replicated to Docker Registries in other regions or deployments will suffer from cross-region data costs and slow transfer speeds.
+Netflix developers regularly deploy millions of containers on Titus, the [Netflix container management platform](https://medium.com/netflix-techblog/titus-the-netflix-container-management-platform-is-now-open-source-f868c9fb5436). As many of these containers handle critical workloads that power Netflix, they often need to be deployed in many regions around the world, scaling accordingly to the traffic in that geographical location. When developers push a release image to production, the image needs to be replicated to Docker Registries in other regions or deployments will suffer from cross-region data costs and slow transfer speeds.
 
 The docker registry is designed to decouple the notion of what an image reference like “alpine” presents, and what data is contained inside the image through content-addressability. This is parallel with IPFS’s data model, where data is always represented by its [multihash](https://github.com/multiformats/multihash). In fact, this is exactly how IPFS can be leveraged as a CDN for container image layers because the container runtime can be modified to retrieve layers identified by its multihash. To learn more about the Netflix use case for IPFS, check out [this interview of Edgar from IPFS Camp](https://www.youtube.com/watch?v=wNfk05D887M)!
 
