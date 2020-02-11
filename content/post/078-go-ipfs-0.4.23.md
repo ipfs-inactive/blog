@@ -40,7 +40,7 @@ Anyway, long story short. We fixed recursive `dnsaddr` resolving so we didn't ha
 
 ### 📻 Retuned Connection Manager
 
-The Connection Manager has been tuned to better prioritise existing connections by not counting new connections in the "grace" period (30s) towards connection limits. New connections are like new friends. You can't hang out with everyone all the time, I mean, it just gets difficult to book a resturant after a while.
+The Connection Manager has been tuned to better prioritise existing connections by not counting new connections in the "grace" period (30s) towards connection limits. New connections are like new friends. You can't hang out with everyone all the time, I mean, it just gets difficult to book a restaurant after a while.
 
 You also wouldn't stop being friends with Jane just because you met Sarah _once_ on the train. You and Jane have history, think of everything you've been through. Remember that time when Jane's dog, Dave, ran away? I know, it's a weird name for a dog, I mean who gives a human name to a dog anyway, but I guess that's one of the reasons you like Jane. Anyway, she lost her dog and you both looked all around town for it, you were about to give up but then you heared faint wimpering as you were walking back to the house. Dave had somehow managed to fall into the old abandoned well!
 
