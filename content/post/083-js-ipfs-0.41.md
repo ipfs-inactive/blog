@@ -16,7 +16,7 @@ author: Alan Shaw
 
 We've completed a [**HUGE** refactor](https://github.com/ipfs/js-ipfs/issues/1670) to js-ipfs internals 🥳, switching to using Promises and `async`/`await` over Callbacks and using async [iterables](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols) instead of [Node.js](https://nodejs.org/dist/latest/docs/api/stream.html) and [Pull Streams](https://pull-stream.github.io/). Ok, tell a lie, it's actually not just js-ipfs internals, it's the whole stack, including libp2p, IPLD and multiformats, you might call it a ground up re-write, but, you know, we don't like to brag.
 
-🚨 Oh, wait, serious note - this release brings **big breaking changes** to the core API so please consult the "API Changes" section below for all the information.
+🚨 Oh, wait, serious note - this release brings **big breaking changes** to the core API so please consult the "[API Changes](#api-changes)" section below for all the information.
 
 It's been a long and emotional voyage but this refactor brings a plethora of incredible immediate and future benefits to consumers, contributors and core developers that make all the work and effort worthwhile. To summarise, we've:
 
