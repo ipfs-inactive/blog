@@ -46,7 +46,7 @@ Check out [“The Path to Peer-to-Peer Matrix”](https://fosdem.org/2020/schedu
 
 ## Quote of the week
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">The gossipsub protocol from <a href="https://twitter.com/libp2p?ref_src=twsrc%5Etfw">@libp2p</a> is too cool: <a href="https://t.co/Eg4GiuTTJB">https://t.co/Eg4GiuTTJB</a> I put together a small node.js demo: <a href="https://t.co/9q5umb798i">https://t.co/9q5umb798i</a> <a href="https://t.co/dYG0hLz3gV">pic.twitter.com/dYG0hLz3gV</a></p>&mdash; Ryan Bell (@iRyanBell) <a href="https://twitter.com/iRyanBell/status/1225968607105937409?ref_src=twsrc%5Etfw">February 8, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">The gossipsub protocol from <a href="https://twitter.com/libp2p?ref_src=twsrc%5Etfw">@libp2p</a> is too cool: <a href="https://t.co/Eg4GiuTTJB">https://t.co/Eg4GiuTTJB</a> I put together a small node.js demo: <a href="https://t.co/9q5umb798i">https://t.co/9q5umb798i</a> <a href="https://t.co/dYG0hLz3gV">pic.twitter.com/dYG0hLz3gV</a></p>&mdash; Ryan Bell (@iRyanBell) <a href="https://twitter.com/iRyanBell/status/1225968607105937409?ref_src=twsrc%5Etfw">February 8, 2020</a></blockquote> 
 
 
 ## Open positions working on IPFS
