@@ -1,7 +1,7 @@
 ---
 date: 2020-02-10
 url: 2020-02-10-our-focus-for-2020
-title: Our Focus for 2020
+title: IPFS Project Focus for 2020
 author: Molly Mackinlay
 ---
 
