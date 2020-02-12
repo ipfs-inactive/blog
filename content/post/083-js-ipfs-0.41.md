@@ -64,7 +64,11 @@ Mode       Mtime                           Hash                                 
 -rw-r--r-- Apr 16, 2018, 12:20:33 PM GMT+1 QmT6WX9McZyx5ZoisRgpsjYKDBWnYpMnBLpfAgjW5kavBA 87779 yesthisisdog.jpg
 ```
 
-The coolest thing is that it's completely backwards compatible. The CID for a given file/directory only changes if you opt in to metadata, otherwise the CIDs remain the same. Hooray!
+Rad right!?
+
+Persisting the file `mode` is also super rad, because it opens up NFS type use cases that weren't possible before. Imagine your `node_modules` directory is backed by IPFS and mounted on your file system - the file `mode` will allow everything in [`node_modules/.bin`](https://docs.npmjs.com/configuring-npm/folders.html#executables) to be executable as you'd expect.
+
+The coolest thing about all of this is that it's completely backwards compatible. The CID for a given file/directory only changes if you opt in to metadata, otherwise the CIDs remain the same. Hooray!
 
 There's a bunch of changes that add metadata capability to the CLI, HTTP and core API both for inputs and outputs. There's also a couple of new MFS commands `touch` and `chmod` which allow you to change the metadata whenever you like! Magic 🧙‍♂️.
 
