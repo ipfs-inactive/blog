@@ -19,7 +19,7 @@ It’s a new year, and with it time to update the [IPFS Project Roadmap](https:/
 * **Millions of users** access the IPFS HTTP Gateway every week 🎉
 * There are **hundreds of dapps, tools, & projects** in the wider IPFS Ecosystem including newcomers like [Anytype](https://anytype.io/), [Microsoft ION](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/toward-scalable-decentralized-identifier-systems/ba-p/560168), [Haven](https://gethaven.app/) by OB1, [Brave](https://brave.com/), [3box](https://3box.io/), [EthDNS](https://medium.com/the-ethereum-name-service/ethdns-9d56298fa38a) and more!! 🙌
 
-![IPFS Ecosystem Diagram](https://user-images.githubusercontent.com/618519/74208137-0fc98a00-4c37-11ea-800b-ebd61485d332.png)
+![IPFS Ecosystem Diagram](https://user-images.githubusercontent.com/618519/74373908-3819cb80-4d92-11ea-816a-1b6f04002b4c.png)
 See our [Ecosystem Update from IPFS Camp](https://www.youtube.com/watch?v=jpQnQbfhuBc&feature=youtu.be) to learn more about 2019 adoption!
 
 This growth caused us to shift some of our attention midyear to support new usage and demand - re-focusing some of our working groups on improving documentation, gateway performance, and testing tools to validate large-scale network upgrades (see our [Operation Task-Force blog post](https://blog.ipfs.io/2019-07-31-operation-task-force/) for details). We still made progress on our Package Managers goal, but less than we hoped given **also** investing heavily in other critical areas to support the ecosystem. 🤞
