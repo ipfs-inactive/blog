@@ -1,6 +1,6 @@
 ---
-date: 2020-02-14
-url: 2020-02-14-js-ipfs-0-41
+date: 2020-02-13
+url: 2020-02-13-js-ipfs-0-41
 title: js-ipfs 0.41.0 released
 author: Alan Shaw
 ---
