@@ -12,6 +12,7 @@ author: Alan Shaw
 ## 🦁 Async Await and Async Iterables
 
 🎶 In the jungle, the mighty jungle the lion sleeps tonight!
+
 🎶 async await, async await, async await, async await...
 
 We've completed a [**HUGE** refactor](https://github.com/ipfs/js-ipfs/issues/1670) to js-ipfs internals 🥳, switching to using Promises and `async`/`await` over Callbacks and using async [iterables](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols) instead of [Node.js Streams](https://nodejs.org/dist/latest/docs/api/stream.html) and [Pull Streams](https://pull-stream.github.io/). Ok, I tell a lie, it's actually not just js-ipfs internals, it's the whole stack, including libp2p, IPLD and multiformats, you might call it a ground up re-write, but, you know, we don't like to brag.
