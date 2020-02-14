@@ -65,7 +65,7 @@ The docker registry is designed to decouple the notion of what an image referenc
 
 Netflix infrastructure is deployed on Amazon Web Services (AWS) across multiple availability zones and regions around the world. In order to emulate that kind of environment, [p2plab](github.com/Netflix/p2plab) was created to measure the throughput of data transfer on the IPFS network in multi-region clusters. Using p2plab, we can reliably determine whether a change in IPFS will improve performance. An operator is able to provision live clusters with cluster definitions and benchmark a data transfer scenario with scenario definitions. Nodes in a p2plab cluster can also hot swap the IPFS binary under test, allowing Protocol Labs and Netflix engineers to quickly test a branch of an IPFS component like bitswap.
 
-Once a benchmark has completed, we can extract metrics from libp2p and bitswap to understand application-level bottlenecks, flamegraphs to understand where CPU time is spent, and distributed tracing spans in a jaeger dashboard to follow the request flow across the cluster.
+Once a benchmark has completed, we can extract metrics from libp2p and bitswap to understand application-level bottlenecks, flamegraphs to understand where CPU time is spent, and distributed tracing spans in a [jaeger dashboard](https://www.jaegertracing.io/) to follow the request flow across the cluster.
 
 An in-memory driver for p2plab is also available. Head over to [the repository](https://github.com/Netflix/p2plab) and try it out today on your local system!
 
