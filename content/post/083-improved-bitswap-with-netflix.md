@@ -23,7 +23,7 @@ To speed this up even more, we added some useful new capabilities to the Bitswap
 
 ## How Bitswap works
 
-IPFS breaks up files into chunks called Blocks, identified by a Content IDentifier ([CID](https://github.com/multiformats/cid)). When nodes running the [Bitswap](https://github.com/ipfs/go-bitswap) protocol want to fetch a file, they send out wants to other peers. A want is a request for the CID of a block. Each node remembers which blocks its peers want, and each time the node receives a block it checks if any of its peers want the block and sends it to them.
+IPFS breaks up files into chunks called Blocks, identified by a Content IDentifier ([CID](https://github.com/multiformats/cid)). When nodes running the [Bitswap](https://github.com/ipfs/go-bitswap) protocol want to fetch a file, they send out "want lists" to other peers. A "want list" is a list of CIDs for blocks a peer wants to receive. Each node remembers which blocks its peers want, and each time the node receives a block it checks if any of its peers want the block and sends it to them.
 
 To find out which peers have the blocks that make up a file, a Bitswap node first sends a want for the root block CID to all the peers it is connected to. If the peers don’t have the block, the node queries the Distributed Hash Table ([DHT](https://docs.ipfs.io/guides/concepts/dht/)) to ask who has the root block. Any peers that respond with the root block are added to a session. From now on Bitswap only sends wants to peers in the session, so as not to flood the network with requests.
 
