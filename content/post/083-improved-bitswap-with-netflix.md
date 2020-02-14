@@ -22,6 +22,7 @@ To speed this up even more, we added some useful new capabilities to the Bitswap
 ![container_image_benchmark](https://user-images.githubusercontent.com/618519/73900782-aa942400-4845-11ea-8643-83c504750b35.png)
 
 ## How Bitswap works
+
 IPFS breaks up files into chunks called Blocks, identified by a Content IDentifier ([CID](https://github.com/multiformats/cid)). When nodes running the [Bitswap](https://github.com/ipfs/go-bitswap) protocol want to fetch a file, they send out wants to other peers. A want is a request for the CID of a block. Each node remembers which blocks its peers want, and each time the node receives a block it checks if any of its peers want the block and sends it to them.
 
 To find out which peers have the blocks that make up a file, a Bitswap node first sends a want for the root block CID to all the peers it is connected to. If the peers don’t have the block, the node queries the Distributed Hash Table ([DHT](https://docs.ipfs.io/guides/concepts/dht/)) to ask who has the root block. Any peers that respond with the root block are added to a session. From now on Bitswap only sends wants to peers in the session, so as not to flood the network with requests.
@@ -29,6 +30,7 @@ To find out which peers have the blocks that make up a file, a Bitswap node firs
 The node sends out a want for each CID to several peers in the session in parallel, because not all peers will have all blocks. If the node starts receiving a lot of duplicate blocks, it sends a want for each CID to less peers. If the node gets timeouts waiting for blocks, it sends a want for each CID to more peers. In this way the node tries to maintain a high download speed without too many duplicate blocks.
 
 ## Bitswap improvements for p2p image distribution
+
 In order to improve Bitswap performance and efficiency, the IPFS team made some changes to the way Bitswap fetches blocks.
 
 Initially a node wants to know which of its peers have the root block, but doesn’t actually want to receive the block itself (because it sends this “discovery” want to many peers). So one new change is that when Bitswap sends a want it can ask for a HAVE message in response (instead of getting back the whole block).
