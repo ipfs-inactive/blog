@@ -7,7 +7,7 @@ author: Dirk McCormick (IPFS) and Edgar Lee (Netflix)
 
 Web 2.0 services increasingly depend on large scale computing infrastructure to support fast iteration and deployment cycles. In order to build, test, and release software faster, these services are often seeking ways to upgrade their systems to take advantage of new learnings and tools from distributed peer-to-peer networks.
 
-After [IPFS Camp 2019](https://camp.ipfs.io/), Netflix and IPFS began collaborating on ways to incorporate peer-to-peer services into its developer tooling. Together, we figured out a way to leverage IPFS to speed up cloud builds, designing and testing solutions for faster Continuous Integration (CI) pipelines powered by efficient p2p container image distribution.
+After [IPFS Camp 2019](https://camp.ipfs.io/), Netflix and IPFS began collaborating on ways to incorporate peer-to-peer services into Netflix's developer tooling. Together, we figured out a way to leverage IPFS to speed up cloud builds, designing and testing solutions for faster Continuous Integration (CI) pipelines powered by efficient p2p container image distribution.
 
 <p align="center">
 <a href="https://youtu.be/wNfk05D887M"> 
@@ -27,7 +27,7 @@ IPFS breaks up files into chunks called Blocks, identified by a Content IDentifi
 
 To find out which peers have the blocks that make up a file, a Bitswap node first sends a want for the root block CID to all the peers it is connected to. If the peers don’t have the block, the node queries the Distributed Hash Table ([DHT](https://docs.ipfs.io/guides/concepts/dht/)) to ask who has the root block. Any peers that respond with the root block are added to a session. From now on Bitswap only sends wants to peers in the session, so as not to flood the network with requests.
 
-The node sends out a want for each CID to several peers in the session in parallel, because not all peers will have all blocks. If the node starts receiving a lot of duplicate blocks, it sends a want for each CID to less peers. If the node gets timeouts waiting for blocks, it sends a want for each CID to more peers. In this way the node tries to maintain a high download speed without too many duplicate blocks.
+The node sends out a want for each CID to several peers in the session in parallel, because not all peers will have all blocks. If the node starts receiving a lot of duplicate blocks, it sends a want for each CID to fewer peers. If the node gets timeouts waiting for blocks, it sends a want for each CID to more peers. In this way the node tries to maintain a high download speed without too many duplicate blocks.
 
 ## Bitswap improvements for p2p image distribution
 
@@ -57,7 +57,7 @@ For more details on how Bitswap worked before ("master"), and the changes we’v
 
 Netflix developers regularly deploy millions of containers on Titus, the [Netflix container management platform](https://medium.com/netflix-techblog/titus-the-netflix-container-management-platform-is-now-open-source-f868c9fb5436). As many of these containers handle critical workloads that power Netflix, they often need to be deployed in many regions around the world, scaling accordingly to the traffic in that geographical location. When developers push a release image to production, the image needs to be replicated to Docker Registries in other regions or deployments will suffer from cross-region data costs and slow transfer speeds.
 
-The docker registry is designed to decouple the notion of what an image reference like “alpine” presents, and what data is contained inside the image through content-addressability. This is parallel with IPFS’s data model, where data is always represented by its [multihash](https://github.com/multiformats/multihash). In fact, this is exactly how IPFS can be leveraged as a CDN for container image layers because the container runtime can be modified to retrieve layers identified by its multihash. To learn more about the Netflix use case for IPFS, check out [this interview of Edgar from IPFS Camp](https://www.youtube.com/watch?v=wNfk05D887M)!
+The docker registry is designed to decouple the notion of what an image reference like “alpine” presents, and what data is contained inside the image through content-addressability. This is parallel with IPFS’s data model, where data is always represented by its [CID](https://github.com/multiformats/cid). In fact, this is exactly how IPFS can be leveraged as a CDN for container image layers because the container runtime can be modified to retrieve layers identified by their CIDs. To learn more about the Netflix use case for IPFS, check out [this interview of Edgar from IPFS Camp](https://www.youtube.com/watch?v=wNfk05D887M)!
 
 ## p2plab
 
