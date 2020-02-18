@@ -22,7 +22,7 @@ We’ve completed a HUGE refactor to [js-ipfs internals 🥳](https://blog.ipfs.
 ## Top 5 recent highlights
 * Berty released [gomobile-ipfs!!](https://berty.tech/blog/go-mobile-ipfs) This repo aims to provide packages for Android, iOS and React-Native that allow one to run and use an IPFS node on mobile devices.
 * [IPFS Web UI E2E tests](https://github.com/ipfs-shipyard/ipfs-webui#e2e-tests) are now run as a part of go-ipfs and js-ipfs regression test suites. 
-* [Introducing Terminal V2](https://blog.terminal.co/introducing-terminal-v2/): The easiest way to build, deploy, and host websites & apps on IPFS.
+* [Introducing Terminal V2](https://blog.terminal.co/posts/introducing-terminal-v2): The easiest way to build, deploy, and host websites & apps on IPFS.
 * Catch up on the [latest IPFS Weekly Call](https://www.youtube.com/watch?v=octr87XSCeY&feature=emb_logo), featuring a look at how IPFS and libp2p are used in Robonomics. 🤖
 * [Unstoppable Domains](https://medium.com/unstoppabledomains/unstoppable-website-templates-e5ed343a7c7a) will be giving **$100** per template to the first 10 pull requests that they approve. And speaking of bounties...
 
