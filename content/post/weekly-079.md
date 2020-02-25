@@ -48,7 +48,8 @@ The [Ambient Stack](https://ambientstack.org/) brings together CRDTs, IPFS, and 
 
 
 ## Quote of the week
-https://twitter.com/wighawag/status/1232006103250210816?s=20
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Announcing my personal blog at https://ronan.eth/ : <a href="https://t.co/pYODUH718V">https://t.co/pYODUH718V</a> <br>Time to move off <a href="https://twitter.com/Medium?ref_src=twsrc%5Etfw">@medium</a> to a <a href="https://twitter.com/hashtag/decentralised?src=hash&amp;ref_src=twsrc%5Etfw">#decentralised</a> website with <a href="https://twitter.com/IPFSbot?ref_src=twsrc%5Etfw">@IPFSbot</a> and <a href="https://twitter.com/ensdomains?ref_src=twsrc%5Etfw">@ensdomains</a> <br>This is my second blog system using <a href="https://twitter.com/nicksdjohnson?ref_src=twsrc%5Etfw">@nicksdjohnson</a> creation :)<br>Tech wise it also leverage <a href="https://twitter.com/sveltejs?ref_src=twsrc%5Etfw">@sveltejs</a> for a nice dev xp</p>&mdash; ronan.eth (@wighawag) <a href="https://twitter.com/wighawag/status/1232006103250210816?ref_src=twsrc%5Etfw">February 24, 2020</a></blockquote> 
 
 
 ## Open positions working on IPFS
@@ -74,3 +75,5 @@ https://twitter.com/wighawag/status/1232006103250210816?s=20
 
 
 Get involved with IPFS by checking us out on [GitHub](https://github.com/ipfs), joining discussions on [our community forum](https://discuss.ipfs.io/), or hitting us up [in chat](https://riot.im/app/#/room/#ipfs:matrix.org). Have a suggestion? [Email us.](mailto:newsletter@ipfs.io)
+
+[Get the IPFS Weekly in your inbox](https://ipfs.us4.list-manage.com/subscribe?u=25473244c7d18b897f5a1ff6b&id=cad54b2230) each Tuesday.
