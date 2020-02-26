@@ -40,6 +40,7 @@ See the recently claimed bounties or check for new open ones when they get poste
 ## The IPFS Community at ETHDenver 
 
 Last week, the IPFS Community gathered at one of the largest Ethereum conferences and hackathons in the US: [ETHDenver](https://www.ethdenver.com/). Here are some other key takeaways:
+
 * Out of the 52 projects submitted to ETHDenver, **24 were built with IPFS!**
 * IPFS Hackathon Standouts: [Medici](https://alchemy-xdai.daostack.io/dao/0xe248a76a4a84667c859eb51b9af6dea29e52f139/crx/proposal/0xc2584683cbf5f10af39fb2b79b62ff967608a9e179241e0fce9c8f6dbd6a579a/competition/submission/0x7cbe3ffec0b06ad42fd6d603ae01b5e3907c72101d6f66d37f1d081af192d5de), [TexIOT](https://github.com/RTradeLtd/ethdenver2020/tree/submission/hackathon/texiot), MuckRaker, [IPFS iOS Backup](https://github.com/codynhat/ipfs-ios-backup)
 * [The Distributed Network Summit](http://dnsummit.cryptorado.org/), hosted by the [Cryptorado Community](https://cryptorado.org/#/), **an entire day** dedicated to IPFS, featured presentations and workshops on how people are continuing to build on IPFS, as well as some pretty amazing new use cases. 
