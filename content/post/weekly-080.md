@@ -1,5 +1,5 @@
 ---
-date: 2020-03-02
+date: 2020-03-03
 url: weekly-80
 translationKey: ipfs-weekly-80
 tags: weekly
