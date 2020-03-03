@@ -11,7 +11,7 @@ The ProtoSchool team is pleased to announce the launch of a shiny new multiple-c
 
 Content identifiers (CIDs) and cryptographic hashing make content addressing possible, allowing us to securely locate and identify data on the decentralized web. The string representations of CIDs used by IPFS look like random characters strung together, but there's a lot more going on under the hood. In this new tutorial we explore all of the data revealed by these self-describing content-addressed identifiers, digging deep into multihash, multicodec, multibase, and version prefixes.
 
-We also take a look at the evolution of the [CID specification](https://github.com/multiformats/cid), which originated in IPFS and now lives in the [Multiformats Project](https://multiformats.io/), a collection of self-describing protocols that future-proof distributed information systems including IPFS, IPLD, libp2p, and Filecoin. Curious why some IPFS CIDs start with `Qm...` and others start with `b`? Wondering why we made the switch from CIDv0 to CIDv1, or whether those versions are interchangeable? We've got you covered!
+We also take a look at the evolution of the [CID specification](https://github.com/multiformats/cid), which originated in IPFS and now lives in the [Multiformats Project](https://multiformats.io/). The Multiformats Project is a collection of self-describing protocols that future-proof distributed information systems including IPFS, IPLD, libp2p, and Filecoin. Curious why some IPFS CIDs start with `Qm...` and others start with `b`? Wondering why we made the switch from CIDv0 to CIDv1, or whether those versions are interchangeable? We've got you covered!
 
 ## More ways to explore CIDs
 
