@@ -1,7 +1,7 @@
 ---
 date: 2020-03-03
 url: 2020-03-03-protoschool-tutorial-anatomy-of-a-cid
-title: Explore the anatomy of a CID in ProtoSchool's newest tutorial
+title: Explore the anatomy of a CID in ProtoSchool’s newest tutorial
 author: José Bateira and Teri Chadbourne
 ---
 The ProtoSchool team is pleased to announce the launch of a shiny new multiple-choice tutorial on the **[Anatomy of a CID](https://proto.school/#/anatomy-of-a-cid)**, built by the fabulous [José Bateira](https://github.com/zebateira)! It’s our first multiple-choice lesson and the first to explore Multiformats. 🎉
@@ -57,8 +57,8 @@ A shoutout to [Teri Chadbourne](https://github.com/terichadbourne) for taking th
 
 As you can tell from all the name-dropping, ProtoSchool is a team effort. We depend on folks in the IPFS community and beyond to outline new content, add new features, fix bugs, catch typos, and test-drive new tutorials like this one. There are many ways to [contribute to the project](https://proto.school/#/contribute), no matter your background. In fact, our new multiple-choice format makes it super easy to [create new tutorials](https://proto.school/#/build) without any coding experience.
 
-**Here's to the many folks whose names we've failed to drop who are pitching in daily to making ProtoSchool more useful for our learners.** ❤️
+**Here’s to the many folks whose names we’ve failed to drop who are pitching in daily to making ProtoSchool more useful for our learners.** ❤️
 
-One of the easiest ways to help is by sharing your feedback as you explore our tutorials. You'll find a link at the bottom of every lesson to help you submit your suggestions.
+One of the easiest ways to help is by sharing your feedback as you explore our tutorials. You’ll find a link at the bottom of every lesson to help you submit your suggestions.
 
-**We can't wait to hear what you think of the [new tutorial](https://proto.school/#/anatomy-of-a-cid)!**
+**We can’t wait to hear what you think of the [new tutorial](https://proto.school/#/anatomy-of-a-cid)!**
