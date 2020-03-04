@@ -61,5 +61,4 @@ As you can tell from all the name-dropping, ProtoSchool is a team effort. We dep
 
 One of the easiest ways to help is by sharing your feedback as you explore our tutorials. You'll find a link at the bottom of every lesson to help you submit your suggestions.
 
-### Help us improve our curriculum
-We’re constantly working to improve and grow our ProtoSchool curriculum, and have lots of new content planned for you in the months ahead. You can help us improve our offerings by sharing your feedback on existing tutorials (using the links provided at the bottom of each lesson) or by [building a new tutorial](https://proto.school/#/build). (Our platform currently supports browser-based JavaScript coding challenges, text-based lessons, and multiple-choice quizzes.)
+**We can't wait to hear what you think of the [new tutorial](https://proto.school/#/anatomy-of-a-cid)!**
