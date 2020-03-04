@@ -4,7 +4,7 @@ url: 2020-03-03-protoschool-tutorial-anatomy-of-a-cid
 title: Explore the anatomy of a CID in ProtoSchool’s newest tutorial
 author: José Bateira and Teri Chadbourne
 ---
-The ProtoSchool team is pleased to announce the launch of a shiny new multiple-choice tutorial on the **[Anatomy of a CID](https://proto.school/#/anatomy-of-a-cid)**, built by the fabulous [José Bateira](https://github.com/zebateira)! It’s our first multiple-choice lesson and the first to explore Multiformats. 🎉
+The [ProtoSchool](https://proto.school/#/) team is pleased to announce the launch of a shiny new multiple-choice tutorial on the **[Anatomy of a CID](https://proto.school/#/anatomy-of-a-cid)**, built by the fabulous [José Bateira](https://github.com/zebateira)! It’s our first multiple-choice lesson and the first to explore Multiformats. 🎉
 
 <img src="/img/084-protoschool-tutorial-anatomy-of-a-cid/table-of-contents.png" width="425" alt="Table of Contents"/>
 <img src="/img/084-protoschool-tutorial-anatomy-of-a-cid/sample-lesson.png" width="425" alt="Sample Lesson"/>
@@ -39,9 +39,9 @@ The new [Anatomy of a CID](https://proto.school/#/anatomy-of-a-cid) tutorial is 
 Kudos to [Teri Chadbourne](https://github.com/terichadbourne) and [Diogo Silva](https://github.com/fsdiogo), who laid the groundwork for our multiple choice lessons.
 
 ### Finding the content that meets your needs
-If you’ve explored ProtoSchool in the past, you may have noticed that most of our tutorials use **JavaScript coding challenges** to teach IPFS methods, allowing you to explore them right from your web browser without installing anything or touching the command line. We have code-based content introducing the [Mutable File System (MFS)](https://proto.school/#/mutable-file-system), the [Regular Files API](https://proto.school/#/regular-files-api), and the [DAG API](https://proto.school/#/basics).
+If you’ve explored [ProtoSchool tutorials](https://proto.school/#/tutorials) in the past, you may have noticed that most of them use **JavaScript coding challenges** to teach IPFS methods, allowing you to explore them right from your web browser without installing anything or touching the command line. We have code-based content introducing the [Mutable File System (MFS)](https://proto.school/#/mutable-file-system), the [Regular Files API](https://proto.school/#/regular-files-api), and the [DAG API](https://proto.school/#/basics).
 
-We also offer a **text-based** tutorial on [Decentralized Data Structures](https://proto.school/#/decentralized-data-structures), which introduces important decentralized web concepts like content addressing, cryptographic hashing, content identifiers (CIDs), and sharing with peers. (This one makes a great precursor to our latest tutorial!)
+We also offer a **text-based** tutorial on [Decentralized Data Structures](https://proto.school/#/data-structures), which introduces important decentralized web concepts like content addressing, cryptographic hashing, content identifiers (CIDs), and sharing with peers. (This one makes a great precursor to our latest tutorial!)
 
 We’re excited to create beginner-friendly content suitable for a variety of learners, regardless of their coding experience. To that end, we recently added **spiffy new icons** throughout the site to represent our coding challenges, multiple-choice quizzes, and text-only lessons, making it easy to identify lesson formats before you get started.
 
