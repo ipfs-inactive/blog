@@ -1,6 +1,6 @@
 ---
-date: 2020-03-03
-url: 2020-03-03-protoschool-tutorial-anatomy-of-a-cid
+date: 2020-03-04
+url: 2020-03-04-protoschool-tutorial-anatomy-of-a-cid
 title: Explore the anatomy of a CID in ProtoSchool’s newest tutorial
 author: José Bateira and Teri Chadbourne
 ---
