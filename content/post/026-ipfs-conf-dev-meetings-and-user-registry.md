@@ -1,6 +1,6 @@
 ---
 date: 2018-05-19
-url: 37-ipfs-conf-dev-meetings-and-user-registry.md
+url: 37-ipfs-conf-dev-meetings-and-user-registry
 title: "Announcements: IPFS Conf,  Developer Meetings for IPFS & libp2p and a User Registry"
 author: flyingzumwalt
 ---
