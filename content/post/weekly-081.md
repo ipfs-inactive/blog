@@ -7,7 +7,7 @@ title: IPFS Weekly 81
 author: Jenn Turner
 ---
 
-# # Welcome to the IPFS Weekly
+# Welcome to the IPFS Weekly
 
 Here’s what’s happening lately in the [InterPlanetary File System](https://ipfs.io/) galaxy and beyond! 🚀
 
@@ -37,7 +37,7 @@ Here’s what’s happening lately in the [InterPlanetary File System](https://i
 ## Recommended viewing
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/yVTqRLekRl4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+<br>
 SourceCred: A Social Algorithm, by Dandelion Mane at SustainWeb3
 
 
@@ -57,7 +57,7 @@ SourceCred: A Social Algorithm, by Dandelion Mane at SustainWeb3
 ## Check out Fission on the last IPFS Weekly Call
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/wvmZj7IE9Bo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+<br>
 Yesterday, the folks from [Fission](https://blog.fission.codes/) joined the IPFS Weekly community call to share Fission’s app creation platform that decouples storage from apps, provides hosted services, and more. See the [slides from the full presentation here](https://talk.fission.codes/t/ipfs-weekly-community-call-fission-presenting/520), and check out [their blog post about it](https://blog.fission.codes/fission-on-the-ipfs-community-call/) too! 
 
 Join us for [next Monday’s community call](https://github.com/ipfs/team-mgmt#-ipfs-weekly-call--formerly-known-as-ipfs-all-hands-call) when the [Terminal team](https://terminal.co/) will show us how to host your site or app on IPFS!
