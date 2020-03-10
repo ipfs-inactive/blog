@@ -31,7 +31,7 @@ Here’s what’s happening lately in the [InterPlanetary File System](https://i
 * [Temporal](https://temporal.cloud/): Creator of scalable IPFS infrastructure, recently shipped a preview of their forthcoming IPFS pinning service, [Playground](https://play2.temporal.cloud/).
 * New community favorite [Terminal](https://terminal.co/) provides everything you need to launch and maintain fast, modern websites hosted on IPFS. Check out their [latest release update](https://blog.terminal.co/posts/Release-update-1).
 * [Unstoppable Domains](https://unstoppabledomains.com/) just released [a Chrome browser extension](https://unstoppabledomains.com/extension) with built in support for IPFS! Enjoy surfing the decentralized web 🏄
-* [WebRun](https://github.com/RangerMauve/webrun):JavaScript environment that uses Web APIs with optional plugins for Dat and IPFS.
+* [WebRun](https://github.com/RangerMauve/webrun): JavaScript environment that uses Web APIs with optional plugins for Dat and IPFS.
 
 
 ## Recommended viewing
