@@ -37,6 +37,7 @@ Here’s what’s happening lately in the [InterPlanetary File System](https://i
 ## Recommended viewing
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/yVTqRLekRl4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 SourceCred: A Social Algorithm, by Dandelion Mane at SustainWeb3
 
 
