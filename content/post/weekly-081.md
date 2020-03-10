@@ -13,10 +13,10 @@ Here’s what’s happening lately in the [InterPlanetary File System](https://i
 
 ## Top highlights this week
 
-* Late-breaking news: js-ipfs to begin trialing a [Lerna-style monorepo](https://github.com/ipfs/js-ipfs/issues/2877)
+* **Late-breaking news:** js-ipfs to begin trialing a [Lerna-style monorepo](https://github.com/ipfs/js-ipfs/issues/2877)
 * NEW! Explore the anatomy of a CID in [ProtoSchool’s newest tutorial](https://blog.ipfs.io/2020-03-04-protoschool-tutorial-anatomy-of-a-cid/)
 * Discover how [Terminal.co + IPFS](https://blog.terminal.co/posts/Terminal+IPFS) = Web3 Deployment Simplified
-* What’s the latest with Textile Threads? You know, the databases that run on IPFS with built-in support for decentralized applications, meaning multi-user, standardized encryption, and multi-protocol data exchange. [See what’s new right here!](https://blog.textile.io/textile-threads-progress-report-march-2020/)
+* What’s the latest with **Textile Threads**? You know, the databases that run on IPFS with built-in support for decentralized applications, meaning multi-user, standardized encryption, and multi-protocol data exchange. [See what’s new right here!](https://blog.textile.io/textile-threads-progress-report-march-2020/)
 * We love to see folks hacking on IPFS around the globe–truly decentralized! Check out [these members of the IPFS community](https://twitter.com/aeternity/status/1237030560444420098) from the [ækiti community](https://aekiti.com/) hacking on IPFS as a part of their workshop from Ekiti State, Nigeria. Kaabo!  
 * You’re going to want to read the first blog of the [Trusted WebAssembly Runtime on the IPFS series](https://medium.com/@pushbar/0-of-n-cover-letter-of-the-trusted-webassembly-runtime-on-ipfs-12a4fd8c4338).
 
@@ -64,14 +64,14 @@ Join us for [next Monday’s community call](https://github.com/ipfs/team-mgmt#-
 
 ## Job hunting? Work on IPFS!
 
-* [Backend Software Engineer](https://qri.io/jobs/job-backend-software-engineer): Work closely with the Qri engineering team to implement backend features that support the operation of both qri command-line and Qri Desktop. NYC or Remote.
-* [Community Engineer, libp2p](https://jobs.lever.co/protocol/0afd449f-b292-42b4-abfd-af26415b796b): Help introduce new open source projects to libp2p and clear hurdles for them to adopt the libp2p stack for the networking layer of their system. Protocol Labs, Remote
-* [Engineering Manager, IPFS](https://jobs.lever.co/protocol/3f0787e8-58b3-4122-a1ea-424561d2658f): Engineering managers have the challenging and exciting task of supporting and empowering engineering teams to deliver complex internet-scale systems in an environment defined by curiosity, passion, and a love for open source. Protocol Labs, Remote
-* [Frontend Software Engineer](https://qri.io/jobs/job-frontend-software-engineer): Work closely with the Qri engineering team to build and maintain features on Qri Desktop, an open source Electron app written with TypeScript, React, and Redux. NYC or Remote
-* [IPFS Community Lead](https://jobs.lever.co/protocol/71c4a9b9-af90-4ce9-9dba-8b72507997bf): Provide tactical support for the IPFS community, creating a global community strategy, and executing this strategy on the ground! Protocol Labs, Remote
-* [Project Operator, IPFS](https://jobs.lever.co/protocol/135cecff-ecc4-49ca-b516-61b63fd4d9ef): Tackle some of IPFS’s highest priority initiatives using flexible problem solving abilities. Also responsible for identifying the project’s most important problems, structuring them, and collaborating with cross-functional teams to come to a solution. Protocol Labs, Remote
-* [Specifications Engineer, libp2p](https://jobs.lever.co/protocol/0ee37e17-5fb3-4b0f-8559-e5fca363e268): Help write clear specifications for libp2p, and thus aid in new languages being able to implement the libp2p specs correctly. Protocol Labs, Remote
-* [Senior Software Engineer, IPFS or libp2p](https://jobs.lever.co/protocol/82793e56-124f-484c-bf13-357ef0b45bc6), Experienced in distributed systems design and implementation? Join our full-time open-source team where we value experience independently designing and implementing significant components of complex systems, and the execution focus and discipline to carry projects to completion. Protocol Labs, Remote
+* [Backend Software Engineer](https://qri.io/jobs/job-backend-software-engineer): Work closely with the **Qri engineering team** to implement backend features that support the operation of both qri command-line and Qri Desktop. NYC or Remote.
+* [Community Engineer, libp2p](https://jobs.lever.co/protocol/0afd449f-b292-42b4-abfd-af26415b796b): Help introduce new open source projects to **libp2p** and clear hurdles for them to adopt the libp2p stack for the networking layer of their system. Protocol Labs, Remote
+* [Engineering Manager, IPFS](https://jobs.lever.co/protocol/3f0787e8-58b3-4122-a1ea-424561d2658f): Engineering managers have the challenging and exciting task of supporting and **empowering engineering teams** to deliver complex internet-scale systems in an environment defined by curiosity, passion, and a love for open source. Protocol Labs, Remote
+* [Frontend Software Engineer](https://qri.io/jobs/job-frontend-software-engineer): Work closely with the **Qri engineering team** to build and maintain features on Qri Desktop, an open source Electron app written with TypeScript, React, and Redux. NYC or Remote
+* [IPFS Community Lead](https://jobs.lever.co/protocol/71c4a9b9-af90-4ce9-9dba-8b72507997bf): Provide tactical support for **the IPFS community**, creating a global community strategy, and executing this strategy on the ground! Protocol Labs, Remote
+* [Project Operator, IPFS](https://jobs.lever.co/protocol/135cecff-ecc4-49ca-b516-61b63fd4d9ef): Tackle some of **IPFS’s highest priority initiatives** using flexible problem solving abilities. Also responsible for identifying the project’s most important problems, structuring them, and collaborating with cross-functional teams to come to a solution. Protocol Labs, Remote
+* [Specifications Engineer, libp2p](https://jobs.lever.co/protocol/0ee37e17-5fb3-4b0f-8559-e5fca363e268): Help write clear specifications for libp2p, and thus aid in new languages being able to **implement the libp2p specs** correctly. Protocol Labs, Remote
+* [Senior Software Engineer, IPFS or libp2p](https://jobs.lever.co/protocol/82793e56-124f-484c-bf13-357ef0b45bc6), Experienced in distributed systems design and implementation? Join our full-time open-source team where we value experience independently designing and **implementing significant components of complex systems**, and the execution focus and discipline to carry projects to completion. Protocol Labs, Remote
 
 
 ## Join the community at these upcoming events
