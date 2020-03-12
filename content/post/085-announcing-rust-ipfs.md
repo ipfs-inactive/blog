@@ -1,24 +1,25 @@
 ---
 date: 2020-03-16
 url: 2020-03-16-announcing-rust-ipfs
-title: Announcing Rust IPFS
-author: Mark Robert Henderson and Volker Mische
+title: Announcing Rust IPFS, and a call for contributors
+author: Mark Robert Henderson and Molly Momack
 ---
 
 ![Rust IPFS Logo](https://github.com/ipfs-rust/logo/raw/master/rust-ipfs-logo-256w.png)
 
-We are excited to announce that we have awarded a devgrant to
-[Equilbrium](https://equilibrium.co) to work on the Rust implementation of IPFS. Our
-collective goal is to combine the _performance_ and resource utilization benefits of Rust, with
-a keen eye on _conformance_ to the IPFS spec.
+Calling all rustaceans, rustafarians, ferrosities, and rustlers - we’ve got an exciting update!
+Active full time work on a rust-IPFS implementation has commenced, building on the great work by
+Parity in `rust-libp2p`. [Equilbrium](https://equilibrium.co) is spearheading the new community and
+implementation with support from Protocol Labs, and is looking for additional rust devs itching
+to help build a new language implementation of the InterPlanetary File System combining the
+performance and resource utilization benefits of Rust with a keen eye on conformance to the IPFS spec.
 
 ## Why Rust IPFS? Why Now?
 
 Rust, the programming language, has enjoyed a recent spike in popularity. This is due both to its
 inclusive community, and also being a safe systems language with performance comparable to C and
 C++. An IPFS implementation written in Rust only makes sense. Additionally, the community has been
-looking for a Rust implementation [for a while now](https://github.com/ipfs/notes/issues/363),
-for a number of use cases:
+[asking for a while now](https://github.com/ipfs/notes/issues/363), for a number of use cases:
 
 1. Usage in resource-constrained systems such as Industrial Internet-of-Things (IIoT) controllers
 2. Portability of certain subsets of the IPFS stack into WebAssembly
@@ -26,12 +27,12 @@ for a number of use cases:
 
 ## Leveraging Community Efforts
 
-The IPFS community has been and remains and impressive, talented group of people who have
-astounded and impressed us with their work in the Rust space already. We have Parity's
+The IPFS community has been and remains an impressive, talented group of people who have
+astounded and impressed us with their work in the Rust space already. We have the aforementioned
 [rust-libp2p](https://github.com/libp2p/rust-libp2p), which is already used by the likes of
 Polkadot, Substrate, and Lighthouse. We have ferrismtg's
 [rust-ipfs-api](https://github.com/ferristseng/rust-ipfs-api) which is aleady doing wonders in
-providing a bridge from the Rust world. Finally we have David Craven's
+providing a bridge from the Rust world. Finally, we have David Craven's
 [rust-ipfs](https://github.com/ipfs-rust/rust-ipfs) foundations, which is the main repo this grant will build upon.
 
 This devgrant endeavors to take this impressive amount of community work carry the torch across
