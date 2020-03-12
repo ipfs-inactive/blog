@@ -2,7 +2,7 @@
 date: 2020-03-16
 url: 2020-03-16-announcing-rust-ipfs
 title: Announcing Rust IPFS, and a call for contributors
-author: Mark Robert Henderson and Molly Momack
+author: Mark Robert Henderson and Molly Mackinlay
 ---
 
 ![Rust IPFS Logo](https://github.com/ipfs-rust/logo/raw/master/rust-ipfs-logo-256w.png)
@@ -35,7 +35,7 @@ Polkadot, Substrate, and Lighthouse. We have ferrismtg's
 providing a bridge from the Rust world. Finally, we have David Craven's
 [rust-ipfs](https://github.com/ipfs-rust/rust-ipfs) foundations, which is the main repo this grant will build upon.
 
-This devgrant endeavors to take this impressive amount of community work carry the torch across
+This devgrant endeavors to take this impressive amount of community work and carry the torch across
 the finish line, _incorporating_ and _including_ the community into its efforts and not forking
 and/or starting fresh.
 
