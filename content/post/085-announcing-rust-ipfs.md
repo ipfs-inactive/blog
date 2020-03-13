@@ -33,11 +33,7 @@ With both community demand and active participation, the time was ripe for the R
 ## Leveraging Community Efforts
 
 The IPFS community is a talented group of people with an impressive array of high quality work in the Rust space already. There's the aforementioned
-[rust-libp2p](https://github.com/libp2p/rust-libp2p), which is already used by the likes of
-Polkadot, Substrate, and Lighthouse. We have ferrismtg's
-[rust-ipfs-api](https://github.com/ferristseng/rust-ipfs-api) which is aleady doing wonders in
-providing a bridge from the Rust world. Finally, we have David Craven's
-[rust-ipfs](https://github.com/ipfs-rust/rust-ipfs), which is the foundational work behind this latest endeavor.
+[rust-libp2p](https://github.com/libp2p/rust-libp2p), which is already used by the likes of Polkadot, Substrate, and Lighthouse; there's ferrismtg's [rust-ipfs-api](https://github.com/ferristseng/rust-ipfs-api) which is already doing wonders in providing a bridge from the Rust world; and of course [David Craven](https://github.com/dvc94ch)'s [rust-ipfs](https://github.com/ipfs-rust/rust-ipfs), which is the foundational work behind this latest endeavor.
 
 Instead of forking and/or starting fresh, this project aims to support and build on the impressive amount of progress that's already been made, helping carry the torch across the finish line while _incorporating_ and _including_ the community of passionate Rust contributors in the process.
 the finish line, _incorporating_ and _including_ the community into its efforts and not forking
