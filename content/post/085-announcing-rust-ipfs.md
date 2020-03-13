@@ -32,7 +32,7 @@ The IPFS community is a talented group of people with an impressive array of hig
 Polkadot, Substrate, and Lighthouse. We have ferrismtg's
 [rust-ipfs-api](https://github.com/ferristseng/rust-ipfs-api) which is aleady doing wonders in
 providing a bridge from the Rust world. Finally, we have David Craven's
-[rust-ipfs](https://github.com/ipfs-rust/rust-ipfs) foundations, which is the main repo this grant will build upon.
+[rust-ipfs](https://github.com/ipfs-rust/rust-ipfs), which is the foundational work behind this latest endeavor.
 
 This devgrant endeavors to take this impressive amount of community work and carry the torch across
 the finish line, _incorporating_ and _including_ the community into its efforts and not forking
