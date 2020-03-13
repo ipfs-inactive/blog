@@ -25,6 +25,11 @@ C++. An IPFS implementation written in Rust only makes sense. Additionally, the 
 2. Portability of certain subsets of the IPFS stack into WebAssembly
 3. Usage of IPFS functionality and APIs via native Rust function calls via inclusion as a Rust crate.
 
+Given that, it's no surprise that Rust-IPFS was also one of the [IPFS 2020 Theme Proposals](https://github.com/ipfs/roadmap/issues/54) suggested in our community-driven [IPFS 2020 Roadmapping Process](https://github.com/ipfs/roadmap/blob/master/2020-IPFS-Project-Planning.md) - and that the community quickly rose to the challenge. Equilibrium, an active participant in many dweb infrastructure projects, stepped up to take on core implementation and stewardship of this new language implementation, with support through the [new IPFS DevGrants program](https://github.com/ipfs/devgrants) to provide coordination and maintainership for passionate developers in the wider Rust community. 
+
+With both community demand and active participation, the time was ripe for the Rust-IPFS effort to be revitalized and reborn!
+
+
 ## Leveraging Community Efforts
 
 The IPFS community is a talented group of people with an impressive array of high quality work in the Rust space already. There's the aforementioned
