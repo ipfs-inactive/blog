@@ -50,10 +50,10 @@ takes place mostly over early Q2 2020 and covers the use case of **IPLD applicat
 targeting the low-level blockstore, libp2p integration, and IPLD-related functionality
 such as `ipfs dag put` and `ipfs dag get`. 
 
-To learn more about the effort, please visit the following links:
+To learn more about the effort, you can:
 
-1. The [ipfs-rust organization](https://github.com/orgs/ipfs-rust) on GitHub
-2. The in-depth post on this effort on the Equilibrium Labs blog (link coming soon)
+1. Visit the [ipfs-rust organization](https://github.com/orgs/ipfs-rust) on GitHub
+2. Read more about this effort on the Equilibrium Labs blog (link coming soon)
 
 ## You can help!
 
