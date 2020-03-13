@@ -8,9 +8,9 @@ author: Mark Robert Henderson and Molly Mackinlay
 ![Rust IPFS Logo](https://github.com/ipfs-rust/logo/raw/master/rust-ipfs-logo-256w.png)
 
 Calling all rustaceans, rustafarians, ferrosities, and rustlers - we’ve got an exciting update!
-Active full time work on a rust-IPFS implementation has commenced, building on the great work by
+Active full time work on a Rust-IPFS implementation has commenced, building on the great work by
 Parity in `rust-libp2p`. [Equilbrium](https://equilibrium.co) is spearheading the new community and
-implementation with support from Protocol Labs, and is looking for additional rust devs itching
+implementation with support from Protocol Labs, and is looking for additional Rust devs itching
 to help build a new language implementation of the InterPlanetary File System combining the
 performance and resource utilization benefits of Rust with a keen eye on conformance to the IPFS spec.
 
