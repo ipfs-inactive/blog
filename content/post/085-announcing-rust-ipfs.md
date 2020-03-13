@@ -27,8 +27,7 @@ C++. An IPFS implementation written in Rust only makes sense. Additionally, the 
 
 ## Leveraging Community Efforts
 
-The IPFS community has been and remains an impressive, talented group of people who have
-astounded and impressed us with their work in the Rust space already. We have the aforementioned
+The IPFS community is a talented group of people with an impressive array of high quality work in the Rust space already. There's the aforementioned
 [rust-libp2p](https://github.com/libp2p/rust-libp2p), which is already used by the likes of
 Polkadot, Substrate, and Lighthouse. We have ferrismtg's
 [rust-ipfs-api](https://github.com/ferristseng/rust-ipfs-api) which is aleady doing wonders in
@@ -59,4 +58,3 @@ want to pitch in, here are a few ways:
 1. Star and watch the [GitHub repo](https://github.com/ipfs-rust/rust-ipfs)
 2. Take on the development efforts associated with IPFS APIs [not covered by the grant](https://github.com/ipfs-rust/ipfs-rust-conformance/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22)
 3. Back IPFS Rust on [OpenCollective](https://opencollective.com/ipfs-rust)
-
