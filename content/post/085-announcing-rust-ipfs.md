@@ -34,7 +34,7 @@ Polkadot, Substrate, and Lighthouse. We have ferrismtg's
 providing a bridge from the Rust world. Finally, we have David Craven's
 [rust-ipfs](https://github.com/ipfs-rust/rust-ipfs), which is the foundational work behind this latest endeavor.
 
-This devgrant endeavors to take this impressive amount of community work and carry the torch across
+Instead of forking and/or starting fresh, this project aims to support and build on the impressive amount of progress that's already been made, helping carry the torch across the finish line while _incorporating_ and _including_ the community of passionate Rust contributors in the process.
 the finish line, _incorporating_ and _including_ the community into its efforts and not forking
 and/or starting fresh.
 
