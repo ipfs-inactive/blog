@@ -45,7 +45,7 @@ and/or starting fresh.
 
 ## What can be expected, and when?
 
-At a high level, the [devgrant](https://github.com/ipfs/devgrants/tree/master/open-grants/ipfs-rust)
+As you can see in the [Rust-IPFS DevGrant Roadmap](https://github.com/ipfs/devgrants/tree/master/open-grants/ipfs-rust) implementation work
 takes place mostly over early Q2 2020 and covers the use case of **IPLD applications**,
 targeting the low-level blockstore, libp2p integration, and IPLD-related functionality
 such as `ipfs dag put` and `ipfs dag get`. 
