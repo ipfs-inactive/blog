@@ -61,5 +61,5 @@ Community participation in making Rust-IPFS a reality is encouraged and welcomed
 want to pitch in, here are a few ways:
 
 1. Star and watch the [GitHub repo](https://github.com/ipfs-rust/rust-ipfs)
-2. Take on the development efforts associated with IPFS APIs [not covered by the grant](https://github.com/ipfs-rust/ipfs-rust-conformance/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22)
+2. Take on the development efforts associated with IPFS APIs [deemed out of scope for the initial grant milestones](https://github.com/ipfs-rust/ipfs-rust-conformance/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22)
 3. Back IPFS Rust on [OpenCollective](https://opencollective.com/ipfs-rust)
