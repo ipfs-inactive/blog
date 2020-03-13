@@ -57,7 +57,7 @@ To learn more about the effort, please visit the following links:
 
 ## You can help!
 
-Although Equilibrium is the main grantee, community involvment is encouraged and welcomed. If you
+Community participation in making Rust-IPFS a reality is encouraged and welcomed! If you
 want to pitch in, here are a few ways:
 
 1. Star and watch the [GitHub repo](https://github.com/ipfs-rust/rust-ipfs)
