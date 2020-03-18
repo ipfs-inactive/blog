@@ -47,7 +47,7 @@ such as `ipfs dag put` and `ipfs dag get`.
 To learn more about the effort, you can:
 
 1. Visit the [ipfs-rust organization](https://github.com/orgs/ipfs-rust) on GitHub
-2. Read more about this effort on the Equilibrium Labs blog (link coming soon)
+2. Read more about this effort on the [Equilibrium Labs blog](https://medium.com/equilibriumco/rust-ipfs-our-plan-of-attack-af8358f90beb)
 
 ## You can help!
 
