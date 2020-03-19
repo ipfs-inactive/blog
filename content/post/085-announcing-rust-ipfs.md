@@ -1,6 +1,6 @@
 ---
 date: 2020-03-18
-url: 2020-03-16-announcing-rust-ipfs
+url: 2020-03-18-announcing-rust-ipfs
 title: Announcing Rust IPFS, and a call for contributors
 author: Mark Robert Henderson and Molly Mackinlay
 ---
@@ -38,6 +38,8 @@ The IPFS community is a talented group of people with an impressive array of hig
 Instead of forking and/or starting fresh, this project aims to support and build on the impressive amount of progress that's already been made, helping carry the torch across the finish line while _incorporating_ and _including_ the community of passionate Rust contributors in the process.
 
 ## What can be expected, and when?
+
+![Rust IPFS Timeline](https://gateway.ipfs.io/ipfs/QmU7sssvo52Rrwj7MWZNpeHnFjjdG271Dx5zfGkZSbgVnN)
 
 As you can see in the [Rust-IPFS DevGrant Roadmap](https://github.com/ipfs/devgrants/tree/master/open-grants/ipfs-rust) implementation work
 takes place mostly over early Q2 2020 and covers the use case of **IPLD applications**,
