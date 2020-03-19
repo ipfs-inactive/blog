@@ -12,7 +12,7 @@ Active full time work on a Rust-IPFS implementation has commenced, building on t
 [Parity](https://www.parity.io/) in `rust-libp2p`. [Equilbrium](https://equilibrium.co) is spearheading the new community and
 implementation with support from Protocol Labs, and is looking for additional Rust devs itching
 to help build a new language implementation of the InterPlanetary File System combining the
-performance and resource utilization benefits of Rust with a keen eye on conformance to the IPFS spec.
+performance and resource utilization benefits of Rust with a keen eye on conformance to the IPFS spec. Read more on the [Equilibrium Labs blog](https://medium.com/equilibriumco/rust-ipfs-our-plan-of-attack-af8358f90beb)!
 
 ## Why Rust IPFS? Why Now?
 
