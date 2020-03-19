@@ -5,7 +5,9 @@ title: Announcing Rust IPFS, and a call for contributors
 author: Mark Robert Henderson and Molly Mackinlay
 ---
 
-![Rust IPFS Logo](https://github.com/ipfs-rust/logo/raw/master/rust-ipfs-logo-256w.png)
+<p align="center">
+<img src="https://github.com/ipfs-rust/logo/raw/master/rust-ipfs-logo-256w.png">
+</p>
 
 Calling all rustaceans, rustafarians, ferrosities, and rustlers - we’ve got an exciting update!
 Active full time work on a Rust-IPFS implementation has commenced, building on the great work by
