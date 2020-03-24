@@ -49,7 +49,7 @@ The upcoming go-ipfs 0.5 release includes write coalescing patches, which will t
 
 
 ## Recommended viewing
-https://dwebcamp.org/videos/camp-day-three-july-20-lightning-talks-whats-up-with-ipfs/
+
 <iframe src="https://archive.org/embed/campdaythreejuly20lightningtalkswhatsupwithipfs" width="640" height="480" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
 <br>
 Learn how IPFS addresses content (CIDs) and what goes into a content address in IPFS from project lead, Molly Mackinlay. 
