@@ -54,7 +54,7 @@ IPFS features in this implementation:
 * Supports [subdomain gateways](https://docs-beta.ipfs.io/how-to/address-ipfs-on-web/#subdomain-gateway) for secure web apps
 * Supports mixed protocol use, such as loading images over IPFS in an HTTP web page
 
-Read on to learn more about these features below.
+Read on to learn more about these features.
 
 ## Native Protocol Addressing
 
@@ -75,7 +75,7 @@ Here's what it looks like in a browser that doesn't support IPFS addresses. In O
 
 The core of the IPFS support in Opera for Android is the transfer of native IPFS addresses navigations to an IPFS HTTP gateway - a server which connects directly to the IPFS network on your behalf.
 
-The default gateway in Opera for Android is dweb.link, a gateway run by Protocol Labs. This may change in the future, as other gateway services upgrade to IPFS 0.5 next month, which contains a number of important performance, stability and security improvements.
+The default gateway in Opera for Android is dweb.link, a gateway run by Protocol Labs. This may change in the future, as other gateway services upgrade to the upcoming IPFS 0.5 release, which contains a number of important performance, stability and security improvements.
 
 You can configure the gateway in the Crypto Wallet settings, as shown here:
 
