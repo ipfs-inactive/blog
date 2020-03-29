@@ -1,4 +1,10 @@
-# IPFS in Opera for Android
+---
+date: 2020-03-30
+url: 2020-03-30-ipfs-in-opera-for-android
+tags: IPFS, Web Browsers, Opera, Android
+title: IPFS in Opera for Android
+author: Dietrich Ayala
+---
 
 ![IPFS built-in to Opera for Android](https://user-images.githubusercontent.com/22168118/77353095-a3b36900-6d40-11ea-9675-102e0e245adf.png)
 
@@ -85,11 +91,11 @@ The default gateway in this release of Opera for Android is `dweb.link`, but you
 
 The setting has several choices of gateway built in, and also allows you to set a *custom* gateway. Perhaps you run your own gateway, are running an IPFS node on your device with a local gateway, or want to use one of the many [public gateways provided by the community](https://ipfs.github.io/public-gateway-checker/).
 
-Making the default gateway configurabile puts you, the user, in control of how you want to connect to the dweb - removing any central point of failure in your IPFS browsing experience.
+Making the default gateway configurable puts you, the user, in control of how you want to connect to the dweb - removing any central point of failure in your IPFS browsing experience.
 
 ## Get Involved
 
-If you're interested in IPFS in web browsers, join our channel on IRC on Freenode [#ipfs-in-web-browsers](ircs://irc.freenode.net/#ipfs-in-web-browsers) and [Matrix](https://matrix.to/#/!LiCFQLjSxdKuUVxokg:matrix.org?via=matrix.org&via=tomesh.net) in order to participate in the discussion!
+If you're interested in IPFS in web browsers, join our channel on IRC on Freenode [#ipfs-in-web-browsers](ircs://irc.freenode.net/#ipfs-in-web-browsers) and [Matrix](https://matrix.to/#/!LiCFQLjSxdKuUVxokg:matrix.org?via=matrix.org&via=tomesh.net) to participate in the discussion!
 
 You can file issues and follow along with our browser integration work at [ipfs/in-web-browsers](https://github.com/ipfs/in-web-browsers).
 
