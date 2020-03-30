@@ -36,7 +36,7 @@ Tools like Google Analytics and Bing Webmaster all need to be informed of the ch
 
 The IPFS docs have been stuck in limbo for a few months, with GitHub issues living in `ipfs/docs`, but the actual documentation and website content living in `ipfs/ipfs-docs-v2`. This has caused some confusion with posting and commenting upon issues in one repo while reflecting those changes in another.
 
-Past of the deprecation place is to merge `ipfs/ipfs-docs-v2` into `ipfs/docs`. All the content in `ipfs/docs` will be overwritten, but the issues will remain intact. Open issues will have their links checked to make sure they are referencing the correct and updated pages.
+Part of our deprecation plan is to merge the *code* in `ipfs/ipfs-docs-v2` into `ipfs/docs`. All the legacy docs site content in `ipfs/docs` will be overwritten, but the issues will remain intact. Open issues will have their links checked to make sure they are referencing the correct and updated pages.
 
 ### Follow-up
 
