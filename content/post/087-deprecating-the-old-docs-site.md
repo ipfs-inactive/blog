@@ -30,7 +30,7 @@ There have been several changes to the structure and naming conversions in the d
 
 ### Update external services
 
-Tools like Google Analytics and Bing Webmaster all need to be informed of the changes. Unfortunately, Alphabet's Google Search and Microsoft's bing are both necessary evils that enable us to reach as many users as possible. In the future, we'll be able to distance ourselves from centralized companies. Still, for now, we need to use them to help people access IPFS more easily.
+Tools like Google Analytics and Bing Webmaster all need to be informed of the changes. While they may not be major players in the decentralized web of tomorrow, for today at least, centralized search engines still are tools that help us reach as many users as possible and spread the word about IPFS and the dweb.
 
 ### Combine all the repos
 
