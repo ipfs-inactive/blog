@@ -40,7 +40,7 @@ Part of our deprecation plan is to merge the *code* in `ipfs/ipfs-docs-v2` into 
 
 ### Follow-up
 
-This final task will take place around 6-12 weeks after the site deprecation. There are three things the docs team will need to focus on at this stage:
+This final task will take place around 6-12 weeks after the site deprecation. There are four things the docs team will need to focus on at this stage:
 
 1. Remove the _this URL has changed_ notices in any existing pages.
 1. Re-crawl the site to make sure all the links and references are still working and up to date.
