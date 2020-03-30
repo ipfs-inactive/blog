@@ -4,7 +4,7 @@ title: Deprecating the old docs site
 author: Johnny Matthews
 ---
 
-# Deprecating the old docs site
+# Goodbye, IPFS legacy docs
 
 The IPFS team is deprecating the old documentation website. That's just a fancy way of saying we're replacing the current docs.ipfs.io website with the new docs-beta.ipfs.io website.
 
