@@ -10,7 +10,7 @@ The IPFS team is deprecating the old documentation website. That's just a fancy 
 
 ## We built a new docs site
 
-Work on a new documentation site for IPFS started in Q3 of 2019. Before this, the docs site was built upon Hugo and hosted by Netlify. While Hugo is an excellent static-site generator, it lacks an encapsulated component model, relies upon old web development conventions, and requires DOM manipulation if you want to have any kind of site interactivity. Similarly, Netlify is an incredible hosting solution. However, the centralized nature of the service goes against our mission here at Protocol Labs.
+Work on a new documentation site for IPFS started in Q3 of 2019. Before this, the docs site was built upon Hugo. While Hugo is an excellent static-site generator, it lacks an encapsulated component model, relies upon old web development conventions, and requires DOM manipulation if you want to have any kind of site interactivity.
 
 So with all that in mind, the IPFS docs and UX working group built a new site to host the documentation. The site build was finished towards the end of 2019, and a beta version was made available to the public. Call-outs were placed on the current IPFS docs site to encourage readers to test the new website. You can see a preview of the site at [docs-beta.ipfs.io](https://docs-beta.ipfs.io).
 
@@ -45,7 +45,7 @@ This final task will take place around 6-12 weeks after the site deprecation. Th
 1. Remove the _this URL has changed_ notices in any existing pages.
 1. Re-crawl the site to make sure all the links and references are still working and up to date.
 1. Check the top 404 referrers, and create a fix for them where possible.
-2. Search all content in the IPFS and Protocol Labs GitHub orgs for references to old site pages, and fix those (so we don't 404 ourselves!).
+1. Search all content in the IPFS and Protocol Labs GitHub orgs for references to old site pages, and fix those (so we don't 404 ourselves!).
 
 ## And that's it
 
