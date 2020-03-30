@@ -45,6 +45,7 @@ This final task will take place around 6-12 weeks after the site deprecation. Th
 1. Remove the _this URL has changed_ notices in any existing pages.
 1. Re-crawl the site to make sure all the links and references are still working and up to date.
 1. Check the top 404 referrers, and create a fix for them where possible.
+2. Search all content in the IPFS and Protocol Labs GitHub orgs for references to old site pages, and fix those (so we don't 404 ourselves!).
 
 ## And that's it
 
