@@ -49,7 +49,7 @@ As you can see, raw IPFS addresses can be quite long and provide few human-reada
 
 There’s a lot more work to do in maturing [naming in IPFS and distributed web efforts generally](https://github.com/ipfs/notes/blob/master/OPEN_PROBLEMS/HUMAN_READABLE_NAMING.md), but some services have already launched efforts to bridge this gap.
 
-You can register *decentralized domain names* that map to IPFS addresses using services like [Unstoppable Domains](unstoppabledomains.com/) or the [Ethereum Name System (ENS)](https://medium.com/the-ethereum-name-service/ethdns-9d56298fa38a?source=rss----63df5ce4636f---4).
+You can register *decentralized domain names* that map to IPFS addresses using services like [Unstoppable Domains](https://unstoppabledomains.com/) or the [Ethereum Name System (ENS)](https://medium.com/the-ethereum-name-service/ethdns-9d56298fa38a?source=rss----63df5ce4636f---4).
 
 You can also register and use any *DNS* domain name, and map it to IPFS addresses using services like [Terminal.co](https://terminal.co) or tools like [DNSLink](https://docs.ipfs.io/guides/concepts/dnslink/).
 
