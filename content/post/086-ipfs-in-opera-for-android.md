@@ -43,7 +43,7 @@ Here’s what that same address looks like from an HTTP gateway, which will work
 
 > https://ipfs.io/ipfs/bafybeiemxf5abjwjbikoz4mc3a3dla6ual3jsgpdr4cjr3oz3evfyavhwq/wiki/
 
-## ENS and DNS for human-readable addresses
+## Enabling human-readable addresses
 
 As you can see, raw IPFS addresses can be quite long and provide few human-readable elements. While many people do not understand what HTTP URLs actually mean, the human readable parts of them have meaning and build trust for users (We’re publishing [some research](https://github.com/ipfs/browser-design-guidelines) about this soon).
 
