@@ -11,7 +11,7 @@ The IPFS team is deprecating the old documentation website. That’s just a fanc
 
 ## We built a new docs site
 
-Work on a new documentation site for IPFS started in Q3 of 2019. Before that, the docs site was built upon Hugo. While Hugo is an excellent static-site generator, it lacks an encapsulated component model, relies upon old web development conventions, and requires DOM manipulation if you want to have any kind of site interactivity.
+A common complaint from users new and old was that the IPFS onboarding experience was rough - and that the documentation was particularly difficult to navigate to find fast, reliable answers. We set out to change that! Work on a new documentation site for IPFS started in Q3 of 2019. Before that, the docs site was built upon Hugo. While Hugo is an excellent static-site generator, it was missing some features around interactive content that we needed to adaptively respond to user needs and collect feedback on which pages to improve first.
 
 So with all that in mind, the IPFS docs and UX working group built a new site to host the documentation. The site build was finished towards the end of 2019, and a beta version was made available to the public. Call-outs were placed on the current IPFS docs site to encourage readers to test the new website. You can see a preview of the site at [docs-beta.ipfs.io](https://docs-beta.ipfs.io).
 
