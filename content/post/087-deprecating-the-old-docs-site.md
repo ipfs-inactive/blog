@@ -7,7 +7,7 @@ author: Johnny Matthews
 
 # Goodbye, IPFS legacy docs
 
-The IPFS team is deprecating the old documentation website. That’s just a fancy way of saying we’re replacing the current docs.ipfs.io website with the new docs-beta.ipfs.io website.
+The IPFS team is deprecating the old documentation website. That’s just a fancy way of saying we’re replacing the current docs.ipfs.io website with the new [docs-beta.ipfs.io website](https://docs-beta.ipfs.io).
 
 ## We built a new docs site
 
@@ -27,7 +27,7 @@ The first step is to let everyone know what we’re going to be doing. This post
 
 ### Plan for redirects
 
-There have been several changes to the structure and naming conversions in the docs repo. Significant URL redirects must be put in place from legacy links to where the content now lives. The idea here is to minimize the amount of 404 errors encountered by the reader.
+There have been several changes to the structure and naming conventions in the docs repo. Significant URL redirects must be put in place from legacy links to where the content now lives. The idea here is to minimize the amount of 404 errors encountered by the reader.
 
 ### Update external services
 
