@@ -1,5 +1,5 @@
 ---
-date: 2020-04-01
+date: 2020-04-03
 url: 2020-04-01-deprecating-the-old-docs-site
 title: Deprecating the old docs site
 author: Johnny Matthews
