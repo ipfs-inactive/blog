@@ -31,7 +31,7 @@ There have been several changes to the structure and naming conventions in the d
 
 ### Update external services
 
-Tools like Google Analytics and Bing Webmaster all need to be informed of the changes. While they may not be major players in the decentralized web of tomorrow, for today at least, centralized search engines are still tools that help us reach as many users as possible and spread the word about IPFS and the dweb.
+Tools like Google Analytics and Bing Webmaster all need to be informed of the changes. While they may not be major players in the decentralized web of tomorrow, for today at least, centralized search engines are still tools that help us reach people with IPFS questions and spread the word about the dweb.
 
 ### Combine all the repos
 
