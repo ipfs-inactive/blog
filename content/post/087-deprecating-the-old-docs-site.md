@@ -50,4 +50,4 @@ This final task will take place around 6-12 weeks after the site deprecation. Th
 
 ## And that’s it
 
-After these steps are complete, the docs site will be fully ready to help readers explore the wonderful world of the decentralized web! These deprecation steps are set to begin in April and should be finished by June 2020. You can take a look at [the full plan over at hackmd.io](https://hackmd.io/@jessicaschilling/S1__jQ2TH).
+After these steps are complete, the docs site will be fully ready to help readers explore the wonderful world of the decentralized web! These deprecation steps are set to begin in April and should be finished by June 2020. You can take a look at [the full plan on GitHub.](https://github.com/ipfs/docs/issues/475).
