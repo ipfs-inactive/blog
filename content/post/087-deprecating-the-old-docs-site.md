@@ -31,13 +31,13 @@ There have been several changes to the structure and naming conventions in the d
 
 ### Update external services
 
-Tools like Google Analytics and Bing Webmaster all need to be informed of the changes. While they may not be major players in the decentralized web of tomorrow, for today at least, centralized search engines are still tools that help us reach as many users as possible and spread the word about IPFS and the dweb.
+Tools like Google Analytics and Bing Webmaster all need to be informed of the changes. While they may not be major players in the decentralized web of tomorrow, for today at least, centralized search engines are still tools that help us reach people with IPFS questions and spread the word about the dweb.
 
 ### Combine all the repos
 
 The IPFS docs have been stuck in limbo for a few months, with GitHub issues living in `ipfs/docs`, but the actual documentation and website content living in `ipfs/ipfs-docs-v2`. This has caused some confusion with posting and commenting upon issues in one repo while reflecting those changes in another.
 
-Part of our deprecation plan is to merge the *code* in `ipfs/ipfs-docs-v2` into `ipfs/docs`. All the legacy docs site content in `ipfs/docs` will be overwritten, but the issues will remain intact. Open issues will have their links checked to make sure they are referencing the correct and updated pages.
+Part of our deprecation plan is to merge the *code* in `ipfs/ipfs-docs-v2` into `ipfs/docs`. All the legacy docs site content in `ipfs/docs` will be upgraded, but the issues will remain intact. Open issues will have their links checked to make sure they are referencing the correct and updated pages.
 
 ### Follow-up
 
