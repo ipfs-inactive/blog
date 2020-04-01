@@ -27,7 +27,7 @@ The first step is to let everyone know what we’re going to be doing. This post
 
 ### Plan for redirects
 
-There have been several changes to the structure and naming conventions in the docs repo. Significant URL redirects must be put in place from legacy links to where the content now lives. The idea here is to minimize the amount of 404 errors encountered by the reader.
+There have been several changes to the structure and naming conventions in the docs repo. Significant URL redirects must be put in place from legacy links to where the content now lives. This is to ensure that nobody ends up on a `404` page, and is always directed to the content that they want to see.
 
 ### Update external services
 
