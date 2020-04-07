@@ -8,9 +8,10 @@ tags: mobile-design-guidelines, Mobile, Design, Research
 
 The focus of development of IPFS to date has been primarily on desktop and server class hardware. However, the growth of the internet for more than a decade has been almost entirely on mobile devices.
 
-This growth at the furthest edge of the network requires solutions at that edge. As long as the IPFS network remains inaccessable on mobile devices, the value of the network where it matters most is not realized - IPFS will be a step removed from where end users are, its features restricted and stoppable, and its offline use-cases constrained by the application development patterns of centralized networks and services.
+This growth at the furthest edge of the network requires solutions at that edge. While the IPFS network continues to grow on mobile, for instance IPFS now has default support on Opera for Android, the value of the network where it matters most needs to be realised further. IPFS needs to continue to move beyond being a step removed from where end users are, where features are restricted and stoppable, and its offline use-cases constrained by the application development patterns of centralized networks and services. Thus there is a huge opportunity for the future development and adoption for the IPFS network to move users beyond this.
 
-![Graph of global internet device sales showing mobile devices explosively growing from 2005 to 2016.](https://i.imgur.com/aoBO47b.jpg)
+![Graph of global internet device sales showing 
+devices explosively growing from 2005 to 2016.](https://i.imgur.com/aoBO47b.jpg)
 
 In emerging markets and for under-served audiences and marginalized or oppressed peoples the need for data sovereignty, offline-first applications and trustable computing is especially dire, so IPFS should function optimally on the devices used by them in order to serve their use-cases.
 
