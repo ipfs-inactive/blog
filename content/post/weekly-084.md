@@ -105,7 +105,8 @@ Keep up the great work team! We can’t wait to see what happens in the next few
 
 ## Check out the community 🌟 all stars 🌟 who joined us for the IPFS Weekly calls
 
-<iframe width=“560” height=“315” src=“https://www.youtube.com/embed/uUL6Qm6Zb5I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/uUL6Qm6Zb5I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 <p>
 Each Monday the IPFS Community gathers at 5pm UTC to share a new story about what people are doing with our favorite filesystem. In the past few months, we’ve had guests from Dapp Node, Infura, Robonomics, Qri, Fission, Fleek (formerly Terminal), Textile, Pinata, and others join us.</p>
 
