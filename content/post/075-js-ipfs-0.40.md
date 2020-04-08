@@ -3,6 +3,7 @@ date: 2019-12-02
 url: 2019-12-02-js-ipfs-0-40
 title: js-ipfs 0.40.0 released
 author: Alan Shaw
+header_image: 075-js-ipfs-0.40.png
 ---
 
 # 🔦 Highlights

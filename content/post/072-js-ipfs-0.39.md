@@ -3,6 +3,7 @@ date: 2019-10-24
 url: 071-js-ipfs-0-39
 title: js-ipfs 0.39.0 released
 author: Alex Potsides
+header_image: 072-js-ipfs-0.39.png
 ---
 
 > Configure your node with preset profiles! Limit outgoing browser requests! Start your node from fresh with one command!

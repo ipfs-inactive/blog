@@ -3,6 +3,7 @@ date: 2019-10-14
 url: 2019-10-14-ipfs-camp-keynotes-interviews
 title: IPFS Camp Keynotes and Interviews
 author: Molly Mackinlay
+header_image: 060-ipfs-camp-keynotes-interviews.png
 ---
 
 If you've been following the many IPFS Camp updates here in the blog, you've likely already explored the videos from our [lightning talks](https://github.com/ipfs/camp#%EF%B8%8F-lightning-talks), [deep dives](https://github.com/ipfs/camp#-deep-dives), [poster projects](https://github.com/ipfs/camp#-poster-projects), [core and elective courses](https://github.com/ipfs/camp#-core--elective-courses), and most recently [the SciFi Fair](https://github.com/ipfs/camp#-sci-fi-fair). Today, we're excited to share the **Keynotes** that brought us together on our first and last days of IPFS Camp, and the **Community Interviews** that highlight some of the amazing work being done by IPFS Camp attendees in the wider ecosystem.

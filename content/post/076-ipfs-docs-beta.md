@@ -3,6 +3,7 @@ date: 2020-01-07
 url: 2020-01-07-ipfs-docs-beta
 title: The new IPFS Docs beta is live! 📚 🆕
 author: Jessica Schilling
+header_image: 076-ipfs-docs-beta.png
 ---
 
 **We’re excited to announce [the new IPFS documentation site is live in beta](https://docs-beta.ipfs.io/)!** The doors are open, and just like any housewarming, you’re cordially invited to stop by, have a look around, and let us know what you think.

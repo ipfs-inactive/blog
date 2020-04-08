@@ -3,6 +3,7 @@ date: 2020-01-09
 url: 2020-01-09-collaborative-clusters
 title: Announcing collaborative clusters
 author: Hector Sanjuan
+header_image: 077-collaborative-clusters.png
 ---
 
 We are very excited to announce the first set of public *collaborative
