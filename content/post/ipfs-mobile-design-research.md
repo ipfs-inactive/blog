@@ -39,7 +39,7 @@ The survey reviews will cover current uses and applications of IPFS and P2P in m
 
 ## What's Next
 
-As we wrap up the research phase of the Mobile Design Guidelines, we'll share the insights from this phase and kick off work on the next. We're looking forward to engage the community in building a better, safer internet that works on the devices you're probably reading this on.
+As we wrap up the research phase of the Mobile Design Guidelines, we'll share the insights from this phase and kick off work on the next. We're looking forward to engaging the community to build a better, safer internet that works on the devices you're probably reading this on.
 
 Learn more in the [project repository](https://github.com/ipfs/mobile-design-guidelines) and join the [Telegram channel](https://t.me/joinchat/H8bKHhSATdsqbPJsPIzcfw).
 
