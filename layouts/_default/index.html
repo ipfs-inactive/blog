@@ -31,13 +31,13 @@
             <p>Starlog entries: <code>{{ len $pages }}</code></p>
 
             <div class="grid-flex-container">
-                {{ range sort $pages }}
+                {{ range .Paginator.Pages }}
                 <div class="grid-flex-cell-1of2">
                     <div class="illustration">
                         {{ if .Params.header_image }}
-                            <img src="header_images/{{ .Params.header_image }}">
+                            <img src="/header_images/{{ .Params.header_image }}">
                         {{ else }}
-                            <img src="header_images/blog-placeholder.png">
+                            <img src="/header_images/blog-placeholder.png">
                         {{ end }}
                     </div>
                     <h5 class="content-center">
@@ -50,6 +50,9 @@
                 </div>
                 {{ end }}
             </div>
+            <center>
+                {{ partial "pagination" . }}
+            </center>
 
         </div> <!-- container -->
 
