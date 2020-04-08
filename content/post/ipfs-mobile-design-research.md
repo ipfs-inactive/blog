@@ -1,6 +1,6 @@
 ---
-date: 2020-04-07
-url: 2020-04-07-ipfs-mobile-design-research
+date: 2020-04-08
+url: 2020-04-08-ipfs-mobile-design-research
 title: IPFS Mobile Design Research
 author: Jim Kosem, Dietrich Ayala
 tags: mobile-design-guidelines, Mobile, Design, Research
