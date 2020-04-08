@@ -34,7 +34,9 @@
                 {{ range .Paginator.Pages }}
                 <div class="grid-flex-cell-1of2">
                     <div class="illustration">
-                        {{ if .Params.header_image }}
+                        {{ if in .Title "IPFS Weekly" }}
+                        <img src="/header_images/ipfs-weekly-placeholder.png">
+                        {{ else if .Params.header_image }}
                             <img src="/header_images/{{ .Params.header_image }}">
                         {{ else }}
                             <img src="/header_images/blog-placeholder.png">
