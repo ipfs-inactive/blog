@@ -82,8 +82,28 @@ Now edit the metadata at the top of the file
 - `title` - used as the `h1` on the post page, and the name of the post on the index page. **required**
 - `tags` - don't appear to be used right now, but set them anyone, as we'll want to add a "see more posts like this one" feature one day.
 - `url` - can be used to override the post url if needed.
+- `header_image` - name of the image displayed on the [blog homepage](https://blog.ipfs.io/). If no image is set, a [default header image](https://raw.githubusercontent.com/ipfs/blog/blog-picture-list/static/header_images/blog-placeholder.png) is shown. See [Custom header image](#custom-header-image) for more details.
 
 We have a process for creating and reviewing content before it gets published. **Please review [PIPELINE.md](./PIPELINE.md) for the details.**
+
+#### Custom header image
+
+Each post can have a custom image that is shown on the [blog homepage](https://blog.ipfs.io/). To set an image:
+
+1. Create the image you want to use and crop it to `500px` by `250px`.
+1. Move the image into `static\header_images`.
+1. Rename the image to match the file name of your post. For example, the `085-announcing-rust-ipfs.md` post uses `085-announcing-rust-ipfs.png` as it's header.
+1. In the post markdown, edit the front-matter to include the `header_image` variable:
+
+	```markdown
+	header_image: 085-announcing-rust-ipfs.png
+	```
+	
+1. Push your changes.
+
+##### Weekly updates
+
+The IPFS Weekly posts automatically use the `static/header_images/ipfs-weekly-placeholder.png` and don't need the `header_image`  variable in the front-matter.
 
 ### Editing
 
