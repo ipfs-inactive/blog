@@ -46,6 +46,9 @@ The Async Await refactor finally [lands in js-ipfs internals](https://blog.ipfs.
 **Our collaboration with Netflix leads to new improvements to IPFS Bitswap**
 Our mission—[a container distribution challenge Netflix wanted to address](https://blog.ipfs.io/2020-02-14-improved-bitswap-for-container-distribution/)—how to efficiently pull container images in a large scale, multi-region environment. But how?
 
+**Fleek debuts as the easiest way to build, deploy, and host websites & apps on IPFS**
+Formerly Terminal, [Fleek](https://fleek.co/) arrives on the scene to provide everything you need to build fast modern websites hosted on IPFS. [See their many tutorials](https://blog.fleek.co/) ranging from using Jekyll to Wordpress, Next.js and more!  
+
 **Berty releases gomobile-ipfs 📱**
 Finally, a library that aims to provide packages for Android, iOS, and React-Native that allow one to run and use an IPFS node on mobile devices. [Read the full announcement here](https://berty.tech/blog/go-mobile-ipfs).
 
