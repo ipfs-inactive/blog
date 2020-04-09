@@ -3,7 +3,7 @@ date: 2019-05-22
 url: 89-js-ipfs-0-36
 title: js-ipfs 0.36.0 released
 author: Alan Shaw
-header_image: 047-js-ipfs-0.36.png
+header_image: js-ipfs-placeholder.png
 ---
 
 > URL safe CIDs, refs commands, DOM File support and more!

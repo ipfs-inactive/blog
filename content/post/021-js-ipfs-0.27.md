@@ -3,6 +3,7 @@ date: 2017-12-02
 url: 32-js-ipfs-0-27
 title: js-ipfs 0.27.0 released
 author: David Dias
+header_image: js-ipfs-placeholder.png
 ---
 
 I'm happy to announce that js-ipfs v0.27.0 has been released!  This release brings a new transport to the libp2p family, perf improvements and stability (add files with 10x the size!), Windows support, bug fixes and more!

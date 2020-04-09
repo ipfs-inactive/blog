@@ -3,7 +3,7 @@ date: 2020-02-13
 url: 2020-02-13-js-ipfs-0-41
 title: js-ipfs 0.41.0 released
 author: Alan Shaw
-header_image: 083-js-ipfs-0.41.png
+header_image: js-ipfs-placeholder.png
 ---
 
 # 🔦 Highlights

@@ -3,6 +3,7 @@ date: 2017-07-12
 url: 28-js-ipfs-0-25
 title: js-ipfs 0.25.0 released
 author: David Dias
+header_image: js-ipfs-placeholder.png
 ---
 
 Today, we've released js-ipfs 0.25.0. This release is mostly maintenance, bug fixing and bringing some of the internal components up to their latest versions.
