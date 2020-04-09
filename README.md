@@ -10,11 +10,11 @@
 
 - [Usage](#usage)
 - [Publishing Post](#create-a-new-blog-post)
-  - [Editing](#editing)
-  - [Publishing](#publishing)
-  - [Translating](#translating-%EF%B8%8F) (optional)
+    - [Editing](#editing)
+    - [Publishing](#publishing)
+    - [Translating](#translating-%EF%B8%8F) (optional)
 - [Contribute](#contribute)
-  - [Want to hack on IPFS?](#want-to-hack-on-ipfs)
+    - [Want to hack on IPFS?](#want-to-hack-on-ipfs)
 - [License](#license)
 
 
@@ -85,6 +85,7 @@ Now edit the metadata at the top of the file.
 - `tags` - don't appear to be used right now, but set them anyway as we'll want to add a _see more posts like this one_ feature one day.
 - `url` - can be used to override the post URL if needed.
 - `header_image` - name of the image displayed on the [blog homepage](https://blog.ipfs.io/). If no image is set, a [default header image](https://raw.githubusercontent.com/ipfs/blog/blog-picture-list/static/header_images/blog-placeholder.png) is shown. See [Custom header image](#custom-header-image) for more details.
+- `snippet` - the short string of text that is displayed for each post on the [blog homepage](https://blog.ipfs.io). If no snippet is set, the first ~20 words are shown.
 
 We have a process for creating and reviewing content before it gets published. **Please review [PIPELINE.md](./PIPELINE.md) for the details.**
 
