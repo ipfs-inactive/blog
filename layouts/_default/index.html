@@ -40,11 +40,11 @@
                             <img src="/header_images/blog-placeholder.png">
                         {{ end }}
                     </div>
-                    <h5 class="content-center">
-                        <a class="post-header" href="{{ .RelPermalink }}">{{ .Title }}</a><br>
+                    <h5 class="content-center post-header">
+                        <a href="{{ .RelPermalink }}">{{ .Title }}</a><br>
                         <span class="date">{{ dateFormat "2006-01-02" .Date }}</span>
                     </h5>
-                    <p>
+                    <p class="post-snippet">
                         {{ if .Params.snippet }}
                             {{ .Params.snippet }}
                         {{ else }}
