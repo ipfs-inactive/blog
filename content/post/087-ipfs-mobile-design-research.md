@@ -1,6 +1,6 @@
 ---
-date: 2020-04-08
-url: 2020-04-08-ipfs-mobile-design-research
+date: 2020-04-10
+url: 2020-04-10-ipfs-mobile-design-research
 title: IPFS Mobile Design Research
 author: Jim Kosem, Dietrich Ayala
 tags: mobile-design-guidelines, Mobile, Design, Research
@@ -10,14 +10,13 @@ The focus of development of IPFS to date has been primarily on desktop and serve
 
 This growth at the furthest edge of the network requires solutions at the edge. While the IPFS network continues to grow on mobile (for instance, IPFS now has default support on Opera for Android), more research is needed for the value of the network to be fully realized. IPFS should be directly available and accessible to end users in all their devices - and the design of IPFS integrations should make this clear and easy to use. To create that level of clarity, developers need good guidelines that align with user needs while unlocking all the power of the mobile dweb.
 
-![Graph of global internet device sales showing 
-devices explosively growing from 2005 to 2016.](https://i.imgur.com/aoBO47b.jpg)
+![Graph of global internet device sales showing devices explosively growing from 2005 to 2016.](https://i.imgur.com/aoBO47b.jpg)
 
 In emerging markets and for under-served audiences and marginalized or oppressed peoples the need for data sovereignty, offline-first applications and trustable computing is especially dire, so IPFS should function optimally on the devices used by them in order to serve their use-cases.
 
 ## Research + Design
 
-Instead of jumping directly into [mobile implementation](https://github.com/ipfs/roadmap/issues/45), we created the **IPFS Mobile Design Guidelines project**: an initiative to research and codify existing best practices for P2P protocol support on mobile. This effort aims to create an informed and research-backed set of guidelines for IPFS and the broader P2P and dweb communities to support growth and ease-of-use on mobile. 
+Instead of jumping directly into [mobile implementation](https://github.com/ipfs/roadmap/issues/45), we created the **IPFS Mobile Design Guidelines project**: an initiative to research existing P2P protocol use in mobile apps, and create an informed and research-backed set of design guidelines and best-practices for IPFS and the broader P2P and dweb communities to support growth and ease-of-use on mobile. 
 
 The IPFS Mobile Design Guidelines work began in early March 2020 with a research phase investigating usage of mobile internet, cloud services, and P2P / IPFS tools - along with research on wider mobile data sharing and receiving workflows. The guidelines research is the beginning of an open body of design research intended to serve the community and inform efforts to use IPFS in mobile applications, and to use mobile devices to build resilient networks that serve the people holding them.
 
