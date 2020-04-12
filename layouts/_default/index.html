@@ -22,10 +22,10 @@
             </p>
 
             {{ $pages := (where (where .Site.Pages "Section" "post") "Kind" "page") }}
-                {{ range .Site.Home.Translations }}
-                {{ if eq .Site.Language.Lang  "en" }}
-                    {{ $pages = $pages | lang.Merge (where (where .Site.Pages "Section" "post") "Kind" "page") }}
-                {{ end }}
+            {{ range .Site.Home.Translations }}
+            {{ if eq .Site.Language.Lang  "en" }}
+            {{ $pages = $pages | lang.Merge (where (where .Site.Pages "Section" "post") "Kind" "page") }}
+            {{ end }}
             {{ end }}
 
             <p>Starlog entries: <code>{{ len $pages }}</code></p>
@@ -33,22 +33,24 @@
             <div class="grid-flex-container">
                 {{ range .Paginator.Pages }}
                 <div class="grid-flex-cell-1of2">
-                    <div class="illustration">
-                        {{ if .Params.header_image }}
+                    <a href="{{ .RelPermalink }}">
+                        <div class="illustration">
+                            {{ if .Params.header_image }}
                             <img src="/header_images/{{ .Params.header_image }}">
-                        {{ else }}
+                            {{ else }}
                             <img src="/header_images/blog-placeholder.png">
-                        {{ end }}
-                    </div>
+                            {{ end }}
+                        </div>
+                    </a>
                     <h5 class="content-center post-header">
                         <a href="{{ .RelPermalink }}">{{ .Title }}</a><br>
                         <span class="date">{{ dateFormat "2006-01-02" .Date }}</span>
                     </h5>
                     <p class="post-snippet">
                         {{ if .Params.snippet }}
-                            {{ .Params.snippet }}
+                        {{ .Params.snippet }}
                         {{ else }}
-                            {{ .Summary }}
+                        {{ .Summary }}
                         {{ end }}
                     </p>
                 </div>
