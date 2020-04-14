@@ -15,7 +15,7 @@ It reduces the size of the minified bundle by 7.5% for faster downloads and more
 
 ## 🤖 Automated publishing of RCs
 
-Release Candidate builds of [`js-ipfs`](https://www.npmjs.com/package/ipfs) and [`ipfs-http-client`](https://www.npmjs.com/package/ipfs-http-client) are now being published to npm with every build of master, so you can try out the very bleeding edge with:
+Release Candidate builds of [`js-ipfs`](https://www.npmjs.com/package/ipfs) and [`js-ipfs-http-client`](https://www.npmjs.com/package/ipfs-http-client) are now being published to npm with every build of master, so you can try out the very bleeding edge with:
 
 ```console
 $ npm install -g ipfs@next
@@ -70,9 +70,9 @@ $ cat ./file.txt | jsipfs add --mode 0500
 
 A common observation made about IPFS development is that there are so many repos to gain knowledge of, it’s hard to know how everything fits together and where a problem might originate, all of which makes it hard to start contributing.
 
-Contributors will sometimes spend precious time crafting one PR, only to be told they need to make additional PRs to repos they didn't even know existed in order to land their intial change. This often ends up being too much of a barrier for developers who have external time pressures we aren’t aware of.
+Contributors will sometimes spend precious time crafting one PR, only to be told they need to make additional PRs to repos they didn't even know existed in order to land their initial change. This often ends up being too much of a barrier for developers who have external time pressures we aren’t aware of.
 
-Features must be staged accross multiple releases from multiple repos, any of which have the possibility of blocking other work streams if human error bugs are introduced, or perhaps a piece of work was not a fully specified as it needed to be.
+Features must be staged across multiple releases from multiple repos, any of which have the possibility of blocking other work streams if human error bugs are introduced, or perhaps a piece of work was not as fully specified as it needed to be.
 
 To start to address this we’ve consolidated `js-ipfs`, `js-ipfs-http-client` and `interface-js-ipfs-core` into [one repository](https://github.com/ipfs/js-ipfs). This made sense because a given IPFS feature is typically implemented in `js-ipfs`, exposed over http by the http client and tests are added to the interface suite to ensure everything works together - now you will be able to make that sort of change in **one PR instead of three!**
 
