@@ -23,7 +23,7 @@ or
 $ npm install ipfs-http-client@next
 ```
 
-This will download and install a version of `js-ipfs` and/or `ipfs-http-client` created from the last successful [build](https://travis-ci.com/github/ipfs/js-ipfs/branches) of master with no github URLs in the production dependency tree.
+This will download and install a version of `js-ipfs` and/or `ipfs-http-client` created from the last successful [build](https://travis-ci.com/github/ipfs/js-ipfs/branches) of master with no GitHub URLs in the production dependency tree.
 
 ## 🛳️ Updated Docker containers
 
@@ -68,21 +68,21 @@ $ cat ./file.txt | jsipfs add --mode 0500
 
 ## 💍 One PR to rule them all
 
-A common observation made about IPFS development is that there are so many repos to gain knowledge of, it's hard to know how everything fits together and so where a problem might originate, all of which makes it hard to start contributing.
+A common observation made about IPFS development is that there are so many repos to gain knowledge of, it’s hard to know how everything fits together and where a problem might originate, all of which makes it hard to start contributing.
 
-Contributors will sometimes spend precious time crafting one PR, only to be told they need to make additional PRs to repos they didn't even know existed in order to land their intial change, which can be too much of a barrier developers who have external time pressures we aren't aware of.
+Contributors will sometimes spend precious time crafting one PR, only to be told they need to make additional PRs to repos they didn't even know existed in order to land their intial change. This often ends up being too much of a barrier for developers who have external time pressures we aren’t aware of.
 
-Features must be staged accross multiple releases from multiple repos, any of which have the possibility of blocking other work streams if through human error bugs are introduced or perhaps a piece of work was not a fully specified as it needed to be.
+Features must be staged accross multiple releases from multiple repos, any of which have the possibility of blocking other work streams if human error bugs are introduced, or perhaps a piece of work was not a fully specified as it needed to be.
 
-To start to address this we've consolidated `js-ipfs`, `js-ipfs-http-client` and `interface-js-ipfs-core` into [one repository](https://github.com/ipfs/js-ipfs).  This made sense because a given IPFS feature is typically implemented in `js-ipfs`, exposed over http by the http client and tests are added to the interface suite to ensure everything works together - now you will be able to make that sort of change in one PR instead of three!
+To start to address this we’ve consolidated `js-ipfs`, `js-ipfs-http-client` and `interface-js-ipfs-core` into [one repository](https://github.com/ipfs/js-ipfs). This made sense because a given IPFS feature is typically implemented in `js-ipfs`, exposed over http by the http client and tests are added to the interface suite to ensure everything works together - now you will be able to make that sort of change in **one PR instead of three!**
 
-It's our hope that this will go some way towards simplifying IPFS development and will encourage new contributors to pitch in and help us build a the platform to power the distributed web.
+It’s our hope that this will go some way towards simplifying IPFS development and will encourage new contributors to pitch in and help us build a platform to power the distributed web.
 
 ## 🗺️ What's next?
 
-To get a better view on what's coming up in `js-ipfs` releases, we've put a [Project Roadmap](https://github.com/orgs/ipfs/projects/6) togther that contains headline features organised in the order we hope them to land.
+To get a better view on what’s coming up in `js-ipfs` releases, we’ve put a [Project Roadmap](https://github.com/orgs/ipfs/projects/6) together that contains headline features organised in the order we hope them to land.
 
-Only Large features are called out in the roadmap, expect lots of small bugfx releases between the roadmapped items!
+Only large features are called out in the roadmap, expect lots of small bugfix releases between the roadmapped items!
 
 # 😍 Huge thank you to everyone that made this release possible
 
@@ -177,17 +177,17 @@ Only Large features are called out in the roadmap, expect lots of small bugfx re
 
 # 🙌🏽 Want to contribute?
 
-Would you like to contribute to the IPFS project and don't know how? Well, there are a few places you can get started:
+Would you like to contribute to the IPFS project and don’t know how? Well, there are a few places you can get started:
 
 - Check the issues with the `help wanted` label in the [js-ipfs repo](https://github.com/ipfs/js-ipfs/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22)
-- Join an IPFS All Hands, introduce yourself and let us know where you would like to contribute - https://github.com/ipfs/team-mgmt/#weekly-ipfs-all-hands
+- Join an IPFS All Hands, introduce yourself and let us know where you would like to contribute: https://github.com/ipfs/team-mgmt/#weekly-ipfs-all-hands
 - Hack with IPFS and show us what you made! The All Hands call is also the perfect venue for demos, join in and show us what you built
 - Join the discussion at https://discuss.ipfs.io/ and help users finding their answers.
 - Join the [🚀 IPFS Core Implementations Weekly Sync 🛰](https://github.com/ipfs/team-mgmt/issues/992) and be part of the action!
 
 # ⁉️ Do you have questions?
 
-The best place to ask your questions about IPFS, how it works and what you can do with it is at [discuss.ipfs.io](https://discuss.ipfs.io). We are also available at the `#ipfs` channel on Freenode.
+The best place to ask your questions about IPFS, how it works, and what you can do with it is at [discuss.ipfs.io](https://discuss.ipfs.io). We are also available at the `#ipfs` channel on Freenode.
 
 [UnixFS]: https://docs.ipfs.io/guides/concepts/unixfs/
 [CID]: https://docs.ipfs.io/guides/concepts/cid/
