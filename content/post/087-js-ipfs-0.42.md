@@ -55,7 +55,7 @@ $ jsipfs mkdir /directory --mtime 1000 --mtime-nsecs 5
 $ cat ./file.txt | jsipfs add --mode 0500
 ```
 
-## 🔨 Breaking changes
+## 🔨 Breaking changes
 
 - [HAMT](https://en.wikipedia.org/wiki/Hash_array_mapped_trie) sharded directories are now reported as having a type of `'directory'` from `ipfs.files.stat` in line with `go-ipfs`
 - When specifying metadata and `--raw-leaves` to `ipfs.add`, if the file is small enough to fit into one block, `--raw-leaves` is ignored and a [UnixFS][] entry is created (previously the returned [CID][] would have a codec of `raw`)
