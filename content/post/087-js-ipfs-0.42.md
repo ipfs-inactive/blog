@@ -25,7 +25,7 @@ or
 $ npm install ipfs-http-client@next
 ```
 
-This will download and install a version of `js-ipfs` and/or `ipfs-http-client` created from the last successful [build](https://travis-ci.com/github/ipfs/js-ipfs/branches) of master with no GitHub URLs in the production dependency tree.
+This will download and install a version of `js-ipfs` and/or `js-ipfs-http-client` created from the last successful [build](https://travis-ci.com/github/ipfs/js-ipfs/branches) of master with no GitHub URLs in the production dependency tree.
 
 ## 🛳️ Updated Docker containers
 
@@ -78,7 +78,7 @@ Features must be staged across multiple releases from multiple repos, any of whi
 
 To start to address this we’ve consolidated `js-ipfs`, `js-ipfs-http-client` and `interface-js-ipfs-core` into [one repository](https://github.com/ipfs/js-ipfs). This made sense because a given IPFS feature is typically implemented in `js-ipfs`, exposed over http by the http client and tests are added to the interface suite to ensure everything works together - now you will be able to make that sort of change in **one PR instead of three!**
 
-It’s our hope that this will go some way towards simplifying IPFS development and will encourage new contributors to pitch in and help us build a platform to power the distributed web.
+It’s our hope that this will go some way towards simplifying IPFS development and will encourage new contributors to pitch in and help us build the platform to power the distributed web.
 
 ## 🗺️ What's next?
 
