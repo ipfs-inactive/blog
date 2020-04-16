@@ -13,6 +13,8 @@ author: Alex Potsides
 
 It reduces the size of the minified bundle by 7.5% for faster downloads and more responsive web apps!
 
+We've also merged some of our repos together, our hope is that this will make contributing easier and encourage experimentation as there will be fewer PRs to juggle to land a piece of functionality!
+
 ## 🤖 Automated publishing of RCs
 
 Release Candidate builds of [`js-ipfs`](https://www.npmjs.com/package/ipfs) and [`js-ipfs-http-client`](https://www.npmjs.com/package/ipfs-http-client) are now being published to npm with every build of master, so you can try out the very bleeding edge with:
@@ -62,9 +64,9 @@ $ cat ./file.txt | jsipfs add --mode 0500
 
 ## 🦟 Bugs fixed
 
-- WebRTC configuration is now passed to the libp2p WebRTC transport correctly
-- Unknown CLI commands now cause the process to exit with a non-zero exit code
-- Running Prometheus metrics in Docker containers no longer prevent the container from starting
+- WebRTC configuration is now passed to the libp2p WebRTC transport correctly [ipfs/js-ipfs#2966](https://github.com/ipfs/js-ipfs/pull/2966)
+- Unknown CLI commands now cause the process to exit with a non-zero exit code [ipfs/js-ipfs#2916](https://github.com/ipfs/js-ipfs/pull/2916)
+- Running Prometheus metrics in Docker containers no longer prevent the container from starting [ipfs/js-ipfs#2952](https://github.com/ipfs/js-ipfs/issues/2952)
 
 ## 💍 One PR to rule them all
 
