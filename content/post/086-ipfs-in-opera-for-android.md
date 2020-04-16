@@ -10,22 +10,22 @@ author: Dietrich Ayala
 
 As we hinted in our previous post about [IPFS in web browsers](https://blog.ipfs.io/2019-10-08-ipfs-browsers-update/), IPFS support in the Opera web browser has been in development for some time.
 
-Today, **Opera for Android 57** is live in the Google Play Store with default support for IPFS! [Install Opera Android with IPFS now](https://play.google.com/store/apps/details?id=com.opera.browser).
+Today, **Opera for Android 57** is live in the Google Play Store with default support for IPFS with a native handler for `ipfs://` addresses that redirects to the HTTP gateway of your choosing! [Install Opera Android with IPFS now](https://play.google.com/store/apps/details?id=com.opera.browser).
 
 [![Screenshot of Opera for Android in the Google Play Store, linked to the URL of that page](/img/086-ipfs-in-opera-for-android/opera-android-play-store.png)](https://play.google.com/store/apps/details?id=com.opera.browser)
 
 
 This release is a huge leap forward for the IPFS project, with a couple of important milestones:
 
-* This is the first time IPFS is *enabled by default*, right out of the box, in a production release of a major web browser.
-* This is the first time IPFS is able to be used directly as an *addressable protocol* in a production release of a mainstream web browser. You can type ipfs:// in the address bar, and Opera for Android will load the provided content address!
-* This is the first *mobile* web browser that is shipping IPFS support in a production release, easing access to decentralized content on the devices used by most internet users around the world.
+* This is the first time IPFS features are *enabled by default*, right out of the box, in a production release of a major web browser.
+* This is the first time IPFS is implemented as an *addressable protocol* in a production release of a mainstream web browser. You can type ipfs:// in the address bar, and Opera for Android will load the provided content address.
+* This is the first *mobile* web browser that is shipping IPFS features in a production release, easing access to decentralized content on the devices used by most internet users around the world.
 
 This is not just a win for IPFS, but for the distributed web, peer-to-peer, and the idea of content addressability:
 
 *For the first time, a major web browser does not ask the user to specify which server the content should be fetched from.*
 
-This is a paradigmatic change in the network architecture of the web! This type of bold experimentation by companies like Opera advances our goal of truly putting users in control of their experience on the internet.
+IPFS and other peer-to-peer protocols are a paradigmatic change to the network architecture of the web - full integration into browsers and web platform will be a very long road. While this type of integration is not a *full* node, it is this type of bold experimentation by companies like Opera that advances our goal of truly putting users in control of their experience on the internet.
 
 ## Using IPFS in Opera for Android
 
