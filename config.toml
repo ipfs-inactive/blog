@@ -7,6 +7,8 @@ DefaultContentLanguage = "en"
 languageCode = "en-us"
 hasCJKLanguage = true
 enableMissingTranslationPlaceholders = false
+summaryLength = 20
+paginate = 10
 
 [params]
   domain = "blog.ipfs.io"

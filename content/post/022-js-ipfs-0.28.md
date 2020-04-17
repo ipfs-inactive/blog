@@ -3,6 +3,7 @@ date: 2018-03-16
 url: 33-js-ipfs-0-28
 title: js-ipfs 0.28.0 released
 author: David Dias
+header_image: js-ipfs-placeholder.png
 ---
 
 Excited to share with you all today that js-ipfs v0.28.0 has been released! This release brings a panoply of bug fixes, perf improvements, testing improvements and new features. Upgrading to this version should be smooth.

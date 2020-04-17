@@ -3,6 +3,7 @@ date: 2019-08-06
 url: 2019-08-06-js-ipfs-0-37
 title: js-ipfs 0.37.0 released
 author: Alan Shaw
+header_image: js-ipfs-placeholder.png
 ---
 
 > New constructor, better DNSLink support and delegated routing!

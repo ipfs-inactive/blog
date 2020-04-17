@@ -3,6 +3,7 @@ date: 2020-02-07
 url: 2020-02-07-ethdenver-2020
 title: Hack with us at ETHDenver
 author: Jenn Turner
+header_image: 082-ethdenver-2020.png
 ---
 
 ![IPFS at ETHDenver 2020](https://user-images.githubusercontent.com/50103/73981264-bbe13d00-48e6-11ea-8446-033257df44bc.png)

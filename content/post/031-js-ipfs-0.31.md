@@ -3,6 +3,7 @@ date: 2018-07-29
 url: 42-js-ipfs-0-31
 title: js-ipfs 0.31.0 released
 author: Alan Shaw
+header_image: js-ipfs-placeholder.png
 ---
 
 Restoring IPFS magic one alakazam at a time...no we're not talking pokemon.

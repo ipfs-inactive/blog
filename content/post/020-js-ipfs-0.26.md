@@ -3,6 +3,7 @@ date: 2017-09-13
 url: 30-js-ipfs-0-26
 title: js-ipfs 0.26.0 released
 author: David Dias
+header_image: js-ipfs-placeholder.png
 ---
 
 Today, we've released js-ipfs 0.26.0. This release brings bug fixes, performance improvements, git support, http gateway and more!
