@@ -3,6 +3,7 @@ date: 2020-04-16
 url: 2020-04-16-ipfs-grants-platform
 title: IPFS Grants Platform
 author: Arkadiy Kukarkin
+tags: grants, COVID, bounties
 ---
 
 If you've spent time in the web3 ecosystem, you've probably come across work that was supported by an IPFS ecosystem development grant. The [ENS integration work funded in 2019](https://medium.com/the-ethereum-name-service/ethdns-9d56298fa38a) established a de facto standard for [decentralized website hosting](https://app.ens.domains/name/ethereum.eth). A 2018 grant to Peergos to build a new scalable capabilities system helped define an exemplar for distributed access controls for mutable data. And a [shared grant with NearForm](https://www.nearform.com/blog/a-quic-update-for-node-js/) helped implement Node.js support for the new QUIC protocol. These grants help support and acellerate the ecosystem of developers building on IPFS, and contribute to our mission to create a resilient, upgradeable, open network to preserve and grow humanity's knowledge.
