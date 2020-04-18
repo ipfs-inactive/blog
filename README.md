@@ -104,10 +104,6 @@ Each post can have a custom image that is shown on the [blog homepage](https://b
 	
 1. Push your changes.
 
-##### Weekly updates
-
-The IPFS Weekly posts automatically use the `static/header_images/ipfs-weekly-placeholder.png` and don't need the `header_image`  variable in the front-matter.
-
 ### Editing
 
 Submit a Github PR with your changes, and request a review.
