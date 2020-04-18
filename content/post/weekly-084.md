@@ -3,7 +3,6 @@ date: 2020-04-08
 url: weekly-84
 translationKey: ipfs-weekly-84
 tags: weekly
-header_image: weekly-newsletter.png
 title: IPFS Weekly Q1 2020 Recap 🎉
 author: Jenn Turner
 ---
