@@ -60,8 +60,8 @@ $ cat ./file.txt | jsipfs add --mode 0500
 
 ## 🔨 Breaking changes
 
-- [HAMT](https://en.wikipedia.org/wiki/Hash_array_mapped_trie) sharded directories are now reported as having a type of `'directory'` from `ipfs.files.stat` in line with `go-ipfs`
-- When specifying metadata and `--raw-leaves` to `ipfs.add`, if the file is small enough to fit into one block, `--raw-leaves` is ignored and a [UnixFS][] entry is created (previously the returned [CID][] would have a codec of `raw`)
+- [HAMT](https://en.wikipedia.org/wiki/Hash_array_mapped_trie) sharded directories are now reported as having a type of `'directory'` from `ipfs.files.stat` in line with `go-ipfs` [ipfs/js-ipfs#2811](https://github.com/ipfs/js-ipfs/pull/2811)
+- When specifying metadata and `--raw-leaves` to `ipfs.add`, if the file is small enough to fit into one block, `--raw-leaves` is ignored and a [UnixFS][] entry is created (previously the returned [CID][] would have a codec of `raw`) [ipfs/js-ipfs-unixfs#44](https://github.com/ipfs/js-ipfs-unixfs/pull/44)
 
 ## 🦟 Bugs fixed
 
@@ -75,9 +75,11 @@ A common observation made about IPFS development is that there are so many repos
 
 Contributors will sometimes spend precious time crafting one PR, only to be told they need to make additional PRs to repos they didn't even know existed in order to land their initial change. This often ends up being too much of a barrier for developers who have external time pressures or have other shiny PRs to push on.
 
-Features must be staged across multiple releases from multiple repos, any of which have the possibility of blocking other work streams if human error bugs are introduced, or perhaps a piece of work was not as fully specified as it needed to be.
+Features must be staged across multiple releases from multiple repos, and any of these releases have the potential to block unrelated work streams in other repos & projects purely through human error - bugs may be introduced, or perhaps a follow up piece of work becomes necessary.  With multiple releases from multiple repos it also becomes hard to roll back these changes; it's a last resort tactic but denying us it's use because our module release process is complicated is an artificial constraint of our own making.
 
-To start to address this we’ve consolidated `js-ipfs`, `js-ipfs-http-client` and `interface-js-ipfs-core` into [one repository](https://github.com/ipfs/js-ipfs). This made sense because a given IPFS feature is typically implemented in `js-ipfs`, exposed over http by the http client and tests are added to the interface suite to ensure everything works together - now you will be able to make that sort of change in **one PR instead of three!**
+To start to address this we’ve consolidated `js-ipfs`, `js-ipfs-mfs`, `js-ipfs-multipart`, `js-ipfs-http-client` and `interface-js-ipfs-core` into [one repository](https://github.com/ipfs/js-ipfs).
+
+This made sense because a given IPFS feature is typically implemented in `js-ipfs`, exposed over http by the http client and tests are added to the interface suite to ensure everything works together - now you will be able to make that sort of change in **one PR instead of three!**
 
 It’s our hope that this will go some way towards simplifying IPFS development and will encourage new contributors to pitch in and help us build the platform to power the distributed web.
 
