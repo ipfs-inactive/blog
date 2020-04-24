@@ -1,6 +1,6 @@
 ---
-date: 2020-04-22
-url: 2020-04-22-ipfs-mobile-design-research-findings
+date: 2020-04-24
+url: 2020-04-24-ipfs-mobile-design-research-findings
 title: IPFS Mobile Design Research Findings
 author: Jim Kosem, Dietrich Ayala
 tags: mobile-design-guidelines, Mobile, Design, Research
@@ -8,7 +8,7 @@ tags: mobile-design-guidelines, Mobile, Design, Research
 
 # IPFS Mobile Design Research Findings
 
-For IPFS to succeed, it needs to be where people will use it, and for the vast majority around the world that is on their smartphones. In the [introductory post for this project](), we laid out the intent of this project - to provide a foundation for successful IPFS apps on mobile by understanding how people are building, using and thinking about P2P and IPFS on mobile today, and then publishing tools to guide the next wave of application builders.
+For IPFS to succeed, it needs to be where people will use it, and for the vast majority around the world that is on their smartphones. In the [introductory post](https://blog.ipfs.io/2020-04-10-ipfs-mobile-design-research/), we laid out the intent of this project - to provide a foundation for successful IPFS apps on mobile by understanding how people are building, using and thinking about P2P and IPFS on mobile today, and then publishing tools to guide the next wave of application builders.
 
 In this first phase of the work, we carried out primary research and analysis consisting of qualitative interviews, and surveys of technology and interaction methods. We're now ready to publish the results of that research!
 
@@ -16,20 +16,20 @@ A short summary of the findings is below. You can read the full findings and det
 
 ## Application Survey
 
-We surveyed the two most used mobile browsers, Android's Chrome and iOS's Safari. Neither of these browsers has native P2P capabilities, but we surveyed them to understand the mobile users' first stop on the internet and how they may think about sharing from there.
+We surveyed the two most used mobile browsers, Android's Chrome and iOS's Safari. Neither of these browsers has native P2P capabilities, but we surveyed them to understand mobile users' first stop on the internet and how they may think about sharing to and from there.
 
 ![Google Android sharing photo interaction](https://raw.githubusercontent.com/ipfs/mobile-design-guidelines/master/.gitbook/assets/android-chrome-share.png)
 
 
-Mobile sharing of files is a very common activity for all ranges of users, but the type of file shared varies from the desktop. We chose sharing photos as an interaction to study on both Android and iOS. This was to understand how mobile users would think about how to get a file from their phone to another device.
+Mobile sharing of files is a very common activity for all ranges of users, but the type of file shared varies from the desktop. We chose sharing photos as an interaction to study on both Android and iOS. This was to understand clearly how mobile users experience getting a file from their phone to another device.
 
-We then chose and tested a variety of publicly released apps. This was to understand previous approaches to designing and developing mobile P2P applications. The applications explored in the survey were spread across three main areas of use, messaging, posting or community boards. From this we learned what features, interface components and design patterns might work in designing for IPFS for mobile.
+We then tested a variety of publicly released mobile p2p apps. This was to understand previous approaches to designing and developing mobile P2P applications. The applications explored in the survey were spread across three main areas of use: messaging, posting and community boards. From this we learned which features, interface components and design patterns are currently used in designing for P2P on mobile, to inform future designs for IPFS.
 
 ![Status.im's key recovery process](https://raw.githubusercontent.com/ipfs/mobile-design-guidelines/master/.gitbook/assets/status-recover.png)
 
-After in-depth review, we came upon many intriguing approaches to several shared core areas.
+After in-depth review, we found many intriguing approaches to several shared core areas:
 
-* Many apps differed in how they approached onboarding and user education.
+* Apps differed widely in how they approached onboarding and user education.
 * Users were generally made aware of privacy and connection implications with sharing.
 * Identity and account management varied, ranging from typical email login and password to key and seed phrase recovery.
 * We found status and notifications around connection, syncing and download status to be lacking. We found many scenarios where the user could connect to others and send files without confirmation as well.
@@ -39,10 +39,6 @@ After in-depth review, we came upon many intriguing approaches to several shared
 ## User Research
 
 User research began with creating assumptions. We gathered these by speaking with and running a workshop with IPFS stakeholders. These assumptions framed the interviews with the Experts, Early Adopters or Potential Users.
-
-&nbsp;
-
-![](https://i.imgur.com/iKU6qJJ.png)
 
 #### Experts
 
@@ -58,6 +54,6 @@ The Potential Users all showed a great deal of variety in the type of media file
 
 ## Next steps
 
-In the next phase we will develop and publish tools for designers, implementors and builders including design recommendations for the implementation and use of IPFS on mobile. This will take the form of the creation of use cases, interaction design patterns, and interface components design. All of this will be published for the community to use, and to inform the next wave of application builders using IPFS or other P2P protocols.
+In the next phase we will develop and publish tools for designers, implementors and builders including design recommendations for the implementation and use of IPFS on mobile. This will take the form of use cases, interaction design patterns, and interface components design. All of this will be published for the community to use, and to inform the next wave of application builders using IPFS or other P2P protocols. These learnings will also be used to inform our core protocol design as IPFS usage grows and extends beyond desktop and server machines.
 
 As IPFS matures and the community grows, we need to look in earnest at how to involve users. The IPFS Mobile Design Guidelines will bridge user needs with core development and the many builders of apps and services. The design guidelines will unify thinking and best practices, providing necessary components, interaction and interface design frameworks. Look for our next post sharing that work soon.
