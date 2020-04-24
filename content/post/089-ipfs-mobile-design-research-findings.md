@@ -47,7 +47,7 @@ In the interviews, the Experts expressed concern for many potential user issues 
 
 #### EARLY ADOPTERS
 
-Early Adopters thought users should always know what was going on. The app would inform the user with notifications, but they should not be overwhelming. Early Adopters thought privacy and security was crucial. Its management, yet in general was difficult even for advanced users. They emphasised file management, security, permissions, and backup as essential. What was less important was who had the final or original file which was interesting. Most mentioned Single Sign-On (SSO) as a good thing but complex to manage. Finally, most mentioned cloud services like Dropbox as easy to use but not trustworthy.
+Early Adopters thought users should always know what was going on. The app would inform the user with notifications, but they should not be overwhelming. Early Adopters thought privacy and security was crucial, yet in general navigating privacy and security options is difficult even for advanced users. They emphasised file management, security, permissions, and backup as essential. What was less important was who had the final or original file which was interesting. Most mentioned Single Sign-On (SSO) as a good thing but complex to manage. Finally, most mentioned cloud services like Dropbox as easy to use but not trustworthy.
 
 #### POTENTIAL USERS
 
