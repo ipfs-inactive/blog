@@ -6,8 +6,6 @@ author: Jim Kosem, Dietrich Ayala
 tags: mobile-design-guidelines, Mobile, Design, Research
 ---
 
-# IPFS Mobile Design Research Findings
-
 For IPFS to succeed, it needs to be where people will use it, and for the vast majority around the world that is on their smartphones. In the [introductory post](https://blog.ipfs.io/2020-04-10-ipfs-mobile-design-research/), we laid out the intent of this project - to provide a foundation for successful IPFS apps on mobile by understanding how people are building, using and thinking about P2P and IPFS on mobile today, and then publishing tools to guide the next wave of application builders.
 
 In this first phase of the work, we carried out primary research and analysis consisting of qualitative interviews, and surveys of technology and interaction methods. We’re now ready to publish the results of that research!
