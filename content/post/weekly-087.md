@@ -15,7 +15,7 @@ Here’s what’s happening lately in the [InterPlanetary File System](https://i
 ![Announcing IPFS 0.5](/header_images/090-go-ipfs-0-5-0.png)
 
 ## go-ipfs 0.5.0 is officially here 🚀
-We are very excited to announce the latest release of go-ipfs 0.5.0. This release is a major step forward on our journey toward a more efficient, secure, and resilient web to preserve and grow humanity’s knowledge. [Read the full announcement on the blog for more details]( ).
+We are very excited to announce the latest release of go-ipfs 0.5.0. This release is a major step forward on our journey toward a more efficient, secure, and resilient web to preserve and grow humanity’s knowledge. [Read the full announcement on the blog for more details](https://blog.ipfs.io/2020-04-28-go-ipfs-0-5-0/).
 
 ## Join us Friday for the 0.5 Launch Meetup!
 Join the IPFS community for a virtual meetup to dive deeper into what’s in the latest 0.5 release, how to take advantage of these improvements, and how IPFS is being used in the wild today. This event will take place **Friday, May 1, starting at 5pm UTC / 1pm ET / 10am PT**. Meet the IPFS core developers and many of the builders that are deploying IPFS into production, as well as a great line-up of speakers in-store, and also lots of time for Q&A and demos! [Please RSVP to attend](https://www.meetup.com/San-Francisco-IPFS/events/270212268/).
