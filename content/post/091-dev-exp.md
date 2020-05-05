@@ -25,6 +25,8 @@ After discussion with active IPFS contributors and research into other OSS commu
 * New contributors to repositories will now receive automated responses on their first submission, giving context on the process outlined above and reminders for needed information. This will help reduce the number of round trips for contributors and reviewers/maintainers.
 * A [major review of the documentation](https://docs-beta.ipfs.io/) site is already underway to provide better developer documentation for our major implementations and products. [Watch this space!](https://github.com/ipfs/docs/milestones)
 
+![IPFS Autoresponder and labels](/091-dev-exp/labels-autoresponder.png)
+
 At the same time, there are some things that are NOT changing:
 
 * Old issues will not be closed or locked because they are old, or stale, or very low priority. Some parts of the IPFS project have a large backlog and it is important that the information is not lost or dismissed, but can be found by others interested in the topic.
@@ -34,3 +36,4 @@ We want to empower the developer community to build amazing things with IPFS, an
 
 We hope these measures help everyone build a happy and growing IPFS developer community!
 
+![IPFS Contributors](/090-go-ipfs-0-5-0/ipfs-contributors.png)
