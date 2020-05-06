@@ -50,9 +50,10 @@ The cherry on the top of all this is the **observation pipeline (experimental)**
 Want to hit the ground running? Try the following:
 
 1. Head over to the [Getting started](https://docs.testground.ai/getting-started) section of our docs.
-2. Make sure to check out the [testground/testground](https://github.com/testground/testground) repo on GitHub.
-3. Take a peek at some [example test plans](https://github.com/testground/testground/tree/master/plans).
-4. Explore the [reference godocs of the Testground SDK](https://pkg.go.dev/github.com/testground/sdk-go?tab=overview), the library you will use to write Testground test plans.
+2. Read through the [concepts and architecture](https://docs.testground.ai/concepts-and-architecture) behind Testground.
+3. Make sure to check out the [testground/testground](https://github.com/testground/testground) repo on GitHub.
+4. Take a peek at some [example test plans](https://github.com/testground/testground/tree/master/plans).
+5. Explore the [reference godocs of the Testground SDK](https://pkg.go.dev/github.com/testground/sdk-go?tab=overview), the library you will use to write Testground test plans.
 
 <br/>
 
