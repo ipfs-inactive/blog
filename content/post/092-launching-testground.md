@@ -8,7 +8,7 @@ tags: testground, release
 ---
 ![Launching Testground](/header_images/092-launching-testground.png)
 
-
+ 
 Testing peer-to-peer (p2p) systems is hard. Doing so reliably and reproducibly is even harder. Today, **we’re releasing [Testground v0.5](https://github.com/testground/testground/releases/tag/v0.5.0) to the world**. This is a huge milestone for us, and for the wider p2p ecosystem. In this post, we’ll walk you through what Testground is, how to get started, what’s coming next, and the backstory behind Testground itself.
 
 If you followed the [IPFS v0.5.0 release announcements](https://blog.ipfs.io/2020-04-28-go-ipfs-0-5-0/), you will have heard about **Testground**. It was a vital piece of our engineering endeavour and unlocked major improvements in quality, velocity, and reliability. Without [Testground](https://docs.testground.ai/), we would’ve been unable to measure, iterate on, and validate the massive DHT and Bitswap improvements in v0.5.0 at scale.
@@ -117,4 +117,3 @@ Since Day Zero, we recognized the value of Testground to the larger distributed 
 Despite being born out of the IPFS and libp2p projects, **nothing in Testground depends on libp2p or IPFS: there is a grand total of zero imports.** You don't have to use IPFS or libp2p in order to benefit from Testground to test your p2p network (be it a dapp, a blockchain, or another p2p protocol)!
 
 We hope that Testground will accelerate your development and experimentation, just like it did for us, and help you gain confidence and reassurance that you’re only improving systems, commit after commit, PR after PR, release after release.
-
