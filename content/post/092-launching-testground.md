@@ -43,7 +43,7 @@ To illustrate the above, consider a 200-instance test run. With Kubernetes, it c
 
 The cherry on the top of all this is the **observation pipeline (experimental)**. Test plans can record raw data points or aggregate metrics (histograms, [EWMA](https://en.wikipedia.org/wiki/EWMA_chart), counters, etc.) about the system under test, as well as emit arbitrary output assets. **The Testground platform will harvest them and make them available for one-stop collection.**
 
-![Testground Architecture](/img/blog/launch_testground_architecture.png)
+![Testground Architecture](/092-launching-testground/launch_testground_architecture.png)
 
 <p style="text-align:center;font-size:75%;"> Architecture diagram, focused on a test plan’s inputs and outputs, highlighting the circuitry of the observability pipeline</p>
 
@@ -73,7 +73,7 @@ At the tail end of that sprint, we will produce v0.7 of the Testground Core, whi
 <br/>
 Needless to say, you’re welcome to pitch in at any point in time! Continue reading to learn how.
 
-![Testground flowchart](/img/blog/launch_testground_flowchart.png)
+![Testground flowchart](/092-launching-testground/launch_testground_flowchart.png)
 
 ## Getting involved
 
