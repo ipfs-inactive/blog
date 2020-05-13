@@ -7,7 +7,7 @@ header_image: 085-announcing-rust-ipfs.png
 ---
 
 <p align="center">
-<img src="https://github.com/ipfs-rust/logo/raw/master/rust-ipfs-logo-256w.png">
+<img src="https://github.com/rs-ipfs/logo/raw/master/rust-ipfs-logo-256w.png">
 </p>
 
 Calling all rustaceans, rustafarians, ferrosities, and rustlers - we’ve got an exciting update!
@@ -36,7 +36,7 @@ With both community demand and active participation, the time was ripe for the R
 ## Leveraging Community Efforts
 
 The IPFS community is a talented group of people with an impressive array of high quality work in the Rust space already. There's the aforementioned
-[rust-libp2p](https://github.com/libp2p/rust-libp2p), which is already used by the likes of Polkadot, Substrate, and Lighthouse; there's ferrismtg's [rust-ipfs-api](https://github.com/ferristseng/rust-ipfs-api) which is already doing wonders in providing a bridge from the Rust world; and of course [David Craven](https://github.com/dvc94ch)'s [rust-ipfs](https://github.com/ipfs-rust/rust-ipfs), which is the foundational work behind this latest endeavor.
+[rust-libp2p](https://github.com/libp2p/rust-libp2p), which is already used by the likes of Polkadot, Substrate, and Lighthouse; there's ferrismtg's [rust-ipfs-api](https://github.com/ferristseng/rust-ipfs-api) which is already doing wonders in providing a bridge from the Rust world; and of course [David Craven](https://github.com/dvc94ch)'s [rust-ipfs](https://github.com/rs-ipfs/rust-ipfs), which is the foundational work behind this latest endeavor.
 
 Instead of forking and/or starting fresh, this project aims to support and build on the impressive amount of progress that's already been made, helping carry the torch across the finish line while _incorporating_ and _including_ the community of passionate Rust contributors in the process.
 
@@ -51,7 +51,7 @@ such as `ipfs dag put` and `ipfs dag get`.
 
 To learn more about the effort, you can:
 
-1. Visit the [ipfs-rust organization](https://github.com/orgs/ipfs-rust) on GitHub
+1. Visit the [rs-ipfs organization](https://github.com/orgs/rs-ipfs) on GitHub
 2. Read more about this effort on the [Equilibrium Labs blog](https://medium.com/equilibriumco/rust-ipfs-our-plan-of-attack-af8358f90beb)
 
 ## You can help!
@@ -59,7 +59,7 @@ To learn more about the effort, you can:
 Community participation in making Rust-IPFS a reality is encouraged and welcomed! If you
 want to pitch in, here are a few ways:
 
-1. Star and watch the [GitHub repo](https://github.com/ipfs-rust/rust-ipfs)
-2. Take on the development efforts associated with IPFS APIs [deemed out of scope for the initial grant milestones](https://github.com/ipfs-rust/ipfs-rust-conformance/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22)
-3. Look for `help-wanted` issues that are marked as [needing help from the community](https://github.com/ipfs-rust/rust-ipfs/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22)
+1. Star and watch the [GitHub repo](https://github.com/rs-ipfs/rust-ipfs)
+2. Take on the development efforts associated with IPFS APIs [deemed out of scope for the initial grant milestones](https://github.com/rs-ipfs/ipfs-rust-conformance/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22)
+3. Look for `help-wanted` issues that are marked as [needing help from the community](https://github.com/rs-ipfs/rust-ipfs/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22)
 4. Back IPFS Rust on [OpenCollective](https://opencollective.com/ipfs-rust)
