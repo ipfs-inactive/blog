@@ -1,6 +1,6 @@
 ---
-date: 2020-05-06
-url: 2020-05-06-ipfs-pinning-summit-recap
+date: 2020-05-13
+url: 2020-05-13-ipfs-pinning-summit-recap
 title: IPFS Pinning Summit Recap
 author: Molly Mackinlay
 header_image: 093-ipfs-pinning-summit-recap.png
@@ -27,7 +27,7 @@ Day 2 focused on the future - with **Juan Benet**, creator of IPFS & Filecoin, h
 
 The IPFS Pinning Summit brought together 100+ participants for product demos, deep-dives into ecosystem progress, and lightning talks on new tools. Talks dived into how infra providers could tune their services to enhance growing verticals like video, gaming, or browsers - or how they might offer new, specialized products for private networks, access control layers, or network introspection. 
 
-Presentations also explored new opportunities related to the upcoming Filecoin Network launch - which adds an incentive layer to distributed data storage in IPFS. Filecoin Leads **Pooja Shah** and **Juan Benet** shared a number of new ways to integrate Filecoin to augment and enhance existing web3 infrastructure - like using Textile's Powergate to create Filecoin-backed IPFS Pinning Services. [Watch the video](https://www.youtube.com/watch?v=Q0oe6i7d1u4).
+Presentations also explored new opportunities related to the upcoming Filecoin Network launch - which adds an incentive layer to distributed data storage in IPFS. Filecoin Leads **Pooja Shah** and **Juan Benet** [shared a number of new ways to integrate Filecoin](https://www.youtube.com/watch?v=Q0oe6i7d1u4) to augment and enhance existing web3 infrastructure - like using Textile's Powergate to create Filecoin-backed IPFS Pinning Services.
 
 {{< youtube aiOTSkz_6aY >}}
 <br />
@@ -43,4 +43,4 @@ The Summit also welcomed a host of IPFS collaborators to the stage, who demoed t
 
 Watch all of the sessions [here](https://www.youtube.com/playlist?list=PLuhRWgmPaHtTvsxuZ9T-tMlu_v0lja6v5), including lightning talks on [Filecoin’s GUI](https://www.youtube.com/watch?v=dMuVDELUdnE), [Git on Threads](https://www.youtube.com/watch?v=dx7TH7-YSEQ), the [Filecoin Discover Project](https://www.youtube.com/watch?v=UXmQfnwzhtQ&feature=youtu.be), and many more. 
 
-Thanks for an amazing summit, and looking forward to the new inspiration and progress we're able to make together! 
+Thanks for an amazing summit, and looking forward to the next wave of adoption and growth we're able to support together! 🚀
