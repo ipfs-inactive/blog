@@ -2,9 +2,9 @@
 date: 2020-05-13
 url: 2020-05-13-ipfs-pinning-summit-recap
 title: IPFS Pinning Summit Recap
-author: Molly Mackinlay
+author: Molly Mackinlay & Pooja Shah
 header_image: 093-ipfs-pinning-summit-recap.png
-tags: ipfs, infrastructure, summit, filecoin
+tags: ipfs, infrastructure, summit, pinning, filecoin
 ---
 
 <p align="center">
@@ -43,4 +43,4 @@ The Summit also welcomed a host of IPFS collaborators to the stage, who demoed t
 
 Watch all of the sessions [here](https://www.youtube.com/playlist?list=PLuhRWgmPaHtTvsxuZ9T-tMlu_v0lja6v5), including lightning talks on [Filecoin’s GUI](https://www.youtube.com/watch?v=dMuVDELUdnE), [Git on Threads](https://www.youtube.com/watch?v=dx7TH7-YSEQ), the [Filecoin Discover Project](https://www.youtube.com/watch?v=UXmQfnwzhtQ&feature=youtu.be), and many more. 
 
-Thanks for an amazing summit, and looking forward to the next wave of adoption and growth we're able to support together! 🚀
+Thanks for an amazing summit, and looking forward to the next wave of adoption and growth we create together! 🚀
