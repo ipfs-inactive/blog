@@ -20,18 +20,6 @@ Day 1 focused on the accelerating growth of the IPFS ecosystem - especially the 
 
 **IPFS Project Lead [Molly Mackinlay](https://github.com/momack2)** called the next 18 months a “critical period” for the IPFS community. “There are lots of key applications and projects being built, improving the ecosystem, and all kinds of developer tools are arriving that are transforming how applications and users of IPFS end up using the system,” Mackinlay said. “All of these developer tools and systems are changing the nature of how people store and move data.” 
 
-Day 2 focused on the future - with **Juan Benet**, creator of IPFS & Filecoin, highlighting new opportunities and improvements coming to the space, including a unified IPFS Pinning API, deeper integration of network services into IPFS tools like [IPFS-Desktop](https://github.com/ipfs-shipyard/ipfs-desktop) and [WebUI](https://github.com/ipfs-shipyard/ipfs-webui), and new capabilities like [Powergate](https://blog.textile.io/filecoin-developer-tools-concepts/) to bring Filecoin persistence to IPFS pinning services.
-
-{{< youtube Tnn3QJN4dec >}}
-<br />
-
-The IPFS Pinning Summit brought together 100+ participants for product demos, deep-dives into ecosystem progress, and lightning talks on new tools. Talks dived into how infra providers could tune their services to enhance growing verticals like video, gaming, or browsers - or how they might offer new, specialized products for private networks, access control layers, or network introspection. 
-
-Presentations also explored new opportunities related to the upcoming Filecoin Network launch - which adds an incentive layer to distributed data storage in IPFS. Filecoin Leads **Pooja Shah** and **Juan Benet** [shared a number of new ways to integrate Filecoin](https://www.youtube.com/watch?v=Q0oe6i7d1u4) to augment and enhance existing web3 infrastructure - like using Textile's Powergate to create Filecoin-backed IPFS Pinning Services.
-
-{{< youtube aiOTSkz_6aY >}}
-<br />
-
 The Summit also welcomed a host of IPFS collaborators to the stage, who demoed their work and shared tips on running dweb infrastructure and techniques for improving these services. Here are a few ecosystem highlights:
 
 *   **[Textile’s](https://textile.io/) Andrew Hill** and **Aaron Sutula** debuted [Powergate](https://blog.textile.io/filecoin-developer-tools-concepts/), an API-driven solution for deploying multitiered storage across Filecoin and IPFS. Powergate gives clients easier access to control who and where their data is stored. Hill also detailed Textile’s ThreadsDB and Buckets, technologies that get us closer to a more intuitive object storage experience. Combining these tools with IPFS enables new pinning capabilities that support dynamic datasets and IPNS addresses. Watch both videos: on [Powergate](https://www.youtube.com/watch?v=aiOTSkz_6aY) and on [ThreadsDB & Buckets](https://www.youtube.com/watch?v=ojaDzwp9M20&feature=youtu.be).
@@ -40,6 +28,18 @@ The Summit also welcomed a host of IPFS collaborators to the stage, who demoed t
 *   **[IoTeX](https://www.iotex.io/) Co-founder Raullen Chai** talked about how IoTeX, a blockchain solution for powering the Internet of Things, is teaming up with IPFS to create decentralized privacy and user data ownership with home security camera Ucam. [Watch the video](https://www.youtube.com/watch?v=_ia0mgG08k8).
 *   **[Pinata](https://pinata.cloud/) CEO Kyle Tut** dove deep into data permanence and discussed how to keep the data behind a CID alive. Likening data preservation to the responsibility artists have to maintain their own work, Tut asked “Is Da Vinci responsible for maintaining the Mona Lisa? And the answer to that is, no! Da Vinci is no longer with us, the painting is something like over 500 years old, and the person or the body that takes care of that painting today is the Louvre Museum.” Similarly, ownership of digital data, Tut argued, can transfer as a token, from one wallet to another. It’s the file owner’s responsibility to pin that data on a network like IPFS to make sure it’s secure. [Watch the video](https://www.youtube.com/watch?v=RB884S2k59A).
 
+<br />
+{{< youtube Tnn3QJN4dec >}}
+<br />
+
+Day 2 focused on the future - with **Juan Benet**, creator of IPFS & Filecoin, highlighting new opportunities and improvements coming to the space, including a unified IPFS Pinning API, deeper integration of network services into IPFS tools like [IPFS-Desktop](https://github.com/ipfs-shipyard/ipfs-desktop) and [WebUI](https://github.com/ipfs-shipyard/ipfs-webui), and new capabilities like [Powergate](https://blog.textile.io/filecoin-developer-tools-concepts/) to bring Filecoin persistence to IPFS pinning services.
+
+The IPFS Pinning Summit brought together 100+ participants for product demos, deep-dives into ecosystem progress, and lightning talks on new tools. Talks dived into how infra providers could tune their services to enhance growing verticals like video, gaming, or browsers - or how they might offer new, specialized products for private networks, access control layers, or network introspection. 
+
+Presentations also explored new opportunities related to the upcoming Filecoin Network launch - which adds an incentive layer to distributed data storage in IPFS. Filecoin Leads **Pooja Shah** and **Juan Benet** [shared a number of new ways to integrate Filecoin](https://www.youtube.com/watch?v=Q0oe6i7d1u4) to augment and enhance existing web3 infrastructure - like using Textile's Powergate to create Filecoin-backed IPFS Pinning Services.
+
+{{< youtube aiOTSkz_6aY >}}
+<br />
 
 Watch all of the sessions [here](https://www.youtube.com/playlist?list=PLuhRWgmPaHtTvsxuZ9T-tMlu_v0lja6v5), including lightning talks on [Filecoin’s GUI](https://www.youtube.com/watch?v=dMuVDELUdnE), [Git on Threads](https://www.youtube.com/watch?v=dx7TH7-YSEQ), the [Filecoin Discover Project](https://www.youtube.com/watch?v=UXmQfnwzhtQ&feature=youtu.be), and many more. 
 
