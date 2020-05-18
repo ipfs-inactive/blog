@@ -14,11 +14,11 @@ author: Alex Potsides
 
 ## 🤖 Cancellable requests
 
-A user should be able to cancel long-lived API operations.  For example if you are fetching the content for a [CID][] from the network, and that CID is not resolveable, you should be able to set a timeout value for the request, after which the content would no longer be sought and control would be returned to your code with an error message describing what happened.
+A user should be able to cancel long-lived API operations. For example, if you are fetching the content for a [CID][] from the network, and that CID is not resolveable, you should be able to set a timeout value for the request, after which the content would no longer be sought and control would be returned to your code with an error message describing what happened.
 
 This is not as straightforward as it seems in JavaScript because a [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) is returned from the API call to resolve a piece of content and the [Promises spec](https://promisesaplus.com/) includes nothing about cancelling a Promise.
 
-However the browser [fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) has a notion of an [AbortSignal](https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal) which can be used to abort web requests, they are interacted with via an [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController):
+However, the browser [fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) has a notion of an [AbortSignal](https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal) which can be used to abort web requests, they are interacted with via an [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController):
 
 ```javascript
 const controller = new AbortController()
@@ -36,7 +36,7 @@ try {
 }
 ```
 
-We've taken this approach and integrated it into every API call, so you can now use AbortControllers to cancel requests! We've also used this mechanism to add a `timeout` option to every API call which internally uses an AbortSignal to stop the request after the specified amount of time:
+We’ve taken this approach and integrated it into every API call, so you can now use AbortControllers to cancel requests! We’ve also used this mechanism to add a `timeout` option to every API call which internally uses an AbortSignal to stop the request after the specified amount of time:
 
 ```javascript
 const cid = new CID('QmWillNeverResolve')
@@ -69,23 +69,23 @@ try {
 }
 ```
 
-The AbortSignal is passed all the way down the call stack to the libp2p and ipld components the underpin IPFS - in this initial release timeouts are supported by the IPFS layer and in future releases libp2p and ipld will use the AbortSignal to also free up resources and perform any other necessary cleanup that would have been done if the request had completed successfully.
+The AbortSignal is passed all the way down the call stack to the libp2p and ipld components that underpin IPFS. In this initial release, timeouts are supported by the IPFS layer and in future releases libp2p and ipld will use the AbortSignal to also free up resources and perform any other necessary cleanup that would have been done if the request had completed successfully.
 
 ## New browser datastore
 
 `js-IPFS@0.44.0` brings a new datastore to the browser. In the browser all blocks and other repo data is stored in [IndexedDB](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API) as at the time of writing it is the only way available to persist and query large amounts of user data.
 
-In node and go-IPFS, [LevelDB](https://en.wikipedia.org/wiki/LevelDB) has been the datastore of choice for application data (though blocks have been stored on the filesystem) and go-IPFS is moving to [Badger](https://dgraph.io/blog/post/badger/)).
+In node and go-ipfs, [LevelDB](https://en.wikipedia.org/wiki/LevelDB) has been the datastore of choice for application data (though blocks have been stored on the filesystem) and go-IPFS is moving to [Badger](https://dgraph.io/blog/post/badger/)).
 
-Out of this grew [interface-datastore](https://github.com/ipfs/interface-datastore) - a spec for storing key/value pairs impelemented by the datastores used by IPFS.  In the browser this was [datastore-level](https://github.com/ipfs/js-datastore-level) which was backed by [level-js](https://www.npmjs.com/package/level-js) which was backed by IndexedDB.
+Out of this grew [interface-datastore](https://github.com/ipfs/interface-datastore)—a spec for storing key/value pairs implemented by the datastores used by IPFS. In the browser this was [datastore-level](https://github.com/ipfs/js-datastore-level) which was backed by [level-js](https://www.npmjs.com/package/level-js), which was backed by IndexedDB.
 
 Phew.
 
-To remove a few layers here, we've created the [datastore-idb](https://github.com/ipfs/js-datastore-idb) which implemenets the interface-datastore spec, backed by IndexedDB without going via level.
+To remove a few layers here, we’ve created the [datastore-idb](https://github.com/ipfs/js-datastore-idb) which implemenets the interface-datastore spec, backed by IndexedDB without going via level.
 
 What does this mean?
 
-The new datastore is smaller and faster than that which it replaces and the upgrade is seamless since it's still IndexedDB under the hood:
+The new datastore is smaller and faster and the upgrade is seamless since it’s still IndexedDB under the hood:
 
 ```
 datastore-idb up to 44% faster and 69% smaller
@@ -100,7 +100,7 @@ size 37.32KB to 11.41KB
 ## ✨New features
 
 * Cancellable API calls ([#2993](https://github.com/ipfs/js-ipfs/issues/2993)) ([2b24f59](https://github.com/ipfs/js-ipfs/commit/2b24f590041a0df9da87b75ae2344232fe22fe3a)), closes [#3015](https://github.com/ipfs/js-ipfs/issues/3015)
-* `ipfs.block.put` now accepts the `pin` argument in line with go-IPFS [#3015](https://github.com/ipfs/js-ipfs/issues/3015)
+* `ipfs.block.put` now accepts the `pin` argument in line with go-ipfs [#3015](https://github.com/ipfs/js-ipfs/issues/3015)
 
 ## 🦟 Bugs fixed
 
@@ -111,9 +111,9 @@ size 37.32KB to 11.41KB
 * Removes use of node globals to prepare us for when browser bundlers stop automatically including them [#2932](https://github.com/ipfs/js-ipfs/pull/2932)
 * Source maps are no longer included with production builds [ipfs/aegir#549](https://github.com/ipfs/aegir/pull/549)
 
-## 🗺️ What's next?
+## 🗺️ What’s next?
 
-Check out the js-IPFS [Project Roadmap](https://github.com/orgs/ipfs/projects/6) which contains headline features organised in the order we hope them to land.
+Check out the js-ipfs [Project Roadmap](https://github.com/orgs/ipfs/projects/6) which contains headline features organised in the order we hope them to land.
 
 Only large features are called out in the roadmap, expect lots of small bugfix releases between the roadmapped items!
 
