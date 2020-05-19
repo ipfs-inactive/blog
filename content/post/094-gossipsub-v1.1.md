@@ -15,23 +15,23 @@ The gossip you’ve heard on the streets is correct, Gossipsub v1.1 is here and 
 
 The Gossipsub Task Force has been hard at work exploring and analyzing various attack vectors on public and permissionless messaging networks. With that knowledge, we’ve crafted and iterated on mitigating strategies to make our beloved libp2p PubSub Router work in adversarial environments. The result is Gossipsub v1.1 🚀
 
-If you are new to libp2p PubSub and especially Gossipsub, we recommend you checking out the [Gossipsub v1.1 talk at the Matrix Virtual Meetup](https://research.protocol.ai/blog/2020/gossipsub-v1.1-at-open-tech-will-save-us-virtual-event). It will give you the complete motivation and background of libp2p PubSub and introduce you to Gossipsub v1.1.
+If you are new to libp2p PubSub and especially Gossipsub, we recommend you checking out the [**Gossipsub v1.1 talk at the Matrix Virtual Meetup**](https://research.protocol.ai/blog/2020/gossipsub-v1.1-at-open-tech-will-save-us-virtual-event). It will give you the complete motivation and background of libp2p PubSub and introduce you to Gossipsub v1.1.
 
 ## 🔍 What is Gossipsub v1.1
 
 The main focus for Gossipsub v1.1 is **security**. In addition to the speedy message propagation guarantees from v1.0, this new version features several hardening extensions that make Gossipsub more resilient to a wide range of attacks. Some highlights include:
 
-1) [Peer scoring](https://github.com/libp2p/specs/blob/master/pubsub/gossipsub/gossipsub-v1.1.md#peer-scoring): peers now monitor their directly connected neighbours using a score function that reflects the peer’s usefulness. Well-behaving peers are kept in the mesh, while badly-behaving ones are dropped in order to protect the network from malicious actors.
+**1) [Peer scoring](https://github.com/libp2p/specs/blob/master/pubsub/gossipsub/gossipsub-v1.1.md#peer-scoring)**: peers now monitor their directly connected neighbours using a score function that reflects the peer’s usefulness. Well-behaving peers are kept in the mesh, while badly-behaving ones are dropped in order to protect the network from malicious actors.
 
-2) [Adaptive gossip dissemination](https://github.com/libp2p/specs/blob/master/pubsub/gossipsub/gossipsub-v1.1.md#adaptive-gossip-dissemination): In this new version, you can adjust the `gossip factor` to control the number of peers your node gossips with. This enables you to increase/decrease the amount of gossip, while keeping a baseline.
+**2) [Adaptive gossip dissemination](https://github.com/libp2p/specs/blob/master/pubsub/gossipsub/gossipsub-v1.1.md#adaptive-gossip-dissemination)**: In this new version, you can adjust the `gossip factor` to control the number of peers your node gossips with. This enables you to increase/decrease the amount of gossip, while keeping a baseline.
 
-3) [Opportunistic Grafting](https://github.com/libp2p/specs/blob/master/pubsub/gossipsub/gossipsub-v1.1.md#opportunistic-grafting): Grafting is a new mechanism used to cherry pick well-behaving peers that are currently not part of a node’s mesh. Those well-behaving peers are then opportunistically inserted into the mesh to improve the median score of participating peers. 
+**3) [Opportunistic Grafting](https://github.com/libp2p/specs/blob/master/pubsub/gossipsub/gossipsub-v1.1.md#opportunistic-grafting)**: Grafting is a new mechanism used to cherry pick well-behaving peers that are currently not part of a node’s mesh. Those well-behaving peers are then opportunistically inserted into the mesh to improve the median score of participating peers. 
 
-4) [Prune Peer eXchange](https://github.com/libp2p/specs/blob/master/pubsub/gossipsub/gossipsub-v1.1.md#prune-backoff-and-peer-exchange): Prune Peer exchange gives a node a set of recommended peers to connect when it gets dropped from another peer’s mesh, helping reduce the dependency on ambient peer discovery mechanisms.
+**4) [Prune Peer eXchange](https://github.com/libp2p/specs/blob/master/pubsub/gossipsub/gossipsub-v1.1.md#prune-backoff-and-peer-exchange)**: Prune Peer exchange gives a node a set of recommended peers to connect when it gets dropped from another peer’s mesh, helping reduce the dependency on ambient peer discovery mechanisms.
 
-5) [Extended Message Validators](https://github.com/libp2p/specs/blob/master/pubsub/gossipsub/gossipsub-v1.1.md#extended-validators): You can now add your custom message validator so that you can instrument Gossipsub to recognize (accept/reject) which messages are valid/invalid within the context of your application.
+**5) [Extended Message Validators](https://github.com/libp2p/specs/blob/master/pubsub/gossipsub/gossipsub-v1.1.md#extended-validators)**: You can now add your custom message validator so that you can instrument Gossipsub to recognize (accept/reject) which messages are valid/invalid within the context of your application.
 
-6) [Outbound Mesh Quotas](https://github.com/libp2p/specs/blob/master/pubsub/gossipsub/gossipsub-v1.1.md#outbound-mesh-quotas): In v1.0 mesh peers are randomly selected, without any weight given to the direction of the conneciton. In contrast,  v1.1 implements oubout connection quotas, so that a peer tries to always maintain a number of outbound connections in the mesh.
+**6) [Outbound Mesh Quotas](https://github.com/libp2p/specs/blob/master/pubsub/gossipsub/gossipsub-v1.1.md#outbound-mesh-quotas)**: In v1.0 mesh peers are randomly selected, without any weight given to the direction of the conneciton. In contrast,  v1.1 implements oubout connection quotas, so that a peer tries to always maintain a number of outbound connections in the mesh.
 
 The blend of these security measures, together with the properties of the “gossiping mesh” check the two most important boxes for message propagation protocols in permissionless networks, namely: i) fast message propagation, ii) security against attacks that attempt to degrade the quality of the service provided by the network.
 
