@@ -29,6 +29,8 @@ The main focus for Gossipsub v1.1 is **security**. In addition to the speedy mes
 
 5) [Extended Message Validators](https://github.com/libp2p/specs/blob/master/pubsub/gossipsub/gossipsub-v1.1.md#extended-validators): You can now add your custom message validator so that you can instrument Gossipsub to recognize (accept/reject) which messages are valid/invalid within the context of your application.
 
+6) [Outbound Mesh Quotas](https://github.com/libp2p/specs/blob/master/pubsub/gossipsub/gossipsub-v1.1.md#outbound-mesh-quotas): In v1.0 mesh peers are randomly selected, without any weight given to the direction of the conneciton. In contrast,  v1.1 implements oubout connection quotas, so that a peer tries to always maintain a number of outbound connections in the mesh.
+
 The blend of these security measures, together with the properties of the “gossiping mesh” check the two most important boxes for message propagation protocols in permissionless networks, namely: i) fast message propagation, ii) security against attacks that attempt to degrade the quality of the service provided by the network.
 
 All of these upgrades can be consulted in the [Gossipsub v1.1 specification](https://github.com/libp2p/specs/blob/master/pubsub/gossipsub/README.md), which if you ask us, it is a joy to read!
