@@ -15,6 +15,8 @@ The gossip you’ve heard on the streets is correct, Gossipsub v1.1 is here and 
 
 The Gossipsub Task Force has been hard at work exploring and analyzing various attack vectors on public and permissionless messaging networks. With that knowledge, we’ve crafted and iterated on mitigating strategies to make our beloved libp2p PubSub Router work in adversarial environments. The result is Gossipsub v1.1 🚀
 
+If you are new to libp2p PubSub and especially Gossipsub, we recommend you checking out the [Gossipsub v1.1 talk at the Matrix Virtual Meetup](https://research.protocol.ai/blog/2020/gossipsub-v1.1-at-open-tech-will-save-us-virtual-event). It will give you the complete motivation and background of libp2p PubSub and introduce you to Gossipsub v1.1.
+
 ## 🔍 What is Gossipsub v1.1
 
 The main focus for Gossipsub v1.1 is **security**. In addition to the speedy message propagation guarantees from v1.0, this new version features several hardening extensions that make Gossipsub more resilient to a wide range of attacks. Some highlights include:
