@@ -25,7 +25,7 @@ The main focus for Gossipsub v1.1 is **security**. In addition, to the speedy me
 
 **2) [Adaptive gossip dissemination](https://github.com/libp2p/specs/blob/master/pubsub/gossipsub/gossipsub-v1.1.md#adaptive-gossip-dissemination)**: In this new version, you can adjust the `gossip factor` to control the number of peers your node gossips with. This enables you to increase/decrease the amount of gossip, while keeping a baseline.
 
-**3) [Opportunistic Grafting](https://github.com/libp2p/specs/blob/master/pubsub/gossipsub/gossipsub-v1.1.md#opportunistic-grafting)**: Grafting is a new mechanism used to cherry pick well-behaving peers that are currently not part of a node’s mesh. Those well-behaving peers are then opportunistically inserted into the mesh to improve the median score of participating peers. 
+**3) [Opportunistic Grafting](https://github.com/libp2p/specs/blob/master/pubsub/gossipsub/gossipsub-v1.1.md#opportunistic-grafting)**: A new mechanism used to cherry pick well-behaving peers that are currently not part of a node’s mesh. Those well-behaving peers are then opportunistically inserted into the mesh to improve the median score of participating peers. 
 
 **4) [Prune Peer eXchange](https://github.com/libp2p/specs/blob/master/pubsub/gossipsub/gossipsub-v1.1.md#prune-backoff-and-peer-exchange)**: Prune Peer exchange gives a node a set of recommended peers to connect when it gets dropped from another peer’s mesh, helping reduce the dependency on ambient peer discovery mechanisms.
 
