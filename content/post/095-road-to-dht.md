@@ -1,8 +1,8 @@
 ---
-date: 2020-05-21
-url: 2020-05-21-road-to-dht
+date: 2020-05-19
+url: 2020-05-19-road-to-dht
 title: The Road to the new DHT
-author: Molly Mackinlay
+author: Adin Schmahmann
 header_image: 095-road-to-dht.png
 tags: go-ipfs, 0.5 release
 ---
@@ -67,13 +67,13 @@ We’re excited to share this tool with others as well, to benchmark and evaluat
 
 With Testground, we were able to benchmark and quantify our DHT issues around peer availability, query termination, and routing table maintenance. We started with simulations of the existing network - showing how our previous query logic interacted with evolving network parameters, like many nodes being undialable. 
 
-![DHT](/095-road-to-dht/research.png)
+![DHT](/095-road-to-dht/research.jpg)
 
 Testground allowed us to tweak these parameters to measure which changes would have the most impact on network performance. As we gathered for a Research Summit in January to compare potential mitigations to the ongoing network challenges, we were now empowered with a **quantitative** understanding of the network structure and the tools to immediately prototype and test out the resulting hypotheses from our discussions.
 
 What followed was a whirlwind of test-plan writing to measure each change to the DHT logic in a real-world network setting. We tested our new systems for diagnosing undialable peers and removing them from our routing tables, measured success rates for ending our queries earlier, and even re-benchmarked our [improvements to Bitswap](https://blog.ipfs.io/2020-02-14-improved-bitswap-for-container-distribution/) to find additional improvements. Throughout these refactors, we were able to continually validate the performance of these changes with our Testground simulations, as well as a few well-placed canary nodes to run benchmarks against the full public network. 
 
-With these tools in hand, we sprinted from the summit to our release to make it all happen. Up next, in Part 2 of this DHT Deep Dive, Adin Schmahmann will walk you through exactly what’s new with the DHT and go even deeper on the improvements we saw. In the meantime, if you haven’t upgraded yet, **[please do]](https://docs-beta.ipfs.io/recent-releases/go-ipfs-0-5/update-procedure/#use-ipfs-update)**. We’ll all reap the benefits of a more performant DHT as more and more nodes update.
+With these tools in hand, we sprinted from the summit to our release to make it all happen. Up next, in Part 2 of this DHT Deep Dive, we will walk you through exactly what’s new with the DHT and go even deeper on the improvements we saw. In the meantime, if you haven’t upgraded yet, **[please do]](https://docs-beta.ipfs.io/recent-releases/go-ipfs-0-5/update-procedure/#use-ipfs-update)**. We’ll all reap the benefits of a more performant DHT as more and more nodes update.
 
 {{< youtube S8a1xzdWjN0 >}}
 
