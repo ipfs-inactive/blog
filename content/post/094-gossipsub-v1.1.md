@@ -21,7 +21,7 @@ The main focus for Gossipsub v1.1 is **security**. In addition to the speedy mes
 
 1) [Peer scoring](https://github.com/libp2p/specs/blob/master/pubsub/gossipsub/gossipsub-v1.1.md#peer-scoring): peers now monitor their directly connected neighbours using a score function that reflects the peer’s usefulness. Well-behaving peers are kept in the mesh, while badly-behaving ones are dropped in order to protect the network from malicious actors.
 
-2) [Adaptive gossip dissemination](https://github.com/libp2p/specs/blob/master/pubsub/gossipsub/gossipsub-v1.1.md#adaptive-gossip-dissemination): In this new version, you can adjust the amount of peers in which your node gossips to with the gossip factor. This enables you to increase/decrease the amount of gossip, while keeping a baseline.
+2) [Adaptive gossip dissemination](https://github.com/libp2p/specs/blob/master/pubsub/gossipsub/gossipsub-v1.1.md#adaptive-gossip-dissemination): In this new version, you can adjust the `gossip factor` to control the number of peers your node gossips with. This enables you to increase/decrease the amount of gossip, while keeping a baseline.
 
 3) [Opportunistic Grafting](https://github.com/libp2p/specs/blob/master/pubsub/gossipsub/gossipsub-v1.1.md#opportunistic-grafting): Grafting is a new mechanism used to cherry pick well-behaving peers that are currently not part of a node’s mesh. Those well-behaving peers are then opportunistically inserted into the mesh to improve the median score of participating peers. 
 
