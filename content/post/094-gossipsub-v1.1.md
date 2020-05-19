@@ -1,14 +1,14 @@
 ---
 date: 2020-05-19
 url: 2020-05-19-gossipsub-v1.1
-title: Gossipsub v1.1 brings new hardening extensions to libp2p PubSub 
+title: Gossipsub v1.1 brings hardening extensions to PubSub 
 author: David Dias
 header_image: 094-gossipsub-v1.1-headerimage.jpeg
 tags: ipfs, libp2p, pubsub, gossipsub
 ---
 
 <p align="center">
-  <img width="60%" src="/header_images/094-gossipsub-v1.1-headerimage.jpeg">
+  <img width="60%" src="/header_images/094-gossipsub-v1.1-headerimage+grid.jpeg">
 </p>
 
 The gossip you’ve heard on the streets is correct, Gossipsub v1.1 is here and it packs several security hardening extensions - along with new testing, documentation, and an updated specification.
