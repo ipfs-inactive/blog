@@ -51,25 +51,20 @@ We’ve prepared a brand new example for you to give the latest Gossipsub a try.
 
 You can find the code for this example at https://github.com/libp2p/go-libp2p-examples/tree/master/pubsub/chat
 
-### Mockchain example
-
-TODO write this
-
 ### Test Gossipsub’s performance with Testground
 
 We are also releasing a brand new libp2p Test Plan that uses Testground to benchmark Gossipsub v1.1.
 
 <p align="center">
-  <img width="60%" src="/header_images/094-gossipsub-v1.1-headerimage.jpeg">
+  <img width="60%" src="/img/gossipsubv1.1-jupyter.jpeg">
 </p>
-
-TODO INSERT IMAGE HERE of the JUPYTER NOTEBOOK
 
 With this Test Plan, you can run a emulation (yes, it will run real Gossipsub nodes!) of a Gossipsub Network in which you can adjust:
 
-- The number of peers
-- The latency of each link
-- ... TODO list all the nobs
+- The number of nodes
+- The latency of each link and the jitter %
+- The length of the run
+- The bandwidth available to each link
 
 To play with this Test Plan, check the instructions at https://github.com/libp2p/test-plans/tree/master/pubsub 
 
