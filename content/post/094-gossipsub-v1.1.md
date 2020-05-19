@@ -76,4 +76,5 @@ We’ve worked with Networking, P2P and Security Researchers to create this iter
 That’s it for now. Hope you enjoy the release and happy gossiping!
 
 The Gossipsub Task Force
+
 David Dias, Dmitris Vyzovitis, Yiannis Psaras, Yusef Napora, Dirk McCormick
