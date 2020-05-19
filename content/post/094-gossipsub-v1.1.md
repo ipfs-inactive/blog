@@ -25,7 +25,7 @@ The main focus for Gossipsub v1.1 is **security**. In addition to the speedy mes
 
 3) [Opportunistic Grafting](https://github.com/libp2p/specs/blob/master/pubsub/gossipsub/gossipsub-v1.1.md#opportunistic-grafting): Grafting is a new mechanism used to cherry pick well-behaving peers that are currently not part of a node’s mesh. Those well-behaving peers are then opportunistically inserted into the mesh to improve the median score of participating peers. 
 
-4) [Prune Peer eXchange](https://github.com/libp2p/specs/blob/master/pubsub/gossipsub/gossipsub-v1.1.md#prune-backoff-and-peer-exchange): with Prune Peer exchange a node receives a set of recommended peers to connect when it gets dropped from some other peer’s mesh. With this, we’ve reduced the dependency on ambient peer discovery mechanisms.
+4) [Prune Peer eXchange](https://github.com/libp2p/specs/blob/master/pubsub/gossipsub/gossipsub-v1.1.md#prune-backoff-and-peer-exchange): Prune Peer exchange gives a node a set of recommended peers to connect when it gets dropped from another peer’s mesh, helping reduce the dependency on ambient peer discovery mechanisms.
 
 5) [Extended Message Validators](https://github.com/libp2p/specs/blob/master/pubsub/gossipsub/gossipsub-v1.1.md#extended-validators): You can now add your custom message validator so that you can instrument Gossipsub to recognize (accept/reject) which messages are valid/invalid within the context of your application.
 
