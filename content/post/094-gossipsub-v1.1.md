@@ -8,7 +8,7 @@ tags: ipfs, libp2p, pubsub, gossipsub
 ---
 
 <p align="center">
-  <img width="60%" src="/header_images/094-gossipsub-v1.1-headerimage+grid.jpeg">
+  <img src="/header_images/094-gossipsub-v1.1-headerimage+grid.jpeg" style="max-width:600px">
 </p>
 
 The gossip you’ve heard on the streets is correct, Gossipsub v1.1 is here and it packs several security hardening extensions along with new testing, documentation, and an updated specification.
