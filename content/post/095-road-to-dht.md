@@ -68,6 +68,7 @@ With the [launch of Testground v0.5](https://blog.ipfs.io/2020-05-06-launching-t
 With Testground, we were able to benchmark and quantify our DHT issues around peer availability, query termination, and routing table maintenance. We started with simulations of the existing network - showing how our previous query logic interacted with evolving network parameters, like many nodes being undialable. 
 
 {{< youtube S8a1xzdWjN0 >}}
+<br />
 
 Testground allowed us to tweak these parameters to measure which changes would have the most impact on network performance. As we gathered for a Research Summit in January to compare potential mitigations to the ongoing network challenges, we were now empowered with a **quantitative** understanding of the network structure and the tools to immediately prototype and test out the resulting hypotheses from our discussions.
 
