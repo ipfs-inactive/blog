@@ -46,7 +46,7 @@ Additionally, with the new release, the [reference implementation of Gossipsub](
 We’ve prepared a brand new example for you to give the latest Gossipsub a try. In this example, you get to experiment with a chat application powered by libp2p. It will enable you to join different channels by subscribing to PubSub topics and seeing other peers joining the room as they subscribe to the topic.
 
 <p align="center">
-  <img width="60%" src="https://raw.githubusercontent.com/libp2p/go-libp2p-examples/master/pubsub/chat/chat-example.gif">
+  <img src="https://raw.githubusercontent.com/libp2p/go-libp2p-examples/master/pubsub/chat/chat-example.gif" style="max-width:600px">
 </p>
 
 You can find the code for this example at https://github.com/libp2p/go-libp2p-examples/tree/master/pubsub/chat
