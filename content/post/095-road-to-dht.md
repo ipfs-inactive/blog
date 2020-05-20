@@ -42,7 +42,7 @@ We clearly had a problem, and we were hearing about it from the community. Our f
 After some investigation, it was clear that our DHT implementation, combined with the recent growth of undialable nodes, was the culprit behind the slow, unreliable content routing. We had a chance to investigate this more deeply while we were together at IPFS Camp, and discovered a few problem areas:
 
 * **Peer Availability:** As new peers joined the network we treated them equally, but most couldn’t actually be reached because they were behind firewalls or NATs. DHT query time was wasted trying to dial these peers that never got requests.
-* **Query Termination:** Once a DHT query came upon the data it needed, it didn’t stop! It continued searching until it queried all peers along the path, not just the closest peers to the desired data. This adaptation was helping us mitigate having many undialable nodes in the network, but was significantly increasing network overhead.
+* **Query Termination:** Even after a DHT query reached its target, it didn't stop - it continued querying additional peers to make sure it had reached its target. While robust to the many new undialable nodes in the network, this process was very time consuming.
 * **Routing Table Maintenance:** Routing tables were clogged with many undialable peers, resulting in searches that were linear in the number of peers they queried instead of the expected log-scale efficiency.
 
 ## Focus and go
