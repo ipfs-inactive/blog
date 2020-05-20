@@ -1,6 +1,6 @@
 ---
-date: 2020-05-19
-url: 2020-05-19-gossipsub-v1.1
+date: 2020-05-20
+url: 2020-05-20-gossipsub-v1.1
 title: Gossipsub v1.1 brings hardening extensions to PubSub 
 author: David Dias
 header_image: 094-gossipsub-v1.1-headerimage.jpeg
