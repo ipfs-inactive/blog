@@ -7,7 +7,7 @@ header_image: 095-road-to-dht.png
 tags: go-ipfs, 0.5 release
 ---
 
-<p style="max-width:780px;margin-left:auto;margin-right:auto;">
+<p style="max-width:1000px;margin-left:auto;margin-right:auto;">
   <img src="/header_images/095-road-to-dht.png">
 </p>
 
@@ -18,7 +18,7 @@ We’d like to take you through our journey to _re-write_ the DHT - from identif
 **If you want to make use of these new improvements, please [upgrade IPFS now](https://docs-beta.ipfs.io/recent-releases/go-ipfs-0-5/update-procedure/#use-ipfs-update)!**
 <br />
 
-<p style="max-width:780px;margin-left:auto;margin-right:auto;">
+<p style="max-width:1000px;margin-left:auto;margin-right:auto;">
   <img src="/095-road-to-dht/Brendan-quote.png">
 </p>
 
@@ -34,9 +34,7 @@ In theory, the DHT should make finding, providing, and fetching data among nodes
 
 The IPFS Public Network experienced substantial growth last year, quickly scaling 30x, with **hundreds of thousands of nodes** now participating in the network! Major software deployments and new decentralized apps came on board with expectations for a production-ready network with the reliability and performance to match. Many were using IPFS as a decentralized CDN (Content Delivery Network) to share and find content across the network. Unfortunately, due to a proliferation of new nodes unable to route peers to the desired content, the network was letting some of these users down.
 
-<p style="max-width:780px;margin-left:auto;margin-right:auto;">
   {{< youtube jpQnQbfhuBc >}}
-</p>
 <br />
 
 In early 2019, we started to hear rumblings around content routing issues, which were exacerbated as more and more nodes joined the network over Q1 and Q2 - many of them behind home firewalls or NATs. We were constantly bootstrapping and patching the network to remedy performance and reliability issues. But, we couldn’t really test the efficacy (or truly diagnose any regressions) of these patches until they were _in production_, making it hard to iterate and try out larger fixes to network configuration.
@@ -57,7 +55,7 @@ With this analysis and the feedback synthesized from our core users and communit
 
 This meant some hard calls on prioritization: focusing our working groups on a targeted set of improvements to the DHT and routing logic to ensure we resolved these underlying performance and reliability concerns. In turn, we adjusted our product roadmap and stood up new core working groups, including one focused strictly on content routing and another on a new test infrastructure: [Testground](https://docs.testground.ai/).
 
-<p style="max-width:780px;margin-left:auto;margin-right:auto;">
+<p style="max-width:1000px;margin-left:auto;margin-right:auto;">
   <img src="/header_images/092-launching-testground.png">
 </p>
 
@@ -75,9 +73,7 @@ With the [launch of Testground v0.5](https://blog.ipfs.io/2020-05-06-launching-t
 
 With Testground, we were able to benchmark and quantify our DHT issues around peer availability, query termination, and routing table maintenance. We started with simulations of the existing network - showing how our previous query logic interacted with evolving network parameters, like many nodes being undialable. 
 
-<p style="max-width:780px;margin-left:auto;margin-right:auto;">
   {{< youtube S8a1xzdWjN0 >}}
-</p>
 <br />
 
 Testground allowed us to tweak these parameters to measure which changes would have the most impact on network performance. As we gathered for a Research Summit in January to compare potential mitigations to the ongoing network challenges, we were now empowered with a **quantitative** understanding of the network structure and the tools to immediately prototype and test out the resulting hypotheses from our discussions.
