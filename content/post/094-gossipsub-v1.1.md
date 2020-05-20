@@ -56,7 +56,7 @@ You can find the code for this example at https://github.com/libp2p/go-libp2p-ex
 We are also releasing a brand new libp2p Test Plan that uses [Testground](https://github.com/testground/testground) to benchmark Gossipsub v1.1.
 
 <p align="center">
-  <img width="60%" src="/img/gossipsubv1.1-jupyter.gif">
+  <img src="/img/gossipsubv1.1-jupyter.gif" style="max-width:600px">
 </p>
 
 With this Test Plan, you can run an emulation (yes, it will run real Gossipsub nodes!) of a Gossipsub Network in which you can adjust:
