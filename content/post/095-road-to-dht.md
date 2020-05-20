@@ -1,7 +1,7 @@
 ---
 date: 2020-05-19
 url: 2020-05-19-road-to-dht
-title: The Road to the new DHT
+title: The Road to the New DHT
 author: Adin Schmahmann
 header_image: 095-road-to-dht.png
 tags: go-ipfs, 0.5 release
