@@ -47,7 +47,7 @@ After some investigation, it was clear that our DHT implementation, combined wit
 
 ## Focus and go
 
-After this investigation, we took a hard look at our roadmap and the needs we were hearing from our core users and community to decide where to focus. Based on our research, it was clear we needed to hone in on content routing for the long-term success of IPFS.  
+With this analysis and the feedback synthesized from our core users and community, it was clear we needed to hone in on content routing performance as a core focus for the IPFS Project.
 
 This meant some hard calls on prioritization: focusing our working groups on a targeted set of improvements to the DHT and routing logic to ensure we resolved these underlying performance and reliability concerns. In turn, we adjusted our product roadmap and stood up new core working groups, including one focused strictly on content routing and another on a new test infrastructure: [Testground](https://docs.testground.ai/).
 
