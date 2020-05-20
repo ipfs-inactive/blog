@@ -13,7 +13,7 @@ At the end of April, we released our largest update to go-ipfs to date: [IPFS 0.
 
 We’d like to take you through our journey to _re-write_ the DHT - from identifying the underlying issues, to how we approached designing a solution, to ensuring it would **work** in practice. Our work led to major performance gains, as well as a new development process and [Testground](https://github.com/testground/testground), a whole new tool for large-scale network testing [(read more)](https://blog.ipfs.io/2020-05-06-launching-testground/). 
 
-**If you want to make use of these new improvements, please [upgrade to the latest IPFS now](https://docs-beta.ipfs.io/recent-releases/go-ipfs-0-5/update-procedure/#use-ipfs-update)!**
+**If you want to make use of these new improvements, please [upgrade IPFS now](https://docs-beta.ipfs.io/recent-releases/go-ipfs-0-5/update-procedure/#use-ipfs-update)!**
 <br />
 
 ![Brendan quote](/095-road-to-dht/Brendan-quote.png)
@@ -22,7 +22,7 @@ We’d like to take you through our journey to _re-write_ the DHT - from identif
 
 The [DHT, or distributed hash table](https://docs.ipfs.io/guides/concepts/dht/), acts like both a catalog and navigation system for IPFS, helping the network keep track of and find data. A regular hash table is a key-value store where the keys are hashed and stored in one place. In the case of IPFS, the keys are the Content Identifiers (CIDs) of a block of data, and the values are the set of peers who have each block.
 
-The IPFS DHT distributes and stores these pairs of keys and values in small tables across many nodes or peers throughout the network. Peers, in turn, store information about where to physically locate specific content. Kademlia, our DHT implementation, helps keep track of which nodes are _providing_ what data to others in the network.
+The DHT distributes and stores these pairs of keys and values in small tables across many nodes or peers throughout the network. Peers, in turn, store information about where to physically locate specific content. Kademlia, our DHT implementation, helps keep track of which nodes are _providing_ what data to others in the network.
 
 In theory, the DHT should make finding, providing, and fetching data among nodes a well-orchestrated and very efficient affair. However, throw in real world conditions and a rapidly scaling network, and things can go awry.
 
@@ -31,6 +31,7 @@ In theory, the DHT should make finding, providing, and fetching data among nodes
 The IPFS Public Network experienced substantial growth last year, quickly scaling 30x, with **hundreds of thousands of nodes** now participating in the network! Major software deployments and new decentralized apps came on board with expectations for a production-ready network with the reliability and performance to match. Many were using IPFS as a decentralized CDN (Content Delivery Network) to share and find content across the network. Unfortunately, due to a proliferation of new nodes unable to route peers to the desired content, the network was letting some of these users down.
 
 {{< youtube jpQnQbfhuBc >}}
+<br />
 
 In early 2019, we started to hear rumblings around content routing issues, which were exacerbated as more and more nodes joined the network over Q1 and Q2 - many of them behind home firewalls or NATs. We were constantly bootstrapping and patching the network to remedy performance and reliability issues. But, we couldn’t really test the efficacy (or truly diagnose any regressions) of these patches until they were _in production_, making it hard to iterate and try out larger fixes to network configuration.
 
@@ -41,7 +42,7 @@ We clearly had a problem, and we were hearing about it from the community. Our f
 After some investigation, it was clear that our DHT implementation, combined with the recent growth of undialable nodes, was the culprit behind the slow, unreliable content routing. We had a chance to investigate this more deeply while we were together at IPFS Camp, and discovered a few problem areas:
 
 * **Peer Availability:** As new peers joined the network we treated them equally, but most couldn’t actually be reached because they were behind firewalls or NATs. DHT query time was wasted trying to dial these peers that never got requests.
-* **Query Termination:** Once a DHT query came upon the data it needed, it didn’t stop! It continued searching until it found all the closest peers.
+* **Query Termination:** Once a DHT query came upon the data it needed, it didn’t stop! It continued searching until it queried all peers along the path, not just the closest peers to the desired data. This adaptation was helping us mitigate having many undialable nodes in the network, but was significantly increasing network overhead.
 * **Routing Table Maintenance:** Routing tables were clogged with many undialable peers, resulting in searches that were linear in the number of peers they queried instead of the expected log-scale efficiency.
 
 ## Focus and go
@@ -52,7 +53,6 @@ This meant some hard calls on prioritization: focusing our working groups on a t
 
 ![Testground](/header_images/092-launching-testground.png)
 
-<br />
 ## Test, test, test
 
 We’d learned from our early patches that a network of our size **needs** to be able to test changes in a close to real-world setting to be able to make improvements quickly and reliably. We had the means to do unit tests and small simulations that could prove out basic tweaks, but no way to replicate thousands of nodes or typical network configurations in order to benchmark major changes. This left us without real data on the true impact of changes until they had gone live. 
@@ -67,15 +67,14 @@ We’re excited to share this tool with others as well, to benchmark and evaluat
 
 With Testground, we were able to benchmark and quantify our DHT issues around peer availability, query termination, and routing table maintenance. We started with simulations of the existing network - showing how our previous query logic interacted with evolving network parameters, like many nodes being undialable. 
 
-![DHT](/095-road-to-dht/research.jpg)
+{{< youtube S8a1xzdWjN0 >}}
 
 Testground allowed us to tweak these parameters to measure which changes would have the most impact on network performance. As we gathered for a Research Summit in January to compare potential mitigations to the ongoing network challenges, we were now empowered with a **quantitative** understanding of the network structure and the tools to immediately prototype and test out the resulting hypotheses from our discussions.
 
 What followed was a whirlwind of test-plan writing to measure each change to the DHT logic in a real-world network setting. We tested our new systems for diagnosing undialable peers and removing them from our routing tables, measured success rates for ending our queries earlier, and even re-benchmarked our [improvements to Bitswap](https://blog.ipfs.io/2020-02-14-improved-bitswap-for-container-distribution/) to find additional improvements. Throughout these refactors, we were able to continually validate the performance of these changes with our Testground simulations, as well as a few well-placed canary nodes to run benchmarks against the full public network. 
 
-With these tools in hand, we sprinted from the summit to our release to make it all happen. Up next, in Part 2 of this DHT Deep Dive, we will walk you through exactly what’s new with the DHT and go even deeper on the improvements we saw. In the meantime, if you haven’t upgraded yet, **[please do]](https://docs-beta.ipfs.io/recent-releases/go-ipfs-0-5/update-procedure/#use-ipfs-update)**. We’ll all reap the benefits of a more performant DHT as more and more nodes update.
+With these tools in hand, we sprinted from the summit to our release to make it all happen. Up next, in Part 2 of this DHT Deep Dive, we will walk you through exactly what’s new with the DHT and go even deeper on the improvements we saw. In the meantime, if you haven’t upgraded yet, **[please do](https://docs-beta.ipfs.io/recent-releases/go-ipfs-0-5/update-procedure/#use-ipfs-update)**. We’ll all reap the benefits of a more performant DHT as more and more nodes update.
 
-{{< youtube S8a1xzdWjN0 >}}
 
 ### Learn more
 
