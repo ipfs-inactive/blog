@@ -61,7 +61,7 @@ We had to change this quickly to be successful in righting the DHT. We formed a 
 
 Testground gave us the tools to do _data-driven development_ in our DHT rewrite. It also helped us in other parts of the IPFS 0.5.0 release: like prototyping new potential solutions, comparing potential fixes against each other, and stress-testing the edge cases and upgrade process. The repeatability and introspection Testground gave us was _critical_ to accelerating our development velocity to reliably improve IPFS.
 
-We’re excited to share this tool with others as well, to benchmark and evaluate their p2p networks. [Start using Testground today!](https://docs.testground.ai/)
+With the [launch of Testground v0.5](https://blog.ipfs.io/2020-05-06-launching-testground/), we’re excited to share this tool with others as well to benchmark and evaluate their p2p networks. [Start using Testground today!](https://docs.testground.ai/)
 
 ## Now for the “fix”
 
