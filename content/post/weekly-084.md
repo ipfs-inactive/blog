@@ -13,7 +13,7 @@ A quick look back at what we accomplished together in the [InterPlanetary File S
 ## January! A new year 🎉
 
 **The new IPFS Docs beta went live** 
-IPFS now has documentation that is redesigned, with a simple, clean interface, has better navigation, and most importantly, reintroduced a key feature: the search functionality. [Read about it on the blog](https://blog.ipfs.io/2020-01-07-ipfs-docs-beta/).
+IPFS now has documentation that is redesigned, with a simple, clean interface, has better navigation, and most importantly, reintroduced a key feature: the search functionality. [Read about it on the blog](https://blog.ipfs.io/2020-01-07-ipfs-docs/).
 
 **Collaborative clusters are here**
 The first set of [public collaborative clusters](https://blog.ipfs.io/2020-01-09-collaborative-clusters/) and the first iteration of the clusters site went live this month. For full documentation on how to set up and operate clusters, see cluster.ipfs.io/documentation.

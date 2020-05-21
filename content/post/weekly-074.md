@@ -38,7 +38,7 @@ Nesta is launching an [open call for essays](https://www.nesta.org.uk/blog/decen
 ## Work in progress
 
 * Coming soon: the js-ipfs async-await refactor. It’s currently closer than it’s ever been to being done.
-* Can you write great docs? There’s never been a better time to help the global IPFS community by [contributing to our new docs beta site](https://docs-beta.ipfs.io/project/contribute/#documentation)! 
+* Can you write great docs? There’s never been a better time to help the global IPFS community by [contributing to our new docs beta site](https://docs.ipfs.io/project/contribute/#documentation)! 
 * [gomobile-ipfs](https://github.com/ipfs/go-ipfs-api/pull/202) is almost ready!
 
 ## Recommended viewing

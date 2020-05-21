@@ -1,18 +1,18 @@
 ---
 date: 2020-01-07
-url: 2020-01-07-ipfs-docs-beta
+url: 2020-01-07-ipfs-docs
 title: The new IPFS Docs beta is live! 📚 🆕
 author: Jessica Schilling
-header_image: 076-ipfs-docs-beta.png
+header_image: 076-ipfs-docs.png
 ---
 
-**We’re excited to announce [the new IPFS documentation site is live in beta](https://docs-beta.ipfs.io/)!** The doors are open, and just like any housewarming, you’re cordially invited to stop by, have a look around, and let us know what you think.
+**We’re excited to announce [the new IPFS documentation site is live in beta](https://docs.ipfs.io/)!** The doors are open, and just like any housewarming, you’re cordially invited to stop by, have a look around, and let us know what you think.
 
-<a href="https://docs-beta.ipfs.io/" target="_blank"><img src="/076-ipfs-docs-beta/img/docs-beta-screenshot.png" alt="Screenshot of docs beta"></a>
+<a href="https://docs.ipfs.io/" target="_blank"><img src="/076-ipfs-docs/img/docs-screenshot.png" alt="Screenshot of docs beta"></a>
 <br/>
 *New year, new look.*
 
-![Mind map of docs beta nav](/076-ipfs-docs-beta/img/docs-beta-site-mindmap.png)
+![Mind map of docs beta nav](/076-ipfs-docs/img/docs-site-mindmap.png)
 <br/>
 *Here’s a mind map of how the docs beta’s navigation works.*
 
