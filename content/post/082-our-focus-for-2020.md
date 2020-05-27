@@ -31,7 +31,7 @@ This growth caused us to shift some of our attention midyear to support new usag
 2. We made significant progress on our Package Managers goal (read on for awesome new features like [collaborative clusters](https://blog.ipfs.io/2020-01-09-collaborative-clusters/)!) 🎯
 3. We developed and launched [TestGround v0.1](https://github.com/ipfs/testground/releases/tag/v0.1.0) in collaboration with the libp2p team, a platform for testing distributed systems and networks at various scales ⚖️
 4. We launched [ProtoSchool](https://proto.school/#/), a new portal for interactive tutorials to learn about decentralized web concepts, protocols, and tools, with 23 chapters across 4 continents! 🌏
-5. We built a [new IPFS docs site](https://blog.ipfs.io/2020-01-07-ipfs-docs/) with improved search, information architecture, and explainers on InterPlanetary concepts 📖
+5. We built a [new IPFS docs site](https://blog.ipfs.io/2020-01-07-ipfs-docs-beta/) with improved search, information architecture, and explainers on InterPlanetary concepts 📖
 
 ## Our 2019 Roadmap
 
