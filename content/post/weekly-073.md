@@ -16,7 +16,7 @@ Here’s what’s happening lately in the [InterPlanetary File System](https://i
 
 * [Announcing collaborative clusters](https://blog.ipfs.io/2020-01-09-collaborative-clusters/), the first set of public collaborative clusters, creating an easy way to join the IPFS Network. 
 * [An IPFS Use Case](https://medium.com/pinata/an-ipfs-use-case-6c46349cb1), or why IPFS is well-suited to handle the buying and selling of data.
-* The [IPFS Docs Beta is live!](https://docs-beta.ipfs.io/) [Learn more about helping beta test](https://blog.ipfs.io/2020-01-07-ipfs-docs-beta/) to make it even better.
+* The [IPFS Docs Beta is live!](https://docs.ipfs.io/) [Learn more about helping beta test](https://blog.ipfs.io/2020-01-07-ipfs-docs-beta/) to make it even better.
 * New release: [IPFS Cluster 0.12.0 is here!](https://cluster.ipfs.io/news/0.12.0_release/)
 * [Hands-on IPLD Tutorial in Golang: Getting Started with IPLD](https://simpleaswater.com/hands-on-ipld-tutorial-in-golang/)
 * [ProtoSchool](https://proto.school/) has enabled social sharing. When a user completes all lessons in a tutorial, they’re now presented with a congratulatory message and an opportunity to share their success on Twitter!

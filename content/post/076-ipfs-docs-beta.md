@@ -6,9 +6,9 @@ author: Jessica Schilling
 header_image: 076-ipfs-docs-beta.png
 ---
 
-**We’re excited to announce [the new IPFS documentation site is live in beta](https://docs-beta.ipfs.io/)!** The doors are open, and just like any housewarming, you’re cordially invited to stop by, have a look around, and let us know what you think.
+**We’re excited to announce [the new IPFS documentation site is live in beta](https://docs.ipfs.io/)!** The doors are open, and just like any housewarming, you’re cordially invited to stop by, have a look around, and let us know what you think.
 
-<a href="https://docs-beta.ipfs.io/" target="_blank"><img src="/076-ipfs-docs-beta/img/docs-beta-screenshot.png" alt="Screenshot of docs beta"></a>
+<a href="https://docs.ipfs.io/" target="_blank"><img src="/076-ipfs-docs-beta/img/docs-beta-screenshot.png" alt="Screenshot of docs beta"></a>
 <br/>
 *New year, new look.*
 

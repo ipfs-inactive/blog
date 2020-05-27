@@ -62,7 +62,7 @@ IPFS features in this implementation:
 
 * Implements the [IPFS Web Browser Addressing specification](https://github.com/ipfs/in-web-browsers/blob/master/ADDRESSING.md), both "ipfs://" and "ipns://"
 * Configurable HTTP gateway, with options to use gateways like `dweb.link`, Infura, or a local node
-* Supports [subdomain gateways](https://docs-beta.ipfs.io/how-to/address-ipfs-on-web/#subdomain-gateway) for secure web apps
+* Supports [subdomain gateways](https://docs.ipfs.io/how-to/address-ipfs-on-web/#subdomain-gateway) for secure web apps
 * Supports mixed protocol use, such as loading images over IPFS in an HTTP web page
 
 Read on to learn more about these features.

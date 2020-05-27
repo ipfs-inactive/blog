@@ -15,7 +15,7 @@ At the end of April, we released our largest update to go-ipfs to date: [IPFS 0.
 
 We’d like to take you through our journey to _re-write_ the DHT - from identifying the underlying issues, to how we approached designing a solution, to ensuring it would **work** in practice. Our work led to major performance gains, as well as a new development process and [Testground](https://github.com/testground/testground), a whole new tool for large-scale network testing [(read more)](https://blog.ipfs.io/2020-05-06-launching-testground/). 
 
-**If you want to make use of these new improvements, please [upgrade IPFS now](https://docs-beta.ipfs.io/recent-releases/go-ipfs-0-5/update-procedure/#use-ipfs-update)!**
+**If you want to make use of these new improvements, please [upgrade IPFS now](https://docs.ipfs.io/recent-releases/go-ipfs-0-5/update-procedure/#use-ipfs-update)!**
 <br />
 
 <p style="max-width:1000px;margin-left:auto;margin-right:auto;">
@@ -80,9 +80,9 @@ Testground allowed us to tweak these parameters to measure which changes would h
 
 What followed was a whirlwind of test-plan writing to measure each change to the DHT logic in a real-world network setting. We tested our new systems for diagnosing undialable peers and removing them from our routing tables, measured success rates for ending our queries earlier, and even re-benchmarked our [improvements to Bitswap](https://blog.ipfs.io/2020-02-14-improved-bitswap-for-container-distribution/) to find additional improvements. Throughout these refactors, we were able to continually validate the performance of these changes with our Testground simulations, as well as a few well-placed canary nodes to run benchmarks against the full public network. 
 
-With these tools in hand, we sprinted 🏃‍♂️💨 from the summit to our release to make it all happen. From identifying the problem with the community, to scoping potential solutions, building testing tools, learning from past research, and executing on the needed technical fixes - this marathon of a release certainly put us through our paces - resulting in an [epic list of new and improved features](https://docs-beta.ipfs.io/recent-releases/go-ipfs-0-5/features/).
+With these tools in hand, we sprinted 🏃‍♂️💨 from the summit to our release to make it all happen. From identifying the problem with the community, to scoping potential solutions, building testing tools, learning from past research, and executing on the needed technical fixes - this marathon of a release certainly put us through our paces - resulting in an [epic list of new and improved features](https://docs.ipfs.io/recent-releases/go-ipfs-0-5/features/).
 
-Up next, in **Part 2 of this DHT Deep Dive**, we'll walk you through exactly what’s new with the DHT and go even deeper on the improvements we saw. In the meantime, if you haven’t upgraded yet, **[please do](https://docs-beta.ipfs.io/recent-releases/go-ipfs-0-5/update-procedure/#use-ipfs-update)**. We’ll all reap the benefits of a more performant DHT as more and more nodes update!
+Up next, in **Part 2 of this DHT Deep Dive**, we'll walk you through exactly what’s new with the DHT and go even deeper on the improvements we saw. In the meantime, if you haven’t upgraded yet, **[please do](https://docs.ipfs.io/recent-releases/go-ipfs-0-5/update-procedure/#use-ipfs-update)**. We’ll all reap the benefits of a more performant DHT as more and more nodes update!
 
 
 ### Learn more
