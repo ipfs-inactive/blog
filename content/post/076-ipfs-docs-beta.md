@@ -12,7 +12,7 @@ header_image: 076-ipfs-docs-beta.png
 <br/>
 *New year, new look.*
 
-![Mind map of docs beta nav](/076-ipfs-docs-beta/img/docs-site-mindmap.png)
+![Mind map of docs beta nav](/076-ipfs-docs-beta/img/docs-beta-site-mindmap.png)
 <br/>
 *Here’s a mind map of how the docs beta’s navigation works.*
 
