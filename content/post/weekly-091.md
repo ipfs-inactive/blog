@@ -25,7 +25,7 @@ The Gossipsub Task Force has been hard at work exploring and analyzing various a
 * [Orbit-db 0.24](https://github.com/orbitdb/orbit-db/issues/772#issuecomment-632357888) is out with support for both go-ipfs 0.5 and js-ipfs 0.44
 * [go-libp2p v0.9.0](https://github.com/libp2p/go-libp2p/releases/tag/v0.9.0) was released with some long-awaited features: connection gating to accept/deny connections at different stages, decaying peer scoring tags, signed peer records for enhanced security, and more.
 * [The second rust-ipfs grant](https://medium.com/equilibriumco/the-road-to-unixfs-f3cf5222b2ef) has been approved, and work has begun on the UnixFS! 
-* [ipfs-shipyard 0.11.4](https://github.com/ipfs-shipyard/ipfs-desktop/releases/tag/v0.11.4) is now here!
+* [ipfs-desktop 0.11.4](https://github.com/ipfs-shipyard/ipfs-desktop/releases/tag/v0.11.4) is now here!
 * Under the hood: [AvionDB P2P Syncing](https://simpleaswater.com/aviondb-p2p-sync/)
 * Learn all about [Offline Knowledge Hotspots](https://www.youtube.com/watch?time_continue=1&v=K2MF4fvcl70&feature=emb_logo) in the Local Offline Collaboration Monthly meeting 
 
