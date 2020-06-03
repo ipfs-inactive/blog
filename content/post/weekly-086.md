@@ -1,6 +1,6 @@
 ---
 date: 2020-04-21
-url: weekly-86
+url: /weekly-86/
 translationKey: ipfs-weekly-86
 tags: weekly
 header_image: weekly-newsletter.png

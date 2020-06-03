@@ -1,6 +1,6 @@
 ---
 date: 2019-06-07
-url: 91-ipfs-2018-dev-meetings
+url: /91-ipfs-2018-dev-meetings/
 tags: dev meetings ipfs libp2p community researchers
 title: July 2018 IPFS Developer Meetings
 author: Molly Mackinlay

@@ -1,6 +1,6 @@
 ---
 date: 2015-05-05
-url: 0-hello-worlds
+url: /0-hello-worlds/
 title: Hello Worlds
 author: Juan Benet
 ---

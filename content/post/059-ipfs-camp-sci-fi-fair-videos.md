@@ -1,6 +1,6 @@
 ---
 date: 2019-10-03
-url: 2019-10-03-ipfs-camp-sci-fi-fair-videos
+url: /2019-10-03-ipfs-camp-sci-fi-fair-videos/
 title: IPFS Camp Sci-Fi videos 🧬
 author: Arkadiy Kukarkin
 ---

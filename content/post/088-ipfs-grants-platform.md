@@ -1,6 +1,6 @@
 ---
 date: 2020-04-20
-url: 2020-04-20-ipfs-grants-platform
+url: /2020-04-20-ipfs-grants-platform/
 title: IPFS Grants Platform
 author: Arkadiy Kukarkin, Molly Mackinlay
 header_image: 088-ipfs-grants-platform.png

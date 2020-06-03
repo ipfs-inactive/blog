@@ -1,6 +1,6 @@
 ---
 date: 2020-05-06
-url: 2020-05-06-launching-testground
+url: /2020-05-06-launching-testground/
 title: Launching Testground v0.5
 author: Raul Kripalani
 header_image: 092-launching-testground.png

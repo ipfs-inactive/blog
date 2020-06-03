@@ -1,6 +1,6 @@
 ---
 date: 2017-07-12
-url: 28-js-ipfs-0-25
+url: /28-js-ipfs-0-25/
 title: js-ipfs 0.25.0 released
 author: David Dias
 header_image: js-ipfs-placeholder.png

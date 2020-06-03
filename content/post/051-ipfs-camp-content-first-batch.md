@@ -1,6 +1,6 @@
 ---
 date: 2019-07-20
-url: 2019-07-22-ipfs-camp-content-first-batch
+url: /2019-07-22-ipfs-camp-content-first-batch/
 tags: IPFS, IPFS Camp
 title: 2019 IPFS Camp 1st batch of recordings are out!
 author: David Dias

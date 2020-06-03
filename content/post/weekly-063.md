@@ -1,6 +1,6 @@
 ---
 date: 2019-10-15
-url: weekly-63
+url: /weekly-63/
 translationKey: ipfs-weekly-63
 tags: weekly
 title: Recapping IPFS in Q3 2019 🎉

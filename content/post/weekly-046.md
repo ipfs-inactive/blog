@@ -1,6 +1,6 @@
 ---
 date: 2019-06-18
-url: 95-ipfs-weekly-46
+url: /95-ipfs-weekly-46/
 tags: weekly
 title: IPFS Weekly 46
 author: Jenn Turner

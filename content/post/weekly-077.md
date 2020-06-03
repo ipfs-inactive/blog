@@ -1,6 +1,6 @@
 ---
 date: 2020-02-11
-url: weekly-77
+url: /weekly-77/
 translationKey: ipfs-weekly-77
 tags: weekly
 title: IPFS Weekly 77

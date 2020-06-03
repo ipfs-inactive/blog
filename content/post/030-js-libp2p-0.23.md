@@ -1,6 +1,6 @@
 ---
 date: 2018-07-27
-url: 41-js-libp2p-0-23
+url: /41-js-libp2p-0-23/
 title: js-libp2p 0.23.0 released
 author: David Dias
 ---

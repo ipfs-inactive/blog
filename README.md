@@ -136,7 +136,7 @@ Every post can be optionally translated by:
     ---
     date: 2018-09-25
     title: IPFS 周报-11
-    url: zh-cn/45-ipfs-weekly-11
+    url: /zh-cn/45-ipfs-weekly-11/
     translationKey: 45-ipfs-weekly-11
     ---
 	```

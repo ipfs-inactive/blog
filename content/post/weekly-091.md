@@ -1,6 +1,6 @@
 ---
 date: 2020-05-27
-url: weekly-91
+url: /weekly-91/
 translationKey: ipfs-weekly-91
 tags: weekly
 header_image: weekly-newsletter.png

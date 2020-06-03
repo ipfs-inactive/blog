@@ -1,6 +1,6 @@
 ---
 date: 2018-09-12
-url: 44-ipld-explorer-cli-0-14
+url: /44-ipld-explorer-cli-0-14/
 title: ipld-explorer-cli 0.14 released
 author: Alan Shaw
 ---

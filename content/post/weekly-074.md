@@ -1,6 +1,6 @@
 ---
 date: 2020-01-21
-url: weekly-74
+url: /weekly-74/
 translationKey: ipfs-weekly-74
 tags: weekly
 title: IPFS Weekly 74

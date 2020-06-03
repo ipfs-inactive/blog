@@ -1,6 +1,6 @@
 ---
 date: 2019-08-29
-url: 2019-08-29-pubsub-in-the-browser
+url: /2019-08-29-pubsub-in-the-browser/
 title: PubSub in the browser with the JS IPFS HTTP API client
 author: Alan Shaw
 ---

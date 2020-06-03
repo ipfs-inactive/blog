@@ -1,6 +1,6 @@
 ---
 date: 2019-11-05
-url: zh-ch/weekly-66
+url: /zh-ch/weekly-66/
 translationKey: ipfs-weekly-66
 tags: weekly
 title: IPFS 周报-66

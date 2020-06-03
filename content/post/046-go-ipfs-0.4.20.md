@@ -1,6 +1,6 @@
 ---
 date: 2019-04-16
-url: 83-go-ipfs-0-4-20
+url: /83-go-ipfs-0-4-20/
 title: go-ipfs 0.4.20 released
 author: Steven Allen
 ---

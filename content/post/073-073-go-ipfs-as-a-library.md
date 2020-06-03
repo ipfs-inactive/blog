@@ -1,6 +1,6 @@
 ---
 date: 2019-10-29
-url: 073-go-ipfs-as-a-library
+url: /073-go-ipfs-as-a-library/
 title: A new Tutorial has been created - Learn how to use go-ipfs as a Library
 author: David Dias
 ---

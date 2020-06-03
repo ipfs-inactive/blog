@@ -1,6 +1,6 @@
 ---
 date: 2019-04-05
-url: 78-ipfs-2019-roadmap
+url: /78-ipfs-2019-roadmap/
 title: "Achievement Unlocked: The 2019 IPFS Roadmap"
 author: Molly Mackinlay
 ---

@@ -1,6 +1,6 @@
 ---
 date: 2019-12-17
-url: weekly-72
+url: /weekly-72/
 translationKey: ipfs-weekly-72
 tags: weekly
 title: Recapping IPFS in Q4 2019 🎉

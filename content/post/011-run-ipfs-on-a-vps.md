@@ -1,6 +1,6 @@
 ---
 date: 2016-11-14
-url: 22-run-ipfs-on-a-vps
+url: /22-run-ipfs-on-a-vps/
 title: Run IPFS latest on a VPS
 author: Richard Littauer
 ---

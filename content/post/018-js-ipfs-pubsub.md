@@ -1,6 +1,6 @@
 ---
 date: 2017-07-29
-url: 29-js-ipfs-pubsub
+url: /29-js-ipfs-pubsub/
 title: Distributed pubsub primitives for js-ipfs in the Browser
 author: Pedro Teixeira
 ---

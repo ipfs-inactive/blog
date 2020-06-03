@@ -1,6 +1,6 @@
 ---
 date: 2019-03-19
-url: 75-ipfs-weekly-34
+url: /75-ipfs-weekly-34/
 tags: weekly
 title: IPFS Weekly 34
 author: Jenn Turner

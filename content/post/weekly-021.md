@@ -1,6 +1,6 @@
 ---
 date: 2018-12-04
-url: 59-ipfs-weekly-21
+url: /59-ipfs-weekly-21/
 tags: weekly
 title: IPFS Weekly 21
 author: Jenn Turner

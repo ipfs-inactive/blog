@@ -1,6 +1,6 @@
 ---
 date: 2019-05-13
-url: meet-the-community-carson-farmer
+url: /meet-the-community-carson-farmer/
 tags: "Meet the Community"
 title: Meet the Community, Carson Farmer @ Textile
 author: IPFS Events Team

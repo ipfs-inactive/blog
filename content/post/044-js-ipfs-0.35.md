@@ -1,6 +1,6 @@
 ---
 date: 2019-04-12
-url: 80-js-ipfs-0-35
+url: /80-js-ipfs-0-35/
 title: js-ipfs 0.35.0 released
 author: Alan Shaw
 header_image: js-ipfs-placeholder.png

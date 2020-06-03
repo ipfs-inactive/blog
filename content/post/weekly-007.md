@@ -1,6 +1,6 @@
 ---
 date: 2016-03-17
-url: 12-ipfs-weekly-7
+url: /12-ipfs-weekly-7/
 tags: weekly
 title: IPFS Weekly 7
 author: Richard Littauer, Andrew Chin

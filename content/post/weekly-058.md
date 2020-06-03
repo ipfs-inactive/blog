@@ -1,6 +1,6 @@
 ---
 date: 2019-09-10
-url: weekly-58
+url: /weekly-58/
 translationKey: ipfs-weekly-58
 tags: weekly
 title: IPFS Weekly 58

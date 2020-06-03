@@ -1,6 +1,6 @@
 ---
 date: 2019-08-13
-url: 054-go-ipfs-0.4.22
+url: /054-go-ipfs-0.4.22/
 title: go-ipfs 0.4.22 released
 author: Steven Allen
 ---

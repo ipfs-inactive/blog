@@ -1,6 +1,6 @@
 ---
 date: 2019-07-31
-url: 2019-07-31-operation-task-force
+url: /2019-07-31-operation-task-force/
 tags: IPFS, Project
 title: IPFS Project Q3 Priorities & Working Groups
 author: Dietrich Ayala

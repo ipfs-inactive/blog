@@ -1,6 +1,6 @@
 ---
 date: 2020-02-14
-url: 2020-02-14-improved-bitswap-for-container-distribution
+url: /2020-02-14-improved-bitswap-for-container-distribution/
 title: New improvements to IPFS Bitswap for faster container image distribution
 author: Dirk McCormick (IPFS) and Edgar Lee (Netflix)
 header_image: 083-improved-bitswap-with-netflix.png

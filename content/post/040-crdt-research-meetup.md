@@ -1,6 +1,6 @@
 ---
 date: 2019-03-22
-url: 67-crdt-research-meetup
+url: /67-crdt-research-meetup/
 tags: crdt research meetup videos ipfs
 title: 2018 CRDT Research Meetup - Lisbon
 author: Pedro Teixeira

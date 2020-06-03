@@ -1,6 +1,6 @@
 ---
 date: 2019-01-08
-url: 62-ipfs-weekly-24
+url: /62-ipfs-weekly-24/
 tags: weekly
 title: IPFS Weekly 24
 author: Jenn Turner

@@ -1,6 +1,6 @@
 ---
 date: 2020-03-31
-url: weekly-83
+url: /weekly-83/
 translationKey: ipfs-weekly-83
 tags: weekly
 header_image: weekly-newsletter.png

@@ -1,6 +1,6 @@
 ---
 date: 2016-05-08
-url: 16-ipfs-weekly-10
+url: /16-ipfs-weekly-10/
 tags: weekly
 title: IPFS Weekly 10
 author: Richard Littauer

@@ -1,6 +1,6 @@
 ---
 date: 2020-05-21
-url: 2020-05-21-js-ipfs-0-44
+url: /2020-05-21-js-ipfs-0-44/
 title: js-ipfs 0.44.0 released
 header_image: js-ipfs-placeholder.png
 author: Alex Potsides

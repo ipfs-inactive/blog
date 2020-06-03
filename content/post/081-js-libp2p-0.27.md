@@ -1,6 +1,6 @@
 ---
 date: 2020-02-07
-url: 2020-02-07-js-libp2p-0-27
+url: /2020-02-07-js-libp2p-0-27/
 title: js-libp2p 0.27 released
 author: Jacob Heun
 header_image: 081-js-libp2p-0.27.png

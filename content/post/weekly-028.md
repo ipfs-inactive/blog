@@ -1,6 +1,6 @@
 ---
 date: 2019-02-05
-url: 68-ipfs-weekly-28
+url: /68-ipfs-weekly-28/
 tags: weekly
 title: IPFS Weekly 28
 author: Jenn Turner

@@ -1,6 +1,6 @@
 ---
 date: 2019-05-20
-url: meet-the-community-alan-shaw
+url: /meet-the-community-alan-shaw/
 tags: "Meet the Community"
 title: Meet the Community, Alan Shaw @ IPFS / Protocol Labs
 author: IPFS Events Team

@@ -1,6 +1,6 @@
 ---
 date: 2018-04-23
-url: 36-a-look-at-windows
+url: /36-a-look-at-windows/
 title: A look at go-ipfs on Windows
 author: Dominic Della Valle
 ---

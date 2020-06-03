@@ -1,6 +1,6 @@
 ---
 date: 2019-01-24
-url: 65-london-hack-week-report
+url: /65-london-hack-week-report/
 tags: hack week
 title: 2018 Q4 London Hack Week Summary
 author: David Dias

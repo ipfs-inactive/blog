@@ -1,6 +1,6 @@
 ---
 date: 2019-08-13
-url: weekly-54
+url: /weekly-54/
 translationKey: ipfs-weekly-54
 tags: weekly
 title: IPFS Weekly 54

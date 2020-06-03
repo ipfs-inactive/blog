@@ -1,6 +1,6 @@
 ---
 date: 2018-12-11
-url: 60-ipfs-weekly-22
+url: /60-ipfs-weekly-22/
 tags: weekly
 title: IPFS Weekly 22
 author: Jenn Turner

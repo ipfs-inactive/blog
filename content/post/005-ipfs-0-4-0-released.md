@@ -1,6 +1,6 @@
 ---
 date: 2016-04-07
-url: 14-ipfs-0-4-0-released
+url: /14-ipfs-0-4-0-released/
 tags: modules
 title: go-ipfs 0.4.0 has been released
 author: Kyle Drake and @whyrusleeping

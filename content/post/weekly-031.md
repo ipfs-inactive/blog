@@ -1,6 +1,6 @@
 ---
 date: 2019-02-26
-url: 71-ipfs-weekly-31
+url: /71-ipfs-weekly-31/
 tags: weekly
 title: IPFS Weekly 31
 author: Jenn Turner
