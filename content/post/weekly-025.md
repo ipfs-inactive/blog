@@ -1,6 +1,6 @@
 ---
 date: 2019-01-15
-url: 63-ipfs-weekly-25
+url: /63-ipfs-weekly-25/
 tags: weekly
 title: IPFS Weekly 25
 author: Jenn Turner

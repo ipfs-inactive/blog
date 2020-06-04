@@ -1,6 +1,6 @@
 ---
 date: 2019-10-14
-url: 2019-10-14-ipfs-camp-keynotes-interviews
+url: /2019-10-14-ipfs-camp-keynotes-interviews/
 title: IPFS Camp Keynotes and Interviews
 author: Molly Mackinlay
 header_image: 060-ipfs-camp-keynotes-interviews.png

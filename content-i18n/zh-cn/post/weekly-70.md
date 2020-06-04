@@ -1,6 +1,6 @@
 ---
 date: 2019-12-03
-url: zh-cn/weekly-70
+url: /zh-cn/weekly-70/
 translationKey: ipfs-weekly-70
 tags: weekly
 title: IPFS 周报-70

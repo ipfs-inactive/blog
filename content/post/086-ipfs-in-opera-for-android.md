@@ -1,6 +1,6 @@
 ---
 date: 2020-03-30
-url: 2020-03-30-ipfs-in-opera-for-android
+url: /2020-03-30-ipfs-in-opera-for-android/
 tags: IPFS, Web Browsers, Opera, Android
 title: IPFS in Opera for Android
 author: Dietrich Ayala

@@ -1,6 +1,6 @@
 ---
 date: 2019-07-23
-url: weekly-51
+url: /weekly-51/
 translationKey: ipfs-weekly-51
 tags: weekly
 title: IPFS Weekly 51

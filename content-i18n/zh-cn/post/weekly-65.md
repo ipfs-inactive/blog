@@ -1,6 +1,6 @@
 ---
 date: 2019-10-29
-url: zh-ch/weekly-65
+url: /zh-ch/weekly-65/
 translationKey: ipfs-weekly-65
 tags: weekly
 title: IPFS 周报-65

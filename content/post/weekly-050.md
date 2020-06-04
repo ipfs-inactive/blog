@@ -1,6 +1,6 @@
 ---
 date: 2019-07-16
-url: weekly-50
+url: /weekly-50/
 tags: weekly
 title: IPFS Weekly 50
 author: Jenn Turner

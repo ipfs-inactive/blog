@@ -1,6 +1,6 @@
 ---
 date: 2019-12-17
-url: zh-cn/weekly-72
+url: /zh-cn/weekly-72/
 translationKey: ipfs-weekly-72
 tags: weekly
 title: IPFS 回顾 2019 年第4季度 🎉

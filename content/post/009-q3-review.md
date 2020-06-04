@@ -1,6 +1,6 @@
 ---
 date: 2016-09-27
-url: 20-q3-review
+url: /20-q3-review/
 title: Join us for the Q3 Roadmap review calls
 author: Richard littauer
 ---

@@ -1,6 +1,6 @@
 ---
 date: 2020-05-13
-url: 2020-05-13-ipfs-pinning-summit-recap
+url: /2020-05-13-ipfs-pinning-summit-recap/
 title: IPFS Pinning Summit Recap
 author: Molly Mackinlay & Pooja Shah
 header_image: 093-ipfs-pinning-summit-recap.png

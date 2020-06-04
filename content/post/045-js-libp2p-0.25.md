@@ -1,6 +1,6 @@
 ---
 date: 2019-04-12
-url: 81-js-libp2p-0-25
+url: /81-js-libp2p-0-25/
 title: js-libp2p 0.25.0 released
 author: Jacob Heun
 header_image: 045-js-libp2p-0.25.png

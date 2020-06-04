@@ -1,6 +1,6 @@
 ---
 date: 2019-07-02
-url: 97-ipfs-weekly-48
+url: /97-ipfs-weekly-48/
 tags: weekly
 title: IPFS Weekly 48
 author: Jenn Turner

@@ -1,6 +1,6 @@
 ---
 date: 2020-05-12
-url: weekly-89
+url: /weekly-89/
 translationKey: ipfs-weekly-89
 tags: weekly
 header_image: weekly-newsletter.png

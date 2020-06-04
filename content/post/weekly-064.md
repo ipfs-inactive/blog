@@ -1,6 +1,6 @@
 ---
 date: 2019-10-22
-url: weekly-64
+url: /weekly-64/
 translationKey: ipfs-weekly-64
 tags: weekly
 title: IPFS Weekly 64

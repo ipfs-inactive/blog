@@ -1,6 +1,6 @@
 ---
 date: 2019-08-07
-url: 2019-08-07-js-libp2p-0-26
+url: /2019-08-07-js-libp2p-0-26/
 title: js-libp2p 0.26.0 released
 author: Jacob Heun
 header_image: 055-js-libp2p-0.26.png

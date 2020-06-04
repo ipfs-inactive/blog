@@ -1,6 +1,6 @@
 ---
 date: 2018-11-16
-url: 55-js-libp2p-0-24
+url: /55-js-libp2p-0-24/
 title: js-libp2p 0.24.0 released
 author: Jacob Heun
 ---

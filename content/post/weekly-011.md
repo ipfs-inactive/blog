@@ -1,6 +1,6 @@
 ---
 date: 2018-09-25
-url: 45-ipfs-weekly-11
+url: /45-ipfs-weekly-11/
 translationKey: 45-ipfs-weekly-11
 tags: weekly
 title: IPFS Weekly 11

@@ -1,6 +1,6 @@
 ---
 date: 2020-02-04
-url: weekly-76
+url: /weekly-76/
 translationKey: ipfs-weekly-76
 tags: weekly
 title: IPFS Weekly 76

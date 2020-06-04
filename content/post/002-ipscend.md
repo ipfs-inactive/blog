@@ -1,6 +1,6 @@
 ---
 date: 2015-11-27
-url: 3-ipscend
+url: /3-ipscend/
 tags: codec
 title: ipscend - Publish static web content to IPFS
 author: David Dias

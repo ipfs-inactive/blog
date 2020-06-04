@@ -1,6 +1,6 @@
 ---
 date: 2019-05-06
-url: meet-the-community-edgar-lee
+url: /meet-the-community-edgar-lee/
 tags: "Meet the Community"
 title: Meet the Community, Edgar Lee @ Netflix
 author: IPFS Events Team

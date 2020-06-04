@@ -1,6 +1,6 @@
 ---
 date: 2019-07-08
-url: 2019-07-08-ipfs-camp-recap
+url: /2019-07-08-ipfs-camp-recap/
 tags: IPFS, IPFS Camp
 title: 2019 IPFS Camp Recap
 author: David Dias

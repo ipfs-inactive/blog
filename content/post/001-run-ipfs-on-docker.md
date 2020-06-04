@@ -1,6 +1,6 @@
 ---
 date: 2015-07-11
-url: 1-run-ipfs-on-docker
+url: /1-run-ipfs-on-docker/
 title: Run IPFS in a Docker container
 author: Kyle Drake
 ---

@@ -1,6 +1,6 @@
 ---
 date: 2019-05-21
-url: 88-ipfs-weekly-43
+url: /88-ipfs-weekly-43/
 tags: weekly
 title: IPFS Weekly 43
 author: Jenn Turner

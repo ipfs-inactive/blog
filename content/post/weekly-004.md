@@ -1,6 +1,6 @@
 ---
 date: 2016-02-05
-url: 7-ipfs-weekly-4
+url: /7-ipfs-weekly-4/
 tags: weekly
 title: IPFS Weekly 4
 author: Richard Littauer, Andrew Chin

@@ -1,6 +1,6 @@
 ---
 date: 2018-12-03
-url: 58-http-client-rename
+url: /58-http-client-rename/
 title: The HTTP client libraries are being renamed!
 author: Alan Shaw
 ---

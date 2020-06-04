@@ -1,6 +1,6 @@
 ---
 date: 2019-09-17
-url: weekly-59
+url: /weekly-59/
 translationKey: ipfs-weekly-59
 tags: weekly
 title: IPFS Weekly 59

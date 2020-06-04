@@ -1,6 +1,6 @@
 ---
 date: 2016-02-01
-url: 6-ipfs-weekly-3
+url: /6-ipfs-weekly-3/
 tags: weekly
 title: IPFS Weekly 3
 author: Richard Littauer, Andrew Chin

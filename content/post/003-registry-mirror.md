@@ -1,6 +1,6 @@
 ---
 date: 2015-12-08
-url: 8-registry-mirror
+url: /8-registry-mirror/
 tags: modules
 title: Stellar Module Management - Install your Node.js modules using IPFS
 author: David Dias

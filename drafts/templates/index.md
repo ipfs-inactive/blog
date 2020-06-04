@@ -1,7 +1,8 @@
 ---
 # this is the final blog post's url (used in the directory)
 # should only contain: letters, numbers, dashes.
-url: final-blog-post-name
+# it should start and end with a slash
+url: /final-blog-post-name/
 
 # the date here should be set to the final publication date,
 # on the day it is published.

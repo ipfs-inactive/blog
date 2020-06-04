@@ -1,6 +1,6 @@
 ---
 date: 2020-02-18
-url: weekly-78
+url: /weekly-78/
 translationKey: ipfs-weekly-78
 tags: weekly
 title: IPFS Weekly 78

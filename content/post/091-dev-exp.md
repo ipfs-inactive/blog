@@ -1,6 +1,6 @@
 ---
 date: 2020-05-05
-url: 2020-05-05-developer-experience
+url: /2020-05-05-developer-experience/
 title: Improving the IPFS Developer experience
 author: Hector Sanjuan
 tags: Developer, Experience

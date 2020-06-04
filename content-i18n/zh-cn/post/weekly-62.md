@@ -1,6 +1,6 @@
 ---
 date: 2019-10-10
-url: zh-cn/weekly-62
+url: /zh-cn/weekly-62/
 translationKey: ipfs-weekly-62
 tags: weekly
 title: IPFS 周报-62

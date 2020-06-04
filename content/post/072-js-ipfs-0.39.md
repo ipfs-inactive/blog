@@ -1,6 +1,6 @@
 ---
 date: 2019-10-24
-url: 071-js-ipfs-0-39
+url: /071-js-ipfs-0-39/
 title: js-ipfs 0.39.0 released
 author: Alex Potsides
 header_image: js-ipfs-placeholder.png

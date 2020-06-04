@@ -1,6 +1,6 @@
 ---
 date: 2020-03-18
-url: 2020-03-18-announcing-rust-ipfs
+url: /2020-03-18-announcing-rust-ipfs/
 title: Announcing Rust IPFS, and a call for contributors
 author: Mark Robert Henderson and Molly Mackinlay
 header_image: 085-announcing-rust-ipfs.png

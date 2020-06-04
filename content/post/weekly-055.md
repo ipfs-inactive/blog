@@ -1,6 +1,6 @@
 ---
 date: 2019-08-20
-url: weekly-55
+url: /weekly-55/
 translationKey: ipfs-weekly-55
 tags: weekly
 title: IPFS Weekly 55

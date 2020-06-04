@@ -1,6 +1,6 @@
 ---
 date: 2019-09-10
-url: zh-cn/ipfs-weekly-58
+url: /zh-cn/ipfs-weekly-58/
 translationKey: ipfs-weekly-58
 tags: weekly
 title: IPFS 周报-58

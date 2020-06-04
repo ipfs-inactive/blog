@@ -1,6 +1,6 @@
 ---
 date: 2019-04-10
-url: 79-ipfs-weekly-37
+url: /79-ipfs-weekly-37/
 tags: weekly
 title: Recapping IPFS in Q1 2019 🎉
 author: Jenn Turner

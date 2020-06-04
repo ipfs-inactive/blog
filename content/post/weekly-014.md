@@ -1,6 +1,6 @@
 ---
 date: 2018-10-16
-url: 48-ipfs-weekly-14
+url: /48-ipfs-weekly-14/
 tags: weekly
 title: IPFS Weekly 14
 author: Jenn Turner

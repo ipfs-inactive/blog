@@ -1,6 +1,6 @@
 ---
 date: 2018-04-10
-url: 35-ipfs-companion-2-2-0
+url: /35-ipfs-companion-2-2-0/
 title: IPFS Companion 2.2.0 brings window.ipfs to your Browser
 author: lidel
 ---

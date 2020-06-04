@@ -1,6 +1,6 @@
 ---
 date: 2016-03-22
-url: 13-ipfs-weekly-8
+url: /13-ipfs-weekly-8/
 tags: weekly
 title: IPFS Weekly 8
 author: Richard Littauer

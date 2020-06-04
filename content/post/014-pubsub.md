@@ -1,6 +1,6 @@
 ---
 date: 2017-05-17
-url: 25-pubsub
+url: /25-pubsub/
 title: Take a look at pubsub on IPFS
 author: Jeromy Johnson
 ---

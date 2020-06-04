@@ -1,6 +1,6 @@
 ---
 date: 2019-11-12
-url: weekly-67
+url: /weekly-67/
 translationKey: ipfs-weekly-67
 tags: weekly
 title: IPFS Weekly 67

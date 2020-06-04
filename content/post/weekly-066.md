@@ -1,6 +1,6 @@
 ---
 date: 2019-11-05
-url: weekly-66
+url: /weekly-66/
 translationKey: ipfs-weekly-66
 tags: weekly
 title: IPFS Weekly 66

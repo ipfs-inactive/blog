@@ -1,6 +1,6 @@
 ---
 date: 2017-05-04
-url: 24-uncensorable-wikipedia
+url: /24-uncensorable-wikipedia/
 title: Uncensorable Wikipedia on IPFS
 author: The IPFS Team
 ---

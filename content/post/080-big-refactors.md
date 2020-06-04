@@ -1,6 +1,6 @@
 ---
 date: 2020-02-06
-url: 2020-02-06-big-refactors
+url: /2020-02-06-big-refactors/
 title: Big Refactors
 author: Alan Shaw
 ---

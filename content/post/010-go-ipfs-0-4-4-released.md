@@ -1,6 +1,6 @@
 ---
 date: 2016-10-11
-url: 21-go-ipfs-0-4-4-released
+url: /21-go-ipfs-0-4-4-released/
 title: go-ipfs 0.4.4 has been released
 author: whyrusleeping & Lars Gierth
 ---
