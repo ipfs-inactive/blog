@@ -83,7 +83,7 @@ Now edit the metadata at the top of the file.
 - `author` - used to give you credit for your words - **required**
 - `title` - used as the `h1` on the post-page, and the name of the post on the index page. **required**
 - `tags` - don't appear to be used right now, but set them anyway as we'll want to add a _see more posts like this one_ feature one day.
-- `url` - can be used to override the post URL if needed.
+- `url` - can be used to override the post URL if needed. Please start and end URLs with a `/` (`/my/url/`).
 - `header_image` - name of the image displayed on the [blog homepage](https://blog.ipfs.io/). If no image is set, a [default header image](https://raw.githubusercontent.com/ipfs/blog/blog-picture-list/static/header_images/blog-placeholder.png) is shown. See [Custom header image](#custom-header-image) for more details.
 - `snippet` - the short string of text that is displayed for each post on the [blog homepage](https://blog.ipfs.io). If no snippet is set, the first ~20 words are shown.
 
