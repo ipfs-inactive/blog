@@ -10,31 +10,31 @@ author: Alex Potsides
 
 > Bitswap 1.2.0, transfer speed improvements & go-IPFS 0.5.x compatibility
 
-Blink and you'll miss it, ~~`js-IPFS@0.45.0`~~ `js-IPFS@0.46.0` has been released, goodies include Bitswap 1.2.0, much faster file transfers and go-IPFS 0.5.x compatibility!
+Blink and you’ll miss it, ~~`js-IPFS@0.45.0`~~ `js-IPFS@0.46.0` has been released; goodies include Bitswap 1.2.0, much faster file transfers, and go-IPFS 0.5.x compatibility!
 
 ## ↔️ Bitswap 1.2.0
 
-Version 1.2.0 of the Bitswap protocol has landed in `js-IPFS` and brings a host of performance improvements around coordinating the supply of blocks to peers across the network. For example peers can now respond to WANTs with messages saying they have the block but not sending it, in order to later send multiple blocks in one message instead of many small messages resulting in less chatty network operations and faster overall transfer times.
+Version 1.2.0 of the Bitswap protocol has landed in `js-IPFS` and brings a host of performance improvements around coordinating the supply of blocks to peers across the network. For example, peers can now respond to WANTs with messages saying they have the block but not sending it, in order to later send multiple blocks in one message instead of many small messages resulting in less chatty network operations and faster overall transfer times.
 
 See [ipfs/js-ipfs-bitswap#204](https://github.com/ipfs/js-ipfs-bitswap/pull/204) for more!
 
 ## 💨 Faster file transfers
 
-The Bitswap module has had a bit of an overhaul and is now much faster at pulling blocks from other nodes across the network.  Before we waited a little while before sending our wantlist to newly connected peers - we've reduced that window and seen a massive speedup (smaller bars are better):
+The Bitswap module has had a bit of an overhaul and is now much faster at pulling blocks from other nodes across the network.  Before, we waited a little while before sending our wantlist to newly connected peers—we’ve reduced that window and seen a massive speedup (smaller bars are better):
 
 ![Graphs showing Bitswap speedups](/097-js-ipfs-0.46/bitswap-speedup.png)
 
-As you can see, the new js-IPFS is about 3x faster pulling large files from other nodes on the network than the previous release, and that increases to about 5x as the files get smaller.
+As you can see, the new js-IPFS is about 3x faster at pulling large files from other nodes on the network than the previous release, and that increases to about 5x as the files get smaller.
 
-We're not stopping there though, there are plenty more performance improvements on the way!
+We’re not stopping there though, there are plenty more performance improvements on the way!
 
 See [ipfs/js-ipfs-bitswap#224](https://github.com/ipfs/js-ipfs-bitswap/pull/224) for all the details.
 
 ## 🤝 go-IPFS v0.5.x compatibility
 
-The new version of go-IPFS brought a whole slew of changes with it - check out our [blog post](https://blog.ipfs.io/2020-04-28-go-ipfs-0-5-0/) for a rundown of what these are.
+The new version of go-IPFS brought a whole slew of changes with it—check out our [blog post](https://blog.ipfs.io/2020-04-28-go-ipfs-0-5-0/) for more details.
 
-The good news is js-IPFS has taken on a whole heap of these features and the `ipfs-http-client` is now 100% compatible with `go-ipfs@0.5.x`.  Your `js-IPFS` nodes will now happily chat away to `go-IPFS` nodes over the network via Bitswap and [gossipsub](https://blog.ipfs.io/2020-05-20-gossipsub-v1.1/) too.
+The good news is js-IPFS has taken on a whole heap of these features and the `ipfs-http-client` is now 100% compatible with `go-ipfs@0.5.x`. Your `js-IPFS` nodes will now happily chat away to `go-IPFS` nodes over the network via Bitswap and [gossipsub](https://blog.ipfs.io/2020-05-20-gossipsub-v1.1/) too.
 
 See [ipfs/js-ipfs#3013](https://github.com/ipfs/js-ipfs/pull/3013) for the full rundown.
 
@@ -68,7 +68,7 @@ See [ipfs/js-ipfs#3013](https://github.com/ipfs/js-ipfs/pull/3013) for the full 
 
 ## HTTP API Client
 
-* `ipfs.dht.get` resolves to a Buffer in line with the core api ([#3013](https://github.com/ipfs/js-ipfs/issues/3013)) ([0900bb9](https://github.com/ipfs/js-ipfs/commit/0900bb9b8123edb689a137a006c5507d8503f693))
+* `ipfs.dht.get` resolves to a Buffer in line with the core API ([#3013](https://github.com/ipfs/js-ipfs/issues/3013)) ([0900bb9](https://github.com/ipfs/js-ipfs/commit/0900bb9b8123edb689a137a006c5507d8503f693))
 
 # 🗺️ What’s next?
 
