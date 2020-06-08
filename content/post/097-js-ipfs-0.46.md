@@ -1,7 +1,7 @@
 ---
-date: 2020-06-05
-url: /2020-06-05-js-ipfs-0-46/
-title: js-ipfs 0.46.0 released
+date: 2020-06-08
+url: /2020-06-08-js-ipfs-0-46/
+title: js-IPFS 0.46.0 released with new faster bitswap and go-IPFS 0.5 compat
 header_image: js-ipfs-placeholder.png
 author: Alex Potsides
 ---
@@ -72,7 +72,7 @@ See [ipfs/js-ipfs#3013](https://github.com/ipfs/js-ipfs/pull/3013) for the full 
 
 # 🗺️ What’s next?
 
-Check out the js-ipfs [Project Roadmap](https://github.com/orgs/ipfs/projects/6) which contains headline features organised in the order we hope them to land.
+Check out the js-IPFS [Project Roadmap](https://github.com/orgs/ipfs/projects/6) which contains headline features organised in the order we hope them to land.
 
 Only large features are called out in the roadmap, expect lots of small bugfix releases between the roadmapped items!
 
@@ -143,7 +143,7 @@ Only large features are called out in the roadmap, expect lots of small bugfix r
 
 Would you like to contribute to the IPFS project and don’t know how? Well, there are a few places you can get started:
 
-- Check the issues with the `help wanted` label in the [js-ipfs repo](https://github.com/ipfs/js-ipfs/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22)
+- Check the issues with the `help wanted` label in the [js-IPFS repo](https://github.com/ipfs/js-ipfs/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22)
 - Join an IPFS All Hands, introduce yourself and let us know where you would like to contribute: https://github.com/ipfs/team-mgmt/#weekly-ipfs-all-hands
 - Hack with IPFS and show us what you made! The All Hands call is also the perfect venue for demos, join in and show us what you built
 - Join the discussion at https://discuss.ipfs.io/ and help users finding their answers.
