@@ -14,7 +14,7 @@ Blink and you’ll miss it, ~~`js-IPFS@0.45.0`~~ `js-IPFS@0.46.0` has been relea
 
 ## ↔️ Bitswap 1.2.0
 
-Version 1.2.0 of the Bitswap protocol has landed in `js-IPFS` and brings a host of performance improvements around coordinating the supply of blocks to peers across the network. For example, peers can now respond to WANTs with messages saying they have the block but not sending it, in order to later send multiple blocks in one message instead of many small messages resulting in less chatty network operations and faster overall transfer times.
+Version 1.2.0 of the Bitswap protocol has landed in `js-IPFS` and brings a host of performance improvements around coordinating the supply of blocks to peers across the network. For example, peers can now respond to [WANT](https://github.com/ipfs/specs/blob/master/BITSWAP.md#bitswap-message)s with messages saying they have the block but not sending it, in order to later send multiple blocks in one message instead of many small messages resulting in less chatty network operations and faster overall transfer times.
 
 See [ipfs/js-ipfs-bitswap#204](https://github.com/ipfs/js-ipfs-bitswap/pull/204) for more!
 
