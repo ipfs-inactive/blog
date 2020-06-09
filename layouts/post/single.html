@@ -25,9 +25,9 @@
             // posts before 2020-03-01 (unix 1583020800) used ipfs.io/blog
             DiscourseEmbed = { discourseUrl: 'https://discuss.ipfs.io/',
               {{ if lt .Date.Unix 1583020800 }}
-                discourseEmbedUrl: 'https://ipfs.io/blog/{{ .URL }}'
+                discourseEmbedUrl: 'https://{{ path.Join "ipfs.io/blog" .URL }}'
               {{ else }}
-                discourseEmbedUrl: 'https://blog.ipfs.io/{{ .URL }}'
+                discourseEmbedUrl: 'https://{{ path.Join "blog.ipfs.io" .URL }}'
               {{ end }}
             };
               if (window.location.hostname === 'blog.ipfs.io') {
