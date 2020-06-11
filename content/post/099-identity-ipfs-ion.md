@@ -15,11 +15,11 @@ Hope has not forsaken this land. The [Decentralized Identity Foundation](https:/
 
 However, today we’re celebrating the launch of a decentralized identity protocol and service from an unlikely place: Microsoft.
 
-Microsoft has been increasingly present in open-source tools and services in the past few years, and has now [launched a standards-based decentralized identity service called Ion](https://techcommunity.microsoft.com/t5/identity-standards-blog/ion-booting-up-the-network/ba-p/1441552).
+Microsoft has been increasingly present in open-source tools and services in the past few years, and has now [launched a standards-based decentralized identity service called ION](https://techcommunity.microsoft.com/t5/identity-standards-blog/ion-booting-up-the-network/ba-p/1441552).
 
 ![ION Logo](../img/099-identity-ipfs-ion/ion-logo.png)
 
-Ion has been under development for over a year, and is an instance implementation of [Sidetree (a blockchain-agnostic distributed PKI protocol)](https://github.com/decentralized-identity/sidetree) that runs on the Bitcoin blockchain.
+ION has been under development for over a year, and is an instance implementation of [Sidetree (a blockchain-agnostic distributed PKI protocol)](https://github.com/decentralized-identity/sidetree) that runs on the Bitcoin blockchain.
 
 And it stores transaction data on IPFS.
 
