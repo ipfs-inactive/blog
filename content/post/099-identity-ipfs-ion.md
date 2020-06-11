@@ -8,7 +8,7 @@ author: Dietrich Ayala
 ---
 
 <p style="text-align: center;">
-  <img src="../header_images/blog-header-ion.png" alt="IPFS logo and ION logo">
+  <img src="../img/099-identity-ipfs-ion/ipfs-ion-header.png" alt="IPFS logo and ION logo">
 </p>
 
 Identity is a key part of how we all interact with each other on the internet every day—sometimes every moment of every day. And sometimes each raging moment as we do the “forgot your password?” dance yet again. Regardless, forging a path forward for user-controlled online identity is a table-stakes requirement for the dweb to succeed.
