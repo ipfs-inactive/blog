@@ -7,7 +7,7 @@ title: Decentralized Identity, IPFS and ION
 author: Dietrich Ayala
 ---
 
-<p style="max-width:780px;margin-left:auto;margin-right:auto;">
+<p style="text-align: center;">
   <img src="../header_images/blog-header-ion.png">
 </p>
 
@@ -21,7 +21,7 @@ However, today we’re celebrating the launch of a decentralized identity protoc
 
 Microsoft has been increasingly present in open-source tools and services in the past few years, and has now [launched a standards-based decentralized identity service called ION](https://techcommunity.microsoft.com/t5/identity-standards-blog/ion-booting-up-the-network/ba-p/1441552).
 
-<p style="max-width:780px;margin-left:auto;margin-right:auto;">
+<p style="text-align: center;">
   <img src="../img/099-identity-ipfs-ion/ion-logo.png">
 </p>
 
