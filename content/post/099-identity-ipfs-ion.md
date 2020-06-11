@@ -7,11 +7,11 @@ title: Decentralized Identity, IPFS and ION
 author: Dietrich Ayala
 ---
 
-Identity is key part of how we all interact with each other on the internet every day - sometimes every moment of every day. And sometimes each raging moment as we do the "forgot your password?" dance yet again. Regardless, forging a path forward for user-controlled online identity is a table-stakes requirement for the dweb to succeed.
+Identity is a key part of how we all interact with each other on the internet every day - sometimes every moment of every day. And sometimes each raging moment as we do the "forgot your password?" dance yet again. Regardless, forging a path forward for user-controlled online identity is a table-stakes requirement for the dweb to succeed.
 
 But identity is hard. There are no easy solutions for interoperable decentralized digital assertions of self. Privacy, security, validity, access control, surveillance, GDPR, KYC, anonymity. It's like Inception but each nested dream level is the same minefield, and those minefields are littered with projects that've tilted at the identity windmill, leaving naught behind but vinyl stickers slowly being covered up on our laptops.
 
-But hope has not forsaken this land. The [Decentralized Identity Foundation](https://identity.foundation/) has been plugging away at this challenge for many years, as have events like [Rebooting the Web of Trust](https://www.weboftrust.info/). And there've also been efforts to build decentralized identity systems on top IPFS, such as [IPID](https://github.com/johnnycrunch/ipid), the [Nomios.io](https://nomios.io/) and [the IPFS IDM](https://github.com/ipfs-shipyard/pm-idm), and most recently the [Ceramic Network](https://www.ceramic.network/).
+But hope has not forsaken this land. The [Decentralized Identity Foundation](https://identity.foundation/) has been plugging away at this challenge for many years, as have groups like [Rebooting the Web of Trust](https://www.weboftrust.info/). And there've been efforts to build decentralized identity systems on top IPFS, such as [IPID](https://github.com/johnnycrunch/ipid), the [Nomios.io](https://nomios.io/) and [the IPFS IDM](https://github.com/ipfs-shipyard/pm-idm), and most recently the [Ceramic Network](https://www.ceramic.network/).
 
 But today we're celebrating the launch of a decentralized identity protocol and service from an unlikely place: Microsoft.
 
