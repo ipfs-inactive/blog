@@ -1,8 +1,8 @@
 ---
-date: 2020-06-18
-url: /2020-06-18-IPFS-mobile-design-guidelines/
+date: 2020-06-19
+url: /2020-06-19-IPFS-mobile-design-guidelines/
 tags: mobile-design-guidelines, Mobile, Design, Research
-header_image:
+header_image: 100-mobile-design-guidelines-header.png
 title: IPFS Mobile Design Guidelines
 author: Jim Kosem, Dietrich Ayala
 ---
