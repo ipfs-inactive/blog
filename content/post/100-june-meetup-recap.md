@@ -6,11 +6,11 @@ author: Jenn Turner
 tags: Events, Video
 ---
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/yhbht93ln0w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLuhRWgmPaHtToVYaDkd6ZTwB2Lo30s1vB" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br>
 <br>  
   
-The IPFS community gathered for [a virtual meetup last week](https://www.youtube.com/watch?v=yhbht93ln0w&list=PLuhRWgmPaHtToVYaDkd6ZTwB2Lo30s1vB&index=2&t=0s) to celebrate the progress made since the major [go-ipfs 0.5 launch](https://blog.ipfs.io/2020-04-28-go-ipfs-0-5-0/) and take a look at where the ecosystem is headed for the duration of 2020.
+The IPFS community gathered for [a virtual meetup last week](https://www.youtube.com/playlist?list=PLuhRWgmPaHtToVYaDkd6ZTwB2Lo30s1vB) to celebrate the progress made since the major [go-ipfs 0.5 launch](https://blog.ipfs.io/2020-04-28-go-ipfs-0-5-0/) and take a look at where the ecosystem is headed for the duration of 2020.
 
 If you missed it, you can catch up on all of the presentations, from Alex Potsides’ walk through what’s new in [js-ipfs](https://blog.ipfs.io/2020-06-08-js-ipfs-0-46/) to special guest Daniel Buchner’s explainer on [Microsoft’s ION](https://blog.ipfs.io/2020-06-11-identity-ipfs-ion/). You also won’t want to miss the lightning talks from folks at Textile, AvionDB, Filecoin, IPLD, and more! 
 
