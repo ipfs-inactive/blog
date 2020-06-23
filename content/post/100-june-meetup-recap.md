@@ -1,12 +1,12 @@
 ---
-date: 2020-06-22
-url: /2020-06-22-june-meetup-recap/
+date: 2020-06-23
+url: /2020-06-23-june-meetup-recap/
 title: Watch exclusive content from our June meetup!
 author: Jenn Turner
 tags: Events, Video
 ---
 
-[space to embed YouTube player]
+<iframe width="560" height="315" src="https://www.youtube.com/embed/yhbht93ln0w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 The IPFS community gathered for a virtual meetup last week to celebrate the progress made since the major [go-ipfs 0.5 launch](https://blog.ipfs.io/2020-04-28-go-ipfs-0-5-0/) and take a look at where the ecosystem is headed for the duration of 2020.
 
