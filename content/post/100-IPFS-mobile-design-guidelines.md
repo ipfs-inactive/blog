@@ -92,7 +92,7 @@ Read the full conclusion of [these findings](https://protocol-labs.gitbook.io/ip
 
 ## Next steps
 
-While we refined our understanding of IPFS and P2P mobile design with this project, we need more research to realise the full value of the network to users. This is especially true for emerging markets and under-served and marginalised users. Their need for data privacy, portability, and stability is as great, if not greater, than for those where the internet works most of the time. These users also serve as a way to understand not only under-explored markets, but also more resilient methods of computing that helps everyone.s.
+While we refined our understanding of IPFS and P2P mobile design with this project, we need more research to realise the full value of the network to users. This is especially true for emerging markets and under-served and marginalised users. Their need for data privacy, portability, and stability is as great, if not greater, than for those where the internet works most of the time. These users also serve as a way to understand not only under-explored markets, but also more resilient methods of computing that helps everyone.
 
 ![Illustrations of the design principles](../100-mobile-design-guidelines/principles.png)
 
