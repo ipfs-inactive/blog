@@ -77,8 +77,7 @@ async fn get_block(..., cid: Cid) -> Result<impl AsRef<[u8]>, _>
 ```
 
 However, we wanted to find a way to keep the IO of blocks separate from the
-implementation itself. This should have multiple benefits: any store integration
-- be it async or blocking - should be possible, and one should be able to
+implementation itself. This should have multiple benefits: any store integration - be it async or blocking - should be possible, and one should be able to
 compose the higher level operations out of the lower level pieces.
 
 So, instead of having an `ipfs_unixfs::GetBlock` or `ipfs_unixfs::BlockStore`
