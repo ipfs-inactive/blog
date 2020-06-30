@@ -1,35 +1,69 @@
 ---
-date: 2020-06-29
-url: /2020-06-29-rust-ipfs-unixfs/
+date: 2020-07-01
+url: /2020-07-01-rust-ipfs-unixfs/
 header_image: rust-ipfs-crab.png
 title: Rust IPFS UnixFS Support Lands
 author: Joonas Koivunen and Mark Robert Henderson
 tags: Rust, IPFS, UnixFS
 ---
 
-UnixFS reading, or _exporting_, has landed in [Rust IPFS]! Funded by a
-Protocol Labs [devgrant], the main deliverables were the [`ipfs-unixfs`] crate,
-and the HTTP APIs `/get`, and `/cat`.
+UnixFS has landed in [Rust IPFS]!
 
-[devgrant]: https://github.com/ipfs/devgrants/tree/master/open-grants/ipfs-rust/phase-2
-[Rust IPFS Append-only log #4]: https://medium.com/equilibriumco/rustipfs/home
+This post provides a review of what UnixFS is, and then for Rust developers we provide a detailed
+overfiew of the [`ipfs-unixfs`] crate and its usage. If you're not a Rust developer, or if you'd
+simply like to learn more about the HTTP APIs, we conclude with an oveview of the new `/cat` and
+`/get` endpoints.
+
 [Rust IPFS]: https://github.com/rs-ipfs/rust-ipfs
+[ipfs-unixfs]: https://crates.io/crates/ipfs-unixfs
+[devgrant]: https://github.com/ipfs/devgrants/tree/master/open-grants/ipfs-rust/phase-2
 [`ipfs-unixfs`]: https://crates.io/crates/ipfs-unixfs
 
-## The [ipfs-unixfs] crate
+## A UnixFS Refresher
 
-You can review what UnixFS _is_ in our [previous post], but for now
-it's enough to know that a proper UnixFS implementation is basically
-about two things:
+UnixFS is a [Protocol Buffers] encoding used to represent Unix-alike files IPFS
+MerkleDAG. UnixFS is also the functionality that's used behind the `ipfs add`, `ipfs get`,
+`ipfs cat` commands, as well as their corresponding HTTP API endpoints.
 
-1. Providing an interface to the data contained in the blocks. This is
-fairly straightforward.
-2. An ability to "walk" across multiple blocks via the MerkleDAG. This is
-much more difficult and, as such, most of the work went into finding
-a suitable abstraction.
+Here's how it works - your raw bytes are encoded with specific fields. It can easily encode your
+raw data behind a CID, but also it handles directories like so:
 
+```
+Data {
+  Type: Directory
+}
+...
+Links {
+  Hash: "cid5"
+  Name: "lib.rs"
+  Tsize: 39334
+}
+..
+Links {
+  Hash: "cid7"
+  Name: "repo"
+  Tsize: 32018
+}
+```
+
+From there, the bytes produced from the protbuf encoding are then encoded into the `dag-pb` format,
+giving you the final CID that `ipfs add` produces. Our [previous post] on this topic used a
+Matryoshka doll analogy:
+
+![Nested dolls of bytes -> UnixFS -> dag-pb](https://miro.medium.com/max/1400/1*DLsR9Q8hMsDv0G98DFeMww.png)
+[Protocol Buffers]: https://developers.google.com/protocol-buffers
 [previous post]: https://medium.com/equilibriumco/the-road-to-unixfs-f3cf5222b2ef
-[ipfs-unixfs]: https://crates.io/crates/ipfs-unixfs
+
+## Unboxing the [ipfs-unixfs] crate
+
+If you're a Rust developer, you now have this functionality available to you, both in
+[Rust IPFS], as well as the [`ipfs-unixfs`] crate.
+
+First understand that a UnixFS implementation should provide two essential functions:
+
+1. An interface to the data contained in the blocks. This is fairly straightforward.
+2. An ability to "walk" across multiple blocks via the MerkleDAG. This is much more difficult and,
+as such, most of the work went into finding a suitable abstraction.
 
 > To recap: [MerkleDAG is the outer protocol buffers description] for
 documents (or blocks) which can contain arbitrary inner bytes. Together
@@ -105,7 +139,7 @@ of the next `Walker`. One will exist if there are still links to walk.
 [issue #200]: https://github.com/rs-ipfs/rust-ipfs/issues/200
 [`Item::into_inner`]: https://docs.rs/ipfs-unixfs/0.0.1/ipfs_unixfs/walk/struct.Item.html#method.into_inner
 
-## `/cat` and `/get`
+## Not a Rust developer? Don't fret, you have `/cat` and `/get`!
 
 In short, these two operations **retrieve** data from MerkleDAGs and, in the
 process, fetch the required blocks from the network. [`/cat`] can only process
@@ -151,3 +185,5 @@ addition to the `ipfs::Ipfs::cat_unixfs` API, which currently returns an
 [good first issue]: https://github.com/rs-ipfs/rust-ipfs/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22u
 [OpenCollective]: https://opencollective.com/rs-ipfs
 [next in store for Rust IPFS]: https://medium.com/equilibriumco/unixfs-exporting-has-landed-what-comes-next-4775cc568838
+
+Special thanks to Protocol Labs for their [devgrant] support.
