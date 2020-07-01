@@ -28,7 +28,6 @@ With `make`, [`node`](http://nodejs.org) and `npm` installed on your system, you
 
 ```console
 $ make dev
-
 ...
 
 Web Server is available at http://localhost:1313/
