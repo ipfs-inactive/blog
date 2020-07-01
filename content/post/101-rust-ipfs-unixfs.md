@@ -11,7 +11,7 @@ UnixFS exporting has landed in [Rust IPFS]!
 
 This post provides a review of what UnixFS is, and then for Rust developers we provide a detailed
 overfiew of the [`ipfs-unixfs`] crate and its usage. If you're not a Rust developer, or if you'd
-simply like to learn more about the HTTP APIs, we conclude with an oveview of the new `/cat` and
+simply like to learn more about the HTTP APIs, we conclude with an overview of the new `/cat` and
 `/get` endpoints.
 
 [Rust IPFS]: https://github.com/rs-ipfs/rust-ipfs
