@@ -96,31 +96,35 @@ impl Walker {
 }
 {{< / highlight >}}
 
-The creation of `ipfs_unixfs::walk::Walker` is possible only with a root or
-start `Cid` and an optional path name to the root document. `Walker` tracks
-the path inside the graph for any entries.
+Let's step through this implementation one function at a time.
 
-While `Walker::pending_links` may have a gnarly-looking signature, at
-the same time it communicates an important invariant of the API: whenever there
-exists a `Walker` value, there must be some pending links to load. This also means
-that the calling code does not have to deal with unwrapping an `Option<Cid>`
+`Walker::new`
+
+A new `Walker` is created by passing in a start `Cid` and an optional `root_name`, or the path of
+the root document. Once created, the `Walker will start traversing the path inside the graph for
+entries.
+
+`Walker::pending_links`
+
+This function may have a gnarly-looking signature, at the same time it communicates an important
+invariant of the API: whenever there exists a `Walker` value, there must be some pending links to
+load. This also means that the calling code does not have to deal with unwrapping an `Option<Cid>`
 from an `Iterator::next`, but can just get the next `Cid` as follows:
 
 {{<highlight rust>}}
 let (next, prefetchable_links) = walker.pending_links();
 {{</highlight>}}
 
-The iterator (`prefetchable_links`) in the tuple can be used to start
-pre-fetching the `Cid`s from the network. When walking a directory,
-`prefetchable_links` will contain unvisited links to entries under the
-directory. However, following an opening of a multi-block file,
-`prefetchable_links` would now contain the next, most important, links for the
-file. Since files can expand on every block before hitting the leaf level, it
-can be a long time before any of the previously seen "prefetchable" blocks are
-ready to be processed.
+The iterator (`prefetchable_links`) in the tuple can be used to start pre-fetching the `Cid`s from
+the network. When walking a directory, `prefetchable_links` will contain unvisited links to entries
+under the directory. However, following an opening of a multi-block file, `prefetchable_links`
+would now contain the next, most important, links for the file. Since files can expand on every
+block before hitting the leaf level, it can be a long time before any of the previously seen
+"prefetchable" blocks are ready to be processed.
 
-Continuing the walk returns a `ContinuedWalk` on success, which is an enum of
-three possibilities:
+`Walker::continue_walk`
+
+Continuing the walk returns a `ContinuedWalk` on success, which is an enum of three possibilities:
 
 1. file (new or continuation)
 2. directory (new or continuation)
