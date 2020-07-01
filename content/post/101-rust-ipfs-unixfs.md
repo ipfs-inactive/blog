@@ -7,7 +7,7 @@ author: Joonas Koivunen and Mark Robert Henderson
 tags: Rust, IPFS, UnixFS
 ---
 
-UnixFS has landed in [Rust IPFS]!
+UnixFS exporting has landed in [Rust IPFS]!
 
 This post provides a review of what UnixFS is, and then for Rust developers we provide a detailed
 overfiew of the [`ipfs-unixfs`] crate and its usage. If you're not a Rust developer, or if you'd
@@ -51,39 +51,42 @@ giving you the final CID that `ipfs add` produces. Our [previous post] on this t
 Matryoshka doll analogy:
 
 ![Nested dolls of bytes -> UnixFS -> dag-pb](https://miro.medium.com/max/1400/1*DLsR9Q8hMsDv0G98DFeMww.png)
+
+Basically, it's encodings all the way down to bytes and all the way back up to your CID. You can
+read more, and even try it yourself in our [previous post] on the topic. From here, we'll take
+both a theoretical and practical look into the `ipfs-unixfs` crate.
+
 [Protocol Buffers]: https://developers.google.com/protocol-buffers
 [previous post]: https://medium.com/equilibriumco/the-road-to-unixfs-f3cf5222b2ef
 
 ## Unboxing the [ipfs-unixfs] crate
 
 If you're a Rust developer, you now have this functionality available to you, both in
-[Rust IPFS], as well as the [`ipfs-unixfs`] crate.
+[Rust IPFS], as well as the standalone [`ipfs-unixfs`] crate. It helps to understand the theory
+behind UnixFS, because it informs the decisions we made in the implementation.
 
-First understand that a UnixFS implementation should provide two essential functions:
+Any UnixFS exporter implementation should provide:
 
-1. An interface to the data contained in the blocks. This is fairly straightforward.
-2. An ability to "walk" across multiple blocks via the MerkleDAG. This is much more difficult and,
-as such, most of the work went into finding a suitable abstraction.
+1. An interface to the data contained in the blocks. (This is fairly straightforward)
+2. An ability to "walk" across multiple blocks via the MerkleDAG. (This is much less
+straightforward.)
 
-> To recap: [MerkleDAG is the outer protocol buffers description] for
-documents (or blocks) which can contain arbitrary inner bytes. Together
-with UnixFS blocks, these bytes correspond to [UnixFS messages].
+Most of our work was finding a suitable abstraction for #2. The essential operation needed is something like:
 
-The operation needed when walking across multiple blocks is "loading the next
-block" or something along the lines of:
-
-```rust
+{{<highlight rust>}}
 async fn get_block(..., cid: Cid) -> Result<impl AsRef<[u8]>, _>
-```
+{{< / highlight >}}Translation: Given a CID, eventually return something that can be represented as
+a pointer to some bytes, or an error.
 
-However, we wanted to find a way to keep the IO of blocks separate from the
-implementation itself. This should have multiple benefits: any store integration - be it async or blocking - should be possible, and one should be able to
-compose the higher level operations out of the lower level pieces.
+On its face it seems simple, but we wanted to find a way to keep the IO of blocks separate from the
+implementation itself. This way, any store integration - be it async or blocking - should be
+possible, and you'll able to compose the higher level operations out of the lower level
+pieces.
 
-So, instead of having an `ipfs_unixfs::GetBlock` or `ipfs_unixfs::BlockStore`
-trait, the `ipfs_unixfs::walk::Walker` currently has an API like this:
+So, instead of having something like a `GetBlock` or `BlockStore` trait, the
+`ipfs_unixfs::walk::Walker` currently has an API like this:
 
-```rust
+{{<highlight rust>}}
 impl Walker {
   fn new(start: Cid, root_name: &str) -> Walker;
 
@@ -91,7 +94,7 @@ impl Walker {
 
   fn continue_walk(self, next_block: &[u8]) -> Result<ContinuedWalk, _> { ... }
 }
-```
+{{< / highlight >}}
 
 The creation of `ipfs_unixfs::walk::Walker` is possible only with a root or
 start `Cid` and an optional path name to the root document. `Walker` tracks
@@ -103,9 +106,9 @@ exists a `Walker` value, there must be some pending links to load. This also mea
 that the calling code does not have to deal with unwrapping an `Option<Cid>`
 from an `Iterator::next`, but can just get the next `Cid` as follows:
 
-```rust
+{{<highlight rust>}}
 let (next, prefetchable_links) = walker.pending_links();
-```
+{{</highlight>}}
 
 The iterator (`prefetchable_links`) in the tuple can be used to start
 pre-fetching the `Cid`s from the network. When walking a directory,
@@ -131,6 +134,10 @@ From a `ContinuedWalk` value the walk can be continued by first accessing the
 inner `Item` value either by pattern matching or by using
 `ContinuedWalk::into_inner`. The [`Item::into_inner`] will return an `Option`
 of the next `Walker`. One will exist if there are still links to walk.
+
+### What you can use it for?
+
+TODO
 
 [MerkleDAG is the outer protocol buffers description]: https://github.com/ipfs/go-merkledag/blob/master/pb/merkledag.proto
 [UnixFS messages]: https://github.com/ipfs/specs/blob/master/UNIXFS.md
