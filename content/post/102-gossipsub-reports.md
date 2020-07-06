@@ -16,7 +16,7 @@ We are back with a direct follow up on the [Gossipsub v1.1 release from May](htt
 
 The first cat was out of the bag as soon as you opened this post – the new logo! We now have a dedicated logo for this libp2p PubSub router implementation which represents the double network nature of Gossipsub. We hope you enjoy it!
 
-You can find all the [logo assets here](LINK TO LOGO ASSETS)
+You can find all the [logo assets here](https://ipfs.io/ipfs/QmVSk8VvxWExnYCjqg7TNW2aBnN8Wr7SzkawLUyocWq96p)
 
 ## 📊 Evaluation Report
 
@@ -59,4 +59,3 @@ One last thing, as Gossipsub v1.1 adds mitigations to many attack scenarios, we 
 That’s all for now. Hope you enjoy the Evaluation Report and let us know if you have questions by posting them at https://discuss.libp2p.io
 
 **The Gossipsub Task Force** - David Dias, Dmitris Vyzovitis, Yiannis Psaras, Yusef Napora, Dirk McCormick
-
