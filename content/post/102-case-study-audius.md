@@ -7,13 +7,15 @@ tags: casestudy, case-study, Audius, examples, using-ipfs, collaborators
 header_image: 102-case-study-audius.png
 ---
 
-# Introducing the IPFS Case Study Series!
+![IPFS Case Study Seriew - Audius](/img/101-case-study-audius/case-study-audius.jpg)
 
-**You asked, and we're delivering!** We've heard requests from avid docs readers and IPFS newcomers alike for more high-level info about real-world problem-solving using IPFS — including how those who are already extensively building on IPFS made the choices that got them to where they are today.
+## You asked, we delivered!
+
+We've heard requests from avid docs readers and IPFS newcomers alike for more high-level info about real-world problem-solving using IPFS — including how those who are already extensively building on IPFS made the choices that got them to where they are today. In reply, we'd like to introduce the **IPFS Case Study Series**!
 
 ## IPFS x Audius: A story of harmony
 
-We're pleased to kick off our **IPFS Case Study Series** with a profile of our friends at [Audius](http://audius.co/), the decentralized music and audio sharing platform designed to give artists and creators a direct link with their listeners. To create their censorship-resistant, privacy-friendly platform, it was key to have a distributed cloud storage network as the basis for the system. Audius uses IPFS as the core decentralized storage component in their mission to give everyone the freedom to share, monetize, and listen to any audio.
+We're pleased to kick off our IPFS Case Study Series with a profile of our friends at [Audius](http://audius.co/), the decentralized music and audio sharing platform designed to give artists and creators a direct link with their listeners. To create their censorship-resistant, privacy-friendly platform, it was key to have a distributed cloud storage network as the basis for the system. Audius uses IPFS as the core decentralized storage component in their mission to give everyone the freedom to share, monetize, and listen to any audio.
 
 [Head over to the IPFS Docs to read the full case study](https://docs.ipfs.io/concepts/case-study-audius/), but here's a quick quote to whet your whistle:
 
