@@ -6,9 +6,12 @@ author: David Dias
 tags: go-libp2p, gossipsub
 ---
 
-![](https://camo.githubusercontent.com/750ce1271209e1cc362c75fa547652d30cb86111/68747470733a2f2f697066732e696f2f697066732f516d56536b385676785745786e59436a716737544e573261426e4e38577237537a6b61774c55796f6357713936702f476f737369707375625f66756c6c636f6c6f722e706e67)
+<p align="center">
+  <img src="https://ipfs.io/ipfs/QmVSk8VvxWExnYCjqg7TNW2aBnN8Wr7SzkawLUyocWq96p/Gossipsub_fullcolor.png" alt="Gossipsub logo" width="400" />
+</p>
 
 We are back with a direct follow up on the [Gossipsub v1.1 release from May](https://blog.ipfs.io/2020-05-20-gossipsub-v1.1) with the much awaited Evaluation Report and three other presents we have for you.
+
 ## ✨ The Logo
 
 The first cat was out of the bag as soon as you opened this post – the new logo! We now have a dedicated logo for this libp2p PubSub router implementation which represents the double network nature of Gossipsub. We hope you enjoy it!
@@ -41,7 +44,8 @@ Additionally, we are delighted to release Least Authority’s audit report for G
 
 It was a great experience to work with Least Authority throughout multiple fruitful discussions, LA identified multiple findings which then got mitigated by the Gossipsub team and reviewed again by LA.
 
-LA produced a report detailing all of the tests they have carried out. You can consult the [final report here](LINK TO FINAL REPORT)
+Least Authority produced a report detailing all of the tests they have carried out. You can consult the [final report here](LINK TO FINAL REPORT)
+
 ## 📜 Gossipsub Paper 
 
 |INSERT SCREENSHOT OF THE REPORT HERE|
