@@ -49,7 +49,7 @@ Additionally, we are delighted to release Least Authority’s audit report for G
 
 It was a great experience to work with Least Authority throughout multiple fruitful discussions, LA identified multiple findings which then got mitigated by the Gossipsub team and reviewed again by LA.
 
-Least Authority produced a report detailing all of the tests they have carried out. You can consult the [final report here](https://gateway.ipfs.io/ipfs/QmPWuNBs8h6a8KamRvGqhTq5UDYJRQsEEy37zDKjujQQQm/Least%20Authority%20-%20Gossipsub%20v1.1%20Final%20Audit%20Report.pdf)
+Least Authority produced a report detailing all of the tests they have carried out. You can consult the [final report here](https://gateway.ipfs.io/ipfs/QmWR376YyuyLewZDzaTHXGZr7quL5LB13HRFnNdSJ3CyXu/Least%20Authority%20-%20Gossipsub%20v1.1%20Final%20Audit%20Report%20%28v2%29.pdf)
 
 ## 📜 Gossipsub Paper
 
