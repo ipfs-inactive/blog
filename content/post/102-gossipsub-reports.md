@@ -54,14 +54,14 @@ Least Authority produced a report detailing all of the tests they have carried o
 ## 📜 Gossipsub Paper 
 
 <p align="center">
-  <a href="LIMNK TO PREPRINT"><img src="https://gateway.ipfs.io/ipfs/QmPWuNBs8h6a8KamRvGqhTq5UDYJRQsEEy37zDKjujQQQm/paper.png" width="600" /></a>
+  <a href="LINK TO PREPRINT"><img src="https://gateway.ipfs.io/ipfs/QmPWuNBs8h6a8KamRvGqhTq5UDYJRQsEEy37zDKjujQQQm/paper.png" width="600" /></a>
 </p>
 
 Finally, we are proud to share with you a preprint of a 16-page paper that puts everything together, justifies our design choices, and outlines the most important results we have gathered throughout. With this paper we want to put everything in one place, from the spec, to the details of the test setup, and the insights we have gathered from the most challenging of attacks, in a concise manner. The paper benchmarks performance of GossipSub with Bitcoin’s broadcast/flooding protocol, ETH1.0’s pubsub protocol and the vanilla version of GossipSup (the one without mitigation strategies and the scoring function integrated). The performance improvements brought by GossipSub v1.1 are really impressive and certainly rewarding of the effort that has gone into the design and testing of the protocol.
 
 You can find the [paper here](LINK TO PREPRINT)
  
-One last thing, as Gossipsub v1.1 adds mitigations to many attack scenarios, we found it wise to create a CVE for Gossipsub v1.0 so that users can get automatically notified through their build systems and package managers (assuming that the CVE database is being used). You can consult the at [CVE-2020-12821](LINK TO CVE)
+One last thing, as Gossipsub v1.1 adds mitigations to many attack scenarios, we found it wise to create a CVE for Gossipsub v1.0 so that users can get automatically notified through their build systems and package managers (assuming that the CVE database is being used). You can consult it at [CVE-2020-12821](LINK TO CVE)
 
 That’s all for now. Hope you enjoy the Evaluation Report and let us know if you have questions by posting them at https://discuss.libp2p.io
 
