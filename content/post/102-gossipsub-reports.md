@@ -22,14 +22,14 @@ You can find all the [logo assets here](https://ipfs.io/ipfs/QmVSk8VvxWExnYCjqg7
 ## 📊 Evaluation Report
 
 <p align="center">
-  <a href="https://gateway.ipfs.io/ipfs/QmWR376YyuyLewZDzaTHXGZr7quL5LB13HRFnNdSJ3CyXu/Gossipsub%20Evaluation%20Report.pdf"><img src="https://gateway.ipfs.io/ipfs/QmWR376YyuyLewZDzaTHXGZr7quL5LB13HRFnNdSJ3CyXu/report-eval.png" width="600" /></a>
+  <a href="https://gateway.ipfs.io/ipfs/QmbwAbf3EStKfcBHJaR4Q7Nip35EsQmmyZqxzKtSmywrSm"><img src="https://gateway.ipfs.io/ipfs/QmWR376YyuyLewZDzaTHXGZr7quL5LB13HRFnNdSJ3CyXu/report-eval.png" width="600" /></a>
 </p>
 
 We are sharing with you a comprehensive, 61-page evaluation report, in which you can learn how we approached the testing of Gossipsub v1.1, the setting in which tests were run, and detailed descriptions of the conclusions we were able to take from such evaluation. With this evaluation, we demonstrate that GossipSub is resilient against all of the attacks studied, capable of recovering the mesh and meeting the message delivery deadline requirements of the Filecoin and the ETH2.0 blockchains.
 
-In addition to this report, which you can [find here](https://gateway.ipfs.io/ipfs/QmWR376YyuyLewZDzaTHXGZr7quL5LB13HRFnNdSJ3CyXu/Gossipsub%20Evaluation%20Report.pdf), we are also excited to share with you:
+In addition to this report, which you can [find here](https://gateway.ipfs.io/ipfs/QmbwAbf3EStKfcBHJaR4Q7Nip35EsQmmyZqxzKtSmywrSm), we are also excited to share with you:
 
-- The code that runs the malicious actor, acronymed “bad boy”, is simpler, more lightweight, and faster than the actual GossipSub protocol code. This is because attackers don’t need to follow all protocol logic and benefit from running only the essential functions with the goal of degrading the quality of service of the network. Find the [code here](https://github.com/libp2p/gossipsub-hardening/blob/master/test/badboy.go).
+- The code that runs the malicious actor, code-named  “bad boy”, which is simpler, more lightweight, and faster than the actual GossipSub protocol code. This is because attackers don’t need to follow all protocol logic and benefit from running only the essential functions with the goal of degrading the quality of service of the network. Find the [code here](https://github.com/libp2p/gossipsub-hardening/blob/master/test/badboy.go).
 
 - All of the Testground test plans used to test GossipSub. We are now making available all 12 configuration scripts and test plans to allow for 100% reproducibility of the tests for the wide range of attacks that we have carried out. Please explore and try them out and let us know if you find any new interesting combinations! Find the [code here](https://github.com/libp2p/gossipsub-hardening).
 
@@ -54,12 +54,12 @@ Least Authority produced a report detailing all of the tests they have carried o
 ## 📜 Gossipsub Paper
 
 <p align="center">
-  <a href="LINK TO PREPRINT"><img src="https://gateway.ipfs.io/ipfs/QmWR376YyuyLewZDzaTHXGZr7quL5LB13HRFnNdSJ3CyXu/paper.png" width="600" /></a>
+  <a href="https://arxiv.org/abs/2007.02754"><img src="https://gateway.ipfs.io/ipfs/QmWR376YyuyLewZDzaTHXGZr7quL5LB13HRFnNdSJ3CyXu/paper.png" width="600" /></a>
 </p>
 
 Finally, we are proud to share with you a preprint of a 16-page paper that puts everything together, justifies our design choices, and outlines the most important results we have gathered throughout. With this paper we want to put everything in one place, from the spec, to the details of the test setup, and the insights we have gathered from the most challenging of attacks, in a concise manner. The paper benchmarks performance of GossipSub with Bitcoin’s broadcast/flooding protocol, ETH1.0’s pubsub protocol and the vanilla version of GossipSup (the one without mitigation strategies and the scoring function integrated). The performance improvements brought by GossipSub v1.1 are really impressive and certainly rewarding of the effort that has gone into the design and testing of the protocol.
 
-You can find the [paper here](LINK TO PREPRINT)
+You can find the [paper here](https://arxiv.org/abs/2007.02754)
 
 One last thing, as Gossipsub v1.1 adds mitigations to many attack scenarios, we found it wise to create a CVE for Gossipsub v1.0 so that users can get automatically notified through their build systems and package managers (assuming that the CVE database is being used). You can consult it at [CVE-2020-12821](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-12821) (note, we've requested the CVE to change from Reserved to Published, we will update the post once that happens)
 
