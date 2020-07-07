@@ -49,7 +49,7 @@ Additionally, we are delighted to release Least Authority’s audit report for G
 
 It was a great experience to work with Least Authority throughout multiple fruitful discussions, LA identified multiple findings which then got mitigated by the Gossipsub team and reviewed again by LA.
 
-Least Authority produced a report detailing all of the tests they have carried out. You can consult the [final report here](https://gateway.ipfs.io/ipfs/QmWR376YyuyLewZDzaTHXGZr7quL5LB13HRFnNdSJ3CyXu/Least%20Authority%20-%20Gossipsub%20v1.1%20Final%20Audit%20Report%20%28v2%29.pdf)
+Least Authority produced a report detailing all of the tests they have carried out. You can consult the [final report here](https://gateway.ipfs.io/ipfs/QmWR376YyuyLewZDzaTHXGZr7quL5LB13HRFnNdSJ3CyXu/Least%20Authority%20-%20Gossipsub%20v1.1%20Final%20Audit%20Report%20%28v2%29.pdf). You can also read Least Authority's report announcement post at [their own blog](https://leastauthority.com/blog/audit-of-gossipsub-v1-1-for-protocol-labs).
 
 ## 📜 Gossipsub Paper
 
@@ -61,7 +61,7 @@ Finally, we are proud to share with you a preprint of a 16-page paper that puts 
 
 You can find the [paper here](LINK TO PREPRINT)
 
-One last thing, as Gossipsub v1.1 adds mitigations to many attack scenarios, we found it wise to create a CVE for Gossipsub v1.0 so that users can get automatically notified through their build systems and package managers (assuming that the CVE database is being used). You can consult it at [CVE-2020-12821](LINK TO CVE)
+One last thing, as Gossipsub v1.1 adds mitigations to many attack scenarios, we found it wise to create a CVE for Gossipsub v1.0 so that users can get automatically notified through their build systems and package managers (assuming that the CVE database is being used). You can consult it at [CVE-2020-12821](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-12821) (note, we've requested the CVE to change from Reserved to Published, we will update the post once that happens)
 
 That’s all for now. Hope you enjoy the Evaluation Report and let us know if you have questions by posting them at https://discuss.libp2p.io
 
