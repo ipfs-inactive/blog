@@ -22,7 +22,7 @@ You can find all the [logo assets here](https://ipfs.io/ipfs/QmVSk8VvxWExnYCjqg7
 ## 📊 Evaluation Report
 
 <p align="center">
-  <a href="https://gateway.ipfs.io/ipfs/QmbwAbf3EStKfcBHJaR4Q7Nip35EsQmmyZqxzKtSmywrSm"><img src="https://gateway.ipfs.io/ipfs/QmWR376YyuyLewZDzaTHXGZr7quL5LB13HRFnNdSJ3CyXu/report-eval.png" width="600" /></a>
+  <a href="https://gateway.ipfs.io/ipfs/QmRAFP5DBnvNjdYSbWhEhVRJJDFCLpPyvew5GwCCB4VxM4"><img src="https://gateway.ipfs.io/ipfs/QmWR376YyuyLewZDzaTHXGZr7quL5LB13HRFnNdSJ3CyXu/report-eval.png" width="600" /></a>
 </p>
 
 We are sharing with you a comprehensive, 61-page evaluation report, in which you can learn how we approached the testing of Gossipsub v1.1, the setting in which tests were run, and detailed descriptions of the conclusions we were able to take from such evaluation. With this evaluation, we demonstrate that GossipSub is resilient against all of the attacks studied, capable of recovering the mesh and meeting the message delivery deadline requirements of the Filecoin and the ETH2.0 blockchains.
