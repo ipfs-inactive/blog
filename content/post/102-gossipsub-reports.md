@@ -1,5 +1,5 @@
 ---
-date: 2020-07-06
+date: 2020-07-07
 url: /gossipsubv1.1-eval-report-and-security-audit/
 title: A comprehensive Evaluation of GossipSub-v1.1 (and a new Logo!)
 header_image: 102-header-image-gossipsub-reports.png
