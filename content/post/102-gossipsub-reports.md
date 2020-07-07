@@ -27,7 +27,7 @@ You can find all the [logo assets here](https://ipfs.io/ipfs/QmVSk8VvxWExnYCjqg7
 
 We are sharing with you a comprehensive, 61-page evaluation report, in which you can learn how we approached the testing of Gossipsub v1.1, the setting in which tests were run, and detailed descriptions of the conclusions we were able to take from such evaluation. With this evaluation, we demonstrate that GossipSub is resilient against all of the attacks studied, capable of recovering the mesh and meeting the message delivery deadline requirements of the Filecoin and the ETH2.0 blockchains.
 
-In addition to this report, which you can [find here](https://gateway.ipfs.io/ipfs/QmbwAbf3EStKfcBHJaR4Q7Nip35EsQmmyZqxzKtSmywrSm), we are also excited to share with you:
+In addition to this report, which you can [find here](https://gateway.ipfs.io/ipfs/QmRAFP5DBnvNjdYSbWhEhVRJJDFCLpPyvew5GwCCB4VxM4), we are also excited to share with you:
 
 - The code that runs the malicious actor, code-named  “bad boy”, which is simpler, more lightweight, and faster than the actual GossipSub protocol code. This is because attackers don’t need to follow all protocol logic and benefit from running only the essential functions with the goal of degrading the quality of service of the network. Find the [code here](https://github.com/libp2p/gossipsub-hardening/blob/master/test/badboy.go).
 
