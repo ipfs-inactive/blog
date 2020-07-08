@@ -63,7 +63,7 @@ Finally, we are proud to share with you a preprint of a 16-page paper that puts 
 
 You can find a [preprint of the paper here](https://arxiv.org/abs/2007.02754)
 
-One last thing, as Gossipsub v1.1 adds mitigations to many attack scenarios, we found it wise to create a CVE for Gossipsub v1.0 so that users can get automatically notified through their build systems and package managers (assuming that the CVE database is being used). You can consult it at [CVE-2020-12821](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-12821) (note, we've requested the CVE to change from Reserved to Published, we will update the post once that happens)
+One last thing, as Gossipsub v1.1 adds mitigations to many attack scenarios, we found it wise to create a CVE for Gossipsub v1.0 so that users can get automatically notified through their build systems and package managers (assuming that the CVE database is being used). You can consult it at [CVE-2020-12821](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-12821)
 
 That’s all for now. Hope you enjoy the Evaluation Report and let us know if you have questions by posting them at https://discuss.libp2p.io
 
