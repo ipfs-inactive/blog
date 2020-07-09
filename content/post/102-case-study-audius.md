@@ -21,7 +21,7 @@ We're pleased to kick off our IPFS Case Study Series with a profile of our frien
 
 > In 2018, when Audius was looking into decentralized storage, they needed a system that would enable routing and addressing of large amounts of content in a decentralized way for their content streaming network. At the time, IPFS had the only system that fit their needs for decentralization ... Now, after two years on the network, Audius has found that IPFS has consistently performed and provided the flexibility and resilience needed for their network. "The lack of surprises is an advantage," says Hareesh Nagaraj, senior engineer at Audius. It’s been reliable the whole time."
 
-Have a look at the [full case study](https://docs.ipfs.io/concepts/case-study-audius/) now to learn how IPFS was the best fit for Audius' needs, where IPFS fits into the Audius tech stack, and the concrete gains IPFS has helped the Audius team achieve. We hope you'll be inspired!
+Have a look at the [full case study](https://docs.ipfs.io/concepts/case-study-audius/) now to learn why IPFS was the best fit for Audius' needs, where IPFS fits into the Audius tech stack, and the concrete gains IPFS has helped the Audius team achieve. We hope you'll be inspired!
 
 ## Up next ...
 
