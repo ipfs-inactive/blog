@@ -1,7 +1,7 @@
 ---
 date: 2020-07-20
 url: /2020-07-20-dht-deep-dive/
-title: IPFS 0.5 Content Routing Improvements: Deep Dive
+title: "IPFS 0.5 Content Routing Improvements: Deep Dive"
 author: Adin Schmahmann
 header_image: 104-dht-deep-dive.png
 tags: go-ipfs, 0.5 release
@@ -147,4 +147,8 @@ Phew! If you have made it all the way through this blog post (or even just skimm
 IPFS v0.5.0 included a lot of DHT changes and improvements. Something to watch out for is that new nodes are currently participating in the same DHT as older go-ipfs v0.4.23 and earlier nodes. While the DHT code for v0.5.0 is much improved over previous versions, a single node in a big network can only help so much. This means you should see improved performance today when you run v0.5.0, but as more of the network upgrades to v0.5.0 and beyond we will continue to see lookup times improve. So tell your friends it’s time to upgrade! 😁
 
 There are many more exciting improvements to come - so if you are interested in contributing or just tracking our improvements, follow our repositories on [GitHub](https://github.com/ipfs/ipfs) and come chat with us on [IRC](https://github.com/ipfs/team-mgmt#chat).
+### Learn more
 
+* IPFS 0.5.0 Announcement: https://blog.ipfs.io/2020-04-28-go-ipfs-0-5-0/
+* Release Highlights:  https://www.youtube.com/watch?v=G8FvB_0HlCE
+* TestGround: https://blog.ipfs.io/2020-05-06-launching-testground/
