@@ -32,7 +32,7 @@ Each of these record types has slightly different semantics, but they are all up
 
 ## Kademlia Overview
 
-The Kademlia algorithm has been around for a while and there are some great resources already available for it online, including the paper itself [link Kademlia paper on IPFS] and Wikipedia [link Kademlia wikipedia]. We’ll go through some of the basics here, though.
+The Kademlia algorithm has been around for a while and there are some great resources already available for it online, including the [paper itself](https://ipfs.io/ipfs/QmaVrnwZrnoG4YramcN75mbE5AUfCymiEErrHGXoQR968V) and [Wikipedia](https://en.wikipedia.org/wiki/Kademlia). We’ll go through some of the basics here, though.
 
 The general idea of Kademlia is to build a DHT on top of three system parameters:
 
@@ -78,7 +78,7 @@ As mentioned earlier, every peer in a Kademlia network maintains links to variou
 2. If it qualifies, then determine how close the new peer is in the Kademlia address space to us to figure out which “bucket” it should go into (i.e. if the peer is between 2^7 and 2^8 away from us and the address space is of size 2^256 then the peer goes into bucket 256-8)
 3. Attempt to put the peer in the bucket
     - If the bucket is not full (i.e., has less than 20 peers in it) then add the peer
-    - If the bucket is full then determine if there are any peers that have not been “recently useful” to us, and then drop one of them and replace it with the new peer (“recently” and “useful” are defined below). Otherwise, don’t add the peer to the bucket
+    - If the bucket is full then determine if there are any peers that are "replaceable" (defined below), and then drop one of them and replace it with the new peer. Otherwise, don’t add the peer to the bucket
 4. If we ever try to query a peer that is in our routing table and fail, then evict them
     - Note: After every refresh (see below) we go through the routing table and attempt to connect to peers that we have not queried “recently” to check if they are still online and valid peers for our routing table. If not, then we evict them.
 
@@ -101,8 +101,8 @@ The lookup algorithm answers the question “What are the `K` closest peers to `
 5. After the query is done take the `K` closest peers that we have not already failed at querying (i.e. we have heard from them or they are still in our queue) and return them
     - Note: for some API compatibility reasons go-ipfs also ensures that we have actually sent queries to all of the top `K` peers
 
-In the routing table section, we mentioned that we evict peers that have not been “recently useful” to us if we find a new peer that could take their spot in the bucket.
-We define “recently” as the time period during which they are probabilistically expected to have been utilized in a refresh. That value is `Log(1/K) * Log(1 - Alpha/K) * refreshPeriod`, where Alpha is the number of peers dialed that can be simultaneously queried. Additionally, we define “useful” as responding within 2x the time it takes any other peer from our routing table to respond to us (this biases against peers that are slow, overloaded, unreliable, or have bad network connectivity to us). This definition of useful will likely change as we gather more information about the dynamics of the network and investigate relevant threat models.
+In the routing table section, we mentioned that we evict peers that are "replaceable" if we find a new peer that could take their spot in the bucket.
+In v0.5.0 we define a peer as "replaceable" if they have not been "useful" to us within the time period during which they are probabilistically expected to have been utilized in a refresh. That value is `Log(1/K) * Log(1 - Alpha/K) * refreshPeriod`, where Alpha is the number of peers dialed that can be simultaneously queried. Additionally, we define “useful” as responding within 2x the time it takes any other peer from our routing table to respond to us (this biases against peers that are slow, overloaded, unreliable, or have bad network connectivity to us). The definitions of replaceable and useful peers are likely to change as we gather more information about the dynamics of the network and investigate relevant threat models.
 
 ## Routing Particulars
 
