@@ -59,7 +59,7 @@ Later v1 [CID][]s arrived and they added a version number and a codec to to the 
 
 The blockstore was turning [CID][]s into byte arrays and using these to generate the key for a block, which meant the same block might get stored against a v0 [CID][] and a v1 [CID][]. Since the block data is the same, the repo was also doing a double-lookup on each passed [CID][] - once as a v0 [CID][] and if the block was not found, again as a v1 [CID][].
 
-With the release of `js-IPFS@0.48.0`, all blocks are now stored against the base32 encoded [multihash][] extracted from the [CID][]. This means no more duplication and no more double-lookups, but it's come at the cost of needing to do a repo migration from v8 to v9 to ensure that all your blocks are stored under the correct key.
+With the release of `js-IPFS@0.48.0`, all blocks are now stored against the base32 encoded [multihash][] extracted from the [CID][]. This means no more duplication and no more double-lookups, but it's come at the cost of needing to do a repo migration from v7 to v8 to ensure that all your blocks are stored under the correct key.
 
 You may notice this when starting up your node:
 
