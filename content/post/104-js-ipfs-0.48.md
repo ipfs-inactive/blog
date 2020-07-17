@@ -20,6 +20,8 @@ There are several ways to give in-browser IPFS nodes a better experience on the 
 
 `js-IPFS@0.48.0` enables delegate nodes in the configuration by default. That means you should see far more peers that you have previously and be able to find content faster and more reliably than ever before.
 
+By default it uses [public delegate nodes](https://github.com/ipfs/js-ipfs/blob/master/packages/ipfs/docs/DELEGATE_ROUTERS.md) to give you the best out-of-the-box experience. These nodes are a shared commons but have no availability guarentees and are a potentially a source of resource contention. If you are deploying JS IPFS in a production environment you should stand up your own delegate nodes and [configure JS IPFS](https://github.com/ipfs/js-ipfs/blob/master/docs/CONFIG.md#delegates) accordingly.
+
 ## 🏓 DHT configuration
 
 You can also now enable the [DHT][] for JS IPFS daemons via the command line. Simply use:
