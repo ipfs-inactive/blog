@@ -24,7 +24,9 @@ By default it uses [public delegate nodes](https://github.com/ipfs/js-ipfs/blob/
 
 ## 🏓 DHT configuration
 
-You can also now enable the [DHT][] for JS IPFS daemons via the command line. To put your node into client mode run:
+The full [DHT][] implementation for JS IPFS with all the [changes made in Go IPFS 0.5](https://blog.ipfs.io/2020-05-19-road-to-dht/) will not arrive until later this year, but for the time being you can run the experimental [DHT][] implementation. This implementation is incomplete so some features may not work as intended but you should be able to use it to resolve content and find peers though there may be some performance degredation on your node over time.
+
+You can enable the [DHT][] for JS IPFS daemons via the command line. To put your node into client mode run:
 
 ```console
 $ jsipfs config Routing.Type dhtclient
@@ -51,7 +53,7 @@ const node = await IPFS.create({
 
 DHT peers operate in either [client mode or server mode](https://github.com/ipfs/go-ipfs/blob/0acfb38763208999d0608a28f534867baad615f3/docs/config.md#routingtype). DHT clients can make queries to find content and other peers but will not advertise themselves as providers of content or answer any queries. You might be in client mode for any number of reasons but the primary one is that most DHT peers are behind a [NAT](https://en.wikipedia.org/wiki/Network_address_translation) firewall which means peers on other networks cannot dial them via [ipfs.swarm.connect](https://github.com/ipfs/js-ipfs/blob/master/docs/core-api/SWARM.md#ipfsswarmconnectaddr-options). Unless you know your node will have a public address, you should run it in client mode.
 
-Go IPFS nodes use the [ibp2p-autonat](https://github.com/libp2p/go-libp2p-autonat) package to determine if they are diallable by peers on external networks or not - if they are, they upgrade themselves from DHT clients to DHT servers. Autonat support [is on the way for JS IPFS](https://github.com/libp2p/js-libp2p/issues/104) but until it lands it will only operate in client mode, which is a stepping stone on the way to full DHT support.
+Go IPFS nodes use the [libp2p-autonat](https://github.com/libp2p/go-libp2p-autonat) package to determine if they are diallable by peers on external networks or not - if they are, they upgrade themselves from DHT clients to DHT servers. Autonat support [is on the way for JS IPFS](https://github.com/libp2p/js-libp2p/issues/104) but until it lands it will only operate in client mode, which is a stepping stone on the way to full DHT support.
 
 ## 🧱 Smaller, faster blockstore
 
