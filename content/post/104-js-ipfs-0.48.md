@@ -89,6 +89,8 @@ Web UI available at http://127.0.0.1:5002/webui
 Daemon is ready
 ```
 
+When used as a [module](https://github.com/ipfs/js-ipfs/blob/1760b8928dac14b3abcfa4a889042f0d7a956386/packages/ipfs/docs/MODULE.md) in the browser or an application [options.repoAutoMigrate](https://github.com/ipfs/js-ipfs/blob/1760b8928dac14b3abcfa4a889042f0d7a956386/packages/ipfs/docs/MODULE.md#optionsrepoautomigrate) is enabled by default so the upgrade will happen invisibly in the background; all you will notice is a one-off slightly longer startup time.
+
 ## 🗺️ A more intuitive API
 
 As the IPFS ecosystem grows more and more developers become interested in the project and start using our APIs. A lot of them have grown organically over time and not all of them have had equal amounts of thought put into them.
