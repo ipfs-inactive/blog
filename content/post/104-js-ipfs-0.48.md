@@ -14,17 +14,17 @@ author: Alex Potsides
 
 ## 🧭 Delegate nodes on by default
 
-JS IPFS has traditionally primarily targeted the browser, and the browser is a bad place to be if you want to be on the [DHT][]. You typically aren't on a page long enough to make or respond to [DHT][] queries and nor are you diallable so even if you were able to advertise yourself as a provider for a given block, the chances are no-one can connect to you to retrieve that block which results in a degraded service for everyone. Worse, the way you find more peers and content is via the [DHT][] so you're kind of stuck.
+JS IPFS has traditionally primarily targeted the browser, and the browser is a bad place to be if you want to be on the [DHT][]. You typically aren't on a page long enough to make or respond to [DHT][] queries, nor are you diallable, so even if you were able to advertise yourself as a provider for a given block, the chances are no-one can connect to you to retrieve that block which results in a degraded service for everyone. Worse, the way you find more peers and content is via the [DHT][] so you're kind of stuck.
 
 There are several ways to give in-browser IPFS nodes a better experience on the network, one of those is [Delegate Nodes](https://blog.ipfs.io/2019-08-06-js-ipfs-0-37/#delegated-peer-and-content-routing). A Delegate Node is a network peer that performs certain actions on behalf of other nodes on the network. In this case it will make [DHT][] queries on our behalf so we can find more peers and more content than ever before.
 
-`js-IPFS@0.48.0` enables delegate nodes in the configuration by default. That means you should see far more peers that you have previously and be able to find content faster and more reliably than ever before.
+`js-IPFS@0.48.0` enables delegate nodes in the configuration by default, which means you should see far more peers than you have previously and be able to find content faster and more reliably.
 
-By default it uses [public delegate nodes](https://github.com/ipfs/js-ipfs/blob/master/packages/ipfs/docs/DELEGATE_ROUTERS.md) to give you the best out-of-the-box experience. These nodes are a shared commons but have no availability guarentees and are a potentially a source of resource contention. If you are deploying JS IPFS in a production environment you should stand up your own delegate nodes and [configure JS IPFS](https://github.com/ipfs/js-ipfs/blob/master/docs/CONFIG.md#delegates) accordingly.
+By default it uses [public delegate nodes](https://github.com/ipfs/js-ipfs/blob/master/packages/ipfs/docs/DELEGATE_ROUTERS.md) to give you the best out-of-the-box experience. These nodes are a shared commons but have no availability guarantees and are potentially a source of resource contention. If you are deploying JS IPFS in a production environment you should host your own delegate nodes and [configure JS IPFS](https://github.com/ipfs/js-ipfs/blob/master/docs/CONFIG.md#delegates) accordingly.
 
 ## 🏓 DHT configuration
 
-You can also now enable the [DHT][] for JS IPFS daemons via the command line. Simply use:
+You can also now enable the [DHT][] for JS IPFS daemons via the command line. To put your node into client mode run:
 
 ```console
 $ jsipfs config Routing.Type dhtclient
@@ -49,15 +49,15 @@ const node = await IPFS.create({
 })
 ```
 
-DHT peers operate in either [client mode or server mode](https://github.com/ipfs/go-ipfs/blob/0acfb38763208999d0608a28f534867baad615f3/docs/config.md#routingtype). DHT clients can make queries to find content and other peers but will not advertise themselves as providers of content or answer any queries. You might be in client mode for any number of reasons but the primary one is that most DHT peers are behind a [NAT](https://en.wikipedia.org/wiki/Network_address_translation) firewall which means peers on other networks cannot be dialled with [ipfs.swarm.connect](https://github.com/ipfs/js-ipfs/blob/master/docs/core-api/SWARM.md#ipfsswarmconnectaddr-options).
+DHT peers operate in either [client mode or server mode](https://github.com/ipfs/go-ipfs/blob/0acfb38763208999d0608a28f534867baad615f3/docs/config.md#routingtype). DHT clients can make queries to find content and other peers but will not advertise themselves as providers of content or answer any queries. You might be in client mode for any number of reasons but the primary one is that most DHT peers are behind a [NAT](https://en.wikipedia.org/wiki/Network_address_translation) firewall which means peers on other networks cannot dial them via [ipfs.swarm.connect](https://github.com/ipfs/js-ipfs/blob/master/docs/core-api/SWARM.md#ipfsswarmconnectaddr-options). Unless you know your node will have a public address, you should run it in client mode.
 
 Go IPFS nodes use the [ibp2p-autonat](https://github.com/libp2p/go-libp2p-autonat) package to determine if they are diallable by peers on external networks or not - if they are, they upgrade themselves from DHT clients to DHT servers. Autonat support [is on the way for JS IPFS](https://github.com/libp2p/js-libp2p/issues/104) but until it lands it will only operate in client mode, which is a stepping stone on the way to full DHT support.
 
 ## 🧱 Smaller, faster blockstore
 
-In the early days of IPFS, all [CID][]s were v0. That meant they were a bare [multihash][] - a byte array prefixed with some magic bytes that told you what sort of hash the rest of the bytes represented (`sha2-256`, `blake2s-128` etc) and how many of those bytes were present. The [multihash][] was created by hashing the data in a [block](https://docs.ipfs.io/how-to/work-with-blocks/) which was then stored in the block store contained with the [IPFS repo](https://github.com/ipfs/js-ipfs-repo).
+In the early days of IPFS, all [CID][]s were v0. That meant they were a bare [multihash][] - a byte array prefixed with some prefixed bytes that told you what sort of hash the rest of the bytes represented (`sha2-256`, `blake2s-128` etc) and how many of those bytes were present. The [multihash][] was created by hashing the data in a [block](https://docs.ipfs.io/how-to/work-with-blocks/) which was then stored in the block store contained within the [IPFS repo](https://github.com/ipfs/js-ipfs-repo).
 
-Later v1 [CID][]s arrived and they added a version number and a codec to to the byte array, but the [CID][] still contained the [multihash][] - a block can correspond to multiple [CID][]s, as long as they contain the same [multihash][].
+Later v1 [CID][]s arrived and they added a version number and a codec to the byte array, but the [CID][] still contained the [multihash][] - a block can correspond to multiple [CID][]s, as long as they contain the same [multihash][].
 
 The blockstore was turning [CID][]s into byte arrays and using these to generate the key for a block, which meant the same block might get stored against a v0 [CID][] and a v1 [CID][]. Since the block data is the same, the repo was also doing a double-lookup on each passed [CID][] - once as a v0 [CID][] and if the block was not found, again as a v1 [CID][].
 
@@ -91,11 +91,11 @@ Web UI available at http://127.0.0.1:5002/webui
 Daemon is ready
 ```
 
-When used as a [module](https://github.com/ipfs/js-ipfs/blob/1760b8928dac14b3abcfa4a889042f0d7a956386/packages/ipfs/docs/MODULE.md) in the browser or an application [options.repoAutoMigrate](https://github.com/ipfs/js-ipfs/blob/1760b8928dac14b3abcfa4a889042f0d7a956386/packages/ipfs/docs/MODULE.md#optionsrepoautomigrate) is enabled by default so the upgrade will happen invisibly in the background; all you will notice is a one-off slightly longer startup time.
+When used as a [module](https://github.com/ipfs/js-ipfs/blob/1760b8928dac14b3abcfa4a889042f0d7a956386/packages/ipfs/docs/MODULE.md) in the browser, or an application, [options.repoAutoMigrate](https://github.com/ipfs/js-ipfs/blob/1760b8928dac14b3abcfa4a889042f0d7a956386/packages/ipfs/docs/MODULE.md#optionsrepoautomigrate) is enabled by default so the upgrade will happen invisibly in the background; all you will notice is a one-off slightly longer startup time.
 
 ## 🗺️ A more intuitive API
 
-As the IPFS ecosystem grows more and more developers become interested in the project and start using our APIs. A lot of them have grown organically over time and not all of them have had equal amounts of thought put into them.
+As the IPFS ecosystem grows more and more developers become interested in the project and start using our APIs. A lot of them have grown organically over time and not all of them have had equal amounts of time invested in them.
 
 The following changes only affect the [core](https://github.com/ipfs/js-ipfs/tree/master/packages/ipfs) API and [ipfs-http-client](https://github.com/ipfs/js-ipfs/tree/master/packages/ipfs-http-client). The actual [HTTP API](https://docs.ipfs.io/reference/http/api/) and [CLI](https://docs.ipfs.io/reference/cli/) remain unchanged.
 
@@ -113,7 +113,7 @@ for await (const file of ipfs.add('My file content')) {
 }
 ```
 
-With `js-IPFS@0.48.0`, `ipfs.add` now returns a single item. This seemingly innocuous change brings a raft of usability improvements as a very common question is 'I added a file, and got back `[object AsyncGenerator]`, what is that?' and then you have to get the whiteboard and the pens out and before you know it you've gone down an long explanation cul de sac when all they wanted to do was get a [CID][] back.
+With `js-IPFS@0.48.0`, `ipfs.add` now returns a single item. This seemingly innocuous change brings a raft of usability improvements as a very common question is 'I added a file, and got back `[object AsyncGenerator]`, what is that?' and then you have to get the whiteboard and the pens out and before you know it you've gone down a long explanation cul de sac when all they wanted to do was get a [CID][] back.
 
 ```javascript
 const file = await ipfs.add('My file content')
@@ -140,7 +140,7 @@ for await (const file of ipfs.addAll(files)) {
 
 Recently we [released a change](https://blog.ipfs.io/2020-05-21-js-ipfs-0-44/#cancellable-requests) that allowed passing [AbortSignal][]s to all API methods. This necessitated adding an `options` object to every API call that didn't have one already. This left us in the weird situation where some arguments were optional, but were not in the options argument. Worse, the actions of some API calls changed dramatically depending on whether you passed an option or not. For example `ipfs.bootstrap.rm([multiaddr])` would completely empty the bootstrap list if you didn't pass a [Multiaddr][].
 
-All this leads to weird behaviour and subtle bugs when you pass things like `undefined` in for an optional arg position and don't pass an options argument, as well as knotty, error-prone internal code that tries to guess what you passed where based on type or properties of the objects where their types are the same.
+All this leads to weird behaviour and subtle bugs when you pass things like `undefined` in for an optional arg position and don't pass an options argument, as well as knotty, error-prone internal code that tries to guess what you passed based on type or properties of the objects where their types are the same.
 
 With `js-IPFS@0.48.0`, all optional parameters to API methods now go in the options object. All APIs that have dramatic changes in behaviour have been split into more intuitive commands.
 
@@ -159,7 +159,7 @@ ipfs.bootstrap.reset() // restores default bootstrappers
 ```javascript
 // before
 ipfs.bootstrap.rm('/ip4/...') // removes a multiaddr from the bootstrap list
-ipfs.bootstrap.rm({ all: true }) // restores default bootstrappers
+ipfs.bootstrap.rm({ all: true }) // empties bootstrapper list
 
 // after
 ipfs.bootstrap.rm('/ip4/...') // removes a multiaddr from the bootstrap list
