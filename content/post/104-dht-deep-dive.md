@@ -151,4 +151,4 @@ There are many more exciting improvements to come - so if you are interested in 
 
 * IPFS 0.5.0 Announcement: https://blog.ipfs.io/2020-04-28-go-ipfs-0-5-0/
 * Release Highlights:  https://www.youtube.com/watch?v=G8FvB_0HlCE
-* TestGround: https://blog.ipfs.io/2020-05-06-launching-testground/
+* Testground: https://blog.ipfs.io/2020-05-06-launching-testground/
