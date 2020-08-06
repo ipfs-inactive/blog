@@ -6,6 +6,8 @@ author: Jacob Heun
 tags: ipfs, libp2p, secio
 ---
 
+We're removing support for the SECIO security transport in IPFS and libp2p. You can mitigate impact to your node(s) by updating to the latest versions. Newer nodes should not experience any signficant change when support is removed, but older nodes will start to experience performance degradation.
+
 ## What are security transports?
 
 Security transports are components of libp2p that provide end to end encryption of data that is sent across the network. Libp2p provides the ability to negotiate security transports once a connection is established, giving nodes the ability to support multiple security transports. Once a security transport has been negotiated, all data sent and received is encrypted and only the intended peer can decrypt it.
@@ -50,6 +52,11 @@ If you are running IPFS older than 0.4.21, you are going to start failing to con
 Noise was added to js-ipfs 0.47, however it is compatible with js-ipfs 0.41.0+ ([the async/await refactor](async)) but it needs to be manually configured.
 
 If you are running js-ipfs older than 0.41, you won't be able to connect to nodes who don't support SECIO. You will still be able to leverage the websocket-star server for the time being.
+
+## Updating IPFS
+
+- Download the latest go-ipfs from the [IPFS distributions page](https://dist.ipfs.io/#go-ipfs).
+- Install the latest js-ipfs for Node.js or the browser, https://github.com/ipfs/js-ipfs/tree/master/packages/ipfs#install.
 
 [async]: https://blog.ipfs.io/2020-02-01-async-await-refactor/
 [ipfs07]: https://github.com/ipfs/go-ipfs/issues/7560
