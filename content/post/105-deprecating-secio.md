@@ -10,7 +10,7 @@ We're removing support for the SECIO security transport in IPFS and libp2p. You 
 
 ## What are security transports?
 
-Security transports are components of libp2p that provide end to end encryption of data that is sent across the network. Libp2p provides the ability to negotiate security transports once a connection is established, giving nodes the ability to support multiple security transports. Once a security transport has been negotiated, all data sent and received is encrypted and only the intended peer can decrypt it.
+Security transports are components of libp2p that encrypt data while it is being sent across the network. Libp2p provides the ability to negotiate security transports once a connection is established, giving nodes the ability to support multiple security transports. Once a security transport has been negotiated, all data sent and received is encrypted and only the intended peer can decrypt it.
 
 ## A brief history
 
