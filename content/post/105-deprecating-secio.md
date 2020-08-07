@@ -1,6 +1,6 @@
 ---
-date: 2020-08-06
-url: /2020-08-06-deprecating-secio/
+date: 2020-08-07
+url: /2020-08-07-deprecating-secio/
 title: We're removing support for the SECIO security transport
 author: Jacob Heun
 tags: ipfs, libp2p, secio
