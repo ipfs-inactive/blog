@@ -18,13 +18,13 @@ SECIO is a TLS-like security transport that was developed for IPFS and libp2p in
 
 Go-ipfs 0.6 also added support for the QUIC transport, which internally uses TLS1.3. QUIC is also not yet widely supported, so we still have the same problem as TLS1.3 by itself.
 
-So, how can we successfully deprecate SECIO and move on to more modern and widely-used security transports if we can't support TLS1.3 or QUIC everywhere? The answer is the [Noise security transport](noise_spec), which was created leveraging the [Noise Protocol Framework](noise). Noise provides a set of patterns for composing widely supported cryptographic primitives, which allows us to more easily add support across the various libp2p implementations. Support was added for Noise in go-ipfs 0.6, js-ipfs 0.47, and has been updated across major IPFS network infrastructure.
+So, how can we successfully deprecate SECIO and move on to more modern and widely-used security transports if we can't support TLS1.3 or QUIC everywhere? The answer is the [Noise security transport](https://github.com/libp2p/specs/tree/master/noise), which was created leveraging the [Noise Protocol Framework](https://noiseprotocol.org/noise.html). Noise provides a set of patterns for composing widely supported cryptographic primitives, which allows us to more easily add support across the various libp2p implementations. Support was added for Noise in go-ipfs 0.6, js-ipfs 0.47, and has been updated across major IPFS network infrastructure.
 
 SECIO was never meant to be a permanent security transport. Now that we have Noise for broad support and TLS1.3 for implementations that can support it, it's time for SECIO to be deprecated.
 
 ## When is it happening?
 
-SECIO will be removed from go-ipfs in the release of 0.7, which you can track in the [Github issue](ipfs07). The release is tentatively planned for **August 25th**. We will also be coordinating a release of js-ipfs around the same time to remove SECIO there as well.
+SECIO will be removed from go-ipfs in the release of 0.7, which you can track in the [Github issue](https://github.com/ipfs/go-ipfs/issues/7560). The release is tentatively planned for **August 25th**. We will also be coordinating a release of js-ipfs around the same time to remove SECIO there as well.
 
 ## How does this impact me?
 
@@ -49,7 +49,7 @@ If you are running IPFS older than 0.4.21, you are going to start failing to con
 
 <sup>*</sup>We are looking at backporting Noise to js-ipfs 0.46.x.
 
-Noise was added to js-ipfs 0.47, however it is compatible with js-ipfs 0.41.0+ ([the async/await refactor](async)) but it needs to be manually configured.
+Noise was added to js-ipfs 0.47, however it is compatible with js-ipfs 0.41.0+ ([the async/await refactor](https://blog.ipfs.io/2020-02-01-async-await-refactor/)) but it needs to be manually configured.
 
 If you are running js-ipfs older than 0.41, you won't be able to connect to nodes who don't support SECIO. You will still be able to leverage the websocket-star server for the time being.
 
@@ -57,8 +57,3 @@ If you are running js-ipfs older than 0.41, you won't be able to connect to node
 
 - Download the latest go-ipfs from the [IPFS distributions page](https://dist.ipfs.io/#go-ipfs).
 - Install the latest js-ipfs for Node.js or the browser, https://github.com/ipfs/js-ipfs/tree/master/packages/ipfs#install.
-
-[async]: https://blog.ipfs.io/2020-02-01-async-await-refactor/
-[ipfs07]: https://github.com/ipfs/go-ipfs/issues/7560
-[noise]: https://noiseprotocol.org/noise.html
-[noise_spec]: https://github.com/libp2p/specs/tree/master/noise
