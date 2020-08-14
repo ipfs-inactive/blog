@@ -2,5 +2,4 @@ public
 node_modules
 auth.token
 static/css/main.css
-package-lock.json
 DS_Store
