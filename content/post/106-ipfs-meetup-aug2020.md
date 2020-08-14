@@ -17,25 +17,25 @@ For the August edition, we hosted some familiar faces and some new groundbreakin
 
 Our host for this month’s meetup was IPFS Ecosystem lead Dietrich Ayala, who introduced the next half of the 2020 IPFS roadmap:
 
-<iframe width="560" height="315" src="https://youtu.be/mBFYKesErvI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://youtube.com/embed/mBFYKesErvI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br/>
 <br/>
 
 Bradley Kam from [Unstoppable Domains](https://unstoppabledomains.com) joined us to give us the step-by-step on just how easy it is to build with IPFS and decentralized tech. 
 
-<iframe width="560" height="315" src="https://youtu.be/1XhI-1FMnSA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://youtube.com/embed/1XhI-1FMnSA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br/>
 <br/>
 
 The folks behind [Koda](https://twitter.com/KodaRobotDog), the world’s first decentralized dog, explained how IPFS + AI is a match made in heaven for robotics and distributed computing. 
 
-<iframe width="560" height="315" src="https://youtu.be/2Al81DPnhgI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://youtube.com/embed/2Al81DPnhgI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br/>
 <br/>
 
 What is the Identity Index? What is [Ceramic](https://www.ceramic.network)? Michael Sena explained how this IPFS-based evolution in decentralized identity is going to be a standards game changer in identity management.
  
-<iframe width="560" height="315" src="https://youtu.be/JchPC-jKjJU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://youtube.com/embed/JchPC-jKjJU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br/>
 <br/>
 
@@ -45,13 +45,13 @@ Each meetup invites the community to share what they’ve been working on with a
 
 Lidel walked us through the upcoming IPFS Pinning Service API.
 
-<iframe width="560" height="315" src="https://youtu.be/xQt2k493dGQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://youtube.com/embed/xQt2k493dGQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br/>
 <br/>
 
 An exquisite (mostly) hand-drawn presentation by Irakli Gozalishvili about the performance of IPFS in web content. 
 
-<iframe width="560" height="315" src="https://youtu.be/gVLiW2sgle4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://youtube.com/embed/gVLiW2sgle4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br/>
 <br/>
 
