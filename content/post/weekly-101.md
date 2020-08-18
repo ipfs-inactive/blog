@@ -73,3 +73,6 @@ Missed the first-ever distributed randomness focused event, which folks were cal
 Take care of yourselves and each other. ❤️
 
 Get involved with IPFS by checking us out on [GitHub](https://github.com/ipfs), joining discussions on [our community forum](https://discuss.ipfs.io/), or hitting us up [in chat](https://riot.im/app/#/room/#ipfs:matrix.org). Have a suggestion? [Email us.](mailto:newsletter@ipfs.io)
+
+Get the IPFS Weekly in your inbox, each Tuesday.
+<p><a href="https://ipfs.us4.list-manage.com/subscribe?u=25473244c7d18b897f5a1ff6b&amp;id=cad54b2230" class="button button-primary">Sign up now</a></p>
