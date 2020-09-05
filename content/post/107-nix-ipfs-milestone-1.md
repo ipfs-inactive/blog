@@ -95,6 +95,9 @@ We hope this step can help everyone transition to using IPFS more gracefully.
 
 Get started using our [guide repo](https://github.com/obsidiansystems/ipfs-nix-guide/) and, in particular, our [tutorial](https://github.com/obsidiansystems/ipfs-nix-guide/blob/master/tutorial.md).
 
+Finally, we recently did an interview on the [Nix Friday](https://zimbatm.com/NixFriday/) stream going over all our work, and also discussing more broadly how we see the IPFS and Nix ecosystems fitting together.
+You can watch a recording [here](https://www.youtube.com/watch?v=FievtzvDbs82).
+
 ## What’s Next?
 
 We’ve begun implementing Milestone 2, including the improved build steps that produce content-addressed data.
