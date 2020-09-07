@@ -1,9 +1,10 @@
 ---
-date: 2020-08-20
-url: /2020-08-20-nix-ipfs-milestone-1/
+date: 2020-09-08
+url: /2020-09-08-nix-ipfs-milestone-1/
 title: Nix × IPFS: Introduction and Milestone 1 Report
 author: John Ericson
 tags: ipfs, nix
+header_image: 107-nix-ipfs.jpg
 ---
 
 [Obsidian Systems](https://obsidian.systems/) is adding support for IPFS to Nix so that build products can be persisted to and fetched from IPFS.
@@ -37,7 +38,7 @@ They produce data that must match a pre-fixed hash, so the lack of sandboxing ca
 The big problem with this is that if the URL becomes inaccessible or the data downloaded is non-deterministic (e.g. due to some metadata), this build step will fail —
 in other words, we are facing the exact same problems around linkrot IPFS is trying to solve with the web in general!
 The IPFS solution is the right one —
-we shouldn’t be relying on the location at which some source code was originally uploaded at.
+we shouldn’t be relying on the _location_ at which some source code was originally uploaded.
 And we’re already identifying source code by content addresses, so IPFS solution isn’t even a huge leap from our existing tooling and community practices.
 
 Yes, we can already pin and cache the results of those fixed-output build steps just as we do with regular build steps, but we’re stuck with our own cache of source code completely independent from what upstream offers.
@@ -46,12 +47,12 @@ It is tedious and inefficient for users of Nix to each maintain their own uncoop
 ## Value
 
 For the Nix community at large, we finally have a chance to leverage our hard work on reproducibility and make it a practical reality.
-Rather than relying on our centralized cache.nixos.org to build artifacts before sources rot away, everyone should feel free to use Nixpkgs as a source or binary distro—as was originally intended.
+Rather than relying on our centralized [cache.nixos.org](https://cache.nixos.org) to build artifacts before sources rot away, everyone should feel free to use Nixpkgs as a source or binary distro—as was originally intended.
 
-For users of Obsidian’s software open-source specifically, they finally have an easy and robust way to trust neither our own pre-built binaries or **cache.nixos.org*’s, but build everything from source, always a boon to make auditing security-critical easier.
+For users of Obsidian’s open-source software specifically, they finally have an easy and robust way to trust neither our own pre-built binaries or **cache.nixos.org**’s, but build everything from source, which makes auditing security-critical code easier.
 
 Ideally, we want to cache and distribute source code in collaboration with the upstream developers themselves and other downstream distributions.
-IPLD, more than any other schema we’ve seen, understands the value of addressing data with its original intended “native” references, rather than some bespoke 3rd-party format that others cannot understand.
+[IPLD](https://ipld.io), more than any other schema we’ve seen, understands the value of addressing data with its original intended “native” references, rather than some bespoke 3rd-party format that others cannot understand.
 
 We think this is the key to enable that cooperation.
 Upstream devs can simply continue working with git repos (or any other version control system with content-addressing that IPLD supports).
@@ -80,7 +81,7 @@ Instead, it addresses them based on the plan from which they were made.
 
 Situations exist — such as when someone edits a comment — where the plan changes but the results don’t.
 Besides causing extra rebuilding downstream, this muddles the separation between the raw data and its provenance.
-With peer-to-peer systems, it doesn't matter who is *providing* the data, and we want to take advantage of that not mattering, but it absolutely does matter who is *claiming* what the data represents.
+With peer-to-peer systems, it doesn't matter who is *providing* the data (and we want to take advantage of that not mattering), but it absolutely does matter who is *claiming* what the data represents.
 
 With this core improvement, we can make new improved versions of build plans in IPLD and produce our newly supported IPFS-compatible formats directly from each build step, no manual conversions from legacy input-addressed data needed. This final step brings everything from both milestones together.
 
@@ -96,14 +97,15 @@ We hope this step can help everyone transition to using IPFS more gracefully.
 Get started using our [guide repo](https://github.com/obsidiansystems/ipfs-nix-guide/) and, in particular, our [tutorial](https://github.com/obsidiansystems/ipfs-nix-guide/blob/master/tutorial.md).
 
 Finally, we recently did an interview on the [Nix Friday](https://zimbatm.com/NixFriday/) stream going over all our work, and also discussing more broadly how we see the IPFS and Nix ecosystems fitting together.
-You can watch a recording [here](https://www.youtube.com/watch?v=FievtzvDbs82).
+You can watch a recording [here](https://www.youtube.com/watch?v=FievtzvDbs82):
+{{< youtube FievtzvDbs82 >}}
 
 ## What’s Next?
 
 We’ve begun implementing Milestone 2, including the improved build steps that produce content-addressed data.
 We expect this to be the bulk of the work, with the final IPFS integration being relatively smooth, as by that point the concepts of Nix and IPFS will align so neatly!
 
-We’ve been fastidious about juggling many branches to separate feature work from general improvements of the internals, and thus been able to upstream many of those improvements.
+We’ve been fastidious about juggling many branches to separate feature work from general improvements of the internals, and thus have been able to upstream many of those improvements.
 
 We like this approach because it allows us to continuously engage with the community, and leaves much more readable diffs for the features themselves.
 
