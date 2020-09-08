@@ -1,7 +1,7 @@
 ---
 date: 2020-09-08
 url: /2020-09-08-nix-ipfs-milestone-1/
-title: Nix × IPFS: Introduction and Milestone 1 Report
+title: Nix × IPFS - Milestone 1
 author: John Ericson
 tags: ipfs, nix
 header_image: 107-nix-ipfs.jpg
