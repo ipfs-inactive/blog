@@ -1,14 +1,14 @@
 ---
 date: 2020-09-08
 url: /2020-09-08-nix-ipfs-milestone-1/
+header_image: 107-nix-ipfs.jpg
 title: Nix × IPFS - Milestone 1
 author: John Ericson
 tags: ipfs, nix
-header_image: 107-nix-ipfs.jpg
 ---
 
 [Obsidian Systems](https://obsidian.systems/) is adding support for IPFS to Nix so that build products can be persisted to and fetched from IPFS.
-This adds resiliency and makes it easier for Nix users to reproduce and distribute their work.
+This adds resiliency and makes it easier for Nix users to reproduce and distribute their work - by caching and distributing source code (and hopefully in the future intermediate build steps) peer to peer by using IPFS content addresses (CIDs). 
 
 ## What is Nix?
 
