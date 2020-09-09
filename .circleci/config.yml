@@ -14,7 +14,7 @@ jobs:
 
   deploy:
     docker:
-      - image: olizilla/ipfs-dns-deploy:latest
+      - image: olizilla/ipfs-dns-deploy:debug
         environment:
           DOMAIN: blog.ipfs.io
           BUILD_DIR: public
