@@ -7,7 +7,7 @@ author: John Ericson
 tags: ipfs, nix
 ---
 
-[Obsidian Systems](https://obsidian.systems/) is adding support for IPFS to Nix so that build products can be persisted to and fetched from IPFS. This adds resiliency and makes it easier for Nix users to reproduce and distribute their work - by caching and distributing source code (and hopefully in the future intermediate build steps) peer to peer by using IPFS content addresses (CIDs). 
+[Obsidian Systems](https://obsidian.systems/) is adding support for IPFS to Nix so that build products can be persisted to and fetched from IPFS. This adds resiliency and makes it easier for Nix users to reproduce and distribute their work.
 
 ## What is Nix?
 
