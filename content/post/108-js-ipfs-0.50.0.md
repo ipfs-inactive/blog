@@ -36,9 +36,9 @@ The datastructure behind this pinset is a [DAG], much like the structures that r
 
 The pinset consists of a number of buckets in a tree structure, with each bucket containing a max of 8,192 items and each layer containing max 256 buckets.  After the first bucket is full, pins are distributed between buckets.
 
-When garbage collection runs all nodes in the [DAG] are traversed and the blocks that correspond to their [CID]s are exempted from deletion.
+When garbage collection runs, all nodes in the [DAG] are traversed and the blocks that correspond to their [CID]s are exempted from deletion.
 
-As you add and remove pins, this DAG grows and shrinks and [CID]s of intermediate nodes within the [DAG] are recalculated as the structure changes. As the [DAG] gets larger this can become expensive and it hurts application performance for very large pinsets.
+As you add and remove pins, this DAG grows and shrinks. [CID]s of intermediate nodes within the [DAG] are recalculated as the structure changes. As the [DAG] gets larger this can become expensive and it hurts application performance for very large pinsets.
 
 `js-ipfs@0.50.0` has changed the default storage of pins to use the datastore instead of a [DAG] and has seen a corresponding speedup when adding very large numbers of files:
 
