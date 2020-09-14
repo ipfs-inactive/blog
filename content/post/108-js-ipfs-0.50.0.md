@@ -1,14 +1,14 @@
 ---
 date: 2020-09-14
 url: /2020-09-14-js-ipfs-0-50/
-title: js-IPFS 0.50.0 runs in shared webworkers and has a faster ipfs.add
+title: js-IPFS 0.50.0 runs in shared webworkers and has greatly improved pinning performance
 header_image: js-ipfs-placeholder.png
 author: Alex Potsides
 ---
 
 # 🔦 Highlights
 
-> share an IPFS node between multiple tabs and add files more quickly
+> share an IPFS node between multiple tabs and pin files more quickly
 
 `js-IPFS@0.50.0` has landed with the ability to share a node between multiple browser tabs and greatly improved pinning performance.
 
@@ -26,9 +26,9 @@ This can be a problem in web browsers if the user opens your app in two tabs, su
 
 Help is at hand in the shape of the [ipfs-message-port-client](https://www.npmjs.com/package/ipfs-message-port-client) and [ipfs-message-port-server](https://www.npmjs.com/package/ipfs-message-port-server) which allow you to run one IPFS node in a [SharedWorker](https://developer.mozilla.org/en-US/docs/Web/API/SharedWorker) and share it between multiple tabs within your application.
 
-There will be a more in depth post here on this subject soon but in the meantime check out the [browser-sharing-node-across-tabs](https://github.com/ipfs/js-ipfs/tree/master/examples/browser-sharing-node-across-tabs) for an example of how to use it!
+There will be a more in depth post here on this subject soon but in the meantime check out the [browser-sharing-node-across-tabs](https://github.com/ipfs/js-ipfs/tree/master/examples/browser-sharing-node-across-tabs) example to see how to use it!
 
-## 📌 Pins in the datastore
+## 📌 Pinning performance
 
 When you add a piece of content to your local IPFS node, it's pinned in place to prevent the blocks that make up your files being deleted during garbage collection.  The pin is placed in a collection of pins we call a pinset.
 
@@ -40,7 +40,7 @@ When garbage collection runs, all nodes in the [DAG] are traversed and the block
 
 As you add and remove pins, this DAG grows and shrinks. [CID]s of intermediate nodes within the [DAG] are recalculated as the structure changes. As the [DAG] gets larger this can become expensive and it hurts application performance for very large pinsets.
 
-`js-ipfs@0.50.0` has changed the default storage of pins to use the datastore instead of a [DAG] and has seen a corresponding speedup when adding very large numbers of files:
+`js-ipfs@0.50.0` has changed the default storage of pins to use the datastore instead of a [DAG] and has seen a corresponding speedup as the number of pinned blocks in your repo increases:
 
 <p style="max-width:1000px;margin-left:auto;margin-right:auto;">
   <img src="/108-js-ipfs-0.50.0/pinning-performance">
@@ -48,15 +48,13 @@ As you add and remove pins, this DAG grows and shrinks. [CID]s of intermediate n
 
 In the diagram above you can see that as the number of pinned items increases, so does the time it takes to add the next pin.  There's a steep increase at 8,192 pins, which is when the first bucket is considered full and multiple buckets are created which then involves more operations to add the next pin.
 
-js-ipfs@0.47.0 exhibits this very severly, go-ipfs@0.6.0 less so but the performance degredation is still visible.
-
-The performance of the approach taken by js-ipfs@0.50.0 compares very favourably and is essentially only limited by the peformance of the underlying datastore.
+The performance of the approach taken by js-ipfs@0.50.0 compares very favourably to that of previous versions and is essentially only limited by the peformance of the underlying datastore since it has switched to simple puts and gets without the overhead of creating a data structure.
 
 ## 🍫 Uint8Arrays
 
 In the beginning there were Arrays.  Simple arrays that could hold all sorts of mixed types, could not be optimised very well and were an abstraction over blocks of memory.
 
-Then Node.js came along introduced the [Buffer](https://nodejs.org/api/buffer.html) - suddenly JavaScript developers could access memory (sort of) directly! These things held numbers with an integer value range of 0-255 and were blazingly fast.  JavaScript was starting to look like a proper language that you could do resource intensive work in.
+Then Node.js came along and introduced the [Buffer](https://nodejs.org/api/buffer.html) - suddenly JavaScript developers could access memory (sort of) directly! These things held numbers with an integer value range of 0-255 and were blazingly fast.  JavaScript was starting to look like a proper language that you could do resource intensive work in.
 
 The authors of the [ECMAScript](https://tc39.es) standard took note and introduced [TypedArray](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray)s, of which there are many variations but the one we are most interested in is the [Uint8Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array).
 
@@ -99,12 +97,16 @@ for await (const chunk of ipfs.cat(cid)) {
 * Update hapi to v20 ([#3245](https://github.com/ipfs/js-ipfs/issues/3245)) ([1aeef89](https://github.com/ipfs/js-ipfs/commit/1aeef89c73f42a2f6cceb7f0598400141ce40e23))
 * Update to libp2p@0.29.0 ([63d4d35](https://github.com/ipfs/js-ipfs/commit/63d4d353c606e4fd487811d8a0014bb2173f11be))
 
+## 🔨 Breaking changes
+
+* Node Buffers have been replaced with Uint8Arrays ([#3220](https://github.com/ipfs/js-ipfs/issues/3220))
+
 # 🏗 API Changes
 
 ## Core API & HTTP API Client
 
 * The return value from `ipfs.id` now includes a list of protocols the node understands
-* Where Node.js `Buffer` objects were returned previously, now `Uint8Arrays` are in their place.  This affects:
+* 💥 **Breaking Change** 💥 Where Node.js `Buffer` objects were returned previously, now `Uint8Arrays` are in their place. This affects:
   * `ipfs.block.*` The `.data` property of block objects is now a `Uint8Array`
   * `ipfs.dag.get` Depending on the type of node returned:
     * `ipld-raw` nodes are now returned as `Uint8Array`s
