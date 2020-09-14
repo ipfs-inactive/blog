@@ -1,7 +1,7 @@
 ---
 date: 2020-09-14
 url: /2020-09-14-js-ipfs-0-50/
-title: js-IPFS 0.50.0 runs in shared webworkers and has greatly improved pinning performance
+title: js-IPFS 0.50.0 runs in shared webworkers and has faster pinning
 header_image: js-ipfs-placeholder.png
 author: Alex Potsides
 ---
@@ -43,7 +43,7 @@ As you add and remove pins, this DAG grows and shrinks. [CID]s of intermediate n
 `js-ipfs@0.50.0` has changed the default storage of pins to use the datastore instead of a [DAG] and has seen a corresponding speedup as the number of pinned blocks in your repo increases:
 
 <p style="max-width:1000px;margin-left:auto;margin-right:auto;">
-  <img src="/108-js-ipfs-0.50.0/pinning-performance">
+  <img src="/108-js-ipfs-0.50.0/pinning-performance.png">
 </p>
 
 In the diagram above you can see that as the number of pinned items increases, so does the time it takes to add the next pin.  There's a steep increase at 8,192 pins, which is when the first bucket is considered full and multiple buckets are created which then involves more operations to add the next pin.
