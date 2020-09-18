@@ -40,4 +40,6 @@ The sole brave lightning demoer was Jessica Schilling, who has been working on a
 
 Thanks to everyone who joined, all our speakers and everyone who's reading this or watching the IPFS channel on YouTube!
 
-See you in October... and if you cannot wait until then, [subscribe to the IPFS weekly newsletter](http://eepurl.com/gL2Pi5) to get releases, project announcements and job opportunities in your inbox 💌.
+See you in October... sign up for the [IPFS Meetup group](https://www.meetup.com/San-Francisco-IPFS/) to get notified automatically about the next one!
+
+And if you cannot wait until then, [subscribe to the IPFS weekly newsletter](http://eepurl.com/gL2Pi5) to get releases, project announcements and job opportunities in your inbox 💌.
