@@ -40,6 +40,8 @@ The sole brave lightning demoer was Jessica Schilling, who has been working on a
 
 Thanks to everyone who joined, all our speakers and everyone who's reading this or watching the IPFS channel on YouTube!
 
-See you in October... sign up for the [IPFS Meetup group](https://www.meetup.com/San-Francisco-IPFS/) to get notified automatically about the next one!
+See you in October! Sign up for the [IPFS Meetup group](https://www.meetup.com/San-Francisco-IPFS/) to get notified automatically about it.
 
-And if you cannot wait until then, [subscribe to the IPFS weekly newsletter](http://eepurl.com/gL2Pi5) to get releases, project announcements and job opportunities in your inbox 💌.
+Have a project you want to share with the community? [Send us an email](mailto:ipfs-community@protocol.ai) to sign up for a talk or lightning demo!
+
+And if you cannot wait until October for more IPFS goodness, [subscribe to the IPFS weekly newsletter](http://eepurl.com/gL2Pi5) to get releases, project announcements and job opportunities in your inbox 💌.
