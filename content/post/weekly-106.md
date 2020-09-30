@@ -8,8 +8,6 @@ title: Welcome to IPFS Weekly 106
 author: Jenn Turner
 ---
 
-# Welcome to IPFS Weekly #106
-
 Here’s what’s happening in the [InterPlanetary File System](https://ipfs.io/) galaxy! 🚀
 
 ## An IPFS September to Remember Meetup 
