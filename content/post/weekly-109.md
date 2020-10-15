@@ -31,7 +31,7 @@ Recently IPFS contributor Jessica Schilling was featured in Modern Consensus, a 
 [Read more](https://modernconsensus.com/commentary/opinion/ipfs-is-paving-the-way-for-a-new-digital-economy/)
 
 ## Brand new on IPFS
-* [Kickoff your application with js-libp2p](https://medium.com/moxystudio/kickoff-your-application-with-js-libp2p-68221baaf38c_ with this guide to setting up a fully functional libp2p node
+* [Kickoff your application with js-libp2p](https://medium.com/moxystudio/kickoff-your-application-with-js-libp2p-68221baaf38c_) with this guide to setting up a fully functional libp2p node
 * VIDEO: [Building Web3:](https://www.youtube.com/watch?v=d1kpID1LSRE&feature=emb_logo) Textile builds developer tools that return data ownership to users
 * [Introducing Litentry](https://medium.com/@litentry/introducing-litentry-d47b23d54281), identity and related data management layer for the Polkadot ecosystem
 * [Coding with Ceramic Network](https://medium.com/ceramic/10-ideas-for-sculpting-with-ceramic-network-35328d9ad686)—see what you can do with the document-based data storage network
