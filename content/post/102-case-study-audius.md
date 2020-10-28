@@ -7,7 +7,7 @@ tags: casestudy, case-study, Audius, examples, using-ipfs, collaborators
 header_image: 102-case-study-audius.png
 ---
 
-![IPFS Case Study Seriew - Audius](/img/101-case-study-audius/case-study-audius.jpg)
+{{< img src="/img/101-case-study-audius.jpg" alt="IPFS Case Study Seriew - Audius" >}}
 
 ## You asked, we delivered!
 

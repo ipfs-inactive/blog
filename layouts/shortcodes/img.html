@@ -1,0 +1,52 @@
+{{/* get file that matches the filename as specified as src="" in shortcode */}}
+{{ $src := resources.GetMatch (.Get "src") }}
+
+{{ if in (.Get "src") "http" }}
+<img src="{{$src}}" {{ with .Get "alt" }}alt="{{.}}"{{ else }}alt=""{{ end }}>
+{{ else }}
+
+{{/* sizes */}}
+{{ $smw := default "500x" }}
+{{ $mdw := default "800x" }}
+{{ $lgw := default "1200x" }}
+{{ $xlw := default "1800x" }}
+
+{{/* resize the src image to the given sizes */}}
+
+{{ .Scratch.Set "sm" ($src.Resize $smw) }}
+{{ .Scratch.Set "md" ($src.Resize $mdw) }}
+{{ .Scratch.Set "lg" ($src.Resize $lgw) }}
+{{ .Scratch.Set "xl" ($src.Resize $xlw) }}
+
+{{/* add the processed images to the scratch */}}
+
+{{ $sm := .Scratch.Get "sm" }}
+{{ $md := .Scratch.Get "md" }}
+{{ $lg := .Scratch.Get "lg" }}
+{{ $xl := .Scratch.Get "xl" }}
+
+{{/* only use images smaller than or equal to the src (original) image size */}}
+<img
+  {{ with .Get "sizes" }}sizes='{{.}}'
+  {{ else }}
+  sizes="(min-width: 35em) 720px, 100vw"{{ end }}
+  srcset='
+  {{ if ge $src.Width "500" }}
+    {{ with $sm.RelPermalink }}{{.}} 500w{{ end }}
+  {{ end }}
+  {{ if ge $src.Width "800" }}
+    {{ with $md.RelPermalink }}, {{.}} 800w{{ end }}
+  {{ end }}
+  {{ if ge $src.Width "1200" }}
+    {{ with $lg.RelPermalink }}, {{.}} 1200w{{ end }}
+  {{ end }}
+  {{ if ge $src.Width "1800" }}
+    {{ with $xl.RelPermalink }}, {{.}} 1800w{{ end }}
+  {{ end }}'
+  {{ if .Get (print $xl) }}
+    src="{{ $xl.RelPermalink }}"
+  {{ else }}
+    src="{{ $src.RelPermalink }}"
+  {{ end }}
+  {{ with .Get "alt" }}alt="{{.}}"{{ else }}alt=""{{ end }}>
+{{ end }}
