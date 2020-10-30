@@ -13,15 +13,13 @@ There’s also a brand new example application that you can play with showing ho
 
 [github.com/ipfs/js-ipfs-http-client/examples/browser-pubsub](https://github.com/ipfs/js-ipfs-http-client/tree/master/examples/browser-pubsub)
 
-![Screenshot of PubSub in the browser example app](/056-pubsub-in-the-browser/demo-screenshot.png)
+{{< img src="/img/056-pubsub-in-the-browser-demo-screenshot.png" alt="Screenshot of PubSub in the browser example app" >}}
 
 This was made possible by the experimentation done in a [“lite” http client](https://github.com/ipfs-shipyard/js-ipfs-http-client-lite) I was working on, which was originally meant to be just really really small (it’s currently ~13kb gzipped vs ~200kb for the regular client). To make it small we needed to switch to using the fetch API but I soon realized that this opened up a bunch of other opportunities, like enabling pubsub. We also get easily cancelable requests, request timeouts, custom fetch implementations and a switch to async/await and async iterators.
 
 I originally demoed it in the lite client here:
 
-
-[![Watch video](/056-pubsub-in-the-browser/ipfs-pubsub-in-browser-video.jpg)](https://www.youtube.com/watch?v=NZb6ybkAYWs)
-
+[{{< img src="/img/056-pubsub-in-the-browser-video.jpg" alt="Watch video" >}}](https://www.youtube.com/watch?v=NZb6ybkAYWs)
 
 The lite client has been a great proving ground for ensuring the “hard parts” of the API are now possible using browser native APIs. I’ll be applying more of the learnings from there to the regular http client in the near future, which should hopefully result in a smaller bundle size, as well as more cool new features like this one.
 

@@ -1,8 +1,12 @@
 {{/* get file that matches the filename as specified as src="" in shortcode */}}
 {{ $src := resources.GetMatch (.Get "src") }}
+{{ $url := .Get "src" }}
 
-{{ if in (.Get "src") "http" }}
-<img src="{{$src}}" {{ with .Get "alt" }}alt="{{.}}"{{ else }}alt=""{{ end }}>
+{{ if in $url "http" }}
+<img src="{{$url}}" data-external {{ with .Get "alt" }}alt="{{.}}"{{ else }}alt=""{{ end }}>
+{{ else }}
+{{ if in $url ".gif" }}
+<img src="{{$url}}" data-gif {{ with .Get "alt" }}alt="{{.}}"{{ else }}alt=""{{ end }}>
 {{ else }}
 
 {{/* sizes */}}
@@ -29,7 +33,7 @@
 <img
   {{ with .Get "sizes" }}sizes='{{.}}'
   {{ else }}
-  sizes="(min-width: 35em) 720px, 100vw"{{ end }}
+  sizes=""{{ end }}
   srcset='
   {{ if ge $src.Width "500" }}
     {{ with $sm.RelPermalink }}{{.}} 500w{{ end }}
@@ -49,4 +53,5 @@
     src="{{ $src.RelPermalink }}"
   {{ end }}
   {{ with .Get "alt" }}alt="{{.}}"{{ else }}alt=""{{ end }}>
+{{ end }}
 {{ end }}

@@ -10,7 +10,7 @@ The focus of development of IPFS to date has been primarily on desktop and serve
 
 This growth at the furthest edge of the network requires solutions at the edge. While the IPFS network continues to grow on mobile (for instance, IPFS now has default support on Opera for Android), more research is needed for the value of the network to be fully realized. IPFS should be directly available and accessible to end users in all their devices - and the design of IPFS integrations should make this clear and easy to use. To create that level of clarity, developers need good guidelines that align with user needs while unlocking all the power of the mobile dweb.
 
-![Graph of global internet device sales showing devices explosively growing from 2005 to 2016.](../img/087-ipfs-mobile-design-research/device-sales-2005-2016.jpg)
+{{< img src="/img/087-ipfs-mobile-design-research-device-sales-2005-2016.jpg" alt="Graph of global internet device sales showing devices explosively growing from 2005 to 2016." >}}
 
 In emerging markets and for under-served audiences and marginalized or oppressed peoples the need for data sovereignty, offline-first applications and trustable computing is especially dire, so IPFS should function optimally on the devices used by them in order to serve their use-cases.
 

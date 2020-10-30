@@ -11,7 +11,7 @@ IPFS Desktop has come a long way to reach its current form. We are here to celeb
 
 Back in May 2015, Juan Benet pushed the first so-called "Initial Commit" to start a project at the time named "ipfs-electron". The purpose of the app was quite simple and that hasn't changed much with time: providing a long running daemon, alongside with a GUI for managing it.
 
-![Evolution of IPFS Desktop](/058-ipfs-desktop-0-9/evolution.jpg)
+{{< img src="/img/058-ipfs-desktop-0-9-evolution.jpg" alt="Evolution of IPFS Desktop" >}}
 
 Regarding the application's name, it went from "ipfs-electron" to "IPFS Native Application", then to ["IPFS Station"](https://github.com/ipfs-shipyard/ipfs-desktop/commit/5a123c2c9ed0fe3ec86aad336417ddbefdea9243), it being a much fancier name. However, we [changed it again](https://github.com/ipfs-shipyard/ipfs-desktop/pull/574) to "IPFS Desktop" and that's where we are right now! It's a result of an uniformization between our applications names and the most self-explanatory option we had.
 
@@ -23,13 +23,13 @@ The newest version of IPFS Desktop, 0.9.2 - yes, we already released two patch v
 
 With the [recent update to the Web UI](https://github.com/ipfs-shipyard/ipfs-webui/releases/tag/v2.5.0), we are now capable of navigating through the whole IPFS system. Previously, you could only access your 'Files' (the contents of the [Mutable File System](https://proto.school/#/mutable-file-system)). Now, you can navigate not only to any `/ipfs/` or `/ipns/` path, but also any content [pinned](https://docs.ipfs.io/guides/concepts/pinning/) to your IPFS node!
 
-![Browsing /ipns/ipns.io](/058-ipfs-desktop-0-9/browse-wild.jpg)
+{{< img src="/img/058-ipfs-desktop-0-9-browse-wild.jpg" alt="Browsing /ipns/ipns.io" >}}
 
 ### Use npm on ipfs
 
 In addition, we are introducing a new experiments section on the 'Settings' page which will allow you to enable new experimental features as they come in. To celebrate this new section, we are adding [npm on ipfs](https://github.com/ipfs-shipyard/npm-on-ipfs) to it! This is a project that allows you to use the `ipfs-npm` and `npm-ipfs` commands to install your Node.js modules through the IPFS network!
 
-![Experiments section](/058-ipfs-desktop-0-9/npm-ipfs.jpg)
+{{< img src="/img/058-ipfs-desktop-0-9-npm-ipfs.jpg" alt="Experiments section" >}}
 
 **Please note** that this feature is intended for those who have [Node.js](https://nodejs.org) installed on their system. Moreover, the activation will only work if your setup does not require additional permissions for executing `npm install -g`.
 
@@ -37,7 +37,7 @@ In addition, we are introducing a new experiments section on the 'Settings' page
 
 Adding `ipfs` command line tools to your system was actually introduced in 0.8.0, but it's always worth noting that you are just a click away of having the `ipfs` command available from your command line! This way, you don't have to worry about configuring your `PATH` variable or doing other confusing stuff to start using all IPFS capabilities. Just go to Settings and enable "IPFS command line tools"!
 
-![IPFS command line tools](/058-ipfs-desktop-0-9/ipfs-cmd.jpg)
+{{< img src="/img/058-ipfs-desktop-0-9-ipfs-cmd.jpg" alt="IPFS command line tools" >}}
 
 ### And more...
 
