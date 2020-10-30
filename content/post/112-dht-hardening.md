@@ -3,6 +3,7 @@ date: 2020-10-30
 url: /2020-10-30-dht-hardening/
 title: Hardening the IPFS public DHT against eclipse attacks
 author: Jacob Heun
+header_image: 112-dht-hardening.png
 tags: ipfs, libp2p, dht, security
 ---
 
