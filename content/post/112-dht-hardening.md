@@ -7,6 +7,8 @@ tags: ipfs, libp2p, dht, security
 header_image: 112-dht-hardening.jpg
 ---
 
+![Hardening the IPFS public DHT](/header_images/112-dht-hardening.jpg)
+
 A major focus of IPFS for 2020 has been improving Content Routing as the network has continued to scale. While we've made [significant improvements](https://blog.ipfs.io/2020-07-20-dht-deep-dive/) to the speed of requests on the DHT, another crucial focus for us has been on the security of the network. During our work leading up to the release of go-ipfs 0.5 we were contacted by we were contacted by Bernd Prünster and Alexander Marsalek at [A-SIT](https://www.a-sit.at) and the [Graz University of Technology](https://tugraz.at), to advise us of an attack they had discovered during their research targeting go-ipfs 0.4.23 that would allow an attacker with minimal resources to eclipse any node on the public DHT. Over the past 3 minor releases of go-ipfs (0.5, 0.6 and 0.7) we've been collaborating closely with Bernd and Alexander, which has enabled us to release incremental improvements that have mitigated their original attack and increased the cost and difficulty of such attacks by several orders of magnitude. Today we'll dive into the attack and the various mitigations we've released. If you would like to read the full paper, "Total Eclipse of the Heart – Disrupting the InterPlanetary File System", you can find it at the [TU Graz Research Portal](https://graz.pure.elsevier.com/en/publications/total-eclipse-of-the-heart-disrupting-the-interplanetary-file-sys).
 
 ## Mitigating the attack
