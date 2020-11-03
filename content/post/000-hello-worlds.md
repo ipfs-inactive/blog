@@ -28,4 +28,4 @@ You can't _yet_ "follow" the blog with ipfs, but we're working on it and expect 
 
 Don't miss any InterPlanetary updates!
 
-![](earthrise.png)
+{{< img src="/img/0-hello-worlds-earthrise.png" alt="" >}}
