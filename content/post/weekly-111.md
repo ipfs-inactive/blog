@@ -8,8 +8,6 @@ title: Welcome to IPFS Weekly 111
 author: Jenn Turner
 ---
 
-# Welcome to IPFS Weekly #111
-
 Here’s what’s happening in the [InterPlanetary File System](https://ipfs.io/) galaxy! 🚀
 
 ## The evolution of IPFS + Filecoin
