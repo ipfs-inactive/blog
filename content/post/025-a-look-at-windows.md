@@ -12,16 +12,19 @@ If you're not a Windows or `go-ipfs` user, you may still be interested in seeing
 
 ***
 ### Log output
-![log-before](img/log-before.png)  
+{{< img src="/img/36-a-look-at-windows-log-before.png" alt="log-before" >}}
+
 Issue:  
 The output on Windows was filled with non-native [control characters](https://en.wikipedia.org/wiki/Control_character). This made our output hard to read, both for users and developers (when malformed logs were shared with us).
 
-![log-after](img/log-after.png)  
+{{< img src="/img/36-a-look-at-windows-log-after.png" alt="log-after" >}}
+
 Resolution:  
 We've added a method of translating these characters into native equivalents. There should be no more oddities related to character color or cursor placement, text should be clear and lines shouldn't overlap anymore. This should make everyone a little bit happier.
 
 ### Building
-![build](img/build.gif)  
+{{< img src="/img/36-a-look-at-windows-build.gif" alt="build" >}}
+
 Issue:  
 Building the Windows binary, on Windows itself, had multiple problems: silent failures, lack of respect for user supplied arguments, inconsistent handling of dependencies, and more.
 
@@ -29,7 +32,8 @@ Resolution:
 Multiple fixes had to be applied to `go-ipfs`, `gx`, some of our first and third party dependencies, and even Golang itself. The building experience should now be consistent with other platforms. In addition, the [documentation has been rewritten](https://github.com/ipfs/go-ipfs/blob/master/docs/windows.md) to clarify the process and add a section that covers Windows specific concerns and how to deal with them.
 
 ### Temporary file access errors
-![garbage](img/garbage.png)  
+{{< img src="/img/36-a-look-at-windows-garbage.png" alt="garbage" >}}
+
 Issue:  
 When trying to move data-blocks from a temporary location, the destination address was getting corrupted. This led to "Access Denied" errors and the unexpected creation of garbage files in the working directory.
 
@@ -41,19 +45,22 @@ Issue:
 No filters were being applied to file paths during extraction (IPFS -> other file systems). This caused multiple issues when using `ipfs get`.
 
 1. #### Extracting content from IPFS could fail due to native file system restrictions
-![File names](img/filenames.png)  
+{{< img src="/img/36-a-look-at-windows-filenames.png" alt="File names" >}}
+
 FAT32, NTFS, ReFS, and Windows itself, all impose their own path limitations. If a hash contained a non-legal path, operations like `ipfs get` would fail. In the image above, the [XKCD archive ](https://github.com/ipfs/archives/issues/21) could not be downloaded on Windows because the directory "1031 - s keyboard leopard " ends in a space.  
 
-2. #### Hashes that contained malicious file paths would be extracted
-![overwrite 1](img/overwrite%201.png)  
-![overwrite 2](img/overwrite%202.png)  
+1. #### Hashes that contained malicious file paths would be extracted
+{{< img src="/img/36-a-look-at-windows-overwrite_1.png" alt="overwrite 1" >}}
+{{< img src="/img/36-a-look-at-windows-overwrite_2.png" alt="overwrite 2" >}}
+
 It was possible for users to craft specific hashes that could escape the extraction root and overwrite files (if the target file's location was known in advance and users had write permissions for the files).  
 
 Resolution:  
 We now account for these limitations and translate path-names into platform legal paths, which are restricted to their hash-root.
 
 ### `stdio`
-![pipe](img/pipe.png)  
+{{< img src="/img/36-a-look-at-windows-pipe.png" alt="pipe" >}}
+
 Issue:  
 stdin support was explicitly disabled in `go-ipfs`, preventing basic [IPC](https://en.wikipedia.org/wiki/Inter-process_communication) with other applications.
 Resolution:  

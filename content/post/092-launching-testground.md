@@ -6,7 +6,7 @@ author: Raul Kripalani
 header_image: 092-launching-testground.png
 tags: testground, release
 ---
-![Launching Testground](/header_images/092-launching-testground.png)
+{{< img src="/img/092-launching-testground.png" alt="Launching Testground" >}}
 
  
 Testing peer-to-peer (p2p) systems is hard. Doing so reliably and reproducibly is even harder. Today, **we’re releasing [Testground v0.5](https://github.com/testground/testground/releases/tag/v0.5.0) to the world**. This is a huge milestone for us, and for the wider p2p ecosystem. In this post, we’ll walk you through what Testground is, how to get started, what’s coming next, and the backstory behind Testground itself.
@@ -41,7 +41,7 @@ To illustrate the above, consider a 200-instance test run. With Kubernetes, it c
 
 The cherry on the top of all this is the **observation pipeline (experimental)**. Test plans can record raw data points or aggregate metrics (histograms, [EWMA](https://en.wikipedia.org/wiki/EWMA_chart), counters, etc.) about the system under test, as well as emit arbitrary output assets. **The Testground platform will harvest them and make them available for one-stop collection.**
 
-![Testground Architecture](/092-launching-testground/launch_testground_architecture.png)
+{{< img src="/img/092-launching-testground-architecture.png" alt="Testground Architecture" >}}
 
 <p style="text-align:center;font-size:75%;"> Architecture diagram, focused on a test plan’s inputs and outputs, highlighting the circuitry of the observability pipeline</p>
 
@@ -72,7 +72,7 @@ At the tail end of that sprint, we will produce v0.7 of the Testground Core, whi
 <br/>
 Needless to say, you’re welcome to pitch in at any point in time! Continue reading to learn how.
 
-![Testground flowchart](/092-launching-testground/launch_testground_flowchart.png)
+{{< img src="/img/092-launching-testground-flowchart.png" alt="Testground flowchart" >}}
 
 ## Getting involved
 

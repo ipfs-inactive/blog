@@ -1,6 +1,7 @@
 {{/* get file that matches the filename as specified as src="" in shortcode */}}
 {{ $src := resources.GetMatch (.Get "src") }}
 {{ $url := .Get "src" }}
+{{ $width := .Get "width" }}
 
 {{ if in $url "http" }}
 <img src="{{$url}}" data-external {{ with .Get "alt" }}alt="{{.}}"{{ else }}alt=""{{ end }}>
@@ -10,7 +11,7 @@
 {{ else }}
 
 {{/* sizes */}}
-{{ $smw := default "500x" }}
+{{ $smw := default "700x" }}
 {{ $mdw := default "800x" }}
 {{ $lgw := default "1200x" }}
 {{ $xlw := default "1800x" }}
@@ -34,9 +35,10 @@
   {{ with .Get "sizes" }}sizes='{{.}}'
   {{ else }}
   sizes=""{{ end }}
+  {{ with $width }}width='{{$width}}'{{ end }}
   srcset='
-  {{ if ge $src.Width "500" }}
-    {{ with $sm.RelPermalink }}{{.}} 500w{{ end }}
+  {{ if ge $src.Width "700" }}
+    {{ with $sm.RelPermalink }}{{.}} 700w{{ end }}
   {{ end }}
   {{ if ge $src.Width "800" }}
     {{ with $md.RelPermalink }}, {{.}} 800w{{ end }}

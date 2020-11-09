@@ -9,11 +9,11 @@ In Q4 2018, we undertook a new planning process for the IPFS project to more cle
 
 To ground our thinking about the next year, we first had to zoom out to the core mission of the IPFS project in the long-term. We take on many efforts and support many groups in our open source community, but it is all driven by the aim to make the internet more accessible, empowering, and useful for many years to come. With much wordsmithing, we condensed this into our first (written) [mission statement](https://github.com/ipfs/roadmap#ipfs-mission-statement)! 👏
 
-![IPFS Mission Statement](img/mission-statement.png)
+{{< img src="/img/78-ipfs-2019-roadmap-mission-statement.png" alt="IPFS Mission Statement" >}}
 
 This mission is reflected in our goals for IPFS - what we hope to tangibly achieve in the world. So far, we've identified **SIXTEEN** ranging over the next 5-10 years of work. These include launching the [Interplanetary Web](https://github.com/ipfs/roadmap#-interplanetary-web---mars-2024-d3-e3-i4), making the memex a reality with the [Personal Web](https://github.com/ipfs/roadmap#-personal-web-d3-e4-i2), snapshotting all human knowledge with the [Self-Archiving Web](https://github.com/ipfs/roadmap#-self-archiving-web-d4-e4-i4), and even merging the web and the OS with [WebOS](https://github.com/ipfs/roadmap#-webos-d5-e2-i3) among others. While there are assuredly many that we haven’t explored yet, 16 is a good start - and far more than we could possibly work on this year. Mission "Plan 2019" was underway! 🚀
 
-![IPFS Goals](img/goals.png)
+{{< img src="/img/78-ipfs-2019-roadmap-goals.png" alt="IPFS Goals" >}}
 
 To narrow in on where we should begin, we ranked the goals on a number of factors to create an ordered list. We sorted first in terms of low difficulty or "delta" (i.e. minimal additional requirements and fewer dependencies from the capabilities IPFS has now), then high ecosystem growth (growing our community and resources to help us gravity assist and accelerate our progress), and finally high importance (to ensure IPFS has a strong, positive impact on the world). This [sorting function](https://github.com/ipfs/roadmap#2019-priority) gave us a ranked list of goals to work towards to achieve our mission - where completing earlier goals brought us closer to the technical requirements and resources to achieve later goals. 🤩
 
@@ -23,7 +23,7 @@ Improving IPFS for package managers also has the added benefit of diagnosing and
 
 Identifying our [top priority for the year](https://github.com/ipfs/roadmap#2019-priority) was an important achievement, but it was still just the beginning. Next, we needed to break that goal down into milestones so we could incrementally add features, performance improvements, and educational guides to make “IPFS for package managers” a reality. We did this in two stages. First, individual IPFS working groups drafted feature and performance milestones of the work they saw as most important to achieve our goal. After a quick cross-working group feedback loop for asks and alignment, we “merged” across all working group roadmaps to create a unified project-level roadmap. You can see the results of this in our [2019 Epics](https://github.com/ipfs/roadmap#2019-epics). 👀
 
-![IPFS 2019 Epics](img/2019-epics.png)
+{{< img src="/img/78-ipfs-2019-roadmap-2019-epics.png" alt="IPFS 2019 Epics" >}}
 
 When taking on Package Managers as a top use case and priority, we realized there was still much we didn’t know about the needs and requirements to support this community - so learning more was our first step. We spun up a new [Package Managers Working Group](https://github.com/ipfs/package-managers) in early Q1, which has been focused on research, knowledge-sharing, and stress-testing the protocol with demos and experiments to target our efforts for the rest of the year. The team has already identified a bunch of low hanging fruit around usability and performance. Want to get involved? [Check out this list of known issues and feature requests!](https://github.com/ipfs/package-managers/blob/master/blockers.md) _(We'd also love to hear about your ideas, experiments, and pain points - add them here!)_ 💪
 
@@ -33,6 +33,6 @@ When we started out with 2019 planning, we actually took on **THREE** top-level 
 
 Given this realization, we made the hard choice to descope those goals for 2019 and focus our energies on supporting package managers. However, we’d already finalized our Q1 OKRs and much of the prioritized work was still aligned and valuable for our narrowed priority. Therefore, we decided to pause any additional re-planning until the end-of-quarter mark. Not to fear, Q2 brings lots of fresh package-manager-focused improvements built on all of our great Q1 learnings. Curious what the working groups are picking up and how you can help out? Check out the [IPFS Q2 OKRs](https://docs.google.com/spreadsheets/d/1YSeyWqXh3ImanRrTkYQHHkCofiORn68bYqM_KTLBlsA/edit) and associated planning issues [here](https://github.com/ipfs/team-mgmt/issues/902). 🤗
 
-![IPFS 2019 Q2 OKRs](img/q2-okrs.png)
+{{< img src="/img/78-ipfs-2019-roadmap-q2-okrs.png" alt="IPFS 2019 Q2 OKRs" >}}
 
 Since the [IPFS Alpha release](https://github.com/ipfs/ipfs/blob/master/README.md#alpha-distribution) in February 2015, the IPFS project has grown significantly - including releasing our [Data Model (IPLD)](http://ipld.io/) and [Networking Stack (libp2p)](https://libp2p.io/) as standalone projects, amongst many other [exciting updates recentrly](https://filecoin.io/blog/update-2018-q3-q4/#9-ipfs-update-for-filecoin). The past 4 years have brought huge improvements to the protocol, but we’re most excited about the path to come and all the awesome new capabilities described in our [working group roadmaps](https://github.com/ipfs/roadmap#2019-working-groups-roadmaps). We hope you’ll join us on that quest - whether it’s suggesting usability improvements, writing performance benchmarks, helping optimize our [new apt-on-ipfs experiment](https://github.com/ipfs/package-managers/issues/18) (or contribute your own!), or any other new endeavors you propose. Onwards! 🤝

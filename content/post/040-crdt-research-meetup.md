@@ -18,7 +18,7 @@ If you didn't have the chance to attend this meetup in person, you can now follo
 
 ## Vitor Enes - Borrowing an Identity for a Distributed Counter
 
-[![Watch video](img/video1.png)](https://www.youtube.com/watch?v=rGfbcu7UkGk)
+[{{< img src="/img/67-crdt-research-meetup-video1.png" alt="Watch video" >}}](https://www.youtube.com/watch?v=rGfbcu7UkGk)
 
 In this presentation, Vitor Enes, a PhD student from HasLab, presented a design he co-authored for avoiding the identity explosion in state-based CRDTs.
 
@@ -28,7 +28,7 @@ Having an entry per replica in the system does not scale, because the state will
 
 ## Nuno Preguiça - AntidoteDB and more
 
-[![Play video](img/video2.png)](https://www.youtube.com/watch?v=-v_1aJJujdg)
+[{{< img src="/img/67-crdt-research-meetup-video2.png" alt="Play video" >}}](https://www.youtube.com/watch?v=-v_1aJJujdg)
 
 When using geo-replicated databases, there is a first wave of databases that are eventually consistent (like Cassandra and Riak) that offer high availability but little automation to deal with concurrency. Lately, second-generation DBMSs like Spanner and CosmosDB offer strong consistency guarantees, but at the necessary expense of availability in the face of network partitions.
 
@@ -38,7 +38,7 @@ What about numeric invariants? How can you guarantee, for instance, that, in a g
 
 ## Ali Shoker - As Secure as Possible Eventual Consistency
 
-[![play video](img/video3.png)](https://www.youtube.com/watch?v=ip2XhudTEGE)
+[{{< img src="/img/67-crdt-research-meetup-video3.png" alt="Play video" >}}](https://www.youtube.com/watch?v=ip2XhudTEGE)
 
 CRDTs and Strong Eventual Consistency gives us the guarantee that all replicas will eventually converge, but this may only be true depending on your fault model. If, for instance, a replica fails to apply an operation (due to a bug, a hardware failure or malicious code, for instance), the system is not guaranteed to converge.
 
@@ -48,6 +48,6 @@ Clients can then opt into using the more secure BFT certificate (with the compro
 
 ## Evan Miyazono - Protocol Labs RFP Program
 
-[![play video](img/video4.png)](https://www.youtube.com/watch?v=PkjfwmFe75s)
+[{{< img src="/img/67-crdt-research-meetup-video4.png" alt="Play video" >}}](https://www.youtube.com/watch?v=PkjfwmFe75s)
 
 Evan Miyazono, captain of the research team at Protocol Labs (PL), provides an overview of the PL approach to external research, and describes the PL Request For Proposals (RFP) and grant program.

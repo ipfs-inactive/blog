@@ -8,11 +8,11 @@ header_image: 076-ipfs-docs-beta.png
 
 **We’re excited to announce [the new IPFS documentation site is live in beta](https://docs.ipfs.io/)!** The doors are open, and just like any housewarming, you’re cordially invited to stop by, have a look around, and let us know what you think.
 
-<a href="https://docs.ipfs.io/" target="_blank"><img src="/076-ipfs-docs-beta/img/docs-beta-screenshot.png" alt="Screenshot of docs beta"></a>
-<br/>
+[{{< img src="/img/076-ipfs-docs-beta-screenshot.png" alt="Screenshot of docs beta" >}}](https://docs.ipfs.io/)
+
 *New year, new look.*
 
-![Mind map of docs beta nav](/076-ipfs-docs-beta/img/docs-beta-site-mindmap.png)
+{{< img src="/img/076-ipfs-docs-beta-site-mindmap.png" alt="Mind map of docs beta nav" >}}
 <br/>
 *Here’s a mind map of how the docs beta’s navigation works.*
 
