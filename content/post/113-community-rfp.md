@@ -25,7 +25,7 @@ We want to hear from you in the form of public Github issues. Issues should cont
 
 Aside from new theme proposals, we’d also very much appreciate comments on theme proposals, especially if there are additional important workstreams you’d like to see as part of that theme. Existing proposals for themes can be found [here](https://github.com/ipfs/roadmap/issues?q=is%3Aissue+is%3Aopen+label%3A%222021+Theme+Proposal%22).
 
-_Placeholder for screenshot_
+[![Proposals Screenshot](/113-community-rfp/screenshot.png)](https://github.com/ipfs/roadmap/issues?q=is%3Aissue+is%3Aopen+label%3A%222021+Theme+Proposal%22)
 
 To suggest a theme proposal, please create a [new 2021 Proposal issue](https://github.com/ipfs/roadmap/issues/new/choose) in this repo. The hope with using github issues is to allow for clarifying conversation in comments, help others build on your great ideas, and also be inspired to propose their own thoughts. You are welcome to submit more than one proposal! 
 
