@@ -55,9 +55,12 @@ Join the builders of the Decentralized Web as they discuss hitting new milestone
 ## Job hunting? Work on IPFS!
 [DevOps Engineer](https://remoteok.io/remote-jobs/100451-remote-devops-engineer-district0x): Your goal is to maintain the integrity of the infrastructure currently in place, with an ever-present goal of 100% service and application uptime. district0x, Remote. 
 
+[Ecosystem Developer](https://jobs.lever.co/3box/ec1093c5-ed31-483c-b1b3-49b07bd0bd2e): We are looking for a technical community manager to help us create a world-class developer ecosystem and experience around our open source community. 3Box, Remote.
+
+[Software Engineer - Low Level JavaScript](https://jobs.lever.co/3box/95b18be5-f42b-4fe2-a51c-1908612f29c0): you will be responsible for pushing the limits of p2p technology within browser environments. Your work will range from optimizing crypto and networking libraries to designing user experiences around difficult usability challenges. 3Box, Remote.
+
 [Technical Writer](https://authenticjobs.com/job/3006/textile-devops-or-sre/): who can primarily create high-quality technical content, but has some other adjacent skills as well in the form of graphic design and/or video editing. Contract, Remote.
 
-[Front-end Developer](https://twitter.com/ceramicnetwork/status/1305886402886995968): Are you an experienced front end dev that understands IPFS and linked data and wants to make an impact on the future of Web3? Ceramic is looking for a contractor to work on Ceramic Explorer.
 
 Take care of yourselves and each other. ❤️
 
