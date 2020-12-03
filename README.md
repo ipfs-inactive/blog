@@ -8,15 +8,16 @@
 
 ![ipfs-blog @ 2018-11-30](https://ipfs.io/ipfs/QmYxumHGuNdu8rAwcw6kgc2UU1buJxv7V7uFs17tBx9w3W/ipfs-blog.png)
 
-- [Usage](#usage)
-- [Publishing Post](#create-a-new-blog-post)
+- [IPFS Blog](#ipfs-blog)
+  - [Usage](#usage)
+  - [Create a new blog post](#create-a-new-blog-post)
+    - [Custom header image](#custom-header-image)
     - [Editing](#editing)
     - [Publishing](#publishing)
-    - [Translating](#translating-%EF%B8%8F) (optional)
-- [Contribute](#contribute)
+    - [Translating 🌐✍️🖖](#translating-️)
+  - [Contribute](#contribute)
     - [Want to hack on IPFS?](#want-to-hack-on-ipfs)
-- [License](#license)
-
+  - [License](#license)
 
 ## Usage
 
@@ -97,10 +98,10 @@ Each post can have a custom image that is shown on the [blog homepage](https://b
 1. Rename the image to match the file name of your post. For example, the `085-announcing-rust-ipfs.md` post uses `085-announcing-rust-ipfs.png` as the header.
 1. In the post markdown, edit the front-matter to include the `header_image` variable:
 
-	```markdown
-	header_image: 085-announcing-rust-ipfs.png
-	```
-	
+   ```markdown
+   header_image: 085-announcing-rust-ipfs.png
+   ```
+
 1. Push your changes.
 
 ### Editing
@@ -117,7 +118,7 @@ Submit a Github PR with your changes, and request a review.
 
 CircleCI builds the static site, Pins it to our IPFS Cluster, and provides a preview link for a review on the Gateway. Merges to to `master` do the same steps plus update the DNSLink for the domain.
 
-In order for CircleCI to build the site after your merge, you *must* be a member of the [website-deployers](https://github.com/orgs/ipfs/teams/website-deployers/members), comms, GUI or admin teams on the IPFS GitHub org and you *must* subscribe to the CircleCI builds for the ipfs/blog repository. Create a free CircleCI account, and then [subscribe to the repo here](https://circleci.com/gh/ipfs/workflows/blog/tree/master).
+In order for CircleCI to build the site after your merge, you _must_ be a member of the [website-deployers](https://github.com/orgs/ipfs/teams/website-deployers/members), comms, GUI or admin teams on the IPFS GitHub org and you _must_ subscribe to the CircleCI builds for the ipfs/blog repository. Create a free CircleCI account, and then [subscribe to the repo here](https://circleci.com/gh/ipfs/workflows/blog/tree/master).
 
 After the CircleCI build completes, it will take a few minutes for the DNS update to propagate and your changes to show up on the website.
 
@@ -127,25 +128,26 @@ Every post can be optionally translated by:
 
 1. Ensuring `config.toml` includes relevant [language code](http://www.rssboard.org/rss-language-codes) in `[languages]` section
 2. Adding a translation file with correct locale suffix, for example:
-	- English: `content/post/45-ipfs-weekly-11.md` → //blog.ipfs.io/45-ipfs-weekly-11/
-	- Chinese (Simplified): `content-i18n/<lang_code>/post/45-ipfs-weekly-11.md` → //blog.ipfs.io/**zh-cn**/45-ipfs-weekly-11/
 
-	Note: To ensure the translation is grouped with source post the `translationKey` header needs to be the same in both files, and `url` of translation needs to be prefixed with locale code (`zh-cn` for Chinese Simplified), for example:
-	```markdown
-    ---
-    date: 2018-09-25
-    title: IPFS 周报-11
-    url: /zh-cn/45-ipfs-weekly-11/
-    translationKey: 45-ipfs-weekly-11
-    ---
-	```
+   - English: `content/post/45-ipfs-weekly-11.md` → //blog.ipfs.io/45-ipfs-weekly-11/
+   - Chinese (Simplified): `content-i18n/<lang_code>/post/45-ipfs-weekly-11.md` → //blog.ipfs.io/**zh-cn**/45-ipfs-weekly-11/
+
+   Note: To ensure the translation is grouped with source post the `translationKey` header needs to be the same in both files, and `url` of translation needs to be prefixed with locale code (`zh-cn` for Chinese Simplified), for example:
+
+   ```markdown
+   ---
+   date: 2018-09-25
+   title: IPFS 周报-11
+   url: /zh-cn/45-ipfs-weekly-11/
+   translationKey: 45-ipfs-weekly-11
+   ---
+   ```
 
 Having that, non-english version will have unique URL, as seen on the example below:
 
 | Chinese (Simplified)                                                                                      | English                                                                                                      |
-| ----                                                                                                      | ----                                                                                                         |
+| --------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ |
 | ![en](https://user-images.githubusercontent.com/157609/52483815-13a27680-2bb5-11e9-83d5-63a3f0122728.png) | ![zh-cn](https://user-images.githubusercontent.com/157609/52483825-169d6700-2bb5-11e9-94a6-cfde2f82e2b7.png) |
-
 
 ## Contribute
 
