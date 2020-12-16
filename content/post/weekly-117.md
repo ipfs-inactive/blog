@@ -8,8 +8,6 @@ title: Welcome to IPFS Weekly 117
 author: Jenn Turner
 ---
 
-# Welcome to IPFS Weekly #117
-
 Here’s what’s happening in the [InterPlanetary File System](https://ipfs.io/) galaxy!
 
 ## Big browser news for IPFS 🙌
