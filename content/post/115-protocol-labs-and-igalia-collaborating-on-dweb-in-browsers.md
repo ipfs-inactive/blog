@@ -159,6 +159,12 @@ If you are interested in an exhaustive list of commits, try expanding the follow
 * [2332675: Restrict protocol handler to potentially trustworthy URLs](https://chromium-review.googlesource.com/c/chromium/src/+/2332675)
 * [2595424: Use a standard scheme to test potential trustworthiness](https://chromium-review.googlesource.com/c/chromium/src/+/2595424)
 * [2593629: Add tests for SecurityOrigin::IsSecure and network::Is*PotentiallyTrustworthy](https://chromium-review.googlesource.com/c/chromium/src/+/2593629)
+* [2610100: Add tests for SecurityOrigin::IsPotentiallyTrustworthy](https://chromium-review.googlesource.com/c/chromium/src/+/2610100)
+* [2612947: Remove SecurityPolicy APIs for handling a trustworthy safelist](https://chromium-review.googlesource.com/c/chromium/src/+/2612947)
+* [2614784: Remove SchemeRegistry APIs for handling local and secure schemes](https://chromium-review.googlesource.com/c/chromium/src/+/2614784)
+* [2615260: Implement SecurityOrigin::IsPotentiallyTrustworthy with network::IsOriginPotentiallyTrustworthy](https://chromium-review.googlesource.com/c/chromium/src/+/2615260)
+* [2617709: Rewrite SecurityOrigin::IsSecure() using GURL and url::Origin](https://chromium-review.googlesource.com/c/chromium/src/+/2617709)
+* [2617883: Make SecurityOrigin::IsSecure treat localhost and local files as secure](https://chromium-review.googlesource.com/c/chromium/src/+/2617883)
 </details>
 
 <details><summary>Firefox</summary>
