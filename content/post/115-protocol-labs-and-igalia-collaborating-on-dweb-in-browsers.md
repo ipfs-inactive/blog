@@ -4,25 +4,25 @@ title: Protocol Labs and Igalia collaborating on dweb in browsers
 author: Frédéric Wang & Dietrich Ayala
 tags: ipfs, igalia, web platform, protocol handler, chromium, webkit, firefox, browsers
 header_image: ipfs-in-browsers.png
-snippet: Protocol Labs and Igalia started a collaboration to improve web platform support in Chromium, Firefox and WebKit and help the distributed web community. This blog post provides an overview of the 2020 accomplishments as well as future work.
+snippet: Protocol Labs and Igalia started a collaboration to improve web platform support in Chromium, Firefox, and WebKit and help the distributed web community. This blog post provides an overview of the 2020 accomplishments, as well as future work.
 ---
 
 ## TL;DR
 
 * [Protocol Labs](https://protocol.ai/) and [Igalia](https://www.igalia.com/) started a collaboration that will continue next year.
-* [Distributed web schemes have been safelisted in Chrome 86](https://www.chromestatus.com/feature/4776602869170176)'s implementation of [custom handlers](https://html.spec.whatwg.org/multipage/system-state.html#custom-handlers) and [registered at IANA](https://www.iana.org/assignments/uri-schemes/uri-schemes.xhtml).
+* [Distributed web schemes have been safelisted in Chrome 86](https://www.chromestatus.com/feature/4776602869170176)’s implementation of [custom handlers](https://html.spec.whatwg.org/multipage/system-state.html#custom-handlers) and [registered at IANA](https://www.iana.org/assignments/uri-schemes/uri-schemes.xhtml).
 * Chrome 89 will allow browser extensions to register cross-origin handlers or handlers for schemes with prefix `ext+`. Refinement is pending for the [permission UI](https://bugs.chromium.org/p/chromium/issues/detail?id=1079333).
 * Firefox 84 has improved support for [loading locally delivered mixed-resources](https://developer.mozilla.org/en-US/docs/Web/Security/Mixed_content#Loading_locally_delivered_mixed-resources). Patches have also been submitted to WebKit but are pending on reviews and discussions.
-* Work is in progress to improve Chromium's consistency and specification compliance regarding the notion of [secure contexts](https://w3c.github.io/webappsec-secure-contexts/), including removing non-standard [localhost](https://chromestatus.com/feature/5698580851458048) [names](https://chromestatus.com/feature/5668106045227008).
-* Miscellaneous other fixes have landed for the Firefox and Chromium's implementations of custom handlers.
+* Work is in progress to improve Chromium’s consistency and specification compliance regarding the notion of [secure contexts](https://w3c.github.io/webappsec-secure-contexts/), including removing non-standard [localhost](https://chromestatus.com/feature/5698580851458048) [names](https://chromestatus.com/feature/5668106045227008).
+* Miscellaneous other fixes have landed for the Firefox and Chromium’s implementations of custom handlers.
 
-## Introduction
+## Background
 
 Nowadays, the majority of pages on the Web are coming from central servers controlled by their owners. [Protocol Labs](https://protocol.ai/) is developing the [IPFS protocol](https://ipfs.io) in order to shape a future Web which would instead be based on the idea of peer-to-peer infrastructures. There have been web platform and browser efforts to reach the [goal of a distributed Web](https://arewedistributedyet.com/).
 
 Nevertheless, having corresponding protocols natively supported in browsers and taken into account in web standards will require coordination with various actors of the Web, including standardization groups (W3C, WHATWG, ...) and browser implementers.
 
-With that goal in mind, Protocol Labs started a collaboration with [Igalia](https://www.igalia.com/), an Open Source company with expertise in browser development and the web platform. In this blog post, preliminary results obtained this year for non-native implementations are presented. This is a good first step for users as well as an opportunity to start discussions and raise awareness on the distributed web.
+With that goal in mind, Protocol Labs started a collaboration with [Igalia](https://www.igalia.com/), an Open Source company with expertise in browser development and the web platform. In this blog post, preliminary results obtained this year for non-native implementations are presented. This is a good first step for users, as well as an opportunity to start discussions and raise awareness of the distributed web.
 
 ## Distributed web protocols in custom handlers
 
@@ -76,7 +76,7 @@ With that goal in mind, Protocol Labs started a collaboration with [Igalia](http
 </svg>
 </div>
 
-An existing approach to use IPFS in browsers that don't natively support this protocol is to rely on a [HTTP gateway](https://ipfs.github.io/public-gateway-checker/). Additionally, the redirection of IPFS links can be automatically performed using [HTML custom handlers](https://html.spec.whatwg.org/multipage/system-state.html#custom-handlers). However, this approach has several limitations:
+An existing approach to use IPFS in browsers that don’t natively support this protocol is to rely on an [HTTP gateway](https://ipfs.github.io/public-gateway-checker/). Additionally, the redirection of IPFS links can be automatically performed using [HTML custom handlers](https://html.spec.whatwg.org/multipage/system-state.html#custom-handlers). However, this approach has several limitations:
 
 1. Custom handlers are only implemented in Mozilla and Chromium browsers, not the ones based on WebKit.
 2. Custom handlers only accept schemes with prefix `web+` or belonging to a predetermined [safe list](https://html.spec.whatwg.org/multipage/system-state.html#safelisted-scheme).
@@ -91,13 +91,13 @@ Focus has then moved to distributed web protocols (`cabal`, `dat`, `did`, `dweb`
 
 ## Browser extensions
 
-The same-origin limitation is obviously something desired for security reasons when web pages register custom handlers. However, when such a registration happens from browser extensions that are trusted by users, it makes sense to make an exception. For example, Firefox has allowed for a long time to declare custom handlers for `ipfs` and other protocols directly in the [WebExtension manifest](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/protocol_handlers) and so without same-origin check.
+The same-origin limitation is something desired for security reasons when web pages register custom handlers. However, when such a registration happens from browser extensions trusted by users, it makes sense to make an exception. For example, for a long time Firefox has allowed declaring custom handlers for `ipfs` and other protocols directly in the [WebExtension manifest](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/protocol_handlers) and so without same-origin check.
 
-There were existing requests about this feature in Chromium bug trackers. To tackle this problem, the initial step has been to follow [Chromium project's process](https://chromium.googlesource.com/chromium/src/+/master/extensions/docs/new_api_proposal.md#Proposal-Process) and draft a [proposal](https://bugs.chromium.org/p/chromium/issues/detail?id=64100#c19) based on existing use cases and what Firefox implements.
+There were existing requests about this feature in Chromium bug trackers. To tackle this problem, the initial step has been to follow the [Chromium project’s process](https://chromium.googlesource.com/chromium/src/+/master/extensions/docs/new_api_proposal.md#Proposal-Process) and draft a [proposal](https://bugs.chromium.org/p/chromium/issues/detail?id=64100#c19) based on existing use cases and what Firefox implements.
 
-Since there is a strong preference within the Chromium project to rely on Web APIs for new extension features, code owners' counter-proposal has been to give more power to `registerProtocolHandler` in extension context ([cross-origin handler](https://chromium-review.googlesource.com/c/chromium/src/+/2287304) and [extension-specific schemes](https://chromium-review.googlesource.com/c/chromium/src/+/2560305)). The two patches for these landed recently in Chromium and will be available in version 89!
+Since there is a strong preference within the Chromium project to rely on Web APIs for new extension features, code owners’ counter-proposal has been to give more power to `registerProtocolHandler` in extension context ([cross-origin handler](https://chromium-review.googlesource.com/c/chromium/src/+/2287304) and [extension-specific schemes](https://chromium-review.googlesource.com/c/chromium/src/+/2560305)). The two patches for these landed recently in Chromium and will be available in version 89!
 
-For now, due to an existing [permission UI bug](https://bugs.chromium.org/p/chromium/issues/detail?id=1079333), the protocol registration must happen in an extension tab, but you can already get an idea of the new possibility [on this video](https://vimeo.com/489748722) (make sure to enable subtitles for a detailed description):
+For now, due to an existing [permission UI bug](https://bugs.chromium.org/p/chromium/issues/detail?id=1079333), the protocol registration must happen in an extension tab, but you can already get an idea of the new possibility [in this video](https://vimeo.com/489748722), (be sure to enable subtitles for a detailed description):
 
 <div style="width: 640px; margin-left: auto; margin-right: auto">
 <iframe src="https://player.vimeo.com/video/489748722" width="640" height="361" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
@@ -105,25 +105,25 @@ For now, due to an existing [permission UI bug](https://bugs.chromium.org/p/chro
 
 ## Secure Contexts
 
-The issue with redirected URLs not behaving like normal URLs is a bit more tricky and can come from several reasons. For local HTTP gateways such as the one provided by [IPFS Desktop](https://github.com/ipfs-shipyard/ipfs-desktop#ipfs-desktop), one of the explanation is that browsers used not to treat these local URLs as insecure contexts and thus block various web platform features. This was [changed three years ago in Chrome](https://www.chromestatus.com/feature/6269417340010496) and specifications were updated accordingly. More precisely:
+The issue with redirected URLs not behaving like normal URLs is a bit more tricky and can come from several reasons. For local HTTP gateways, such as the one provided by [IPFS Desktop](https://github.com/ipfs-shipyard/ipfs-desktop#ipfs-desktop), one of the explanations is that browsers used to not treat these local URLs as insecure contexts and thus block various web platform features. This was [changed three years ago in Chrome](https://www.chromestatus.com/feature/6269417340010496) and specifications were updated accordingly. More precisely:
 
 * The definition of [potentially trustworthy origins](https://w3c.github.io/webappsec-secure-contexts/#potentially-trustworthy-origin) includes the ones whose hosts are loopback IPv4 and IPv6 addresses and (optionally) `localhost` and `*.localhost` names.
 * This optional behavior is conditioned on the fact that browsers override native DNS when [resolving localhost names](https://w3c.github.io/webappsec-secure-contexts/#localhost).
 
-Mozilla has been supportive of this change. The case of Loopback IP addresses has been implemented since Firefox 55 but as this often happens with limited development resources and prioritization, the actual work for localhost names had never been finished. One of the difficulties being that many existing network tests do not assume the above behavior and so require some adjustments to keep passing. After several attempts, the [main patches landed without being reverted](https://bugzilla.mozilla.org/show_bug.cgi?id=1220810) and is released in the latest version of Firefox.
+Mozilla has been supportive of this change. The case of Loopback IP addresses has been implemented since Firefox 55, but as this happens with limited development resources and prioritization, the work for localhost names had never been finished. One of the difficulties being that many existing network tests do not assume the above behavior and require some adjustments to keep passing. After several attempts, the [main patches landed without being reverted](https://bugzilla.mozilla.org/show_bug.cgi?id=1220810) and is released in the latest version of Firefox.
 
 The position within the WebKit community is less clear, some members being skeptical about granting web sites access to local hosts, others thinking the behavior implemented in Chrome and Firefox make sense. Similarly to Firefox, one difficulty is that many tests need to be tweaked. Additionally, implementing the address redirection does not seem to be easily doable at the WebKit level. One can find details [on the corresponding bug](https://bugs.webkit.org/show_bug.cgi?id=171934). In order to get things rolling, patches following a preference-based approach have been submitted for review.
 
-This problem is actually more general than just local resources. The whole notion of "secure context" is not implemented consistently between browsers, or even within each browser. In addition to the one of [potentially trustworthy origin](https://w3c.github.io/webappsec-secure-contexts/#is-origin-trustworthy) mentioned above, the specification has a slightly more general notion of [potentially trustworthy URL](https://w3c.github.io/webappsec-secure-contexts/#is-url-trustworthy) which used to be different from [a priori authenticated URL](https://github.com/w3c/webappsec-mixed-content/issues/35). How these notions should interact with custom handlers is also [currently a bit fuzzy](https://github.com/whatwg/html/issues/5787https://github.com/whatwg/html/issues/5787).
+This problem is actually more general than just local resources. The whole notion of “secure context” is not implemented consistently between browsers, or even within each browser. In addition to the one of [potentially trustworthy origin](https://w3c.github.io/webappsec-secure-contexts/#is-origin-trustworthy) mentioned above, the specification has a slightly more general notion of [potentially trustworthy URL](https://w3c.github.io/webappsec-secure-contexts/#is-url-trustworthy) which used to differentiate from [a priori authenticated URL](https://github.com/w3c/webappsec-mixed-content/issues/35). How these notions should interact with custom handlers is also [currently a bit fuzzy](https://github.com/whatwg/html/issues/5787https://github.com/whatwg/html/issues/5787).
 
-In Chromium, there were [at least 6 implementations of "secure"](https://bugs.chromium.org/p/chromium/issues/detail?id=1153336). Some of these implementations are not very aligned with the current specification. Worse, some of them include historical and non-standard localhost names like `localhost.localdomain`, `localhost6` and `localhost6.localdomain6`. Effort is being made to progressively and carefully unify these implementations and follow the specifications. In particular, patches landed to remove [localhost](https://chromestatus.com/feature/5698580851458048) [names](https://chromestatus.com/feature/5668106045227008) and make more [`data:` URLs potentially trustworthy](https://chromestatus.com/feature/5634194258526208).
+In Chromium, there were [at least 6 implementations of “secure”](https://bugs.chromium.org/p/chromium/issues/detail?id=1153336). Some of these implementations are not very aligned with the current specification. Worse, some of them include historical and non-standard localhost names like `localhost.localdomain`, `localhost6` and `localhost6.localdomain6`. Effort is being made to progressively and carefully unify these implementations and follow the specifications. In particular, patches landed to remove [localhost](https://chromestatus.com/feature/5698580851458048) [names](https://chromestatus.com/feature/5668106045227008) and make more [`data:` URLs potentially trustworthy](https://chromestatus.com/feature/5634194258526208).
 
 ## Other fixes
 
-As usual, performing this kind of effort leads to a lot of side tasks: community and specification discussion, code clean up and refactoring, documentation improvement and other bug fixes. Here are Chromium bugs fixed that are relevant for custom handlers and interoperability with Firefox:
+As usual, performing this kind of effort leads to a lot of side tasks: community and specification discussion, code clean up and refactoring, documentation improvement, and other bug fixes. Here are Chromium bugs fixed that are relevant for custom handlers and interoperability with Firefox:
 
 * [Make service workers work with custom handlers](https://chromium-review.googlesource.com/c/chromium/src/+/2487107)
-* [Do not remove %s token when validating (un)registerProtocolHandler's URL](https://chromium-review.googlesource.com/c/chromium/src/+/2335434)
+* [Do not remove %s token when validating (un)registerProtocolHandler’s URL](https://chromium-review.googlesource.com/c/chromium/src/+/2335434)
 * [percent-encode U+0020 SPACE when in URLs computed by custom protocol handlers](https://chromestatus.com/feature/5678518908223488)
 * [percent-encode the delete character when parsing URLs](https://chromestatus.com/feature/5651438652882944)
 
@@ -189,6 +189,6 @@ If you are interested in an exhaustive list of commits, try expanding the follow
 
 </details>
 
-## Conclusion
+## In Conclusion
 
-Protocol Labs and Igalia have made an initial effort this year to improve support and interoperability of web platform features that would benefit the distributed web as well as the web community in general. In addition to start discussions among the different actors, several patches have already landed in browsers. We are looking forward to continuing this next year... Stay tuned!
+Protocol Labs and Igalia have made an initial effort this year to improve support and interoperability of web platform features that would benefit the distributed web, as well as the web community in general. In addition to starting discussions among the different actors, several patches have already landed in browsers. We are looking forward to continuing this next year... Stay tuned!
