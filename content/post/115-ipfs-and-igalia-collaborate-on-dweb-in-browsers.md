@@ -1,6 +1,6 @@
 ---
 date: 2021-01-15
-url: /115-ipfs-and-igalia-collaborate-on-dweb-in-browsers/
+url: /2021-01-13-ipfs-and-igalia-collaborate-on-dweb-in-browsers/
 title: IPFS and Igalia collaborate on dweb in browsers
 author: Frédéric Wang & Dietrich Ayala
 tags: ipfs, igalia, web platform, protocol handler, chromium, webkit, firefox, browsers
