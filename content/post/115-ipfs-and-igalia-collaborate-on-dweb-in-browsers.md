@@ -19,7 +19,7 @@ snippet: IPFS and Igalia started a collaboration to improve web platform support
 
 ## Background
 
-Nowadays, the majority of pages on the Web are coming from central servers controlled by their owners. [Protocol Labs](https://protocol.ai/) is developing the [IPFS protocol](https://ipfs.io) in order to shape a future Web which would instead be based on the idea of peer-to-peer infrastructures. There have been web platform and browser efforts to reach the [goal of a distributed Web](https://arewedistributedyet.com/).
+Nowadays, the majority of pages on the Web are coming from central servers controlled by their owners. The [IPFS protocol](https://ipfs.io/) envisions a future Web in which content can be delivered peer-to-peer, meaning directly between individuals or within groups. There have been web platform and browser efforts to reach the [goal of a distributed Web](https://arewedistributedyet.com/).
 
 Nevertheless, having corresponding protocols natively supported in browsers and taken into account in web standards will require coordination with various actors of the Web, including standardization groups (W3C, WHATWG, ...) and browser implementers.
 
@@ -77,7 +77,7 @@ With that goal in mind, Protocol Labs started a collaboration with [Igalia](http
 </svg>
 </div>
 
-An existing approach to use IPFS in browsers that don’t natively support this protocol is to rely on an [HTTP gateway](https://ipfs.github.io/public-gateway-checker/). Additionally, the redirection of IPFS links can be automatically performed using [HTML custom handlers](https://html.spec.whatwg.org/multipage/system-state.html#custom-handlers). However, this approach has several limitations:
+An existing approach to use IPFS in browsers that don’t natively support this protocol is to rely on an [HTTP gateway](https://docs.ipfs.io/concepts/ipfs-gateway/). Additionally, the redirection of IPFS links can be automatically performed using [HTML custom handlers](https://html.spec.whatwg.org/multipage/system-state.html#custom-handlers). However, this approach has several limitations:
 
 1. Custom handlers are only implemented in Mozilla and Chromium browsers, not the ones based on WebKit.
 2. Custom handlers only accept schemes with prefix `web+` or belonging to a predetermined [safe list](https://html.spec.whatwg.org/multipage/system-state.html#safelisted-scheme).
