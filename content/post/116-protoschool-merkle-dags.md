@@ -4,7 +4,7 @@ url: /2021-01-14-protoschool-tutorial-merkle-dags/
 title: Explore Merkle DAGs at ProtoSchool
 author: Teri Chadbourne
 tags: ipfs, ipld, protoschool
-header_image: 116-protoschool-merkle-dags.jpg
+header_image: 116-protoschool-merkle-dags.png
 ---
 
 The [ProtoSchool](https://proto.school) team is pleased to announce the launch of a shiny new multiple-choice tutorial on [Merkle DAGs](https://proto.school/merkle-dags), the cornerstone of our freshly launched [IPLD course](https;//proto.school/course/ipld). 🎉
