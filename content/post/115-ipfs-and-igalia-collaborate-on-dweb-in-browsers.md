@@ -190,7 +190,6 @@ If you are interested in an exhaustive list of contributions related to this wor
 * [Migrate WebKitTestServer to libsoup 2.48 API](https://bugs.webkit.org/show_bug.cgi?id=219160)
 * [Treat loopback addresses (127.0.0.0/8, ::1/128, localhost, .localhost) as potentially trustworthy URL ](https://bugs.webkit.org/show_bug.cgi?id=218980)
 
-</details>
 
 ## In Conclusion
 
