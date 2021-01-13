@@ -131,9 +131,9 @@ As usual, performing this kind of effort leads to a lot of side tasks: community
 
 Finally, for both Chromium and Firefox, [the title argument has been removed from registerProtocolHandler()](https://chromestatus.com/feature/5634386663833600) as per [Mozilla's suggestion](https://github.com/whatwg/html/pull/5425).
 
-If you are interested in an exhaustive list of commits, try expanding the following list:
+If you are interested in an exhaustive list of contributions related to this work, here it comes:
 
-<details><summary>Chromium</summary>
+###  Chromium
 
 * [[Extensions] Fix broken links in documentation on writing a new API](https://chromium-review.googlesource.com/c/chromium/src/+/2167395)
 * [[Extensions] Fix typos in chrome.test.sendMessage() doc](https://chromium-review.googlesource.com/c/chromium/src/+/2323684)
