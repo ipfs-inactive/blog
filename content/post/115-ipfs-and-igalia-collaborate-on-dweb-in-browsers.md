@@ -178,9 +178,7 @@ If you are interested in an exhaustive list of contributions related to this wor
 * [Add a test to ensure loopback host names cannot be overridden](https://phabricator.services.mozilla.com/D94712)
 * [Hardcode localhost to loopback](https://phabricator.services.mozilla.com/D92716)
 
-</details>
-
-<details><summary>WebKit</summary>
+###  WebKit
 
 * [Don't treat loopback addresses (127.0.0.0/8, ::1/128, localhost, .localhost) as mixed content](https://bugs.webkit.org/show_bug.cgi?id=171934)
 * [Don't treat loopback IP addresses (127.0.0.0/8, ::1/128) as mixed content](https://bugs.webkit.org/show_bug.cgi?id=218623)
