@@ -91,7 +91,7 @@ Focus has then moved to distributed web protocols (`cabal`, `dat`, `did`, `dweb`
 
 ## Browser extensions
 
-The same-origin limitation is something desired for security reasons when web pages register custom handlers. However, when such a registration happens from browser extensions trusted by users, it makes sense to make an exception. For example, for a long time Firefox has allowed declaring custom handlers for `ipfs` and other protocols directly in the [WebExtension manifest](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/protocol_handlers) and so without same-origin check.
+The same-origin limitation is something desired for security reasons when web pages register custom handlers. However, when such a registration happens from browser extensions trusted by users, it makes sense to make an exception. For example, for a long time Firefox has allowed declaring custom handlers for `ipfs` and other protocols directly in the [WebExtension manifest](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/protocol_handlers) and without same-origin check.
 
 There were existing requests about this feature in Chromium bug trackers. To tackle this problem, the initial step has been to follow the [Chromium project’s process](https://chromium.googlesource.com/chromium/src/+/master/extensions/docs/new_api_proposal.md#Proposal-Process) and draft a [proposal](https://bugs.chromium.org/p/chromium/issues/detail?id=64100#c19) based on existing use cases and what Firefox implements.
 
