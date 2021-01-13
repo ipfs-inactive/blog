@@ -110,7 +110,7 @@ For now, due to an existing [permission UI bug](https://bugs.chromium.org/p/chro
 
 ## Secure Contexts
 
-The issue with redirected URLs not behaving like normal URLs is a bit more tricky and can come from several reasons. For local HTTP gateways, such as the one provided by [IPFS Desktop](https://github.com/ipfs-shipyard/ipfs-desktop#ipfs-desktop), one of the explanations is that browsers used to not treat these local URLs as insecure contexts and thus block various web platform features. This was [changed three years ago in Chrome](https://www.chromestatus.com/feature/6269417340010496) and specifications were updated accordingly. More precisely:
+The issue with redirected URLs not behaving like normal URLs is a bit more tricky and can come from several reasons. For local HTTP gateways, such as the one provided by [IPFS Desktop](https://github.com/ipfs-shipyard/ipfs-desktop#ipfs-desktop), one of the explanations is that browsers used to not treat these local URLs as secure contexts and thus block various web platform features. This was [changed three years ago in Chrome](https://www.chromestatus.com/feature/6269417340010496) and specifications were updated accordingly. More precisely:
 
 * The definition of [potentially trustworthy origins](https://w3c.github.io/webappsec-secure-contexts/#potentially-trustworthy-origin) includes the ones whose hosts are loopback IPv4 and IPv6 addresses and (optionally) `localhost` and `*.localhost` names.
 * This optional behavior is conditioned on the fact that browsers override native DNS when [resolving localhost names](https://w3c.github.io/webappsec-secure-contexts/#localhost).
