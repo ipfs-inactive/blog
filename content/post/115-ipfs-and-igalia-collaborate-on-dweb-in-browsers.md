@@ -191,4 +191,4 @@ If you are interested in an exhaustive list of contributions related to this wor
 
 ## In Conclusion
 
-IPFS and Igalia have made an initial effort to improve support and interoperability of web platform features that would benefit the distributed web, as well as the web community in general. In addition to starting discussions among the different actors, several patches have already landed in browsers. We are looking forward to continuing this work in 2021... Stay tuned!
+IPFS and Igalia have made an initial effort to improve support and interoperability of web platform features that would benefit the distributed web, as well as the web community in general. In addition to starting discussions among the different actors, several patches have already landed in browsers. We are looking forward to continuing this work in 2021... Stay tuned! 🚀
