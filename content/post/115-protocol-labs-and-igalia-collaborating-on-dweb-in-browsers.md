@@ -1,15 +1,15 @@
 ---
 date: 2021-01-15
-title: Protocol Labs and Igalia collaborating on dweb in browsers
+title: IPFS and Igalia collaborate on dweb in browsers
 author: Frédéric Wang & Dietrich Ayala
 tags: ipfs, igalia, web platform, protocol handler, chromium, webkit, firefox, browsers
 header_image: ipfs-in-browsers.png
-snippet: Protocol Labs and Igalia started a collaboration to improve web platform support in Chromium, Firefox, and WebKit and help the distributed web community. This blog post provides an overview of the 2020 accomplishments, as well as future work.
+snippet: IPFS and Igalia started a collaboration to improve web platform support in Chromium, Firefox, and WebKit and help the distributed web community. This blog post provides an overview of the 2020 accomplishments, as well as future work.
 ---
 
 ## TL;DR
 
-* [Protocol Labs](https://protocol.ai/) and [Igalia](https://www.igalia.com/) started a collaboration that will continue next year.
+* IPFS and [Igalia](https://www.igalia.com/) started a collaboration that will continue during 2021.
 * [Distributed web schemes have been safelisted in Chrome 86](https://www.chromestatus.com/feature/4776602869170176)’s implementation of [custom handlers](https://html.spec.whatwg.org/multipage/system-state.html#custom-handlers) and [registered at IANA](https://www.iana.org/assignments/uri-schemes/uri-schemes.xhtml).
 * Chrome 89 will allow browser extensions to register cross-origin handlers or handlers for schemes with prefix `ext+`. Refinement is pending for the [permission UI](https://bugs.chromium.org/p/chromium/issues/detail?id=1079333).
 * Firefox 84 has improved support for [loading locally delivered mixed-resources](https://developer.mozilla.org/en-US/docs/Web/Security/Mixed_content#Loading_locally_delivered_mixed-resources). Patches have also been submitted to WebKit but are pending on reviews and discussions.
@@ -83,7 +83,7 @@ An existing approach to use IPFS in browsers that don’t natively support this 
 3. Custom handlers only allow to register a handler that has same origin as the page registering it.
 4. Web specifications dealing with URLs may not work well with the redirection to the HTTP gateway.
 
-Regarding the first issue, people have submitted [patches to WebKit](https://bugs.webkit.org/show_bug.cgi?id=73177) in the past. Although this may be considered again next year, for now there is not any consensus within the WebKit community about whether this API should be implemented.
+Regarding the first issue, people have submitted [patches to WebKit](https://bugs.webkit.org/show_bug.cgi?id=73177) in the past. Although this may be considered again eventually, for now there is not any consensus within the WebKit community about whether this API should be implemented.
 
 One consequence of this is that in order to safelist more schemes, one must get support from the [Mozilla and Chromium implementers](https://whatwg.org/working-mode#additions). This has turned out to be historically difficult, with many users opening requests for different schemes, that ended up being put on hold due to lack of consensus. A first task has been to re-open past discussions between browser vendors and users in order to unblock the situation.
 
@@ -191,4 +191,4 @@ If you are interested in an exhaustive list of commits, try expanding the follow
 
 ## In Conclusion
 
-Protocol Labs and Igalia have made an initial effort this year to improve support and interoperability of web platform features that would benefit the distributed web, as well as the web community in general. In addition to starting discussions among the different actors, several patches have already landed in browsers. We are looking forward to continuing this next year... Stay tuned!
+IPFS and Igalia have made an initial effort to improve support and interoperability of web platform features that would benefit the distributed web, as well as the web community in general. In addition to starting discussions among the different actors, several patches have already landed in browsers. We are looking forward to continuing this work in 2021... Stay tuned!
