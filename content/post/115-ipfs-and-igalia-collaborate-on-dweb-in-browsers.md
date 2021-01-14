@@ -170,9 +170,8 @@ If you are interested in an exhaustive list of contributions related to this wor
 * [2615260: Implement SecurityOrigin::IsPotentiallyTrustworthy with network::IsOriginPotentiallyTrustworthy](https://chromium-review.googlesource.com/c/chromium/src/+/2615260)
 * [2617709: Rewrite SecurityOrigin::IsSecure() using GURL and url::Origin](https://chromium-review.googlesource.com/c/chromium/src/+/2617709)
 * [2617883: Make SecurityOrigin::IsSecure treat localhost and local files as secure](https://chromium-review.googlesource.com/c/chromium/src/+/2617883)
-</details>
 
-<details><summary>Firefox</summary>
+### Firefox
 
 * [Improve compatibility of protocol_handlers with registerProtocolHandler](https://phabricator.services.mozilla.com/D71747)
 * [Safelist cabal, dat, did, dweb, ethereum, hyper, ipfs, ipns, and ssb schemes for registerProtocolHandler().](https://phabricator.services.mozilla.com/D71580)
