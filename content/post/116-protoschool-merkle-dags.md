@@ -1,6 +1,6 @@
 ---
-date: 2021-01-10
-url: /2021-01-14-protoschool-tutorial-merkle-dags/
+date: 2021-01-14
+url: /2021-01-14-explore-merkle-dags-at-protoschool/
 title: Explore Merkle DAGs at ProtoSchool
 author: Teri Chadbourne
 tags: ipfs, ipld, protoschool
