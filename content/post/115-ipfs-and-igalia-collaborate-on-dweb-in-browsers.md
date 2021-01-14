@@ -51,7 +51,7 @@ With that goal in mind, Protocol Labs started a collaboration with [Igalia](http
 <g id="edge1" class="edge">
 <title>0&#45;&gt;1</title>
 <path fill="none" stroke="black" d="M76.04,-260.8C76.04,-246.05 76.04,-224.92 76.04,-210.18"/>
-<text text-anchor="middle" x="128.54" y="-231.8" font-family="Times,serif" font-size="14.00">ifps://bafkqaaa</text>
+<text text-anchor="middle" x="128.54" y="-231.8" font-family="Times,serif" font-size="14.00">ipfs://bafkqaaa</text>
 </g>
 <!-- 2 -->
 <g id="node3" class="node">
