@@ -22,21 +22,21 @@ The `go-IPFS` HTTP API supports streaming responses, and returns the message fro
 
 When the request is made from the browser or from node via the [node-fetch](https://www.npmjs.com/package/node-fetch) module, HTTP trailers are [not available](https://github.com/whatwg/fetch/issues/34). Bugs are open against [FireFox](https://bugzilla.mozilla.org/show_bug.cgi?id=1339096) and [Chromium](https://bugs.chromium.org/p/chromium/issues/detail?id=691599) to address this but they are unlikely to be fixed in any reasonable time frame, partially due to a [security concern](https://github.com/whatwg/fetch/issues/34#issuecomment-118927355) around allowing trailers to change the status of a response after that response has been sent.
 
-The effect of all this is that if you are reading a streaming response from the server, and an error occurs on the server, from the client's point of view the stream [just stops](https://github.com/ipfs/js-ipfs/issues/2519) with no error message, which is less than ideal.
+The effect of all this is that if you are reading a streaming response from the server, and an error occurs on the server, from the client’s point of view the stream [just stops](https://github.com/ipfs/js-ipfs/issues/2519) with no error message, which is less than ideal.
 
-That's the response end, from the request end, we'd like to be able to send requests of arbitrary length and start processing the response before the request has finished sending (think pubsub or giving the user server-driven progress notifications when adding large or multiple files).
+That’s the response end, from the request end, we’d like to be able to send requests of arbitrary length and start processing the response before the request has finished sending (think pubsub, or giving the user server-driven progress notifications when adding large or multiple files).
 
-The Fetch API allows for sending request bodies as [WhatWG ReadableStreams](https://streams.spec.whatwg.org/) but [no browser currently supports this](https://developer.mozilla.org/en-US/docs/Web/API/Request#browser_compatibility) (Chrome recently announced an [intent to ship](https://groups.google.com/a/chromium.org/g/blink-dev/c/mNVaRrvBZG0/m/lOezCQV_CwAJ) this feature which is great news but FireFox so far has made [little progress](https://bugzilla.mozilla.org/show_bug.cgi?id=1387483) so we're not there yet).
+The Fetch API allows for sending request bodies as [WhatWG ReadableStreams](https://streams.spec.whatwg.org/) but [no browser currently supports this](https://developer.mozilla.org/en-US/docs/Web/API/Request#browser_compatibility) (Chrome recently announced an [intent to ship](https://groups.google.com/a/chromium.org/g/blink-dev/c/mNVaRrvBZG0/m/lOezCQV_CwAJ) this feature which is great news, but FireFox so far has made [little progress](https://bugzilla.mozilla.org/show_bug.cgi?id=1387483) so we’re not there yet).
 
-If ever implemented widely, this will allow us to stream uploads and downloads, but there's no guarantee it'll be [full-duplex](https://github.com/whatwg/fetch/issues/229) (e.g. both ends streaming at the same time).
+If ever implemented widely, this will allow us to stream uploads and downloads, but there’s no guarantee it’ll be [full-duplex](https://github.com/whatwg/fetch/issues/229) (e.g., both ends streaming at the same time).
 
-HTTP/2 supports full-duplex streaming, but [currently](https://caniuse.com/http2) it requires [ALPN](https://en.wikipedia.org/wiki/Application-Layer_Protocol_Negotiation), which requires [TLS][], which requires certificates, which is overkill if you're only communicating over the loopback interface.
+HTTP/2 supports full-duplex streaming, but [currently](https://caniuse.com/http2) it requires [ALPN](https://en.wikipedia.org/wiki/Application-Layer_Protocol_Negotiation), which requires [TLS][], which requires certificates, which is overkill if you’re only communicating over the loopback interface.
 
 Where does this leave us?
 
-We want full-duplex streaming over the API, we want the safety of typed inputs and outputs.
+We want full-duplex streaming over the API; we want the safety of typed inputs and outputs.
 
-[gRPC][] gives us the typing, yay, and there is [gRPC-web][] which is designed to work over HTTP, but it does not support bi-directional streaming, and while there are [plans afoot](https://github.com/grpc/grpc-web/blob/master/doc/streaming-roadmap.md#full-duplex-streaming-over-http) there is nothing we can use today.
+[gRPC][] gives us the typing, (yay!) and there is [gRPC-web][] which is designed to work over HTTP, but it does not support bi-directional streaming, and while there are [plans afoot](https://github.com/grpc/grpc-web/blob/master/doc/streaming-roadmap.md#full-duplex-streaming-over-http), there is nothing we can use today.
 
 There is a way we can do bi-directional, full-duplex streaming today: [WebSockets](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API).
 
@@ -46,7 +46,7 @@ The engineering team at [improbable.io](https://improbable.io/) have published a
 
 `js-IPFS@0.53.0` ships with a [JavaScript port](https://www.npmjs.com/package/ipfs-grpc-server) of this [gRPC-web][]-over-websockets server. Phew!
 
-To use it we've shipped a new client called [ipfs-client](https://www.npmjs.com/package/ipfs-client) (hat tip to [@brosenan](https://github.com/brosenan) for very kindly donating the module name) - a fully [Core API](https://github.com/ipfs/js-ipfs/tree/master/docs/core-api) compatible client. It combines the [ipfs-http-client](https://www.npmjs.com/package/ipfs-http-client) and the new [ipfs-grpc-client](https://www.npmjs.com/package/ipfs-grpc-client), using [gRPC][] for implemented methods and falling back to HTTP for methods that have not been ported to [gRPC][] yet.
+To use it we’ve shipped a new client called [ipfs-client](https://www.npmjs.com/package/ipfs-client) (hat tip to [@brosenan](https://github.com/brosenan) for very kindly donating the module name) - a fully [Core API](https://github.com/ipfs/js-ipfs/tree/master/docs/core-api) compatible client. It combines the [ipfs-http-client](https://www.npmjs.com/package/ipfs-http-client) and the new [ipfs-grpc-client](https://www.npmjs.com/package/ipfs-grpc-client), using [gRPC][] for implemented methods and falling back to HTTP for methods that have not been ported to [gRPC][] yet.
 
 ```js
 const createClient = require('ipfs-client')
@@ -65,19 +65,19 @@ A few caveats:
 2. It only works over the loopback address (not `localhost`) as loopback is considered a [secure context](https://w3c.github.io/webappsec-secure-contexts/), otherwise it would require [TLS][]
 3. Only the `ipfs.add` API has full-duplex streaming enabled for this release - expect a lot more in future!
 
-There's a new example called [ipfs-client-add-files](https://github.com/ipfs/js-ipfs/tree/master/examples/ipfs-client-add-files) that you can use as a sandbox to experiment with this new client.
+There’s a new example called [ipfs-client-add-files](https://github.com/ipfs/js-ipfs/tree/master/examples/ipfs-client-add-files) that you can use as a sandbox to experiment with this new client.
 
-If you fire it up, you'll see progress and file import events appearing before the upload request has completed, something that's not been possible with the `ipfs-http-client` until now.
+If you fire it up, you’ll see progress and file import events appearing before the upload request has completed, something that’s not been possible with the `ipfs-http-client` until now.
 
-What's next? We're going to extend the [gRPC][] implementation to all streaming methods and get a server into `go-IPFS` so you can use the same client with that implementation too.
+What’s next? We”re going to extend the [gRPC][] implementation to all streaming methods and get a server into `go-IPFS` so you can use the same client with that implementation too.
 
-The full-duplex streaming capability opens up all sorts of interesting possibilities, for example opening up the full libp2p API over HTTP instead of the limited subset that we currently support.
+The full-duplex streaming capability opens up all sorts of interesting possibilities, for example, opening up the full libp2p API over HTTP instead of the limited subset that we currently support.
 
 Speaking of libp2p:
 
 ## ☎️ libp2p@0.30.x
 
-The `0.53.0` release of `js-IPFS` ships with `libp2p@0.30.x` which gives us TypeScript type definitions, Auto Relay support and
+The `0.53.0` release of `js-IPFS` ships with `libp2p@0.30.x` which gives us TypeScript type definitions, Auto Relay support, and
 improved Peer advertising and dialer mechanics.
 
 Expect a blog post here soon with a deep dive, but in the mean time see the [libp2p@0.30.x release notes](https://github.com/libp2p/js-libp2p/releases/tag/v0.30.0) for more details.
@@ -190,9 +190,7 @@ Only large features are called out in the roadmap, expect lots of small bugfix r
 Would you like to contribute to the IPFS project and don’t know how? Well, there are a few places you can get started:
 
 - Check the issues with the `help wanted` label in the [js-IPFS repo](https://github.com/ipfs/js-ipfs/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22)
-- Join an IPFS All Hands, introduce yourself and let us know where you would like to contribute: https://github.com/ipfs/team-mgmt/#weekly-ipfs-all-hands
-- Hack with IPFS and show us what you made! The All Hands call is also the perfect venue for demos, join in and show us what you built
-- Join the discussion at https://discuss.ipfs.io/ and help users finding their answers.
+- Join the discussion at https://discuss.ipfs.io/ and help users find their answers.
 - Join the [🚀 IPFS Core Implementations Weekly Sync 🛰](https://github.com/ipfs/team-mgmt/issues/992) and be part of the action!
 
 # ⁉️ Do you have questions?
