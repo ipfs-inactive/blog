@@ -13,14 +13,13 @@ We are excited to announce that IPFS is now natively supported in the Brave web 
 While the IPFS protocol is still in development, making it more easily available is important for users who have real problems in their daily online lives - internet outages and shutdowns, censorship of critical information such as COVID-19 news, high cost of internet access, and the ability to share and collaborate in offline or disconnected environments. These aren’t problems everyone has, and people who don’t have these problems at all may not understand why IPFS is so important. But for those who desperately need a resilient internet that puts them in control of their online experiences, IPFS is now just one-click to install in the Brave browser.
 
 <p style="text-align: center;">
-<h2>[Download Brave browser now](https://brave.com/download)</h2>
+<h2><a href="https://brave.com/download">Download Brave browser now</a></h2>
 </p>
 
 ## IPFS Features in Brave
 Brave has integrated IPFS into its desktop web browser for Windows, macOS, and Linux. When Brave detects an address which is an HTTP gateway URL to IPFS content, or a native IPFS address such as <code>ipfs://</code> or <code>ipns://</code> it will prompt the user to install and enable the native IPFS node, or to use an HTTP gateway. The default gateway used is dweb.link, which is run by Protocol Labs. Users can also specify a gateway of their choice in the browser settings. You can access the IPFS administrative UI at <code>brave://ipfs,</code>, or enable IPFS Companion and select “My Node” button in the main menu.
 
 <p style="text-align: center;">
-![SCREENSHOTS]()
   <img src="../img/brave-enable-ipfs.gif" alt="Screencast gif showing how an IPFS address triggers the infobar in Brave for enabling a full IPFS node.">
 </p>
 
