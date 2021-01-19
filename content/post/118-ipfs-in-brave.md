@@ -45,12 +45,12 @@ In 2020, [we started working with Igalia](https://blog.ipfs.io/2021-01-15-ipfs-a
 
 ## What’s Next
 This initial release of native support for IPFS in Brave provides basic node functionality. There’s still a lot to do - here’s a list of some planned work for this year, and areas we’d like to experiment in, as well:
-* Improve performance and stability - reduce memory, CPU, and bandwidth use
-* Ease both publishing and sharing of IPFS content in browser UI
-* Add features for revisitation, co-hosting, and offline/local collaboration
-* Define the application model for IPFS web apps
-* Experiment with integrating the features and economic models of Basic Attention Token and Filecoin
-* Develop the security and privacy user interface and visual language for IPFS in the browser address bar
-* Add IPFS support to Brave’s Android browser
+ * Improve performance and stability - reduce memory, CPU, and bandwidth use
+ * Ease both publishing and sharing of IPFS content in browser UI
+ * Add features for revisitation, co-hosting, and offline/local collaboration
+ * Define the application model for IPFS web apps
+ * Experiment with integrating the features and economic models of Basic Attention Token and Filecoin
+ * Develop the security and privacy user interface and visual language for IPFS in the browser address bar
+ * Add IPFS support to Brave’s Android browser
 
 [Install Brave now!](https://brave.com/) Try the IPFS features and let us know how it went. You can report issues in [Brave’s GitHub repo](https://github.com/brave/brave-browser), in the [IPFS In Web Browsers](https://github.com/ipfs/in-web-browsers) repo, or join us in discussion on the [IPFS forums](https://discuss.ipfs.io/).
