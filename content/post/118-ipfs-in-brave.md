@@ -9,7 +9,7 @@ snippet: Announcing the integration of IPFS in the Brave browser, completing the
 ---
 
 <p style="text-align: center;">
-  <img src"/img/ipfs-in-brave.png" alt="IPFS in Brave - Native Access to the Distributed Web">
+  <img src="/img/ipfs-in-brave.png" alt="IPFS in Brave - Native Access to the Distributed Web">
 </p>
 
 We are excited to announce that IPFS is now natively supported in the Brave web browser. With [over 20 million users](https://brave.com/20m-mau/), Brave has made the distributed web easily available for the people who need it most. This is the first time a major browser has implemented native support for IPFS, and is a major step towards a more resilient, user-first internet.
