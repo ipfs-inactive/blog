@@ -69,7 +69,7 @@ There’s a new example called [ipfs-client-add-files](https://github.com/ipfs/j
 
 If you fire it up, you’ll see progress and file import events appearing before the upload request has completed, something that’s not been possible with the `ipfs-http-client` until now.
 
-What’s next? We”re going to extend the [gRPC][] implementation to all streaming methods and get a server into `go-IPFS` so you can use the same client with that implementation too.
+What’s next? We’re going to extend the [gRPC][] implementation to all streaming methods and get a server into `go-IPFS` so you can use the same client with that implementation too.
 
 The full-duplex streaming capability opens up all sorts of interesting possibilities, for example, opening up the full libp2p API over HTTP instead of the limited subset that we currently support.
 
