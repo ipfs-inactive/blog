@@ -4,22 +4,25 @@ url: /2021-01-19-ipfs-in-brave/
 title: IPFS in Brave - Native Access to the Distributed Web
 author: Everett Muzzy and Dietrich Ayala
 tags: browsers
-header_image: TBD
+header_image: ipfs-in-brave.png
 snippet: Announcing the integration of IPFS in the Brave browser, completing the vision of a native distributed web experience in a modern web browser.
 ---
-
-![FEATURE IMG]()
 
 We are excited to announce that IPFS is now natively supported in the Brave web browser. With [over 20 million users](https://brave.com/20m-mau/), Brave has made the distributed web easily available for the people who need it most. This is the first time a major browser has implemented native support for IPFS, and is a major step towards a more resilient, user-first internet.
 
 While the IPFS protocol is still in development, making it more easily available is important for users who have real problems in their daily online lives - internet outages and shutdowns, censorship of critical information such as COVID-19 news, high cost of internet access, and the ability to share and collaborate in offline or disconnected environments. These aren’t problems everyone has, and people who don’t have these problems at all may not understand why IPFS is so important. But for those who desperately need a resilient internet that puts them in control of their online experiences, IPFS is now just one-click to install in the Brave browser.
 
-![Download Brave browser now]()
+<p style="text-align: center;">
+<h2>[Download Brave browser now](https://brave.com/download)</h2>
+</p>
 
 ## IPFS Features in Brave
 Brave has integrated IPFS into its desktop web browser for Windows, macOS, and Linux. When Brave detects an address which is an HTTP gateway URL to IPFS content, or a native IPFS address such as <code>ipfs://</code> or <code>ipns://</code> it will prompt the user to install and enable the native IPFS node, or to use an HTTP gateway. The default gateway used is dweb.link, which is run by Protocol Labs. Users can also specify a gateway of their choice in the browser settings. You can access the IPFS administrative UI at <code>brave://ipfs,</code>, or enable IPFS Companion and select “My Node” button in the main menu.
 
+<p style="text-align: center;">
 ![SCREENSHOTS]()
+  <img src="../img/brave-enable-ipfs.gif" alt="Screencast gif showing how an IPFS address triggers the infobar in Brave for enabling a full IPFS node.">
+</p>
 
 ## Why Web Browsers?
 The modern web browser enables experimentation, innovation, and new models of collaboration and exchange of value on the internet. The ubiquity of the web runtime and the low barrier to content creation make it ideal for easing access to content and applications by both creators and consumers.
