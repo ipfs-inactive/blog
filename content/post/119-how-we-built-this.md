@@ -1,7 +1,7 @@
 ---
 date: 2021-01-21
 url: /2021-01-21-how-we-put-ipfs-in-brave/
-title: "Origin Stories: IPFS in Brave"
+title: How we put IPFS in Brave
 author: Mitch Wagner
 tags: browsers
 header_image: how-we-built-this.png
