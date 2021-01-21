@@ -3,7 +3,7 @@ date: 2021-01-21
 url: /2021-01-21-how-we-put-ipfs-in-brave/
 title: How we put IPFS in Brave
 author: Mitch Wagner
-tags: browsers
+tags: brave, browsers
 header_image: 119-how-we-put-ipfs-in-brave.png
 snippet: This integration marks a major milestone for IPFS, and lays the groundwork for further experiments into improving the experience of interacting with the network via web browsers.
 ---
