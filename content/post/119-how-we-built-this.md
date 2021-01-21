@@ -4,12 +4,12 @@ url: /2021-01-21-how-we-put-ipfs-in-brave/
 title: How we put IPFS in Brave
 author: Mitch Wagner
 tags: brave, browsers
-header_image: 119-how-we-put-ipfs-in-brave.png
+header_image: 119-how-we-put-ipfs-in-brave.jpg
 snippet: This integration marks a major milestone for IPFS, and lays the groundwork for further experiments into improving the experience of interacting with the network via web browsers.
 ---
 
 <p style="text-align: center;">
-  <img src="/header_images/119-how-we-put-ipfs-in-brave.png" alt="Integrating IPFS and Brave – How We Built This">
+  <img src="/header_images/119-how-we-put-ipfs-in-brave.jpg" alt="Integrating IPFS and Brave – How We Built This">
 </p>
 
 You may have heard the news: as of [release 1.19.86](https://github.com/brave/brave-browser/releases/tag/v1.19.86), the Brave browser has officially added [InterPlanetary File System (IPFS)](https://blog.ipfs.io/2021-01-19-ipfs-in-brave/) support! This work is the result of a multi-year effort to bring the two projects together. In this post, we discuss the process in bringing this collaboration to fruition, and take a look under the hood to see how we accomplished this integration!
