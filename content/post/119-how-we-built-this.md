@@ -1,7 +1,7 @@
 ---
 date: 2021-01-21
 url: /2021-01-21-how-we-built-this/
-title: Integrating IPFS and Brave – How We Built This
+title: "Origin Stories: IPFS in Brave"
 author: Mitch Wagner
 tags: browsers
 header_image: how-we-built-this.png
