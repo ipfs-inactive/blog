@@ -1,6 +1,6 @@
 ---
 date: 2021-01-21
-url: /2021-01-21-how-we-built-this/
+url: /2021-01-21-how-we-put-ipfs-in-brave/
 title: "Origin Stories: IPFS in Brave"
 author: Mitch Wagner
 tags: browsers
