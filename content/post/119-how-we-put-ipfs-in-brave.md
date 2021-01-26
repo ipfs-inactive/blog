@@ -20,7 +20,7 @@ Both Brave and IPFS have a long history of successful partnerships with other pr
 <img src="/119-brave-how-we-built-this/ipfs-early.png" alt="Early experiment showcasing IPFS URI resolution in Brave" />  
 *Early experiment showcasing IPFS URI resolution in Brave*
 
-This integration between IPFS and Brave is itself the product of a long-running experimental collaboration that began in [2017](https://github.com/brave/browser-laptop/issues/9556#issuecomment-352453877), back in the days when the Brave UI was still powered by Muon (a fork of Electron). In fact, this initiative got as far as a [proof of concept implementation](https://github.com/brave/browser-laptop/issues/9556#issuecomment-369757871) that provided for the resolution of the IPFS URIs in Brave’s address bar!
+This integration between IPFS and Brave is itself the product of a long-running experimental collaboration that began in 2017 ([Aug](https://github.com/ipfs-inactive/browser-laptop/pull/1#issuecomment-324087667)[Dec](https://github.com/brave/browser-laptop/issues/9556#issuecomment-352453877)), back in the days when the Brave UI was still powered by Muon (a fork of Electron). In fact, this initiative got as far as a [proof of concept implementation](https://github.com/brave/browser-laptop/issues/9556#issuecomment-369757871) that provided for the resolution of the IPFS URIs in Brave’s address bar!
 
 <img src="/119-brave-how-we-built-this/ipfs-streaming.jpg" alt="An initial attempt at streaming IPFS files in Brave via IPFS Companion" />  
 *An initial attempt at streaming IPFS files in Brave via IPFS Companion*
