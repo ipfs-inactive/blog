@@ -10,7 +10,7 @@ author: Alex Potsides
 
 > NAT UPnP Hole Punching
 
-`js-IPFS@0.53.0` has launched into the stratosphere with an experimental [gRPC][]-over-websockets server that means the http client has true full-duplex streaming for the `ipfs.add` API
+`js-IPFS@0.54.0` enables NAT traversal with UPnP enabled routers for improved connectivity, but also requires a repo upgrade in the browser
 
 ## ↔️ NAT UPnP Hole Punching
 
