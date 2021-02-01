@@ -16,11 +16,11 @@ author: Alex Potsides
 
 When you run an IPFS node on your home network you are commonly behind a [NAT](https://en.wikipedia.org/wiki/Network_address_translation) firewall. These types of firewalls are commonly used on home networks to work around the [shortage of IPv4 addresses](https://en.wikipedia.org/wiki/IPv4_address_exhaustion) in the world.
 
-It's normally not possible for computers external to your network to make connections to your node when this sort of infrastructure is between you and the remote computer.  It's essential for external computers to be able to connect to your computer when using IPFS, otherwise there is no way for remote nodes to fetch content stored on your node.
+Normally, it’s not possible for computers external to your network to make connections to your node when this sort of infrastructure is between you and the remote computer. It’s essential for external computers to be able to connect to your computer when using IPFS, otherwise there is no way for remote nodes to fetch content stored on your node.
 
-This problem is not unique to IPFS, it also extends to any P2P network and a lot of online games. Thankfully there is a solution - if your router supported [UPnP](https://en.wikipedia.org/wiki/Universal_Plug_and_Play) and you have it enabled, a process on your computer can communicate with the router and ask it to open an external port and forward all traffic sent to that port to your machine. Once the port has been opened, we are then free to inform our connected peers that they can open connections on this external port as and when required via the [libp2p identify protocol](https://github.com/libp2p/specs/tree/master/identify).
+This problem is not unique to IPFS, it also extends to any P2P network and a lot of online games. Thankfully there is a solution: if your router supported [UPnP](https://en.wikipedia.org/wiki/Universal_Plug_and_Play) and you have it enabled, a process on your computer can communicate with the router and ask it to open an external port and forward all traffic sent to that port to your machine. Once the port has been opened, we are then free to inform our connected peers that they can open connections on this external port as and when required via the [libp2p identify protocol](https://github.com/libp2p/specs/tree/master/identify).
 
-js-IPFS@0.54.0 enables UPnP NAT hole punching by default, but it will only work if UPnP is enabled on your router - instructions for enabling this will vary by manufacturer so please see your router's documentation for more information of how to turn this on.
+js-IPFS@0.54.0 enables UPnP NAT hole punching by default, but it will only work if UPnP is enabled on your router; instructions for enabling this will vary by manufacturer so please see your router’s documentation for more information on how to enable.
 
 If everything works as expected, you should start to see externally addressable multiaddrs in the output of `jsipfs id` a short time after daemon startup without any extra configuration:
 
@@ -47,9 +47,9 @@ $ jsipfs config --json Swarm.DisableNatPortMap true
 
 ## level-js upgrade
 
-`js-IPFS@0.54.0` uses the latest version of level-js in the browser. `level-js@4.x.x` and below support storing keys as either `string`s or `Uint8Array`s, but `level-js@5.x.x` only supports Uint8Arrays in line with `leveldown` on node.js.
+`js-IPFS@0.54.0` uses the latest version of level-js in the browser. `level-js@4.x.x` and below support storing keys as either `string`s or `Uint8Array`s, but `level-js@5.x.x` only supports Uint8Arrays in line with `leveldown` on Node.js.
 
-This means a database migration will be necessary for those running js-IPFS in the browser (node.js is unaffected).
+This means a database migration will be necessary for those running js-IPFS in the browser (Node.js is unaffected).
 
 This migration should take place automatically the first time you load `js-IPFS@0.54.0` on a web page that has previously used `js-IPFS@0.53.0` and below.
 
@@ -66,7 +66,7 @@ Though if you do this, you should give your users some way of upgrading because 
 # ✨New features
 
 * enable upnp nat hole punching ([#3426](https://github.com/ipfs/js-ipfs/pull/3426))
-* support  remote pinning services in ipfs-http-client ([#3293](https://github.com/ipfs/js-ipfs/issues/3293)) ([ba240fd](https://github.com/ipfs/js-ipfs/commit/ba240fdf93edc88028315483240d7822a7ca88ed))
+* support remote pinning services in ipfs-http-client ([#3293](https://github.com/ipfs/js-ipfs/issues/3293)) ([ba240fd](https://github.com/ipfs/js-ipfs/commit/ba240fdf93edc88028315483240d7822a7ca88ed))
 
 ## 🔨 Breaking changes
 
