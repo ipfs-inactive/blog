@@ -133,7 +133,6 @@ Only large features are called out in the roadmap, expect lots of small bugfix r
 * [@typhu-xyz](https://github.com/typhu-xyz) (2 comments)
 * [@vasco-santos](https://github.com/vasco-santos) (56 commits, 13 PRs, 8 issues, 66 comments)
 * [@vmx](https://github.com/vmx) (2 commits, 5 comments)
-* [@welcome](undefined) (5 comments)
 * [@wemeetagain](https://github.com/wemeetagain) (38 commits, 9 PRs, 3 issues, 8 comments)
 * [@witten](https://github.com/witten) (1 comment)
 * [@xinfushe-dev](https://github.com/xinfushe-dev) (1 comment)

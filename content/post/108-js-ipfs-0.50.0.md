@@ -171,7 +171,6 @@ Only large features are called out in the roadmap, expect lots of small bugfix r
 * [@vasco-santos](https://github.com/vasco-santos) (66 commits, 20 PRs, 3 issues, 24 comments)
 * [@vmx](https://github.com/vmx) (2 commits, 1 PR, 3 comments)
 * [@vojtechsimetka](https://github.com/vojtechsimetka) (1 commit, 1 PR)
-* [@welcome](undefined) (11 comments)
 * [@wemeetagain](https://github.com/wemeetagain) (35 commits, 6 PRs, 2 issues, 5 comments)
 * [@Xmader](https://github.com/Xmader) (3 commits, 3 PRs, 2 comments)
 * [@xmaysonnave](https://github.com/xmaysonnave) (1 issue, 1 comment)
