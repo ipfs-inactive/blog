@@ -30,7 +30,7 @@ In years past, the IPFS community has had a large presence at ETHDenver, partial
 Not only that, last year [Cryptorado](https://cryptorado.org/#/) organized the [Decentralized Network Summit](https://dnsummit.cryptorado.org/), inviting the IPFS community to a day full of speakers and workshops from the folks at 3Box, NEAR, Unstoppable Domains, Pinata, Tupelo, Textile, Kauri, The Graph and more, drawing 100+ attendees. It was a wonderful day full of meeting and making new friends, enjoying the company of old ones, and most importantly, intriguing conversations.
 
 <p style="text-align: center;">
-  <img src="/img/120-ipfs-at-ethdenver/ethdenver2019.jeg" alt="The first IPFS Help Desk, hosted by Pinata">
+  <img src="/img/120-ipfs-at-ethdenver/ethdenver2019.jpeg" alt="The first IPFS Help Desk, hosted by Pinata">
 </p>
 
 So in that spirit of ETHDenvers past, the IPFS Help Desk, spearheaded by [Pinata back in 2019](https://twitter.com/IPFSPinata/status/1096806565116399616), will be back this year, helmed by your favorite IPFS community folks, so be sure to come visit us in the **Spork Shill Zone**, right next to the 🥰 Textile booth 🥰, every day that the Virtual Castle is open and ask all of your questions, from hacking to hoping, and everything in between. 
@@ -38,6 +38,7 @@ So in that spirit of ETHDenvers past, the IPFS Help Desk, spearheaded by [Pinata
 Since we can’t be together in Denver for another full day of Decentralized Summiting, we decided to hack together virtually on Tuesday, February 9, starting at the IPFS Help Desk, and moving to Zoom for 2 sessions after the Virtual Castle closes for the day. 
 
 **Hack the Help Desk! Tuesday, February 9** (all times local to Denver, Mountain Time)
+
  * Session 1: Virtual Castle at Help Desk - 9am to 11am 
  * Session 2: TBD Zoom - 11am to 1pm 
  * Session 3: TBD Zoom - 1pm to 3pm 
