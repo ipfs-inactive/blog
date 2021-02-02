@@ -8,9 +8,17 @@ header_image: eth1.png
 snippet: Return of the IPFS Help Desk, plus join us for a full day of hacking IPFS!
 ---
 
+<p style="text-align: center;">
+  <img src="/img/120-ipfs-at-ethdenver/flyingspork.png" alt="Join us at ETHDenver, where Flying Bufficorns and Spork Marmots reign free">
+</p>
+
 It’s hard to explain what [ETHDenver](https://www.ethdenver.com/) is, exactly. Is it a conference? Yes. Is it a hackathon? Is it a week of technical workshops directed by industry leaders? Yes. Is it an art exhibition? Also, yes. Is it a live dj set? Again, yes. But even those labels don’t do justice to the magic that happens when all of those things combine and settle on the Denver tech scene. 
 
 That is why we’re so excited to be part of this year’s ETHDenver, which is 100% virtual so everyone around the globe can experience the magic for themselves! In this, the year of the Spork Marmot, attendees worldwide will be able to participate in one of North America’s largest Ethereum gatherings: an innovation festival and #BUIDLathon, including a virtual replication of the famed Sports Castle, with a built-in game experience for IRL swag, and more. 
+
+<p style="text-align: center;">
+  <img src="/img/120-ipfs-at-ethdenver/helpdesk2020.jpg" alt="A wild Bufficorn appears at the IPFS Help Desk in 2020">
+</p>
 
 In years past, the IPFS community has had a large presence at ETHDenver, partially due to the incredibly welcoming and encouraging decentralization community built locally in Denver. [Last year](https://blog.ipfs.io/2020-02-07-ethdenver-2020/), we were truly blown away by how much we saw the ETHDenver community embrace IPFS. After all was said and done: 
 
@@ -19,7 +27,11 @@ In years past, the IPFS community has had a large presence at ETHDenver, partial
  * 3 out of the 5 winners triumphing, having used IPFS. 
  * And 80+ bounties were awarded for using IPFS! 
 
-Not only that, last year [Cryptorado](https://cryptorado.org/#/) organized the [Decentralized Network Summit](https://dnsummit.cryptorado.org/), inviting the IPFS community to a day full of speakers and workshops from the folks at 3Box, NEAR, Unstoppable Domains, Pinata, Tupelo, Textile, Kauri, The Graph and more, drawing 100+ attendees. It was a wonderful day full of meeting and making new friends, enjoying the company of old ones, and most importantly, intriguing conversations. 
+Not only that, last year [Cryptorado](https://cryptorado.org/#/) organized the [Decentralized Network Summit](https://dnsummit.cryptorado.org/), inviting the IPFS community to a day full of speakers and workshops from the folks at 3Box, NEAR, Unstoppable Domains, Pinata, Tupelo, Textile, Kauri, The Graph and more, drawing 100+ attendees. It was a wonderful day full of meeting and making new friends, enjoying the company of old ones, and most importantly, intriguing conversations.
+
+<p style="text-align: center;">
+  <img src="/img/120-ipfs-at-ethdenver/ethdenver2019.jeg" alt="The first IPFS Help Desk, hosted by Pinata">
+</p>
 
 So in that spirit of ETHDenvers past, the IPFS Help Desk, spearheaded by [Pinata back in 2019](https://twitter.com/IPFSPinata/status/1096806565116399616), will be back this year, helmed by your favorite IPFS community folks, so be sure to come visit us in the **Spork Shill Zone**, right next to the 🥰 Textile booth 🥰, every day that the Virtual Castle is open and ask all of your questions, from hacking to hoping, and everything in between. 
 
@@ -30,6 +42,10 @@ Since we can’t be together in Denver for another full day of Decentralized Sum
  * Session 2: TBD Zoom - 11am to 1pm 
  * Session 3: TBD Zoom - 1pm to 3pm 
  
-We are so excited to be a part of this amazing experience once again, and we can’t wait to share more with you very soon, but for now, make sure you won’t miss out!
+We are so excited to be a part of this amazing experience once again, and stay tuned for more information on our bounties and IPFS community presentations! We can’t wait to share more with you very soon, but for now, make sure you won’t miss out!
 
 Join us! [Register to attend ETHDenver 2021](https://www.ethdenver.com/).
+
+<p style="text-align: center;">
+  <img src="/img/120-ipfs-at-ethdenver/sportscastle.png" alt="Join us at the Virtual Sports Castle for the year of the Spork Marmot">
+</p>
