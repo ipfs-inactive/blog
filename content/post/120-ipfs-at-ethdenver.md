@@ -25,10 +25,10 @@ So in that spirit of ETHDenvers past, the IPFS Help Desk, spearheaded by [Pinata
 
 Since we can’t be together in Denver for another full day of Decentralized Summiting, we decided to hack together virtually on Tuesday, February 9, starting at the IPFS Help Desk, and moving to Zoom for 2 sessions after the Virtual Castle closes for the day. 
 
-**Hack the Help Desk! Tuesday, February 9**
- * Session 1: Virtual Castle at Help Desk - 9am to 11am CT
- * Session 2: TBD Zoom - 11am to 1pm CT
- * Session 3: TBD Zoom - 1pm to 3pm CT
+**Hack the Help Desk! Tuesday, February 9** (all times local to Denver, Mountain Time)
+ * Session 1: Virtual Castle at Help Desk - 9am to 11am 
+ * Session 2: TBD Zoom - 11am to 1pm 
+ * Session 3: TBD Zoom - 1pm to 3pm 
  
 We are so excited to be a part of this amazing experience once again, and we can’t wait to share more with you very soon, but for now, make sure you won’t miss out!
 
