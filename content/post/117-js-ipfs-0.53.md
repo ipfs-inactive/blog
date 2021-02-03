@@ -177,7 +177,6 @@ Only large features are called out in the roadmap, expect lots of small bugfix r
 * [@vmx](https://github.com/vmx) (15 commits, 2 PRs, 16 comments)
 * [@vogdb](https://github.com/vogdb) (1 issue, 5 comments)
 * [@warpfork](https://github.com/warpfork) (2 comments)
-* [@welcome](undefined) (15 comments)
 * [@wemeetagain](https://github.com/wemeetagain) (3 commits, 1 PR, 1 issue, 1 comment)
 * [@workingtim](https://github.com/workingtim) (2 issues, 2 comments)
 * [@woss](https://github.com/woss) (1 issue, 4 comments)

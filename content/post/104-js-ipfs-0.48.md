@@ -319,7 +319,6 @@ Only large features are called out in the roadmap, expect lots of small bugfix r
 * [@viethoanganh79](https://github.com/viethoanganh79) (1 issue, 1 comment)
 * [@viventra](https://github.com/viventra) (1 issue, 1 comment)
 * [@vmx](https://github.com/vmx) (20 commits, 3 PRs, 25 comments)
-* [@welcome](undefined) (37 comments)
 * [@wemeetagain](https://github.com/wemeetagain) (6 commits, 24 PRs, 11 issues, 15 comments)
 * [@x5engine](https://github.com/x5engine) (3 comments)
 * [@zebateira](https://github.com/zebateira) (1 commit, 1 PR)

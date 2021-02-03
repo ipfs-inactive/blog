@@ -152,7 +152,6 @@ Only large features are called out in the roadmap, expect lots of small bugfix r
 * [@typhu-xyz](https://github.com/typhu-xyz) (1 comment)
 * [@vasco-santos](https://github.com/vasco-santos) (14 commits, 15 PRs, 2 issues, 16 comments)
 * [@vmx](https://github.com/vmx) (5 commits, 1 PR, 2 comments)
-* [@welcome](undefined) (19 comments)
 * [@wemeetagain](https://github.com/wemeetagain) (2 commits, 1 PR, 3 comments)
 
 # 🙌🏽 Want to contribute?
