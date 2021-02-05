@@ -32,12 +32,14 @@ Be sure to check out these IPFS presentations during your breather.
 
 ### Friday, February 5 
 1PM MST [Tune in on the Mainnet Livestream](http://twitch.tv/ethereumdenver)
-* **IPFS: The Global CID**, technical workshop
-* Join Matt Ober,  Co-founder and CTO of [Pinata](https://pinata.cloud/) for a technical glimpse into CIDs. Blockchain data is immutable and accessible in a decentralized way. Your off-chain data should be too. Learn how IPFS solves this and why the “Content Identifier” is crucial for projects storing data off-chain.
+
+ * **IPFS: The Global CID**, technical workshop
+ * Join Matt Ober,  Co-founder and CTO of [Pinata](https://pinata.cloud/) for a technical glimpse into CIDs. Blockchain data is immutable and accessible in a decentralized way. Your off-chain data should be too. Learn how IPFS solves this and why the “Content Identifier” is crucial for projects storing data off-chain.
 ### Monday, February 8
 10:15AM MST [Tune in on the Mainnet Livestream](http://twitch.tv/ethereumdenver)
-* **Bridging Web2 <> Web3: IPFS x Opera integration**, panel
-* Join Dietrich Ayala, IPFS Ecosystem Lead, Igor Mandrigin Lead Crypto Researcher at Opera,  Bradley Kam, Co-Founder at Unstoppable Domains, and moderator Susie Batt, Head of Global Crypto Community at Opera, for an inside look at how browsers and decentralized technologies are teaming up to push Web3 forward.
+
+ * **Bridging Web2 <> Web3: IPFS x Opera integration**, panel
+ * Join Dietrich Ayala, IPFS Ecosystem Lead, Igor Mandrigin Lead Crypto Researcher at Opera,  Bradley Kam, Co-Founder at Unstoppable Domains, and moderator Susie Batt, Head of Global Crypto Community at Opera, for an inside look at how browsers and decentralized technologies are teaming up to push Web3 forward.
 
 Stay tuned for talks from Textile, Ethereum Name Service, NEAR, Unstoppable Domains, Rarible, Ceramic, The Graph, 3Box Labs, AAVE, Polkadot, nuCypher, Cryptorado, Filecoin, Audius, Dappnode, Radicle, Chainlink, ConsenSys, and more!
 
