@@ -23,6 +23,8 @@ First, install Opera Touch on your iOS device. If you’re reading this on an iO
   <img src="/img/opera-ios-app-store-short.png" alt="Opera Touch in the iOS app store">
 </p>
 
+Then you can open content using IPFS protocol addresses, like the [ipns://blog.ipfs.io](blog you're reading now), [Wikipedia](ipns://en.wikipedia-on-ipfs.org/wiki/), or this [Persian room guardian](ipfs://bafybeigdyrzt5sfp7udm7hu76uh7y26nf3efuylqabf3oclgtqy55fbzdi/). You can easily upload files to IPFS using the [IPFS desktop application](https://docs.ipfs.io/install/ipfs-desktop/) or [Share.ipfs.io](https://share.ipfs.io].
+
 ## How Does it Work?
 
 Opera Touch supports navigating to addresses for ipfs:// and ipns:// protocol schemes, which are handled by a remote HTTP gateway. By default the gateway used is dweb.link, which is operated by Protocol Labs. TODO: Can select/change gateway?
