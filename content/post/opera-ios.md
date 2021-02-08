@@ -13,7 +13,7 @@ First, Opera has now added support for IPFS addressing to Opera Touch, their iOS
 
 Second, support for IPFS addressing in Opera desktop browser for Windows, macOS and Linux will be coming in their next release, currently planned for March 2021.
 
-With these releases, Opera will now support ipfs:// and ipns:// addressing across their browser product line on all major operating systems: Windows, macOS, Linux, iOS and Android.
+With these releases, Opera will now support `ipfs://` and `ipns://` addressing across their browser product line on all major operating systems: Windows, macOS, Linux, iOS and Android.
 
 ## How Do I use it?
 
@@ -23,11 +23,11 @@ First, install Opera Touch on your iOS device. If you’re reading this on an iO
   <img src="/img/opera-ios-app-store-short.png" alt="Opera Touch in the iOS app store">
 </p>
 
-Then you can open content using IPFS protocol addresses, like the [ipns://blog.ipfs.io](blog you're reading now), [Wikipedia](ipns://en.wikipedia-on-ipfs.org/wiki/), or this [Persian room guardian](ipfs://bafybeigdyrzt5sfp7udm7hu76uh7y26nf3efuylqabf3oclgtqy55fbzdi/). You can easily upload files to IPFS using the [IPFS desktop application](https://docs.ipfs.io/install/ipfs-desktop/) or [Share.ipfs.io](https://share.ipfs.io].
+Then you can open content using IPFS protocol addresses, like the <a href="ipns://blog.ipfs.io">blog you're reading now</a>, <a href="ipns://en.wikipedia-on-ipfs.org">Wikipedia</a>, or this <a href="ipfs://bafybeigdyrzt5sfp7udm7hu76uh7y26nf3efuylqabf3oclgtqy55fbzdi">Persian room guardian</a> by [Anya Boz](https://www.anyabozartist.com/the-persian-cat). You can easily upload files to IPFS using the [IPFS desktop application](https://docs.ipfs.io/install/ipfs-desktop/) or [Share.ipfs.io](https://share.ipfs.io).
 
 ## How Does it Work?
 
-Opera Touch supports navigating to addresses for ipfs:// and ipns:// protocol schemes, which are handled by a remote HTTP gateway. By default the gateway used is dweb.link, which is operated by Protocol Labs. TODO: Can select/change gateway?
+Opera Touch supports navigating to addresses for `ipfs://` and `ipns://` protocol schemes, which are handled by a remote HTTP gateway. By default the gateway used is `dweb.link`, which is operated by Protocol Labs. TODO: Can select/change gateway?
 
 Native representation of IPFS addresses in browsers even when the content is loaded from an HTTP gateway as 1) it communicates to users the integrity guarantees built into the IPFS protocol and 2) it lets developers use IPFS addresses even as local node support is not yet implemented in most browsers.
 
