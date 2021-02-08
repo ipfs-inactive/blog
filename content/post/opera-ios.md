@@ -1,3 +1,15 @@
+---
+date: 2021-02-08
+url: /2021-02-08-opera-ios-and-ipfs/
+title: IPFS in Opera Touch on iOS!
+author: Dietrich Ayala
+tags: ipfs, browsers, opera, mobile
+header_image: opera-ipfs-header.png
+snippet: Opera has now added support for IPFS addressing to Opera Touch, their mobile browser for iOS.
+
+---
+
+
 <p style="text-align: center;">
   <img src="/img/opera-ipfs-header.png" alt="IPFS in Opera Touch for iOS">
 </p>
