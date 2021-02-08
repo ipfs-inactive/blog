@@ -8,7 +8,7 @@ header_image: eth2.png
 snippet: Win prizes of up to $500 for building on IPFS, especially when you build with the recent browser integrations at ETHDenver.
 ---
 
-[ETHDenver 2021](https://www.ethdenver.com/) is in full swing, and as we mentioned in our [last post]( ) the IPFS community is very stoked to get to be a part of this unique and awesome event! To encourage folks to try IPFS for the first time, or the second time, or the forty-second time, we’ve put together the following bounties to inspire your creativity and challenge your #BUILDathon skills. 
+[ETHDenver 2021](https://www.ethdenver.com/) is in full swing, and as we mentioned in our [last post](https://blog.ipfs.io/2020-02-07-ethdenver-2020/) the IPFS community is very stoked to get to be a part of this unique and awesome event! To encourage folks to try IPFS for the first time, or the second time, or the forty-second time, we’ve put together the following bounties to inspire your creativity and challenge your #BUILDathon skills. 
 
 ## IPFS Bounties for ETHDenver 2021
   
