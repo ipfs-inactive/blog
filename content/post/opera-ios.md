@@ -29,7 +29,7 @@ Then you can open content using IPFS protocol addresses, like the <a href="ipns:
 
 Opera Touch supports navigating to addresses for `ipfs://` and `ipns://` protocol schemes, which are handled by a remote HTTP gateway. By default the gateway used is `dweb.link`, which is operated by Protocol Labs. TODO: Can select/change gateway?
 
-Native representation of IPFS addresses in browsers even when the content is loaded from an HTTP gateway as 1) it communicates to users the integrity guarantees built into the IPFS protocol and 2) it lets developers use IPFS addresses even as local node support is not yet implemented in most browsers.
+Native representation of IPFS addresses in browsers is importanteven when the content is loaded from an HTTP gateway as IPFS URIs are resolved out of the box, without the need for any additional extensions or opt-in settings, which familiarizes users and developers with decentralized concepts of content-addressing and creates a path to readiness for when native nodes are available.
 
 ## What’s Next?
 
