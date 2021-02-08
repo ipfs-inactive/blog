@@ -25,6 +25,8 @@ First, Opera has now added support for IPFS addressing to Opera Touch, their iOS
 
 Second, support for IPFS addressing in Opera desktop browser for Windows, macOS, and Linux will be coming in their next release, currently planned for March 2021.
 
+As a special surprise for EthDenver, you can download a preview build of Opera for desktop which has IPFS addressing support! Give it a spin at [ethdenver2021.opera.com](https://ethdenver2021.opera.com).
+
 With these releases, Opera will now support `ipfs://` and `ipns://` addressing across their browser product line on all major operating systems: Windows, macOS, Linux, iOS, and Android.
 
 ## How do I use it?
