@@ -3,7 +3,7 @@
 </p>
 
 
-In 2020 we announced a big moment for IPFS: The first official support of IPFS protocol addressing in a major browser, when [Opera released IPFS support in their Android browser](ipns://blog.ipfs.io/2020-03-30-ipfs-in-opera-for-android/ "Opera Android IPFS announcement"). This was an important step in IPFS browser support generally, by building interest and momentum. We didn’t stop there, and we’ve got not just one… BUT TWO releases to share with you today:
+In 2020 we announced a big moment for IPFS: The first official support of IPFS protocol addressing in a major browser, when [Opera released IPFS support in their Android browser](https://blog.ipfs.io/2020-03-30-ipfs-in-opera-for-android/). This was an important step in IPFS browser support generally, by building interest and momentum. We didn’t stop there, and we’ve got not just one… BUT TWO releases to share with you today:
 
 First, Opera has now added support for IPFS addressing to Opera Touch, their iOS browser.
 
