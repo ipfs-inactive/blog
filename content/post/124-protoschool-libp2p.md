@@ -19,7 +19,7 @@ Historically, companies that produced peer-to-peer applications like like Skype 
     <img class="w-75-ns w-100" src="/124-libp2p-comes-to-protoschool/libp2p-logo-animation.gif" alt="libp2p animation representing libp2p modularity. Each block of the libp2p logo represents a component of the libp2p network stack." />
 </div>
 
-libp2p takes a modular approach to addressing the many components that can make up a network stack, from transports to multiplexing and beyond. A user can choose the specific pieces they need and compose their own configuration, tailored for their use cases. All of those pieces have very well defined interfaces that enable interoperability and easy upgrades, creating a future-proof networking stack. This ecosystem of of interoperable modules is key to libp2p's versatility across mutliple environments.
+libp2p takes a modular approach to addressing the many components that can make up a network stack, from transports to multiplexing and beyond. A user can choose the specific pieces they need and compose their own configuration, tailored for their use cases. All of those pieces have very well defined interfaces that enable interoperability and easy upgrades, creating a future-proof networking stack. This ecosystem of interoperable modules is key to libp2p's versatility across multiple environments.
 
 
 Learn more in our code-free [Introduction to libp2p tutorial](https://proto.school/introducing-libp2p), or view our full [IPFS course on ProtoSchool](https://proto.school/course/ipfs) for intros to fundamental DWeb concepts, hands-on coding challenges with the js-ipfs APIs, and more.
