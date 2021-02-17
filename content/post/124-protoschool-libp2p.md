@@ -7,7 +7,7 @@ tags: protoschool, libp2p, ipfs
 header_image: 124-libp2p-comes-to-protoschool.png
 ---
 
-The [ProtoSchool](https://proto.school) team is pleased to announce the launch of a shiny new multiple-choice tutorial [introducing libp2p](https://proto.school/introducing-libp2p), the modular peer-to-peer networking stack that spun out of IPFS into its own first-class project and a dependency of IPFS itself. Today, IPFS focuses on _content addressing_ (i.e., finding, fetching and authenticating any piece of content in the web) while libp2p focuses on _process addressing_ (i.e., finding, connecting and authenticating any data transfer processes in the network).
+The [ProtoSchool](https://proto.school) team is pleased to announce the launch of a shiny new multiple-choice tutorial [introducing libp2p](https://proto.school/introduction-to-libp2p), the modular peer-to-peer networking stack that spun out of IPFS into its own first-class project and a dependency of IPFS itself. Today, IPFS focuses on _content addressing_ (i.e., finding, fetching and authenticating any piece of content in the web) while libp2p focuses on _process addressing_ (i.e., finding, connecting and authenticating any data transfer processes in the network).
 
 <img style="width: 42rem" src="/124-libp2p-comes-to-protoschool/libp2p-ipfs-animation.gif" alt="libp2p animation representing libp2p being extracted out of ipfs" />
 
@@ -18,7 +18,7 @@ Historically, companies that produced peer-to-peer applications like Skype or Bi
 libp2p takes a modular approach to addressing the many components that can make up a network stack, from transports to multiplexing and beyond. A user can choose the specific pieces they need and compose their own configuration, tailored for their use cases. All of those pieces have very well defined interfaces that enable interoperability and easy upgrades, creating a future-proof networking stack. This ecosystem of interoperable modules is key to libp2p’s versatility across multiple environments.
 
 
-Learn more in our code-free [Introduction to libp2p tutorial](https://proto.school/introducing-libp2p), or view our full [IPFS course on ProtoSchool](https://proto.school/course/ipfs) for intros to fundamental DWeb concepts, hands-on coding challenges with the js-ipfs APIs, and more.
+Learn more in our code-free [Introduction to libp2p tutorial](https://proto.school/introduction-to-libp2p), or view our full [IPFS course on ProtoSchool](https://proto.school/course/ipfs) for intros to fundamental DWeb concepts, hands-on coding challenges with the js-ipfs APIs, and more.
 
 ## More on libp2p
 
