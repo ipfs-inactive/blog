@@ -1,6 +1,6 @@
 ---
-date: 2021-02-15
-url: /2021-02-15-libp2p-comes-to-protoschool/
+date: 2021-02-17
+url: /2021-02-17-libp2p-comes-to-protoschool/
 title: libp2p comes to ProtoSchool
 author: Teri Chadbourne
 tags: protoschool, libp2p, ipfs
