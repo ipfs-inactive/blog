@@ -9,15 +9,11 @@ header_image: 124-libp2p-comes-to-protoschool.png
 
 The [ProtoSchool](https://proto.school) team is pleased to announce the launch of a shiny new multiple-choice tutorial [introducing libp2p](https://proto.school/introducing-libp2p), the modular peer-to-peer networking stack that spun out of IPFS into its own first-class project and a dependency of IPFS itself. Today, IPFS focuses on _content addressing_ (i.e., finding, fetching and authenticating any piece of content in the web) while libp2p focuses on _process addressing_ (i.e., finding, connecting and authenticating any data transfer processes in the network).
 
-<div class="flex justify-center items-start mt4 mb4">
-    <img class="w-75-ns w-100" src="/124-libp2p-comes-to-protoschool/libp2p-ipfs-animation.gif" alt="libp2p animation representing libp2p being extracted out of ipfs" />
-</div>
+<img style="width: 42rem" src="/124-libp2p-comes-to-protoschool/libp2p-ipfs-animation.gif" alt="libp2p animation representing libp2p being extracted out of ipfs" />
 
-Historically, companies that produced peer-to-peer applications like Skype or BitTorrent created their own protocols to support them. Those protocols made a lot of assumptions about the environments they’d run in and the needs they’d meet, making them incredibly hard to upgrade or adapt to new environments. libp2p, however, has been extracted from its original implementation as the networking stack of IPFS, and can now serve a broad variety of use cases. While everyone building on IPFS or Filecoin is using libp2p as a dependency, many folks are using libp2p independently or embedded in other projects such as X, Y, and Z (insert examples that don't use IPFS or Filecoin).
+Historically, companies that produced peer-to-peer applications like Skype or BitTorrent created their own protocols to support them. Those protocols made a lot of assumptions about the environments they’d run in and the needs they’d meet, making them incredibly hard to upgrade or adapt to new environments. libp2p, however, has been extracted from its original implementation as the networking stack of IPFS, and can now serve a broad variety of use cases. While everyone building on IPFS or Filecoin is using libp2p as a dependency, many folks are using libp2p independently or embedded in other projects such as Ethereum 2.0, Polkadot, and Status.im.
 
-<div class="flex justify-center items-start mv4">
-    <img class="w-75-ns w-100" src="/124-libp2p-comes-to-protoschool/libp2p-logo-animation.gif" alt="libp2p animation representing libp2p modularity. Each block of the libp2p logo represents a component of the libp2p network stack." />
-</div>
+<img style="width: 50rem" src="/124-libp2p-comes-to-protoschool/libp2p-logo-animation.gif" alt="libp2p animation representing libp2p modularity. Each block of the libp2p logo represents a component of the libp2p network stack." />
 
 libp2p takes a modular approach to addressing the many components that can make up a network stack, from transports to multiplexing and beyond. A user can choose the specific pieces they need and compose their own configuration, tailored for their use cases. All of those pieces have very well defined interfaces that enable interoperability and easy upgrades, creating a future-proof networking stack. This ecosystem of interoperable modules is key to libp2p’s versatility across multiple environments.
 
