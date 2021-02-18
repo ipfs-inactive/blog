@@ -1,5 +1,5 @@
 ---
-date: 2021-02-03
+date: 2021-02-10
 url: /weekly-122/
 translationKey: ipfs-weekly-122
 tags: weekly
