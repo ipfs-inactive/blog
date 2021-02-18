@@ -6,7 +6,7 @@ tags: weekly
 header_image: weekly-newsletter.png
 title: Welcome to IPFS Weekly 123
 author: Jenn Turner
-snippet: 
+snippet: See what people built at ETHDenver, hang out with IPFS and friends next Tuesday, plus your files 💖 for keeps forever 💖 - we promise!
 ---
 
 Here’s what’s happening in the [InterPlanetary File System](https://ipfs.io/) galaxy!
