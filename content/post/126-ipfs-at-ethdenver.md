@@ -46,22 +46,23 @@ In lieu of a sponsor booth, the IPFS Help Desk returned! Folks from IPFS, Slate,
 
 ## New projects in the ecosystem
 Here are just a few of the projects from ETHDenver that have us excited about building even more with IPFS!
- * **Documint**, an IDE for Ceramic providing developers with a powerful interface for viewing, creating, and editing smart documents.
+
+* **Documint**, an IDE for Ceramic providing developers with a powerful interface for viewing, creating, and editing smart documents.
    * [Project submission](https://devfolio.co/submissions/documint-eb71)
    * [Project site](https://documint.net/ )
    * [Project GitHub](https://github.com/xops/documint)
- * **Gasless Wallet**, an Ethereum Virtual Machine (EVM) blockchain-agnostic wallet allowing users to pay transactions fee in any of the ERC-20 standard tokens.
+* **Gasless Wallet**, an Ethereum Virtual Machine (EVM) blockchain-agnostic wallet allowing users to pay transactions fee in any of the ERC-20 standard tokens.
    * [Project submission](https://devfolio.co/submissions/gasless-wallet-b236)
    * [Project site](https://bafybeiajtc3zk5or5d3yfdixssal3oyx5otpbxvribnefq54jfwvfkid5e.ipfs.infura-ipfs.io/)
    * [Project GitHub](https://github.com/sftwr-prjct-dev/gasless)
- * **TruReview**, a censorship-resistant review platform, allowing people to store their rich text/image/video reviews with IDX and Ceramic (stored on IPFS).
+* **TruReview**, a censorship-resistant review platform, allowing people to store their rich text/image/video reviews with IDX and Ceramic (stored on IPFS).
    * [Project submission](https://devfolio.co/submissions/blah-7859)
    * [Project demo](https://www.figma.com/proto/0eMGJeHltlcCKp4eTqdl5u/True-Review?node-id=162%3A1521&viewport=879%2C-40%2C0.06251474469900131&scaling=contain&hotspot-hints=0)
    * [Project GitHub](https://github.com/twos-complement/eth-denver-2021)
- * **Timelock**, a simple app that helps lock money for a future date using a smart contract, which is then posted to IPFS.
+* **Timelock**, a simple app that helps lock money for a future date using a smart contract, which is then posted to IPFS.
    * [Project submission](https://devfolio.co/submissions/timelock-08af)
    * [Project site](https://web3-time-lock.glitch.me/)
- * **Super Rinkeby**, a decentralized Super Mario-like game where you can magically change your character through an NFT purchase. 
+* **Super Rinkeby**, a decentralized Super Mario-like game where you can magically change your character through an NFT purchase. 
    * [Project submission](https://devfolio.co/submissions/super-rinkeby-game-a88e)
    * [Project site](http://superrinkeby.com/)
    * [Project GitHub](https://github.com/leon-do/super-rinkeby-website)
