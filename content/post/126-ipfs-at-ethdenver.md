@@ -5,7 +5,7 @@ title: IPFS at ETHDenver
 author: Jenn Turner
 tags: events, hackathon
 header_image: ipfs-at-ethdenver.png
-snippet: The IPFS Community was at ETHDenver 2021 in full force: from presentations to bounties, help desks and virtual hangs, and our favorite—new projects!
+snippet: "The IPFS Community was at ETHDenver 2021 in full force: from presentations to bounties, help desks and virtual hangs, and our favorite—new projects!"
 ---
 
 The annual premier hackathon event for the North American Ethereum community, ETHDenver and ColoradoJam, has come to a close. The 2021 event was 100% virtual, utilizing the gaming platform Gamerjibe as a virtual event venue, creating a unique and refreshing way for the dweb community to gather together.
