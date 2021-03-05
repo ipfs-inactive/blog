@@ -16,6 +16,7 @@ The annual premier hackathon event for the North American Ethereum community, ET
 
 ## Event highlights
 When it came to building with IPFS, we saw NFT marketplaces, decentralized and off-chain gaming, platforms solving real world issues involving life insurance and genetic testing, and consistently created ways to lower barriers for wallet creation, token creation, and more. 
+
  * 31 out 86 total projects submitted to ETHDenver applied for IPFS bounties
  * 64 out of 86 projects submitted applied for IPFS-ecosystem tooling bounties (the most popular being Ceramic, Textile and Metamask)
  * The IPFS project awarded bounties to 11 submissions for their creative use of IPFS
