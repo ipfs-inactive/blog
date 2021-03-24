@@ -6,7 +6,7 @@ tags: weekly
 header_image: weekly-newsletter.png
 title: Welcome to IPFS Weekly 125
 author: Jenn Turner
-snippet: The latest on go-ipfs 0.8.0, plus ProtoSchool adds libp2p to the curriculum and save the date for the March meetup!
+snippet: IPFS Desktop gets an update, our ETHDenver recap, plus introducing Super Rinkeby.
 ---
 
 Here’s what’s happening in the [InterPlanetary File System](https://ipfs.io/) galaxy!
