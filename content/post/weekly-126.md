@@ -46,7 +46,7 @@ Read about the [decentralized internet](https://jewarner57.medium.com/the-decent
 Check out this [Brave browser review](https://dev.to/zoedreams/brave-browser-review-secure-fast-private-web-browser-bhk) from the DEV Community.
 
 
-**Not the folks behind insurance premium financing solutions! **
+**Not the folks behind insurance premium financing solutions!**
 
 Get involved with IPFS by checking us out on [GitHub](https://github.com/ipfs), joining discussions on [our community forum](https://discuss.ipfs.io/), or hitting us up [in chat](https://riot.im/app/#/room/#ipfs:matrix.org). Have a suggestion? [Email us](mailto:newsletter@ipfs.io).
 
