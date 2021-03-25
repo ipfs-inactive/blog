@@ -32,7 +32,7 @@ Additionally, ION has a network explorer at [identity.foundation/ion/explorer/](
 
 ## Using and Contributing to ION
 
-Today Microsoft launched v1.0 of ION with this post, which has examples of using the JavaScript client for application integration and steps for running a node. The team has created a high-level SDK for easy app integrations, with key and DID generation utilities and basic login APIs. Additionally they’ve published a low-level SDK for building customized identity solutions beyond what comes out of the box.
+Today Microsoft launched v1.0 of ION, and in [the launch post](https://techcommunity.microsoft.com/t5/identity-standards-blog/ion-we-have-liftoff/ba-p/1441555) they've shared examples of using the JavaScript client for application integration and steps for running a node. The team has created a high-level SDK for easy app integrations, with key and DID generation utilities and basic login APIs. Additionally they’ve published a low-level SDK for building customized identity solutions beyond what comes out of the box.
 
 As ION is a public network, running a node of your own will contribute to the overall health, resilience and performance of the system. Instructions for building and installing a node are detailed in the [ION Github repository]( https://github.com/decentralized-identity/ion).
 
