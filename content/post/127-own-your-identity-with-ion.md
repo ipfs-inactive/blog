@@ -22,7 +22,9 @@ Today, we’re excited to see a new decentralized identity service launch which 
 
 ION is a public identity network providing distributed public key infrastructure through Decentralized Identifiers (DIDs) and the [Sidetree protocol](https://github.com/decentralized-identity/sidetree) on top of the Bitcoin blockchain. ION is developed by Microsoft and a group of collaborators at the Decentralized Identity Foundation.
 
-We’ve been working with them to support their use of IPFS since 2019. IPFS comes into the picture at the storage layer, where ION aggregates transactions into batches, adds those batches to IPFS, and then writes the IPFS content identifier (CID) of the batch to the blockchain. The ION node uses a local go-ipfs node with a custom datastore backed by Azure.
+We’ve been working with them to support their use of IPFS since 2019. IPFS comes into the picture at the storage layer, where ION aggregates transactions into batches, adds those batches to IPFS, and then writes the IPFS content identifier (CID) of the batch to the blockchain. The ION pairs with a local go-ipfs node for publishing data for availability to the broader IPFS network.
+
+Additionally, ION has a network explorer at [identity.foundation/ion/explorer/](https://identity.foundation/ion/explorer/).
 
 <p style="text-align: center;">
   <img src="https://i.imgur.com/qeAksqQ.png" alt="ION network explorer">
