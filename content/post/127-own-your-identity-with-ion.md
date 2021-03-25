@@ -4,12 +4,12 @@ url: /2021-03-24/own-your-identity-with-ion
 title: Own Your Identity with ION 
 author: Dietrich Ayala 
 tags: identity
-header_image: 
+header_image: 127-ion-header.png
 snippet: ION, the decentralized identity network from Microsoft and the Decentralized Identity Foundation, launches v1.0 with all transaction data distributed with IPFS.
 ---
 
 <p style="text-align: center;">
-  <img src="https://user-images.githubusercontent.com/9259185/108124207-8c721e00-706c-11eb-9379-24caff49c27a.png" alt="ION logo">
+  <img src="/header_images/127-ion-header.png" alt="ION logo">
 </p>
 
 **We are many people!** Whether on Twitter, Zoom or paying the electricity bill, we assume identities to interact with others online. How much of that identity is you? How much of “you” is decided by those services? Why can’t the bag of bits that is “you” stick around while hopping from online service to online service?
@@ -27,7 +27,7 @@ We’ve been working with them to support their use of IPFS since 2019. IPFS com
 Additionally, ION has a network explorer at [identity.foundation/ion/explorer/](https://identity.foundation/ion/explorer/).
 
 <p style="text-align: center;">
-  <img src="https://i.imgur.com/qeAksqQ.png" alt="ION network explorer">
+  <img src="/img/ion-explorer.png" alt="ION network explorer">
 </p>
 
 ## Using and Contributing to ION
