@@ -127,15 +127,15 @@ Here’s an example of some JSON metadata that contains an IPFS URI linking to a
 
 ```json
 {
-  "name": "The IPFS Logo",
-  "description": "The IPFS logo (768px, png)",
-  "image": "ipfs://bafybeif47ou6logf6g454ny5w4q7zwrhsponxiulakvqreschgzmnqsami/ipfs-logo-768px.png"
+  "name": "No time to explain!",
+  "description": "I said there was no time to explain, and I stand by that.",
+  "image": "ipfs://bafybeidfjqmasnpu6z7gvn7l6wthdcyzxh5uystkky3xvutddbapchbopi/no-time-to-explain.jpeg"
 }
 ```
 
-The image can be fetched using the IPFS URI `ipfs://bafybeif47ou6logf6g454ny5w4q7zwrhsponxiulakvqreschgzmnqsami/ipfs-logo-768px.png`. For presentation, your application can create a gateway URL to allow users to fetch the image using HTTP, for example, https://dweb.link/ipfs/bafybeif47ou6logf6g454ny5w4q7zwrhsponxiulakvqreschgzmnqsami/ipfs-logo-768px.png
+The image can be fetched using the IPFS URI `ipfs://bafybeidfjqmasnpu6z7gvn7l6wthdcyzxh5uystkky3xvutddbapchbopi/no-time-to-explain.jpeg`. For presentation, your application can create a gateway URL to allow users to fetch the image using HTTP, for example, https://dweb.link/ipfs/bafybeidfjqmasnpu6z7gvn7l6wthdcyzxh5uystkky3xvutddbapchbopi/no-time-to-explain.jpeg
 
-Once the metadata has been created, it is stored as a JSON file on IPFS, and the resulting CID is used to create a URI like `ipfs://bafybeia65afi32gdbg3kov6vab6lko2evzbqt5psmxpviwn2f3ca5dwlre/metadata.json`, which can be stored in a smart contract.
+Once the metadata has been created, it is stored as a JSON file on IPFS, and the resulting CID is used to create a URI like `ipfs://bafybeibnsoufr2renqzsh347nrx54wcubt5lgkeivez63xvivplfwhtpym/metadata.json`, which can be stored in a smart contract.
 
 To see a working example of this process in action, check out [How to Mint NFTs with IPFS](http://how-to/mint-nfts-with-ipfs/#how-minty-works) on the IPFS documentation site, which shows the whole process in detail using javascript.
 
