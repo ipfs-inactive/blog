@@ -25,13 +25,15 @@ IPFS [content identifiers](https://docs.ipfs.io/guides/concepts/cid/) (CIDs) are
 ### Linking Overview
 This blog post is not intended to be a comprehensive explanation of CIDs (for that, see other [fantastic resources](https://docs.ipfs.io/how-to/address-ipfs-on-web/#dweb-addressing-in-brief)). However, readers should be aware of the following distinctions:
 
-#### Raw CID
+#### CID
 
-Self-describing, unique identifier for a piece of content.
+A CID is a self-describing, unique identifier for a piece of content.
 
 Example: `bafybeigdyrzt5sfp7udm7hu76uh7y26nf3efuylqabf3oclgtqy55fbzdi`
 
-A CID is the most compact form of IPFS link, which makes it well-suited to storing inside a smart contract. When returning links to IPFS data from a smart contract, the CID should be converted to an IPFS URI.
+CIDs should be used inside your application code and in other contexts where it’s unambiguous whether you’re using IPFS or some other system.
+
+We recommend converting CIDs to IPFS URIs whenever storing them on disk, especially in metadata and blockchain records that can’t be altered after creation. Including the ipfs:// URI scheme adds important context to a CID that clearly shows users and automated tooling how to find the content.
 
 #### IPFS URI
 
@@ -52,7 +54,7 @@ IPFS URIs should also be used inside the structured metadata for NFTs when linki
 
 Example: `https://dweb.link/ipfs/bafybeigdyrzt5sfp7udm7hu76uh7y26nf3efuylqabf3oclgtqy55fbzdi`
 
-Note that gateways _recentralize the distribution of content_, presenting both a man-in-the-middle vector and single point of failure — if the gateway operator goes offline or is unreachable, the link will break. However, browsers with built-in support for IPFS (either via the [IPFS Companion](https://docs.ipfs.io/install/ipfs-companion/) browser extension, or via native support, such as [provided by Brave](https://brave.com/ipfs-support/)) are immune to these problems, as they can automatically extract the CID from such links, and load the data from IPFS according to user preferences.
+Note that gateways _recentralize the distribution of content_, presenting both a man-in-the-middle vector and single point of failure — if the gateway operator goes offline or is unreachable, the link will break. However, browsers with built-in support for IPFS (either via the [IPFS Companion](https://docs.ipfs.io/install/ipfs-companion/) browser extension, or via native support, such as [provided by Brave](https://brave.com/ipfs-support/)) are immune to these problems, as they can _automatically_ extract the CID from such links, and load the data from IPFS according to user preferences.
 
 ### Addressing in Various Contexts
 
@@ -60,19 +62,23 @@ Developers should format links differently, depending on context.
 
 #### On-Chain
 
-An IPFS CID is a compact, self-describing link to IPFS content, and CIDs can be stored on-chain without the `ipfs://` URI prefix to save space.
+An NFT smart contract should return an IPFS URI to the assets and metadata associated with each token. 
 
-Although it’s possible to encode CIDs into a [compact binary form](https://github.com/multiformats/cid#how-does-it-work), most NFT smart contract interfaces expect links to external data to be in the form of a URI string. Storing CIDs as strings makes it easy to produce IPFS URIs inside a smart contract without needing to re-encode the binary data.
+For example: `ipfs://bafybeigvafaks2bvivtv46n2z7uxszpvl25jhvzc6dbhnjjgjkbeia5jta/nft.mp4`
+
+We recommend generating the IPFS URI before minting each token and storing the full URI on-chain. This is the simplest way to conform to smart contract interfaces that expect a URI, and the ipfs:// URI scheme makes it easy for any distributed app to see that the data is available using IPFS.
 
 #### Metadata
 
-In token metadata, IPFS URIs should be used as the most unambiguous and future-proof method of linking to IPFS resources in plain text. Developers may optionally wish to include links to public [HTTP gateways](https://docs.ipfs.io/how-to/address-ipfs-on-web/#http-gateways) for legacy interoperability.
+In token metadata, IPFS URIs should be used as the most unambiguous and future-proof method of linking to IPFS resources in plain text.
 
-Other alternatives for linking to the content (e.g., non-gateway HTTP URLs) should ideally be avoided. As the content served over HTTP from a particular location is subject to change, such a link cannot be relied upon as anything other than a temporary content mirror. On a blockchain, where data is permanently and immutably stored, referencing content via HTTP is thus profoundly wasteful.
+Here’s an example of an IPFS URI that references an NFT media asset: `ipfs://bafybeigvafaks2bvivtv46n2z7uxszpvl25jhvzc6dbhnjjgjkbeia5jta/nft.mp4`
 
-In contrast, IPFS CIDs are valid forever, and as such, may safely be considered the canonical source for their data. 
+Developers may optionally wish to include links to public [HTTP gateways](https://docs.ipfs.io/how-to/address-ipfs-on-web/#http-gateways) for legacy interoperability.
 
-By using an IPFS URI as the “source of truth” for links, an application can easily support multiple gateways or switch to [different gateways](https://ipfs.github.io/public-gateway-checker/) over time, simply by generating new gateway links. This is more flexible than “hard-coding” a specific gateway into a permanent blockchain record.
+Other alternatives for linking to the content (e.g., non-gateway HTTP URLs) should ideally be avoided. As the content served over HTTP from a particular location is subject to change, such a link cannot be relied upon as anything other than a temporary content mirror. On a blockchain, where data is permanently and immutably stored, referencing content via HTTP is thus fragile and risky.
+
+In contrast, IPFS URIs are valid forever, and as such, may safely be considered the canonical link for their data. By using an IPFS URI as the “source of truth” for links, an application can easily support multiple storage solutions or switch to different gateways over time, simply by generating new gateway links. This is more flexible than “hard-coding” a specific gateway into a permanent blockchain record.
 
 #### Application
 
@@ -83,9 +89,21 @@ In user-facing applications, developers should link to IPFS content via both:
 
 until such a time as more browsers support native resolution of the IPFS URI scheme. Note that both kinds of link can easily be generated from a raw CID or IPFS URI as needed.
 
+Here is an example of an HTTP gateway URL targeting the public gateway at dweb.link:
+
+https://dweb.link/ipfs/afybeigvafaks2bvivtv46n2z7uxszpvl25jhvzc6dbhnjjgjkbeia5jta/nft.mp4
+
+The same link can be written with the CID as a subdomain, instead of in the URL path:
+
+https://bafybeigvafaks2bvivtv46n2z7uxszpvl25jhvzc6dbhnjjgjkbeia5jta.ipfs.dweb.link/nft.mp4
+
+Both examples correspond to this canonical IPFS URI: `ipfs://bafybeigvafaks2bvivtv46n2z7uxszpvl25jhvzc6dbhnjjgjkbeia5jta/nft.mp4`
+
 ## Integrity
 
-A major concern for NFTs is the integrity of the asset - this includes both the asset itself and any data associated with it. While IPFS can help address these concerns, developers should adhere to the following recommendations to gain the most benefit.
+A major concern for NFTs is the integrity of the asset - this includes both the asset itself and any data associated with it. IPFS protects the integrity of NFT data by using CIDs to validate that nothing has changed since the link was created.
+
+Developers should adhere to the following recommendations to gain the most benefit from IPFS's built-in data validation.
 
 ### Linking Metadata to its Asset
 
@@ -96,14 +114,30 @@ The preferred method for achieving this is as follows:
 1. Create two new directories (one for the asset, and one for the metadata)
 1. Add the asset to its directory
 1. Add the asset’s directory to IPFS, noting its CID
-1. Create the metadata in its own directory, referencing the asset using the CID from (3) inside an IPFS URI
+1. Create the metadata in its own directory, referencing the asset using the CID from (3) to create an IPFS URI. The URI should include the CID of the directory and the filename of the asset.
 1. Add the metadata’s directory to IPFS, noting its CID
-1. Store the CID from (5) on-chain to form the record of ownership
+1. Use the CID from (5) to create an IPFS URI for the metadata and store the URI on-chain to form the record of ownership
 
 This process both preserves the ability of developers to include filenames in their links (valuable for user interaction), while ensuring that the metadata and asset can be referenced independent of each other.
 
 - The metadata will be accessible at: `ipfs://{metadata-directory-CID}/metadata-filename`
 - The asset will be accessible at: `ipfs://{asset-directory-CID}/asset-filename`
+
+Here’s an example of some JSON metadata that contains an IPFS URI linking to an image file:
+
+```json
+{
+  "name": "The IPFS Logo",
+  "description": "The IPFS logo (768px, png)",
+  "image": "ipfs://bafybeif47ou6logf6g454ny5w4q7zwrhsponxiulakvqreschgzmnqsami/ipfs-logo-768px.png"
+}
+```
+
+The image can be fetched using the IPFS URI `ipfs://bafybeif47ou6logf6g454ny5w4q7zwrhsponxiulakvqreschgzmnqsami/ipfs-logo-768px.png`. For presentation, your application can create a gateway URL to allow users to fetch the image using HTTP, for example, https://dweb.link/ipfs/bafybeif47ou6logf6g454ny5w4q7zwrhsponxiulakvqreschgzmnqsami/ipfs-logo-768px.png
+
+Once the metadata has been created, it is stored as a JSON file on IPFS, and the resulting CID is used to create a URI like `ipfs://bafybeia65afi32gdbg3kov6vab6lko2evzbqt5psmxpviwn2f3ca5dwlre/metadata.json`, which can be stored in a smart contract.
+
+To see a working example of this process in action, check out [How to Mint NFTs with IPFS](http://how-to/mint-nfts-with-ipfs/#how-minty-works) on the IPFS documentation site, which shows the whole process in detail using javascript.
 
 ### High Availability
 
