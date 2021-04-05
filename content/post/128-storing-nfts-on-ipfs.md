@@ -4,9 +4,13 @@ url: /2021-04-05-storing-nfts-on-ipfs
 title: Storing NFTs on IPFS
 author: Yusef Napora & Mitch Wagner
 tags: NFTs
-header_image: 
+header_image: 128-nft-header.png
 snippet: Learn best practices for addressing and storing data for NFTs using IPFS, for NFTs that stand the test of time.
 ---
+
+<p style="text-align: center;">
+  <img src="/header_images/128-nft-header.png" alt="The IPFS cube logo with a nyancat-style rainbow trailing it">
+</p>
 
 Permanence and immutability are part of the core value proposition of a non-fungible token (NFT). Unfortunately, many NFTs being targeted at consumers today offer neither of these properties due to fundamental design flaws. It is common to hear claims that NFTs “live on a blockchain forever”, but frequently, due to the cost and space limitations of storing data on a blockchain, only the ownership _record_ is actually stored, with metadata linking to the actual content of the NFT.
 
