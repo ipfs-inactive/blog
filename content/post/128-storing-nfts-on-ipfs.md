@@ -33,7 +33,7 @@ Example: `bafybeigdyrzt5sfp7udm7hu76uh7y26nf3efuylqabf3oclgtqy55fbzdi`
 
 CIDs should be used inside your application code and in other contexts where it’s unambiguous whether you’re using IPFS or some other system.
 
-We recommend converting CIDs to IPFS URIs whenever storing them on disk, especially in metadata and blockchain records that can’t be altered after creation. Including the ipfs:// URI scheme adds important context to a CID that clearly shows users and automated tooling how to find the content.
+We recommend converting CIDs to IPFS URIs whenever storing them on disk, especially in metadata and blockchain records that can’t be altered after creation. Including the `ipfs://` URI scheme adds important context to a CID that clearly shows users and automated tooling how to find the content.
 
 #### IPFS URI
 
@@ -91,7 +91,7 @@ until such a time as more browsers support native resolution of the IPFS URI sch
 
 Here is an example of an HTTP gateway URL targeting the public gateway at dweb.link:
 
-https://dweb.link/ipfs/afybeigvafaks2bvivtv46n2z7uxszpvl25jhvzc6dbhnjjgjkbeia5jta/nft.mp4
+https://dweb.link/ipfs/bafybeigvafaks2bvivtv46n2z7uxszpvl25jhvzc6dbhnjjgjkbeia5jta/nft.mp4
 
 The same link can be written with the CID as a subdomain, instead of in the URL path:
 
