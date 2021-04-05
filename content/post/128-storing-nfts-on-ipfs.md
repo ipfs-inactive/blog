@@ -1,6 +1,6 @@
 ---
 date: 2021-04-05
-url: /2021-04-05/storing-nfts-on-ipfs
+url: /2021-04-05-storing-nfts-on-ipfs
 title: Storing NFTs on IPFS
 author: Yusef Napora & Mitch Wagner
 tags: NFTs
