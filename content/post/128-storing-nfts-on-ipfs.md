@@ -64,7 +64,7 @@ Developers should format links differently, depending on context.
 
 An NFT smart contract should return an IPFS URI to the assets and metadata associated with each token. 
 
-For example: `ipfs://bafybeigvafaks2bvivtv46n2z7uxszpvl25jhvzc6dbhnjjgjkbeia5jta/nft.mp4`
+For example: `ipfs://bafybeibnsoufr2renqzsh347nrx54wcubt5lgkeivez63xvivplfwhtpym/metadata.json`
 
 We recommend generating the IPFS URI before minting each token and storing the full URI on-chain. This is the simplest way to conform to smart contract interfaces that expect a URI, and the ipfs:// URI scheme makes it easy for any distributed app to see that the data is available using IPFS.
 
