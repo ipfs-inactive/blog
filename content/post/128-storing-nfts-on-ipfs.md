@@ -12,7 +12,7 @@ Permanence and immutability are part of the core value proposition of a non-fung
 
 All too often, [these links are fragile](https://www.vice.com/en/article/pkdj79/peoples-expensive-nfts-keep-vanishing-this-is-why), and direct the user to a specific _location_ using the HTTP protocol, rather than a specific asset. This means that the content pointed to by the link could change or go offline at any point in the future, leaving the original asset lost forever (and the record of ownership worthless).
 
-The InterPlanetary Filesystem (IPFS) can help address these concerns, and NFTs that leverage IPFS gain several advantages. However, adhering to established conventions is critical to ensure the permanence and accessibility of data stored on the network. With non-fungible tokens (NFTs) surging in popularity, it’s a good time to revisit best practices for linking and storing NFT data on IPFS. In this post, we’ll address two areas of recent concern in particular: content addressing and content integrity.
+The InterPlanetary Filesystem (IPFS) can help address these concerns, and NFTs that leverage IPFS gain several advantages. However, adhering to established conventions is critical to ensure the permanence and accessibility of data stored on the network. With non-fungible tokens (NFTs) surging in popularity, it’s a good time to revisit best practices for linking and storing NFT data on IPFS. In this post, we’ll address two areas of recent concern in particular: content addressing and content integrity. You can find more details on the IPFS documentation site, in our new article [Best Practices for Storing NFT Data using IPFS](https://docs.ipfs.io/how-to/best-practices-for-nft-data/).
 
 ## Content Addressing
 
