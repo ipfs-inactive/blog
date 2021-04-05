@@ -54,7 +54,7 @@ IPFS URIs should also be used inside the structured metadata for NFTs when linki
 
 Example: `https://dweb.link/ipfs/bafybeigdyrzt5sfp7udm7hu76uh7y26nf3efuylqabf3oclgtqy55fbzdi`
 
-Note that gateways _recentralize the distribution of content_, presenting both a man-in-the-middle vector and single point of failure — if the gateway operator goes offline or is unreachable, the link will break. However, browsers with built-in support for IPFS (either via the [IPFS Companion](https://docs.ipfs.io/install/ipfs-companion/) browser extension, or via native support, such as [provided by Brave](https://brave.com/ipfs-support/)) are immune to these problems, as they can _automatically_ extract the CID from such links, and load the data from IPFS according to user preferences.
+Note that HTTP gateways _recentralize the distribution of content_, presenting both a man-in-the-middle vector and single point of failure — if the gateway operator goes offline or is unreachable, the link will break. However, browsers with built-in support for IPFS (either via the [IPFS Companion](https://docs.ipfs.io/install/ipfs-companion/) browser extension, or via native support, such as [provided by Brave](https://brave.com/ipfs-support/)) are immune to these problems, as they can _automatically_ extract the CID from such links, and load the data from IPFS according to user preferences.
 
 ### Addressing in Various Contexts
 
