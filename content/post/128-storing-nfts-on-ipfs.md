@@ -137,7 +137,7 @@ The image can be fetched using the IPFS URI `ipfs://bafybeidfjqmasnpu6z7gvn7l6wt
 
 Once the metadata has been created, it is stored as a JSON file on IPFS, and the resulting CID is used to create a URI like `ipfs://bafybeibnsoufr2renqzsh347nrx54wcubt5lgkeivez63xvivplfwhtpym/metadata.json`, which can be stored in a smart contract.
 
-To see a working example of this process in action, check out [How to Mint NFTs with IPFS](http://how-to/mint-nfts-with-ipfs/#how-minty-works) on the IPFS documentation site, which shows the whole process in detail using javascript.
+To see a working example of this process in action, check out [How to Mint NFTs with IPFS](https://docs.ipfs.io/how-to/mint-nfts-with-ipfs/#a-short-introduction-to-nfts) on the IPFS documentation site, which shows the whole process in detail using javascript.
 
 ### High Availability
 
