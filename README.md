@@ -1,3 +1,9 @@
+# THIS REPOSITORY IS BEING DEPRECATED
+
+**Heads up! On 8 April 2021, this repository will be deprecated and replaced with [`ipfs/ipfs-blog`](https://github.com/ipfs/ipfs-blog). This repository will not be receiving any updates. It is here for historical purposes.**
+
+---
+
 # IPFS Blog
 
 [![](https://img.shields.io/badge/made%20by-Protocol%20Labs-blue.svg?style=flat-square)](https://protocol.ai)
